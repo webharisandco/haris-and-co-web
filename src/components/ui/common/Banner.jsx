@@ -1,9 +1,9 @@
 import React from "react";
-import ButtonIcon from '../../../assets/images/web/icons/buttonRightArrow.svg'
+import ButtonIcon from '@/assets/images/web/icons/buttonRightArrow.svg'
 
 function Banner({ bannerImage, heading, description }) {
   return (
-    <div className="flex  gap-[100px] justify-between items-center">
+    <div className="flex mt-[150px]  gap-[100px] justify-between items-center">
       <div className="flex flex-col gap-[20px]">
         <p className="text-white">
           Conversion-focused Website Development Company in Dubai
