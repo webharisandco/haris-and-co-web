@@ -14,7 +14,7 @@ function WhatWeProvide() {
     <div  
     //  style={{
     //   backgroundImage: `url(${Grid})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-       className=" w-full mt-[152px] px-[51px] py-[104px] rounded-[20px] bg-[#151515]">
+       className=" w-full my-[152px] px-[51px] py-[104px] rounded-[20px] bg-[#151515]">
       <div className="w-full flex justify-between items-center">
         <p className="text-[44px] text-white">What We Provide</p>
         <img className=" h-[55px]" src={DownArrow} alt="" />
