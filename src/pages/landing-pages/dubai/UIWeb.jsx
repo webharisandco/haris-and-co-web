@@ -3,7 +3,10 @@ import Banner from "@/components/ui/common/Banner";
 import BannerImages from "@/assets/images/web/images/banner-Image.png";
 import Banner2 from "@/assets/images/web/images/banner2.png";
 import BrandPartnerSection from "@/components/ui/common/BrandPartnerSection";
-import AboutSection from "../../../components/ui/common/AboutSection";
+import AboutSection from "@/components/ui/common/AboutSection";
+import WhatWeProvide from "@/components/ui/common/WhatWeProvide";
+import ContactSection from "@/components/ui/common/ContactSection";
+import OurLatestWorks from "@/components/ui/web/OurLatestWorks";
 
 export const UIWeb = () => {
   const heading = "Get a Website That Gets You More Leads & Sales";
@@ -29,6 +32,15 @@ export const UIWeb = () => {
           heading={aboutHeading}
           description={aboutDescription}
         />
+      </div>
+      <div className="px-[100px]">
+        <OurLatestWorks/>
+      </div>
+      <div className="px-[100px]">
+        <WhatWeProvide />
+      </div>
+      <div className="">
+        <ContactSection />
       </div>
     </div>
   );

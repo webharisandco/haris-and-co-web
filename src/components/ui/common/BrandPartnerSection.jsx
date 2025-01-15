@@ -18,7 +18,7 @@ function BrandPartnerSection() {
   return (
     <div className="mt-[147px]">
 
-    <div className="flex flex-col  gap-[50px] border-t rounded-l-[46px] rounded-r-[46px] rounded-b-none border-b-0 border-l border-r border-white border-opacity-50  py-[40px]">
+    <div className="flex flex-col  gap-[50px] border-t rounded-l-[46px] rounded-r-[46px] rounded-b-none border-b-0 border-l border-r border-white border-opacity-50  pt-[40px] pb-[80px]">
       <div className="flex justify-between items-center gap-[40px] px-[35px]">
         <img className="w-[120px] h-full" src={popees} alt="Popees logo" />
         <img className="w-[120px] h-full" src={katara} alt="Katara logo" />
@@ -50,7 +50,7 @@ function BrandPartnerSection() {
         <img className="w-[120px] h-full" src={mavinza} alt="Mavinza logo" />
       </div>
     </div>
-    <div className="w-full bg-[#151515] h-full py-[25px] flex justify-center items-center rounded-b-[46px] ">
+    <div className="w-full bg-[#151515] h-full py-[25px] flex justify-center items-center rounded-b-[46px] mt-[-40px]">
         <p className="text-white text-[20px]">Brands we’ve powered with our web solutions. <span className="text-[#7744D5]">View All</span> </p>
       </div>
     </div>
