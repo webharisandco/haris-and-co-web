@@ -17,20 +17,56 @@ import { Faq } from "@/components/ui/LandingPage/Faq";
 export const UIWeb = () => {
   const faqList = [
     {
-      question: "What kind of businesses benefit from performance marketing?",
+      question: "Within how many days you can deliver the project?",
       answer:
-        "Performance marketing is ideal for businesses of all sizes and industries looking for measurable, results-driven campaigns. Whether in e-commerce, B2B, services, or tech, performance marketing can help you drive traffic, generate leads, and increase sales. Working with a Performance Marketing Agency in Dubai like Haris&Co. can help tailor campaigns to your specific goals, ensuring maximum ROI and efficiency across all digital channels.",
+        "The project delivery time depends on its complexity and requirements. As a web development agency, we aim to deliver projects efficiently while maintaining quality. We'll provide an estimated timeline after understanding your needs.",
     },
     {
       question:
-        "What is the typical budget for a performance marketing campaign?",
+        "As a web design & development agency in Dubai, do you help with revamping a website?",
       answer:
-        "Performance marketing is ideal for businesses of all sizes and industries looking for measurable, results-driven campaigns. Whether in e-commerce, B2B, services, or tech, performance marketing can help you drive traffic, generate leads, and increase sales. Working with a Performance Marketing Agency in Dubai like Haris&Co. can help tailor campaigns to your specific goals, ensuring maximum ROI and efficiency across all digital channels.",
+        "Yes, we specialize in revamping websites to align with modern design trends, improve user experience, and ensure better functionality tailored to your business needs.",
     },
     {
-      question: "How do I get started with performance marketing?",
+      question: "Can I update the website myself once it’s built?",
       answer:
-        "Performance marketing is ideal for businesses of all sizes and industries looking for measurable, results-driven campaigns. Whether in e-commerce, B2B, services, or tech, performance marketing can help you drive traffic, generate leads, and increase sales. Working with a Performance Marketing Agency in Dubai like Haris&Co. can help tailor campaigns to your specific goals, ensuring maximum ROI and efficiency across all digital channels.",
+        "Absolutely! We build user-friendly websites with content management systems like WordPress or custom solutions that allow you to update content easily without needing technical expertise.",
+    },
+    {
+      question: "Will my website be SEO-friendly?",
+      answer:
+        "Yes, we ensure all websites we build follow SEO best practices, including fast loading times, mobile responsiveness, and proper structuring, to enhance search engine visibility.",
+    },
+    {
+      question: "What platforms do you use for web development?",
+      answer:
+        "We use a variety of platforms such as WordPress, Shopify, and custom frameworks like React and Node.js, depending on your project requirements and goals.",
+    },
+    {
+      question: "How do you ensure website security?",
+      answer:
+        "We prioritize security by implementing SSL certificates, firewalls, regular updates, and secure coding practices to protect your website from potential vulnerabilities.",
+    },
+    {
+      question: "Can you integrate third-party tools into my website?",
+      answer:
+        "Yes, we can integrate third-party tools such as payment gateways, CRMs, analytics platforms, and more to enhance your website's functionality and performance.",
+    },
+    {
+      question: "Do you provide content for my website?",
+      answer:
+        "Yes, we offer content creation services, including copywriting and graphic design, to ensure your website communicates effectively with your audience.",
+    },
+    {
+      question:
+        "Is it necessary to have a face-to-face discussion before the start of the project?",
+      answer:
+        "While face-to-face discussions are not mandatory, we are open to virtual meetings or calls to discuss project requirements and ensure clear communication.",
+    },
+    {
+      question: "What platform do you suggest for Ecommerce?",
+      answer:
+        "We recommend platforms like Shopify or WooCommerce for small to medium businesses and custom solutions for larger enterprises, depending on your specific needs and scalability requirements.",
     },
   ];
   const heading = "Get a Website That Gets You More Leads & Sales";
@@ -43,7 +79,7 @@ export const UIWeb = () => {
   const tagline = "Conversion-focused Website Development Company in Dubai";
   return (
     <div className="bg-black">
-      {/* <LandingHeader /> */}
+      <LandingHeader />
       <Banner
         bannerImage={BannerImages}
         heading={heading}
@@ -59,18 +95,22 @@ export const UIWeb = () => {
           description={aboutDescription}
         />
       </div>
-      <OurLatestWorks/>
-    
-        <WhatWeProvide />
+      <OurLatestWorks />
+
+      <WhatWeProvide />
 
       <div className="bg-white">
-        {/* <ConsultBanner/> */}
-        {/* <CaseStudy /> */}
-        {/* <Testimonial/> */}
+        <ConsultBanner/>
+        <CaseStudy />
+        <Testimonial/>
       </div>
-      <div className="">{/* <ContactSection /> */}</div>
-      <div className="bg-white">{/* <Faq faqList={faqList} /> */}</div>
-      {/* <LandingFooter /> */}
+      <div className="">
+        <ContactSection />
+        </div>
+      <div className="bg-white">
+        <Faq faqList={faqList} />
+        </div>
+      <LandingFooter />
     </div>
   );
 };
