@@ -1,19 +1,18 @@
 import React from 'react'
-import LandingHeader from '../../../components/layout/landing/LandingHeader'
-import LandingFooter from '../../../components/layout/landing/LandingFooter'
-import { Faq } from '../../../components/ui/LandingPage/Faq'
-import ConsultBanner from '../../../components/ui/LandingPage/ConsultBanner'
-import CaseStudy from '../../../components/ui/LandingPage/CaseStudy'
-import ResultSection from '../../../components/ui/LandingPage/ResultSection'
-import ToolsAndPlatform from '../../../components/ui/LandingPage/ToolsAndPlatform'
-import Testimonial from '../../../components/ui/LandingPage/Testimonial'
-import BrandPartnerSection from "@/components/ui/common/BrandPartnerSection";
-import Banner from "@/components/ui/common/Banner";
+import LandingHeader from '@/components/layout/landing/LandingHeader'
+import LandingFooter from '@/components/layout/landing/LandingFooter'
+import { Faq } from '@/components/ui/LandingPage/Faq'
+import ConsultBanner from '@/components/ui/LandingPage/ConsultBanner'
+import CaseStudy from '@/components/ui/LandingPage/CaseStudy'
+import Testimonial from '@/components/ui/LandingPage/Testimonial'
+import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
+import Banner from "@/components/ui/LandingPage/Banner";
 import BannerImg from "@/assets/images/landing/BannerImg.svg";
 import AboutImg from "@/assets/images/landing/AboutImg.png";
-import AboutSection from "@/components/ui/common/AboutSection";
-import WhatWeProvide from "@/components/ui/common/WhatWeProvide";
-import ContactSection from "@/components/ui/common/ContactSection";
+import AboutSection from "@/components/ui/LandingPage/AboutSection";
+import WhatWeProvide from "@/components/ui/LandingPage/WhatWeProvide";
+import ContactSection from "@/components/ui/LandingPage/ContactSection";
+
 
 export const UIPerformance = () => {
   const faqList = [{ question: 'What kind of businesses benefit from performance marketing?', answer: "Performance marketing is ideal for businesses of all sizes and industries looking for measurable, results-driven campaigns. Whether in e-commerce, B2B, services, or tech, performance marketing can help you drive traffic, generate leads, and increase sales.Working with a Performance Marketing Agency in Dubai like Haris&Co. can help tailor campaigns to your specific goals, ensuring maximum ROI and efficiency across all digital channels." }, { question: 'What is the typical budget for a performance marketing campaign?', answer: "The budget for a performance marketing campaign depends on your goals, industry, and target audience. We work with businesses of all sizes and create customised plans that maximise your return on investment. Whether you have a small or large budget, we’ll optimise your campaigns to get the best results." }, { question: 'How do I get started with performance marketing?', answer: "Getting started is easy! Simply reach out to our team for a consultation. We'll discuss your goals, understand your target audience, and craft a tailored performance marketing strategy that fits your business needs and budget." }, { question: 'What makes Haris&Co’s performance marketing services different from others?', answer: "At Haris & Co's performance marketing agency in Dubai like Haris&Co., we focus on data-driven results and continuous optimisation. We don’t just run ads - we strategically manage and fine-tune every aspect of your campaigns to ensure maximum ROI. Our approach is transparent, collaborative, and tailored to your business goals." }, { question: 'Can performance marketing work for both B2B and B2C companies?', answer: "Yes, performance marketing works for Business-to-Consumer (B2C) and Business-to-Business (B2B) companies. We tailor our campaigns and targeting strategies depending on your audience. Whether you need to drive sales, leads, or brand awareness, we have the tools and experience to deliver results for both B2B and B2C clients." },]
