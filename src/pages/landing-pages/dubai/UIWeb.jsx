@@ -23,14 +23,16 @@ export const UIWeb = () => {
     "A Web Development Company in Dubai Trusted by 80+ Brands";
   const aboutDescription =
     "As a web design and development company in Dubai, we believe your website must be an all-rounder – one that’s fast, user-friendly, secure, engaging and optimised to turn visitors into customers. That’s what you can expect when you partner with us for website development. Whether you are a startup, a large business or an ecommerce brand, we can deliver a website that meets your expectations. To ensure maximum quality, we have experts in each department be it UI/UX design, development, content or conversion optimization. Also, you’ll have a dedicated project manager to keep you updated on the project.";
+    const tagline = 'Conversion-focused Website Development Company in Dubai'
   return (
     <div className="bg-black">
          <LandingHeader />
-      <div className="px-[100px] ">
+      <div className="px-[100px]">
         <Banner
           bannerImage={BannerImages}
           heading={heading}
           description={description}
+          tagline={tagline}
         />
         <BrandPartnerSection />
       </div>

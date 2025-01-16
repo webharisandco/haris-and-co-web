@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export const Faq = ({ faqList }) => {
-    const [isCollapsed, setIsCollapsed] = useState(null);
+    const [isCollapsed, setIsCollapsed] = useState(0);
 
     return (
         <div className="flex flex-col gap-[80px] py-[60px] px-[100px]">
@@ -17,7 +17,7 @@ export const Faq = ({ faqList }) => {
                                 onClick={() => setIsCollapsed(isActive ? null : index)}
                             >
                                 <div
-                                    className={`transition-all duration-500 border-transparent border-b-[#000] border-[10px] -translate-y-2 ${isActive ? 'rotate-180 translate-y-2' : ''
+                                    className={`transition-all duration-500 border-transparent border-t-[#000] border-[10px] translate-y-2 ${isActive ? 'rotate-180 -translate-y-3' : ''
                                         }`}
                                 ></div>
                                 <p className="poppins-semibold text-[20px] font-bold">{faq.question}</p>

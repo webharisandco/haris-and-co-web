@@ -30,8 +30,8 @@ function ContactSection() {
     return <div className="text-center text-lg">Loading Map...</div>;
 
   return (
-    <div>
-      <div className="mt-[202px] px-[100px] flex justify-between relative z-10">
+    <div className="pt-[200px] bg-white">
+      <div className=" px-[100px] flex justify-between relative z-10 bg-black">
         <div className="w-[50%] flex flex-col gap-[30px] py-[147px]">
           <div>
             <p className="text-white text-[48px]">Let's Have a Chat</p>
@@ -78,7 +78,7 @@ function ContactSection() {
           </div>
         </div>
 
-        <div className="w-[50%]">
+        <div className="w-[50%] ">
           <div className="bg-[#7744D5] relative z-30 p-6 md:p-10 rounded-3xl text-white max-w-lg mx-auto">
             <p className="text-[30px] font-medium mb-6">Get a Callback</p>
 
