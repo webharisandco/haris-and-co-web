@@ -16,16 +16,18 @@ export const Faq = ({ faqList }) => {
                                 className="border-[#D9D9D9] border-2 py-[20px] px-[45px] rounded-xl flex gap-8 cursor-pointer"
                                 onClick={() => setIsCollapsed(isActive ? null : index)}
                             >
-                                <div
-                                    className={`transition-all duration-300 border-transparent border-t-[#000] border-[10px] translate-y-2 ${isActive ? 'rotate-180 -translate-y-2' : ''
-                                        }`}
-                                ></div>
+                                <div className={`transition-all duration-300 ${isActive ? 'rotate-180 ' : ''}`}>
+                                    <div
+                                        className={`transition-all duration-300 border-transparent border-t-[#000] border-[10px] translate-y-2 ${isActive ? '-translate-y-2 ' : ''
+                                            }`}
+                                    ></div>
+                                </div>
                                 <p className="poppins-semibold text-[14px] md:text-[16px] lg:text-[20px] font-bold">{faq.question}</p>
                             </div>
                             <div
                                 className={`overflow-hidden transition-[max-height] duration-500 ease-in-out `}
                                 style={{
-                                    maxHeight: isActive ? '200px' : '0', 
+                                    maxHeight: isActive ? '200px' : '0',
                                 }}
                             >
                                 <p className="text-[14px] md:text-[16px] lg:text-[18px] poppins-regular px-4 mb-4">{faq.answer}</p>

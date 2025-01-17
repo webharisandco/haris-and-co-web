@@ -80,45 +80,45 @@ export default function UIWeb() {
   const tagline = "Conversion-focused Website Development Company in Dubai";
   return (
     <>
-   
-    <div className="bg-black">
-      <LandingHeader />
-      <Banner
-        bannerImage={BannerImages}
-        heading={heading}
-        description={description}
-        tagline={tagline}
-      />
-      <BrandPartnerSection />
 
-      <div className="px-[18px] md:px-0 md:pr-[100px]">
-        <AboutSection
-          bannerImage={Banner2}
-          heading={aboutHeading}
-          description={aboutDescription}
+      <div className="bg-black">
+        <LandingHeader />
+        <Banner
+          bannerImage={BannerImages}
+          heading={heading}
+          description={description}
+          tagline={tagline}
         />
-      </div>
-      <OurLatestWorks />
+        <BrandPartnerSection />
 
-      <WhatWeProvide />
+        <div className="px-[18px] md:px-0 md:pr-[100px]">
+          <AboutSection
+            bannerImage={Banner2}
+            heading={aboutHeading}
+            description={aboutDescription}
+          />
+        </div>
+        <OurLatestWorks />
 
-      <div className="bg-white">
-        <ConsultBanner/>
-        <CaseStudy />
-        <Testimonial/>
-      </div>
-      <div className="">
-        <ContactSection />
+        <WhatWeProvide />
+
+        <div className="bg-white">
+          <ConsultBanner />
+          <CaseStudy />
+          <Testimonial />
         </div>
-      <div className="bg-white">
-        <Faq faqList={faqList} />
-        </div>
+        <div className="">
+          <ContactSection />
         </div>
         <div className="bg-white">
-
-        <AboutCompany/>
+          <Faq faqList={faqList} />
         </div>
+      </div>
+      <div className="bg-white">
+
+        <AboutCompany />
+      </div>
       <LandingFooter />
-      </>
+    </>
   );
 };

@@ -13,10 +13,10 @@ import Logo from '@/assets/images/Haris&Co.svg';
 const LandingFooter = () => {
     return (
         <div className='bg-black px-[18px] md:px-[50px] lg:px-[80px] py-[50px] text-white space-y-5 poppins-medium'>
-            <div className=" md:grid-cols-[1fr_1.2fr] lg:grid-cols-[1fr_1.2fr_1.4fr_1.9fr] gap-[150px] py-[100px] hidden md:grid">
+            <div className=" md:grid-cols-[1fr_1.2fr] xl:grid-cols-[1fr_1.2fr_1.4fr_1.9fr] gap-[150px] py-[100px] hidden md:grid">
                 <div className="flex flex-col ">
                     <img src={logo} className='h-[130px] w-[200px]' alt='Haris&Co Logo' />
-                    <img src={googleLogo} className='mt-[50px] mb-[35px]' alt='Google Partner Logo' />
+                    <img src={googleLogo} className='mt-[50px] mb-[35px] ' alt='Google Partner Logo' />
                     <div className="flex gap-8 justify-center">
                         <img src={LinkedinLogo} alt='Linkedin Logo' />
                         <img src={FacebookLogo} alt='Facebook Logo' />

@@ -1,8 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Layout from '../layout/Layout';
-import { UIWeb } from '../pages/landing-pages/dubai/UIWeb';
-import { UIPerformance } from '../pages/landing-pages/dubai/UIPerformance';
+import UIWebDubai from '../pages/landing-pages/dubai/UIWeb';
+import UIWebSharjah from '../pages/landing-pages/sharjah/UIWeb';
+import UIWebAbudhabi from '../pages/landing-pages/abudhabi/UIWeb';
+import UIPerformanceDubai from '../pages/landing-pages/dubai/UIPerformance';
+import UIPerformanceSharjah from '../pages/landing-pages/sharjah/UIPerformance';
+import UIPerformanceAbudhabi from '../pages/landing-pages/abudhabi/UIPerformance';
+import UIPerformanceKerala from '../pages/landing-pages/kerala/UIPerformance';
 // import About from '@/pages/About';
 // import Contact from '@/pages/Contact';
 // import NotFound from '@/pages/NotFound';
@@ -14,9 +19,14 @@ const AppRouter = () => {
         <Route path="/">
           <Route index element={<Home />} />
           <Route path="ae/services">
-            <Route path="web-development-company-in-dubai" element={<UIWeb />} />
-            <Route path="performance-marketing-agency-in-dubai" element={<UIPerformance />} />
+            <Route path="web-development-company-in-dubai" element={<UIWebDubai />} />
+            <Route path="web-development-company-in-sharjah" element={<UIWebSharjah />} />
+            <Route path="web-development-company-in-abudhabi" element={<UIWebAbudhabi />} />
+            <Route path="performance-marketing-agency-in-dubai" element={<UIPerformanceDubai />} />
+            <Route path="performance-marketing-agency-in-abudhabi" element={<UIPerformanceAbudhabi />} />
+            <Route path="performance-marketing-agency-in-sharjah" element={<UIPerformanceSharjah />} />
           </Route>
+          <Route path='services/performance-marketing-agency-in-kerala' element={<UIPerformanceKerala />} />
           {/* <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} /> */}
         </Route>
