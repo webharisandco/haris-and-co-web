@@ -10,8 +10,8 @@ import RightArrow from "../../../assets/images/icons/whiteRightArrowIcon.svg";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "100%",
-  height: "500px",
+  width: '100%',
+  height: '500px', // Adjust height based on your requirements
 };
 
 const location = {

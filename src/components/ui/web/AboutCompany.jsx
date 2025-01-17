@@ -1,0 +1,197 @@
+import React from "react";
+
+function AboutCompany() {
+  const webDevelopmentServices = [
+    {
+      title: "Dedicated Project Manager",
+      description:
+        "We have an in-house brand solutions team for our web development in Dubai. This means your project gets personal attention from our dedicated project manager who ensures clear communication, and timely delivery.",
+    },
+    {
+      title: "Specialists at Every Step",
+      description:
+        "From UI/UX designers to developers, content writers to conversion rate optimizers – we have specialists who take care of each aspect of your website project. Their collaboration helps us to ensure maximum quality.",
+    },
+    {
+      title: "End-to-End Digital Excellence",
+      description:
+        "We handle everything from strategy to launch, including design, development, content, and optimization – no need to coordinate with multiple agencies.",
+    },
+    {
+      title: "Data-Driven Decision Making",
+      description:
+        "Our solutions are backed by research, user behaviour analysis, and industry best practices to ensure maximum impact.",
+    },
+    {
+      title: "Results-Focused Approach",
+      description:
+        "We don't just build websites. We are a web development company in Dubai that creates digital assets that drive business growth through strategic design and conversion optimization.",
+    },
+    {
+      title: "Proven Development Process",
+      description:
+        "Our structured web development methodology ensures transparency, timely delivery, and consistent quality across all projects.",
+    },
+    {
+      title: "Post-Launch Support",
+      description:
+        "Just because we are a web development company in Dubai, our relationship doesn't end after developing and launching the website. We provide ongoing support to ensure your website continues to perform and evolve with your business.",
+    },
+    {
+      title: "Technical Excellence",
+      description:
+        "We use cutting-edge technologies and follow best practices in security, performance, and SEO to future-proof your digital presence.",
+    },
+  ];
+  const websiteBenefits = [
+    {
+      title:
+        "A website works 24/7, generating leads and sales even when you're sleeping.",
+    },
+    {
+      title:
+        "It's your most cost-effective marketing tool, working round-the-clock.",
+    },
+    {
+      title:
+        "Build credibility instantly - customers trust businesses with professional websites.",
+    },
+    {
+      title:
+        "92% of business owners believe that having a website is the most effective digital marketing.",
+    },
+    {
+      title:
+        "Showcase your products/services to a global audience without geographical limits.",
+    },
+    {
+      title:
+        "First impressions happen online - control how people perceive your brand.",
+    },
+    { title: "Stay accessible to your customers anytime, anywhere." },
+    {
+      title:
+        "Convert casual browsers into loyal customers with a strategic online presence.",
+    },
+    {
+      title:
+        "Share business updates, news, and offers instantly with your audience.",
+    },
+    {
+      title:
+        "Collect valuable customer data to improve your products and services.",
+    },
+  ];
+
+  const websiteProcess = [
+    {
+      title: "Brand Understanding",
+      description: "We start by deeply understanding your brand story, values, and goals to ensure your website truly reflects your business identity. Normally, we connect on Google Meet where our whole team will be present in the meeting."
+    },
+    {
+      title: "Collecting Requirements",
+      description: "We analyse your needs, from technical specifications to business objectives, helping us create a strategic roadmap for your website."
+    },
+    {
+      title: "Wireframing",
+      description: "Next, our team creates the blueprint of your website with clear user journeys and information architecture that guides visitors toward conversion."
+    },
+    {
+      title: "UI/UX Design",
+      description: "Our UI/UX designer transforms wireframes into visually stunning, user-friendly designs that engage your audience and strengthen your brand presence."
+    },
+    {
+      title: "Content Writing",
+      description: "Our writer crafts compelling content that speaks to your audience and drives action while maintaining your brand voice."
+    },
+    {
+      title: "Website Development",
+      description: "The foundation is now ready. We now build your website with clean, efficient code and advanced functionality that ensures speed, security, and seamless performance."
+    },
+    {
+      title: "Website Delivery",
+      description: "Once we test thoroughly, we launch your website upon your approval."
+    },
+    {
+      title: "Ongoing Support/Maintenance",
+      description: "We don’t stop there! After the delivery, we provide technical support to ensure your website stays smooth and continues to evolve with your business needs."
+    }
+  ];
+
+  return (
+    <div className="bg-white mb-[70px] md:mb-0 mt-[14px] md:my-[114px] px-[18px] md:px-[100px]">
+      <div className="flex flex-col gap-[13px] md:gap-[36px]">
+        <p className="text-black text-[16px] md:text-[36px]">
+          Web Design and Development Services in Dubai Focused on Conversion
+        </p>
+        <p className="text-black md:text-[20px] text-[11px]">
+          Haris&Co. has been serving web development services in Dubai for the
+          last 5 years, empowering 80+ brands. Whenever a client approaches, we
+          keep the conversion aspect of a website on top of our mind because we
+          believe that a website isn’t just a showcase, it should act as a shop
+          for a business. This is why we have conversion rate optimisers on the
+          team to ensure that website visitors turn into customers. This doesn’t
+          mean we disregard other aspects such as aesthetics, content and
+          technicalities. 
+        </p>
+
+        <div className=" gap-[13px] mt-[31px] md:mt-[52px]">
+          <p className="text-black text-[16px] md:text-[36px]">
+            Web Design and Development Services in Dubai Focused on Conversion
+          </p>
+          {webDevelopmentServices.map((service) => (
+            <div className="mt-[23px] md:mt-[60px] flex-col gap-[13px] md:gap-[25px]">
+              <p className="text-[11px] md:text-[20px] font-medium text-black  mb-[13px] md:mb-[25px]">
+                {service.title}
+              </p>
+              <p className="text-[11px] md:text-[20px]">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className=" gap-[13px] mt-[31px] md:mt-[52px]">
+          <p className="text-black text-[16px] md:text-[36px]">
+            Why You Must Have a Website?
+          </p>
+          <div className="mt-[21px] md:mt-[47px]"></div>
+          <ul className="ml-[8px] md:ml-[20px]">
+            {websiteBenefits.map((service, index) => (
+              <li
+                key={index}
+                className="text-[11px] md:text-[20px] font-semibold text-black mt-[20px] list-disc ml-[20px]"
+              >
+                {service.title}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-[20px] md:mt-[47px]">
+            <p className="text-black text-[11px] md:text-[20px]">
+              So, skip the wait and partner with Haris&Co.–the emerging web
+              development company in Dubai.  
+            </p>
+          </div>
+        </div>
+
+        <div className=" gap-[13px] mt-[31px] md:mt-[52px]">
+          <p className="text-black text-[16px] md:text-[36px]">
+          How Our Web Development In Dubai Works
+          </p>
+          {websiteProcess.map((service) => (
+            <div className="mt-[23px] md:mt-[60px] flex-col gap-[13px] md:gap-[25px]">
+              <p className="text-[11px] md:text-[20px] font-medium text-black  mb-[13px] md:mb-[25px]">
+                {service.title}
+              </p>
+              <p className="text-[11px] md:text-[20px]">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AboutCompany;
