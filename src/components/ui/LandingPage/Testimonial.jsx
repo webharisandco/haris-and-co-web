@@ -29,7 +29,7 @@ const Testimonial = () => {
                     <h6 className='poppins-semibold text-lg'>Lorem Ipsum</h6>
                     <p className='poppins-regular '>“Lorem ipsum dolor sit amet, consectetur dori adipiscing elit, sed do eiusmod tempor kil incididunt ut labore et dolore “Lorem ipsum dolor sit amet, consectetur dori adipiscing elit, sed do eiusmod tempor kil incididunt ut labore et dolore””</p>
                     <div className="flex gap-3 lg:gap-5 items-center">
-                        <img src={PersonIcon} alt='avatar icon' className='w-[35px] lg:w-full'/>
+                        <img src={PersonIcon} alt='avatar icon' className='w-[35px] lg:w-[70px]'/>
                         <div className="">
                             <p className='poppins-semibold '>Lorem</p>
                             <p className='poppins-regular'>Lorem Ipsum</p>

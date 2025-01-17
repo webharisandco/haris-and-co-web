@@ -15,7 +15,7 @@ const CaseStudy = () => {
             </div>
             <div className="flex flex-col lg:flex-row gap-5 poppins-regular">
                 <div className="shadow-[6.91px_6.91px_20.74px_0px_#00000026] px-4 py-3 rounded-3xl lg:w-1/2 space-y-9">
-                    <img src={Img1} className="h-[310px] lg:h-auto object-cover rounded-[14px]" alt="" />
+                    <img src={Img1} className="h-[310px] lg:h-auto object-cover rounded-[14px] w-full" alt="" />
                     <div className="flex flex-col gap-3 md:gap-5 lg:gap-7 px-2 lg:px-5">
                         <h6 className='text-[25px] md:text-[30px] lg:text-[32px] poppins-semibold w-11/12 lg:w-3/4'>Generated a Massive ₹10 Million in 6 Months</h6>
                         <div className="flex gap-3 text-base lg:text-xl items-center"><Clock color='#fff' fill='#888888' /><p className='text-[#929090]'>March 8, 2024</p></div>
