@@ -7,19 +7,21 @@ import LinkedinLogo from '@/assets/images/landing/LinkedinLogo.svg'
 import FacebookLogo from '@/assets/images/landing/FacebookLogo.svg'
 import InstagramLogo from '@/assets/images/landing/InstagramLogo.svg'
 import XLogo from '@/assets/images/landing/XLogo.svg'
+import Logo from '@/assets/images/Haris&Co.svg';
+
 
 const LandingFooter = () => {
     return (
-        <div className='bg-black px-[16px] md:px-[40px] lg:px-[80px] py-[50px] text-white space-y-10 poppins-medium'>
-            <div className="grid grid-cols-[1fr_1.2fr_1.4fr_1.9fr] gap-[150px]">
+        <div className='bg-black px-[18px] md:px-[40px] lg:px-[80px] py-[50px] text-white space-y-5 poppins-medium'>
+            <div className=" grid-cols-[1fr_1.2fr_1.4fr_1.9fr] gap-[150px] py-[100px] hidden md:grid">
                 <div className="flex flex-col ">
-                    <img src={logo} className='h-[130px] w-[200px]' />
-                    <img src={googleLogo} className='mt-[50px] mb-[35px]' />
+                    <img src={logo} className='h-[130px] w-[200px]' alt='Haris&Co Logo' />
+                    <img src={googleLogo} className='mt-[50px] mb-[35px]' alt='Google Partner Logo' />
                     <div className="flex gap-8 justify-center">
-                        <img src={LinkedinLogo} />
-                        <img src={FacebookLogo} />
-                        <img src={InstagramLogo} />
-                        <img src={XLogo} />
+                        <img src={LinkedinLogo} alt='Linkedin Logo' />
+                        <img src={FacebookLogo} alt='Facebook Logo' />
+                        <img src={InstagramLogo} alt='Instagram Logo' />
+                        <img src={XLogo} alt='Twitter Logo' />
                     </div>
                 </div>
                 <div className="space-y-10">
@@ -60,7 +62,32 @@ const LandingFooter = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center text-white/50"><span>Copyrights &copy; 2024 by Team Haris&Co.</span></div>
+            <div className=" justify-center text-white/50 hidden md:flex"><span>Copyrights &copy; 2024 by Team Haris&Co.</span></div>
+            <div className="flex md:hidden flex-col gap-6">
+                <div className="flex flex-col gap-5 px-10 justify-center text-center">
+                    <img src={Logo} alt="" />
+                    <p>If you didn’t find the products you are interested in or have questions?</p>
+                </div>
+                <div className="*:border *:border-white flex justify-between *:py-3 gap-6 *:w-full">
+                    <button>Email</button>
+                    <button>Contact Us</button>
+                </div>
+                <div className="flex gap-8 justify-center *:rounded-full *:p-4 *:border *:border-white">
+                    <img src={LinkedinLogo} alt='Linkedin Logo' />
+                    <img src={FacebookLogo} alt='Facebook Logo' />
+                    <img src={InstagramLogo} alt='Instagram Logo' />
+                    <img src={XLogo} alt='Twitter Logo' />
+                </div>
+                <div className="poppins-medium flex flex-wrap gap-5 text-center justify-center">
+                    <p className="text-[12px]">Services</p>
+                    <p className="text-[12px]">Works</p>
+                    <p className="text-[12px]">Clients</p>
+                    <p className="text-[12px]">About us</p>
+                    <p className="text-[12px]">Awards</p>
+                    <p className="text-[12px]">Careers</p>
+                    <p className="text-[12px]">Digital marketing agency in kerala</p>
+                </div>
+            </div>
         </div>
     )
 }

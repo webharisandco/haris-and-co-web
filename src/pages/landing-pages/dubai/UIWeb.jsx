@@ -34,7 +34,7 @@ export const UIWeb = () => {
           description={description}
           tagline={tagline}
         />
-        <BrandPartnerSection />
+        <BrandPartnerSection text={'Brands we’ve powered with our web solutions. '}/>
       </div>
       <div className="pr-[100px]">
         <AboutSection

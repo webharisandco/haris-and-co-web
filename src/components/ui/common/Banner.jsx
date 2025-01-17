@@ -2,7 +2,7 @@ import React from "react";
 import ButtonIcon from '@/assets/images/web/icons/buttonRightArrow.svg'
 import LandingButton from "./LandingButton";
 
-function Banner({ bannerImage, heading, description, imgClassName,tagline }) {
+function Banner({ bannerImage, heading, description, imgClassName,tagline,performance=false }) {
   return (
     <div className="flex mt-[150px]  gap-[100px] justify-between items-center poppins-regular">
       <div className="flex flex-col gap-[20px] w-6/12">
@@ -17,8 +17,9 @@ function Banner({ bannerImage, heading, description, imgClassName,tagline }) {
           <p> GET A PROPOSAL</p>
           <img src={ButtonIcon} alt="" />
         </button> */}
-        <div className="flex mt-8">
+        <div className="flex mt-8 gap-8">
           <LandingButton text={'GET A PROPOSAL'} />
+          {performance && <LandingButton text={'View Our Results'} className={'bg-transparent hover:bg-transparent hover:text-white/70 text-white'} />}
         </div>
       </div>
       <div className="w-6/12">

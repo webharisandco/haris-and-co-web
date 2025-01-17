@@ -14,7 +14,7 @@ import teens from "@/assets/images/brandLogos/teens.svg";
 import westbrook from "@/assets/images/brandLogos/westbrook.svg";
 import wildtree from "@/assets/images/brandLogos/wildtree.svg";
 
-function BrandPartnerSection() {
+function BrandPartnerSection({text}) {
   return (
     <div className="mt-[147px]">
 
@@ -51,7 +51,7 @@ function BrandPartnerSection() {
       </div>
     </div>
     <div className="w-full bg-[#151515] h-full py-[25px] flex justify-center items-center rounded-b-[46px] mt-[-40px]">
-        <p className="text-white text-[20px]">Brands we’ve powered with our web solutions. <span className="text-[#7744D5]">View All</span> </p>
+        <p className="text-white text-[20px]">{text} <span className="text-[#7744D5]">View All</span> </p>
       </div>
     </div>
   );
