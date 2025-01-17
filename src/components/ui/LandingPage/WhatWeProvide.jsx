@@ -6,46 +6,58 @@ import DevIcon from "@/assets/images/icons/devIcon.svg";
 import UiUxIcon from "@/assets/images/icons/uiUxIcon.svg";
 import ContentWritingIcon from "@/assets/images/icons/contentWritingIcon.svg";
 import ConversionIcon from "@/assets/images/icons/conversionIcon.svg";
+import ContentBig from "../../../assets/images/web/images/contentBig.png";
+import UiUxBig from "../../../assets/images/web/images/uiUxBig.jpg";
+import CustomeWebBig from "../../../assets/images/web/images/customeWebBig.png";
+import ConversionBig from "../../../assets/images/web/images/conversionBig.png";
+import EcomBig from "../../../assets/images/web/images/EcomBig.png";
 import Banner from "@/assets/images/web/images/whatWeProvideBanner.png";
 // import Grid from "../../../assets/images/web/images/grid.svg"
 
 function WhatWeProvide() {
+  const [currentTitle, setCurrentTitle] = useState("WordPress Development");
   const servicesArray = [
     {
       title: "WordPress Development",
       description:
         "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
       icon: CodingIcon,
+      img: Banner,
     },
     {
       title: "Ecommerce Development",
       description:
         "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
       icon: EcomIcon,
+      img: EcomBig,
     },
     {
       title: "Custom Web Development",
       description:
         "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
       icon: DevIcon,
+      img: CustomeWebBig,
     },
     {
       title: "UI/UX Design",
       description:
         "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
       icon: UiUxIcon,
+      img: UiUxBig,
     },
     {
       title: "Content Writing",
       description:
         "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
       icon: ContentWritingIcon,
+      img: ContentBig,
     },
     {
       title: "Conversion Rate Optimization",
       description:
         "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
       icon: ConversionIcon,
+      img: ConversionBig,
     },
   ];
   const [activeIndex, setActiveIndex] = useState(0);
@@ -80,7 +92,6 @@ function WhatWeProvide() {
     }
   }, [servicesArray.length]);
 
- 
   return (
     <div className="px-[18px] md:px-[100px]">
       <div
@@ -94,7 +105,7 @@ function WhatWeProvide() {
           </p>
           <img className="h-[18px] md:h-[55px]" src={DownArrow} alt="" />
         </div>
-        <div className="w-full  flex flex-col-reverse md:flex-row items-center justify-between  mt-[65px] md:pr-[70px]">
+        <div className="w-full  flex flex-row items-center justify-between  mt-[65px] md:pr-[70px]">
           <div className="relative md:w-[65%] w-full md:overflow-visible">
             <div
               ref={containerRef}
@@ -106,8 +117,14 @@ function WhatWeProvide() {
               {servicesArray.map((service, index) => (
                 <div
                   key={index}
-                  className="flex gap-[60px] group min-w-[300px] md:min-w-0"
+                  className="flex flex-col md:flex-row md:gap-[60px] group min-w-[300px] md:min-w-0"
+                  onMouseEnter={() => setCurrentTitle(service.title)}
+                  onMouseLeave={() => setCurrentTitle("")}
                 >
+                  <div className="  w-fit  md:hidden h-full items-center px-[50px]">
+                    <img src={service.img} alt={service.title} />
+                  </div>
+
                   <div className="hidden md:block w-[44px] transition-all duration-300 md:group-hover:w-[50px]">
                     <img
                       className="w-full h-auto"
@@ -143,8 +160,22 @@ function WhatWeProvide() {
               ))}
             </div>
           </div>
-          <div className=" w-fit md:w-[40%] flex h-full items-center">
-            <img src={Banner} alt="" />
+          <div className=" hidden w-fit md:w-[40%] md:flex h-full items-center">
+            {currentTitle == "WordPress Development" ? (
+              <img src={Banner} alt="" />
+            ) : currentTitle == "Ecommerce Development" ? (
+              <img src={EcomBig} alt="" />
+            ) : currentTitle == "Custom Web Development" ? (
+              <img src={CustomeWebBig} alt="" />
+            ) : currentTitle == "UI/UX Design" ? (
+              <img src={UiUxBig} alt="" />
+            ) : currentTitle == "Content Writing" ? (
+              <img src={ContentBig} alt="" />
+            ) : currentTitle == "Conversion Rate Optimization" ? (
+              <img src={ConversionBig} alt="" />
+            ) : (
+              <img src={Banner} alt="" />
+            )}
           </div>
         </div>
       </div>
