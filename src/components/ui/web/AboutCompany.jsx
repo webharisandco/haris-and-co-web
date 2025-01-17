@@ -119,7 +119,7 @@ function AboutCompany() {
   ];
 
   return (
-    <div className="bg-white mb-[70px] md:mb-0 mt-[14px] md:my-[114px] px-[18px] md:px-[100px]">
+    <div className="bg-white mb-[70px] md:mb-[72px] mt-[14px] md:my-[114px] px-[18px] md:px-[100px]">
       <div className="flex flex-col gap-[13px] md:gap-[36px]">
         <p className="text-black text-[16px] md:text-[36px]">
           Web Design and Development Services in Dubai Focused on Conversion

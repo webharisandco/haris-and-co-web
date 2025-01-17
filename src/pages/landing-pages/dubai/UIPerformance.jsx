@@ -12,6 +12,8 @@ import AboutImg from "@/assets/images/landing/AboutImg.png";
 import AboutSection from "@/components/ui/LandingPage/AboutSection";
 import WhatWeProvide from "@/components/ui/LandingPage/WhatWeProvide";
 import ContactSection from "@/components/ui/LandingPage/ContactSection";
+import ResultSection from '@/components/ui/LandingPage/ResultSection'
+import ToolsAndPlatform from '@/components/ui/LandingPage/ToolsAndPlatform'
 
 
 export const UIPerformance = () => {
