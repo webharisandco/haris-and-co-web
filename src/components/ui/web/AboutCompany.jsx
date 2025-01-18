@@ -1,6 +1,6 @@
 import React from "react";
 
-function AboutCompany() {
+function AboutCompany({seoHeading,seoDescription}) {
   const webDevelopmentServices = [
     {
       title: "Dedicated Project Manager",
@@ -130,18 +130,13 @@ function AboutCompany() {
     <div className="bg-white mb-[70px] md:mb-[72px] mt-[14px] md:my-[114px] px-[18px] md:px-[100px]">
       <div className="flex flex-col gap-[13px] md:gap-[36px]">
         <p className="text-black text-[16px] md:text-[36px]">
-          Web Design and Development Services in Dubai Focused on Conversion
+         {!seoHeading ? "Web Design and Development Services in Dubai Focused on Conversion": seoHeading} 
         </p>
-        <p className="text-black md:text-[20px] text-[11px]">
-          Haris&Co. has been serving web development services in Dubai for the
-          last 5 years, empowering 80+ brands. Whenever a client approaches, we
-          keep the conversion aspect of a website on top of our mind because we
-          believe that a website isn’t just a showcase, it should act as a shop
-          for a business. This is why we have conversion rate optimisers on the
-          team to ensure that website visitors turn into customers. This doesn’t
-          mean we disregard other aspects such as aesthetics, content and
-          technicalities. 
-        </p>
+        <p className="text-black text-[11px] md:text-[20px] leading-relaxed">
+  {!seoDescription
+    ? `Haris&Co. has been serving web development services in Dubai for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content, and technicalities.`
+    : seoDescription}
+</p>
 
         <div className=" gap-[13px] mt-[31px] md:mt-[52px]">
           <p className="text-black text-[16px] md:text-[36px]">

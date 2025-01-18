@@ -72,6 +72,14 @@ export default function UIWeb() {
       image: webBrand6,
     },
   ];
+  const bannerHeading = "Get a Website That Gets You More Leads & Sales";
+  const bannerDescription =
+    "Delivering websites that are fast, secure, engaging and user-friendly. Wanna know the best part? Our conversion optimization makes navigation easier for your visitors from the 1st click to the final conversion.";
+  const aboutHeading =
+    "A Web Development Company in Dubai Trusted by 80+ Brands";
+  const aboutDescription =
+    "As a web design and development company in Dubai, we believe your website must be an all-rounder – one that’s fast, user-friendly, secure, engaging and optimised to turn visitors into customers. That’s what you can expect when you partner with us for website development. Whether you are a startup, a large business or an ecommerce brand, we can deliver a website that meets your expectations. To ensure maximum quality, we have experts in each department be it UI/UX design, development, content or conversion optimization. Also, you’ll have a dedicated project manager to keep you updated on the project.";
+  const tagline = "Conversion-focused Website Development Company in Dubai";
 
   const faqList = [
     {
@@ -132,14 +140,7 @@ export default function UIWeb() {
         "We recommend Shopify as the ideal eCommerce platform due to its user-friendly interface that allows for quick setup without technical expertise, robust features including inventory management and payment processing, and excellent mobile responsiveness. It’s also scalable and offers an extensive app ecosystem for added functionality. Furthermore, it has strong security measures and 24/7 customer support.",
     },
   ];
-  const bannerHeading = "Get a Website That Gets You More Leads & Sales";
-  const bannerDescription =
-    "Delivering websites that are fast, secure, engaging and user-friendly. Wanna know the best part? Our conversion optimization makes navigation easier for your visitors from the 1st click to the final conversion.";
-  const aboutHeading =
-    "A Web Development Company in Dubai Trusted by 80+ Brands";
-  const aboutDescription =
-    "As a web design and development company in Dubai, we believe your website must be an all-rounder – one that’s fast, user-friendly, secure, engaging and optimised to turn visitors into customers. That’s what you can expect when you partner with us for website development. Whether you are a startup, a large business or an ecommerce brand, we can deliver a website that meets your expectations. To ensure maximum quality, we have experts in each department be it UI/UX design, development, content or conversion optimization. Also, you’ll have a dedicated project manager to keep you updated on the project.";
-  const tagline = "Conversion-focused Website Development Company in Dubai";
+
 
   const clientsMetrix = [
     {
@@ -155,6 +156,8 @@ export default function UIWeb() {
       heading: "Industries Served",
     },
   ];
+  const seoHeading ='Web Design and Development Services in Dubai Focused on Conversion'
+  const seoDescription ='Haris&Co. has been serving web development services in Dubai for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content, and technicalities.'
 
   return (
     <>
@@ -201,7 +204,7 @@ export default function UIWeb() {
         </div>
       </div>
       <div className="bg-white">
-        <AboutCompany />
+        <AboutCompany seoHeading={seoHeading} seoDescription={seoDescription} />
       </div>
       <LandingFooter />
     </>
