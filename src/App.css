@@ -149,3 +149,19 @@ header {
 	  linear-gradient(to bottom, #ffffff0d 2px, transparent 2px);
 	background-size: 180px 180px;
   }
+  @keyframes scroll-loop {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  .animate-scroll {
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	grid-auto-flow: column;
+	animation: scroll-loop 10s linear infinite;
+	gap: 20px; 
+  } 

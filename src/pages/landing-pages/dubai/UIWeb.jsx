@@ -14,8 +14,67 @@ import ConsultBanner from "@/components/ui/LandingPage/ConsultBanner";
 import Testimonial from "@/components/ui/LandingPage/Testimonial";
 import { Faq } from "@/components/ui/LandingPage/Faq";
 import AboutCompany from "@/components/ui/web/AboutCompany";
+import webBrand1 from '@/assets/images/brandLogos/web/webBrands1.png'
+import webBrand2 from '@/assets/images/brandLogos/web/webBrands2.png'
+import webBrand3 from '@/assets/images/brandLogos/web/webBrands3.png'
+import webBrand4 from '@/assets/images/brandLogos/web/webBrands4.png'
+import webBrand5 from '@/assets/images/brandLogos/web/webBrands5.png'
+import webBrand6 from '@/assets/images/brandLogos/web/webBrands6.png'
+import webBrandSmall1 from '../../../assets/images/brandLogos/web/small/webBrandsSmall1.png'
+import webBrandSmall2 from '../../../assets/images/brandLogos/web/small/webBrandsSmall2.png'
+import webBrandSmall3 from '../../../assets/images/brandLogos/web/small/webBrandsSmall3.png'
+import webBrandSmall4 from '../../../assets/images/brandLogos/web/small/webBrandsSmall4.png'
+import webBrandSmall5 from '../../../assets/images/brandLogos/web/small/webBrandsSmall5.png'
+import webBrandSmall6 from '../../../assets/images/brandLogos/web/small/webBrandsSmall6.png'
+import webBrandSmall7 from '../../../assets/images/brandLogos/web/small/webBrandsSmall7.png'
+import webBrandSmall8 from '../../../assets/images/brandLogos/web/small/webBrandsSmall8.png'
+import webBrandSmall9 from '../../../assets/images/brandLogos/web/small/webBrandsSmall9.png'
+import webBrandSmall10 from '../../../assets/images/brandLogos/web/small/webBrandsSmall10.png'
+import webBrandSmall11 from '../../../assets/images/brandLogos/web/small/webBrandsSmall11.png'
+
 
 export default function UIWeb() {
+  const webBrandSmalls = [
+    { id: 1, image: webBrandSmall1 },
+    { id: 2, image: webBrandSmall2 },
+    { id: 3, image: webBrandSmall3 },
+    { id: 4, image: webBrandSmall4 },
+    { id: 5, image: webBrandSmall5 },
+    { id: 6, image: webBrandSmall6 },
+    { id: 7, image: webBrandSmall7 },
+    { id: 8, image: webBrandSmall8 },
+    { id: 9, image: webBrandSmall9 },
+    { id: 10, image: webBrandSmall10 },
+    { id: 11, image: webBrandSmall11 },
+  ];
+  const webBrands = [
+    {
+      id: 1,
+      image: webBrand1,
+    },
+    {
+      id: 2,
+      image: webBrand2,
+    },
+    {
+      id: 3,
+      image: webBrand3,
+    },
+    {
+      id: 4,
+      image: webBrand4,
+    },
+    {
+      id: 5,
+      image: webBrand5,
+    },
+    {
+      id: 6,
+      image: webBrand6,
+    },
+  ];
+  
+
   const faqList = [
     {
       question: "Within how many days you can deliver the project?",
@@ -78,6 +137,8 @@ export default function UIWeb() {
   const aboutDescription =
     "As a web design and development company in Dubai, we believe your website must be an all-rounder – one that’s fast, user-friendly, secure, engaging and optimised to turn visitors into customers. That’s what you can expect when you partner with us for website development. Whether you are a startup, a large business or an ecommerce brand, we can deliver a website that meets your expectations. To ensure maximum quality, we have experts in each department be it UI/UX design, development, content or conversion optimization. Also, you’ll have a dedicated project manager to keep you updated on the project.";
   const tagline = "Conversion-focused Website Development Company in Dubai";
+
+
   return (
     <>
    
@@ -89,7 +150,7 @@ export default function UIWeb() {
         description={bannerDescription}
         tagline={tagline}
       />
-      <BrandPartnerSection />
+      <BrandPartnerSection text={'Brands we’ve powered with our web solutions.'} barandLogos={webBrands} brandLogosSmall={webBrandSmalls} />
 
       <div className="px-[18px] md:px-0 lg:pr-[100px]">
         <AboutSection
