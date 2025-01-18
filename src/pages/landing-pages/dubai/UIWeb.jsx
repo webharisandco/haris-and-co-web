@@ -14,24 +14,23 @@ import ConsultBanner from "@/components/ui/LandingPage/ConsultBanner";
 import Testimonial from "@/components/ui/LandingPage/Testimonial";
 import { Faq } from "@/components/ui/LandingPage/Faq";
 import AboutCompany from "@/components/ui/web/AboutCompany";
-import webBrand1 from '@/assets/images/brandLogos/web/webBrands1.png'
-import webBrand2 from '@/assets/images/brandLogos/web/webBrands2.png'
-import webBrand3 from '@/assets/images/brandLogos/web/webBrands3.png'
-import webBrand4 from '@/assets/images/brandLogos/web/webBrands4.png'
-import webBrand5 from '@/assets/images/brandLogos/web/webBrands5.png'
-import webBrand6 from '@/assets/images/brandLogos/web/webBrands6.png'
-import webBrandSmall1 from '../../../assets/images/brandLogos/web/small/webBrandsSmall1.png'
-import webBrandSmall2 from '../../../assets/images/brandLogos/web/small/webBrandsSmall2.png'
-import webBrandSmall3 from '../../../assets/images/brandLogos/web/small/webBrandsSmall3.png'
-import webBrandSmall4 from '../../../assets/images/brandLogos/web/small/webBrandsSmall4.png'
-import webBrandSmall5 from '../../../assets/images/brandLogos/web/small/webBrandsSmall5.png'
-import webBrandSmall6 from '../../../assets/images/brandLogos/web/small/webBrandsSmall6.png'
-import webBrandSmall7 from '../../../assets/images/brandLogos/web/small/webBrandsSmall7.png'
-import webBrandSmall8 from '../../../assets/images/brandLogos/web/small/webBrandsSmall8.png'
-import webBrandSmall9 from '../../../assets/images/brandLogos/web/small/webBrandsSmall9.png'
-import webBrandSmall10 from '../../../assets/images/brandLogos/web/small/webBrandsSmall10.png'
-import webBrandSmall11 from '../../../assets/images/brandLogos/web/small/webBrandsSmall11.png'
-
+import webBrand1 from "@/assets/images/brandLogos/web/webBrands1.png";
+import webBrand2 from "@/assets/images/brandLogos/web/webBrands2.png";
+import webBrand3 from "@/assets/images/brandLogos/web/webBrands3.png";
+import webBrand4 from "@/assets/images/brandLogos/web/webBrands4.png";
+import webBrand5 from "@/assets/images/brandLogos/web/webBrands5.png";
+import webBrand6 from "@/assets/images/brandLogos/web/webBrands6.png";
+import webBrandSmall1 from "../../../assets/images/brandLogos/web/small/webBrandsSmall1.png";
+import webBrandSmall2 from "../../../assets/images/brandLogos/web/small/webBrandsSmall2.png";
+import webBrandSmall3 from "../../../assets/images/brandLogos/web/small/webBrandsSmall3.png";
+import webBrandSmall4 from "../../../assets/images/brandLogos/web/small/webBrandsSmall4.png";
+import webBrandSmall5 from "../../../assets/images/brandLogos/web/small/webBrandsSmall5.png";
+import webBrandSmall6 from "../../../assets/images/brandLogos/web/small/webBrandsSmall6.png";
+import webBrandSmall7 from "../../../assets/images/brandLogos/web/small/webBrandsSmall7.png";
+import webBrandSmall8 from "../../../assets/images/brandLogos/web/small/webBrandsSmall8.png";
+import webBrandSmall9 from "../../../assets/images/brandLogos/web/small/webBrandsSmall9.png";
+import webBrandSmall10 from "../../../assets/images/brandLogos/web/small/webBrandsSmall10.png";
+import webBrandSmall11 from "../../../assets/images/brandLogos/web/small/webBrandsSmall11.png";
 
 export default function UIWeb() {
   const webBrandSmalls = [
@@ -73,60 +72,64 @@ export default function UIWeb() {
       image: webBrand6,
     },
   ];
-  
 
   const faqList = [
     {
+      question: "Do you provide website maintenance?",
+      answer:
+        "Yes, we provide ongoing support to keep your website high-performing and secure. We are always just a call away.",
+    },
+    {
       question: "Within how many days you can deliver the project?",
       answer:
-        "The project delivery time depends on its complexity and requirements. As a web development agency, we aim to deliver projects efficiently while maintaining quality. We'll provide an estimated timeline after understanding your needs.",
+        "Usually, we deliver the project within 45 days if approvals are given on time. However, this may vary depending on the size and complexity of your website. We could give an estimated timeline after the brand understanding meeting and input collection.",
     },
     {
       question:
         "As a web design & development agency in Dubai, do you help with revamping a website?",
       answer:
-        "Yes, we specialize in revamping websites to align with modern design trends, improve user experience, and ensure better functionality tailored to your business needs.",
+        "Yes, sure. In fact, we have helped various top brands such as Walkaroo, Katara Limousine, Teens, and more to revamp their existing website. So, if you want a new look for your current website, feel free to contact us.",
     },
     {
       question: "Can I update the website myself once it’s built?",
       answer:
-        "Absolutely! We build user-friendly websites with content management systems like WordPress or custom solutions that allow you to update content easily without needing technical expertise.",
+        "Sure. If you want to make any edits or updates, feel free to reach out to us. We will help you.",
     },
     {
       question: "Will my website be SEO-friendly?",
       answer:
-        "Yes, we ensure all websites we build follow SEO best practices, including fast loading times, mobile responsiveness, and proper structuring, to enhance search engine visibility.",
+        "Yes. We carry out practices such as mobile optimization, internal linking, image optimization, and more to ensure mobile-friendliness.",
     },
     {
       question: "What platforms do you use for web development?",
       answer:
-        "We use a variety of platforms such as WordPress, Shopify, and custom frameworks like React and Node.js, depending on your project requirements and goals.",
+        "We use WordPress or custom development (React JS or HTML) for developing normal websites. For eCommerce businesses, we opt for Shopify.",
     },
     {
       question: "How do you ensure website security?",
       answer:
-        "We prioritize security by implementing SSL certificates, firewalls, regular updates, and secure coding practices to protect your website from potential vulnerabilities.",
+        "One way we do this is by securing an SSL certificate for your website. Secondly, we use tools like Wordfence to enhance security.",
     },
     {
       question: "Can you integrate third-party tools into my website?",
       answer:
-        "Yes, we can integrate third-party tools such as payment gateways, CRMs, analytics platforms, and more to enhance your website's functionality and performance.",
+        "Yes. If you want any tools to be integrated, please let us know. We will get it done.",
     },
     {
       question: "Do you provide content for my website?",
       answer:
-        "Yes, we offer content creation services, including copywriting and graphic design, to ensure your website communicates effectively with your audience.",
+        "Of course. We have Content Writers who specifically work in the Web development team. All you have to do is provide the input and we’ll prepare the content.",
     },
     {
       question:
         "Is it necessary to have a face-to-face discussion before the start of the project?",
       answer:
-        "While face-to-face discussions are not mandatory, we are open to virtual meetings or calls to discuss project requirements and ensure clear communication.",
+        "No need for that. We usually connect with our clients via Google Meet. If you prefer a face-to-face interview, we could do that as well.",
     },
     {
       question: "What platform do you suggest for Ecommerce?",
       answer:
-        "We recommend platforms like Shopify or WooCommerce for small to medium businesses and custom solutions for larger enterprises, depending on your specific needs and scalability requirements.",
+        "We recommend Shopify as the ideal eCommerce platform due to its user-friendly interface that allows for quick setup without technical expertise, robust features including inventory management and payment processing, and excellent mobile responsiveness. It’s also scalable and offers an extensive app ecosystem for added functionality. Furthermore, it has strong security measures and 24/7 customer support.",
     },
   ];
   const bannerHeading = "Get a Website That Gets You More Leads & Sales";
@@ -138,48 +141,69 @@ export default function UIWeb() {
     "As a web design and development company in Dubai, we believe your website must be an all-rounder – one that’s fast, user-friendly, secure, engaging and optimised to turn visitors into customers. That’s what you can expect when you partner with us for website development. Whether you are a startup, a large business or an ecommerce brand, we can deliver a website that meets your expectations. To ensure maximum quality, we have experts in each department be it UI/UX design, development, content or conversion optimization. Also, you’ll have a dedicated project manager to keep you updated on the project.";
   const tagline = "Conversion-focused Website Development Company in Dubai";
 
+  const clientsMetrix = [
+    {
+      number: "80+",
+      heading: "Clients Served",
+    },
+    {
+      number: "10+",
+      heading: "Members in the Team",
+    },
+    {
+      number: "15+",
+      heading: "Industries Served",
+    },
+  ];
 
   return (
     <>
-   
-    <div className="bg-black">
-      <LandingHeader />
-      <Banner
-        bannerImage={BannerImages}
-        heading={bannerHeading}
-        description={bannerDescription}
-        tagline={tagline}
-      />
-      <BrandPartnerSection text={'Brands we’ve powered with our web solutions.'} barandLogos={webBrands} brandLogosSmall={webBrandSmalls} />
-
-      <div className="px-[18px] md:px-0 lg:pr-[100px]">
-        <AboutSection
-          bannerImage={Banner2}
-          heading={aboutHeading}
-          description={aboutDescription}
+      <div className="bg-black">
+        <LandingHeader />
+        <Banner
+          bannerImage={BannerImages}
+          heading={bannerHeading}
+          description={bannerDescription}
+          tagline={tagline}
         />
-      </div>
-      <OurLatestWorks />
+        <BrandPartnerSection
+          text={"Brands we’ve powered with our web solutions."}
+          barandLogos={webBrands}
+          brandLogosSmall={webBrandSmalls}
+        />
 
-      <WhatWeProvide />
+        <div className="px-[18px] md:px-0 lg:pr-[100px]">
+          <AboutSection
+            bannerImage={Banner2}
+            heading={aboutHeading}
+            description={aboutDescription}
+            datas={clientsMetrix}
+          />
+        </div>
+        <OurLatestWorks
+          text={
+            "These are a few of the many websites we have developed thus far. This portfolio includes projects ranging from dynamic e-commerce platforms to engaging corporate websites that adhere to the respective brand guidelines and drive results in various industries."
+          }
+        />
 
-      <div className="bg-white">
-        <ConsultBanner/>
-        <CaseStudy />
-        <Testimonial/>
-      </div>
-      <div className="">
-        <ContactSection />
+        <WhatWeProvide />
+
+        <div className="bg-white">
+          <ConsultBanner />
+          <CaseStudy />
+          <Testimonial />
         </div>
-      <div className="bg-white">
-        <Faq faqList={faqList} />
-        </div>
+        <div className="">
+          <ContactSection />
         </div>
         <div className="bg-white">
-
-        <AboutCompany/>
+          <Faq faqList={faqList} />
         </div>
+      </div>
+      <div className="bg-white">
+        <AboutCompany />
+      </div>
       <LandingFooter />
-      </>
+    </>
   );
-};
+}

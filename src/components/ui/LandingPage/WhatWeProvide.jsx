@@ -23,7 +23,7 @@ import RevenueIcon from "@/assets/images/landing/whatsIncluded/revenueIcon.png";
 import { ArrowUpRight } from "lucide-react";
 // import Grid from "../../../assets/images/web/images/grid.svg"
 
-function WhatWeProvide({performance = false}) {
+function WhatWeProvide({ performance = false }) {
   const [currentTitle, setCurrentTitle] = useState(0);
   const webServicesArray = [
     {
@@ -36,35 +36,35 @@ function WhatWeProvide({performance = false}) {
     {
       title: "Ecommerce Development",
       description:
-        "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
+        "We create Shopify-based online stores that sell. From secure payment systems to smooth checkout flows, we engineer every aspect to maximize sales and simplify store management.",
       icon: EcomIcon,
       img: EcomBig,
     },
     {
       title: "Custom Web Development",
       description:
-        "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
+        "We develop websites from the ground up, tailoring every feature and function to your business requirements. No templates, no limitations – just pure customization.",
       icon: DevIcon,
       img: CustomeWebBig,
     },
     {
       title: "UI/UX Design",
       description:
-        "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
+        "We craft intuitive user experiences and stunning interfaces that guide visitors naturally through your website, making every interaction count. This is by default included in each service.",
       icon: UiUxIcon,
       img: UiUxBig,
     },
     {
       title: "Content Writing",
       description:
-        "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
+        "We write compelling content that speaks to your audience, tells your story, and drives action. Every word is optimized for both users and search engines.",
       icon: ContentWritingIcon,
       img: ContentBig,
     },
     {
       title: "Conversion Rate Optimization",
       description:
-        "We build powerful WordPress websites that grow with your business. Our team customizes every feature, plugin, and function to match your unique needs while keeping management simple.",
+        "We optimize every page element strategically to turn more visitors into customers, using data-driven insights and proven conversion tactics. This is actually included in each service.",
       icon: ConversionIcon,
       img: ConversionBig,
     },
@@ -101,7 +101,9 @@ function WhatWeProvide({performance = false}) {
     },
   ];
 
-  const servicesArray = performance ? performanceServicesArray : webServicesArray
+  const servicesArray = performance
+    ? performanceServicesArray
+    : webServicesArray;
 
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef(null);
@@ -148,7 +150,11 @@ function WhatWeProvide({performance = false}) {
             What We Provide
           </p>
           {/* <img className="h-[18px] md:h-[55px] text-[#16BD88]" src={DownArrow} alt="" /> */}
-          <ArrowUpRight size={80} color={performance? "#16BD88" : "#7744D5"} className="rotate-180"/>
+          <ArrowUpRight
+            size={80}
+            color={performance ? "#16BD88" : "#7744D5"}
+            className="rotate-180"
+          />
         </div>
         <div className="w-full  flex flex-row items-center justify-between  mt-[65px] md:pr-[70px]">
           <div className="relative md:w-[65%] w-full md:overflow-visible">
@@ -196,10 +202,11 @@ function WhatWeProvide({performance = false}) {
                 <div
                   key={index}
                   onClick={() => scrollToSection(index)}
-                  className={`cursor-pointer w-[8px] h-[8px] rounded-full transition-all duration-300 ${activeIndex === index
-                    ? "w-[12px] h-[12px] bg-white"
-                    : "bg-white opacity-50"
-                    }`}
+                  className={`cursor-pointer w-[8px] h-[8px] rounded-full transition-all duration-300 ${
+                    activeIndex === index
+                      ? "w-[12px] h-[12px] bg-white"
+                      : "bg-white opacity-50"
+                  }`}
                 ></div>
               ))}
             </div>
@@ -220,7 +227,12 @@ function WhatWeProvide({performance = false}) {
             ) : (
               <img src={Banner} alt="" />
             )} */}
-            {servicesArray[currentTitle].img && <img src={servicesArray[currentTitle].img} alt={servicesArray[currentTitle].title} />} 
+            {servicesArray[currentTitle].img && (
+              <img
+                src={servicesArray[currentTitle].img}
+                alt={servicesArray[currentTitle].title}
+              />
+            )}
           </div>
         </div>
       </div>

@@ -86,36 +86,44 @@ function AboutCompany() {
   const websiteProcess = [
     {
       title: "Brand Understanding",
-      description: "We start by deeply understanding your brand story, values, and goals to ensure your website truly reflects your business identity. Normally, we connect on Google Meet where our whole team will be present in the meeting."
+      description:
+        "We start by deeply understanding your brand story, values, and goals to ensure your website truly reflects your business identity. Normally, we connect on Google Meet where our whole team will be present in the meeting.",
     },
     {
       title: "Collecting Requirements",
-      description: "We analyse your needs, from technical specifications to business objectives, helping us create a strategic roadmap for your website."
+      description:
+        "We analyse your needs, from technical specifications to business objectives, helping us create a strategic roadmap for your website.",
     },
     {
       title: "Wireframing",
-      description: "Next, our team creates the blueprint of your website with clear user journeys and information architecture that guides visitors toward conversion."
+      description:
+        "Next, our team creates the blueprint of your website with clear user journeys and information architecture that guides visitors toward conversion.",
     },
     {
       title: "UI/UX Design",
-      description: "Our UI/UX designer transforms wireframes into visually stunning, user-friendly designs that engage your audience and strengthen your brand presence."
+      description:
+        "Our UI/UX designer transforms wireframes into visually stunning, user-friendly designs that engage your audience and strengthen your brand presence.",
     },
     {
       title: "Content Writing",
-      description: "Our writer crafts compelling content that speaks to your audience and drives action while maintaining your brand voice."
+      description:
+        "Our writer crafts compelling content that speaks to your audience and drives action while maintaining your brand voice.",
     },
     {
       title: "Website Development",
-      description: "The foundation is now ready. We now build your website with clean, efficient code and advanced functionality that ensures speed, security, and seamless performance."
+      description:
+        "The foundation is now ready. We now build your website with clean, efficient code and advanced functionality that ensures speed, security, and seamless performance.",
     },
     {
       title: "Website Delivery",
-      description: "Once we test thoroughly, we launch your website upon your approval."
+      description:
+        "Once we test thoroughly, we launch your website upon your approval.",
     },
     {
       title: "Ongoing Support/Maintenance",
-      description: "We don’t stop there! After the delivery, we provide technical support to ensure your website stays smooth and continues to evolve with your business needs."
-    }
+      description:
+        "We don’t stop there! After the delivery, we provide technical support to ensure your website stays smooth and continues to evolve with your business needs.",
+    },
   ];
 
   return (
@@ -137,7 +145,7 @@ function AboutCompany() {
 
         <div className=" gap-[13px] mt-[31px] md:mt-[52px]">
           <p className="text-black text-[16px] md:text-[36px]">
-            Web Design and Development Services in Dubai Focused on Conversion
+            Why You Should Choose Us As Your Web Development Company in Dubai
           </p>
           {webDevelopmentServices.map((service) => (
             <div className="mt-[23px] md:mt-[60px] flex-col gap-[13px] md:gap-[25px]">
@@ -176,7 +184,7 @@ function AboutCompany() {
 
         <div className=" gap-[13px] mt-[31px] md:mt-[52px]">
           <p className="text-black text-[16px] md:text-[36px]">
-          How Our Web Development In Dubai Works
+            How Our Web Development In Dubai Works
           </p>
           {websiteProcess.map((service) => (
             <div className="mt-[23px] md:mt-[60px] flex-col gap-[13px] md:gap-[25px]">

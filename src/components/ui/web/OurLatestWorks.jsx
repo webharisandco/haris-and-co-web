@@ -6,7 +6,7 @@ import Nuts from "@/assets/images/web/images/nuts.png";
 import ButtonIcon from "@/assets/images/web/icons/buttonRightArrow.svg";
 import LandingButton from "../common/LandingButton";
 
-function OurLatestWorks() {
+function OurLatestWorks({text}) {
   return (
     <div className=" mt-[75px] md:mt-[130px] px-[18px] md:px-[100px]">
       <div className="flex justify-center md:justify-start  md:items-start">
@@ -60,10 +60,7 @@ function OurLatestWorks() {
 <div className=" mt-[66px] md:mt-[111px] flex flex-col md:flex-row gap-[30px] justify-between w-full">
         <div className="md:w-9/12">
           <p className=" text-[16px] md:ext-[20px] text-white">
-            These are a few of the many websites we have developed thus far.
-            This portfolio includes projects ranging from dynamic e-commerce
-            platforms to engaging corporate websites that adhere to the
-            respective brand guidelines and drive results in various industries.
+          {text}
           </p>
         </div>
         <div className="md:w-3/12 flex justify-start md:justify-end">
