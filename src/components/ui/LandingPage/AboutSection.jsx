@@ -2,11 +2,11 @@ import React from "react";
 
 function AboutSection({ bannerImage, heading, description, performance = false }) {
     return (
-      <div className="flex  gap-[100px] justify-between items-center mt-[60px] md:mt-[92px]">
+      <div className="flex  gap-[100px] justify-center lg:justify-between items-center mt-[60px] md:mt-[92px]">
         {!performance ?
           (
             <>
-              <div className=" hidden md:block md:w-4/12">
+              <div className=" hidden lg:block md:w-4/12">
                 <img className="w-full h-full " src={bannerImage} alt="" />
               </div>
               <div className="flex flex-col gap-[20px] md:w-8/12">

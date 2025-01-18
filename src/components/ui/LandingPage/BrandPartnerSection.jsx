@@ -20,7 +20,7 @@ function BrandPartnerSection() {
     <div className="mt-[57px] md:mt-[147px] flex flex-col-reverse md:flex-col px-[18px]  md:px-[100px]">
       <div className="flex flex-col   md:gap-[50px] md:border-t md:rounded-l-[46px] md:rounded-r-[46px] rounded-b-none border-b-0 md:border-l md:border-r md:border-white border-opacity-50  md:pt-[40px]  md:pb-[100px] md:mb-0">
         <div className="  md:px-[35px]">
-          <div className=" hidden md:flex md:justify-between md:items-center md:gap-[40px]">
+          <div className=" hidden md:flex md:justify-between flex-wrap md:items-center md:gap-[40px]">
             <img className="w-[120px] h-full" src={popees} alt="Popees logo" />
             <img className="w-[120px] h-full" src={katara} alt="Katara logo" />
             <img className="w-[120px] h-full" src={amana} alt="Amana logo" />
@@ -42,7 +42,7 @@ function BrandPartnerSection() {
           </div>
         </div>
         <div className="  md:px-[35px]">
-          <div className=" hidden md:flex md:justify-between md:items-center md:gap-[40px]">
+          <div className=" hidden md:flex flex-wrap md:justify-between md:items-center md:gap-[40px]">
             <img
               className="w-[120px] h-full"
               src={westbrook}

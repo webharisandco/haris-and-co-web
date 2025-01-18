@@ -70,8 +70,8 @@ export default function UIWeb() {
         "We recommend platforms like Shopify or WooCommerce for small to medium businesses and custom solutions for larger enterprises, depending on your specific needs and scalability requirements.",
     },
   ];
-  const heading = "Get a Website That Gets You More Leads & Sales";
-  const description =
+  const bannerHeading = "Get a Website That Gets You More Leads & Sales";
+  const bannerDescription =
     "Delivering websites that are fast, secure, engaging and user-friendly. Wanna know the best part? Our conversion optimization makes navigation easier for your visitors from the 1st click to the final conversion.";
   const aboutHeading =
     "A Web Development Company in Dubai Trusted by 80+ Brands";
@@ -85,13 +85,13 @@ export default function UIWeb() {
       <LandingHeader />
       <Banner
         bannerImage={BannerImages}
-        heading={heading}
-        description={description}
+        heading={bannerHeading}
+        description={bannerDescription}
         tagline={tagline}
       />
       <BrandPartnerSection />
 
-      <div className="px-[18px] md:px-0 md:pr-[100px]">
+      <div className="px-[18px] md:px-0 lg:pr-[100px]">
         <AboutSection
           bannerImage={Banner2}
           heading={aboutHeading}
