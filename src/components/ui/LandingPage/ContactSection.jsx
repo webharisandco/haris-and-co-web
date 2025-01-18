@@ -103,7 +103,7 @@ function ContactSection() {
           </div>
         </div>
 
-        <div className="w-auto block md:hidden  ">
+        <div className="w-auto block lg:hidden  ">
         <div className="bg-[#7744D5] relative  z-30 py-[40px] px-[23px] rounded-3xl text-white max-w-auto  mx-auto">
           <p className="text-[30px] font-medium mb-[10px]">Get a Callback</p>
 
@@ -214,7 +214,7 @@ function ContactSection() {
       </div>
 
       </div>
-      <div className="w-auto hidden md:block  md:absolute top-[128px] right-[115px]">
+      <div className="w-auto hidden lg:block  md:absolute top-[128px] right-[115px]">
         <div className="bg-[#7744D5] relative  z-30 p-6 md:px-[54px] py-[66px] rounded-3xl text-white max-w-auto  mx-auto">
           <p className="text-[30px] font-medium mb-6">Get a Callback</p>
 

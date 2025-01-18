@@ -33,67 +33,67 @@ import webBrandSmall10 from "../../../assets/images/brandLogos/web/small/webBran
 import webBrandSmall11 from "../../../assets/images/brandLogos/web/small/webBrandsSmall11.png";
 
 export default function UIWeb() {
-   const webBrandSmalls = [
-        { id: 1, image: webBrandSmall1 },
-        { id: 2, image: webBrandSmall2 },
-        { id: 3, image: webBrandSmall3 },
-        { id: 4, image: webBrandSmall4 },
-        { id: 5, image: webBrandSmall5 },
-        { id: 6, image: webBrandSmall6 },
-        { id: 7, image: webBrandSmall7 },
-        { id: 8, image: webBrandSmall8 },
-        { id: 9, image: webBrandSmall9 },
-        { id: 10, image: webBrandSmall10 },
-        { id: 11, image: webBrandSmall11 },
-      ];
-      const webBrands = [
-        {
-          id: 1,
-          image: webBrand1,
-        },
-        {
-          id: 2,
-          image: webBrand2,
-        },
-        {
-          id: 3,
-          image: webBrand3,
-        },
-        {
-          id: 4,
-          image: webBrand4,
-        },
-        {
-          id: 5,
-          image: webBrand5,
-        },
-        {
-          id: 6,
-          image: webBrand6,
-        },
-      ];
+  const webBrandSmalls = [
+    { id: 1, image: webBrandSmall1 },
+    { id: 2, image: webBrandSmall2 },
+    { id: 3, image: webBrandSmall3 },
+    { id: 4, image: webBrandSmall4 },
+    { id: 5, image: webBrandSmall5 },
+    { id: 6, image: webBrandSmall6 },
+    { id: 7, image: webBrandSmall7 },
+    { id: 8, image: webBrandSmall8 },
+    { id: 9, image: webBrandSmall9 },
+    { id: 10, image: webBrandSmall10 },
+    { id: 11, image: webBrandSmall11 },
+  ];
+  const webBrands = [
+    {
+      id: 1,
+      image: webBrand1,
+    },
+    {
+      id: 2,
+      image: webBrand2,
+    },
+    {
+      id: 3,
+      image: webBrand3,
+    },
+    {
+      id: 4,
+      image: webBrand4,
+    },
+    {
+      id: 5,
+      image: webBrand5,
+    },
+    {
+      id: 6,
+      image: webBrand6,
+    },
+  ];
   const tagline = "Conversion-focused Website Development Company in Abu Dhabi";
   const heading = "Get a Website That Gets You More Leads & Sales";
   const description =
     "Delivering websites that are fast, secure, engaging and user-friendly. Wanna know the best part? Our conversion optimization makes navigation easier for your visitors from the 1st click to the final conversion.";
-    const aboutHeading =
+  const aboutHeading =
     "A Web Development Company in Abu Dhabi Trusted by 80+ Brands";
   const aboutDescription =
     "As a web design and development company in Abu Dhabi, we believe your website must be an all-rounder – one that’s fast, user-friendly, secure, engaging and optimised to turn visitors into customers. That’s what you can expect when you partner with us for website development. Whether you are a startup, a large business or an ecommerce brand, we can deliver a website that meets your expectations. To ensure maximum quality, we have experts in each department be it UI/UX design, development, content or conversion optimization. Also, you’ll have a dedicated project manager to keep you updated on the project.";
-    const clientsMetrix = [
-      {
-        number: "80+",
-        heading: "Clients Served",
-      },
-      {
-        number: "10+",
-        heading: "Members in the Team",
-      },
-      {
-        number: "15+",
-        heading: "Industries Served",
-      },
-    ];
+  const clientsMetrix = [
+    {
+      number: "80+",
+      heading: "Clients Served",
+    },
+    {
+      number: "10+",
+      heading: "Members in the Team",
+    },
+    {
+      number: "15+",
+      heading: "Industries Served",
+    },
+  ];
   const faqList = [
     {
       question: "Within how many days you can deliver the project?",
@@ -149,8 +149,8 @@ export default function UIWeb() {
     },
   ];
 
-  const seoHeading ="Web Development Company in Abu Dhabi Focused on Conversion"
-  const seoDescription="Haris&Co. has been serving web development services in Abu Dhabi for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content and technicalities."
+  const seoHeading = "Web Development Company in Abu Dhabi Focused on Conversion"
+  const seoDescription = "Haris&Co. has been serving web development services in Abu Dhabi for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content and technicalities."
   return (
     <>
       <div className="bg-black">
@@ -161,11 +161,11 @@ export default function UIWeb() {
           description={description}
           tagline={tagline}
         />
-            <BrandPartnerSection
-                 text={"Brands we’ve powered with our web solutions."}
-                 barandLogos={webBrands}
-                 brandLogosSmall={webBrandSmalls}
-               />
+        <BrandPartnerSection
+          text={"Brands we’ve powered with our web solutions."}
+          barandLogos={webBrands}
+          brandLogosSmall={webBrandSmalls}
+        />
 
         <div className="px-[18px] md:px-0 md:pr-[100px]">
           <AboutSection

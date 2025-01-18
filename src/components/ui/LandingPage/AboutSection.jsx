@@ -8,7 +8,7 @@ function AboutSection({
   datas,
 }) {
   return (
-    <div className="flex  gap-[100px] justify-center lg:justify-between items-center mt-[60px] md:mt-[92px]">
+    <div className="flex  gap-[100px] justify-center lg:justify-between items-center mt-[60px] md:mt-[92px] flex-col-reverse lg:flex-row">
       {!performance ? (
         <>
           <div className=" hidden lg:block md:w-4/12">
@@ -42,10 +42,10 @@ function AboutSection({
         </>
       ) : (
         <>
-          <div className="w-6/12">
+          <div className="lg:w-6/12">
             <img className="w-full h-full" src={bannerImage} alt="" />
           </div>
-          <div className="flex flex-col gap-[20px] w-6/12">
+          <div className="flex flex-col gap-[20px] lg:w-6/12">
             <div>
               {" "}
               <p className="text-[48px] leading-none text-white font-medium">

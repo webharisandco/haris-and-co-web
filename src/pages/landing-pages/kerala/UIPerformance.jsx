@@ -14,9 +14,102 @@ import WhatWeProvide from "@/components/ui/LandingPage/WhatWeProvide";
 import ContactSection from "@/components/ui/LandingPage/ContactSection";
 import ResultSection from '@/components/ui/LandingPage/ResultSection'
 import ToolsAndPlatform from '@/components/ui/LandingPage/ToolsAndPlatform'
-
+import perfomanceBrands1 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands1.png";
+import perfomanceBrands2 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands2.png";
+import perfomanceBrands3 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands3.png";
+import perfomanceBrands4 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands4.png";
+import perfomanceBrands5 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands5.png";
+import perfomanceBrands6 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands6.png";
+import perfomanceBrandsSmall1 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall1.png";
+import perfomanceBrandsSmall2 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall2.png";
+import perfomanceBrandsSmall3 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall3.png";
+import perfomanceBrandsSmall4 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall4.png";
+import perfomanceBrandsSmall5 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall5.png";
+import perfomanceBrandsSmall6 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall6.png";
+import perfomanceBrandsSmall7 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall7.png";
+import perfomanceBrandsSmall8 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall8.png";
+import perfomanceBrandsSmall9 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall9.png";
+import perfomanceBrandsSmall10 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall10.png";
+import perfomanceBrandsSmall11 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall11.png";
+import perfomanceBrandsSmall12 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall12.png";
 
 export default function UIPerformance() {
+  const perfomanceBrands = [
+    {
+      id: 1,
+      image: perfomanceBrands1,
+    },
+    {
+      id: 2,
+      image: perfomanceBrands2,
+    },
+    {
+      id: 3,
+      image: perfomanceBrands3,
+    },
+    {
+      id: 4,
+      image: perfomanceBrands4,
+    },
+    {
+      id: 5,
+      image: perfomanceBrands5,
+    },
+    {
+      id: 6,
+      image: perfomanceBrands6,
+    },
+  ];
+  const perfomanceBrandsSmall = [
+    {
+      id: 1,
+      image: perfomanceBrandsSmall1,
+    },
+    {
+      id: 2,
+      image: perfomanceBrandsSmall2,
+    },
+    {
+      id: 3,
+      image: perfomanceBrandsSmall3,
+    },
+    {
+      id: 4,
+      image: perfomanceBrandsSmall4,
+    },
+    {
+      id: 5,
+      image: perfomanceBrandsSmall5,
+    },
+    {
+      id: 6,
+      image: perfomanceBrandsSmall6,
+    },
+    {
+      id: 7,
+      image: perfomanceBrandsSmall7,
+    },
+    {
+      id: 8,
+      image: perfomanceBrandsSmall8,
+    },
+    {
+      id: 9,
+      image: perfomanceBrandsSmall9,
+    },
+    {
+      id: 10,
+      image: perfomanceBrandsSmall10,
+    },
+    {
+      id: 11,
+      image: perfomanceBrandsSmall11,
+    },
+    {
+      id: 12,
+      image: perfomanceBrandsSmall12,
+    },
+  ];
   const faqList = [{ question: 'What kind of businesses benefit from performance marketing?', answer: "Performance marketing is ideal for businesses of all sizes and industries looking for measurable, results-driven campaigns. Whether in e-commerce, B2B, services, or tech, performance marketing can help you drive traffic, generate leads, and increase sales.Working with a Performance Marketing Agency in Kerala  like Haris&Co. can help tailor campaigns to your specific goals, ensuring maximum ROI and efficiency across all digital channels." }, { question: 'What is the typical budget for a performance marketing campaign?', answer: "The budget for a performance marketing campaign depends on your goals, industry, and target audience. We work with businesses of all sizes and create customised plans that maximise your return on investment. Whether you have a small or large budget, we’ll optimise your campaigns to get the best results." }, { question: 'How do I get started with performance marketing?', answer: "Getting started is easy! Simply reach out to our team for a consultation. We'll discuss your goals, understand your target audience, and craft a tailored performance marketing strategy that fits your business needs and budget." }, { question: 'What makes Haris&Co’s performance marketing services different from others?', answer: "At Haris & Co's performance marketing agency in Kerala  like Haris&Co., we focus on data-driven results and continuous optimisation. We don’t just run ads - we strategically manage and fine-tune every aspect of your campaigns to ensure maximum ROI. Our approach is transparent, collaborative, and tailored to your business goals." }, { question: 'Can performance marketing work for both B2B and B2C companies?', answer: "Yes, performance marketing works for Business-to-Consumer (B2C) and Business-to-Business (B2B) companies. We tailor our campaigns and targeting strategies depending on your audience. Whether you need to drive sales, leads, or brand awareness, we have the tools and experience to deliver results for both B2B and B2C clients." },]
   const heading = "Get Better Leads & Higher Sales With Targeted Ads";
   const description =
@@ -37,7 +130,9 @@ export default function UIPerformance() {
           tagline={tagline}
           performance
         />
-        <BrandPartnerSection text={'Brands that have scaled with our Performance Marketing.'} />
+        <BrandPartnerSection text={'Brands that have scaled with our Performance Marketing.'}
+          brandLogosSmal={perfomanceBrandsSmall}
+          barandLogos={perfomanceBrands} />
       </div>
       <div className="px-[16px] md:px-[60px] lg:px-[100px]">
         <AboutSection
@@ -47,11 +142,11 @@ export default function UIPerformance() {
           performance
         />
       </div>
-      <WhatWeProvide performance/>
+      <WhatWeProvide performance />
       <ResultSection />
       <ToolsAndPlatform />
       <div className="bg-white py-[50px]">
-        <ConsultBanner performance/>
+        <ConsultBanner performance />
         <CaseStudy />
         <Testimonial />
       </div>

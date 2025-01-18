@@ -63,51 +63,51 @@ export default function UIPerformance() {
   const perfomanceBrandsSmall = [
     {
       id: 1,
-      imageSmall: perfomanceBrandsSmall1,
+      image: perfomanceBrandsSmall1,
     },
     {
       id: 2,
-      imageSmall: perfomanceBrandsSmall2,
+      image: perfomanceBrandsSmall2,
     },
     {
       id: 3,
-      imageSmall: perfomanceBrandsSmall3,
+      image: perfomanceBrandsSmall3,
     },
     {
       id: 4,
-      imageSmall: perfomanceBrandsSmall4,
+      image: perfomanceBrandsSmall4,
     },
     {
       id: 5,
-      imageSmall: perfomanceBrandsSmall5,
+      image: perfomanceBrandsSmall5,
     },
     {
       id: 6,
-      imageSmall: perfomanceBrandsSmall6,
+      image: perfomanceBrandsSmall6,
     },
     {
       id: 7,
-      imageSmall: perfomanceBrandsSmall7,
+      image: perfomanceBrandsSmall7,
     },
     {
       id: 8,
-      imageSmall: perfomanceBrandsSmall8,
+      image: perfomanceBrandsSmall8,
     },
     {
       id: 9,
-      imageSmall: perfomanceBrandsSmall9,
+      image: perfomanceBrandsSmall9,
     },
     {
       id: 10,
-      imageSmall: perfomanceBrandsSmall10,
+      image: perfomanceBrandsSmall10,
     },
     {
       id: 11,
-      imageSmall: perfomanceBrandsSmall11,
+      image: perfomanceBrandsSmall11,
     },
     {
       id: 12,
-      imageSmall: perfomanceBrandsSmall12,
+      image: perfomanceBrandsSmall12,
     },
   ];
   const faqList = [
@@ -159,7 +159,7 @@ export default function UIPerformance() {
           performance
         />
         <BrandPartnerSection
-        brandLogosSmal={perfomanceBrandsSmall}
+          brandLogosSmal={perfomanceBrandsSmall}
           barandLogos={perfomanceBrands}
           text={"Brands that have scaled with our Performance Marketing."}
         />
