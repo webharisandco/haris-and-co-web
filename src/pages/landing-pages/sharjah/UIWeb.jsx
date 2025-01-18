@@ -31,47 +31,48 @@ import webBrandSmall8 from "@/assets/images/brandLogos/web/small/webBrandsSmall8
 import webBrandSmall9 from "@/assets/images/brandLogos/web/small/webBrandsSmall9.png";
 import webBrandSmall10 from "@/assets/images/brandLogos/web/small/webBrandsSmall10.png";
 import webBrandSmall11 from "@/assets/images/brandLogos/web/small/webBrandsSmall11.png";
+import { Helmet } from "react-helmet";
 
 export default function UIWeb() {
   const webBrandSmalls = [
-      { id: 1, image: webBrandSmall1 },
-      { id: 2, image: webBrandSmall2 },
-      { id: 3, image: webBrandSmall3 },
-      { id: 4, image: webBrandSmall4 },
-      { id: 5, image: webBrandSmall5 },
-      { id: 6, image: webBrandSmall6 },
-      { id: 7, image: webBrandSmall7 },
-      { id: 8, image: webBrandSmall8 },
-      { id: 9, image: webBrandSmall9 },
-      { id: 10, image: webBrandSmall10 },
-      { id: 11, image: webBrandSmall11 },
-    ];
-    const webBrands = [
-      {
-        id: 1,
-        image: webBrand1,
-      },
-      {
-        id: 2,
-        image: webBrand2,
-      },
-      {
-        id: 3,
-        image: webBrand3,
-      },
-      {
-        id: 4,
-        image: webBrand4,
-      },
-      {
-        id: 5,
-        image: webBrand5,
-      },
-      {
-        id: 6,
-        image: webBrand6,
-      },
-    ];
+    { id: 1, image: webBrandSmall1 },
+    { id: 2, image: webBrandSmall2 },
+    { id: 3, image: webBrandSmall3 },
+    { id: 4, image: webBrandSmall4 },
+    { id: 5, image: webBrandSmall5 },
+    { id: 6, image: webBrandSmall6 },
+    { id: 7, image: webBrandSmall7 },
+    { id: 8, image: webBrandSmall8 },
+    { id: 9, image: webBrandSmall9 },
+    { id: 10, image: webBrandSmall10 },
+    { id: 11, image: webBrandSmall11 },
+  ];
+  const webBrands = [
+    {
+      id: 1,
+      image: webBrand1,
+    },
+    {
+      id: 2,
+      image: webBrand2,
+    },
+    {
+      id: 3,
+      image: webBrand3,
+    },
+    {
+      id: 4,
+      image: webBrand4,
+    },
+    {
+      id: 5,
+      image: webBrand5,
+    },
+    {
+      id: 6,
+      image: webBrand6,
+    },
+  ];
   const tagline = "Conversion-focused Website Development Company in Abu Dhabi";
   const heading = "Get a Website That Gets You More Leads & Sales";
   const description =
@@ -149,12 +150,20 @@ export default function UIWeb() {
     },
   ];
 
-  const seoHeading ='Web Development Company in Sharjah Focused on Conversion'
-  const seoDescription ='Haris&Co. has been serving web development services in Sharjah for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content and technicalities.'
+  const seoHeading = 'Web Development Company in Sharjah Focused on Conversion'
+  const seoDescription = 'Haris&Co. has been serving web development services in Sharjah for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content and technicalities.'
 
   return (
     <>
       <div className="bg-black">
+        <Helmet>
+
+          <title>Trusted Web Development Company in Sharjah</title>
+        </Helmet>
+        <meta name="description" content="We're a web development company in Sharjah that delivers fast, secure, engaging, user-friendly and conversion-optimized websites. " />
+        <link rel="canonical" href="https://harisand.co/ae/services/web-development-company-in-sharjah" />
+        <meta property="og:title" content="Trusted Web Development Company in Sharjah" />
+        <meta property="og:description" content="We're a web development company in Sharjah that delivers fast, secure, engaging, user-friendly and conversion-optimized websites. " />
         <LandingHeader />
         <Banner
           bannerImage={BannerImages}
@@ -163,10 +172,10 @@ export default function UIWeb() {
           tagline={tagline}
         />
         <BrandPartnerSection
-                text={"Brands we’ve powered with our web solutions."}
-                barandLogos={webBrands}
-                brandLogosSmall={webBrandSmalls}
-              />
+          text={"Brands we’ve powered with our web solutions."}
+          barandLogos={webBrands}
+          brandLogosSmall={webBrandSmalls}
+        />
 
         <div className="px-[18px] md:px-0 md:pr-[100px]">
           <AboutSection
@@ -193,7 +202,7 @@ export default function UIWeb() {
         </div>
       </div>
       <div className="bg-white">
-    <AboutCompany seoHeading={seoHeading} seoDescription={seoDescription} />
+        <AboutCompany seoHeading={seoHeading} seoDescription={seoDescription} />
       </div>
       <LandingFooter />
     </>

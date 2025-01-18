@@ -1,3 +1,5 @@
+'use server'
+
 import React from "react";
 import LandingHeader from "@/components/layout/landing/LandingHeader";
 import LandingFooter from "@/components/layout/landing/LandingFooter";
@@ -32,6 +34,7 @@ import perfomanceBrandsSmall9 from "../../../assets/images/brandLogos/perfomance
 import perfomanceBrandsSmall10 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall10.png";
 import perfomanceBrandsSmall11 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall11.png";
 import perfomanceBrandsSmall12 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall12.png";
+import { Helmet } from "react-helmet";
 
 export default function UIPerformance() {
   const perfomanceBrands = [
@@ -149,6 +152,13 @@ export default function UIPerformance() {
   const tagline = "Expert Performance Marketing Agency in Dubai";
   return (
     <div className="bg-black">
+      <Helmet>
+        <title>Expert Performance Marketing Agency in Dubai</title>
+      </Helmet>
+        <meta name="description" content="An award-winning performance marketing agency in Dubai that focuses on high-quality lead generation and boosting sales to the next level." data-rh='true'/>
+        <link rel="canonical" href="https://harisand.co/ae/services/performance-marketing-agency-in-dubai" />
+        <meta property="og:title" content="Expert Performance Marketing Agency in Dubai" />
+        <meta property="og:description" content="An award-winning performance marketing agency in Dubai that focuses on high-quality lead generation and boosting sales to the next level." />
       <LandingHeader />
       <div className="">
         <Banner
@@ -159,7 +169,7 @@ export default function UIPerformance() {
           performance
         />
         <BrandPartnerSection
-          brandLogosSmal={perfomanceBrandsSmall}
+          brandLogosSmall={perfomanceBrandsSmall}
           barandLogos={perfomanceBrands}
           text={"Brands that have scaled with our Performance Marketing."}
         />

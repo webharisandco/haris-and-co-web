@@ -31,6 +31,7 @@ import webBrandSmall8 from "../../../assets/images/brandLogos/web/small/webBrand
 import webBrandSmall9 from "../../../assets/images/brandLogos/web/small/webBrandsSmall9.png";
 import webBrandSmall10 from "../../../assets/images/brandLogos/web/small/webBrandsSmall10.png";
 import webBrandSmall11 from "../../../assets/images/brandLogos/web/small/webBrandsSmall11.png";
+import { Helmet } from "react-helmet";
 
 export default function UIWeb() {
   const webBrandSmalls = [
@@ -154,6 +155,14 @@ export default function UIWeb() {
   return (
     <>
       <div className="bg-black">
+        <Helmet>
+          
+          <title>Trusted Web Development Company in Abu Dhabi</title>
+        </Helmet>
+          <meta name="description" content="We're a web development company in Abu Dhabi that delivers fast, secure, engaging, user-friendly and conversion-optimized websites." />
+          <link rel="canonical" href="https://harisand.co/ae/services/web-development-company-in-abudhabi" />
+                    <meta property="og:title" content="Trusted Web Development Company in Abu Dhabi" />
+          <meta property="og:description" content="We're a web development company in Abu Dhabi that delivers fast, secure, engaging, user-friendly and conversion-optimized websites." />
         <LandingHeader />
         <Banner
           bannerImage={BannerImages}
