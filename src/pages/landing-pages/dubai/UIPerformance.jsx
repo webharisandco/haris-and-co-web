@@ -1,5 +1,3 @@
-'use server'
-
 import React from "react";
 import LandingHeader from "@/components/layout/landing/LandingHeader";
 import LandingFooter from "@/components/layout/landing/LandingFooter";
