@@ -10,7 +10,7 @@ const Testimonial = () => {
             <div className='shadow-[0px_0px_6.63px_6.63px_#1515150D] px-[16px] md:px-[80px] lg:px-[100px] py-[50px]  grid lg:grid-cols-[1fr_1.2fr] items-center gap-10 '>
                 <div className="">
                     <h6 className='font-[Abrobold] text-[30px] md:text-[40px]  lg:text-[45px]'>Client Reviews</h6>
-                    <p className='poppins-light text-base  lg:text-lg w-3/4 lg:w-1/2'>Here is what our clients have to say about our service</p>
+                    <p className='poppins-light text-base  lg:text-lg w-3/4 lg:w-1/2'>See why our clients love working with us</p>
                     <div className="flex gap-5 mt-5">
                         <img src={TestimonialIcon} className='w-[40px] lg:w-[53px]' alt='Testimonial Icon' />
                         <div className="flex flex-col">

@@ -16,7 +16,7 @@ import ResultSection from '@/components/ui/LandingPage/ResultSection'
 import ToolsAndPlatform from '@/components/ui/LandingPage/ToolsAndPlatform'
 
 
-export default function UIPerformance () {
+export default function UIPerformance() {
   const faqList = [{ question: 'What kind of businesses benefit from performance marketing?', answer: "Performance marketing is ideal for businesses of all sizes and industries looking for measurable, results-driven campaigns. Whether in e-commerce, B2B, services, or tech, performance marketing can help you drive traffic, generate leads, and increase sales.Working with a Performance Marketing Agency in Dubai like Haris&Co. can help tailor campaigns to your specific goals, ensuring maximum ROI and efficiency across all digital channels." }, { question: 'What is the typical budget for a performance marketing campaign?', answer: "The budget for a performance marketing campaign depends on your goals, industry, and target audience. We work with businesses of all sizes and create customised plans that maximise your return on investment. Whether you have a small or large budget, we’ll optimise your campaigns to get the best results." }, { question: 'How do I get started with performance marketing?', answer: "Getting started is easy! Simply reach out to our team for a consultation. We'll discuss your goals, understand your target audience, and craft a tailored performance marketing strategy that fits your business needs and budget." }, { question: 'What makes Haris&Co’s performance marketing services different from others?', answer: "At Haris & Co's performance marketing agency in Dubai like Haris&Co., we focus on data-driven results and continuous optimisation. We don’t just run ads - we strategically manage and fine-tune every aspect of your campaigns to ensure maximum ROI. Our approach is transparent, collaborative, and tailored to your business goals." }, { question: 'Can performance marketing work for both B2B and B2C companies?', answer: "Yes, performance marketing works for Business-to-Consumer (B2C) and Business-to-Business (B2B) companies. We tailor our campaigns and targeting strategies depending on your audience. Whether you need to drive sales, leads, or brand awareness, we have the tools and experience to deliver results for both B2B and B2C clients." },]
   const heading = "Get Better Leads & Higher Sales With Targeted Ads";
   const description =
@@ -29,7 +29,7 @@ export default function UIPerformance () {
   return (
     <div className='bg-black'>
       <LandingHeader />
-      <div className="px-[16px] md:px-[60px] lg:px-[100px]">
+      <div className="">
         <Banner
           bannerImage={BannerImg}
           heading={heading}
@@ -37,7 +37,7 @@ export default function UIPerformance () {
           tagline={tagline}
           performance
         />
-        <BrandPartnerSection text={'Brands that have scaled with our Performance Marketing.'}/>
+        <BrandPartnerSection text={'Brands that have scaled with our Performance Marketing.'} />
       </div>
       <div className="px-[16px] md:px-[60px] lg:px-[100px]">
         <AboutSection
@@ -46,12 +46,12 @@ export default function UIPerformance () {
           description={aboutDescription}
           performance
         />
-        <WhatWeProvide />
       </div>
+      <WhatWeProvide />
       <ResultSection />
       <ToolsAndPlatform />
       <div className="bg-white py-[50px]">
-        <ConsultBanner />
+        <ConsultBanner performance/>
         <CaseStudy />
         <Testimonial />
       </div>

@@ -4,7 +4,7 @@ import LandingButton from "../../ui/common/LandingButton";
 
 function Banner({ bannerImage, heading, description, imgClassName,tagline,performance=false }) {
   return (
-    <div className="px-[18px] md:px-[100px]">
+    <div className="px-[16px] md:px-[60px] lg:px-[100px]">
 
 
     <div className=" grid grid-cols-1 md:grid-cols-2 mt-[124px] md:mt-[150px] gap-[73px] md:gap-[100px] justify-between items-center poppins-regular">
