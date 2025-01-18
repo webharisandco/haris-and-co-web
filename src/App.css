@@ -133,10 +133,19 @@ header {
 	transform: rotateX(-70deg);
 	opacity: 0;
 }
+
 .no-scrollbar::-webkit-scrollbar {
 	display: none;
-  }
-  .no-scrollbar {
+}
+
+.no-scrollbar {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+}
+
+.grid-bg {
+	background: 
+	  linear-gradient(to right, #ffffff0d 2px, transparent 2px),
+	  linear-gradient(to bottom, #ffffff0d 2px, transparent 2px);
+	background-size: 180px 180px;
   }

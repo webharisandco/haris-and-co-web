@@ -12,11 +12,20 @@ import CustomeWebBig from "../../../assets/images/web/images/customeWebBig.png";
 import ConversionBig from "../../../assets/images/web/images/conversionBig.png";
 import EcomBig from "../../../assets/images/web/images/EcomBig.png";
 import Banner from "@/assets/images/web/images/whatWeProvideBanner.png";
+import Campaign from "@/assets/images/landing/whatsIncluded/campaign.png";
+import CampaignIcon from "@/assets/images/landing/whatsIncluded/campaignIcon.png";
+import Strategisation from "@/assets/images/landing/whatsIncluded/strategisation.png";
+import StrategisationIcon from "@/assets/images/landing/whatsIncluded/strategisationIcon.png";
+import Creative from "@/assets/images/landing/whatsIncluded/creative.png";
+import CreativeIcon from "@/assets/images/landing/whatsIncluded/creativeIcon.png";
+import Revenue from "@/assets/images/landing/whatsIncluded/revenue.png";
+import RevenueIcon from "@/assets/images/landing/whatsIncluded/revenueIcon.png";
+import { ArrowUpRight } from "lucide-react";
 // import Grid from "../../../assets/images/web/images/grid.svg"
 
-function WhatWeProvide() {
-  const [currentTitle, setCurrentTitle] = useState("WordPress Development");
-  const servicesArray = [
+function WhatWeProvide({performance = false}) {
+  const [currentTitle, setCurrentTitle] = useState(0);
+  const webServicesArray = [
     {
       title: "WordPress Development",
       description:
@@ -60,6 +69,40 @@ function WhatWeProvide() {
       img: ConversionBig,
     },
   ];
+
+  const performanceServicesArray = [
+    {
+      title: "Strategisation",
+      description:
+        "We map out a data-driven plan to reach your target audience with the right message, at the right time",
+      icon: StrategisationIcon,
+      img: Strategisation,
+    },
+    {
+      title: "Creatives Development",
+      description:
+        "We design eye-catching and persuasive ad creatives that resonate with your ideal customers.",
+      icon: CreativeIcon,
+      img: Creative,
+    },
+    {
+      title: "Campaign Initiation",
+      description:
+        "We handle the technical aspects of launching your campaign across relevant platforms, ensuring a smooth rollout.",
+      icon: CampaignIcon,
+      img: Campaign,
+    },
+    {
+      title: "Revenue Maximization",
+      description:
+        " Our team is committed to driving your revenue growth. We carefully analyse your campaign and optimise it continuously to deliver the best possible results.",
+      icon: RevenueIcon,
+      img: Revenue,
+    },
+  ];
+
+  const servicesArray = performance ? performanceServicesArray : webServicesArray
+
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef(null);
 
@@ -93,17 +136,19 @@ function WhatWeProvide() {
   }, [servicesArray.length]);
 
   return (
-    <div className="px-[18px] md:px-[100px]">
+    <div className="px-[18px] md:px-[100px] ">
       <div
         //  style={{
         //   backgroundImage: `url(${Grid})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-        className=" w-full my-[152px] px-[40px] md:px-[51px] py-[104px] rounded-[20px] bg-[#151515] "
+        className=" w-full my-[152px] px-[40px] md:px-[51px] py-[104px] rounded-[20px] bg-[#151515] relative"
       >
+        <div className="w-full h-full grid-bg absolute top-0 left-0"></div>
         <div className="w-full flex justify-between items-center">
           <p className="text-[30px] md:text-[44px] text-white">
             What We Provide
           </p>
-          <img className="h-[18px] md:h-[55px]" src={DownArrow} alt="" />
+          {/* <img className="h-[18px] md:h-[55px] text-[#16BD88]" src={DownArrow} alt="" /> */}
+          <ArrowUpRight size={80} color={performance? "#16BD88" : "#7744D5"} className="rotate-180"/>
         </div>
         <div className="w-full  flex flex-row items-center justify-between  mt-[65px] md:pr-[70px]">
           <div className="relative md:w-[65%] w-full md:overflow-visible">
@@ -118,18 +163,18 @@ function WhatWeProvide() {
                 <div
                   key={index}
                   className="flex flex-col md:flex-row md:gap-[60px] group min-w-[300px] md:min-w-0"
-                  onMouseEnter={() => setCurrentTitle(service.title)}
-                  onMouseLeave={() => setCurrentTitle("")}
+                  onMouseEnter={() => setCurrentTitle(index)}
+                  onMouseLeave={() => setCurrentTitle(0)}
                 >
                   <div className="  w-fit  md:hidden h-full items-center px-[50px]">
                     <img src={service.img} alt={service.title} />
                   </div>
 
-                  <div className="hidden md:block w-[44px] transition-all duration-300 md:group-hover:w-[50px]">
+                  <div className="hidden md:block w-[44px] transition-all  duration-300 md:group-hover:w-[50px]">
                     <img
-                      className="w-full h-auto"
+                      className="w-full h-auto group-hover:scale-150 group-hover:translate-y-2"
                       src={service.icon}
-                      alt={`${service.title} Icon`}
+                      alt={`${service.title} Icon `}
                     />
                   </div>
 
@@ -151,17 +196,16 @@ function WhatWeProvide() {
                 <div
                   key={index}
                   onClick={() => scrollToSection(index)}
-                  className={`cursor-pointer w-[8px] h-[8px] rounded-full transition-all duration-300 ${
-                    activeIndex === index
-                      ? "w-[12px] h-[12px] bg-white"
-                      : "bg-white opacity-50"
-                  }`}
+                  className={`cursor-pointer w-[8px] h-[8px] rounded-full transition-all duration-300 ${activeIndex === index
+                    ? "w-[12px] h-[12px] bg-white"
+                    : "bg-white opacity-50"
+                    }`}
                 ></div>
               ))}
             </div>
           </div>
           <div className=" hidden w-fit md:w-[40%] md:flex h-full items-center">
-            {currentTitle == "WordPress Development" ? (
+            {/* {currentTitle == "WordPress Development" ? (
               <img src={Banner} alt="" />
             ) : currentTitle == "Ecommerce Development" ? (
               <img src={EcomBig} alt="" />
@@ -175,7 +219,8 @@ function WhatWeProvide() {
               <img src={ConversionBig} alt="" />
             ) : (
               <img src={Banner} alt="" />
-            )}
+            )} */}
+            {servicesArray[currentTitle].img && <img src={servicesArray[currentTitle].img} alt={servicesArray[currentTitle].title} />} 
           </div>
         </div>
       </div>

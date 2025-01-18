@@ -46,7 +46,7 @@ export default function UIPerformance() {
           performance
         />
       </div>
-      <WhatWeProvide />
+      <WhatWeProvide performance/>
       <ResultSection />
       <ToolsAndPlatform />
       <div className="bg-white py-[50px]">
