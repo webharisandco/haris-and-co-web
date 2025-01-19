@@ -1,48 +1,73 @@
 import React, { useState } from "react";
-import popees from "@/assets/images/brandLogos/popees.svg";
-import algate from "@/assets/images/brandLogos/algate.svg";
-import amana from "@/assets/images/brandLogos/amana.svg";
-import blueTyga from "@/assets/images/brandLogos/blueTyga.svg";
-import disha from "@/assets/images/brandLogos/disha.svg";
-import katara from "@/assets/images/brandLogos/katara.svg";
-import laddyLoafella from "@/assets/images/brandLogos/laddyLoafella.svg";
-import mavinza from "@/assets/images/brandLogos/mavinza.svg";
-import mrAlfred from "@/assets/images/brandLogos/mr.alfred.svg";
-import natya from "@/assets/images/brandLogos/natya.svg";
-import tct from "@/assets/images/brandLogos/tct.svg";
-import teens from "@/assets/images/brandLogos/teens.svg";
-import westbrook from "@/assets/images/brandLogos/westbrook.svg";
-import wildtree from "@/assets/images/brandLogos/wildtree.svg";
-import BrandPartnerSmall1 from "@/assets/images/web/images/brandPartnerSmall.png";
-import BrandPartnerSmall2 from "@/assets/images/web/images/brandPartnerSmall2.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore from "swiper";
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
+SwiperCore.use([Navigation, Pagination]);
 function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
   const [showAll, setShowAll] = useState(false);
   const toggleView = () => {
     setShowAll(!showAll);
   };
+  const groupedLogos = [];
+  for (let i = 0; i < brandLogosSmall.length; i += 2) {
+    groupedLogos.push(brandLogosSmall.slice(i, i + 2));
+  }
+  const half = Math.ceil(brandLogosSmall.length / 2);
+  const firstHalf = brandLogosSmall.slice(0, half);
+  const secondHalf = brandLogosSmall.slice(half);
   return (
     <div className="mt-[57px] md:mt-[147px] flex flex-col-reverse lg:flex-col px-[18px]  md:px-[100px]">
       <div className="flex flex-col   lg:gap-[50px] lg:border-t md:rounded-l-[46px] lg:rounded-r-[46px] rounded-b-none border-b-0 lg:border-l lg:border-r md:border-white border-opacity-50  md:pt-[40px]  md:pb-[100px] md:mb-0">
         <div className="  md:px-[35px]">
           <div className="overflow-hidden lg:hidden">
-            <div className="overflow-hidden h-[220px] relative">
-              <div className="flex flex-wrap  animate-scroll ">
-                {[...brandLogosSmall, ...brandLogosSmall]?.map(
-                  (logoSmall, index) => (
-                    <div
-                      key={index}
-                      className="flex-shrink-0 w-[300px] h-[100px]"
-                    >
-                      <img
-                        src={logoSmall.image}
-                        alt={`Brand logo ${index + 1}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  )
-                )}
-              </div>
+          <div className="overflow-hidden h-[220px] relative">
+      <Swiper
+        modules={[ Pagination, Autoplay]}
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation={false}
+        pagination={false} 
+        autoplay={{ delay: 2500 }}
+        loop={true}
+        
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        }}
+        className="swiper-pagination-white"
+      >
+          {firstHalf.map((logoSmall, index) => (
+        <SwiperSlide key={index}>
+          {/* Display first half in the first div */}
+          <div className="flex flex-col gap-[40px]">
+            <img
+              src={logoSmall.image}
+              alt={`Brand logo ${index + 1}`}
+              className="w-fit h-[100px] object-contain"
+            />
+          </div>
+
+          {/* Display the second half in the second div */}
+          {secondHalf[index] && (
+            <div className="flex flex-col gap-[40px]">
+              <img
+                src={secondHalf[index]?.image}
+                alt={`Brand logo ${index + 1 + half}`}
+                className="w-fit h-[100px] object-contain"
+              />
             </div>
+          )}
+        </SwiperSlide>
+      ))}
+      </Swiper>
+    </div>
           </div>
         </div>
         <div className="md:px-[35px]">
