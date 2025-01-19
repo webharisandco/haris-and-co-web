@@ -175,16 +175,16 @@ function WhatWeProvide({ performance = false }) {
                     <img src={service.img} alt={service.title} />
                   </div>
 
-                  <div className="hidden lg:block w-[44px] transition-all  duration-300 lg:group-hover:w-[50px]">
+                  <div className={`hidden  lg:block w-[44px] transition-all  duration-300 ${currentTitle == index && 'scale-125 translate-y-2'}`}>
                     <img
-                      className="w-full h-auto group-hover:scale-150 group-hover:translate-y-2"
+                      className={`w-full h-auto ${currentTitle == index && 'scale-125 translate-y-2'}`}
                       src={service.icon}
                       alt={`${service.title} Icon `}
                     />
                   </div>
 
                   <div className="w-full flex text-center lg:text-start flex-col justify-center gap-[15px]">
-                    <p className="text-white text-[25px] lg:text-[28px] transition-all duration-300 lg:group-hover:text-[36px] font-[AbroRegular]">
+                    <p className={`text-white text-[25px] lg:text-[28px] transition-all duration-300 cursor-pointer ${currentTitle == index && 'lg:text-[36px]'} font-[AbroRegular]`}>
                       {service.title}
                     </p>
                     <p className="text-[16px] lg:text-[20px] text-white block lg:hidden  lg:transition-all duration-300 poppins-light">

@@ -5,74 +5,112 @@ import SkinCare from "@/assets/images/web/images/skinCare.png";
 import Nuts from "@/assets/images/web/images/nuts.png";
 import ButtonIcon from "@/assets/images/web/icons/buttonRightArrow.svg";
 import LandingButton from "../common/LandingButton";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/pagination"; // Import pagination styles for Swiper
+import 'swiper/css/navigation';
+import SwiperCore from "swiper";
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 
-function OurLatestWorks({text}) {
+
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination]);
+
+
+function OurLatestWorks({ text }) {
   return (
-    <div className=" mt-[75px] md:mt-[130px] px-[18px] md:px-[100px]">
+    <div className="mt-[75px] md:mt-[130px] px-[18px] md:px-[100px]">
       <div className="flex justify-center md:justify-start  md:items-start">
-
-      <p className="text-white text-[30px]  md:text-[48px]">
-        Our <br className=" hidden md:block" />
-        Latest Work
-      </p>
+        <p className="text-white text-[30px] md:text-[48px]">
+          Our <br className="hidden md:block" />
+          Latest Work
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-[35px] mt-[25px] md:mt-[72px]">
+      <div className="mt-[25px] md:mt-[72px]">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation={false}
+          pagination={true}
+          autoplay={{ delay: 2500 }}
+          loop={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+          }}
+          className="swiper-pagination-white" // Add custom class
 
-  <div className="flex flex-col gap-[40px]">
-    <div>
-      <img src={MomToBe} alt="Mom To Be" />
-    </div>
-    <div>
-      <p className="text-white text-[20px]">1. Revamping Popees</p>
-    </div>
-  </div>
+        >
+          <SwiperSlide>
+            <div className="flex flex-col gap-[40px]">
+              <div>
+                <img src={MomToBe} alt="Mom To Be" />
+              </div>
+              <div>
+                <p className="text-white text-[20px]">1. Revamping Popees</p>
+              </div>
+            </div>
+          </SwiperSlide>
 
+          <SwiperSlide>
+            <div className="flex flex-col gap-[40px]">
+              <div>
+                <img src={Pharmacy} alt="Pharmacy" />
+              </div>
+              <div>
+                <p className="text-white text-[20px]">2. Vamping up Truthcare Pharmacy.</p>
+              </div>
+            </div>
+          </SwiperSlide>
 
-  <div className="hidden md:flex flex-col gap-[40px]">
-    <div>
-      <img src={Pharmacy} alt="Pharmacy" />
-    </div>
-    <div>
-      <p className="text-white text-[20px]">2. Vamping up Truthcare Pharmacy.</p>
-    </div>
-  </div>
-  <div className="hidden md:flex flex-col gap-[40px]">
-    <div>
-      <img src={SkinCare} alt="Skin Care" />
-    </div>
-    <div>
-      <p className="text-white text-[20px]">3. Making gifting special with Keva Box</p>
-    </div>
-  </div>
-  <div className="hidden md:flex flex-col gap-[40px]">
-    <div>
-      <img src={Nuts} alt="Nuts" />
-    </div>
-    <div>
-      <p className="text-white text-[20px]">
-        4. Serving the goodness of nuts with Wild Tree.
-      </p>
-    </div>
-  </div>
-</div>
+          <SwiperSlide>
+            <div className="flex flex-col gap-[40px]">
+              <div>
+                <img src={SkinCare} alt="Skin Care" />
+              </div>
+              <div>
+                <p className="text-white text-[20px]">3. Making gifting special with Keva Box</p>
+              </div>
+            </div>
+          </SwiperSlide>
 
-<div className=" mt-[66px] md:mt-[111px] flex flex-col md:flex-row gap-[30px] justify-between w-full">
+          <SwiperSlide>
+            <div className="flex flex-col gap-[40px]">
+              <div>
+                <img src={Nuts} alt="Nuts" />
+              </div>
+              <div>
+                <p className="text-white text-[20px]">
+                  4. Serving the goodness of nuts with Wild Tree.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
+      <div className="mt-[25px] md:mt-[111px] flex flex-col md:flex-row gap-[30px] justify-between w-full">
         <div className="md:w-9/12">
-          <p className=" text-[16px] md:ext-[20px] text-white">
-          {text}
+          <p className="text-[16px] md:text-[20px] text-white poppins-thin">
+            {text}
           </p>
         </div>
-        <div className="md:w-3/12 flex justify-start md:justify-end">
-        {/* <LandingButton text={'View AllL'} /> */}
-          <button className="bg-[#7744D5]  h-[66px] w-[179px] flex justify-center items-center gap-[10px] text-white rounded-[10px]">
+        {/* <div className="md:w-3/12 flex justify-start md:justify-end">
+          <button className="bg-[#7744D5] h-[66px] w-[179px] flex justify-center items-center gap-[10px] text-white rounded-[10px]">
             <p className="text-[18px]"> View All</p>
             <img src={ButtonIcon} alt="" />
           </button>
-        </div>
+        </div> */}
       </div>
-
-      
     </div>
   );
 }
