@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
-import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 SwiperCore.use([Navigation, Pagination]);
 function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
   const [showAll, setShowAll] = useState(false);
@@ -20,54 +20,51 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
       <div className="flex flex-col   lg:gap-[50px] lg:border-t md:rounded-l-[46px] lg:rounded-r-[46px] rounded-b-none border-b-0 lg:border-l lg:border-r md:border-white border-opacity-50  md:pt-[40px]  md:pb-[100px] md:mb-0">
         <div className="  md:px-[35px]">
           <div className="overflow-hidden lg:hidden">
-          <div className="overflow-hidden h-[220px] relative">
-      <Swiper
-        modules={[ Pagination, Autoplay]}
-        spaceBetween={30}
-        slidesPerView={1}
-        navigation={false}
-        pagination={false} 
-        autoplay={{ delay: 2500 }}
-        loop={true}
-        
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
-        }}
-        className="swiper-pagination-white"
-      >
-          {firstHalf.map((logoSmall, index) => (
-        <SwiperSlide key={index}>
-          {/* Display first half in the first div */}
-          <div className="flex flex-col gap-[40px]">
-            <img
-              src={logoSmall.image}
-              alt={`Brand logo ${index + 1}`}
-              className="w-fit h-fit object-contain"
-            />
-          </div>
+            <Swiper
+              modules={[Pagination, Autoplay]}
+              spaceBetween={30}
+              slidesPerView={1}
+              navigation={false}
+              pagination={false}
+              autoplay={{ delay: 2500 }}
+              loop={true}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+              }}
+              className="swiper-pagination-white"
+            >
+              {firstHalf.map((logoSmall, index) => (
+                <SwiperSlide key={index}>
+                  {/* Display first half in the first div */}
+                  <div className="flex flex-col gap-[40px]">
+                    <img
+                      src={logoSmall.image}
+                      alt={`Brand logo ${index + 1}`}
+                      className="w-fit h-fit object-contain"
+                    />
+                  </div>
 
-          {/* Display the second half in the second div */}
-          {secondHalf[index] && (
-            <div className="flex flex-col gap-[40px]">
-              <img
-                src={secondHalf[index]?.image}
-                alt={`Brand logo ${index + 1 + half}`}
-                className="w-fit h-fit object-contain"
-              />
-            </div>
-          )}
-        </SwiperSlide>
-      ))}
-      </Swiper>
-    </div>
+                  {/* Display the second half in the second div */}
+                  {secondHalf[index] && (
+                    <div className="flex flex-col gap-[40px]">
+                      <img
+                        src={secondHalf[index]?.image}
+                        alt={`Brand logo ${index + 1 + half}`}
+                        className="w-fit h-fit object-contain"
+                      />
+                    </div>
+                  )}
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
         <div className="md:px-[35px]">
