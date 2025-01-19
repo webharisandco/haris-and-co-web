@@ -50,7 +50,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
             <img
               src={logoSmall.image}
               alt={`Brand logo ${index + 1}`}
-              className="w-fit h-[100px] object-contain"
+              className="w-fit h-fit object-contain"
             />
           </div>
 
@@ -60,7 +60,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
               <img
                 src={secondHalf[index]?.image}
                 alt={`Brand logo ${index + 1 + half}`}
-                className="w-fit h-[100px] object-contain"
+                className="w-fit h-fit object-contain"
               />
             </div>
           )}
