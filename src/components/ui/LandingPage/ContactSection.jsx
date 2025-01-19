@@ -8,6 +8,7 @@ import instaIcon from "@/assets/images/icons/instaWhiteIcon.svg";
 import XIcon from "@/assets/images/icons/xWhiteIcon.svg";
 import RightArrow from "../../../assets/images/icons/whiteRightArrowIcon.svg";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const containerStyle = {
   width: "100%",
@@ -31,9 +32,9 @@ function ContactSection() {
 
   return (
     <div className="pt-[68px] md:pt-[200px] bg-white relative">
-      <div className="px-[16px] md:px-[100px] flex flex-col justify-between md:relative z-10 static  bg-black">
+      <div className="px-[16px] md:px-[80px] lg:px-[100px] flex flex-col justify-between md:relative z-10 static  bg-black">
         
-        <div className="md:w-[51%] flex flex-col gap-[30px] py-[53px] md:py-[147px]">
+        <div className="lg:w-[50%] flex flex-col gap-[30px] py-[53px] md:py-[147px]">
           <div>
             <p className="text-white text-[30px] md:text-[48px]">
               Let's Have a Chat
@@ -48,7 +49,9 @@ function ContactSection() {
           <div className="flex flex-col  md:flex-row gap-[35px] md:gap-[70px]">
             <div className="flex items-center pr-[15px]">
               <div>
-                <img src={PhoneIcon} alt="Phone Icon" />
+                {/* <img src={PhoneIcon} alt="Phone Icon" /> */}
+                <Phone size={40} color='#333' fill='#fff' />
+
               </div>
               <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
               <div className="flex flex-col gap-[12px]">
@@ -62,7 +65,9 @@ function ContactSection() {
             </div>
             <div className="flex items-center pr-[15px]">
               <div>
-                <img src={PhoneIcon} alt="Phone Icon" />
+                {/* <img src={PhoneIcon} alt="Phone Icon" /> */}
+                <Mail fill='#fff' size={40} color='#333' />
+
               </div>
               <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
               <div className="flex flex-col gap-[12px]">
@@ -76,9 +81,10 @@ function ContactSection() {
             </div>
             <div className="flex items-center pr-[15px]">
               <div className="flex md:hidden items-center ">
-                <div className="min-w-[35px]" >
-                  <img src={LocationIcon} alt="Location Icon" />
-                </div>
+                {/* <div className="min-w-[35px]" > */}
+                  {/* <img src={LocationIcon} alt="Location Icon" /> */}
+                  <MapPin fill='#fff' color='#333' size={45} className='w-fit h-fit' />
+                {/* </div> */}
                 <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
                 <div className="flex flex-col gap-[12px]">
                   <p className="text-white text-[16px] md:text-[18px]">
@@ -91,7 +97,9 @@ function ContactSection() {
           </div>
           <div className=" hidden md:flex items-center pr-[15px]">
             <div className="">
-              <img className="" src={LocationIcon} alt="Location Icon" />
+              {/* <img className="" src={LocationIcon} alt="Location Icon" /> */}
+              <MapPin fill='#fff' color='#333' size={40} className='w-fit h-fit' />
+
             </div>
             <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
             <div className="flex flex-col gap-[12px] ">
@@ -103,7 +111,7 @@ function ContactSection() {
           </div>
         </div>
 
-        <div className="w-auto block lg:hidden  ">
+        <div className="w-auto block lg:hidden">
         <div className="bg-[#7744D5] relative  z-30 py-[40px] px-[23px] rounded-3xl text-white max-w-auto  mx-auto">
           <p className="text-[30px] font-medium mb-[10px]">Get a Callback</p>
 
@@ -214,7 +222,7 @@ function ContactSection() {
       </div>
 
       </div>
-      <div className="w-auto hidden lg:block  md:absolute top-[128px] right-[115px]">
+      <div className="w-[40%] hidden lg:block  md:absolute top-[10%] right-[6%]">
         <div className="bg-[#7744D5] relative  z-30 p-6 md:px-[54px] py-[66px] rounded-3xl text-white max-w-auto  mx-auto">
           <p className="text-[30px] font-medium mb-6">Get a Callback</p>
 
@@ -292,7 +300,7 @@ function ContactSection() {
             </div>
             <div
               style={{ marginTop: "43px" }}
-              className="flex justify-between h-full items-center gap-[60px]"
+              className="flex justify-between h-full items-center gap-[60px] flex-col xl:flex-row"
             >
               <button
                 type="submit"
