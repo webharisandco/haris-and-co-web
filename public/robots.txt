@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+user-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://haris-co-git-landing-pages-jumairajs-projects.vercel.app/sitemap.xml

@@ -103,7 +103,7 @@ export default function UIWeb() {
     },
     {
       question:
-        "As a web design & development agency in Dubai, do you help with revamping a website?",
+        "As a web design & development agency in Abu Dhabi, do you help with revamping a website?",
       answer:
         "Yes, we specialize in revamping websites to align with modern design trends, improve user experience, and ensure better functionality tailored to your business needs.",
     },

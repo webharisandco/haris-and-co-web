@@ -152,7 +152,7 @@ function WhatWeProvide({ performance = false }) {
           <ArrowUpRight
             size={80}
             color={performance ? "#16BD88" : "#7744D5"}
-            className="rotate-180 ms-auto w-[50px] md:w-[80px] absolute right-10  top-[20%] md:top-[15%]"
+            className="rotate-180 ms-auto w-[50px] md:w-[80px] absolute right-10  top-[25%] sm:top-[20%] md:top-[15%]"
           />
         </div>
         <div className="w-full  flex flex-row items-center justify-between  mt-[65px] lg:pr-[70px]">
@@ -184,11 +184,13 @@ function WhatWeProvide({ performance = false }) {
                   </div>
 
                   <div className="w-full flex text-center lg:text-start flex-col justify-center gap-[15px]">
-                    <p className="text-white text-[25px] lg:text-[28px] transition-all duration-300 lg:group-hover:text-[36px]">
+                    <p className="text-white text-[25px] lg:text-[28px] transition-all duration-300 lg:group-hover:text-[36px] font-[AbroRegular]">
                       {service.title}
                     </p>
-
-                   {currentTitle == index && <p className="text-[16px] lg:text-[20px] text-white  lg:transition-all duration-300">
+                    <p className="text-[16px] lg:text-[20px] text-white block lg:hidden  lg:transition-all duration-300 poppins-light">
+                      {service.description}
+                    </p>
+                   {currentTitle == index && <p className="text-[16px] poppins-light lg:text-[20px] hidden lg:block text-white  lg:transition-all duration-300">
                       {service.description}
                     </p>}
                   </div>
