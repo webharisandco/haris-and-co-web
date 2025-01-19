@@ -142,7 +142,6 @@ export default function UIWeb() {
     },
   ];
 
-
   const clientsMetrix = [
     {
       number: "80+",
@@ -157,8 +156,14 @@ export default function UIWeb() {
       heading: "Industries Served",
     },
   ];
-  const seoHeading = 'Web Design and Development Services in Dubai Focused on Conversion'
-  const seoDescription = 'Haris&Co. has been serving web development services in Dubai for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content, and technicalities.'
+  const seoHeading =
+    "Web Design and Development Services in Dubai Focused on Conversion";
+  const seoDescription =
+    "Haris&Co. has been serving web development services in Dubai for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content, and technicalities.";
+
+  const seoHeading2 =
+    "Why You Should Choose Us As Your Web Development Company in Dubai";
+  const seoHeading3 = "How Our Web Development In Dubai Works";
 
   return (
     <>
@@ -166,10 +171,22 @@ export default function UIWeb() {
         <Helmet>
           <title>Trusted Web Development Company in Dubai</title>
         </Helmet>
-          <meta name="description" content="We're a web development company in Dubai that delivers fast, secure, engaging, user-friendly and conversion-optimized websites" />
-          <link rel="canonical" href="https://harisand.co/ae/services/web-development-company-in-dubai" />
-                    <meta property="og:title" content="Trusted Web Development Company in Dubai" />
-          <meta property="og:description" content="We're a web development company in Dubai that delivers fast, secure, engaging, user-friendly and conversion-optimized websites" />
+        <meta
+          name="description"
+          content="We're a web development company in Dubai that delivers fast, secure, engaging, user-friendly and conversion-optimized websites"
+        />
+        <link
+          rel="canonical"
+          href="https://harisand.co/ae/services/web-development-company-in-dubai"
+        />
+        <meta
+          property="og:title"
+          content="Trusted Web Development Company in Dubai"
+        />
+        <meta
+          property="og:description"
+          content="We're a web development company in Dubai that delivers fast, secure, engaging, user-friendly and conversion-optimized websites"
+        />
         <LandingHeader />
         <Banner
           bannerImage={BannerImages}
@@ -212,7 +229,12 @@ export default function UIWeb() {
         </div>
       </div>
       <div className="bg-white">
-        <AboutCompany seoHeading={seoHeading} seoDescription={seoDescription} />
+        <AboutCompany
+          seoHeading={seoHeading}
+          seoDescription={seoDescription}
+          seoHeading2={seoHeading2}
+          seoHeading3={seoHeading3}
+        />
       </div>
       <LandingFooter />
     </>

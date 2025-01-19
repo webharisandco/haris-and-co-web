@@ -1,6 +1,6 @@
 import React from "react";
 
-function AboutCompany({seoHeading,seoDescription}) {
+function AboutCompany({seoHeading,seoDescription,seoHeading2,seoHeading3}) {
   const webDevelopmentServices = [
     {
       title: "Dedicated Project Manager",
@@ -140,7 +140,7 @@ function AboutCompany({seoHeading,seoDescription}) {
 
         <div className=" gap-[13px] mt-[31px] md:mt-[52px]">
           <p className="text-black text-[16px] md:text-[36px]">
-            Why You Should Choose Us As Your Web Development Company in Dubai
+           {seoHeading2}
           </p>
           {webDevelopmentServices.map((service) => (
             <div className="mt-[23px] md:mt-[60px] flex-col gap-[13px] md:gap-[25px]">
@@ -179,7 +179,7 @@ function AboutCompany({seoHeading,seoDescription}) {
 
         <div className=" gap-[13px] mt-[31px] md:mt-[52px]">
           <p className="text-black text-[16px] md:text-[36px]">
-            How Our Web Development In Dubai Works
+           {seoHeading3}
           </p>
           {websiteProcess.map((service) => (
             <div className="mt-[23px] md:mt-[60px] flex-col gap-[13px] md:gap-[25px]">
