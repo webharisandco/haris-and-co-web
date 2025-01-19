@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonIcon from '@/assets/images/web/icons/buttonRightArrow.svg'
 import LandingButton from "../../ui/common/LandingButton";
+import OptimizedBanner from "../common/OptimizedBanner";
 
 function Banner({ bannerImage, heading, description, imgClassName, tagline, performance = false }) {
   return (
@@ -24,7 +25,8 @@ function Banner({ bannerImage, heading, description, imgClassName, tagline, perf
           </div>
         </div>
         <div className="w-fit">
-          <img className={`w-full h-full ${imgClassName}`} src={bannerImage} alt="" />
+          <OptimizedBanner src={bannerImage} alt="Banner Image"/>
+          {/* <img className={`w-full h-full ${imgClassName}`} src={bannerImage} alt="" /> */}
         </div>
       </div>
     </div>

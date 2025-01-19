@@ -1,7 +1,7 @@
 import './App.css';
-import './Font.css';
 import AppRouter from './routes/Router';
-import './Font/helvetica-neue-55.css'
+import('./Font.css');
+import('./Font/helvetica-neue-55.css')
 
 function App() {
   return (
