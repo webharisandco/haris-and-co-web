@@ -39,12 +39,12 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
                   slidesPerView: 4,
                 },
               }}
-              className="swiper-pagination-white"
+              className="swiper-pagination-white h-fit"
             >
               {firstHalf.map((logoSmall, index) => (
-                <SwiperSlide key={index}>
+                <SwiperSlide  className="h-fit" key={index}>
                   {/* Display first half in the first div */}
-                  <div className="flex flex-col gap-[40px]">
+                  <div className="h-auto w-fit ">
                     <img
                       src={logoSmall.image}
                       alt={`Brand logo ${index + 1}`}
@@ -54,7 +54,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
 
                   {/* Display the second half in the second div */}
                   {secondHalf[index] && (
-                    <div className="flex flex-col gap-[40px]">
+                    <div className="h-auto w-fit ">
                       <img
                         src={secondHalf[index]?.image}
                         alt={`Brand logo ${index + 1 + half}`}
