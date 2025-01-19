@@ -142,25 +142,24 @@ function WhatWeProvide({ performance = false }) {
       <div
         //  style={{
         //   backgroundImage: `url(${Grid})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-        className=" w-full my-[152px] px-[40px] md:px-[51px] py-[104px] rounded-[20px] bg-[#151515] relative"
+        className=" w-full my-[100px] md:my-[152px] px-[40px] md:px-[51px] py-[104px] rounded-[20px] bg-[#151515] relative"
       >
         <div className="w-full h-full grid-bg absolute top-0 left-0"></div>
-        <div className="w-full flex justify-between items-center">
-          <p className="text-[30px] md:text-[44px] text-white">
-            What We Provide
-          </p>
+        <div className="w-full flex justify-between items-center flex-col md:flex-row">
+          <p className="text-[30px] md:text-[44px] text-white text-center lg:text-start w-[90%]">
+            {performance? 'What’s Included in Our Service' :'What We Provide'}          </p>
           {/* <img className="h-[18px] md:h-[55px] text-[#16BD88]" src={DownArrow} alt="" /> */}
           <ArrowUpRight
             size={80}
             color={performance ? "#16BD88" : "#7744D5"}
-            className="rotate-180"
+            className="rotate-180 ms-auto w-[50px] md:w-[80px] absolute right-10  top-[20%] md:top-[15%]"
           />
         </div>
-        <div className="w-full  flex flex-row items-center justify-between  mt-[65px] md:pr-[70px]">
-          <div className="relative md:w-[65%] w-full md:overflow-visible">
+        <div className="w-full  flex flex-row items-center justify-between  mt-[65px] lg:pr-[70px]">
+          <div className="relative lg:w-[65%] w-full lg:overflow-visible">
             <div
               ref={containerRef}
-              className="flex md:flex-col flex-row md:gap-[51px] gap-[20px] overflow-x-auto no-scrollbar"
+              className="flex lg:flex-col flex-row lg:gap-[51px] gap-[20px] overflow-x-auto no-scrollbar"
               style={{
                 WebkitOverflowScrolling: "touch",
               }}
@@ -168,15 +167,15 @@ function WhatWeProvide({ performance = false }) {
               {servicesArray.map((service, index) => (
                 <div
                   key={index}
-                  className="flex flex-col md:flex-row md:gap-[60px] group min-w-[300px] md:min-w-0"
-                  onMouseEnter={() => setCurrentTitle(index)}
-                  onMouseLeave={() => setCurrentTitle(0)}
+                  className="flex flex-col lg:flex-row lg:gap-[60px] group min-w-[300px] lg:min-w-0"
+                  onClick={() => setCurrentTitle(index)}
+                  // onMouseLeave={() => setCurrentTitle(0)}
                 >
-                  <div className="  w-fit  md:hidden h-full items-center px-[50px]">
+                  <div className="  w-fit  lg:hidden h-full items-center px-[50px]">
                     <img src={service.img} alt={service.title} />
                   </div>
 
-                  <div className="hidden md:block w-[44px] transition-all  duration-300 md:group-hover:w-[50px]">
+                  <div className="hidden lg:block w-[44px] transition-all  duration-300 lg:group-hover:w-[50px]">
                     <img
                       className="w-full h-auto group-hover:scale-150 group-hover:translate-y-2"
                       src={service.icon}
@@ -184,20 +183,20 @@ function WhatWeProvide({ performance = false }) {
                     />
                   </div>
 
-                  <div className="w-full flex text-center md:text-start flex-col justify-center gap-[15px]">
-                    <p className="text-white text-[25px] md:text-[28px] transition-all duration-300 md:group-hover:text-[36px]">
+                  <div className="w-full flex text-center lg:text-start flex-col justify-center gap-[15px]">
+                    <p className="text-white text-[25px] lg:text-[28px] transition-all duration-300 lg:group-hover:text-[36px]">
                       {service.title}
                     </p>
 
-                    <p className="text-[16px] md:text-[20px] text-white md:hidden md:group-hover:block md:transition-all duration-300">
+                   {currentTitle == index && <p className="text-[16px] lg:text-[20px] text-white  lg:transition-all duration-300">
                       {service.description}
-                    </p>
+                    </p>}
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="absolute bottom-[-20px] left-0 right-0 flex justify-center items-center gap-[10px] md:hidden">
+            <div className="absolute bottom-[-20px] left-0 right-0 flex justify-center items-center gap-[10px] lg:hidden">
               {servicesArray.map((_, index) => (
                 <div
                   key={index}
