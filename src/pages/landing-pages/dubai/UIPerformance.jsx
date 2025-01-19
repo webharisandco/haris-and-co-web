@@ -1,19 +1,12 @@
-import React from "react";
+import React, { lazy, Suspense } from 'react';
 import LandingHeader from "@/components/layout/landing/LandingHeader";
 import LandingFooter from "@/components/layout/landing/LandingFooter";
-import { Faq } from "@/components/ui/LandingPage/Faq";
-import ConsultBanner from "@/components/ui/LandingPage/ConsultBanner";
-import CaseStudy from "@/components/ui/LandingPage/CaseStudy";
-import Testimonial from "@/components/ui/LandingPage/Testimonial";
 import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
+import { Faq } from "@/components/ui/LandingPage/Faq";
 import Banner from "@/components/ui/LandingPage/Banner";
 import BannerImg from "@/assets/images/landing/BannerImg.svg";
 import AboutImg from "@/assets/images/landing/AboutImg.png";
 import AboutSection from "@/components/ui/LandingPage/AboutSection";
-import WhatWeProvide from "@/components/ui/LandingPage/WhatWeProvide";
-import ContactSection from "@/components/ui/LandingPage/ContactSection";
-import ResultSection from "@/components/ui/LandingPage/ResultSection";
-import ToolsAndPlatform from "@/components/ui/LandingPage/ToolsAndPlatform";
 import perfomanceBrands1 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands1.png";
 import perfomanceBrands2 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands2.png";
 import perfomanceBrands3 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands3.png";
@@ -33,6 +26,13 @@ import perfomanceBrandsSmall10 from "../../../assets/images/brandLogos/perfomanc
 import perfomanceBrandsSmall11 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall11.png";
 import perfomanceBrandsSmall12 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall12.png";
 import { Helmet } from "react-helmet";
+const ContactSection = lazy(() => import("@/components/ui/LandingPage/ContactSection"));
+const ConsultBanner = lazy(() => import("@/components/ui/LandingPage/ConsultBanner"));
+const CaseStudy = lazy(() => import("@/components/ui/LandingPage/CaseStudy"));
+const Testimonial = lazy(() => import("@/components/ui/LandingPage/Testimonial"));
+const WhatWeProvide = lazy(() => import("@/components/ui/LandingPage/WhatWeProvide"));
+const ResultSection = lazy(() => import("@/components/ui/LandingPage/ResultSection"));
+const ToolsAndPlatform = lazy(() => import("@/components/ui/LandingPage/ToolsAndPlatform"));
 
 export default function UIPerformance() {
   const perfomanceBrands = [
@@ -153,10 +153,10 @@ export default function UIPerformance() {
       <Helmet>
         <title>Expert Performance Marketing Agency in Dubai</title>
       </Helmet>
-        <meta name="description" content="An award-winning performance marketing agency in Dubai that focuses on high-quality lead generation and boosting sales to the next level." data-rh='true'/>
-        <link rel="canonical" href="https://harisand.co/ae/services/performance-marketing-agency-in-dubai" />
-        <meta property="og:title" content="Expert Performance Marketing Agency in Dubai" />
-        <meta property="og:description" content="An award-winning performance marketing agency in Dubai that focuses on high-quality lead generation and boosting sales to the next level." />
+      <meta name="description" content="An award-winning performance marketing agency in Dubai that focuses on high-quality lead generation and boosting sales to the next level." data-rh='true' />
+      <link rel="canonical" href="https://harisand.co/ae/services/performance-marketing-agency-in-dubai" />
+      <meta property="og:title" content="Expert Performance Marketing Agency in Dubai" />
+      <meta property="og:description" content="An award-winning performance marketing agency in Dubai that focuses on high-quality lead generation and boosting sales to the next level." />
       <LandingHeader />
       <div className="">
         <Banner
@@ -180,17 +180,19 @@ export default function UIPerformance() {
           performance
         />
       </div>
-      <WhatWeProvide performance />
-      <ResultSection />
-      <ToolsAndPlatform />
-      <div className="bg-white py-[50px]">
-        <ConsultBanner performance />
-        <CaseStudy />
-        <Testimonial />
-      </div>
-      <div className="">
-        <ContactSection />
-      </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <WhatWeProvide performance />
+        <ResultSection />
+        <ToolsAndPlatform />
+        <div className="bg-white py-[50px]">
+          <ConsultBanner performance />
+          <CaseStudy />
+          <Testimonial />
+        </div>
+        <div className="">
+          <ContactSection />
+        </div>
+      </Suspense>
       <div className="bg-white">
         <Faq faqList={faqList} />
         <div className="px-[16px] md:px-[60px] lg:px-[100px] py-[40px] flex flex-col gap-14">
