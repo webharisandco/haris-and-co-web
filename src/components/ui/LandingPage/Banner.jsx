@@ -6,7 +6,7 @@ import OptimizedBanner from "../common/OptimizedBanner";
 function Banner({ bannerImage, heading, description, imgClassName, tagline, performance = false }) {
   return (
     <div className="px-[16px] md:px-[60px] lg:px-[100px]">
-      <div className=" grid grid-cols-1 lg:grid-cols-2 mt-[120px] md:mt-[150px] gap-[73px] md:gap-[100px] justify-between items-center poppins-regular">
+      <div className=" grid grid-cols-1 lg:grid-cols-2 mt-[50px] md:mt-[150px] gap-[73px] md:gap-[100px] justify-between items-center poppins-regular">
         <div className="flex flex-col gap-[20px] w-fit">
           <h1 className="text-white text-[12px] md:font-light">
             {tagline}
