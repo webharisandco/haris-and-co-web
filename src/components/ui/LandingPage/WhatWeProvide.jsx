@@ -142,11 +142,11 @@ function WhatWeProvide({ performance = false }) {
       <div
         //  style={{
         //   backgroundImage: `url(${Grid})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-        className=" w-full my-[100px] md:my-[152px] px-[40px] md:px-[51px] py-[104px] rounded-[20px] bg-[#151515] relative"
+        className=" w-full my-[100px] md:my-[152px] px-[20px] md:px-[51px] py-[104px] rounded-[20px] bg-[#151515] relative"
       >
         <div className="w-full h-full grid-bg absolute top-0 left-0"></div>
         <div className="w-full flex justify-between items-center flex-col md:flex-row">
-          <p className="text-[30px] md:text-[44px] text-white text-center lg:text-start w-[90%]">
+          <p className="text-[30px] md:text-[44px] text-white text-center lg:text-start w-[90%] font-[AbroBold]">
             {performance? 'What’s Included in Our Service' :'What We Provide'}          </p>
           {/* <img className="h-[18px] md:h-[55px] text-[#16BD88]" src={DownArrow} alt="" /> */}
           <ArrowUpRight

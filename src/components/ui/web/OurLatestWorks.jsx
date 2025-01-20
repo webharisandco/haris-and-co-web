@@ -19,7 +19,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 function OurLatestWorks({ text }) {
   return (
-    <div className="mt-[75px] md:mt-[130px] px-[18px] md:px-[100px]">
+    <div className="mt-[75px] md:mt-[130px] px-[18px] md:px-[100px] font-[AbroBold]">
       <div className="flex justify-center md:justify-start  md:items-start">
         <p className="text-white text-[30px] md:text-[48px]">
           Our <br className="hidden md:block" />
