@@ -16,8 +16,8 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
   const firstHalf = brandLogosSmall.slice(0, half);
   const secondHalf = brandLogosSmall.slice(half);
   return (
-    <div className="mt-[57px] md:mt-[147px] flex flex-col-reverse lg:flex-col px-[18px]  lg:px-[100px]">
-      <div className="flex flex-col   lg:gap-[50px] lg:border-t md:rounded-l-[46px] lg:rounded-r-[46px] rounded-b-none border-b-0 lg:border-l lg:border-r md:border-white border-opacity-50  md:pt-[40px]  lg:pb-[100px] md:mb-0">
+    <div className="mt-[57px] md:mt-[147px] flex flex-col-reverse lg:flex-col px-[18px]  md:px-[100px] poppins-regular">
+      <div className="flex flex-col   lg:gap-[50px] lg:border-t md:rounded-l-[46px] lg:rounded-r-[46px] rounded-b-none border-b-0 lg:border-l lg:border-r md:border-white border-opacity-50  md:pt-[40px]  md:pb-[100px] md:mb-0">
         <div className="  md:px-[35px]">
           <div className="overflow-hidden lg:hidden">
             <Swiper
@@ -28,33 +28,33 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
               pagination={false}
               autoplay={{ delay: 2500 }}
               loop={true}
-              // breakpoints={{
-              //   640: {
-              //     slidesPerView: 2,
-              //   },
-              //   768: {
-              //     slidesPerView: 3,
-              //   },
-              //   1024: {
-              //     slidesPerView: 4,
-              //   },
-              // }}
-              className="swiper-pagination-white max-h-[200px]"
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+              }}
+              className="swiper-pagination-white h-fit"
             >
               {firstHalf.map((logoSmall, index) => (
-                <SwiperSlide  className="" key={index}>
+                <SwiperSlide  className="h-fit" key={index}>
                   {/* Display first half in the first div */}
                   <div className="h-auto w-fit ">
                     <img
                       src={logoSmall.image}
                       alt={`Brand logo ${index + 1}`}
-                      className=""
+                      className="w-fit h-fit object-contain"
                     />
                   </div>
 
                   {/* Display the second half in the second div */}
                   {secondHalf[index] && (
-                    <div className="h-auto w-fit ">
+                    <div className="h-fit w-fit ">
                       <img
                         src={secondHalf[index]?.image}
                         alt={`Brand logo ${index + 1 + half}`}
