@@ -22,43 +22,29 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
           <div className="overflow-hidden lg:hidden">
             <Swiper
               modules={[Pagination, Autoplay]}
-              spaceBetween={30}
+              spaceBetween={0}
               slidesPerView={1}
               navigation={false}
               pagination={false}
               autoplay={{ delay: 2500 }}
               loop={true}
-              // breakpoints={{
-              //   640: {
-              //     slidesPerView: 2,
-              //   },
-              //   768: {
-              //     slidesPerView: 3,
-              //   },
-              //   1024: {
-              //     slidesPerView: 4,
-              //   },
-              // }}
               className="swiper-pagination-white max-h-[200px]"
             >
               {firstHalf.map((logoSmall, index) => (
-                <SwiperSlide  className="" key={index}>
-                  {/* Display first half in the first div */}
-                  <div className="h-auto w-fit ">
+                <SwiperSlide key={index}>
+                  <div className="h-auto w-fit">
                     <img
                       src={logoSmall.image}
                       alt={`Brand logo ${index + 1}`}
-                      className=""
+                      className="" // No margins
                     />
                   </div>
-
-                  {/* Display the second half in the second div */}
                   {secondHalf[index] && (
-                    <div className="h-auto w-fit ">
+                    <div className="h-auto w-fit">
                       <img
-                        src={secondHalf[index]?.image}
-                        alt={`Brand logo ${index + 1 + half}`}
-                        className="w-fit h-fit object-contain"
+                        src={secondHalf[index].image}
+                        alt={`Brand logo ${index + 1}`}
+                        className="" // No margins
                       />
                     </div>
                   )}
@@ -67,7 +53,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
             </Swiper>
           </div>
         </div>
-        <div className="md:px-[35px]">
+        <div className="lg:px-[35px]">
           <div className="hidden lg:flex lg:flex-col  md:items-center md:gap-[40px]">
             {barandLogos
               .slice(0, showAll ? barandLogos.length : 2)
