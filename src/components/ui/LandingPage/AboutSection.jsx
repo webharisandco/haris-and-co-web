@@ -17,9 +17,9 @@ function AboutSection({
           <div className="flex flex-col gap-[20px] md:w-8/12">
             <div>
               {" "}
-              <p className="text-[30px] md:text-[48px] leading-none text-white font-medium font-[AbroBold]">
+              <h2 className="text-[30px] md:text-[48px] leading-none text-white font-medium font-[AbroBold]">
                 {heading}
-              </p>
+              </h2>
             </div>
             <div>
               <p className="text-[16px] md:text-[20px] text-white poppins-light">

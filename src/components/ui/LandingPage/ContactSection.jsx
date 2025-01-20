@@ -36,9 +36,9 @@ function ContactSection() {
         
         <div className="lg:w-[50%] flex flex-col gap-[30px] py-[53px] md:py-[147px]">
           <div>
-            <p className="text-white text-[30px] md:text-[48px]">
+            <h5 className="text-white text-[30px] md:text-[48px]">
               Let's Have a Chat
-            </p>
+            </h5>
           </div>
           <div>
             <p className="text-white text-[16px] md:text-[20px]">
