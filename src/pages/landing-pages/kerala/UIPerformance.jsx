@@ -262,7 +262,7 @@ export default function UIPerformance() {
                     <button
                       style={{ fontWeight: "bold" }}
                       onClick={toggleExpand}
-                      className="mt-[20px] text-[13px] lg:text-[20px] text-black flex font-extrabold cursor-pointer"
+                      className="poppins-semibold mt-[20px] text-[13px] lg:text-[20px] text-black flex font-extrabold cursor-pointer"
                     >
                       {"Read More"}
                     </button>
