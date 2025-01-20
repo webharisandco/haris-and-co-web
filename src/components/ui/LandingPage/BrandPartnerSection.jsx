@@ -16,8 +16,8 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
   const firstHalf = brandLogosSmall.slice(0, half);
   const secondHalf = brandLogosSmall.slice(half);
   return (
-    <div className="mt-[57px] md:mt-[147px] flex flex-col-reverse lg:flex-col px-[18px]  lg:px-[100px]">
-      <div className="flex flex-col   lg:gap-[50px] lg:border-t md:rounded-l-[46px] lg:rounded-r-[46px] rounded-b-none border-b-0 lg:border-l lg:border-r md:border-white border-opacity-50  md:pt-[40px]  lg:pb-[100px] md:mb-0">
+    <div className="mt-[57px] md:mt-[147px] flex flex-col-reverse lg:flex-col px-[18px]  md:px-[100px] poppins-regular">
+      <div className="flex flex-col   lg:gap-[50px] lg:border-t md:rounded-l-[46px] lg:rounded-r-[46px] rounded-b-none border-b-0 lg:border-l lg:border-r md:border-white border-opacity-50  md:pt-[40px]  md:pb-[100px] md:mb-0">
         <div className="  md:px-[35px]">
           <div className="overflow-hidden lg:hidden">
             <Swiper
