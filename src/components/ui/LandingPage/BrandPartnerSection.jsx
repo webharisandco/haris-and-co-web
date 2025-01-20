@@ -26,18 +26,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
               slidesPerView={1}
               autoplay={{ delay: 2500 }}
               loop={true}
-              breakpoints={{
-                640: {
-                  slidesPerView: 2,
-                },
-                768: {
-                  slidesPerView: 3,
-                },
-                1024: {
-                  slidesPerView: 4,
-                },
-              }}
-              className="swiper-pagination-white h-fit"
+              className="swiper-pagination-white max-h-[200px]"
             >
               {firstHalf.map((logoSmall, index) => (
                 <SwiperSlide  className="h-fit" key={index}>
@@ -49,10 +38,8 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
                       className="w-fit object-contain"
                     />
                   </div>
-
-                  {/* Display the second half in the second div */}
                   {secondHalf[index] && (
-                    <div className="h-fit w-fit ">
+                    <div className="h-auto w-fit">
                       <img
                         src={secondHalf[index]?.image}
                         alt={`Brand logo ${index + 1 + half}`}
@@ -65,7 +52,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
             </Swiper>
           </div>
         </div>
-        <div className="md:px-[35px]">
+        <div className="lg:px-[35px]">
           <div className="hidden lg:flex lg:flex-col  md:items-center md:gap-[40px]">
             {barandLogos
               .slice(0, showAll ? barandLogos.length : 2)
