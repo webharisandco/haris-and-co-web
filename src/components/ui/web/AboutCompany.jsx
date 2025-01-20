@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 function AboutCompany({ seoHeading, seoDescription, seoHeading2, seoHeading3 }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded((prevState) => !prevState);
+  };
   const webDevelopmentServices = [
     {
       title: "Dedicated Project Manager",
@@ -153,8 +158,20 @@ function AboutCompany({ seoHeading, seoDescription, seoHeading2, seoHeading3 }) 
             </div>
           ))}
         </div>
+        {!isExpanded ?  <>
+          <button
+          style={{fontWeight:'bold'}}
+            onClick={toggleExpand}
+            className="mt-[20px] text-[13px] lg:text-[20px] text-black flex font-extrabold cursor-pointer"
+          >
+            { "Read More"}
+          </button>
+        </>:''    }
+   
 
-        <div className=" gap-[13px] mt-[31px] md:mt-[52px]">
+          {isExpanded ? <>
+          
+            <div className=" gap-[13px] mt-[31px] md:mt-[52px]">
           <p className="text-black text-[16px] md:text-[36px] font-[AbroBold]">
             Why You Must Have a Website?
           </p>
@@ -191,7 +208,9 @@ function AboutCompany({ seoHeading, seoDescription, seoHeading2, seoHeading3 }) 
               </p>
             </div>
           ))}
-        </div>
+        </div></>:'' }
+
+      
       </div>
     </div>
   );

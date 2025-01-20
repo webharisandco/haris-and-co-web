@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useState } from 'react';
 import LandingHeader from "@/components/layout/landing/LandingHeader";
 import LandingFooter from "@/components/layout/landing/LandingFooter";
 import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
@@ -35,6 +35,11 @@ const ResultSection = lazy(() => import("@/components/ui/LandingPage/ResultSecti
 const ToolsAndPlatform = lazy(() => import("@/components/ui/LandingPage/ToolsAndPlatform"));
 
 export default function UIPerformance() {
+    const [isExpanded, setIsExpanded] = useState(false);
+  
+    const toggleExpand = () => {
+      setIsExpanded((prevState) => !prevState);
+    };
   const perfomanceBrands = [
     {
       id: 1,
@@ -228,7 +233,7 @@ export default function UIPerformance() {
                   <span className="poppins-regular">
                     Performance marketing focuses on actions such as clicks,
                     leads, or sales, making it easy to track and measure
-                    results. With a Performance Marketing Agency in Dubai like
+                    results. With a Performance Marketing Agency in Sharjah like
                     Haris&Co., you can assess campaign performance in real-time,
                     ensuring your marketing budget is spent effectively and
                     delivering tangible ROI.
@@ -242,101 +247,130 @@ export default function UIPerformance() {
                     investing in results, not just exposure.{" "}
                   </span>
                 </li>
-                <li>
-                  <span className="poppins-semibold">Highly Targeted : </span>
-                  <span className="poppins-regular">
-                    Performance marketing campaigns can be finely tuned to
-                    target specific demographics, interests, or behaviours. By
-                    working with a Performance Marketing Agency in Dubai like
-                    Haris&Co., you can ensure that your campaigns reach the
-                    right audience, increasing the likelihood of conversions and
-                    maximising your ad spend.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">
-                    Real-Time Optimization :{" "}
-                  </span>
-                  <span className="poppins-regular">
-                    With performance marketing, campaigns can be adjusted in
-                    real-time based on data insights. A Performance Marketing
-                    Agency in Dubai like Haris&Co. leverages this flexibility to
-                    fine-tune ad creatives, targeting, and budgets, ensuring
-                    optimal performance and faster responses to market changes.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">Scalability : </span>
-                  <span className="poppins-regular">
-                    Performance marketing is easily scalable. As your business
-                    grows, Performance Marketing can help expand your campaigns,
-                    allocating more resources to the best-performing channels,
-                    allowing for controlled and sustained growth.
-                  </span>
-                </li>
+                {!isExpanded ? (
+                  <>
+                    <button
+                      style={{ fontWeight: "bold" }}
+                      onClick={toggleExpand}
+                      className="mt-[20px] text-[13px] lg:text-[20px] text-black flex font-extrabold cursor-pointer"
+                    >
+                      {"Read More"}
+                    </button>
+                  </>
+                ) : (
+                  ""
+                )}
+
+                {isExpanded ? (
+                  <>
+                    <li>
+                      <span className="poppins-semibold">
+                        Highly Targeted :{" "}
+                      </span>
+                      <span className="poppins-regular">
+                        Performance marketing campaigns can be finely tuned to
+                        target specific demographics, interests, or behaviours.
+                        By working with a Performance Marketing Agency in
+                        Sharjah like Haris&Co., you can ensure that your
+                        campaigns reach the right audience, increasing the
+                        likelihood of conversions and maximising your ad spend.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="poppins-semibold">
+                        Real-Time Optimization :{" "}
+                      </span>
+                      <span className="poppins-regular">
+                        With performance marketing, campaigns can be adjusted in
+                        real-time based on data insights. A Performance
+                        Marketing Agency in Sharjah like Haris&Co. leverages
+                        this flexibility to fine-tune ad creatives, targeting,
+                        and budgets, ensuring optimal performance and faster
+                        responses to market changes.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="poppins-semibold">Scalability : </span>
+                      <span className="poppins-regular">
+                        Performance marketing is easily scalable. As your
+                        business grows, Performance Marketing can help expand
+                        your campaigns, allocating more resources to the
+                        best-performing channels, allowing for controlled and
+                        sustained growth.
+                      </span>
+                    </li>
+                  </>
+                ) : (
+                  ""
+                )}
               </ul>
             </div>
           </div>
-          <div className="flex flex-col gap-6 mb-5">
-            <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
-              Our Process
-            </h4>
-            <div className="poppins-regular text-[11px] md:text-[15px] lg:text-lg">
-              <ol className="gap-5 grid mb-6">
-                <li>
-                  <span className="poppins-semibold">
-                    1) Campaign Strategy :{" "}
-                  </span>
-                  <span className="poppins-regular">
-                    We begin by developing a tailored, data-driven plan to align
-                    with your business goals and target audience.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">
-                    2) Creative Development :{" "}
-                  </span>
-                  <span className="poppins-regular">
-                    Our team creates compelling ad creatives designed to engage
-                    and convert your ideal customers.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">3) Execution : </span>
-                  <span className="poppins-regular">
-                    We launch the campaign across the right platforms, ensuring
-                    smooth implementation and maximum reach.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">4) Optimisation : </span>
-                  <span className="poppins-regular">
-                    We continually monitor performance and make adjustments to
-                    improve results and maximise ROI.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">5) A/B Testing : </span>
-                  <span className="poppins-regular">
-                    We test different variations to identify the most effective
-                    strategies and enhance campaign performance.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">6) Scaling : </span>
-                  <span className="poppins-regular">
-                    Once we find what works, we scale the campaign to reach a
-                    larger audience and drive sustainable growth.
-                  </span>
-                </li>
-              </ol>
-              <p>
-                This structured approach ensures your campaigns are not only
-                launched effectively but also optimised and scaled for ongoing
-                success.
-              </p>
+
+          {isExpanded ? (
+            <div className="flex flex-col gap-6 mb-5">
+              <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
+                Our Process
+              </h4>
+              <div className="poppins-regular text-[11px] md:text-[15px] lg:text-lg">
+                <ol className="gap-5 grid mb-6">
+                  <li>
+                    <span className="poppins-semibold">
+                      1) Campaign Strategy :{" "}
+                    </span>
+                    <span className="poppins-regular">
+                      We begin by developing a tailored, data-driven plan to
+                      align with your business goals and target audience.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="poppins-semibold">
+                      2) Creative Development :{" "}
+                    </span>
+                    <span className="poppins-regular">
+                      Our team creates compelling ad creatives designed to
+                      engage and convert your ideal customers.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="poppins-semibold">3) Execution : </span>
+                    <span className="poppins-regular">
+                      We launch the campaign across the right platforms,
+                      ensuring smooth implementation and maximum reach.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="poppins-semibold">4) Optimisation : </span>
+                    <span className="poppins-regular">
+                      We continually monitor performance and make adjustments to
+                      improve results and maximise ROI.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="poppins-semibold">5) A/B Testing : </span>
+                    <span className="poppins-regular">
+                      We test different variations to identify the most
+                      effective strategies and enhance campaign performance.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="poppins-semibold">6) Scaling : </span>
+                    <span className="poppins-regular">
+                      Once we find what works, we scale the campaign to reach a
+                      larger audience and drive sustainable growth.
+                    </span>
+                  </li>
+                </ol>
+                <p>
+                  This structured approach ensures your campaigns are not only
+                  launched effectively but also optimised and scaled for ongoing
+                  success.
+                </p>
+              </div>
             </div>
-          </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <LandingFooter />
