@@ -18,14 +18,12 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
   return (
     <div className="mt-[57px] md:mt-[147px] flex flex-col-reverse lg:flex-col px-[18px]  md:px-[100px] poppins-regular">
       <div className="flex flex-col   lg:gap-[50px] lg:border-t md:rounded-l-[46px] lg:rounded-r-[46px] rounded-b-none border-b-0 lg:border-l lg:border-r md:border-white border-opacity-50  md:pt-[40px]  md:pb-[100px] md:mb-0">
-        <div className="  md:px-[35px]">
-          <div className="overflow-hidden lg:hidden">
+        <div className="md:px-[35px]">
+          <div className="overflow-hidden lg:hidden h-fit">
             <Swiper
-              modules={[Pagination, Autoplay]}
+              modules={[Autoplay]}
               spaceBetween={30}
               slidesPerView={1}
-              navigation={false}
-              pagination={false}
               autoplay={{ delay: 2500 }}
               loop={true}
               breakpoints={{
@@ -44,11 +42,11 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
               {firstHalf.map((logoSmall, index) => (
                 <SwiperSlide  className="h-fit" key={index}>
                   {/* Display first half in the first div */}
-                  <div className="h-auto w-fit ">
+                  <div className=" w-fit ">
                     <img
                       src={logoSmall.image}
                       alt={`Brand logo ${index + 1}`}
-                      className="w-fit h-fit object-contain"
+                      className="w-fit object-contain"
                     />
                   </div>
 
@@ -58,7 +56,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
                       <img
                         src={secondHalf[index]?.image}
                         alt={`Brand logo ${index + 1 + half}`}
-                        className="w-fit h-fit object-contain"
+                        className="w-fit object-contain"
                       />
                     </div>
                   )}
