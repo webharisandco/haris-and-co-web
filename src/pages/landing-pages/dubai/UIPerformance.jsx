@@ -233,7 +233,7 @@ export default function UIPerformance() {
                   <span className="poppins-regular">
                     Performance marketing focuses on actions such as clicks,
                     leads, or sales, making it easy to track and measure
-                    results. With a Performance Marketing Agency in Sharjah like
+                    results. With a Performance Marketing Agency in Dubai like
                     Haris&Co., you can assess campaign performance in real-time,
                     ensuring your marketing budget is spent effectively and
                     delivering tangible ROI.
@@ -271,7 +271,7 @@ export default function UIPerformance() {
                         Performance marketing campaigns can be finely tuned to
                         target specific demographics, interests, or behaviours.
                         By working with a Performance Marketing Agency in
-                        Sharjah like Haris&Co., you can ensure that your
+                        Dubai like Haris&Co., you can ensure that your
                         campaigns reach the right audience, increasing the
                         likelihood of conversions and maximising your ad spend.
                       </span>
@@ -283,7 +283,7 @@ export default function UIPerformance() {
                       <span className="poppins-regular">
                         With performance marketing, campaigns can be adjusted in
                         real-time based on data insights. A Performance
-                        Marketing Agency in Sharjah like Haris&Co. leverages
+                        Marketing Agency in Dubai like Haris&Co. leverages
                         this flexibility to fine-tune ad creatives, targeting,
                         and budgets, ensuring optimal performance and faster
                         responses to market changes.
