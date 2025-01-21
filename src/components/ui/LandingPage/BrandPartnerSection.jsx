@@ -92,7 +92,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
         </div>
       </div>
       <div className="w-full bg-[#151515] h-full py-[10px] lg:py-[25px] flex justify-center items-center mb-[17px] md:mb-0 rounded-[10px] lg:rounded-b-[46px] lg:mt-[-50px]">
-        <p className="text-white text-center flex justify-center text-[13px] lg:text-[20px]">
+        <p className="text-white text-center flex justify-center text-[13px] lg:text-[17px]">
           {text}
           <span
             onClick={toggleView}
