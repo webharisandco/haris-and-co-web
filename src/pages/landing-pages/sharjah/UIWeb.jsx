@@ -73,7 +73,7 @@ export default function UIWeb() {
       image: webBrand6,
     },
   ];
-  const tagline = "Conversion-focused Website Development Company in Abu Dhabi";
+  const tagline = "Conversion-focused Website Development Company in Sharjah";
   const heading = "Get a Website That Gets You More Leads & Sales";
   const description =
     "Delivering websites that are fast, secure, engaging and user-friendly. Wanna know the best part? Our conversion optimization makes navigation easier for your visitors from the 1st click to the final conversion.";
@@ -103,7 +103,7 @@ export default function UIWeb() {
     },
     {
       question:
-        "As a web design & development agency in Abu Dhabi, do you help with revamping a website?",
+        "As a web design & development agency in Sharjah, do you help with revamping a website?",
       answer:
         "Yes, we specialize in revamping websites to align with modern design trends, improve user experience, and ensure better functionality tailored to your business needs.",
     },
