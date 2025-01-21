@@ -18,13 +18,14 @@ const LandingHeader = () => {
         }
     };
     return (
-        <header className='flex justify-between bg-black px-[18px] py-[40px] md:px-[80px] lg:px-[100px] md:py-[40px] items-center border-b border-b-white/50'>
+        <header className='flex justify-between bg-black px-[18px] py-[40px] md:px-[80px] lg:px-[95px] md:py-[40px] items-center border-b border-b-white/50 ' >
             <img src={Logo} className='h-[30px] md:h-[35px] lg:h-[40px] ' alt='Haris&Co Logo' />
             <div className={"hidden lg:flex justify-between items-center gap-[30px] xl:gap-[40px] text-white/80 *:font-light  "}>
                 <Link to="/" className="text-[18px] font-[AbroRegular] text-white">Home</Link>
                 <Link to="/services" className="text-[18px] font-[AbroRegular] ">Services</Link>
-                <Link to="/culture" className="text-[18px] font-[AbroRegular]">Culture</Link>
                 <Link to="/casestudies" className="text-[18px] font-[AbroRegular]">Case Studies</Link>
+                <Link to="/culture" className="text-[18px] font-[AbroRegular]">Career</Link>
+                <Link to="/culture" className="text-[18px] font-[AbroRegular]">Blog</Link>
                 <Link to="/contact" className="text-[18px] font-[AbroRegular]">Contact Us</Link>
             </div>
             <LandingButton text={'GET A PROPOSAL'} className={'hidden lg:flex '} />

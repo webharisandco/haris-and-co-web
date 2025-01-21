@@ -384,7 +384,7 @@ export default function UIPerformance() {
           )}
         </div>
       </div>
-      <LandingFooter />
+      <LandingFooter performance/>
     </div>
   );
 }

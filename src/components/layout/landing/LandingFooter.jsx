@@ -10,14 +10,14 @@ import XLogo from '@/assets/images/landing/XLogo.svg'
 import Logo from '@/assets/images/Haris&Co.svg';
 
 
-const LandingFooter = () => {
+const LandingFooter = ({ performance = false }) => {
     return (
-        <div className='bg-black px-[18px] md:px-[50px] lg:px-[80px] py-[50px] text-white space-y-5 poppins-medium'>
-            <div className=" md:grid-cols-[1fr_1.2fr] xl:grid-cols-[1fr_1.2fr_1.4fr_1.9fr] gap-[150px] py-[100px] hidden md:grid">
+        <div className='bg-black px-[18px] md:px-[50px] lg:px-[100px] py-[50px] text-white space-y-5 poppins-medium'>
+            <div className="gap-[40px] xl:gap-[70px] py-[100px] hidden md:flex justify-between flex-col lg:flex-row">
                 <div className="flex flex-col ">
                     <img src={logo} className='h-[130px] w-[200px]' alt='Haris&Co Logo' />
-                    <img src={googleLogo} className='mt-[50px] mb-[35px] ' alt='Google Partner Logo' />
-                    <div className="flex gap-8 justify-center">
+                    <img src={googleLogo} className='mt-[50px] mb-[35px] w-[200px]' alt='Google Partner Logo' />
+                    <div className="flex gap-8 justify-start lg:justify-center">
                         <img src={LinkedinLogo} alt='Linkedin Logo' />
                         <img src={FacebookLogo} alt='Facebook Logo' />
                         <img src={InstagramLogo} alt='Instagram Logo' />
@@ -25,28 +25,44 @@ const LandingFooter = () => {
                     </div>
                 </div>
                 <div className="space-y-10">
-                    <h6 className='poppins-bold text-3xl'>Menu</h6>
-                    <div className="flex flex-col gap-5 text-nowrap text-lg">
+                    <h6 className='poppins-bold text-xl'>Menu</h6>
+                    <div className="flex flex-col gap-5  poppins-light text-nowrap">
                         <Link to="/">Home</Link>
                         <Link to="/">Services</Link>
-                        <Link to="/">Culture</Link>
+                        <Link to="/">Career</Link>
+                        <Link to="/">Blog</Link>
                         <Link to="/">Case Studies</Link>
                         <Link to="/">Contacts</Link>
                     </div>
                 </div>
                 <div className="space-y-10">
-                    <h6 className='poppins-bold text-3xl'>Important Links</h6>
-                    <div className="flex flex-col gap-5 text-nowrap text-lg">
-                        <Link to="/">Case Studies</Link>
+                    <h6 className='poppins-bold text-xl'>Important Links</h6>
+                    <div className="flex flex-col gap-5 text-nowrap poppins-light">
+                        <Link to="/">Digital Marketing</Link>
                         <Link to="/">SEO</Link>
-                        <Link to="/">E-Commerce Marketing</Link>
                         <Link to="/">Lead Generation</Link>
                         <Link to="/">Social Media Marketing</Link>
+                        <Link to="/">Web Development</Link>
                     </div>
                 </div>
                 <div className="space-y-10">
-                    <h6 className='poppins-bold text-3xl'>Get In Touch</h6>
-                    <div className=" flex flex-col text-lg gap-5 poppins-regular">
+                    <h6 className='poppins-bold text-xl text-nowrap'>Locations We Serve</h6>
+                    {performance ? <div className="flex flex-col gap-5 text-wrap poppins-light">
+                        <Link to="/ae/services/performance-marketing-agency-in-dubai">Performance Marketing Agency in Dubai</Link>
+                        <Link to="/ae/services/performance-marketing-agency-in-sharjah">Performance Marketing Agency in Sharjah</Link>
+                        <Link to="/ae/services/performance-marketing-agency-in-abudhabi">Performance Marketing Agency in Abu Dhabi</Link>
+                        <Link to="/services/performance-marketing-agency-in-kerala">Performance Marketing Agency in Kerala</Link>
+                    </div>
+                        :
+                        <div className="flex flex-col gap-5 text-nowrap poppins-light">
+                            <Link to="/ae/services/web-development-company-in-dubai">Web Development Company in Dubai</Link>
+                            <Link to="/ae/services/web-development-company-in-sharjah">Web Development Company in Sharjah</Link>
+                            <Link to="/ae/services/web-development-company-in-abudhabi">Web Development Company in Abu Dhabi</Link>
+                        </div>}
+                </div>
+                <div className="space-y-10">
+                    <h6 className='poppins-bold text-xl'>Get In Touch</h6>
+                    <div className=" flex flex-col poppins-light gap-5 ">
                         <div className="gap-8 flex items-start">
                             <Phone color='#333' fill='#fff' />
                             <span>+971 55 490 8107</span>
@@ -56,13 +72,13 @@ const LandingFooter = () => {
                             <span>haris@harisand.co</span>
                         </div>
                         <div className="gap-8 flex  items-start">
-                            <MapPin fill='#fff' color='#333' size={65} className='w-fit h-fit' />
+                            <MapPin fill='#fff' color='#333' className='w-fit h-fit min-h-[40px]' />
                             <span className=''>Abdulla Kamber Business Center, Room No 103, First Floor, Abu Baker Al Siddique St, Deira - Dubai</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className=" justify-center text-white/50 hidden md:flex"><span>Copyrights &copy; 2024 by Team Haris&Co.</span></div>
+            <div className=" justify-center text-white/50 hidden md:flex"><span>Copyrights &copy; 2025 by Team Haris&Co.</span></div>
             <div className="flex md:hidden flex-col gap-6">
                 <div className="flex flex-col gap-5 px-10 justify-center text-center">
                     <img src={Logo} alt="" />
