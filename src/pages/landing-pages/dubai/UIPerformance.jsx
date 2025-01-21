@@ -35,6 +35,10 @@ const ResultSection = lazy(() => import("@/components/ui/LandingPage/ResultSecti
 const ToolsAndPlatform = lazy(() => import("@/components/ui/LandingPage/ToolsAndPlatform"));
 
 export default function UIPerformance() {
+  const location = {
+    lat: 25.270889,
+    lng: 55.3314523,
+  };
     const [isExpanded, setIsExpanded] = useState(false);
   
     const toggleExpand = () => {
@@ -195,7 +199,7 @@ export default function UIPerformance() {
           <Testimonial />
         </div>
         <div className="">
-          <ContactSection />
+          <ContactSection location={location}/>
         </div>
       </Suspense>
       <div className="bg-white">

@@ -35,6 +35,10 @@ import perfomanceBrandsSmall12 from "../../../assets/images/brandLogos/perfomanc
 import { Helmet } from "react-helmet";
 
 export default function UIPerformance() {
+  const location = {
+    lat: 25.270889,
+    lng: 55.3314523,
+  };
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -206,7 +210,7 @@ export default function UIPerformance() {
         <Testimonial />
       </div>
       <div className="">
-        <ContactSection />
+  <ContactSection location={location}/>
       </div>
       <div className="bg-white">
         <Faq faqList={faqList} />
