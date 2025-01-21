@@ -124,7 +124,7 @@ export default function UIPerformance() {
     {
       question: "What kind of businesses benefit from performance marketing?",
       answer:
-        "Performance marketing is ideal for businesses of all sizes and industries looking for measurable, results-driven campaigns. Whether in e-commerce, B2B, services, or tech, performance marketing can help you drive traffic, generate leads, and increase sales. Working with a Performance Marketing Agency in Dubai like Haris&Co. can help tailor campaigns to your specific goals, ensuring maximum ROI and efficiency across all digital channels.",
+        "Performance marketing is ideal for businesses of all sizes and industries looking for measurable, results-driven campaigns. Whether in e-commerce, B2B, services, or tech, performance marketing can help you drive traffic, generate leads, and increase sales. Working with a Performance Marketing Agency in Dubai. can help tailor campaigns to your specific goals, ensuring maximum ROI and efficiency across all digital channels.",
     },
     {
       question:
