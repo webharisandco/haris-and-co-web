@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "@/components/ui/LandingPage/Banner";
-import BannerImages from "@/assets/images/web/images/banner-Image.png";
+import BannerImages from "@/assets/images/landing/webHero.webp";
 import Banner2 from "@/assets/images/web/images/banner2.png";
 import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
 import AboutSection from "@/components/ui/LandingPage/AboutSection";

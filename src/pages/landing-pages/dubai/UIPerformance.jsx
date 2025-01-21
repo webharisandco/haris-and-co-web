@@ -4,7 +4,7 @@ import LandingFooter from "@/components/layout/landing/LandingFooter";
 import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
 import { Faq } from "@/components/ui/LandingPage/Faq";
 import Banner from "@/components/ui/LandingPage/Banner";
-import BannerImg from "@/assets/images/landing/BannerImg.svg";
+import BannerImg from "@/assets/images/landing/performanceHero.webp";
 import AboutImg from "@/assets/images/landing/AboutImg.png";
 import AboutSection from "@/components/ui/LandingPage/AboutSection";
 import perfomanceBrands1 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands1.png";
