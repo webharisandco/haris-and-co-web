@@ -210,7 +210,7 @@ export default function UIPerformance() {
         <Testimonial />
       </div>
       <div className="">
-        <ContactSection location={location} />
+        <ContactSection kerala />
       </div>
       <div className="bg-white">
         <Faq faqList={faqList} />

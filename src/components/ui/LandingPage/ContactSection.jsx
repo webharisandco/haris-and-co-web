@@ -17,7 +17,7 @@ const containerStyle = {
 
 
 
-function ContactSection({location}) {
+function ContactSection({ kerala }) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function ContactSection({location}) {
     return <div className="text-center text-lg">Loading Map...</div>;
 
   return (
-    <div className="pt-[68px] md:pt-[200px] bg-white relative">
+    <div className="pt-[68px] md:pt-[200px] -mt-[90px] bg-white relative">
       <div className="px-[16px] md:px-[80px] lg:px-[100px] flex flex-col justify-between md:relative z-10 static  bg-[#151515]">
 
         <div className="lg:w-[50%] flex flex-col gap-[30px] py-[53px] md:py-[147px] poppins-light">
@@ -97,20 +97,20 @@ function ContactSection({location}) {
               </div>
             </div>
           </div>
-            <div className=" hidden md:flex items-center pr-[15px] mt-[40px]">
-              <div className="">
-                {/* <img className="" src={LocationIcon} alt="Location Icon" /> */}
-                <MapPin fill='#fff' color='#333' size={40} className='w-fit h-fit' />
+          <div className=" hidden md:flex items-center pr-[15px] mt-[40px]">
+            <div className="">
+              {/* <img className="" src={LocationIcon} alt="Location Icon" /> */}
+              <MapPin fill='#fff' color='#333' size={40} className='w-fit h-fit' />
 
-              </div>
-              <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
-              <div className="flex flex-col gap-[12px] ">
-                <p className="text-white text-[16px] md:text-[18px]">
-                  Abdulla Kamber Business Center, Room No 103, First Floor, Abu
-                  Baker Al Siddique St, Deira - Dubai
-                </p>
-              </div>
             </div>
+            <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
+            <div className="flex flex-col gap-[12px] ">
+              <p className="text-white text-[16px] md:text-[18px]">
+                Abdulla Kamber Business Center, Room No 103, First Floor, Abu
+                Baker Al Siddique St, Deira - Dubai
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="w-auto block lg:hidden poppins-medium">
@@ -334,8 +334,8 @@ function ContactSection({location}) {
         </div>
       </div>
 
-      <div className="relative w-full mt-[-100px] z-0">
-        <LoadScript googleMapsApiKey="AIzaSyA89D1-afcBJwMoQFfQ2FKTolKLgI8UyvQ">
+      <div className="relative w-full  z-0 *:w-full">
+        {/* <LoadScript googleMapsApiKey="AIzaSyA89D1-afcBJwMoQFfQ2FKTolKLgI8UyvQ">
           <GoogleMap
             mapContainerStyle={containerStyle}
             center={location?location:tempLocation}
@@ -344,7 +344,9 @@ function ContactSection({location}) {
           >
             <Marker position={location} />
           </GoogleMap>
-        </LoadScript>
+        </LoadScript> */}
+        {kerala ? <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.484367376539!2d75.79183259999999!3d11.225735499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6592e5bc6ffbb%3A0xbd15f0508abb882b!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1737460912360!5m2!1sen!2sin" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          : <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14431.96499292783!2d55.31342625617982!3d25.270879844095365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5daecba2846d%3A0xbe655d3f8333934!2sHARIS%26CO.%20ACADEMY%20DUBAI!5e0!3m2!1sen!2sin!4v1729926197228!5m2!1sen!2sin" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>}
       </div>
     </div>
   );
