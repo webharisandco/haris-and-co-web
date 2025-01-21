@@ -27,7 +27,7 @@ export const Faq = ({ faqList }) => {
                             <div
                                 className={`overflow-hidden transition-[max-height] duration-500 ease-in-out `}
                                 style={{
-                                    maxHeight: isActive ? '200px' : '0',
+                                    maxHeight: isActive ? '250px' : '0',
                                 }}
                             >
                                 <p className="text-[14px] md:text-[16px] lg:text-[18px] poppins-regular px-4 mb-4">{faq.answer}</p>
