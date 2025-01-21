@@ -7,7 +7,7 @@ import CaseStudy from "@/components/ui/LandingPage/CaseStudy";
 import Testimonial from "@/components/ui/LandingPage/Testimonial";
 import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
 import Banner from "@/components/ui/LandingPage/Banner";
-import BannerImg from "@/assets/images/landing/BannerImg.svg";
+import BannerImg from "@/assets/images/landing/performanceHero.webp";
 import AboutImg from "@/assets/images/landing/AboutImg.png";
 import AboutSection from "@/components/ui/LandingPage/AboutSection";
 import WhatWeProvide from "@/components/ui/LandingPage/WhatWeProvide";
@@ -137,7 +137,7 @@ export default function UIPerformance() {
       question:
         "What makes Haris&Co’s performance marketing services different from others?",
       answer:
-        "At Haris & Co's performance marketing agency in Abu Dhabi like Haris&Co., we focus on data-driven results and continuous optimisation. We don’t just run ads - we strategically manage and fine-tune every aspect of your campaigns to ensure maximum ROI. Our approach is transparent, collaborative, and tailored to your business goals.",
+        "At Haris & Co's performance marketing agency in Abu Dhabi, we focus on data-driven results and continuous optimisation. We don’t just run ads - we strategically manage and fine-tune every aspect of your campaigns to ensure maximum ROI. Our approach is transparent, collaborative, and tailored to your business goals.",
     },
     {
       question:
