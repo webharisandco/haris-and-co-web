@@ -13,7 +13,7 @@ import Logo from '@/assets/images/Haris&Co.svg';
 const LandingFooter = ({ performance = false }) => {
     return (
         <div className='bg-black px-[18px] md:px-[50px] lg:px-[100px] py-[50px] text-white space-y-5 poppins-medium'>
-            <div className="gap-[40px] xl:gap-[70px] py-[100px] hidden md:flex justify-between flex-col lg:flex-row">
+            <div className="gap-[40px] xl:gap-[60px] lg:grid-cols-[1.2fr_1fr_1fr_3fr_3fr] py-[100px] hidden md:grid justify-between">
                 <div className="flex flex-col ">
                     <img src={logo} className='h-[130px] w-[200px]' alt='Haris&Co Logo' />
                     <img src={googleLogo} className='mt-[50px] mb-[35px] w-[200px]' alt='Google Partner Logo' />
@@ -72,7 +72,7 @@ const LandingFooter = ({ performance = false }) => {
                             <span>haris@harisand.co</span>
                         </div>
                         <div className="gap-8 flex  items-start">
-                            <MapPin fill='#fff' color='#333' className='w-fit h-fit min-h-[40px]' />
+                            <MapPin fill='#fff' color='#333' className='w-fit h-fit min-h-[50px]' />
                             <span className=''>Abdulla Kamber Business Center, Room No 103, First Floor, Abu Baker Al Siddique St, Deira - Dubai</span>
                         </div>
                     </div>
