@@ -22,7 +22,7 @@ function AboutSection({
               </h2>
             </div>
             <div>
-              <p className="text-[14px] text-white poppins-light">
+              <p className="text-[17px] text-white poppins-light">
                 {" "}
                 {description}
               </p>
