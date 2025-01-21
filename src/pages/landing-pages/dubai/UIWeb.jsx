@@ -34,6 +34,10 @@ import webBrandSmall11 from "../../../assets/images/brandLogos/web/small/webBran
 import { Helmet } from "react-helmet";
 
 export default function UIWeb() {
+  const location = {
+    lat: 25.270889,
+    lng: 55.3314523,
+  };
   const webBrandSmalls = [
     { id: 1, image: webBrandSmall1 },
     { id: 2, image: webBrandSmall2 },
@@ -222,7 +226,7 @@ export default function UIWeb() {
           <Testimonial />
         </div>
         <div className="">
-          <ContactSection />
+          <ContactSection location={location}/>
         </div>
         <div className="bg-white">
           <Faq faqList={faqList} />

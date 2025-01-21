@@ -15,17 +15,19 @@ const containerStyle = {
   height: "500px", // Adjust height based on your requirements
 };
 
-const location = {
-  lat: 11.260711,
-  lng: 75.779854,
-};
 
-function ContactSection() {
+
+function ContactSection({location}) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     setIsLoaded(true);
   }, []);
+
+  const tempLocation = {
+    lat: 11.260711,
+    lng: 75.779854,
+  };
 
   if (!isLoaded)
     return <div className="text-center text-lg">Loading Map...</div>;
@@ -336,7 +338,7 @@ function ContactSection() {
         <LoadScript googleMapsApiKey="AIzaSyA89D1-afcBJwMoQFfQ2FKTolKLgI8UyvQ">
           <GoogleMap
             mapContainerStyle={containerStyle}
-            center={location}
+            center={location?location:tempLocation}
             zoom={18} // Adjust zoom as needed
             options={{ disableDefaultUI: true }} // Remove default UI for a cleaner look
           >
