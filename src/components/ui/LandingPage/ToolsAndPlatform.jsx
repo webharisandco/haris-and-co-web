@@ -20,57 +20,62 @@ const ToolsAndPlatform = () => {
             <p className="poppins-light px-[18px]">
                 We use these tools to set up, finetune, and scale the performance marketing campaigns.
             </p>
-            <div className="my-[60px] grid grid-cols-5 gap-[20px] lg:gap-x-[30px]  md:gap-y-16 px-4 place-items-center *:lg:p-1.5">
-                <img
-                    src={image1}
-                    alt="Tool 1"
-                    className="h-[75px] w-auto object-contain"
-                />
-                <img
-                    src={image2}
-                    alt="Tool 2"
-                    className="h-[75px] w-auto object-contain"
-                />
-                <img
-                    src={image3}
-                    alt="Tool 3"
-                    className="h-[75px] w-auto object-contain"
-                />
-                <img
-                    src={image4}
-                    alt="Tool 4"
-                    className="h-[75px] w-auto object-contain"
-                />
-                <img
-                    src={image5}
-                    alt="Tool 5"
-                    className="h-[75px] w-auto object-contain"
-                />
-                <img
-                    src={image6}
-                    alt="Tool 6"
-                    className="h-[75px] w-auto object-contain"
-                />
-                <img
-                    src={image7}
-                    alt="Tool 7"
-                    className="h-[75px] w-auto object-contain"
-                />
-                <img
-                    src={image8}
-                    alt="Tool 8"
-                    className="h-[75px] w-auto object-contain"
-                />
-                <img
-                    src={image9}
-                    alt="Tool 9"
-                    className="h-[75px] w-auto object-contain"
-                />
-                <img
-                    src={image10}
-                    alt="Tool 10"
-                    className="h-[75px] w-auto object-contain"
-                />
+            <div className="my-[60px]  flex flex-col gap-[20px] lg:gap-x-[30px]  md:gap-y-16 px-4 w-full overflow-hidden">
+                <div className="flex justify-around w-full gap-10">
+                    <img
+                        src={image1}
+                        alt="Tool 1"
+                        className="max-h-[75px] object-contain min-w-0"
+                    />
+                    <img
+                        src={image2}
+                        alt="Tool 2"
+                        className="max-h-[75px] object-contain min-w-0"
+                    />
+                    <img
+                        src={image3}
+                        alt="Tool 3"
+                        className="max-h-[75px] object-contain min-w-0"
+                    />
+                    <img
+                        src={image4}
+                        alt="Tool 4"
+                        className="max-h-[75px] object-contain min-w-0"
+                    />
+                </div>
+                <div className="flex justify-around w-full *:min-w-0 gap-10">
+                    <img
+                        src={image5}
+                        alt="Tool 5"
+                        className="max-h-[75px] object-contain min-w-0"
+                    />
+
+                    <img
+                        src={image6}
+                        alt="Tool 6"
+                        className="max-h-[75px] object-contain"
+                    />
+                    <img
+                        src={image7}
+                        alt="Tool 7"
+                        className="max-h-[75px] object-contain"
+                    />
+                    <img
+                        src={image8}
+                        alt="Tool 8"
+                        className="max-h-[75px] object-contain"
+                    />
+                    <img
+                        src={image9}
+                        alt="Tool 9"
+                        className="max-h-[75px] object-contain"
+                    />
+                    <img
+                        src={image10}
+                        alt="Tool 10"
+                        className="max-h-[75px] object-contain"
+                    />
+                </div>
             </div>
         </div>
     );
