@@ -137,7 +137,7 @@ export default function UIPerformance() {
       question:
         "What makes Haris&Co’s performance marketing services different from others?",
       answer:
-        "At Haris & Co's performance marketing agency in Kerala  like Haris&Co., we focus on data-driven results and continuous optimisation. We don’t just run ads - we strategically manage and fine-tune every aspect of your campaigns to ensure maximum ROI. Our approach is transparent, collaborative, and tailored to your business goals.",
+        "At Haris & Co's performance marketing agency in Kerala, we focus on data-driven results and continuous optimisation. We don’t just run ads - we strategically manage and fine-tune every aspect of your campaigns to ensure maximum ROI. Our approach is transparent, collaborative, and tailored to your business goals.",
     },
     {
       question:
