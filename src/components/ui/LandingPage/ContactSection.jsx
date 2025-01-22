@@ -345,8 +345,8 @@ function ContactSection({ kerala }) {
             <Marker position={location} />
           </GoogleMap>
         </LoadScript> */}
-        {kerala ? <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.484367376539!2d75.79183259999999!3d11.225735499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6592e5bc6ffbb%3A0xbd15f0508abb882b!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1737460912360!5m2!1sen!2sin" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          : <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14431.96499292783!2d55.31342625617982!3d25.270879844095365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5daecba2846d%3A0xbe655d3f8333934!2sHARIS%26CO.%20ACADEMY%20DUBAI!5e0!3m2!1sen!2sin!4v1729926197228!5m2!1sen!2sin" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>}
+        {kerala ? <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.484367376539!2d75.79183259999999!3d11.225735499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6592e5bc6ffbb%3A0xbd15f0508abb882b!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1737460912360!5m2!1sen!2sin" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          : <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503.3021304354929!2d55.33153620025283!3d25.270938901563696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d09f059a6cb%3A0xbad92d37b5e68a90!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1737538696251!5m2!1sen!2sin"  height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>}
       </div>
     </div>
   );
