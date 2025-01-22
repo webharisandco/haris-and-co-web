@@ -100,7 +100,7 @@ function OurLatestWorks({ text }) {
 
       <div className="mt-[25px] md:mt-[111px] flex flex-col md:flex-row gap-[30px] justify-between w-full">
         <div className="w-full">
-          <p className="text-[16px] md:text-[20px] text-white poppins-thin">
+          <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-white poppins-thin">
             {text}
           </p>
         </div>

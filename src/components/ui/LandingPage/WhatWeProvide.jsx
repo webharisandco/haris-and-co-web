@@ -187,10 +187,10 @@ function WhatWeProvide({ performance = false }) {
                     <p className={`text-white text-[25px] lg:text-[28px] transition-all duration-300 cursor-pointer ${currentTitle == index && 'lg:text-[36px]'} font-[AbroRegular]`}>
                       {service.title}
                     </p>
-                    <p className="text-[16px] lg:text-[20px] text-white block lg:hidden  lg:transition-all duration-300 poppins-light">
+                    <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-white block lg:hidden  lg:transition-all duration-300 poppins-light">
                       {service.description}
                     </p>
-                   {currentTitle == index && <p className="text-[16px] poppins-light lg:text-[20px] hidden lg:block text-white  lg:transition-all duration-300">
+                   {currentTitle == index && <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] poppins-light  hidden lg:block text-white  lg:transition-all duration-300">
                       {service.description}
                     </p>}
                   </div>

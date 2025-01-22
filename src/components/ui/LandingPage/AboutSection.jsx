@@ -53,7 +53,7 @@ function AboutSection({
               </h2>
             </div>
             <div>
-              <p className="text-[17px] text-white poppins-light leading-relaxed"> {description}</p>
+              <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-white poppins-light leading-relaxed"> {description}</p>
             </div>
             <div className="flex justify-between font-[AbroBold]">
               <div className="flex flex-col ">
