@@ -39,11 +39,11 @@ export default function UIPerformance() {
     lat: 25.270889,
     lng: 55.3314523,
   };
-    const [isExpanded, setIsExpanded] = useState(false);
-  
-    const toggleExpand = () => {
-      setIsExpanded((prevState) => !prevState);
-    };
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded((prevState) => !prevState);
+  };
   const perfomanceBrands = [
     {
       id: 1,
@@ -210,7 +210,7 @@ export default function UIPerformance() {
         <Testimonial />
       </div>
       <div className="">
-        <ContactSection location={location}/>
+        <ContactSection location={location} />
       </div>
       <div className="bg-white">
         <Faq faqList={faqList} />
@@ -235,93 +235,88 @@ export default function UIPerformance() {
               value.
             </p>
           </div>
-          <div className="flex flex-col gap-6">
-            <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
-              Benefits of Performance Marketing
-            </h4>
-            <div className="poppins-regular text-[11px] md:text-[15px] lg:text-lg">
-              <ul type="dot" className="list-disc ps-5	gap-5 grid">
-                <li>
-                  <span className="poppins-semibold">
-                    Measurable Results :{" "}
-                  </span>
-                  <span className="poppins-regular">
-                    Performance marketing focuses on actions such as clicks,
-                    leads, or sales, making it easy to track and measure
-                    results. With a Performance Marketing Agency in Abu Dhabi like
-                    Haris&Co., you can assess campaign performance in real-time,
-                    ensuring your marketing budget is spent effectively and
-                    delivering tangible ROI.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">Cost-Effective : </span>
-                  <span className="poppins-regular">
-                    Performance marketing allows you to pay only for specific
-                    outcomes. This pay-for-performance model ensures you're
-                    investing in results, not just exposure.{" "}
-                  </span>
-                </li>
-                {!isExpanded ? (
-                  <>
-                   <button
-                      style={{ fontWeight: "bold" }}
-                      onClick={toggleExpand}
-                      className="poppins-semibold mt-[20px] text-[13px] lg:text-[20px] text-black flex font-extrabold cursor-pointer"
-                    >
-                      {"Read More"}
-                    </button>
-                  </>
-                ) : (
-                  ""
-                )}
+          {!isExpanded ? (
+            <>
+              <button
+                style={{ fontWeight: "bold" }}
+                onClick={toggleExpand}
+                className="poppins-semibold mt-[20px] text-[13px] lg:text-[20px] text-black flex font-extrabold cursor-pointer"
+              >
+                {"Read More"}
+              </button>
+            </>
+          ) : (
+            ""
+          )}
+          {isExpanded ? (
+            <div className="flex flex-col gap-6">
+              <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
+                Benefits of Performance Marketing
+              </h4>
+              <div className="poppins-regular text-[11px] md:text-[15px] lg:text-lg">
+                <ul type="dot" className="list-disc ps-5	gap-5 grid">
+                  <li>
+                    <span className="poppins-semibold">
+                      Measurable Results :{" "}
+                    </span>
+                    <span className="poppins-regular">
+                      Performance marketing focuses on actions such as clicks,
+                      leads, or sales, making it easy to track and measure
+                      results. With a Performance Marketing Agency in Abu Dhabi
+                      like Haris&Co., you can assess campaign performance in
+                      real-time, ensuring your marketing budget is spent
+                      effectively and delivering tangible ROI.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="poppins-semibold">Cost-Effective : </span>
+                    <span className="poppins-regular">
+                      Performance marketing allows you to pay only for specific
+                      outcomes. This pay-for-performance model ensures you're
+                      investing in results, not just exposure.{" "}
+                    </span>
+                  </li>
 
-                {isExpanded ? (
-                  <>
-                    <li>
-                      <span className="poppins-semibold">
-                        Highly Targeted :{" "}
-                      </span>
-                      <span className="poppins-regular">
-                        Performance marketing campaigns can be finely tuned to
-                        target specific demographics, interests, or behaviours.
-                        By working with a Performance Marketing Agency in
-                        Abu Dhabi like Haris&Co., you can ensure that your
-                        campaigns reach the right audience, increasing the
-                        likelihood of conversions and maximising your ad spend.
-                      </span>
-                    </li>
-                    <li>
-                      <span className="poppins-semibold">
-                        Real-Time Optimization :{" "}
-                      </span>
-                      <span className="poppins-regular">
-                        With performance marketing, campaigns can be adjusted in
-                        real-time based on data insights. A Performance
-                        Marketing Agency in Abu Dhabi like Haris&Co. leverages
-                        this flexibility to fine-tune ad creatives, targeting,
-                        and budgets, ensuring optimal performance and faster
-                        responses to market changes.
-                      </span>
-                    </li>
-                    <li>
-                      <span className="poppins-semibold">Scalability : </span>
-                      <span className="poppins-regular">
-                        Performance marketing is easily scalable. As your
-                        business grows, Performance Marketing can help expand
-                        your campaigns, allocating more resources to the
-                        best-performing channels, allowing for controlled and
-                        sustained growth.
-                      </span>
-                    </li>
-                  </>
-                ) : (
-                  ""
-                )}
-              </ul>
+                  <li>
+                    <span className="poppins-semibold">Highly Targeted : </span>
+                    <span className="poppins-regular">
+                      Performance marketing campaigns can be finely tuned to
+                      target specific demographics, interests, or behaviours. By
+                      working with a Performance Marketing Agency in Abu Dhabi
+                      like Haris&Co., you can ensure that your campaigns reach
+                      the right audience, increasing the likelihood of
+                      conversions and maximising your ad spend.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="poppins-semibold">
+                      Real-Time Optimization :{" "}
+                    </span>
+                    <span className="poppins-regular">
+                      With performance marketing, campaigns can be adjusted in
+                      real-time based on data insights. A Performance Marketing
+                      Agency in Abu Dhabi like Haris&Co. leverages this
+                      flexibility to fine-tune ad creatives, targeting, and
+                      budgets, ensuring optimal performance and faster responses
+                      to market changes.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="poppins-semibold">Scalability : </span>
+                    <span className="poppins-regular">
+                      Performance marketing is easily scalable. As your business
+                      grows, Performance Marketing can help expand your
+                      campaigns, allocating more resources to the
+                      best-performing channels, allowing for controlled and
+                      sustained growth.
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-
+          ) : (
+            ""
+          )}
           {isExpanded ? (
             <div className="flex flex-col gap-6 mb-5">
               <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
@@ -388,7 +383,7 @@ export default function UIPerformance() {
           )}
         </div>
       </div>
-      <LandingFooter performance/>
+      <LandingFooter performance />
     </div>
   );
 }
