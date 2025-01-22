@@ -1,53 +1,12 @@
 import React, { useState } from "react";
 
-function AboutCompany({ seoHeading, seoDescription, seoHeading2, seoHeading3 }) {
+function AboutCompany({ seoHeading, seoDescription, seoHeading2, seoHeading3, webDevelopmentServices }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
     setIsExpanded((prevState) => !prevState);
   };
-  const webDevelopmentServices = [
-    {
-      title: "Dedicated Project Manager",
-      description:
-        "We have an in-house brand solutions team for our web development in Dubai. This means your project gets personal attention from our dedicated project manager who ensures clear communication, and timely delivery.",
-    },
-    {
-      title: "Specialists at Every Step",
-      description:
-        "From UI/UX designers to developers, content writers to conversion rate optimizers – we have specialists who take care of each aspect of your website project. Their collaboration helps us to ensure maximum quality.",
-    },
-    {
-      title: "End-to-End Digital Excellence",
-      description:
-        "We handle everything from strategy to launch, including design, development, content, and optimization – no need to coordinate with multiple agencies.",
-    },
-    {
-      title: "Data-Driven Decision Making",
-      description:
-        "Our solutions are backed by research, user behaviour analysis, and industry best practices to ensure maximum impact.",
-    },
-    {
-      title: "Results-Focused Approach",
-      description:
-        "We don't just build websites. We are a web development company in Dubai that creates digital assets that drive business growth through strategic design and conversion optimization.",
-    },
-    {
-      title: "Proven Development Process",
-      description:
-        "Our structured web development methodology ensures transparency, timely delivery, and consistent quality across all projects.",
-    },
-    {
-      title: "Post-Launch Support",
-      description:
-        "Just because we are a web development company in Dubai, our relationship doesn't end after developing and launching the website. We provide ongoing support to ensure your website continues to perform and evolve with your business.",
-    },
-    {
-      title: "Technical Excellence",
-      description:
-        "We use cutting-edge technologies and follow best practices in security, performance, and SEO to future-proof your digital presence.",
-    },
-  ];
+ 
   const websiteBenefits = [
     {
       title:

@@ -38,6 +38,48 @@ export default function UIWeb() {
     lat: 25.270889,
     lng: 55.3314523,
   };
+  const webDevelopmentServices = [
+    {
+      title: "Dedicated Project Manager",
+      description:
+        "We have an in-house brand solutions team for our web development in Abu Dhabi. This means your project gets personal attention from our dedicated project manager who ensures clear communication and timely delivery.",
+    },
+    {
+      title: "Specialists at Every Step",
+      description:
+        "From UI/UX designers to developers, content writers to conversion rate optimizers – we have specialists who take care of each aspect of your website project. Their collaboration helps us to ensure maximum quality.",
+    },
+    {
+      title: "End-to-End Digital Excellence",
+      description:
+        "We handle everything from strategy to launch, including design, development, content, and optimization – no need to coordinate with multiple agencies.",
+    },
+    {
+      title: "Data-Driven Decision Making",
+      description:
+        "Our solutions are backed by research, user behaviour analysis, and industry best practices to ensure maximum impact.",
+    },
+    {
+      title: "Results-Focused Approach",
+      description:
+        "We don't just build websites. We are a web development company in Abu Dhabi that creates digital assets that drive business growth through strategic design and conversion optimization.",
+    },
+    {
+      title: "Proven Development Process",
+      description:
+        "Our structured web development methodology ensures transparency, timely delivery, and consistent quality across all projects.",
+    },
+    {
+      title: "Post-Launch Support",
+      description:
+        "Just because we are a web development company in Abu Dhabi, our relationship doesn't end after developing and launching the website. We provide ongoing support to ensure your website continues to perform and evolve with your business.",
+    },
+    {
+      title: "Technical Excellence",
+      description:
+        "We use cutting-edge technologies and follow best practices in security, performance, and SEO to future-proof your digital presence.",
+    },
+  ];
   const webBrandSmalls = [
     { id: 1, image: webBrandSmall1 },
     { id: 2, image: webBrandSmall2 },
@@ -101,56 +143,61 @@ export default function UIWeb() {
   ];
   const faqList = [
     {
-      question: "Within how many days you can deliver the project?",
+      question: "Do you provide website maintenance?",
       answer:
-        "The project delivery time depends on its complexity and requirements. As a web development agency, we aim to deliver projects efficiently while maintaining quality. We'll provide an estimated timeline after understanding your needs.",
+        "Yes, we provide ongoing support to keep your website high-performing and secure. We are always just a call away.",
+    },
+    {
+      question: "Within how many days can you deliver the project?",
+      answer:
+        "Usually, we deliver the project within 45 days if approvals are given on time. However, this may vary depending on the size and complexity of your website. We could give an estimated timeline after the brand understanding meeting and input collection.",
     },
     {
       question:
         "As a web design & development agency in Abu Dhabi, do you help with revamping a website?",
       answer:
-        "Yes, we specialize in revamping websites to align with modern design trends, improve user experience, and ensure better functionality tailored to your business needs.",
+        "Yes sure. In fact, we have helped various top brands such as Walkaroo, Katara Limousine, Teens, and more to revamp their existing website. So, if you want a new look for your current website, feel free to contact us.",
     },
     {
       question: "Can I update the website myself once it’s built?",
       answer:
-        "Absolutely! We build user-friendly websites with content management systems like WordPress or custom solutions that allow you to update content easily without needing technical expertise.",
+        "Sure. If you want to make any edits or updates, feel free to reach out to us. We will help you.",
     },
     {
       question: "Will my website be SEO-friendly?",
       answer:
-        "Yes, we ensure all websites we build follow SEO best practices, including fast loading times, mobile responsiveness, and proper structuring, to enhance search engine visibility.",
+        "Yes. We carry out practices such as mobile optimization, internal linking, image optimization, and more to ensure mobile-friendliness.",
     },
     {
       question: "What platforms do you use for web development?",
       answer:
-        "We use a variety of platforms such as WordPress, Shopify, and custom frameworks like React and Node.js, depending on your project requirements and goals.",
+        "We use WordPress or custom development (React JS or HTML) for developing normal websites. For eCommerce businesses, we opt for Shopify.",
     },
     {
       question: "How do you ensure website security?",
       answer:
-        "We prioritize security by implementing SSL certificates, firewalls, regular updates, and secure coding practices to protect your website from potential vulnerabilities.",
+        "One way we do this is by securing an SSL certificate for our website. Secondly, we use some tools like Wordfence to enhance the security.",
     },
     {
       question: "Can you integrate third-party tools into my website?",
       answer:
-        "Yes, we can integrate third-party tools such as payment gateways, CRMs, analytics platforms, and more to enhance your website's functionality and performance.",
+        "Yes. If you want any tools to be integrated, please let us know. We will get it done.",
     },
     {
       question: "Do you provide content for my website?",
       answer:
-        "Yes, we offer content creation services, including copywriting and graphic design, to ensure your website communicates effectively with your audience.",
+        "Of course. We have Content Writers who specifically work in the Web development team. All you have to do is provide the input and we’ll prepare the content.",
     },
     {
       question:
         "Is it necessary to have a face-to-face discussion before the start of the project?",
       answer:
-        "While face-to-face discussions are not mandatory, we are open to virtual meetings or calls to discuss project requirements and ensure clear communication.",
+        "No need for that. We usually connect with our clients via Google Meet. If you prefer a face-to-face interview, we could do that as well.",
     },
     {
       question: "What platform do you suggest for Ecommerce?",
       answer:
-        "We recommend platforms like Shopify or WooCommerce for small to medium businesses and custom solutions for larger enterprises, depending on your specific needs and scalability requirements.",
+        "We recommend Shopify as the ideal eCommerce platform due to its user-friendly interface that allows for quick setup without technical expertise, robust features including inventory management and payment processing, and excellent mobile responsiveness. It’s also scalable and offers an extensive app ecosystem for added functionality. Furthermore, it also has strong security measures and 24/7 customer support.",
     },
   ];
 
@@ -214,11 +261,11 @@ export default function UIWeb() {
 
         <div className="bg-white">
           <ConsultBanner />
-          <CaseStudy />
+          <CaseStudy web={true} />
           <Testimonial />
         </div>
         <div className="">
-   <ContactSection location={location}/>
+          <ContactSection location={location} />
         </div>
         <div className="bg-white">
           <Faq faqList={faqList} />
@@ -230,6 +277,7 @@ export default function UIWeb() {
           seoDescription={seoDescription}
           seoHeading2={seoHeading2}
           seoHeading3={seoHeading3}
+          webDevelopmentServices={webDevelopmentServices}
         />
       </div>
       <LandingFooter />
