@@ -204,7 +204,11 @@ export default function UIWeb() {
             datas={clientsMetrix}
           />
         </div>
-        <OurLatestWorks />
+        <OurLatestWorks
+          text={
+            "These are a few of the many websites we have developed thus far. This portfolio includes projects ranging from dynamic e-commerce platforms to engaging corporate websites that adhere to the respective brand guidelines and drive results in various industries."
+          }
+        />
 
         <WhatWeProvide />
 
