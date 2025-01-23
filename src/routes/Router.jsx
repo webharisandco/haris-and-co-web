@@ -8,6 +8,9 @@ import UIPerformanceDubai from '../pages/landing-pages/dubai/UIPerformance';
 import UIPerformanceSharjah from '../pages/landing-pages/sharjah/UIPerformance';
 import UIPerformanceAbudhabi from '../pages/landing-pages/abudhabi/UIPerformance';
 import UIPerformanceKerala from '../pages/landing-pages/kerala/UIPerformance';
+import Services from '../pages/serivices';
+import Works from '../pages/works';
+
 // import About from '@/pages/About';
 // import Contact from '@/pages/Contact';
 // import NotFound from '@/pages/NotFound';
@@ -27,6 +30,8 @@ const AppRouter = () => {
             <Route path="performance-marketing-agency-in-sharjah" element={<UIPerformanceSharjah />} />
           </Route>
           <Route path='services/performance-marketing-agency-in-kerala' element={<UIPerformanceKerala />} />
+          <Route path='services' element={<Services/>} />
+          <Route path='works' element={<Works/>} />
           {/* <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} /> */}
         </Route>
