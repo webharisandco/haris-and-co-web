@@ -5,7 +5,7 @@ export const Faq = ({ faqList }) => {
 
     return (
         <div className="flex flex-col gap-[80px] py-[50px] px-[16px] md:px-[60px] lg:px-[100px]">
-            <h3 className="poppins-bold mx-auto text-[36px] md:text-[40px] lg:text-[48px]">FAQs</h3>
+            <h3 className="poppins-bold mx-auto text-[30px] md:text-[40px] lg:text-[36px]">FAQs</h3>
             <div className="space-y-2 ">
                 {faqList.map((faq, index) => {
                     const isActive = isCollapsed === index;
