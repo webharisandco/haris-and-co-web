@@ -150,14 +150,14 @@ function AboutCompany({
                 {websiteBenefits.map((service, index) => (
                   <li
                     key={index}
-                    className="text-[11px] md:text-[20px] poppins-semibold text-black mt-[20px] list-disc ml-[20px]"
+                    className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] poppins-semibold text-black mt-[20px] list-disc ml-[20px]"
                   >
                     {service.title}
                   </li>
                 ))}
               </ul>
               <div className="mt-[20px] md:mt-[47px]">
-                <p className="text-black text-[11px] md:text-[20px] poppins-regular">
+                <p className="text-black text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] poppins-regular">
                   So, skip the wait and partner with Haris&Co.–the emerging web
                   development company in Dubai.
                 </p>
