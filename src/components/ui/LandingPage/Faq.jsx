@@ -22,7 +22,7 @@ export const Faq = ({ faqList }) => {
                                             }`}
                                     ></div>
                                 </div>
-                                <p className="poppins-semibold text-[14px] md:text-[16px] lg:text-[20px] font-bold">{faq.question}</p>
+                                <p className="poppins-semibold text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] font-bold">{faq.question}</p>
                             </div>
                             <div
                                 className={`overflow-hidden transition-[max-height] duration-500 ease-in-out `}
@@ -30,7 +30,7 @@ export const Faq = ({ faqList }) => {
                                     maxHeight: isActive ? '250px' : '0',
                                 }}
                             >
-                                <p className="text-[14px] md:text-[16px] lg:text-[18px] poppins-regular px-4 mb-4">{faq.answer}</p>
+                                <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] poppins-regular px-4 mb-4">{faq.answer}</p>
                             </div>
                         </div>
                     );

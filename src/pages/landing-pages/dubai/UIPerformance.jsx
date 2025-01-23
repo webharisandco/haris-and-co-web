@@ -234,7 +234,7 @@ export default function UIPerformance() {
             <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
               What is Performance Marketing?
             </h4>
-            <p className="poppins-regular text-[11px] md:text-[15px] lg:text-lg">
+            <p className="poppins-regular text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] ">
               Performance marketing is a digital marketing strategy where you
               pay only for the results you get - whether that’s a click, lead,
               sale, or other desired action. Unlike traditional advertising
@@ -269,7 +269,7 @@ export default function UIPerformance() {
                 <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
                   Benefits of Performance Marketing
                 </h4>
-                <div className="poppins-regular text-[11px] md:text-[15px] lg:text-lg">
+                <div className="poppins-regular text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] ">
                   <ul type="dot" className="list-disc ps-5	gap-5 grid">
                     <li>
                       <span className="poppins-semibold">
@@ -339,7 +339,7 @@ export default function UIPerformance() {
                 <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
                   Our Process
                 </h4>
-                <div className="poppins-regular text-[11px] md:text-[15px] lg:text-lg">
+                <div className="poppins-regular text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] ">
                   <ol className="gap-5 grid mb-6">
                     <li>
                       <span className="poppins-semibold">

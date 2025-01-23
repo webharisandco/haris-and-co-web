@@ -104,7 +104,7 @@ function AboutCompany({
             ? "Web Design and Development Services in Dubai Focused on Conversion"
             : seoHeading}
         </p>
-        <p className="text-black text-[11px] md:text-[20px] leading-relaxed poppins-regular">
+        <p className="text-black text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] leading-relaxed poppins-regular">
           {!seoDescription
             ? `Haris&Co. has been serving web development services in Dubai for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content, and technicalities.`
             : seoDescription}
@@ -134,7 +134,7 @@ function AboutCompany({
                   <p className="text-[11px] md:text-[20px] font-medium text-black  mb-[13px] md:mb-[25px] poppins-medium">
                     {service.title}
                   </p>
-                  <p className="text-[11px] md:text-[20px] poppins-regular">
+                  <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] poppins-regular">
                     {service.description}
                   </p>
                 </div>
@@ -173,7 +173,7 @@ function AboutCompany({
                   <p className="text-[11px] md:text-[20px] font-medium text-black  mb-[13px] md:mb-[25px] poppins-medium">
                     {service.title}
                   </p>
-                  <p className="text-[11px] md:text-[20px] poppins-regular">
+                  <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] poppins-regular">
                     {service.description}
                   </p>
                 </div>

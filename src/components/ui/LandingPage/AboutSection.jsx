@@ -17,7 +17,7 @@ function AboutSection({
           <div className="flex flex-col gap-[20px] md:w-8/12">
             <div>
               {" "}
-              <h2 className="text-[30px] md:text-[48px] leading-none text-white font-medium font-[AbroBold]">
+              <h2 className="text-[30px] md:text-[36px] md:leading-[51px]  text-white font-medium font-[AbroBold]">
                 {heading}
               </h2>
             </div>
@@ -48,7 +48,7 @@ function AboutSection({
           <div className="flex flex-col gap-[20px] lg:w-6/12">
             <div>
               {" "}
-              <h2 className="text-[48px] leading-none text-white font-medium font-[AbroBold]">
+              <h2 className="text-[30px] md:text-[36px] md:leading-[51px] text-white font-medium font-[AbroBold]">
                 {heading}
               </h2>
             </div>

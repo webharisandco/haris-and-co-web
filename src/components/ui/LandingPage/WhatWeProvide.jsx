@@ -146,8 +146,9 @@ function WhatWeProvide({ performance = false }) {
       >
         <div className="w-full h-full grid-bg absolute top-0 left-0"></div>
         <div className="w-full flex justify-between items-center flex-col md:flex-row">
-          <p className="text-[30px] md:text-[44px] text-white text-center lg:text-start w-[90%] font-[AbroBold]">
-            {performance? 'What’s Included in Our Service' :'What We Provide'}          </p>
+          <p className="text-[30px] md:text-[36px] text-white text-center lg:text-start w-[90%] font-[AbroBold]">
+            {performance ? "What’s Included in Our Service" : "What We Provide"}{" "}
+          </p>
           {/* <img className="h-[18px] md:h-[55px] text-[#16BD88]" src={DownArrow} alt="" /> */}
           <ArrowUpRight
             size={80}
@@ -175,24 +176,36 @@ function WhatWeProvide({ performance = false }) {
                     <img src={service.img} alt={service.title} />
                   </div>
 
-                  <div className={`hidden  lg:block w-[44px] transition-all  duration-300 ${currentTitle == index && 'scale-125 translate-y-2'}`}>
+                  <div
+                    className={`hidden  lg:block w-[44px] transition-all  duration-300 ${
+                      currentTitle == index && "scale-125 translate-y-1"
+                    }`}
+                  >
                     <img
-                      className={`w-full h-auto ${currentTitle == index && 'scale-125 translate-y-2'}`}
+                      className={`w-full h-auto ${
+                        currentTitle == index && "scale-120 translate-y-2"
+                      }`}
                       src={service.icon}
                       alt={`${service.title} Icon `}
                     />
                   </div>
 
                   <div className="w-full flex text-center lg:text-start flex-col justify-center gap-[15px]">
-                    <p className={`text-white text-[25px] lg:text-[28px] transition-all duration-300 cursor-pointer ${currentTitle == index && 'lg:text-[36px]'} font-[AbroRegular]`}>
+                    <p
+                      className={`text-white text-[25px] lg:text-[28px] transition-all duration-300 cursor-pointer ${
+                        currentTitle == index && "lg:text-[32px]"
+                      } font-[AbroRegular]`}
+                    >
                       {service.title}
                     </p>
                     <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-white block lg:hidden  lg:transition-all duration-300 poppins-light">
                       {service.description}
                     </p>
-                   {currentTitle == index && <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] poppins-light  hidden lg:block text-white  lg:transition-all duration-300">
-                      {service.description}
-                    </p>}
+                    {currentTitle == index && (
+                      <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] poppins-light  hidden lg:block text-white  lg:transition-all duration-300">
+                        {service.description}
+                      </p>
+                    )}
                   </div>
                 </div>
               ))}
