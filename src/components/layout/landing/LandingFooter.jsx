@@ -221,7 +221,7 @@ const LandingFooter = ({ performance = false }) => {
         </div>
         <div className="px-[10px] flex gap-[20px]">
           <img src={googleLogo} alt="" />
-          <img className="w-[65px] h-full" src={VirifiedAgency} alt="" />
+          {/* <img className="w-[65px] h-full" src={VirifiedAgency} alt="" /> */}
         </div>
         <div className="flex w-full justify-center py-[25px]">
         <div className="flex gap-8 justify-start lg:justify-center">
