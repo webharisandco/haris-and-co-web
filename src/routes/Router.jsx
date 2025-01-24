@@ -32,10 +32,13 @@ const AppRouter = () => {
             <Route path="performance-marketing-agency-in-sharjah" element={<UIPerformanceSharjah />} />
           </Route>
           <Route path='services/performance-marketing-agency-in-kerala' element={<UIPerformanceKerala />} />
-          <Route path='services' element={<Services/>} />
-          <Route path='works' element={<Works/>} />
-          <Route path='clients' element={<Clients/>} />
-          <Route path='branding' element={<Branding/>} />
+          <Route element={<Layout />}>
+            <Route path='about' element={<Services />} />
+            <Route path='services' element={<Services />} />
+            <Route path='works' element={<Works />} />
+            <Route path='clients' element={<Clients />} />
+            <Route path='branding' element={<Branding />} />
+          </Route>
           {/* <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} /> */}
         </Route>
