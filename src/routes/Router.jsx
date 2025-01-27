@@ -12,6 +12,9 @@ import Services from '../pages/serivices';
 import Works from '../pages/works';
 import Clients from '../pages/clients';
 import Branding from '../pages/branding';
+import Contact from '../pages/contact';
+import Careers from '../pages/careers';
+import About from '../pages/about';
 
 // import About from '@/pages/About';
 // import Contact from '@/pages/Contact';
@@ -33,7 +36,9 @@ const AppRouter = () => {
           </Route>
           <Route path='services/performance-marketing-agency-in-kerala' element={<UIPerformanceKerala />} />
           <Route element={<Layout />}>
-            <Route path='about' element={<Services />} />
+            <Route path='about' element={<About />} />
+            <Route path='contact' element={<Contact />} />
+            <Route path='careers' element={<Careers />} />
             <Route path='services' element={<Services />} />
             <Route path='works' element={<Works />} />
             <Route path='clients' element={<Clients />} />
