@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImg from '@/assets/images/About/Banner.png'
+import BannerImg from '@/assets/images/about/Banner.png'
 
 export default function AboutSection() {
     return (

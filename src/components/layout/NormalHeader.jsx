@@ -5,6 +5,7 @@ import menuIcon from '@/assets/images/icons/menu.svg';
 import { useState } from 'react';
 import MobileMenu from './MobileMenu';
 import ContactButton from '../ui/HomePage/ContactButton';
+import Button from '../ui/common/Button';
 
 
 export default function NormalHeader() {
@@ -39,7 +40,7 @@ export default function NormalHeader() {
           <Link to="/blogs" className=" font-[thin]">Blogs</Link>
           <Link to="/careers" className=" font-[thin]">Careers</Link>
         </div>
-        <ContactButton text='Contact Us' href='/contact' />
+        <Button text='Contact Us' href='/contact' />
       </div>
 
       <div className="md:hidden flex">
