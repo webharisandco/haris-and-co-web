@@ -1,4 +1,5 @@
 import React from "react";
+import LinkWithArrow from "@/components/ui/common/LinkWithArrow";
 
 function BrandingSection({ BrandingContents }) {
   return (
@@ -8,32 +9,31 @@ function BrandingSection({ BrandingContents }) {
           <div className="w-full hidden lg:block">
             <div
               key={index}
-              className={`w-full flex justify-between gap-[100px] ${
-                index % 2 === 1 ? "flex-row-reverse" : ""
-              } `}
+              className={`w-full flex justify-between gap-5 ${index % 2 === 1 ? "flex-row-reverse" : ""
+                } `}
             >
-              <div className="w-6/12 flex flex-col justify-center gap-[10px] ">
+              <div className={`w-6/12 flex flex-col justify-center gap-[15px] ${index % 2 === 0 ? "pe-[70px]" : "px-[35px]"}`}>
                 <div>
-                  <p className=" font-bold text-[48px]">
+                  <p className=" font-[boldtext] text-[45px] ">
                     {BrandingContent.title}
                   </p>
                 </div>
                 <div>
-                  <p className="text-[24px] text-gray-600">
+                  <p className="text-[21px] text-black mb-4">
                     {BrandingContent.description}
                   </p>
                 </div>
                 <div>
-                  <ul className="grid list-disc grid-cols-3 gap-[10px] text-[20px]">
+                  <ul className="grid list-disc grid-cols-3 gap-[10px] text-[18px]">
                     {BrandingContent.services.map((service, serviceIndex) => (
-                      <li key={serviceIndex} className=" text-gray-500">
+                      <li key={serviceIndex} className=" text-black/70 font-[thin] list-inside text-nowrap">
                         {service}
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="mt-[30px]">
-                  <button className="text-gray-500  text-[20px] flex items-center gap-2">
+                  <button className="text-black/55  flex items-center gap-2">
                     {BrandingContent.action.label}
                     <img src={BrandingContent.action.icon} />
                   </button>
@@ -41,7 +41,7 @@ function BrandingSection({ BrandingContents }) {
               </div>
               <div className="w-6/12 mt-[70px]">
                 <img
-                  className="w-fit h-fit lg:h-[500px]  object-cover"
+                  className="w-full h-fit lg:h-[500px]  object-cover"
                   src={BrandingContent.image}
                   alt={BrandingContent.title}
                 />

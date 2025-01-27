@@ -12,7 +12,7 @@ export default function Button({ text, href, className, color = 'black' }) {
             <Link
                 href={href}
                 className={"group relative overflow-hidden text-[18px]  transition-colors duration-300 ease-in-out text-" + color + ' ' + className}>
-                <div className={`px-[22px] py-[12px] flex items-center justify-center gap-[10px] border border-solid border-${color}  group-hover:bg-white group-hover:ps-[20px] group-hover:pr-[20px] group-hover:text-black w-[175px]`}>
+                <div className={`px-[22px] py-[10px] flex items-center justify-center gap-[10px] border border-solid border-${color}  group-hover:bg-white group-hover:ps-[20px] group-hover:pr-[20px] group-hover:text-black w-[150px]`}>
                     <span className="text-nowrap">
                         {text}
                     </span>

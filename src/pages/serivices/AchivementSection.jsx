@@ -4,8 +4,8 @@ function AchivementSection() {
   return (
     <div className="bg-black py-[30px] lg:py-[100px] px-[16px] lg:px-[100px] min-h-[700px]">
       <div className="flex justify-start items-center ">
-        <div className="w-full lg:w-11/12">
-          <p className="text-white text-center  text-[32px] lg:text-[60px] leading-none">
+        <div className="w-full lg:w-10/12 xl:w-9/12">
+          <p className="text-white text-[32px] lg:text-[55px] leading-none">
             Every innovation{" "}
             <span className="text-white/50">
               that happens here is out of a quest to get better at what we are
@@ -20,20 +20,20 @@ function AchivementSection() {
         </div>
       </div>
 
-      <div className="mt-[30px] lg:mt-[112px] w-full flex flex-col mb-[30px] lg:mb-0 lg:flex-row lg:justify-between lg:w-11/12">
-        <div className="flex flex-col items-center lg:items-start sm:mt-[20px] text-center lg:text-start justify-center w-full">
-          <p className="text-[36px] lg:text-[60px] text-white/50">500+</p>
-          <p className="text-[24px] lg:text-[36px] text-white/50">Clients</p>
+      <div className="mt-[30px] lg:mt-[100px] w-full flex flex-col mb-[30px] lg:mb-0 lg:flex-row lg:justify-between lg:w-11/12">
+        <div className="flex flex-col items-center lg:items-start sm:mt-[20px]  lg:text-start justify-center w-full">
+          <p className="text-[36px] lg:text-[58px] text-white/50 leading-none">500+</p>
+          <p className="text-[20px] lg:text-[30px] text-white/50 font-[thin]">Clients</p>
         </div>
-        <div className="flex flex-col items-center mt-[20px] text-center lg:text-start justify-center w-full">
-          <p className="text-[36px] lg:text-[60px] text-white/50">1000+</p>
-          <p className="text-[24px] lg:text-[36px] text-white/50">
+        <div className="flex flex-col items-center mt-[20px]  lg:text-start w-full">
+          <p className="text-[36px] lg:text-[58px] text-white/50 leading-none">1000+</p>
+          <p className="text-[20px] lg:text-[30px] text-white/50 font-[thin]">
             Projects Done
           </p>
         </div>
-        <div className="flex flex-col items-center mt-[20px] text-center lg:text-start justify-center w-full">
-          <p className="text-[36px] lg:text-[60px] text-white/50">4.9</p>
-          <p className="text-[24px] lg:text-[36px] text-white/50">
+        <div className="flex flex-col items-center mt-[20px]  lg:text-start w-full">
+          <p className="text-[36px] lg:text-[58px] text-white/50 leading-none">4.9</p>
+          <p className="text-[20px] lg:text-[30px] text-white/50 font-[thin]">
             Rating on Google
           </p>
         </div>
