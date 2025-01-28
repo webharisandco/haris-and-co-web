@@ -26,11 +26,11 @@ export default function NormalHeader() {
         <img
           src={Logo}
           alt="Haris & Co."
-          className="w-fit h-[30px] lg:h-[66px]"
+          className="w-fit h-[30px] xl:h-[50px] 2xl:h-[66px]"
         />
       </div>
-      <div className='items-center gap-[49px] hidden md:flex'>
-        <div className="flex justify-between gap-[40px] text-black *:font-light">
+      <div className='items-center gap-[25px] xl:gap-[49px] hidden lg:flex'>
+        <div className="flex justify-between gap-[25px] xl:gap-[40px] text-black text-sm 2xl:text-base  *:font-light *:text-nowrap">
           <Link to="/services" className=" font-[thin]">Home</Link>
           <Link to="/services" className=" font-[thin]">Services</Link>
           <Link to="/works" className=" font-[thin]">Works</Link>
@@ -40,15 +40,17 @@ export default function NormalHeader() {
           <Link to="/blogs" className=" font-[thin]">Blogs</Link>
           <Link to="/careers" className=" font-[thin]">Careers</Link>
         </div>
-        <Button text='Contact Us' href='/contact' />
+        <div className="hidden lg:block">
+        <Button text='Contact Us' href='/contact' btnClassName={' 2xl:w-[175px]'} />
+        </div>
       </div>
 
-      <div className="md:hidden flex">
+      <div className="lg:hidden flex">
         <button onClick={toggleMenu}>
           {/* {menuIcon ? */}
           {/* // <img src={menuIcon} alt="Menu Icon" className="" /> */}
           <button
-            className="relative z-50 flex flex-col items-end justify-center w-10 h-10 gap-1 bg-transparent border-none cursor-pointer md:hidden"
+            className="relative z-50 flex flex-col items-end justify-center w-10 h-10 gap-1 bg-transparent border-none cursor-pointer lg:hidden"
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >
