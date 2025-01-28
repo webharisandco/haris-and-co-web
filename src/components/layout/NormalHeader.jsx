@@ -73,9 +73,8 @@ export default function NormalHeader() {
               }`}
             ></span>
             <span
-              className={`block h-[2px] w-5 bg-black rounded-sm transition-opacity duration-300  ${
-                menuOpen ? "opacity-0" : ""
-              }`}
+              className={`block h-[2px] w-5 bg-white rounded-sm transition-opacity duration-300  ${menuOpen ? "opacity-0" : ""
+                }`}
             ></span>
             <span
               className={`block h-[2px]  bg-black rounded-sm transition-transform duration-300 ${

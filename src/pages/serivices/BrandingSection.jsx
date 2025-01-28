@@ -82,10 +82,7 @@ function BrandingSection({ BrandingContents }) {
                     {BrandingContent.services
                       .slice(0, 3)
                       .map((service, serviceIndex) => (
-                        <li
-                          key={serviceIndex}
-                          className=" text-black/70 font-[thin]"
-                        >
+                        <li key={serviceIndex} className=" text-black/70 font-[thin]">
                           {service}
                         </li>
                       ))}
