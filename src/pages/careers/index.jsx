@@ -8,12 +8,12 @@ export default function Careers() {
         <div>
             <Banner />
             <WhyWork />
-            <div className="bg-black px-[80px] py-[55px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:gap-6">
+            <div className="bg-black px-[16px] n md:px-[80px] py-[55px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 xl:gap-6">
                 <JobCard />
                 <JobCard />
+                {/* <JobCard />
                 <JobCard />
-                <JobCard />
-                <JobCard />
+                <JobCard /> */}
             </div>
         </div>
     )
