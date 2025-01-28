@@ -1,9 +1,9 @@
 import React from 'react'
 import Button from '../../components/ui/common/Button'
 
-export default function JobCard() {
+export default function JobCard({className}) {
     return (
-        <div className='bg-white shadow-md p-6 flex flex-col justify-between gap-10'>
+        <div className={'bg-white shadow-md p-6 flex flex-col justify-between gap-10 ' + className}>
             <div className="">
                 <div className="flex justify-between items-center">
                     <h6 className='text-[25px]'>Graphic Designer</h6>
