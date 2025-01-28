@@ -9,10 +9,15 @@ function BrandingSection({ BrandingContents }) {
           <div className="w-full hidden lg:block">
             <div
               key={index}
-              className={`w-full flex justify-between gap-5 ${index % 2 === 1 ? "flex-row-reverse" : ""
-                } `}
+              className={`w-full flex justify-between gap-5 ${
+                index % 2 === 1 ? "flex-row-reverse" : ""
+              } `}
             >
-              <div className={`w-6/12 flex flex-col justify-center gap-[15px] ${index % 2 === 0 ? "pe-[70px]" : "px-[35px]"}`}>
+              <div
+                className={`w-6/12 flex flex-col justify-center gap-[15px] ${
+                  index % 2 === 0 ? "pe-[70px]" : "px-[35px]"
+                }`}
+              >
                 <div>
                   <p className="font-[boldtext] text-[45px] ">
                     {BrandingContent.title}
@@ -26,7 +31,10 @@ function BrandingSection({ BrandingContents }) {
                 <div>
                   <ul className="grid list-disc grid-cols-3 gap-[10px] text-[18px]">
                     {BrandingContent.services.map((service, serviceIndex) => (
-                      <li key={serviceIndex} className=" text-black/70 font-[thin] list-inside text-nowrap">
+                      <li
+                        key={serviceIndex}
+                        className=" text-black/70 font-[thin] list-inside text-nowrap"
+                      >
                         {service}
                       </li>
                     ))}
@@ -57,7 +65,7 @@ function BrandingSection({ BrandingContents }) {
               </div>
               <div className=" mt-[30px]">
                 <img
-                  className="w-fit h-fit lg:h-[500px]  object-cover"
+                  className="w-fit h-[250px] lg:h-[500px]  object-cover"
                   src={BrandingContent.image}
                   alt={BrandingContent.title}
                 />
@@ -73,7 +81,10 @@ function BrandingSection({ BrandingContents }) {
                     {BrandingContent.services
                       .slice(0, 3)
                       .map((service, serviceIndex) => (
-                        <li key={serviceIndex} className=" text-black/70 font-[thin]">
+                        <li
+                          key={serviceIndex}
+                          className=" text-black/70 font-[thin]"
+                        >
                           {service}
                         </li>
                       ))}
