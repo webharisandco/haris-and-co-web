@@ -53,15 +53,15 @@ export default function NormalHeader() {
             aria-label="Toggle Menu"
           >
             <span
-              className={`block h-[2px] w-6 bg-white rounded-sm transition-transform duration-300 ${menuOpen ? "translate-y-[7px] rotate-45" : ""
+              className={`block h-[2px] w-6 bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "translate-y-[7px] rotate-45" : ""
                 }`}
             ></span>
             <span
-              className={`block h-[2px] w-5 bg-white rounded-sm transition-opacity duration-300  ${menuOpen ? "opacity-0" : ""
+              className={`block h-[2px] w-5 bg-black rounded-sm transition-opacity duration-300  ${menuOpen ? "opacity-0" : ""
                 }`}
             ></span>
             <span
-              className={`block h-[2px]  bg-white rounded-sm transition-transform duration-300 ${menuOpen ? "-translate-y-[5px] -rotate-45 w-6" : "w-4"
+              className={`block h-[2px]  bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "-translate-y-[5px] -rotate-45 w-6" : "w-4"
                 }`}
             ></span>
           </button>
