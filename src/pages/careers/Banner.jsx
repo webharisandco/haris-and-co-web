@@ -1,5 +1,7 @@
 import React from "react";
-import BannerImg from "@/assets/images/career/banner.png";
+import BannerImg1 from "@/assets/images/career/banner1.png";
+import BannerImg2 from "@/assets/images/career/banner2.png";
+import BannerImg3 from "@/assets/images/career/banner3.png";
 
 function Banner() {
   return (
@@ -9,8 +11,10 @@ function Banner() {
         <p className="text-[24px] md:text-[32px] text-white  font-[thin] leading-none">
           We'd love to learn more about you and what we can design and build together.</p>
       </div>
-      <div className="lg:w-1/2">
-        <img src={BannerImg} alt="Career Banner Image" />
+      <div className="lg:w-1/2 md:grid grid-rows-3 grid-cols-3 flex flex-col gap-4 md:h-96">
+        <img src={BannerImg1} alt="Career Banner Image" className="row-span-3 col-span-1 object-cover h-full w-full" />
+        <img src={BannerImg2} alt="Career Banner Image" className="row-span-1 col-span-2 object-cover h-[200px] md:h-full w-full"/>
+        <img src={BannerImg3} alt="Career Banner Image" className="row-span-2 col-span-2 object-cover h-full w-full"/>
       </div>
     </div>
   );
