@@ -1,12 +1,11 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '@/assets/images/Haris&Co-blk.svg';
-import menuIcon from '@/assets/images/icons/menu.svg';
-import { useState } from 'react';
-import MobileMenu from './MobileMenu';
-import ContactButton from '../ui/HomePage/ContactButton';
-import Button from '../ui/common/Button';
-
+import * as React from "react";
+import { Link } from "react-router-dom";
+import Logo from "@/assets/images/Haris&Co-blk.svg";
+import menuIcon from "@/assets/images/icons/menu.svg";
+import { useState } from "react";
+import MobileMenu from "./MobileMenu";
+import ContactButton from "../ui/HomePage/ContactButton";
+import Button from "../ui/common/Button";
 
 export default function NormalHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,25 +21,41 @@ export default function NormalHeader() {
   };
   return (
     <div className="px-[16px] md:px-[80px] py-[35px] w-full bg-[#fff]  flex justify-between items-center">
-      <div className=''>
+      <div className=" max-w-fit">
         <img
           src={Logo}
           alt="Haris & Co."
-          className="w-fit h-[30px] lg:h-[66px]"
+          className="max-w-fit h-[30px] lg:h-[66px]"
         />
       </div>
-      <div className='items-center gap-[49px] hidden md:flex'>
+      <div className="items-center gap-[49px] hidden md:flex">
         <div className="flex justify-between gap-[40px] text-black *:font-light">
-          <Link to="/services" className=" font-[thin]">Home</Link>
-          <Link to="/services" className=" font-[thin]">Services</Link>
-          <Link to="/works" className=" font-[thin]">Works</Link>
-          <Link to="/clients" className=" font-[thin]">Clients</Link>
-          <Link to="/awards" className=" font-[thin]">Awards</Link>
-          <Link to="/about" className=" font-[thin]">About us</Link>
-          <Link to="/blogs" className=" font-[thin]">Blogs</Link>
-          <Link to="/careers" className=" font-[thin]">Careers</Link>
+          <Link to="/services" className=" font-[thin]">
+            Home
+          </Link>
+          <Link to="/services" className=" font-[thin]">
+            Services
+          </Link>
+          <Link to="/works" className=" font-[thin]">
+            Works
+          </Link>
+          <Link to="/clients" className=" font-[thin]">
+            Clients
+          </Link>
+          <Link to="/awards" className=" font-[thin]">
+            Awards
+          </Link>
+          <Link to="/about" className=" font-[thin]">
+            About us
+          </Link>
+          <Link to="/blogs" className=" font-[thin]">
+            Blogs
+          </Link>
+          <Link to="/careers" className=" font-[thin]">
+            Careers
+          </Link>
         </div>
-        <Button text='Contact Us' href='/contact' />
+        <Button text="Contact Us" href="/contact" />
       </div>
 
       <div className="md:hidden flex">
@@ -53,16 +68,19 @@ export default function NormalHeader() {
             aria-label="Toggle Menu"
           >
             <span
-              className={`block h-[2px] w-6 bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "translate-y-[7px] rotate-45" : ""
-                }`}
+              className={`block h-[2px] w-6 bg-black rounded-sm transition-transform duration-300 ${
+                menuOpen ? "translate-y-[7px] rotate-45" : ""
+              }`}
             ></span>
             <span
-              className={`block h-[2px] w-5 bg-black rounded-sm transition-opacity duration-300  ${menuOpen ? "opacity-0" : ""
-                }`}
+              className={`block h-[2px] w-5 bg-black rounded-sm transition-opacity duration-300  ${
+                menuOpen ? "opacity-0" : ""
+              }`}
             ></span>
             <span
-              className={`block h-[2px]  bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "-translate-y-[5px] -rotate-45 w-6" : "w-4"
-                }`}
+              className={`block h-[2px]  bg-black rounded-sm transition-transform duration-300 ${
+                menuOpen ? "-translate-y-[5px] -rotate-45 w-6" : "w-4"
+              }`}
             ></span>
           </button>
           {/* :
@@ -71,8 +89,6 @@ export default function NormalHeader() {
         </button>
         <MobileMenu isOpen={menuOpen} />
       </div>
-
-
     </div>
   );
 }
