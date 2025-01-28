@@ -14,7 +14,7 @@ function BrandingSection({ BrandingContents }) {
             >
               <div className={`w-6/12 flex flex-col justify-center gap-[15px] ${index % 2 === 0 ? "pe-[70px]" : "px-[35px]"}`}>
                 <div>
-                  <p className=" font-[boldtext] text-[45px] ">
+                  <p className="font-[boldtext] text-[45px] ">
                     {BrandingContent.title}
                   </p>
                 </div>
@@ -51,7 +51,7 @@ function BrandingSection({ BrandingContents }) {
           <div className=" block lg:hidden w-full pt-[50px]">
             <div key={index} className={`w-full flex-col  justify-between  `}>
               <div className="">
-                <p className=" font-bold text-[32px]">
+                <p className=" font-[boldtext] text-[32px]">
                   {BrandingContent.title}
                 </p>
               </div>
@@ -64,7 +64,7 @@ function BrandingSection({ BrandingContents }) {
               </div>
               <div className=" mt-[26px] flex flex-col justify-center  ">
                 <div>
-                  <p className="text-[16px] poppins-semibold text-gray-600 ">
+                  <p className="text-[16px] font-medium text-black ">
                     {BrandingContent.description}
                   </p>
                 </div>
@@ -73,7 +73,7 @@ function BrandingSection({ BrandingContents }) {
                     {BrandingContent.services
                       .slice(0, 3)
                       .map((service, serviceIndex) => (
-                        <li key={serviceIndex} className=" text-gray-500">
+                        <li key={serviceIndex} className=" text-black/70 font-[thin]">
                           {service}
                         </li>
                       ))}

@@ -20,18 +20,18 @@ function AchivementSection() {
         </div>
       </div>
 
-      <div className="mt-[30px] lg:mt-[100px] w-full flex flex-col mb-[30px] lg:mb-0 lg:flex-row lg:justify-between lg:w-11/12">
-        <div className="flex flex-col items-center lg:items-start sm:mt-[20px]  lg:text-start justify-center w-full">
+      <div className="mt-[50px] lg:mt-[100px] w-full flex flex-col mb-[30px] lg:mb-0 lg:flex-row lg:justify-between lg:w-11/12">
+        <div className="flex flex-col items-center lg:items-start sm:mt-[30px]  lg:text-start justify-center w-full">
           <p className="text-[36px] lg:text-[58px] text-white/50 leading-none">500+</p>
           <p className="text-[20px] lg:text-[30px] text-white/50 font-[thin]">Clients</p>
         </div>
-        <div className="flex flex-col items-center mt-[20px]  lg:text-start w-full">
+        <div className="flex flex-col items-center mt-[30px]  lg:text-start w-full">
           <p className="text-[36px] lg:text-[58px] text-white/50 leading-none">1000+</p>
           <p className="text-[20px] lg:text-[30px] text-white/50 font-[thin]">
             Projects Done
           </p>
         </div>
-        <div className="flex flex-col items-center mt-[20px]  lg:text-start w-full">
+        <div className="flex flex-col items-center mt-[30px]  lg:text-start w-full">
           <p className="text-[36px] lg:text-[58px] text-white/50 leading-none">4.9</p>
           <p className="text-[20px] lg:text-[30px] text-white/50 font-[thin]">
             Rating on Google
