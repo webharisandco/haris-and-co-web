@@ -1,12 +1,11 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '@/assets/images/Haris&Co-blk.svg';
-import menuIcon from '@/assets/images/icons/menu.svg';
-import { useState } from 'react';
-import MobileMenu from './MobileMenu';
-import ContactButton from '../ui/HomePage/ContactButton';
-import Button from '../ui/common/Button';
-
+import * as React from "react";
+import { Link } from "react-router-dom";
+import Logo from "@/assets/images/Haris&Co-blk.svg";
+import menuIcon from "@/assets/images/icons/menu.svg";
+import { useState } from "react";
+import MobileMenu from "./MobileMenu";
+import ContactButton from "../ui/HomePage/ContactButton";
+import Button from "../ui/common/Button";
 
 export default function NormalHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +21,7 @@ export default function NormalHeader() {
   };
   return (
     <div className="px-[16px] md:px-[80px] py-[35px] w-full bg-[#fff]  flex justify-between items-center">
-      <div className=''>
+      <div className=" max-w-fit">
         <img
           src={Logo}
           alt="Haris & Co."
@@ -55,16 +54,19 @@ export default function NormalHeader() {
             aria-label="Toggle Menu"
           >
             <span
-              className={`block h-[2px] w-6 bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "translate-y-[7px] rotate-45" : ""
-                }`}
+              className={`block h-[2px] w-6 bg-black rounded-sm transition-transform duration-300 ${
+                menuOpen ? "translate-y-[7px] rotate-45" : ""
+              }`}
             ></span>
             <span
-              className={`block h-[2px] w-5 bg-black rounded-sm transition-opacity duration-300  ${menuOpen ? "opacity-0" : ""
-                }`}
+              className={`block h-[2px] w-5 bg-black rounded-sm transition-opacity duration-300  ${
+                menuOpen ? "opacity-0" : ""
+              }`}
             ></span>
             <span
-              className={`block h-[2px]  bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "-translate-y-[5px] -rotate-45 w-6" : "w-4"
-                }`}
+              className={`block h-[2px]  bg-black rounded-sm transition-transform duration-300 ${
+                menuOpen ? "-translate-y-[5px] -rotate-45 w-6" : "w-4"
+              }`}
             ></span>
           </button>
           {/* :
@@ -73,8 +75,6 @@ export default function NormalHeader() {
         </button>
         <MobileMenu isOpen={menuOpen} />
       </div>
-
-
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import LinkWithArrow from "@/components/ui/common/LinkWithArrow";
+import { ArrowRight } from 'lucide-react'
 
 function BrandingSection({ BrandingContents }) {
   return (
@@ -9,39 +10,47 @@ function BrandingSection({ BrandingContents }) {
           <div className="w-full hidden lg:block">
             <div
               key={index}
-              className={`w-full flex justify-between gap-5 ${index % 2 === 1 ? "flex-row-reverse" : ""
-                } `}
+              className={`w-full flex justify-between gap-5 ${
+                index % 2 === 1 ? "flex-row-reverse" : ""
+              } `}
             >
-              <div className={`w-6/12 flex flex-col justify-center gap-[15px] ${index % 2 === 0 ? "pe-[70px]" : "px-[35px]"}`}>
+              <div
+                className={`w-6/12 flex flex-col justify-center gap-[15px] ${
+                  index % 2 === 0 ? "pe-[70px]" : "px-[35px]"
+                }`}
+              >
                 <div>
                   <p className="font-[boldtext] text-[45px] ">
                     {BrandingContent.title}
                   </p>
                 </div>
                 <div>
-                  <p className="text-[21px] text-black mb-4">
+                  <p className="text-[21px] leading-[26px] text-black mb-4">
                     {BrandingContent.description}
                   </p>
                 </div>
                 <div>
                   <ul className="grid list-disc grid-cols-3 gap-[10px] text-[18px]">
                     {BrandingContent.services.map((service, serviceIndex) => (
-                      <li key={serviceIndex} className=" text-black/70 font-[thin] list-inside text-nowrap">
+                      <li
+                        key={serviceIndex}
+                        className=" text-black/70 font-[thin] list-inside text-nowrap"
+                      >
                         {service}
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="mt-[30px]">
-                  <button className="text-black/55  flex items-center gap-2">
+                  <button className="text-black/55 hover:text-black  flex items-center gap-2">
                     {BrandingContent.action.label}
-                    <img src={BrandingContent.action.icon} />
+                    <ArrowRight className='hover:black transition-all duration-300' size={23}/>
                   </button>
                 </div>
               </div>
-              <div className="w-6/12 mt-[70px]">
+              <div className="w-6/12 mt-[70px] overflow-hidden">
                 <img
-                  className="w-full h-fit lg:h-[500px]  object-cover"
+                  className="w-full h-fit lg:h-[500px] object-cover transform transition-transform duration-300 hover:scale-110"
                   src={BrandingContent.image}
                   alt={BrandingContent.title}
                 />
@@ -57,7 +66,7 @@ function BrandingSection({ BrandingContents }) {
               </div>
               <div className=" mt-[30px]">
                 <img
-                  className="w-fit h-fit lg:h-[500px]  object-cover"
+                  className="w-fit h-[250px] lg:h-[500px]  object-cover"
                   src={BrandingContent.image}
                   alt={BrandingContent.title}
                 />
@@ -73,14 +82,17 @@ function BrandingSection({ BrandingContents }) {
                     {BrandingContent.services
                       .slice(0, 3)
                       .map((service, serviceIndex) => (
-                        <li key={serviceIndex} className=" text-black/70 font-[thin]">
+                        <li
+                          key={serviceIndex}
+                          className=" text-black/70 font-[thin]"
+                        >
                           {service}
                         </li>
                       ))}
                   </ul>
                 </div>
                 <div className="mt-[30px] ">
-                  <button className="text-gray-500  text-[27px] flex items-center gap-[10px] ">
+                  <button className="text-gray-500   text-[27px] flex items-center gap-[10px] ">
                     {BrandingContent.action.label}
                     <img src={BrandingContent.action.icon} />
                   </button>
