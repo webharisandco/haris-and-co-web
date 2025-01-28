@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="flex w-full justify-between flex-col lg:flex-row gap-[50px] lg:items-center">
         <div className="max-w-full flex flex-col gap-7">
           <div className="">
-            <p className="text-[40px] text-black font-[thin]">Let’s Connect</p>
-            <p className="text-[38px] text-black/65 font-medium leading-none xs:text-[48px]">
+            <p className="text-[35px] text-black font-[thin]">Let’s Connect</p>
+            <p className="text-[38px] text-black/65 font-medium leading-none xs:text-[45px]">
               bd@harisand.co
             </p>
           </div>
