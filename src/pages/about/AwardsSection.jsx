@@ -1,5 +1,5 @@
 import React from 'react'
-import awardImg from '@/assets/images/about/awards/award.png'
+// import awardImg from '@/assets/images/about/awards/award.png'
 import LinkWithArrow from '@/components/ui/common/LinkWithArrow';
 export default function AwardsSection() {
     return (
