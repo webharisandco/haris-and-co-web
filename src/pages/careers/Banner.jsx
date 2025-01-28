@@ -14,7 +14,7 @@ function Banner() {
       <div className="lg:w-1/2 md:grid grid-rows-3 grid-cols-3 flex flex-col gap-4 md:h-96">
         <img src={BannerImg1} alt="Career Banner Image" className="row-span-3 col-span-1 object-cover h-full w-full" />
         <img src={BannerImg2} alt="Career Banner Image" className="row-span-1 col-span-2 object-cover h-[200px] md:h-full w-full"/>
-        <img src={BannerImg3} alt="Career Banner Image" className="row-span-2 col-span-2 object-cover h-full w-full"/>
+        <img src={BannerImg3} alt="Career Banner Image" className="row-span-2 col-span-2 object-cover h-full w-full"/> 
       </div>
     </div>
   );
