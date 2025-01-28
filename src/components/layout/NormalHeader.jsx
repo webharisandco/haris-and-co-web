@@ -25,7 +25,7 @@ export default function NormalHeader() {
         <img
           src={Logo}
           alt="Haris & Co."
-          className="max-w-fit h-[30px] lg:h-[66px]"
+          className="w-full h-[30px] lg:h-[66px]"
         />
       </div>
       <div className="items-center gap-[49px] hidden md:flex">
