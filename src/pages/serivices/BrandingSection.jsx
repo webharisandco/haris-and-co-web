@@ -1,5 +1,6 @@
 import React from "react";
 import LinkWithArrow from "@/components/ui/common/LinkWithArrow";
+import { ArrowRight } from 'lucide-react'
 
 function BrandingSection({ BrandingContents }) {
   return (
@@ -24,7 +25,7 @@ function BrandingSection({ BrandingContents }) {
                   </p>
                 </div>
                 <div>
-                  <p className="text-[21px] text-black mb-4">
+                  <p className="text-[21px] leading-[26px] text-black mb-4">
                     {BrandingContent.description}
                   </p>
                 </div>
@@ -41,15 +42,15 @@ function BrandingSection({ BrandingContents }) {
                   </ul>
                 </div>
                 <div className="mt-[30px]">
-                  <button className="text-black/55  flex items-center gap-2">
+                  <button className="text-black/55 hover:text-black  flex items-center gap-2">
                     {BrandingContent.action.label}
-                    <img src={BrandingContent.action.icon} />
+                    <ArrowRight className='hover:black transition-all duration-300' size={23}/>
                   </button>
                 </div>
               </div>
-              <div className="w-6/12 mt-[70px]">
+              <div className="w-6/12 mt-[70px] overflow-hidden">
                 <img
-                  className="w-full h-fit lg:h-[500px]  object-cover"
+                  className="w-full h-fit lg:h-[500px] object-cover transform transition-transform duration-300 hover:scale-110"
                   src={BrandingContent.image}
                   alt={BrandingContent.title}
                 />
@@ -91,7 +92,7 @@ function BrandingSection({ BrandingContents }) {
                   </ul>
                 </div>
                 <div className="mt-[30px] ">
-                  <button className="text-gray-500  text-[27px] flex items-center gap-[10px] ">
+                  <button className="text-gray-500   text-[27px] flex items-center gap-[10px] ">
                     {BrandingContent.action.label}
                     <img src={BrandingContent.action.icon} />
                   </button>
