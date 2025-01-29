@@ -4,10 +4,6 @@ import facebookIcon from "@/assets/images/icons/facebookWhiteIcon.svg";
 import instaIcon from "@/assets/images/icons/instaWhiteIcon.svg";
 import linkedInIcon from "@/assets/images/icons/linkedInWhiteICon.svg";
 import xIcon from "@/assets/images/icons/xWhiteIcon.svg";
-import facebookIcon from "@/assets/images/icons/facebookWhiteIcon.svg";
-import instaIcon from "@/assets/images/icons/instaWhiteIcon.svg";
-import linkedInIcon from "@/assets/images/icons/linkedInWhiteICon.svg";
-import xIcon from "@/assets/images/icons/xWhiteIcon.svg";
 
 function Banner() {
   return (
