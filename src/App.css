@@ -107,6 +107,20 @@ header {
 	}
 }
 
+.text-96{
+	@apply lg:text-[70px] xl:text-[85px] 3xl:text-[96px];
+}
+
+.text-64{
+	@apply lg:text-[48px] xl:text-[55px] 3xl:text-[64px];
+}
+
+.text-48{
+	@apply lg:text-[40px] xl:text-[45px] 3xl:text-[48px];
+}
+
+
+
 .word-animate {
 	perspective: 1000px;
 }
