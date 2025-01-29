@@ -12,7 +12,7 @@ function Banner() {
         <div className=" flex flex-col justify-between h-full gap-[20px]">
           <div className=""></div>
           <div className="flex flex-col gap-[20px]">
-            <p className="text-[32px] md:text-[55px] text-white font-[boldtext]">
+            <p className="text-[32px] md:text-[48px]  2xl:text-[64px] text-white font-[boldtext]">
               Let’s Connect
             </p>
             <p className="text-white/50 text-[24px] md:text-[30px] font-[Helvetica-Light] leading-tight">
