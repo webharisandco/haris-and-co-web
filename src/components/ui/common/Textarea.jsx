@@ -14,7 +14,7 @@ export default function Textarea() {
                 for="floatingTextarea"
                 class="absolute left-2 font-thin -top-6 text-sm text-white/60 transform scale-100 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-white/60 peer-placeholder-shown:scale-100 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-white"
             >
-                Your Label
+                Message
             </label>
         </div>
 
