@@ -21,7 +21,7 @@ export default function NormalHeader() {
   };
   return (
     <div className="px-[16px] md:px-[80px] py-[35px] w-full bg-[#fff]  flex justify-between items-center">
-      <div className=" max-w-fit">
+      <div className="max-w-fit">
         <img
           src={Logo}
           alt="Haris & Co."
