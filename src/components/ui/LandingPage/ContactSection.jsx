@@ -43,7 +43,7 @@ function ContactSection({ kerala }) {
             </h5>
           </div>
           <div>
-            <p className="text-white text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] ">
+            <p className="text-white text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] ">
               Give us a call or email us to learn more about our services. Need
               a face-to-face discussion? Feel free to visit us.
             </p>
@@ -57,10 +57,10 @@ function ContactSection({ kerala }) {
               </div>
               <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
               <div className="flex flex-col gap-[12px]">
-                <p className="text-white text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-nowrap">
+                <p className="text-white text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-nowrap">
                   For More Enquiries
                 </p>
-                <p className="text-white text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
+                <p className="text-white text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
                   +971 55 490 8107
                 </p>
               </div>
@@ -73,10 +73,10 @@ function ContactSection({ kerala }) {
               </div>
               <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
               <div className="flex flex-col gap-[12px]">
-                <p className="text-white text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
+                <p className="text-white text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
                   Email Us At
                 </p>
-                <p className="text-white text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
+                <p className="text-white text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
                   haris@harisand.co
                 </p>
               </div>
@@ -89,7 +89,7 @@ function ContactSection({ kerala }) {
                 {/* </div> */}
                 <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
                 <div className="flex flex-col gap-[12px]">
-                  <p className="text-white text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
+                  <p className="text-white text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
                     Abdulla Kamber Business Center, Room No 103, First Floor,
                     Abu Baker Al Siddique St, Deira - Dubai
                   </p>
@@ -105,7 +105,7 @@ function ContactSection({ kerala }) {
             </div>
             <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
             <div className="flex flex-col gap-[12px] ">
-              <p className="text-white text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
+              <p className="text-white text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
                 Abdulla Kamber Business Center, Room No 103, First Floor, Abu
                 Baker Al Siddique St, Deira - Dubai
               </p>

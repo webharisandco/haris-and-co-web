@@ -17,9 +17,9 @@ function Banner({ bannerImage, heading, description, imgClassName, tagline, perf
               {/* Replace the space where you want a <br> with an actual line break */}
               {heading.split(' ').slice(0, 4).join(' ')} <br /> {heading.split(' ').slice(4).join(' ')}
             </span>}
-            {performance && <span className="hidden lg:block">{ heading}</span>}
+            {performance && <span className="hidden lg:block">{heading}</span>}
           </h2>
-          <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-white/70 font-light w-full lg:w-5/6 "> {description}</p>
+          <p className="text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] 3xl:text-[20px] text-white/70 font-light w-full lg:w-5/6 "> {description}</p>
           <div className="flex mt-8 justify-center md:justify-start flex-col md:flex-row gap-[20px]">
             <LandingButton text={'GET A PROPOSAL'} />
             {performance && <LandingButton text={'View Our Results'} className={'bg-transparent hover:bg-transparent hover:text-white/70 text-white'} />}

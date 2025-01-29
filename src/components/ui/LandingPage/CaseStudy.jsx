@@ -21,8 +21,8 @@ const CaseStudy = ({web}) => {
                     <img src={Img1} className="h-[310px] lg:h-auto object-cover rounded-[14px] w-full" alt="" />
                     <div className="flex flex-col gap-3 md:gap-5 lg:gap-7 px-2 lg:px-5">
                         <h6 className='text-[25px] md:text-[30px] lg:text-[32px] poppins-semibold w-11/12 lg:w-3/4'>Generated a Massive ₹10 Million in 6 Months</h6>
-                        <div className="flex gap-3 text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
-                        <p className='text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] w-11/12 lg:w-10/12 mb-4 text-black/60'>Explore how we transformed Bluetyga into a revenue-generating company from scratch.</p>
+                        <div className="flex gap-3 text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
+                        <p className='text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] w-11/12 lg:w-10/12 mb-4 text-black/60'>Explore how we transformed Bluetyga into a revenue-generating company from scratch.</p>
                     </div>
                 </div>
 
@@ -31,8 +31,8 @@ const CaseStudy = ({web}) => {
                         <img src={Img2} className="h-[310px] w-full lg:h-auto rounded-[14px] object-cover" alt="" />
                         <div className=" flex flex-col gap-3 md:gap-5 justify-center px-2 lg:pr-5 ">
                             <h6 className='text-[25px] poppins-medium'>Generated a Massive ₹10 Million in 6 Months</h6>
-                            <div className="flex gap-3 text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
-                            <p className='text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-black/60 mt-5'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.
+                            <div className="flex gap-3 text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
+                            <p className='text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-black/60 mt-5'>Dive in to learn how we improved the online sales rate of Walkaroo - one of India's leading footwear brands.
                             </p>
                         </div>
                     </div>
@@ -41,8 +41,8 @@ const CaseStudy = ({web}) => {
                         <div className="flex flex-col gap-7 justify-center ">
                             <h6 className='text-[25px] poppins-medium'>Scaled From ₹900K to ₹2 Million
                             </h6>
-                            <div className="flex gap-3 text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
-                            <p className='text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-black/60'>Explore how we transformed Bluetyga into a revenue-generating company from scratch.</p>
+                            <div className="flex gap-3 text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
+                            <p className='text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-black/60'>Explore how we transformed Bluetyga into a revenue-generating company from scratch.</p>
                         </div>
                     </div>
                 </div>
@@ -51,8 +51,8 @@ const CaseStudy = ({web}) => {
                     <img src={WImg1} className="h-[310px] lg:h-auto object-cover rounded-[14px] w-full" alt="" />
                     <div className="flex flex-col gap-3 md:gap-5 lg:gap-7 px-2 lg:px-5">
                         <h6 className='text-[25px] md:text-[30px] lg:text-[32px] poppins-semibold w-11/12 lg:w-3/4'>Redesigned an E-commerce Store</h6>
-                        <div className="flex gap-3 text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
-                        <p className='text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] w-11/12 lg:w-10/12 mb-4 text-black/60'>Take a look into Popees’ (a leading Kidswear brand) brand new website.</p>
+                        <div className="flex gap-3 text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
+                        <p className='text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] w-11/12 lg:w-10/12 mb-4 text-black/60'>Take a look into Popees’ (a leading Kidswear brand) brand new website.</p>
                     </div>
                 </div>
 
@@ -61,8 +61,8 @@ const CaseStudy = ({web}) => {
                         <img src={WImg2} className="h-[310px] w-full lg:h-auto rounded-[14px] object-cover" alt="" />
                         <div className=" flex flex-col gap-3 md:gap-5 justify-center px-2 lg:pr-5 ">
                             <h6 className='text-[25px] poppins-medium'>Gave a New Look for Walkaroo’s Store</h6>
-                            <div className="flex gap-3 text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
-                            <p className='text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-black/60 mt-5'>See how the redesigned Ecommerce website we developed for Walkaroo brought them leads.
+                            <div className="flex gap-3 text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
+                            <p className='text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-black/60 mt-5'>See how the redesigned Ecommerce website we developed for Walkaroo brought them leads.
                             </p>
                         </div>
                     </div>
@@ -71,8 +71,8 @@ const CaseStudy = ({web}) => {
                         <div className="flex flex-col gap-7 justify-center ">
                             <h6 className='text-[25px] poppins-medium'>A Complete Revamp
                             </h6>
-                            <div className="flex gap-3 text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
-                            <p className='text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-black/60'>We gave Nassguard's website a completely new look.</p>
+                            <div className="flex gap-3 text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] items-center"><Clock color='#fff' fill='#888888' /><p className='text-black/60'>March 8, 2024</p></div>
+                            <p className='text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-black/60'>We gave Nassguard's website a completely new look.</p>
                         </div>
                     </div>
                 </div>
