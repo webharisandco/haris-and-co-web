@@ -2,14 +2,10 @@ import React from "react";
 
 function Banner() {
   return (
-    <div className=" px-[80px] pt-[200px] pb-[136px]">
+    <div className=" px-[16px] md:px-[80px] pt-[180px] pb-[180px] bg-[#0E0E0E]">
       <div className=" flex flex-col gap-[35px]">
-        <p className="text-white/50 text-[20px]">Branding </p>
-        <p className="text-[64px] text-white poppins-semibold">
-          Partnering with Toalla De tela
-        </p>
-        <p className="text-white/50 text-[40px]">
-          Branding & Identity, Websites <br /> & Digital Platforms
+        <p className="lg:text-[48px] xl:text-[55px] 3xl:text-[64px] text-white    ">
+          Transforming<span className="text-white/65 font-[Helvetica-Light]"> your visions into<br /> remarkable </span>experiences
         </p>
       </div>
     </div>

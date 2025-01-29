@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "./Banner";
 
-function Branding() {
+function Blog() {
   return (
     <div className="bg-black">
       <Banner />
@@ -9,4 +9,4 @@ function Branding() {
   );
 }
 
-export default Branding;
+export default Blog;
