@@ -107,15 +107,15 @@ header {
 	}
 }
 
-.text-96{
+.text-96px{
 	@apply lg:text-[70px] xl:text-[85px] 3xl:text-[96px];
 }
 
-.text-64{
+.text-64px{
 	@apply lg:text-[48px] xl:text-[55px] 3xl:text-[64px];
 }
 
-.text-48{
+.text-48px{
 	@apply text-[24px] lg:text-[40px] xl:text-[45px] 3xl:text-[48px];
 }
 
