@@ -111,8 +111,12 @@ header {
 	@apply lg:text-[70px] xl:text-[85px] 3xl:text-[96px];
 }
 
+.text-80{
+	@apply lg:text-[60px] xl:text-[70px] 3xl:text-[80px];
+}
+
 .text-64px{
-	@apply lg:text-[48px] xl:text-[55px] 3xl:text-[64px];
+	@apply lg:text-[48px] xl:text-[56px] 2xl:text-[60px] 3xl:text-[64px];
 }
 
 .text-48px{

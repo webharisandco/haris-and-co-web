@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "@/assets/images/Haris&Co-blk.svg";
 import menuIcon from "@/assets/images/icons/menu.svg";
 import { useState } from "react";
@@ -9,6 +9,10 @@ import Button from "../ui/common/Button";
 
 export default function NormalHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const location = useLocation()
+
+  console.log(location.pathname)
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
     if (!menuOpen) {
@@ -29,18 +33,18 @@ export default function NormalHeader() {
         />
       </div>
       <div className='items-center gap-[25px] xl:gap-[49px] hidden lg:flex'>
-        <div className="flex justify-between gap-[25px] xl:gap-[40px] text-black text-sm 2xl:text-base  *:font-light *:text-nowrap">
-          <Link to="/services" className=" font-[thin]">Home</Link>
-          <Link to="/services" className=" font-[thin]">Services</Link>
-          <Link to="/works" className=" font-[thin]">Works</Link>
-          <Link to="/clients" className=" font-[thin]">Clients</Link>
-          <Link to="/awards" className=" font-[thin]">Awards</Link>
-          <Link to="/about" className=" font-[thin]">About us</Link>
-          <Link to="/blogs" className=" font-[thin]">Blogs</Link>
-          <Link to="/careers" className=" font-[thin]">Careers</Link>
+        <div className="flex justify-between gap-[25px] xl:gap-[40px]   text-black text-sm 2xl:text-base  *:text-nowrap  ">
+          <Link to="/services" className={`${location.pathname === "/" ? "font-medium" : " font-[Helvetica-Light] "}  `}>Home</Link>
+          <Link to="/services" className={` ${location.pathname === "/services" ? "font-medium" :" font-[Helvetica-Light] "} `}>Services</Link>
+          <Link to="/works" className={`${location.pathname === "/works" ? "font-medium" : "font-[Helvetica-Light]"} `}>Works</Link>
+          <Link to="/clients" className={`${location.pathname === "/clients" ? "font-medium" : "font-[Helvetica-Light]"} `}>Clients</Link>
+          <Link to="/awards" className={`${location.pathname === "/awards" ? "font-medium" : "font-[Helvetica-Light]"} `}>Awards</Link>
+          <Link to="/about" className={`${location.pathname === "/about" ? "font-medium" : "font-[Helvetica-Light]"} `}>About us</Link>
+          <Link to="/blogs" className={`${location.pathname === "/blogs" ? "font-medium" : "font-[Helvetica-Light]"} `}>Blogs</Link>
+          <Link to="/careers" className={`${location.pathname === "/careers" ? "font-medium" : "font-[Helvetica-Light]"} `}>Careers</Link>
         </div>
         <div className="hidden lg:block">
-        <Button text='Contact Us' href='/contact' btnClassName={' 2xl:w-[175px]'} />
+          <Button text='Contact Us' href='/contact' btnClassName={' 2xl:w-[175px]'} />
         </div>
       </div>
 
@@ -54,18 +58,16 @@ export default function NormalHeader() {
             aria-label="Toggle Menu"
           >
             <span
-              className={`block h-[2px] w-6 bg-black rounded-sm transition-transform duration-300 ${
-                menuOpen ? "translate-y-[7px] rotate-45" : ""
-              }`}
+              className={`block h-[2px] w-6 bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "translate-y-[7px] rotate-45" : ""
+                }`}
             ></span>
             <span
               className={`block h-[2px] w-5 bg-white rounded-sm transition-opacity duration-300  ${menuOpen ? "opacity-0" : ""
                 }`}
             ></span>
             <span
-              className={`block h-[2px]  bg-black rounded-sm transition-transform duration-300 ${
-                menuOpen ? "-translate-y-[5px] -rotate-45 w-6" : "w-4"
-              }`}
+              className={`block h-[2px]  bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "-translate-y-[5px] -rotate-45 w-6" : "w-4"
+                }`}
             ></span>
           </button>
           {/* :
