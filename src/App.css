@@ -116,7 +116,7 @@ header {
 }
 
 .text-48{
-	@apply lg:text-[40px] xl:text-[45px] 3xl:text-[48px];
+	@apply text-[24px] lg:text-[40px] xl:text-[45px] 3xl:text-[48px];
 }
 
 
