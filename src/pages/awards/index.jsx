@@ -10,7 +10,7 @@ export default function Awards() {
     return (
         <div>
             <Banner />
-            <div className="divide-y divide-gray-400 px-[16px] md:px-[80px] bg-white">
+            <div className="divide-y divide-gray-400 px-[16px] md:px-[80px] bg-white ">
                 {awardContent.map((item, index) => <AwardSection key={index} image={item.image} title={item.title} date={item.date} desc={item.desc} brandImg={item.brandImg} />)}
             </div>
             <Quote />

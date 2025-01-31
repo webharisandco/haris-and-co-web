@@ -55,7 +55,7 @@ const LandingHeader = () => {
                       <img src={menuIcon} alt="Menu Icon" className="" /> */}
                     {/* } */}
                 </button>
-                <LandingMobileMenu isOpen={menuOpen} />
+                <LandingMobileMenu isOpen={menuOpen} toggleMenu={toggleMenu} />
             </div>
 
 
