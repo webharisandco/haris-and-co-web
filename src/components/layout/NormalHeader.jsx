@@ -58,15 +58,15 @@ export default function NormalHeader() {
             aria-label="Toggle Menu"
           >
             <span
-              className={`block h-[2px] w-6 bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "translate-y-[7px] rotate-45" : ""
+              className={`block h-[2px] w-6 bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "translate-y-[7px] rotate-45 bg-white " : ""
                 }`}
             ></span>
             <span
-              className={`block h-[2px] w-5 bg-white rounded-sm transition-opacity duration-300  ${menuOpen ? "opacity-0" : ""
+              className={`block h-[2px] w-5 bg-black rounded-sm transition-opacity duration-300  ${menuOpen ? "opacity-0" : ""
                 }`}
             ></span>
             <span
-              className={`block h-[2px]  bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "-translate-y-[5px] -rotate-45 w-6" : "w-4"
+              className={`block h-[2px]  bg-black rounded-sm transition-transform duration-300 ${menuOpen ? "-translate-y-[5px] -rotate-45 w-6 bg-white" : "w-4"
                 }`}
             ></span>
           </button>
@@ -74,7 +74,7 @@ export default function NormalHeader() {
           <img src={menuIcon} alt="Menu Icon" className="" /> */}
           {/* } */}
         </button>
-        <MobileMenu isOpen={menuOpen} />
+        <MobileMenu isOpen={menuOpen} toggleMenu={toggleMenu} />
       </div>
     </div>
   );

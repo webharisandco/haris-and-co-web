@@ -139,7 +139,7 @@ export default function Header() {
           <img src={menuIcon} alt="Menu Icon" className="" /> */}
             {/* } */}
           </button>
-          <MobileMenu isOpen={menuOpen} />
+          <MobileMenu isOpen={menuOpen} toggleMenu={toggleMenu} />
         </div>
 
 
