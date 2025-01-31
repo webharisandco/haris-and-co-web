@@ -20,7 +20,7 @@ function BrandingSection({ BrandingContents }) {
                 }`}
               >
                 <div>
-                  <p className="font-[boldtext] text-[45px] ">
+                  <p className="font-[helvetica-medium] text-[45px] ">
                     {BrandingContent.title}
                   </p>
                 </div>
@@ -42,7 +42,7 @@ function BrandingSection({ BrandingContents }) {
                   </ul>
                 </div>
                 <div className="mt-[30px]">
-                  <button className="text-black/55 hover:text-black  flex items-center gap-2">
+                  <button className="text-black/55 font-[helvetica-medium] hover:text-black  flex items-center gap-2">
                     {BrandingContent.action.label}
                     <ArrowRight className='hover:black transition-all duration-300' size={23}/>
                   </button>
@@ -89,8 +89,8 @@ function BrandingSection({ BrandingContents }) {
                   </ul>
                 </div>
                 <div className="mt-[30px] ">
-                  <button className="text-gray-500   text-[27px] flex items-center gap-[10px] ">
-                    {BrandingContent.action.label}
+                  <button className="text-gray-500 font-[helvetica-medium]  text-[27px] flex items-center gap-[10px] ">
+                <p className="">{BrandingContent.action.label}</p>    
                     <img src={BrandingContent.action.icon} />
                   </button>
                 </div>
