@@ -8,7 +8,7 @@ import Logo from "@/assets/images/Haris&Co-blk.svg";
 const Footer = () => {
   return (
     <div className="px-[16px] md:px-[40px] lg:px-[80px] pt-[44px] bg-white text-nowrap">
-      <div className="flex w-full justify-between flex-col lg:flex-row gap-[50px] lg:items-center">
+      <div className="flex w-full justify-between flex-col lg:flex-row gap-[50px] lg:items-end">
         <div className="max-w-full flex flex-col gap-7">
           <div className="">
             <p className="text-[35px] text-black font-[thin]">Let’s Connect</p>
