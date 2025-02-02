@@ -18,6 +18,7 @@ import About from '../pages/about';
 import Blog from '../pages/blog';
 import Awards from '../pages/awards';
 import BlogDetails from '../pages/blog/blogDetails';
+import Marketing from '../pages/marketing';
 
 // import About from '@/pages/About';
 // import Contact from '@/pages/Contact';
@@ -49,6 +50,7 @@ const AppRouter = () => {
             <Route path='works' element={<Works />} />
             <Route path='clients' element={<Clients />} />
             <Route path='branding' element={<Branding />} />
+            <Route path='marketing' element={<Marketing />} />
           </Route>
           {/* <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} /> */}
