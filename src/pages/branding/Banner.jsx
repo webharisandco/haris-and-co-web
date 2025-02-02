@@ -5,7 +5,7 @@ function Banner() {
   return (
     <div className=" px-[16px] lg:px-[80px] pt-[200px] ">
       <div className=" flex flex-col gap-[35px]">
-        <p className="text-white/50 text-[20px]">Branding </p>
+        <p className="text-white/50 text-[20px] font-[thin]">Branding </p>
         <p className="text-[55px] 2xl:text-[64px] text-white font-[helvetica-medium]">
           Partnering with Toalla De tela
         </p>
