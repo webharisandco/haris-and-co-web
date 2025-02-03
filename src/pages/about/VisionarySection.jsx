@@ -9,11 +9,11 @@ export default function VisionarySection() {
             <div className="flex flex-col lg:flex-row gap-20">
                 <div className="lg:w-1/2 bg-[#212121] flex flex-col md:flex-row h-[550px] md:h-[500px] lg:h-[320px] relative">
                     <div className="md:w-1/2 h-1/2 md:h-full">
-                        <img src={humanprenuerImg} alt="" className='absolute w-full bottom-[50%] md:bottom-[0]  lg:h-[500px]  xl:h-[550px] pt-16 md:-left-5 ' />
+                        <img src={humanprenuerImg} alt="" className='absolute w-full lg:w-auto bottom-[50%] md:bottom-[0]  lg:h-[500px]  xl:h-[550px] pt-16 md:-left-5 ' />
                     </div>
-                    <div className="md:w-1/2 md:py-10 h-1/2  md:h-full">
+                    <div className="md:w-1/2 md:py-10 h-1/2 lg:py-10 md:h-full">
                         <div className="flex  flex-col-reverse md:flex-col justify-end md:justify-between h-full">
-                            <div className="z-10 px-3 my-auto">
+                            <div className="z-10 px-3 my-auto lg:my-0">
                                 <p className='text-[20px] text-white/45 font-[thin] leading-none mb-2'>Author of</p>
                                 <h6 className='text-[48px] md:text-[30px] lg:text-[34px] xl:text-[36px] 2xl:text-[38px] leading-none'>Humanprenuer</h6>
                             </div>

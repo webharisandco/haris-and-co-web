@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 
 function BrandingSection({ BrandingContents }) {
   return (
-    <div className="bg-white lg:pt-[58px] w-full px-[16px] lg:px-[80px] pb-[36px]">
+    <div className="bg-white lg:pt-[58px] w-full px-[16px] md:px-[80px] pb-[36px]">
       {BrandingContents.map((BrandingContent, index) => (
         <>
           <div className="w-full hidden lg:block">

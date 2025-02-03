@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function RelatedBlogs({blogs}) {
     return (
-        <div className="bg-black px-[16px] lg:px-[80px] py-[30px] lg:py-[55px]">
+        <div className="bg-black px-[16px] md:px-[80px] py-[30px] lg:py-[55px]">
             <p className="text-white text-[32px] lg:text-[38px] mb-[44px]">Latest blogs and news</p>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-[35px]">
                 {blogs.map((blog) => (

@@ -3,7 +3,7 @@ import BannerImg from '@/assets/images/aboutPage/Banner.png'
 
 export default function AboutSection() {
     return (
-        <div className='bg-white px-[16px] lg:px-[80px] pt-[50px] -mb-[70px] space-y-10 '>
+        <div className='bg-white px-[16px] md:px-[80px] pt-[50px] -mb-[70px] space-y-10 '>
             <img src={BannerImg} alt="" className='-translate-y-36' />
             <div className=" flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap:14 -translate-y-36">
                 <h2 className='font-medium lg:w-1/2 text-[24px]  lg:text-[27px]  xl:text-[29px] 3xl:text-[40px]'>

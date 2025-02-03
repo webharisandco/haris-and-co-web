@@ -17,7 +17,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 export default function OurTeam() {
     return (
-        <div className='bg-white px-[16px] lg:px-[80px] py-[50px] flex flex-col gap-[50px] lg:items-center lg:text-center'>
+        <div className='bg-white px-[16px] md:px-[80px] py-[50px] flex flex-col gap-[50px] lg:items-center lg:text-center'>
             <div className="">
                 <h4 className='text-[18px] font-[Helvetica-Light] mb-3'>Our Team</h4>
                 <p className='text-[28px] font-[boldtext] leading-none'>Meet the minds shaping an<br /> industry.</p>
@@ -86,7 +86,7 @@ export default function OurTeam() {
                         </div>
                     </SwiperSlide>
                 </Swiper >
-                <hr className='w-full border-black absolute bottom-0  block' />
+                <hr className='w-full border-black absolute bottom-[100px] lg:bottom-14  block' />
             </div>
         </div>
     )

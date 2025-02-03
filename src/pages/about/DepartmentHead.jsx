@@ -17,7 +17,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 export default function DepartmentHead() {
     return (
-        <div className='bg-white px-[16px] md:px-[80px] py-[50px] lg:py-[100px] flex flex-col gap-[50px] lg:items-center'>
+        <div className='bg-white px-[16px] md:px-[80px] py-[50px] lg:py-[100px] flex flex-col gap-[50px] lg:items-center lg:text-center'>
             <div className="">
                 <h4 className='text-[20px] md:text-[18px] font-[Helvetica-Light] mb-3'>Our Department Heads</h4>
                 <p className='text-[24px] md:text-[28px] font-[boldtext] leading-none'>Meet the minds shaping an<br /> industry.</p>

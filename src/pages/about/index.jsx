@@ -5,6 +5,7 @@ import AwardsSection from './AwardsSection'
 import OurTeam from './OurTeam'
 import DepartmentHead from './DepartmentHead'
 import VisionarySection from './VisionarySection'
+import LifeSection from './LifeSection'
 
 export default function About() {
     return (
@@ -14,6 +15,7 @@ export default function About() {
             <VisionarySection />
             <OurTeam />
             <DepartmentHead />
+            <LifeSection />
             <AwardsSection />
         </>
     )
