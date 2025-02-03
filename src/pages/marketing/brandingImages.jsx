@@ -25,6 +25,7 @@ function BrandingImages() {
         <img src={Br6} alt="Brand 6" />
         <img src={Br7} alt="Brand 7" />
         <img src={Br8} alt="Brand 8" />
+        <img src={Br9} alt="Brand 9" />
       
       </div>
     </div>
