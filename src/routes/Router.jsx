@@ -17,6 +17,7 @@ import Careers from '../pages/careers';
 import About from '../pages/about';
 import Blog from '../pages/blog';
 import Awards from '../pages/awards';
+import BlogDetails from '../pages/blog/blogDetails';
 
 // import About from '@/pages/About';
 // import Contact from '@/pages/Contact';
@@ -41,6 +42,7 @@ const AppRouter = () => {
             <Route path='about' element={<About />} />
             <Route path='awards' element={<Awards />} />
             <Route path='blogs' element={<Blog />} />
+            <Route path='blogs/:id' element={<BlogDetails />} />
             <Route path='contact' element={<Contact />} />
             <Route path='careers' element={<Careers />} />
             <Route path='services' element={<Services />} />

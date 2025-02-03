@@ -20,17 +20,24 @@ export default function BlogSection() {
                     </div>
                 ))}
             </div>
-            <div className="bg-[#0E0E0E] grid grid-rows-2 grid-cols-6 gap-8 gap-y-16 w-full px-[16px] md:px-[80px] py-[30px] md:py-[80px]">
-                {blogContent.map((blog, idx) => (
-                    <BlogDiv
-                        img={blog.img}
-                        title={blog.title}
-                        type={blog.type}
-                        date={blog.date}
-                        key={idx}
-                        className={`${idx === 0 ? " hidden md:flex  md:col-span-3 md:mr-6" : idx === 1 ? "hidden md:flex  md:col-span-3 md:ms-6" : "col-span-6 md:col-span-2"}`}
+            <div className="bg-[#0E0E0E]  w-full px-[16px] md:px-[80px] py-[30px] md:py-[80px]">
+                <div className="grid grid-rows-2 grid-cols-6 gap-8 gap-y-16">
+                    {blogContent.map((blog, idx) => (
+                        <BlogDiv
+                            img={blog.img}
+                            title={blog.title}
+                            type={blog.type}
+                            date={blog.date}
+                            key={idx}
+                            className={`${idx === 0 ? " hidden md:flex  md:col-span-3 md:mr-6" : idx === 1 ? "hidden md:flex  md:col-span-3 md:ms-6" : "col-span-6 md:col-span-2"}`}
                         />
-                ))}
+                    ))}
+                </div>
+                <div className="border-b border-gray-600 w-fit mx-auto">
+                    <p className='text-gray-600'>
+                        View All Blogs
+                    </p>
+                </div>
             </div>
         </div>
     )

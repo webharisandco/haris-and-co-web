@@ -4,41 +4,89 @@ import RaginImg from '@/assets/images/aboutPage/team/Ragin.png'
 import HarisImg from '@/assets/images/aboutPage/team/Haris.png'
 import SaheelImg from '@/assets/images/aboutPage/team/Saheel.png'
 import AmnaImg from '@/assets/images/aboutPage/team/Amna.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/pagination"; // Import pagination styles for Swiper
+import 'swiper/css/navigation';
+import SwiperCore from "swiper";
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
+
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination]);
+
 
 export default function OurTeam() {
     return (
-        <div className='bg-white py-[50px] flex flex-col gap-[50px] items-center text-center'>
+        <div className='bg-white px-[16px] lg:px-[80px] py-[50px] flex flex-col gap-[50px] lg:items-center lg:text-center'>
             <div className="">
                 <h4 className='text-[18px] font-[Helvetica-Light] mb-3'>Our Team</h4>
                 <p className='text-[28px] font-[boldtext] leading-none'>Meet the minds shaping an<br /> industry.</p>
             </div>
-            <div className="flex gap-6 justify-between h-[300px] relative">
-                <div>
-                    <img className='w-full h-full' src={AdarshImg} alt="" />
-                    <p className='text-[18px] mt-1'>Haris Aboobacker</p>
-                    <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
-                </div>
-                <div>
-                    <img className='w-full h-full' src={RaginImg} alt="" />
-                    <p className='text-[18px] mt-1'>Haris Aboobacker</p>
-                    <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
-                </div>
-                <div>
-                    <img className='w-full h-full' src={HarisImg} alt="" />
-                    <p className='text-[18px] mt-1'>Haris Aboobacker</p>
-                    <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
-                </div>
-                <div>
-                    <img className='w-full h-full' src={SaheelImg} alt="" />
-                    <p className='text-[18px] mt-1'>Haris Aboobacker</p>
-                    <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
-                </div>
-                <div>
-                    <img className='w-full h-full' src={AmnaImg} alt="" />
-                    <p className='text-[18px] mt-1'>Haris Aboobacker</p>
-                    <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
-                </div>
-                <hr className='w-full border-black absolute bottom-0' />
+            <div className="w-full relative">
+                <Swiper
+                    modules={[Navigation, Pagination, Autoplay]}
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    navigation={false}
+                    pagination={true}
+                    autoplay={{ delay: 2500 }}
+                    loop={true}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        1024: {
+                            slidesPerView: 4,
+                        },
+                        1240: {
+                            slidesPerView: 5,
+                        },
+                    }}
+                    className="swiper-pagination-black" 
+                >
+                    <SwiperSlide>
+                        <div className='flex flex-col items-center'>
+                            <img className=' h-[300px]' src={AdarshImg} alt="" />
+                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
+                            <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+
+                        <div className='flex flex-col items-center' >
+                            <img className=' h-[300px]' src={RaginImg} alt="" />
+                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
+                            <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+
+                        <div className='flex flex-col items-center'>
+                            <img className=' h-[300px]' src={HarisImg} alt="" />
+                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
+                            <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+
+                        <div className='flex flex-col items-center'>
+                            <img className=' h-[300px]' src={SaheelImg} alt="" />
+                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
+                            <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='flex flex-col items-center'>
+                            <img className=' h-[300px]' src={AmnaImg} alt="" />
+                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
+                            <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
+                        </div>
+                    </SwiperSlide>
+                </Swiper >
+                <hr className='w-full border-black absolute bottom-0  block' />
             </div>
         </div>
     )

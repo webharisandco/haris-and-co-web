@@ -13,6 +13,7 @@
 body {
 	font-family: 'Helvetica Neue', sans-serif !important;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 
@@ -73,7 +74,12 @@ a {
 	background-color: white;
 	opacity: 1;
 }
-
+.swiper-pagination-black .swiper-pagination-bullet{
+	background-color: black!important;
+}
+.swiper-pagination-black .swiper-pagination-bullet-active{
+	background-color: black!important;
+}
 
 video::-webkit-media-controls-panel {
 	display: none !important;
@@ -124,7 +130,7 @@ header {
 }
 
 .text-40px{
-	@apply  lg:text-[35px] xl:text-[38px] 3xl:text-[40px];
+	@apply  lg:text-[33px] xl:text-[36px] 3xl:text-[40px];
 }
 
 
