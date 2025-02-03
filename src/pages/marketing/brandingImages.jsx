@@ -8,6 +8,7 @@ import Br5 from "../../assets/images/marketing/br5.svg";
 import Br6 from "../../assets/images/marketing/br6.svg";
 import Br7 from "../../assets/images/marketing/br7.svg";
 import Br8 from "../../assets/images/marketing/br8.svg";
+import Br9 from "../../assets/images/marketing/br9.svg";
 
 function BrandingImages() {
   return (
@@ -22,8 +23,9 @@ function BrandingImages() {
         <img src={Br4} alt="Brand 4" />
         <img src={Br5} alt="Brand 5" />
         <img src={Br6} alt="Brand 6" />
-        <img src={Br7} alt="Brand 6" />
-        <img src={Br8} alt="Brand 6" />
+        <img src={Br7} alt="Brand 7" />
+        <img src={Br8} alt="Brand 8" />
+      
       </div>
     </div>
   );
