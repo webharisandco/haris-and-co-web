@@ -26,16 +26,18 @@ export default function NormalHeader() {
   return (
     <div className="px-[16px] md:px-[80px] py-[35px] w-full bg-[#fff]  flex justify-between items-center">
       <div className="max-w-fit">
-        <img
-          src={Logo}
-          alt="Haris & Co."
-          className="max-w-fit h-[30px] xl:h-[50px] 2xl:h-[66px]"
-        />
+        <Link to={'/'}>
+          <img
+            src={Logo}
+            alt="Haris & Co."
+            className="max-w-fit h-[30px] xl:h-[50px] 2xl:h-[66px]"
+          />
+        </Link>
       </div>
       <div className='items-center gap-[25px] xl:gap-[49px] hidden lg:flex'>
         <div className="flex justify-between gap-[25px] xl:gap-[40px]   text-black text-sm 2xl:text-base  *:text-nowrap  ">
-          <Link to="/services" className={`${location.pathname === "/" ? "font-medium" : " font-[Helvetica-Light] "}  `}>Home</Link>
-          <Link to="/services" className={` ${location.pathname === "/services" ? "font-medium" :" font-[Helvetica-Light] "} `}>Services</Link>
+          <Link to="/" className={`${location.pathname === "/" ? "font-medium" : " font-[Helvetica-Light] "}  `}>Home</Link>
+          <Link to="/services" className={` ${location.pathname === "/services" ? "font-medium" : " font-[Helvetica-Light] "} `}>Services</Link>
           <Link to="/works" className={`${location.pathname === "/works" ? "font-medium" : "font-[Helvetica-Light]"} `}>Works</Link>
           <Link to="/clients" className={`${location.pathname === "/clients" ? "font-medium" : "font-[Helvetica-Light]"} `}>Clients</Link>
           <Link to="/awards" className={`${location.pathname === "/awards" ? "font-medium" : "font-[Helvetica-Light]"} `}>Awards</Link>
