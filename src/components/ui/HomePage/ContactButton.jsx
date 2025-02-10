@@ -8,7 +8,7 @@ export default function ContactButton({ text, href }) {
     return (
         <div className="flex items-center ">
             <Link
-                href={href}
+                to={href}
                 className="group relative overflow-hidden text-[18px] text-white transition-colors duration-300 ease-in-out "
             >
                 <div className="px-[22px] py-[12px] flex items-center gap-[10px] border border-solid border-white  group-hover:bg-white group-hover:ps-[20px] group-hover:pr-[20px] group-hover:text-black w-[175px]">

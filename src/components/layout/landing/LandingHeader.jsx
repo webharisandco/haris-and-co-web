@@ -24,8 +24,8 @@ const LandingHeader = () => {
                 <Link to="/" className="text-[18px] font-[AbroRegular] text-white">Home</Link>
                 <Link to="/services" className="text-[18px] font-[AbroRegular] ">Services</Link>
                 <Link to="/casestudies" className="text-[18px] font-[AbroRegular]">Case Studies</Link>
-                <Link to="/culture" className="text-[18px] font-[AbroRegular]">Career</Link>
-                <Link to="/culture" className="text-[18px] font-[AbroRegular]">Blog</Link>
+                <Link to="/career" className="text-[18px] font-[AbroRegular]">Career</Link>
+                <Link to="/blog" className="text-[18px] font-[AbroRegular]">Blog</Link>
                 <Link to="/contact" className="text-[18px] font-[AbroRegular]">Contact Us</Link>
             </div>
             <LandingButton text={'GET A PROPOSAL'} className={'hidden lg:flex '} />
