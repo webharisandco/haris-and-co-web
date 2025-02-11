@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Banner from "@/components/ui/LandingPage/Banner";
 import BannerImages from "@/assets/images/landing/webHero.webp";
 import Banner2 from "@/assets/images/web/images/banner2.png";
@@ -14,24 +15,25 @@ import ConsultBanner from "@/components/ui/LandingPage/ConsultBanner";
 import Testimonial from "@/components/ui/LandingPage/Testimonial";
 import { Faq } from "@/components/ui/LandingPage/Faq";
 import AboutCompany from "@/components/ui/web/AboutCompany";
+import AwardSection from "@/components/ui/LandingPage/AwardSection";
 import webBrand1 from "@/assets/images/brandLogos/web/webBrands1.png";
 import webBrand2 from "@/assets/images/brandLogos/web/webBrands2.png";
 import webBrand3 from "@/assets/images/brandLogos/web/webBrands3.png";
 import webBrand4 from "@/assets/images/brandLogos/web/webBrands4.png";
 import webBrand5 from "@/assets/images/brandLogos/web/webBrands5.png";
 import webBrand6 from "@/assets/images/brandLogos/web/webBrands6.png";
-import webBrandSmall1 from "../../../assets/images/brandLogos/web/small/webBrandsSmall1.png";
-import webBrandSmall2 from "../../../assets/images/brandLogos/web/small/webBrandsSmall2.png";
-import webBrandSmall3 from "../../../assets/images/brandLogos/web/small/webBrandsSmall3.png";
-import webBrandSmall4 from "../../../assets/images/brandLogos/web/small/webBrandsSmall4.png";
-import webBrandSmall5 from "../../../assets/images/brandLogos/web/small/webBrandsSmall5.png";
-import webBrandSmall6 from "../../../assets/images/brandLogos/web/small/webBrandsSmall6.png";
-import webBrandSmall7 from "../../../assets/images/brandLogos/web/small/webBrandsSmall7.png";
-import webBrandSmall8 from "../../../assets/images/brandLogos/web/small/webBrandsSmall8.png";
-import webBrandSmall9 from "../../../assets/images/brandLogos/web/small/webBrandsSmall9.png";
-import webBrandSmall10 from "../../../assets/images/brandLogos/web/small/webBrandsSmall10.png";
-import webBrandSmall11 from "../../../assets/images/brandLogos/web/small/webBrandsSmall11.png";
-import { Helmet } from "react-helmet";
+import webBrandSmall1 from "@/assets/images/brandLogos/web/small/webBrandsSmall1.png";
+import webBrandSmall2 from "@/assets/images/brandLogos/web/small/webBrandsSmall2.png";
+import webBrandSmall3 from "@/assets/images/brandLogos/web/small/webBrandsSmall3.png";
+import webBrandSmall4 from "@/assets/images/brandLogos/web/small/webBrandsSmall4.png";
+import webBrandSmall5 from "@/assets/images/brandLogos/web/small/webBrandsSmall5.png";
+import webBrandSmall6 from "@/assets/images/brandLogos/web/small/webBrandsSmall6.png";
+import webBrandSmall7 from "@/assets/images/brandLogos/web/small/webBrandsSmall7.png";
+import webBrandSmall8 from "@/assets/images/brandLogos/web/small/webBrandsSmall8.png";
+import webBrandSmall9 from "@/assets/images/brandLogos/web/small/webBrandsSmall9.png";
+import webBrandSmall10 from "@/assets/images/brandLogos/web/small/webBrandsSmall10.png";
+import webBrandSmall11 from "@/assets/images/brandLogos/web/small/webBrandsSmall11.png";
+
 
 export default function UIWeb() {
   const location = {
@@ -246,6 +248,11 @@ export default function UIWeb() {
           brandLogosSmall={webBrandSmalls}
         />
 
+<<<<<<< HEAD
+=======
+        <AwardSection />
+
+>>>>>>> 700d251 (Award section added)
         <div className="px-[18px] md:px-0 lg:pr-[100px]">
           <AboutSection
             bannerImage={Banner2}
@@ -268,7 +275,7 @@ export default function UIWeb() {
           <Testimonial />
         </div>
         <div className="">
-          <ContactSection location={location}/>
+          <ContactSection location={location} />
         </div>
         <div className="bg-white">
           <Faq faqList={faqList} />

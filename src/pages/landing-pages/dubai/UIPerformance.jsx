@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useState } from "react";
+import { Helmet } from "react-helmet";
 import LandingHeader from "@/components/layout/landing/LandingHeader";
 import LandingFooter from "@/components/layout/landing/LandingFooter";
 import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
@@ -7,25 +8,26 @@ import Banner from "@/components/ui/LandingPage/Banner";
 import BannerImg from "@/assets/images/landing/performanceHero.webp";
 import AboutImg from "@/assets/images/landing/AboutImg.png";
 import AboutSection from "@/components/ui/LandingPage/AboutSection";
-import perfomanceBrands1 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands1.png";
-import perfomanceBrands2 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands2.png";
-import perfomanceBrands3 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands3.png";
-import perfomanceBrands4 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands4.png";
-import perfomanceBrands5 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands5.png";
-import perfomanceBrands6 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands6.png";
-import perfomanceBrandsSmall1 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall1.png";
-import perfomanceBrandsSmall2 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall2.png";
-import perfomanceBrandsSmall3 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall3.png";
-import perfomanceBrandsSmall4 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall4.png";
-import perfomanceBrandsSmall5 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall5.png";
-import perfomanceBrandsSmall6 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall6.png";
-import perfomanceBrandsSmall7 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall7.png";
-import perfomanceBrandsSmall8 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall8.png";
-import perfomanceBrandsSmall9 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall9.png";
-import perfomanceBrandsSmall10 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall10.png";
-import perfomanceBrandsSmall11 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall11.png";
-import perfomanceBrandsSmall12 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall12.png";
-import { Helmet } from "react-helmet";
+import AwardSection from "@/components/ui/LandingPage/AwardSection";
+import perfomanceBrands1 from "@/assets/images/brandLogos/perfomance/perfomanceBrands1.png";
+import perfomanceBrands2 from "@/assets/images/brandLogos/perfomance/perfomanceBrands2.png";
+import perfomanceBrands3 from "@/assets/images/brandLogos/perfomance/perfomanceBrands3.png";
+import perfomanceBrands4 from "@/assets/images/brandLogos/perfomance/perfomanceBrands4.png";
+import perfomanceBrands5 from "@/assets/images/brandLogos/perfomance/perfomanceBrands5.png";
+import perfomanceBrands6 from "@/assets/images/brandLogos/perfomance/perfomanceBrands6.png";
+import perfomanceBrandsSmall1 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall1.png";
+import perfomanceBrandsSmall2 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall2.png";
+import perfomanceBrandsSmall3 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall3.png";
+import perfomanceBrandsSmall4 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall4.png";
+import perfomanceBrandsSmall5 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall5.png";
+import perfomanceBrandsSmall6 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall6.png";
+import perfomanceBrandsSmall7 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall7.png";
+import perfomanceBrandsSmall8 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall8.png";
+import perfomanceBrandsSmall9 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall9.png";
+import perfomanceBrandsSmall10 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall10.png";
+import perfomanceBrandsSmall11 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall11.png";
+import perfomanceBrandsSmall12 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall12.png";
+
 const ContactSection = lazy(() =>
   import("@/components/ui/LandingPage/ContactSection")
 );
@@ -205,6 +207,7 @@ export default function UIPerformance() {
           barandLogos={perfomanceBrands}
           text={"Brands that have scaled with our Performance Marketing."}
         />
+        <AwardSection/>
       </div>
       <div className="px-[16px] md:px-[60px] lg:px-[100px]">
         <AboutSection
