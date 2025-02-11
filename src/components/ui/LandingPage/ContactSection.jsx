@@ -33,7 +33,7 @@ function ContactSection({ kerala }) {
     return <div className="text-center text-lg">Loading Map...</div>;
 
   return (
-    <div className="pt-[68px] md:pt-[200px] -mt-[90px] bg-white relative">
+    <div className="pt-[68px] md:pt-[160px] -mt-[90px] bg-white relative">
       <div className="px-[16px] md:px-[80px] lg:px-[100px] flex flex-col justify-between md:relative z-10 static  bg-[#151515]">
 
         <div className="lg:w-[50%] flex flex-col gap-[30px] py-[53px] md:py-[147px] poppins-light">
@@ -224,7 +224,7 @@ function ContactSection({ kerala }) {
         </div>
 
       </div>
-      <div className="w-[40%] hidden lg:block  md:absolute top-[10%] right-[6%] poppins-medium">
+      <div className="w-[40%] hidden lg:block md:absolute top-[6%] right-[6%] poppins-medium">
         <div className="bg-[#7744D5] relative  z-30 p-6 md:px-[54px] py-[66px] rounded-3xl text-white max-w-auto  mx-auto">
           <p className="text-[30px] font-medium mb-6 font-[AbroRegular] ">Get a Callback</p>
 

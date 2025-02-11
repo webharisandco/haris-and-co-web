@@ -243,7 +243,7 @@ export default function UIWeb() {
           barandLogos={webBrands}
           brandLogosSmall={webBrandSmalls}
         />
-
+        <AwardSection />
         <div className="px-[18px] md:px-0 md:pr-[100px]">
           <AboutSection
             bannerImage={Banner2}
