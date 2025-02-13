@@ -24,7 +24,7 @@ import Marketing from '../pages/marketing';
 
 const AppRouter = () => {
   return (
-    <Router>
+    // <Router>
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
@@ -54,7 +54,7 @@ const AppRouter = () => {
           <Route path="*" element={<NotFound />} /> */}
         </Route>
       </Routes>
-    </Router>
+    // </Router>
   );
 };
 
