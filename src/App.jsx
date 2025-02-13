@@ -1,7 +1,7 @@
-// import { useEffect } from 'react';
-// import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import './App.css';
 import AppRouter from './routes/Router';
+import { useLocation } from 'react-router-dom';
 import('./Font.css');
 import('./Font/helvetica-neue-55.css')
 
