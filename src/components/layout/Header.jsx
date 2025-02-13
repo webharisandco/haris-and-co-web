@@ -106,7 +106,7 @@ export default function Header() {
             <Link to="/awards" className="text-[18px] font-[thin]">Awards</Link>
             <Link to="/about" className="text-[18px] font-[thin] text-nowrap">About us</Link>
             <Link to="/blogs" className="text-[18px] font-[thin]">Blogs</Link>
-            <Link to="/careers" className="text-[18px] font-[thin]">Careers</Link> 
+            <Link to="/career" className="text-[18px] font-[thin]">Careers</Link> 
           </div>
           <div className="hidden xl:flex">
             <ContactButton text='Contact Us' href='/contact' />

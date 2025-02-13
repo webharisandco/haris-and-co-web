@@ -20,9 +20,7 @@ import Awards from '../pages/awards';
 import BlogDetails from '../pages/blog/blogDetails';
 import Marketing from '../pages/marketing';
 
-// import About from '@/pages/About';
-// import Contact from '@/pages/Contact';
-// import NotFound from '@/pages/NotFound';
+
 
 const AppRouter = () => {
   return (
@@ -45,12 +43,12 @@ const AppRouter = () => {
             <Route path='blogs' element={<Blog />} />
             <Route path='blogs/:id' element={<BlogDetails />} />
             <Route path='contact' element={<Contact />} />
-            <Route path='careers' element={<Careers />} />
+            <Route path='career' element={<Careers />} />
             <Route path='services' element={<Services />} />
-            <Route path='works' element={<Works />} />
-            <Route path='clients' element={<Clients />} />
+            <Route path='marketing' element={<Works />} />
+            <Route path='works' element={<Clients />} />
             <Route path='branding' element={<Branding />} />
-            <Route path='marketing' element={<Marketing />} />
+            <Route path='clients' element={<Marketing />} />
           </Route>
           {/* <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} /> */}

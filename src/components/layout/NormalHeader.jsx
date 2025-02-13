@@ -43,7 +43,7 @@ export default function NormalHeader() {
           <Link to="/awards" className={`${location.pathname === "/awards" ? "font-medium" : "font-[Helvetica-Light]"} `}>Awards</Link>
           <Link to="/about" className={`${location.pathname === "/about" ? "font-medium" : "font-[Helvetica-Light]"} `}>About us</Link>
           <Link to="/blogs" className={`${location.pathname === "/blogs" ? "font-medium" : "font-[Helvetica-Light]"} `}>Blogs</Link>
-          <Link to="/careers" className={`${location.pathname === "/careers" ? "font-medium" : "font-[Helvetica-Light]"} `}>Careers</Link>
+          <Link to="/career" className={`${location.pathname === "/career" ? "font-medium" : "font-[Helvetica-Light]"} `}>Careers</Link>
         </div>
         <div className="hidden lg:block">
           <Button text='Contact Us' href='/contact' btnClassName={' 2xl:w-[175px]'} />

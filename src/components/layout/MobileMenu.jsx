@@ -22,7 +22,7 @@ export default function MobileMenu({ isOpen,toggleMenu }) {
                 <Link to="/awards" className="text-[18px] font-[thin]" onClick={toggleMenu}>Awards</Link>
                 <Link to="/about" className="text-[18px] font-[thin]" onClick={toggleMenu}>About us</Link>
                 <Link to="/blogs" className="text-[18px] font-[thin]" onClick={toggleMenu}>Blogs</Link>
-                <Link to="/careers" className="text-[18px] font-[thin]" onClick={toggleMenu}>Careers</Link>
+                <Link to="/career" className="text-[18px] font-[thin]" onClick={toggleMenu}>Careers</Link>
             </div>
             <ContactButton text='Contact Us' href='/contact' />
 
