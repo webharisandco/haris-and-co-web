@@ -17,10 +17,10 @@ SwiperCore.use([Navigation, Pagination]);
 
 export default function OurTeam() {
     return (
-        <div className='bg-white px-[16px] md:px-[80px] py-[50px] flex flex-col gap-[50px] lg:items-center lg:text-center'>
+        <div className='bg-white py-[50px] flex flex-col gap-[50px] lg:items-center lg:text-center'>
             <div className="">
-                <h4 className='text-[18px] font-[Helvetica-Light] mb-3'>Our Team</h4>
-                <p className='text-[28px] font-[boldtext] leading-none'>Meet the minds shaping an<br /> industry.</p>
+                <h4 className='text-[18px] 3xl:text-[24px] font-[Helvetica-Light] mb-3'>Our Team</h4>
+                <p className='text-[28px] text-40px font-[boldtext] leading-none'>Meet the minds shaping an<br /> industry.</p>
             </div>
             <div className="w-full relative">
                 <Swiper
@@ -49,44 +49,44 @@ export default function OurTeam() {
                 >
                     <SwiperSlide>
                         <div className='flex flex-col items-center'>
-                            <img className=' h-[300px]' src={AdarshImg} alt="" />
-                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
+                            <img className=' h-[300px] 3xl:h-[400px]' src={AdarshImg} alt="" />
+                            <p className='text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]'>Haris Aboobacker</p>
                             <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
 
                         <div className='flex flex-col items-center' >
-                            <img className=' h-[300px]' src={RaginImg} alt="" />
-                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
+                            <img className=' h-[300px] 3xl:h-[400px]' src={RaginImg} alt="" />
+                            <p className='text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]'>Haris Aboobacker</p>
                             <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
 
                         <div className='flex flex-col items-center'>
-                            <img className=' h-[300px]' src={HarisImg} alt="" />
-                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
+                            <img className=' h-[300px] 3xl:h-[400px]' src={HarisImg} alt="" />
+                            <p className='text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]'>Haris Aboobacker</p>
                             <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
 
                         <div className='flex flex-col items-center'>
-                            <img className=' h-[300px]' src={SaheelImg} alt="" />
-                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
+                            <img className=' h-[300px] 3xl:h-[400px]' src={SaheelImg} alt="" />
+                            <p className='text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]'>Haris Aboobacker</p>
                             <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='flex flex-col items-center'>
-                            <img className=' h-[300px]' src={AmnaImg} alt="" />
-                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
+                            <img className=' h-[300px] 3xl:h-[400px]' src={AmnaImg} alt="" />
+                            <p className='text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]'>Haris Aboobacker</p>
                             <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
                         </div>
                     </SwiperSlide>
                 </Swiper >
-                <hr className='w-full border-black absolute bottom-[100px] lg:bottom-14  block' />
+                <hr className='w-full border-black absolute bottom-[100px] lg:bottom-14 3xl:bottom-16  block' />
             </div>
         </div>
     )

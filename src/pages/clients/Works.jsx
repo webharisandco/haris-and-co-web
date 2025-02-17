@@ -6,15 +6,15 @@ import { MoveRight } from "lucide-react";
 
 function Works() {
   return (
-    <div className="bg-black">
+    <div className="bg-[#0E0E0E]">
       <div className="px-[17px] md:px-[40px] lg:px-[80px] mt-[40px] pb-[20px] lg:pb-[180px]">
         <div className=" grid grid-cols-1 lg:grid-cols-2 gap-y-[49px] md:gap-y-[100px] lg:gap-y-[150px] gap-x-[120px] mt-[40px] md:mt-[60px] lg:mt-[80px]">
           {OurWorksData.map((data) => (
-            <div
+            <Link
+              to="/branding"
               key={data.id}
-              className={`h-full flex flex-col ${
-                data.id % 2 === 0 ? "mt-0 lg:mt-[78px]" : ""
-              }`}
+              className={`h-full flex flex-col ${data.id % 2 === 0 ? "mt-0 lg:mt-[78px]" : ""
+                }`}
             >
               <img
                 className="w-full h-full"
@@ -28,7 +28,7 @@ function Works() {
               <p className="text-white ml-[-5px] lg:ml-0 font-[thin] opacity-55 text-left text-[16px] md:text-[24px]">
                 {data.description}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

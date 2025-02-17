@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function BlogDiv({ img, title, type, date, className }) {
   return (
+    <Link to={'/blog/1'}>
     <div className={`flex flex-col gap-5 md:gap-[30px] h-fit ${className} cursor-pointer`}>
       <img className="w-fit h-fit" src={img} alt="" />
       <h6 className="text-[20px] hidden lg:block text-white/50">{type}</h6>
@@ -13,5 +15,6 @@ export default function BlogDiv({ img, title, type, date, className }) {
         <p className="text-[20px] text-white/50"> 6  min read</p>
       </div>
     </div>
+    </Link>
   )
 }

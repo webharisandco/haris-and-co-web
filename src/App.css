@@ -122,7 +122,7 @@ header {
 }
 
 .text-64px{
-	@apply lg:text-[48px] xl:text-[56px] 2xl:text-[60px] 3xl:text-[64px];
+	@apply lg:text-[48px] xl:text-[56px] 2xl:text-[59px] 3xl:text-[64px];
 }
 
 .text-48px{
