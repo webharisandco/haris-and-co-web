@@ -50,7 +50,7 @@ function ClientsSection() {
           {clients.map((client, index) => (
 
             <SwiperSlide key={index}>
-              <div className="relative">
+              <div className="relative w-[400px]">
                 <img
                   className="w-[400px] object-contain"
                   src={client.img}

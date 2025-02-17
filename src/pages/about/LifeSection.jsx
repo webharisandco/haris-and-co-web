@@ -9,7 +9,7 @@ import img6 from "@/assets/images/aboutPage/life/img6.png";
 export default function LifeSection() {
     return (
         <div className='flex flex-col gap-8 bg-white text-center px-[16px] md:px-[80px] pb-[50px]'>
-            <h2 className='text-40px'>Life at Haris&Co</h2>
+            <h2 className='text-40px font-[boldtext]'>Life at Haris&Co</h2>
             <div className="flex flex-col lg:flex-row flex-wrap gap-5">
                 {/* First 3 images visible on all screens */}
                 <div className="flex-1 min-w-[30%]">

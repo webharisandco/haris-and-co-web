@@ -11,7 +11,7 @@ export default function useAwards() {
         {
             image: image1,
             title: "Afaqs! startup brands ",
-            date: "2023",
+            date: " 2023",
             desc: "At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful.",
             brandImg: brand
         },

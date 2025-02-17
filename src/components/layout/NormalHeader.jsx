@@ -35,7 +35,7 @@ export default function NormalHeader() {
         </Link>
       </div>
       <div className='items-center gap-[25px] xl:gap-[49px] hidden lg:flex'>
-        <div className="flex justify-between gap-[25px] xl:gap-[40px]   text-black text-sm 2xl:text-base  *:text-nowrap  ">
+        <div className="flex justify-between gap-[25px] xl:gap-[40px] 3xl:gap-[55px]   text-black text-sm 2xl:text-base  *:text-nowrap  ">
           <Link to="/" className={`${location.pathname === "/" ? "font-medium" : " font-[Helvetica-Light] "}  `}>Home</Link>
           <Link to="/services" className={` ${location.pathname === "/services" ? "font-medium" : " font-[Helvetica-Light] "} `}>Services</Link>
           <Link to="/works" className={`${location.pathname === "/works" ? "font-medium" : "font-[Helvetica-Light]"} `}>Works</Link>

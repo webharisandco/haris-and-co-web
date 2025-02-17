@@ -1,36 +1,37 @@
 import React from "react";
 import LinkWithArrow from "@/components/ui/common/LinkWithArrow";
 import { ArrowRight } from 'lucide-react'
+import { Link } from "react-router-dom";
 
 function BrandingSection({ BrandingContents }) {
   return (
-    <div className="bg-white lg:pt-[58px] w-full px-[16px] md:px-[80px] pb-[36px]">
+    <div className="bg-white lg:pt-[70px] w-full px-[16px] md:px-[80px] pb-[36px] flex flex-col gap-[70px]">
       {BrandingContents.map((BrandingContent, index) => (
         <>
           <div className="w-full hidden lg:block">
             <div
               key={index}
-              className={`w-full flex justify-between gap-5 ${
+              className={`w-full flex justify-between items-center gap-5 ${
                 index % 2 === 1 ? "flex-row-reverse" : ""
               } `}
             >
               <div
-                className={`w-6/12 flex flex-col justify-center gap-[15px] ${
-                  index % 2 === 0 ? "pe-[70px]" : "px-[35px]"
+                className={`w-6/12 flex flex-col justify-center my-auto gap-[15px] ${
+                  index % 2 === 0 ? "pe-[70px] 3xl:pe-[90px]" : "px-[35px] 3xl:ps-[80px]"
                 }`}
               >
                 <div>
-                  <p className="font-[helvetica-medium] text-[45px] ">
+                  <p className="font-[helvetica-medium] text-48px ">
                     {BrandingContent.title}
                   </p>
                 </div>
                 <div>
-                  <p className="text-[21px] leading-[26px] text-black mb-4">
+                  <p className="text-[21px] 3xl:text-[24px] leading-[26px] text-black mb-4 lg:w-3/4">
                     {BrandingContent.description}
                   </p>
                 </div>
                 <div>
-                  <ul className="grid list-disc grid-cols-3 gap-[10px] text-[18px]">
+                  <ul className="grid list-disc grid-cols-3 gap-[10px] 3xl:gap-7 text-[18px] 3xl:text-[24px]">
                     {BrandingContent.services.map((service, serviceIndex) => (
                       <li
                         key={serviceIndex}
@@ -42,15 +43,15 @@ function BrandingSection({ BrandingContents }) {
                   </ul>
                 </div>
                 <div className="mt-[30px]">
-                  <button className="text-black/55 font-[helvetica-medium] hover:text-black  flex items-center gap-2">
+                  <Link to={"/marketing"} className="text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">
                     {BrandingContent.action.label}
-                    <ArrowRight className='hover:black transition-all duration-300' size={23}/>
-                  </button>
+                    <ArrowRight className='' size={25}/>
+                  </Link>
                 </div>
               </div>
-              <div className="w-6/12 mt-[70px] overflow-hidden">
+              <div className="w-6/12 overflow-hidden">
                 <img
-                  className="w-full h-fit lg:h-[500px] object-cover transform transition-transform duration-300 hover:scale-110"
+                  className="w-full h-fit lg:h-[500px] 3xl:h-[600px] object-cover transform transition-transform duration-300 hover:scale-110"
                   src={BrandingContent.image}
                   alt={BrandingContent.title}
                 />

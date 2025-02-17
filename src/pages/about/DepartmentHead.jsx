@@ -19,8 +19,8 @@ export default function DepartmentHead() {
     return (
         <div className='bg-white px-[16px] md:px-[80px] py-[50px] lg:py-[100px] flex flex-col gap-[50px] lg:items-center lg:text-center'>
             <div className="">
-                <h4 className='text-[20px] md:text-[18px] font-[Helvetica-Light] mb-3'>Our Department Heads</h4>
-                <p className='text-[24px] md:text-[28px] font-[boldtext] leading-none'>Meet the minds shaping an<br /> industry.</p>
+                <h4 className='text-[20px] md:text-[18px] 3xl:text-[24px] font-[Helvetica-Light] mb-3'>Our Department Heads</h4>
+                <p className='text-[24px] text-40px font-[boldtext] leading-none'>Meet the minds shaping an<br /> industry.</p>
             </div>
 
             <div className="w-full">
@@ -51,48 +51,48 @@ export default function DepartmentHead() {
 
                 >
                     <SwiperSlide>
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col items-center lg:items-start w-fit'>
                             <div className="bg-[#F5F5F5] h-[350px] w-[300px] mx-auto">
                                 <img className='pt-8 w-full   h-full object-contain' src={NabhanImg} alt="" />
                             </div>
-                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
-                            <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
+                            <p className='text-[18px] 3xl:text-[24px] mt-1'>Abu Nabhan</p>
+                            <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>Chief of Branding</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col items-center lg:items-start w-fit'>
                             <div className="bg-[#F5F5F5] h-[350px] w-[300px]">
                                 <img className='pt-8 w-full   h-full object-contain' src={NihalImg} alt="" />
                             </div>
-                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
-                            <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
+                            <p className='text-[18px] 3xl:text-[24px] mt-1'>Nihal Zubair</p>
+                            <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>Chief of Creative</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='flex flex-col items-center'>
+                        <div className='flex flex-col items-center lg:items-start w-fit'>
                             <div className="bg-[#F5F5F5] h-[350px] w-[300px]">
                                 <img className='pt-8 w-full   h-full object-contain' src={vishnuImg} alt="" />
                             </div>
-                            <p className='text-[18px] mt-1'>Haris Aboobacker</p>
-                            <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
+                            <p className='text-[18px] 3xl:text-[24px] mt-1'>Vishnu KP</p>
+                            <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>Chief of Production</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col items-center lg:items-start w-fit'>
                         <div className="bg-[#F5F5F5] h-[350px] w-[300px]">
                             <img className='pt-8 w-full   h-full object-contain' src={RaginImg} alt="" />
                         </div>
-                        <p className='text-[18px] mt-1'>Haris Aboobacker</p>
-                        <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
+                        <p className='text-[18px] 3xl:text-[24px] mt-1'>Ragin Raj</p>
+                        <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>Chief of SEO</p>
                     </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col items-center lg:items-start w-fit'>
                         <div className="bg-[#F5F5F5] h-[350px] w-[300px]">
                             <img className='pt-8 w-full h-full object-contain' src={AdarshImg} alt="" />
                         </div>
-                        <p className='text-[18px] mt-1'>Haris Aboobacker</p>
-                        <p className='text-[16px] text-[#040404BA] font-[thin]'>Founder, CEOs</p>
+                        <p className='text-[18px] 3xl:text-[24px] mt-1'>Adarsh MS</p>
+                        <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>Chief of Performance Marketing</p>
                     </div>
                     </SwiperSlide>
                 </Swiper>
