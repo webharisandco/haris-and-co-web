@@ -16,7 +16,7 @@ function BrandingImages() {
       <div className="hidden lg:flex p-[80px]">
         <img src={img5} alt="" />
       </div>
-      <div className="flex lg:hidden py-[38px]  flex-col gap-[30px] w-full">
+      <div className="flex lg:hidden py-[38px] items-center justify-center  flex-col gap-[30px] w-full">
         <img src={Br1} alt="Brand 1" />
         <img src={Br2} alt="Brand 2" />
         <img src={Br3} alt="Brand 3" />
