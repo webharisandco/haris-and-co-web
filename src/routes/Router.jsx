@@ -73,7 +73,7 @@ const AppRouter = () => {
         {/* <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} /> */}
       </Route>
-    </Routes>
+    </Routes> 
   );
 };
 
