@@ -1,9 +1,9 @@
 import React from "react";
-import img from "../../assets/images/branding/img1.png";
-import img1 from "../../assets/images/branding/img3.png";
-import img2 from "../../assets/images/branding/img4.png";
-import img3 from "../../assets/images/branding/img5.png";
-import img4 from "../../assets/images/branding/img6.png";
+import img from "@/assets/images/branding/img1.png";
+import img1 from "@/assets/images/branding/img3.png";
+import img2 from "@/assets/images/branding/img4.png";
+import img3 from "@/assets/images/branding/img5.png";
+import img4 from "@/assets/images/branding/img6.png";
 
 const BrandImages = () => {
   return (

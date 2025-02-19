@@ -1,6 +1,6 @@
-import Image1 from '../../assets/images/workSection/blogs/img1.svg'
-import Image2 from '../../assets/images/workSection/blogs/img2.svg'
-import Image3 from '../../assets/images/workSection/blogs/img3.svg'
+import Image1 from '@/assets/images/workSection/blogs/img1.svg'
+import Image2 from '@/assets/images/workSection/blogs/img2.svg'
+import Image3 from '@/assets/images/workSection/blogs/img3.svg'
 function useWorks() {
   const services = [
     {

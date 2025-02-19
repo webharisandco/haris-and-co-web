@@ -1,21 +1,12 @@
 import React from "react";
-import Banner from "./Banner";
-import Works from "./Works";
-import AllWorks from "./AllWorks";
-import useClients from "./useClients";
+import Banner from "./banner";
+import BrandingImages from "./brandingImages";
 
 function Clients() {
-  const { menuItems, handleClick, selectedId, content } = useClients();
   return (
-    <div className="bg-black">
+    <div className="">
       <Banner />
-      <AllWorks
-        menuItems={menuItems}
-        handleClick={handleClick}
-        content={content}
-        selectedId={selectedId}
-      />
-      <Works />={" "}
+      <BrandingImages />
     </div>
   );
 }

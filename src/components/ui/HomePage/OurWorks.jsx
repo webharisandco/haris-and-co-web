@@ -27,7 +27,7 @@ function OurWorks() {
         className="group text-[18px] text-black/55 border-b border-b-black/55 flex w-fit mx-auto gap-[11px] my-[56px] md:my-[150px] justify-center items-center hover:text-black hover:border-b-black transition-all duration-300"
       >
         <span className="">
-          Explore All Works
+          See Our Works
         </span>
         <MoveRight size={30} className='text-black/55 transition-all duration-300 group-hover:text-black' strokeWidth={1.8} />
       </Link>
