@@ -2,12 +2,15 @@ import React from "react";
 
 function Banner() {
   return (
-    <div className=" px-[16px] md:px-[80px] min-h-[600px] lg:min-h-[650px] flex leading-snug items-center bg-[#0E0E0E]">
-      <div className=" flex flex-col gap-[35px]">
-        <p className="text-[40px] text-80px text-white">
-          Transforming<span className="text-white/65 font-[Helvetica-Light]"> your visions into<br /> remarkable </span>experiences
-        </p>
-      </div>
+    <div className=" px-[16px] md:px-[80px]  bg-[#0E0E0E] min-h-[600px] lg:min-h-[650px] items-center flex">
+      <p className="text-[40px] text-80px text-white   leading-none ">
+        Transforming{" "}
+        <span className="text-white/65 font-[Helvetica-Light]">
+          {" "}
+          your visions into <br className="hidden lg:block" /> remarkable{" "}
+        </span>{" "}
+        experiences
+      </p>
     </div>
   );
 }
