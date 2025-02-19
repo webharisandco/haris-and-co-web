@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import icon from "../../assets/images/servicesSection/rightArrow.svg";
+import icon from "@/assets/images/servicesSection/rightArrow.svg";
 import {ArrowRight} from 'lucide-react'
 
 function ServiceSection({ services }) {

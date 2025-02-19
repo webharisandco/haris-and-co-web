@@ -1,17 +1,14 @@
 import React from "react";
 import OurWorksData from "@/utils/data/ourWorks";
-import RightArrowOfBlack from "@/assets/images/icons/rightArrowOfBlack.png";
-import { Link } from "react-router-dom";
-import { MoveRight } from "lucide-react";
 
-function Works() {
+function WorkPartners() {
   return (
     <div className="bg-[#0E0E0E]">
       <div className="px-[17px] md:px-[40px] lg:px-[80px] mt-[40px] pb-[20px] lg:pb-[180px]">
         <div className=" grid grid-cols-1 lg:grid-cols-2 gap-y-[49px] md:gap-y-[100px] lg:gap-y-[150px] gap-x-[120px] mt-[40px] md:mt-[60px] lg:mt-[80px]">
           {OurWorksData.map((data) => (
-            <Link
-              to="/branding"
+            <div
+              // to="/branding"
               key={data.id}
               className={`h-full flex flex-col ${data.id % 2 === 0 ? "mt-0 lg:mt-[78px]" : ""
                 }`}
@@ -28,7 +25,7 @@ function Works() {
               <p className="text-white ml-[-5px] lg:ml-0 font-[thin] opacity-55 text-left text-[16px] md:text-[24px]">
                 {data.description}
               </p>
-            </Link>
+            </div>
           ))}
         </div>
       </div>
@@ -36,4 +33,4 @@ function Works() {
   );
 }
 
-export default Works;
+export default WorkPartners;

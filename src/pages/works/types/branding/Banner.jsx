@@ -1,5 +1,5 @@
 import React from "react";
-import Branding1 from "../../assets/images/branding/Branding1.svg";
+import Branding1 from "@/assets/images/branding/Branding1.svg";
 
 function Banner() {
   return (

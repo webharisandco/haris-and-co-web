@@ -17,13 +17,13 @@ export const ClientsDataSection = () => {
           </div>
           <div className="flex flex-col text-center lg:text-start leading-none gap-1">
             <p className="text-[36px] md:text-[50px] lg:text-[64px] font-medium  text-white text-opacity-50">1000+</p>
-            <p className="text-[24px] md:text-[30px] lg:text-[34px] text-white text-opacity-50 font-[thin] w-fit">Projects Done
+            <p className="text-[24px] md:text-[30px] lg:text-[34px] text-white text-opacity-50 font-[thin] w-fit">Projects
             </p>
           </div>
           <div className="flex flex-col text-center lg:text-start leading-none gap-1">
             <p className="text-[36px] md:text-[50px] lg:text-[64px] font-medium  text-white text-opacity-50">4.9</p>
             <p className="text-[24px] md:text-[30px] lg:text-[34px] text-white text-opacity-50 font-[thin] w-fit">
-              Rating on Google
+            Rated on Google
             </p>
           </div>
         </div>

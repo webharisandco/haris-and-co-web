@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "../../assets/images/workSection/img1.svg";
-import smallImage from "../../assets/images/workSection/achSmall.png";
+import Image from "@/assets/images/workSection/img1.svg";
+import smallImage from "@/assets/images/workSection/achSmall.png";
 
 function AdsSection() {
   return (

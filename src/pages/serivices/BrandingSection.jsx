@@ -41,7 +41,7 @@ function BrandingSection({ BrandingContents }) {
                   </ul>
                 </div>
                 <div className="mt-[30px]">
-                  <Link to={"/marketing"} className="text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">
+                  <Link to={BrandingContent.action.link} className="text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">
                     {BrandingContent.action.label}
                     <ArrowRight className='' size={25} />
                   </Link>
@@ -88,7 +88,7 @@ function BrandingSection({ BrandingContents }) {
                   </ul>
                 </div>
                 <div className="mt-[30px] ">
-                  <Link to={"/marketing"} className="text-gray-500 font-[helvetica-medium]  text-[27px] flex items-center gap-[10px] ">
+                  <Link to={BrandingContent.action.link} className="text-gray-500 font-[helvetica-medium]  text-[27px] flex items-center gap-[10px] ">
                     <p className="">{BrandingContent.action.label}</p>
                     <img src={BrandingContent.action.icon} />
                   </Link>

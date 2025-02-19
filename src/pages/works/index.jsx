@@ -1,20 +1,21 @@
 import React from "react";
 import Banner from "./Banner";
-import AchivementSection from "./AchivementSection";
-import AdsSection from "./AdsSection";
-import ServiceSection from "./ServiceSection";
-import useWorks from "./useWorks";
-import BlogSection from "./BlogSection"
+import WorkPartners from "./WorkPartners";
+import AllWorks from "./AllWorks";
+import useClients from "./useClients";
 
 function Works() {
-  const {services,blogs}= useWorks()
+  const { menuItems, handleClick, selectedId, content } = useClients();
   return (
-    <div className="bg-white">
+    <div className="bg-black">
       <Banner />
-      <AchivementSection/>
-      <AdsSection/>
-      <ServiceSection services={services}/>
-      <BlogSection blogs={blogs}/>
+      <AllWorks
+        menuItems={menuItems}
+        handleClick={handleClick}
+        content={content}
+        selectedId={selectedId}
+      />
+      <WorkPartners />
     </div>
   );
 }
