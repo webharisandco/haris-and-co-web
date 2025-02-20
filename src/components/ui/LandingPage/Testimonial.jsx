@@ -77,10 +77,8 @@ const Testimonial = () => {
       >
         {testimonials.map((data) => (
           <SwiperSlide key={data.id}>
-            <div className="shadow-[0px_0px_6.63px_6.63px_#1515150D] px-[16px] md:px-[80px] lg:px-[100px] py-[50px] grid lg:grid-cols-[1fr_1.2fr] items-center gap-[30px] min-h-[750px] md:min-h-[600px] lg:min-h-[500px]">
-              <div>
-                <img className="h-[400px]" src={test1} alt="" />
-              </div>
+            <div className="shadow-[0px_0px_6.63px_6.63px_#1515150D] px-[16px] md:px-[80px] lg:px-[100px] py-[50px] grid lg:grid-cols-[1fr_2fr] items-center gap-[30px] min-h-[750px] md:min-h-[600px] lg:min-h-[500px]">
+                <img className="h-full object-cover rounded-[24px]" src={test1} alt="" />
               <div className="bg-[#7744D5] h-full rounded-[24px] lg:rounded-[40px] p-5 lg:px-[45px] lg:pb-[40px] lg:pt-[65px] text-white flex flex-col justify-center px-[60px] gap-[36px] text-[13px] lg:text-lg">
                 <p className="poppins-regular text-[18px]">{data.content}</p>
                 <div className="flex gap-3 lg:gap-5 items-center text-[15px]">

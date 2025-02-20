@@ -120,7 +120,7 @@ export default function UIWeb() {
       image: webBrand6,
     },
   ];
-  const tagline = "Conversion-focused Website Development Company in Abu Dhabi";
+  const tagline = "Conversion-focused Web Development Company in Abu Dhabi";
   const heading = "Get a Website That Gets You More Leads & Sales";
   const description =
     "Delivering websites that are fast, secure, engaging and user-friendly. Wanna know the best part? Our conversion optimization makes navigation easier for your visitors from the 1st click to the final conversion.";
