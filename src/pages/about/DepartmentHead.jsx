@@ -20,7 +20,7 @@ export default function DepartmentHead() {
         <div className='bg-white px-[16px] md:px-[80px] py-[50px] lg:py-[100px] flex flex-col gap-[50px] lg:items-center lg:text-center'>
             <div className="">
                 <h4 className='text-[20px] md:text-[18px] 3xl:text-[24px] font-[Helvetica-Light] mb-3'>Our Department Heads</h4>
-                <p className='text-[24px] text-40px font-[boldtext] leading-none'>Meet the minds shaping an<br /> industry.</p>
+                <p className='text-[24px] text-40px font-[boldtext] leading-none'>Meet the experts.</p>
             </div>
 
             <div className="w-full">

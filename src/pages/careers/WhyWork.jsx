@@ -9,21 +9,21 @@ export default function WhyWork() {
                     <div className="text-[40px] font-[boldtext]">01.</div>
                     <div className="flex flex-col gap-3 3xl:gap-5">
                         <h3 className='text-[24px] 3xl:text-[32px] leading-snug font-medium'>Collaborative and Creative Environment</h3>
-                        <p className='font-[thin] 3xl:text-[20px] w-7/12'>Crafting a roadmap that defines your brand’s purpose, positioning, and long-term vision.</p>
+                        <p className='font-[thin] 3xl:text-[20px] w-7/12'>Join us and become a part of a community that fosters a supportive and creative space.</p>
                     </div>
                 </div>
                 <div className="flex gap-2">
                     <div className="text-[40px] font-[boldtext]">02.</div>
                     <div className="flex flex-col gap-3 3xl:gap-5">
                         <h3 className='text-[24px] 3xl:text-[32px] leading-snug font-medium'>Opportunities for Growth and Development</h3>
-                        <p className='font-[thin] 3xl:text-[20px] w-7/12'>Crafting a roadmap that defines your brand’s purpose, positioning, and long-term vision.</p>
+                        <p className='font-[thin] 3xl:text-[20px] w-7/12'>Get a chance to collaborate and learn from skilled professionals to catapult your growth in the industry.</p>
                     </div>
                 </div>
                 <div className="flex gap-2">
                     <div className="text-[40px] font-[boldtext]">03.</div>
                     <div className="flex flex-col gap-3 3xl:gap-5">
                         <h3 className='text-[24px] 3xl:text-[32px] leading-snug font-medium'>Impactful Work with<br/> Leading Brands</h3>
-                        <p className='font-[thin] 3xl:text-[20px] w-7/12'>Crafting a roadmap that defines your brand’s purpose, positioning, and long-term vision.</p>
+                        <p className='font-[thin] 3xl:text-[20px] w-7/12'>Our track record speaks for itself. Gain exposure and work with some of the top names out there.</p>
                     </div>
                 </div>
             </div>

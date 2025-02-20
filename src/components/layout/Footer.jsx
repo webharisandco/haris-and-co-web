@@ -13,16 +13,25 @@ const Footer = () => {
         <div className="max-w-full flex flex-col gap-7">
           <div className="">
             <p className="text-[35px] text-black font-[thin]">Let’s Connect</p>
+
             <p className="text-[38px] text-black/65 font-medium leading-none xs:text-[45px]">
               bd@harisand.co
             </p>
           </div>
           <div className="flex gap-4 sm:gap-5 md:gap-6">
             <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
-              <img src={facebookIcon} alt="facebook Icon" className="max-w-max" />
+              <img
+                src={facebookIcon}
+                alt="facebook Icon"
+                className="max-w-max"
+              />
             </div>
             <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
-              <img src={linkedInIcon} alt="linked in Icon" className="max-w-max" />
+              <img
+                src={linkedInIcon}
+                alt="linked in Icon"
+                className="max-w-max"
+              />
             </div>
             <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
               <img src={xIcon} alt="x icon" className="max-w-max" />
@@ -38,14 +47,27 @@ const Footer = () => {
               <img className="h-full w-full" src={Logo} alt="Haris&Co" />
             </div>
             <div className="flex justify-evenly md:justify-between gap-[35px] md:gap-[50px]  lg:gap-x-[60px] lg:gap-y-[30px]  mt-[40px] *:font-[thin] w-full flex-wrap">
-              <Link to="/services" className="text-[18px] ">Services</Link>
-              <Link to="/works" className="text-[18px] ">Works</Link>
-              <Link to="/clients" className="text-[18px] ">Clients</Link>
-              <Link to="/awards" className="text-[18px] ">Awards</Link>
-              <Link to="/about" className="text-[18px]  text-nowrap">About us</Link>
-              <Link to="/blogs" className="text-[18px] ">Blogs</Link>
-              <Link to="/career" className="text-[18px] ">Careers</Link>
-
+              <Link to="/services" className="text-[18px] ">
+                Services
+              </Link>
+              <Link to="/works" className="text-[18px] ">
+                Works
+              </Link>
+              <Link to="/clients" className="text-[18px] ">
+                Clients
+              </Link>
+              <Link to="/awards" className="text-[18px] ">
+                Awards
+              </Link>
+              <Link to="/about" className="text-[18px]  text-nowrap">
+                About us
+              </Link>
+              <Link to="/blogs" className="text-[18px] ">
+                Blogs
+              </Link>
+              <Link to="/career" className="text-[18px] ">
+                Careers
+              </Link>
             </div>
           </div>
         </div>
@@ -70,7 +92,6 @@ const Footer = () => {
         <div className="">
           <p>&copy; 2024.Haris&Co</p>
         </div>
-
       </div>
     </div>
   );
