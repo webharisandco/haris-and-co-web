@@ -2,8 +2,7 @@ import React from 'react'
 
 export default function WhyWork() {
     return (
-        <div className='bg-white px-[16px] md:px-[80px] py-[80px] 3xl:py-[100px] flex flex-col md:items-center gap-[70px]'>
-            <h2 className="text-[36px] 3xl:text-[40px] font-medium">Why work with us ?</h2>
+       
         <div className='bg-white px-[16px] md:px-[80px] py-[80px] 3xl:py-[100px] flex flex-col md:items-center gap-[70px]'>
             <h2 className="text-[36px] 3xl:text-[40px] font-medium">Why work with us ?</h2>
             <div className="flex justify-between flex-col md:flex-row gap-10">
