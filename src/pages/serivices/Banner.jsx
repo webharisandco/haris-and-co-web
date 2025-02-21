@@ -12,6 +12,7 @@ function Banner() {
           </span>{" "}
           that drive growth
         </p>
+
       </div>
     </div>
   );
