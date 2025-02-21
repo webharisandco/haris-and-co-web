@@ -24,7 +24,7 @@ import { ArrowUpRight } from "lucide-react";
 // import Grid from "../../../assets/images/web/images/grid.svg"
 
 function WhatWeProvide({ performance = false }) {
-  const [currentTitle, setCurrentTitle] = useState(0);
+  const [currentTitle, setCurrentTitle] = useState(null);
   const webServicesArray = [
     {
       title: "WordPress Development",
@@ -143,20 +143,23 @@ function WhatWeProvide({ performance = false }) {
         //  style={{
         //   backgroundImage: `url(${Grid})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         className=" w-full my-[100px] md:my-[152px] px-[20px] md:px-[51px] py-[104px] rounded-[20px] bg-[#151515] relative"
+        onMouseLeave={() => setCurrentTitle(null)}
       >
         <div className="w-full h-full grid-bg absolute top-0 left-0"></div>
         <div className="w-full flex justify-between items-center flex-col md:flex-row">
-          <p className="text-[30px] md:text-[36px] text-white text-center lg:text-start w-[90%] font-[AbroBold]">
+          <p className="text-[30px] text-48px text-white text-center lg:text-start w-[90%] font-[AbroBold]">
             {performance ? "What’s Included in Our Service" : "What We Provide"}{" "}
           </p>
           {/* <img className="h-[18px] md:h-[55px] text-[#16BD88]" src={DownArrow} alt="" /> */}
           <ArrowUpRight
-            size={80}
+            size={70}
             color={performance ? "#16BD88" : "#7744D5"}
-            className="rotate-180 ms-auto w-[50px] md:w-[80px] absolute right-10  top-[20%] sm:top-[20%] md:top-[15%]"
+            className="rotate-180 ms-auto w-[50px] md:w-[80px] absolute right-10  top-[20%] sm:top-[20%] md:top-[15%] lg:top-[100px]"
           />
         </div>
-        <div className="w-full  flex flex-row items-center justify-between  mt-[65px] lg:pr-[70px]">
+        <div className="w-full  flex flex-row items-center justify-between  mt-[65px] lg:pr-[70px]"
+
+        >
           <div className="relative lg:w-[65%] w-full lg:overflow-visible">
             <div
               ref={containerRef}
@@ -164,27 +167,26 @@ function WhatWeProvide({ performance = false }) {
               style={{
                 WebkitOverflowScrolling: "touch",
               }}
+
             >
               {servicesArray.map((service, index) => (
                 <div
                   key={index}
                   className="flex flex-col lg:flex-row lg:gap-[60px] group min-w-[300px] lg:min-w-0"
-                  onClick={() => setCurrentTitle(index)}
-                  // onMouseLeave={() => setCurrentTitle(0)}
+                  onMouseEnter={() => setCurrentTitle(index)}
+                // onMouseLeave={() => setCurrentTitle(null)}
                 >
                   <div className="  w-fit  lg:hidden h-full items-center px-[50px]">
                     <img src={service.img} alt={service.title} />
                   </div>
 
                   <div
-                    className={`hidden  lg:block w-[44px] transition-all  duration-300 ${
-                      currentTitle == index && "scale-125 translate-y-1"
-                    }`}
+                    className={`hidden  lg:block w-[44px] transition-all  duration-300 ${currentTitle == index && ""
+                      }`}
                   >
                     <img
-                      className={`w-full h-auto ${
-                        currentTitle == index && "scale-120 translate-y-2"
-                      }`}
+                      className={`w-full h-auto ${currentTitle == index && "scale-120 translate-y-2"
+                        }`}
                       src={service.icon}
                       alt={`${service.title} Icon `}
                     />
@@ -192,9 +194,8 @@ function WhatWeProvide({ performance = false }) {
 
                   <div className="w-full flex text-center lg:text-start flex-col justify-center gap-[15px]">
                     <p
-                      className={`text-white text-[25px] lg:text-[28px] transition-all duration-300 cursor-pointer ${
-                        currentTitle == index && "lg:text-[32px]"
-                      } font-[AbroRegular]`}
+                      className={`text-white text-[25px] lg:text-[28px] transition-all duration-300 cursor-pointer ${currentTitle == index && "lg:text-[32px]"
+                        } font-[AbroRegular]`}
                     >
                       {service.title}
                     </p>
@@ -216,11 +217,10 @@ function WhatWeProvide({ performance = false }) {
                 <div
                   key={index}
                   onClick={() => scrollToSection(index)}
-                  className={`cursor-pointer w-[8px] h-[8px] rounded-full transition-all duration-300 ${
-                    activeIndex === index
-                      ? "w-[12px] h-[12px] bg-white"
-                      : "bg-white opacity-50"
-                  }`}
+                  className={`cursor-pointer w-[8px] h-[8px] rounded-full transition-all duration-300 ${activeIndex === index
+                    ? "w-[12px] h-[12px] bg-white"
+                    : "bg-white opacity-50"
+                    }`}
                 ></div>
               ))}
             </div>
@@ -241,7 +241,7 @@ function WhatWeProvide({ performance = false }) {
             ) : (
               <img src={Banner} alt="" />
             )} */}
-            {servicesArray[currentTitle].img && (
+            {currentTitle != null && servicesArray[currentTitle].img && (
               <img
                 src={servicesArray[currentTitle].img}
                 alt={servicesArray[currentTitle].title}
