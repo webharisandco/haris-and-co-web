@@ -16,22 +16,38 @@ function Banner() {
               Let’s Connect
             </p>
             <p className="text-white text-[24px] text-48px 3xl:text-[53px] font-[Helvetica-Light] leading-none tracking-tight">
-              We'd love to learn more about you and
-              what we can design and build together.
+              Want to learn more about how we can help you? Connect with us &
+              let us be your partner in growth.
             </p>
           </div>
           <div className="flex justify-between md:justify-start gap-4 sm:gap-5 md:gap-6 pe-8">
             <div className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px]">
-              <img src={facebookIcon} alt="facebook Icon" className="max-w-max w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]" />
+              <img
+                src={facebookIcon}
+                alt="facebook Icon"
+                className="max-w-max w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]"
+              />
             </div>
             <div className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px]">
-              <img src={linkedInIcon} alt="linked in Icon" className="max-w-max w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]" />
+              <img
+                src={linkedInIcon}
+                alt="linked in Icon"
+                className="max-w-max w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]"
+              />
             </div>
             <div className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px]">
-              <img src={xIcon} alt="x icon" className="max-w-max w-[20px] h-[20px] 3xl:w-[35px] 3xl:h-[35px]" />
+              <img
+                src={xIcon}
+                alt="x icon"
+                className="max-w-max w-[20px] h-[20px] 3xl:w-[35px] 3xl:h-[35px]"
+              />
             </div>
             <div className="border-[1.5px] border-white rounded-full flex items-center justify-center w-[50px] h-[50px] 3xl:w-[80px] 3xl:h-[80px]">
-              <img src={instaIcon} alt="insta icon" className="max-w-max w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]" />
+              <img
+                src={instaIcon}
+                alt="insta icon"
+                className="max-w-max w-[25px] h-[25px] 3xl:w-[40px] 3xl:h-[40px]"
+              />
             </div>
           </div>
         </div>
