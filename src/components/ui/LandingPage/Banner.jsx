@@ -21,8 +21,8 @@ function Banner({ bannerImage, heading, description, imgClassName, tagline, perf
           </h2>
           <p className="text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] 3xl:text-[20px] text-white/70 font-light w-full lg:w-5/6 "> {description}</p>
           <div className="flex mt-8 justify-center md:justify-start flex-col md:flex-row gap-[20px]">
-            <LandingButton text={'GET A PROPOSAL'} />
-            {performance && <LandingButton text={'View Our Results'} className={'bg-transparent hover:bg-transparent hover:text-white/70 text-white'} />}
+            <LandingButton href={'https://harisandco.pipedrive.com/scheduler/Z6GZG1sd/meeting'} text={'Let’s Connect'} />
+            {performance && <LandingButton href={'https://harisandco.pipedrive.com/scheduler/Z6GZG1sd/meeting'} text={'Let’s Connect'} className={'bg-transparent hover:bg-transparent hover:text-white/70 text-white'} />}
           </div>
         </div>
         <div className="w-fit">
