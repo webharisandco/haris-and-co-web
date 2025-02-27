@@ -8,7 +8,7 @@ import CaseStudy from "@/components/ui/LandingPage/CaseStudy";
 import Testimonial from "@/components/ui/LandingPage/Testimonial";
 import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
 import Banner from "@/components/ui/LandingPage/Banner";
-import BannerImg from "@/assets/images/landing/performanceHero.webp";
+import BannerImg from "@/assets/images/landing/performanceHero.png";
 import AboutImg from "@/assets/images/landing/AboutImg.png";
 import AboutSection from "@/components/ui/LandingPage/AboutSection";
 import AwardSection from "@/components/ui/LandingPage/AwardSection";
