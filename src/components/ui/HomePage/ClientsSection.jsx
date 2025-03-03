@@ -2,8 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination"; // Import pagination styles for Swiper
-import 'swiper/css/navigation';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import "swiper/css/navigation";
+import { Navigation, Pagination, Scrollbar } from "swiper/modules";
 
 import client1 from "@/assets/images/clients/client1.png";
 import client2 from "@/assets/images/clients/client2.png";
@@ -36,27 +36,26 @@ function ClientsSection() {
       </div>
       <div className="w-full">
         <Swiper
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination]} // Ensure modules are passed here
           spaceBetween={20}
           slidesPerView={1}
-          navigation={false}
-          pagination={true}
+          navigation={true} // Enable navigation (set to false if not needed)
+          pagination={{ clickable: true }} // Ensure pagination works
           breakpoints={{
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 4 },
           }}
-          className="swiper-pagination-white" // Add custom class
+          className="swiper-pagination-white"
         >
           {clients.map((client, index) => (
-
             <SwiperSlide key={index}>
               <div className="relative w-[400px]">
                 <img
-                  className="w-[400px] object-contain"
+                  className=" object-contain"
                   src={client.img}
                   alt={client.name}
                 />
-                <div className="flex items-center justify-between w-full absolute bottom-6 px-6">
+                <div className="flex items-center justify-between w-full absolute bottom-6 px-6 ">
                   <div>
                     <p className="font-medium text-black text-[32px] leading-none">
                       {client.name}
@@ -71,12 +70,8 @@ function ClientsSection() {
                 </div>
               </div>
             </SwiperSlide>
-
-
-
           ))}
         </Swiper>
-
       </div>
       <div className="w-full hidden justify-center mt-[80px] pb-[80px] h-full md:flex">
         <Link

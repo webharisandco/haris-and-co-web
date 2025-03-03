@@ -30,7 +30,7 @@ function useClients() {
       },
       {
         id: 4,
-        label: "Creative",
+        label: "Creative & Communication",
         link:"/works/creative",
         content:
           "We follow a creative step-by-step process to transform your vision into reality by creating a digital identity that integrates diverse marketing elements to resonate with your target audience. Explore our work by clicking on a case study below.",
@@ -71,11 +71,13 @@ function useClients() {
           "We follow a creative step-by-step process to transform your vision into reality by creating a digital identity that integrates diverse marketing elements to resonate with your target audience. Explore our work by clicking on a case study below.",
       },
     ];
+   
+
     const handleClick = (id, content) => {
       setSelectedId(id);
       setContent(content);
     };
 
-  return {menuItems,handleClick,selectedId,content}
+  return {menuItems,handleClick,selectedId,content, }
 }
 export default useClients;

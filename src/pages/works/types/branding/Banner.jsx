@@ -1,50 +1,55 @@
 import React from "react";
 import Branding1 from "@/assets/images/branding/Branding1.svg";
+import { useLocation,  } from "react-router-dom";
 
-function Banner() {
+function Banner({ services }) {
+  const location = useLocation();
+  const serviceSlug = location.pathname.split("/").pop(); // Get the last part of the URL
+console.log(serviceSlug,"serveisee")
+  // Find the service details based on the slug
+  const service = services.find((s) =>( 
+    console.log(s, serviceSlug),
+    s.url === serviceSlug));
+
+  // Default fallback if service isn't found
+  if (!service) {
+    return <div className="text-white text-center">Service not found</div>;
+  }
   return (
     <div className=" px-[16px] lg:px-[80px] pt-[200px] ">
-      <div className=" flex flex-col gap-[35px]">
-        <p className="text-white/50 text-[20px] font-[thin]">Branding </p>
-        <p className="text-[32px] lg:text-[55px] 2xl:text-[64px] text-white font-[helvetica-medium]">
-          Partnering with Toalla De tela
-        </p>
-        <p className="text-white/50 text-[24px] lg:text-[38px] font-[thin] ">
-          Branding & Identity, Websites <br /> & Digital Platforms
+    <div className=" flex flex-col gap-[35px]">
+      <p className="text-white/50 text-[20px] font-[thin]">{service.title} </p>
+      <p className="text-[32px] lg:text-[55px] 2xl:text-[64px] text-white font-[helvetica-medium]">
+        {service.heading}
+      </p>
+      <p className="text-white/50 text-[24px] lg:text-[38px] font-[thin] ">
+        {service. subHeading}
+      </p>
+    </div>
+    <div className="w-full flex justify-center mt-[100px]">
+      <img
+        className="w-full lg:w-fit h-[252px] object-cover lg:h-fit"
+        src={Branding1}
+        alt=""
+      />
+    </div>
+    <div className="flex flex-col lg:flex-row lg:justify-between w-full lg:items-center ">
+      <div className="lg:w-8/12 pb-[38px] lg:pb-0 lg:my-[70px] pt-[38px] lg:pt-[80px] lg:pr-[80px] border-b lg:border-b-0 lg:border-r border-white">
+        <p className="text-[16px] lg:text-[26px] 2xl:text-[32px] text-white font-[thin]">
+         {service.details}
         </p>
       </div>
-      <div className="w-full flex justify-center mt-[100px]">
-        <img
-          className="w-full lg:w-fit h-[252px] object-cover lg:h-fit"
-          src={Branding1}
-          alt=""
-        />
-      </div>
-      <div className="flex flex-col lg:flex-row lg:justify-between w-full lg:items-center ">
-        <div className="lg:w-8/12 pb-[38px] lg:pb-0 lg:my-[70px] pt-[38px] lg:pt-[80px] lg:pr-[80px] border-b lg:border-b-0 lg:border-r border-white">
-          <p className="text-[16px] lg:text-[26px] 2xl:text-[32px] text-white font-[thin]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum
-          </p>
-        </div>
 
-        <div className="lg:w-3/12 my-[40px] lg:my-0">
-          <ul className="text-white flex flex-col gap-[20px] text-[22px]">
-            <li>Visual Identity Design</li>
-            <li>Brand Messaging and Voice</li>
-            <li>Brand Guidelines</li>
-            <li>Packaging and Collateral Design</li>
-          </ul>
-        </div>
+      <div className="lg:w-3/12 my-[40px] lg:my-0">
+        <ul className="text-white flex flex-col gap-[20px] text-[22px]">
+          <li>Visual Identity Design</li>
+          <li>Brand Messaging and Voice</li>
+          <li>Brand Guidelines</li>
+          <li>Packaging and Collateral Design</li>
+        </ul>
       </div>
     </div>
+  </div>
   );
 }
 

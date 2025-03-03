@@ -76,7 +76,7 @@ export default function Header() {
   // Calculate header height to prevent layout shifts
   const headerHeight = getScaledLogoSize() + 70;
 
-  console.log(window.scrollY)
+
 
   const containerRef = React.useRef(null);
   const isCompactHeader = scrollY < (logoSize === 30 ? 20 : 35);
