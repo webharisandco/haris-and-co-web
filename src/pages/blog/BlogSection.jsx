@@ -9,11 +9,11 @@ export default function BlogSection() {
     const blogTypes = ['All Works', 'Branding', 'Web Development & UI/UX', 'Creative', "Digital PR & Communication", "Performance Marketing", "Production", "SEO", "Social Media"];
     return (
         <div>
-            <div className="bg-white flex justify-between flex-col lg:flex-row px-[16px] md:px-[80px] py-[40px] font-[Helvetica-Light]">
+            <div className="bg-white flex justify-between flex-col lg:flex-row px-[16px] md:px-[50px] py-[40px] font-[Helvetica-Light]">
                 {blogTypes.map((blogType, index) => (
                     <div
                         key={index}
-                        className={` md:px-[20px] py-[10px] cursor-pointer text-[20px] hover:text-black ${selectedBlog === index ? ' text-black' : 'text-black/60'}`}
+                        className={` md:px-[16px] py-[10px] cursor-pointer text-[17px] hover:text-black ${selectedBlog === index ? ' text-black' : 'text-black/60'}`}
                         onClick={() => setSelectedBlog(index)}
                     >
                         {blogType}

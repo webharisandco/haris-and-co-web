@@ -34,7 +34,7 @@ console.log(serviceSlug,"serveisee")
       />
     </div>
     <div className="flex flex-col lg:flex-row lg:justify-between w-full lg:items-center ">
-      <div className="lg:w-8/12 pb-[38px] lg:pb-0 lg:my-[70px] pt-[38px] lg:pt-[80px] lg:pr-[80px] border-b lg:border-b-0 lg:border-r border-white">
+      <div className="lg:w-8/12 pb-[38px] lg:pb-0 lg:my-[70px] pt-[38px]  lg:pr-[80px] border-b lg:border-b-0 lg:border-r border-white">
         <p className="text-[16px] lg:text-[26px] 2xl:text-[32px] text-white font-[thin]">
          {service.details}
         </p>
