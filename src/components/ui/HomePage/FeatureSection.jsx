@@ -15,15 +15,17 @@ export default function FeatureSection() {
   const [isHovered, setIsHovered] = useState("");
 
   const services = [
-    { name: "Branding", howerPathName: "branding", path: "services#branding" },
-    { name: "Web development & UI/UX", howerPathName: "web", path: "services#web" },
-    { name: "Creative & Communication", howerPathName: "creative", path: "services#creative" },
-    { name: "Digital PR & Communication", howerPathName: "digital", path: "services#digital" },
-    { name: "Performance Marketing", howerPathName: "performance", path: "services#performance" },
-    { name: "Production", howerPathName: "production", path: "services#production" },
-    { name: "SEO", howerPathName: "seo", path: "services#seo" },
-    { name: "Social Media", howerPathName: "social", path: "services#social-media" },
+    { name: "Branding", howerPathName: "branding", path: "/services/branding" },
+    { name: "Web Development & UI/UX", howerPathName: "web", path: "/services/web-development" },
+    { name: "Creative & Communication", howerPathName: "creative", path: "/services/creative" },
+    { name: "Digital PR & Communication", howerPathName: "digital", path: "/services/digital" },
+    { name: "Performance Marketing", howerPathName: "performance", path: "/services/performance" },
+    { name: "Production", howerPathName: "production", path: "/services/production" },
+    { name: "SEO", howerPathName: "seo", path: "/services/seo" },
+    { name: "Social Media", howerPathName: "social", path: "/services/social-media" },
   ];
+
+
 
   return (
     <div

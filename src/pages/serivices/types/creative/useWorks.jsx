@@ -1,7 +1,11 @@
-import Image1 from '@/assets/images/workSection/blogs/img1.svg'
-import Image2 from '@/assets/images/workSection/blogs/img2.svg'
-import Image3 from '@/assets/images/workSection/blogs/img3.svg'
+import Image1 from "@/assets/images/workSection/blogs/img1.svg";
+import Image2 from "@/assets/images/workSection/blogs/img2.svg";
+import Image3 from "@/assets/images/workSection/blogs/img3.svg";
+import { useEffect } from "react";
 function useWorks() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Ensure the page always starts from the top
+  }, []);
   const services = [
     {
       titile: "UGC",
@@ -49,27 +53,27 @@ function useWorks() {
         "At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers.",
     },
   ];
-  const blogs=[
+  const blogs = [
     {
-    img:Image1,
-    titile:"Web Development & UI/UX",
-    heading:"Styling an online presence for Disha Creationz!",
-    date:'November 07, 2024   .   6  min read '
-  },
+      img: Image1,
+      titile: "Web Development & UI/UX",
+      heading: "Styling an online presence for Disha Creationz!",
+      date: "November 07, 2024   .   6  min read ",
+    },
     {
-    img:Image2,
-    titile:"Web Development & UI/UX",
-    heading:"Styling an online presence for Disha Creationz!",
-    date:'November 07, 2024   .   6  min read '
-  },
+      img: Image2,
+      titile: "Web Development & UI/UX",
+      heading: "Styling an online presence for Disha Creationz!",
+      date: "November 07, 2024   .   6  min read ",
+    },
     {
-    img:Image3,
-    titile:"Web Development & UI/UX",
-    heading:"Styling an online presence for Disha Creationz!",
-    date:'November 07, 2024   .   6  min read '
-  },
-]
-  return { services,blogs };
+      img: Image3,
+      titile: "Web Development & UI/UX",
+      heading: "Styling an online presence for Disha Creationz!",
+      date: "November 07, 2024   .   6  min read ",
+    },
+  ];
+  return { services, blogs };
 }
 
 export default useWorks;

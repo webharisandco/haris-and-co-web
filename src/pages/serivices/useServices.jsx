@@ -47,7 +47,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "/services#branding",
+        link: "branding",
       },
       image: Branding1,
     },
@@ -67,7 +67,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "/services#web-development",
+        link: "web-development",
       },
       image: Branding2,
     },
@@ -87,7 +87,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "/services#creative",
+        link: "creative",
       },
       image: Branding3,
     },
@@ -107,7 +107,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "/services#digital-pr",
+        link: "digital",
       },
       image: Branding4,
     },
@@ -127,7 +127,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "/services#performance-marketing",
+        link: "performance",
       },
       image: Branding5,
     },
@@ -147,7 +147,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "/services#production",
+        link: "production",
       },
       image: Branding6,
     },
@@ -167,7 +167,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "/services#seo",
+        link: "seo",
       },
       image: Branding7,
     },
@@ -187,7 +187,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "/services#social-media",
+        link: "social-media",
       },
       image: Branding8,
     },
