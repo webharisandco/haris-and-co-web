@@ -21,7 +21,7 @@ export const BlogSection = () => {
         </div>
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-3">
-            <p className=" text-[32px] lg:text-[50px] font-medium text-white ">
+            <p className=" text-[32px] lg:text-[50px] font-[helvetica-medium] text-white ">
               Styling an online presence for Disha Creationz!
             </p>
             <p className="text-[20px] lg:text-[24px] text-white/55 mb-10">Web Development & UI/UX</p>

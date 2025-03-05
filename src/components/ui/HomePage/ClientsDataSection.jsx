@@ -12,16 +12,16 @@ export const ClientsDataSection = () => {
 
         <div className="w-full flex flex-col gap-[35px] md:gap-[50px] lg:gap-0 items-center lg:flex-row lg:justify-around ">
           <div className="flex flex-col text-center lg:text-start leading-none gap-1">
-            <p className="text-[36px] md:text-[50px] lg:text-[64px] font-medium  text-white text-opacity-50">500+</p>
+            <p className="text-[36px] md:text-[50px] lg:text-[64px] font-[helvetica-medium]  text-white text-opacity-50">500+</p>
             <p className="text-[24px] md:text-[30px] lg:text-[34px] text-white text-opacity-50 font-[thin] w-fit">Clients</p>
           </div>
           <div className="flex flex-col text-center lg:text-start leading-none gap-1">
-            <p className="text-[36px] md:text-[50px] lg:text-[64px] font-medium  text-white text-opacity-50">1000+</p>
-            <p className="text-[24px] md:text-[30px] lg:text-[34px] text-white text-opacity-50 font-[thin] w-fit">Projects
+            <p className="text-[36px] md:text-[50px] lg:text-[64px] font-[helvetica-medium]  text-white text-opacity-50">1000+</p>
+            <p className="text-[24px] md:text-[30px] lg:text-[34px] text-white text-opacity-50 font-[thin] w-fit">Projects Done
             </p>
           </div>
           <div className="flex flex-col text-center lg:text-start leading-none gap-1">
-            <p className="text-[36px] md:text-[50px] lg:text-[64px] font-medium  text-white text-opacity-50">4.9</p>
+            <p className="text-[36px] md:text-[50px] lg:text-[64px] font-[helvetica-medium]  text-white text-opacity-50">4.9</p>
             <p className="text-[24px] md:text-[30px] lg:text-[34px] text-white text-opacity-50 font-[thin] w-fit">
             Rated on Google
             </p>

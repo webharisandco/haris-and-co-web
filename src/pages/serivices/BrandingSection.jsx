@@ -61,7 +61,7 @@ function BrandingSection({ BrandingContents }) {
           <div className=" block lg:hidden w-full pt-[50px]">
             <div key={index} className={`w-full flex-col  justify-between  `}>
               <div className="">
-                <p className=" font-[boldtext] text-[32px]">
+                <p className=" font-[helvetica-medium] text-[32px]">
                   {brandingContent.title}
                 </p>
               </div>
@@ -74,7 +74,7 @@ function BrandingSection({ BrandingContents }) {
               </div>
               <div className=" mt-[26px] flex flex-col justify-center  ">
                 <div>
-                  <p className="text-[16px] font-medium text-black ">
+                  <p className="text-[16px] font-[helvetica-medium] text-black ">
                     {brandingContent.description}
                   </p>
                 </div>

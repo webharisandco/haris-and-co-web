@@ -8,16 +8,16 @@ import { MoveRight } from 'lucide-react';
 function OurWorks() {
   return (
     <div className='px-[17px] md:px-[40px] lg:px-[80px] mt-[40px] md:mt-[80px]'>
-      <p className='text-[40px]'>See Our Works</p>
+      <p className='text-[36px] lg:text-[40px] font-[helvetica-medium]'>See Our Works</p>
       <div className=' grid grid-cols-1 lg:grid-cols-2 gap-y-[49px] md:gap-y-[100px] lg:gap-y-[150px] gap-x-[120px] mt-[40px] md:mt-[60px] lg:mt-[80px]'>
         {OurWorksData.map((data) => (
           <div
             key={data.id}
             className={`h-full flex flex-col ${data.id % 2 === 0 ? 'mt-0 lg:mt-[78px]' : ''}`}
           >
-            <img className='w-full h-full' src={data.image} alt={data.heading} />
+            <img className='w-full h-[404px] object-cover lg:object-contain lg:h-full' src={data.image} alt={data.heading} />
 
-            <p className='font-medium tracking-tighter text-[24px] md:text-[36px] text-left ml-[-11px]'>{data.heading}</p>
+            <p className='font-[helvetica-medium] mt-[16px] lg:mt-0 tracking-tighter text-[24px] md:text-[36px] text-left ml-[-11px]'>{data.heading}</p>
             <p className='text-black font-[thin] opacity-55 text-left text-[16px] md:text-[24px]'>{data.description}</p>
           </div>
         ))}

@@ -29,11 +29,11 @@ export default function FeatureSection() {
 
   return (
     <div
-      className={` h-full w-full py-[80px] px-[16px] md:px-[40px] lg:p-[80px]  flex justify-between items-center relative overflow-hidden ${
+      className={` h-full w-full py-[40px] lg:py-[80px] px-[16px] md:px-[40px] lg:p-[80px]  flex justify-between items-center relative overflow-hidden ${
         isHovered ? "featureGradient" : ""
       }`}
     >
-      <div className="flex flex-col  gap-[50px] h-full select-none">
+      <div className="flex flex-col gap-[25px]  md:gap-[50px] h-full select-none">
         {services.map((service, index) => (  
           <div
           className={`flex gap-[20px] cursor-pointer items-center ${
@@ -44,7 +44,7 @@ export default function FeatureSection() {
         >
           <Link to={service.path}>
           <p
-            className={`text-nowrap text-[22px] md:text-[30px] lg:text-[40px] text-black font-medium ${
+            className={`text-nowrap text-[22px] md:text-[30px] lg:text-[40px] text-black font-[helvetica-medium] ${
               isHovered === service.howerPathName
                 ? "text-white"
                 : isHovered && " text-white/55"
