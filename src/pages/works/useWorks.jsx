@@ -147,6 +147,6 @@ const OurWorksData = [
     setContent(content);
   };
 
-  return { menuItems, handleClick, selectedId,  OurWorksData ,filteredElement};
+  return { menuItems, handleClick, selectedId,  OurWorksData ,filteredElement,content};
 }
 export default useWorks;
