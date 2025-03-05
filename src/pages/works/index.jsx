@@ -2,10 +2,10 @@ import React from "react";
 import Banner from "./Banner";
 import WorkPartners from "./WorkPartners";
 import AllWorks from "./AllWorks";
-import useClients from "./useClients";
+import useWorks from "./useWorks";
 
 function Works() {
-  const { menuItems, handleClick, selectedId, content } = useClients();
+  const { menuItems, handleClick, selectedId, content,OurWorksData,filteredElement } = useWorks();
   return (
     <div className="bg-black">
       <Banner />
@@ -15,7 +15,7 @@ function Works() {
         content={content}
         selectedId={selectedId}
       />
-      <WorkPartners />
+      <WorkPartners ourWorksData={OurWorksData} filteredElement={filteredElement} />
     </div>
   );
 }
