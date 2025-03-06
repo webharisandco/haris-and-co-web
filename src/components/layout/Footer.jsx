@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="px-[16px] md:px-[40px] lg:px-[80px] pt-[44px] bg-white text-nowrap">
-      <div className="flex w-full justify-between flex-col lg:flex-row gap-[50px] lg:items-end">
+      <div className="flex w-full justify-between flex-col lg:flex-row gap-[62px] lg:items-end">
         <div className="max-w-full flex flex-col gap-7">
           <div className="">
             <p className="text-[35px] text-black font-[thin]">Let’s Connect</p>
@@ -18,7 +18,7 @@ const Footer = () => {
               bd@harisand.co
             </p>
           </div>
-          <div className="flex gap-4 sm:gap-5 md:gap-6">
+          <div className="flex justify-between gap-4 sm:gap-5 md:gap-6">
             <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
               <img
                 src={facebookIcon}

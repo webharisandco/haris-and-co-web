@@ -16,7 +16,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 export default function OurTeam() {
   return (
-    <div className="bg-white py-[50px] flex flex-col gap-[50px] lg:items-center lg:text-center">
+    <div className="bg-white py-[50px] px-[16px] lg:px-0 flex flex-col gap-[50px] lg:items-center lg:text-center">
       <div className="">
         <h4 className="text-[18px] 3xl:text-[24px] font-[Helvetica-Light] mb-3">
           Our Team

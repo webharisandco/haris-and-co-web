@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";
-import {ArrowRight} from 'lucide-react'
+import { ArrowRight } from "lucide-react";
 
 function ServiceSection({ services }) {
   const [visibleServices, setVisibleServices] = useState(services);
@@ -28,18 +28,33 @@ function ServiceSection({ services }) {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
         {visibleServices.map((service) => (
           <div className="px-[30px] py-[20px] flex flex-col gap-[30px] border border-black/50">
-            <p className="text-[26px]">{service.titile}</p>
-            <p className="text-[16px] font-[thin]">{service.description}</p>
+            <p className="text-[26px] font-[helvetica-medium]">
+              {service.titile}
+            </p>
+            <p className="text-[16px] font-[Helvetica-Light]">
+              {service.description}
+            </p>
             <div className="flex gap-[10px]">
-              <p className="text-[20px]">Let’s talk</p>
-              <img src={icon} alt="" />
+              <p className="text-[20px] font-[helvetica-medium] text-black/55 hover:text-black">
+                Let’s talk
+              </p>
+              <img
+                className="transition duration-300 ease-in-out hover:invert-[20%] hover:brightness-0 hover:contrast-100"
+                src={icon}
+                alt="arrow icon"
+              />
             </div>
           </div>
         ))}
       </div>
       <div className="flex justify-center gap-[10px] items-center my-[50px]">
-        <p className="text-[18px]  text-black/55 hover:text-black font-[thin]">Explore All Services</p>
-    <ArrowRight className='text-black/55 hover:black transition-all duration-300' size={23}/>
+        <p className="text-[18px]  text-black/55 hover:text-black font-[thin]">
+          Explore All Services
+        </p>
+        <ArrowRight
+          className="text-black/55 hover:black transition-all duration-300"
+          size={23}
+        />
       </div>
     </div>
   );

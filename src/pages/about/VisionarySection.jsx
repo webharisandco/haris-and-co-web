@@ -4,12 +4,12 @@ import humanprenuerImg from '@/assets/images/aboutPage/humanprenuer2.png'
 
 export default function VisionarySection() {
     return (
-        <div className='bg-[#0E0E0E] text-white flex flex-col items-center py-[50px] lg:py-[80px] px-[16px] md:px-[80px] gap-[120px]  lg:gap-[80px] xl:gap-[100px] '>
+        <div className='bg-[#0E0E0E] text-white flex flex-col items-center py-[50px] lg:py-[80px] px-[16px] md:px-[80px] gap-[220px]  lg:gap-[80px] xl:gap-[100px] '>
             <h4 className='text-[30px] text-40px mb-8 md:mb-0' >Meet the Visionary Behind the Brand</h4>
             <div className="flex flex-col lg:flex-row gap-20">
                 <div className="lg:w-1/2 bg-[#212121] flex flex-col md:flex-row h-[550px] md:h-[500px] lg:h-[320px] 3xl:h-[450px] relative">
                     <div className="md:w-7/12  h-1/2 md:h-full relative">
-                        <img src={humanprenuerImg} alt="" className='absolute w-full lg:w-auto bottom-[50%] md:bottom-[0]  lg:h-[500px]  xl:h-[550px] 3xl:h-[650px]  3xl:w-full object-cover  md:-left-2 ' />
+                        <img src={humanprenuerImg} alt="" className='absolute w-full lg:w-auto bottom-0  md:bottom-[0]  lg:h-[500px]  xl:h-[550px] 3xl:h-[650px]  3xl:w-full object-cover  md:-left-2 ' />
                     </div>
                     <div className="md:w-1/3 md:py-10 h-1/2 lg:py-10 md:h-full relative md:-left-10  ">
                         <div className="flex  flex-col-reverse md:flex-col justify-end md:justify-between h-full ">
