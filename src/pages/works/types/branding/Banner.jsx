@@ -16,13 +16,13 @@ console.log(serviceSlug,"serveisee")
     return <div className="text-white text-center">Service not found</div>;
   }
   return (
-    <div className=" px-[16px] lg:px-[80px] pt-[200px] ">
-    <div className=" flex flex-col gap-[35px]">
+    <div className=" px-[16px] lg:px-[80px] pt-[120px] lg:pt-[200px] ">
+    <div className=" flex flex-col gap-[25px] lg:gap-[35px]">
       <p className="text-white/50 text-[20px] font-[thin]">{service.title} </p>
       <p className="text-[32px] lg:text-[55px] 2xl:text-[64px] text-white font-[helvetica-medium]">
         {service.heading}
       </p>
-      <p className="text-white/50 text-[24px] lg:text-[38px] font-[thin] ">
+      <p className="text-white/50 text-[24px] lg:text-[38px] font-[Helvetica-light] ">
         {service. subHeading}
       </p>
     </div>
@@ -33,7 +33,7 @@ console.log(serviceSlug,"serveisee")
         alt=""
       />
     </div>
-    <div className="flex flex-col lg:flex-row lg:justify-between w-full lg:items-center ">
+    <div className="flex flex-col pt-[45px] lg:flex-row lg:justify-between w-full lg:items-center ">
       <div className="lg:w-8/12 pb-[38px] lg:pb-0 lg:my-[70px]   lg:pr-[80px] border-b lg:border-b-0 lg:border-r border-white">
         <p className="text-[16px] lg:text-[26px] 2xl:text-[32px] text-white font-[thin]">
          {service.details}
