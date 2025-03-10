@@ -91,26 +91,26 @@ function useServices() {
       },
       image: Branding3,
     },
-    {
-      id: "digital",
-      title: "Digital PR & Communication",
-      description:
-        "Getting big on social media is truly a daunting task. But at Haris & Co., we help you launch your brand online and collaborate with some of the big and trusted names in the influencer industry! Engage, captivate, and increase conversions with content and strategies tailored to you!",
-      services: [
-        "Public Relations",
-        "Influencer Marketing",
-        "Crisis Management",
-        "Social Media Engagement",
-        "Press Releases",
-        "Reputation Management",
-      ],
-      action: {
-        label: "Explore",
-        icon: icon,
-        link: "digital",
-      },
-      image: Branding4,
-    },
+    // {
+    //   id: "digital",
+    //   title: "Digital PR & Communication",
+    //   description:
+    //     "Getting big on social media is truly a daunting task. But at Haris & Co., we help you launch your brand online and collaborate with some of the big and trusted names in the influencer industry! Engage, captivate, and increase conversions with content and strategies tailored to you!",
+    //   services: [
+    //     "Public Relations",
+    //     "Influencer Marketing",
+    //     "Crisis Management",
+    //     "Social Media Engagement",
+    //     "Press Releases",
+    //     "Reputation Management",
+    //   ],
+    //   action: {
+    //     label: "Explore",
+    //     icon: icon,
+    //     link: "digital",
+    //   },
+    //   image: Branding4,
+    // },
     {
       id: "performance",
       title: "Performance Marketing",
@@ -131,26 +131,26 @@ function useServices() {
       },
       image: Branding5,
     },
-    {
-      id: "production",
-      title: "Production",
-      description:
-        "Increase brand awareness and engagement with scroll-stopping ideas and content, created just for your brand! With Haris&Co., captivate your audience with out-of-the-box content that resonates and sets the path for growth.",
-      services: [
-        "Video Production",
-        "Photography",
-        "Animation",
-        "Post-Production",
-        "Scriptwriting",
-        "Editing",
-      ],
-      action: {
-        label: "Explore",
-        icon: icon,
-        link: "production",
-      },
-      image: Branding6,
-    },
+    // {
+    //   id: "production",
+    //   title: "Production",
+    //   description:
+    //     "Increase brand awareness and engagement with scroll-stopping ideas and content, created just for your brand! With Haris&Co., captivate your audience with out-of-the-box content that resonates and sets the path for growth.",
+    //   services: [
+    //     "Video Production",
+    //     "Photography",
+    //     "Animation",
+    //     "Post-Production",
+    //     "Scriptwriting",
+    //     "Editing",
+    //   ],
+    //   action: {
+    //     label: "Explore",
+    //     icon: icon,
+    //     link: "production",
+    //   },
+    //   image: Branding6,
+    // },
     {
       id: "seo",
       title: "SEO",

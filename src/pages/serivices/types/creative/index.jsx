@@ -7,13 +7,13 @@ import useWorks from "./useWorks";
 import BlogSection from "./BlogSection"
 
 function Works() {
-  const {services,blogs}= useWorks()
+  const {services,blogs,currentService}= useWorks()
   return (
     <div className="bg-white">
-      <Banner />
-      <AchivementSection/>
-      <AdsSection/>
-      <ServiceSection services={services}/>
+      <Banner currentService={currentService} />
+      <AchivementSection currentService={currentService}/>
+      <AdsSection  />
+      <ServiceSection currentService={currentService} services={services}/>
       <BlogSection blogs={blogs}/>
     </div>
   );

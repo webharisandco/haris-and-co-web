@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";
 import { ArrowRight } from "lucide-react";
 
-function ServiceSection({ services }) {
-  const [visibleServices, setVisibleServices] = useState(services);
+function ServiceSection({  currentService }) {
+  const [visibleServices, setVisibleServices] = useState( currentService.offerings);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setVisibleServices(services.slice(0, 3)); // Show only 3 items on small screens
+        setVisibleServices(currentService?.offerings?.slice(0, 3)); // Show only 3 items on small screens
       } else {
-        setVisibleServices(services); // Show all items on larger screens
+        setVisibleServices(currentService?.offerings); // Show all items on larger screens
       }
     };
 
@@ -18,7 +18,7 @@ function ServiceSection({ services }) {
     window.addEventListener("resize", handleResize); // Update on resize
 
     return () => window.removeEventListener("resize", handleResize); // Cleanup
-  }, [services]);
+  }, [currentService.offerings]);
   return (
     <div className="px-[16px] lg:px-[80px] my-[30px] lg:my-[79px]">
       <p className="text-[24px] lg:text-[40px] mb-[30px] lg:mb-[54px] font-[boldtext]">
@@ -26,10 +26,10 @@ function ServiceSection({ services }) {
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
-        {visibleServices.map((service) => (
+        {visibleServices?.map((service) => (
           <div className="px-[30px] py-[20px] flex flex-col gap-[30px] border border-black/50">
             <p className="text-[26px] font-[helvetica-medium]">
-              {service.titile}
+              {service.title}
             </p>
             <p className="text-[16px] font-[Helvetica-Light]">
               {service.description}
