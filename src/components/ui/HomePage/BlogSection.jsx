@@ -10,7 +10,7 @@ export const BlogSection = () => {
   return (
     <div className="px-4 md:px-[40px] lg:px-[80px] bg-[#141414] ">
       <div className="py-12 lg:py-[57px] ">
-        <p className="text-[32px]  md:text-[40px] font-medium text-white">
+        <p className="text-[29px] leading-[39px]  md:text-[40px] font-medium text-white">
           Latest News & Blogs
         </p>
       </div>
@@ -21,7 +21,7 @@ export const BlogSection = () => {
         </div>
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-3">
-            <p className=" text-[32px] lg:text-[50px] font-[helvetica-medium] text-white ">
+            <p className=" text-[29px] leading-[39px] lg:text-[50px] font-[helvetica-medium] text-white ">
               Styling an online presence for Disha Creationz!
             </p>
             <p className="text-[20px] lg:text-[24px] text-white/55 mb-10">Web Development & UI/UX</p>
@@ -40,7 +40,7 @@ export const BlogSection = () => {
         </div>
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-3">
-            <p className="text-[32px] lg:text-[50px] font-medium text-white ">
+            <p className="text-[29px] leading-[39px] lg:text-[50px] font-medium text-white ">
               Styling an online presence for Disha Creationz!
             </p>
             <p className="text-[20px] lg:text-[24px] text-white/55 mb-10">Web Development & UI/UX</p>
@@ -58,7 +58,7 @@ export const BlogSection = () => {
         </div>
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-3">
-            <p className="text-[32px] lg:text-[50px] font-medium text-white ">
+            <p className="text-[29px] leading-[39px] lg:text-[50px] font-medium text-white ">
               Styling an online presence for Disha Creationz!
             </p>
             <p className="text-[20px] lg:text-[24px] text-white/55 mb-10">Web Development & UI/UX</p>

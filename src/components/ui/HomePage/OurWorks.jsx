@@ -15,7 +15,7 @@ function OurWorks() {
             key={data.id}
             className={`h-full flex flex-col ${data.id % 2 === 0 ? 'mt-0 lg:mt-[78px]' : ''}`}
           >
-            <img className='w-full h-[404px] object-cover lg:object-contain lg:h-full' src={data.image} alt={data.heading} />
+            <img className='w-full h-[369px] object-cover lg:object-contain lg:h-full' src={data.image} alt={data.heading} />
 
             <p className='font-[helvetica-medium] pl-[5px] lg:pl-0 mt-[16px] lg:mt-0 tracking-tighter text-[24px] md:text-[36px] text-left ml-[-11px]'>{data.heading}</p>
             <p className='text-black font-[Helvetica-Light] font-light opacity-55 text-left text-[16px] md:text-[24px]'>{data.description}</p>

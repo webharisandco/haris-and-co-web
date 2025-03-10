@@ -32,7 +32,7 @@ function useWorks() {
 const OurWorksData = [
     {
 
-      linkIds:"all",
+      linkIds:"branding",
       id: 1,
       image: reveal, // Replace with actual image URL
       heading: " Partnering with Kairali TMT",

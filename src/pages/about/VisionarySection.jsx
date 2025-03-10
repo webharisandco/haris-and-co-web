@@ -15,7 +15,7 @@ export default function VisionarySection() {
                         <div className="flex  flex-col-reverse md:flex-col justify-end md:justify-between h-full ">
                             <div className="z-10 px-3 my-auto lg:my-0">
                                 <p className='text-[20px] 3xl:text-[24px] text-white/45 font-[thin] leading-none mb-2 '>Author of</p>
-                                <h6 className='text-[48px] text-48px leading-none'>Humanprenuer</h6>
+                                <h6 className='text-[48px] lg:text-48px leading-none'>Humanprenuer</h6>
                             </div>
                             <img src={tedImg} alt="" className='z-10 w-full md:w-3/4 lg:w-[200px] xl:w-full' />
                         </div>

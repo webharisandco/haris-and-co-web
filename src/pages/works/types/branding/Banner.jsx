@@ -17,12 +17,12 @@ console.log(serviceSlug,"serveisee")
   }
   return (
     <div className=" px-[16px] lg:px-[80px] pt-[120px] lg:pt-[200px] ">
-    <div className=" flex flex-col gap-[25px] lg:gap-[35px]">
+    <div className=" flex flex-col gap-[20px] lg:gap-[35px]">
       <p className="text-white/50 text-[20px] font-[thin]">{service.title} </p>
-      <p className="text-[32px] lg:text-[55px] 2xl:text-[64px] text-white font-[helvetica-medium]">
+      <p className="text-[32px] leading-[38px] lg:text-[55px] 2xl:text-[64px] text-white font-[helvetica-medium]">
         {service.heading}
       </p>
-      <p className="text-white/50 text-[24px] lg:text-[38px] font-[Helvetica-light] ">
+      <p className="text-white/50  text-[24px] lg:text-[38px] font-[Helvetica-light] ">
         {service. subHeading}
       </p>
     </div>
@@ -35,7 +35,7 @@ console.log(serviceSlug,"serveisee")
     </div>
     <div className="flex flex-col pt-[45px] lg:flex-row lg:justify-between w-full lg:items-center ">
       <div className="lg:w-8/12 pb-[38px] lg:pb-0 lg:my-[70px]   lg:pr-[80px] border-b lg:border-b-0 lg:border-r border-white">
-        <p className="text-[16px] lg:text-[26px] 2xl:text-[32px] text-white font-[thin]">
+        <p className="text-[16px] leading-[38px] tracking-[-1px] lg:text-[26px] 2xl:text-[32px] text-white font-[thin]">
          {service.details}
         </p>
       </div>

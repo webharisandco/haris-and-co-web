@@ -11,7 +11,7 @@ function Banner() {
         <p className="text-[32px] lg:text-[55px] 2xl:text-[64px] text-white font-[helvetica-medium]">
           Clients
         </p>
-        <p className="text-white/50 text-[24px] lg:text-[38px] font-[thin] ">
+        <p className="text-white text-[24px] lg:text-[38px] font-[thin] ">
           Meet the names that trusted us to deliver creativity, <br />{" "}
           innovation, and diligence to their success stories.
         </p>

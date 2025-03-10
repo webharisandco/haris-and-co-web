@@ -90,10 +90,11 @@ function BrandingSection({ BrandingContents }) {
                   </ul>
                 </div>
                 <div className="mt-[30px] ">
-                  <Link to={brandingContent.action.link} className="text-gray-500 font-[helvetica-medium]  text-[27px] flex items-center gap-[10px] ">
-                    <p className="">{brandingContent.action.label}</p>
-                    <img alt={brandingContent.action.label} src={brandingContent.action.icon} />
+                <Link to={brandingContent.action.link} className="text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">
+                    {brandingContent.action.label}
+                    <ArrowRight className='' size={25} />
                   </Link>
+                 
                 </div>
               </div>
             </div>

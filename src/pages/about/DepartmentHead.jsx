@@ -51,8 +51,8 @@ export default function DepartmentHead() {
 
                 >
                     <SwiperSlide>
-                        <div className='flex flex-col items-center lg:items-start w-fit'>
-                            <div className="bg-[#F5F5F5] h-[350px] w-[300px] mx-auto">
+                        <div className='flex flex-col items-start w-fit'>
+                        <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[300px]">
                                 <img className='pt-8 w-full   h-full object-contain' src={NabhanImg} alt="" />
                             </div>
                             <p className='text-[18px] 3xl:text-[24px] mt-1'>Abu Nabhan</p>
@@ -60,8 +60,8 @@ export default function DepartmentHead() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='flex flex-col items-center lg:items-start w-fit'>
-                            <div className="bg-[#F5F5F5] h-[350px] w-[300px]">
+                        <div className='flex flex-col items-start w-fit'>
+                            <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[300px]">
                                 <img className='pt-8 w-full   h-full object-contain' src={NihalImg} alt="" />
                             </div>
                             <p className='text-[18px] 3xl:text-[24px] mt-1'>Nihal Zubair</p>
@@ -69,8 +69,8 @@ export default function DepartmentHead() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='flex flex-col items-center lg:items-start w-fit'>
-                            <div className="bg-[#F5F5F5] h-[350px] w-[300px]">
+                        <div className='flex flex-col items-start w-fit'>
+                            <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[300px]">
                                 <img className='pt-8 w-full   h-full object-contain' src={vishnuImg} alt="" />
                             </div>
                             <p className='text-[18px] 3xl:text-[24px] mt-1'>Vishnu KP</p>
@@ -78,8 +78,8 @@ export default function DepartmentHead() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className='flex flex-col items-center lg:items-start w-fit'>
-                        <div className="bg-[#F5F5F5] h-[350px] w-[300px]">
+                    <div className='flex flex-col items-start w-fit'>
+                        <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[300px]">
                             <img className='pt-8 w-full   h-full object-contain' src={RaginImg} alt="" />
                         </div>
                         <p className='text-[18px] 3xl:text-[24px] mt-1'>Ragin Raj</p>
@@ -87,8 +87,8 @@ export default function DepartmentHead() {
                     </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                    <div className='flex flex-col items-center lg:items-start w-fit'>
-                        <div className="bg-[#F5F5F5] h-[350px] w-[300px]">
+                    <div className='flex flex-col items-start w-fit'>
+                        <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[300px]">
                             <img className='pt-8 w-full h-full object-contain' src={AdarshImg} alt="" />
                         </div>
                         <p className='text-[18px] 3xl:text-[24px] mt-1'>Adarsh MS</p>

@@ -35,14 +35,10 @@ function ServiceSection({ services }) {
               {service.description}
             </p>
             <div className="flex gap-[10px]">
-              <p className="text-[20px] font-[helvetica-medium] text-black/55 hover:text-black">
+              <p className="text-[20px] text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">
                 Let’s talk
+                <ArrowRight className="" size={25} />
               </p>
-              <img
-                className="transition duration-300 ease-in-out hover:invert-[20%] hover:brightness-0 hover:contrast-100"
-                src={icon}
-                alt="arrow icon"
-              />
             </div>
           </div>
         ))}
