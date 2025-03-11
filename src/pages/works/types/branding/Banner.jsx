@@ -8,7 +8,7 @@ function Banner({ services }) {
 console.log(serviceSlug,"serveisee")
   // Find the service details based on the slug
   const service = services.find((s) =>( 
-    console.log(s, serviceSlug),
+   
     s.url === serviceSlug));
 
   // Default fallback if service isn't found
@@ -23,7 +23,7 @@ console.log(serviceSlug,"serveisee")
         {service.heading}
       </p>
       <p className="text-white/50  text-[24px] lg:text-[38px] font-[Helvetica-light] ">
-        {service. subHeading}
+        {service.subHeading}
       </p>
     </div>
     <div className="w-full flex justify-center mt-[100px]">

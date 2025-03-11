@@ -3,7 +3,7 @@ import icon from "@/assets/images/servicesSection/rightArrow.svg";
 import { ArrowRight } from "lucide-react";
 
 function ServiceSection({  currentService }) {
-  const [visibleServices, setVisibleServices] = useState( currentService.offerings);
+  const [visibleServices, setVisibleServices] = useState( currentService?.offerings);
 
   useEffect(() => {
     const handleResize = () => {
@@ -18,7 +18,7 @@ function ServiceSection({  currentService }) {
     window.addEventListener("resize", handleResize); // Update on resize
 
     return () => window.removeEventListener("resize", handleResize); // Cleanup
-  }, [currentService.offerings]);
+  }, [currentService?.offerings]);
   return (
     <div className="px-[16px] lg:px-[80px] my-[30px] lg:my-[79px]">
       <p className="text-[24px] lg:text-[40px] mb-[30px] lg:mb-[54px] font-[boldtext]">
@@ -29,10 +29,10 @@ function ServiceSection({  currentService }) {
         {visibleServices?.map((service) => (
           <div className="px-[30px] py-[20px] flex flex-col gap-[30px] border border-black/50">
             <p className="text-[26px] font-[helvetica-medium]">
-              {service.title}
+              {service?.title}
             </p>
             <p className="text-[16px] font-[Helvetica-Light]">
-              {service.description}
+              {service?.description}
             </p>
             <div className="flex gap-[10px]">
               <p className="text-[20px] text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">

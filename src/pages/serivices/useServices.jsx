@@ -1,9 +1,9 @@
 import Branding1 from "@/assets/images/servicesSection/branding1.svg";
 import Branding2 from "@/assets/images/servicesSection/branding2.svg";
 import Branding3 from "@/assets/images/servicesSection/branding3.svg";
-import Branding4 from "@/assets/images/servicesSection/branding4.svg";
+// import Branding4 from "@/assets/images/servicesSection/branding4.svg";
 import Branding5 from "@/assets/images/servicesSection/branding5.svg";
-import Branding6 from "@/assets/images/servicesSection/branding6.svg";
+// import Branding6 from "@/assets/images/servicesSection/branding6.svg";
 import Branding7 from "@/assets/images/servicesSection/branding7.svg";
 import Branding8 from "@/assets/images/servicesSection/branding8.svg";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";

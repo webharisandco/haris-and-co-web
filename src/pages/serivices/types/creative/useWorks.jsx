@@ -1,15 +1,14 @@
 import Image1 from "@/assets/images/workSection/blogs/img1.svg";
 import Image2 from "@/assets/images/workSection/blogs/img2.svg";
 import Image3 from "@/assets/images/workSection/blogs/img3.svg";
-import { all } from "axios";
 import { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation,  } from "react-router-dom";
 function useWorks() {
   const [currentService, setCurrentService] = useState([]);
 
   const location = useLocation();
-  const pathSegments = location.pathname.split("/");
-  const service = pathSegments[pathSegments.length - 1]; // Get last part of URL
+  const pathSegments = location.pathname?.split("/");
+  const service = pathSegments[pathSegments?.length - 1]; // Get last part of URL
 
   console.log("Current Service:", service);
 
@@ -316,7 +315,7 @@ function useWorks() {
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top on page load
-    const selectedService = allServices.find((s) => s.link === service);
+    const selectedService = allServices?.find((s) => s?.link === service);
     if (selectedService) {
       setCurrentService(selectedService);
     }
