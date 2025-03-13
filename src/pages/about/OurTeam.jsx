@@ -15,6 +15,14 @@ import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 SwiperCore.use([Navigation, Pagination]);
 
 export default function OurTeam() {
+  const teamMembers = [
+    { name: "Haris Aboobacker", role: "Founder, CEO", img: AdarshImg },
+    { name: "Haris Aboobacker", role: "Founder, CEO", img: RaginImg },
+    { name: "Haris Aboobacker", role: "Founder, CEO", img: HarisImg },
+    { name: "Haris Aboobacker", role: "Founder, CEO", img: SaheelImg },
+    { name: "Haris Aboobacker", role: "Founder, CEO", img: AmnaImg },
+    { name: "Haris Aboobacker", role: "Founder, CEO", img: AmnaImg },
+  ];
   return (
     <div className="bg-white py-[50px] px-[16px] lg:px-0 flex flex-col gap-[50px] lg:items-center lg:text-center">
       <div className="">
@@ -32,89 +40,35 @@ export default function OurTeam() {
           slidesPerView={1}
           navigation={false}
           pagination={true}
-          autoplay={{ delay: 2500 }}
+          // autoplay={{ delay: 2500 }}
           loop={true}
           breakpoints={{
-            640: {
-              slidesPerView: 2,
-            },
-            768: {
-              slidesPerView: 3,
-            },
-            1024: {
-              slidesPerView: 4,
-            },
-            1240: {
-              slidesPerView: 5,
-            },
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+            1240: { slidesPerView: 6 },
           }}
           className="swiper-pagination-black"
         >
-          <SwiperSlide>
-            <div className="flex flex-col items-center">
-              <img
-                className=" h-[300px] 3xl:h-[400px]"
-                src={AdarshImg}
-                alt=""
-              />
-              <p className="text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]">
-                Haris Aboobacker
-              </p>
-              <p className="text-[16px] text-[#040404BA] font-[thin]">
-                Founder, CEOs
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col items-center">
-              <img className=" h-[300px] 3xl:h-[400px]" src={RaginImg} alt="" />
-              <p className="text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]">
-                Haris Aboobacker
-              </p>
-              <p className="text-[16px] text-[#040404BA] font-[thin]">
-                Founder, CEOs
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col items-center">
-              <img className=" h-[300px] 3xl:h-[400px]" src={HarisImg} alt="" />
-              <p className="text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]">
-                Haris Aboobacker
-              </p>
-              <p className="text-[16px] text-[#040404BA] font-[thin]">
-                Founder, CEOs
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col items-center">
-              <img
-                className=" h-[300px] 3xl:h-[400px]"
-                src={SaheelImg}
-                alt=""
-              />
-              <p className="text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]">
-                Haris Aboobacker
-              </p>
-              <p className="text-[16px] text-[#040404BA] font-[thin]">
-                Founder, CEOs
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col items-center">
-              <img className=" h-[300px] 3xl:h-[400px]" src={AmnaImg} alt="" />
-              <p className="text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]">
-                Haris Aboobacker
-              </p>
-              <p className="text-[16px] text-[#040404BA] font-[thin]">
-                Founder, CEOs
-              </p>
-            </div>
-          </SwiperSlide>
+          {teamMembers.map((member, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col items-center">
+                <img
+                  className="h-[300px] object-cover w-[300px] 3xl:h-[400px]"
+                  src={member.img}
+                  alt={member.name}
+                />
+                <p className="text-[18px] 3xl:text-[24px] mt-1 font-[Helvetica-Medium]">
+                  {member.name}
+                </p>
+                <p className="text-[16px] text-[#040404BA] font-[thin]">
+                  {member.role}
+                </p>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
-        <hr className="w-full border-black absolute bottom-[100px] lg:bottom-14 3xl:bottom-16  block" />
+        <hr className="w-full border-black absolute bottom-[100px] lg:bottom-[56px] 3xl:bottom-16 block" />
       </div>
     </div>
   );

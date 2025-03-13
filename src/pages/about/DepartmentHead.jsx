@@ -16,6 +16,14 @@ SwiperCore.use([Navigation, Pagination]);
 
 
 export default function DepartmentHead() {
+    const teamMembers = [
+        { name: "Abu Nabhan", role: "Chief of Branding", img: NabhanImg },
+        { name: "Nihal Zubair", role: "Chief of Creative", img: NihalImg },
+        { name: "Vishnu KP", role: "Chief of Production", img: vishnuImg },
+        { name: "Ragin Raj", role: "Chief of SEO", img: RaginImg },
+        { name: "Adarsh MS", role: "Chief of Performance Marketing", img: AdarshImg },
+    ];
+
     return (
         <div className='bg-white px-[16px] md:px-[80px] py-[50px] lg:py-[100px] flex flex-col gap-[50px] lg:items-center lg:text-center'>
             <div className="">
@@ -23,80 +31,37 @@ export default function DepartmentHead() {
                 <p className='text-[24px] text-40px font-[boldtext] leading-none'>Meet the experts.</p>
             </div>
 
-            <div className="w-full">
-                <Swiper
-                    modules={[Navigation, Pagination, Autoplay]}
-                    spaceBetween={30}
-                    slidesPerView={1}
-                    navigation={false}
-                    draggable
-                    pagination={true}
-                    autoplay={{ delay: 2500 }}
-                    loop={true}
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 2,
-                        },
-                        768: {
-                            slidesPerView: 3,
-                        },
-                        1024: {
-                            slidesPerView: 4,
-                        },
-                        1240: {
-                            slidesPerView: 5,
-                        },
-                    }}
-                    className="swiper-pagination-black" // Add custom class
-
-                >
-                    <SwiperSlide>
-                        <div className='flex flex-col items-start w-fit'>
-                        <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[300px]">
-                                <img className='pt-8 w-full   h-full object-contain' src={NabhanImg} alt="" />
-                            </div>
-                            <p className='text-[18px] 3xl:text-[24px] mt-1'>Abu Nabhan</p>
-                            <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>Chief of Branding</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='flex flex-col items-start w-fit'>
-                            <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[300px]">
-                                <img className='pt-8 w-full   h-full object-contain' src={NihalImg} alt="" />
-                            </div>
-                            <p className='text-[18px] 3xl:text-[24px] mt-1'>Nihal Zubair</p>
-                            <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>Chief of Creative</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='flex flex-col items-start w-fit'>
-                            <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[300px]">
-                                <img className='pt-8 w-full   h-full object-contain' src={vishnuImg} alt="" />
-                            </div>
-                            <p className='text-[18px] 3xl:text-[24px] mt-1'>Vishnu KP</p>
-                            <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>Chief of Production</p>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                    <div className='flex flex-col items-start w-fit'>
-                        <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[300px]">
-                            <img className='pt-8 w-full   h-full object-contain' src={RaginImg} alt="" />
-                        </div>
-                        <p className='text-[18px] 3xl:text-[24px] mt-1'>Ragin Raj</p>
-                        <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>Chief of SEO</p>
+          <div className="w-full">
+    <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation={false}
+        draggable
+        pagination={true}
+        autoplay={{ delay: 2500 }}
+        loop={true}
+        breakpoints={{
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+            1240: { slidesPerView: 5 },
+        }}
+        className="swiper-pagination-black"
+    >
+        {teamMembers.map((member, index) => (
+            <SwiperSlide key={index}>
+                <div className='flex flex-col items-start w-fit'>
+                    <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[230px]">
+                        <img className='pt-8 w-full h-full object-cover' src={member.img} alt={member.name} />
                     </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                    <div className='flex flex-col items-start w-fit'>
-                        <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[300px]">
-                            <img className='pt-8 w-full h-full object-contain' src={AdarshImg} alt="" />
-                        </div>
-                        <p className='text-[18px] 3xl:text-[24px] mt-1'>Adarsh MS</p>
-                        <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>Chief of Performance Marketing</p>
-                    </div>
-                    </SwiperSlide>
-                </Swiper>
-            </div>
+                    <p className='text-[18px] 3xl:text-[24px] mt-1'>{member.name}</p>
+                    <p className='text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]'>{member.role}</p>
+                </div>
+            </SwiperSlide>
+        ))}
+    </Swiper>
+</div>
         </div>
     )
 }
