@@ -11,7 +11,8 @@ function OurWorks() {
       <p className='text-[36px] lg:text-[40px] font-[helvetica-medium]'>See Our Works</p>
       <div className=' grid grid-cols-1 lg:grid-cols-2 gap-y-[49px] md:gap-y-[100px] lg:gap-y-[150px] gap-x-[120px] mt-[40px] md:mt-[60px] lg:mt-[80px]'>
         {OurWorksData.map((data) => (
-          <div
+          <Link to={'works/branding'}> 
+            <div
             key={data.id}
             className={`h-full flex flex-col ${data.id % 2 === 0 ? 'mt-0 lg:mt-[78px]' : ''}`}
           >
@@ -20,6 +21,8 @@ function OurWorks() {
             <p className='font-[helvetica-medium] pl-[5px] lg:pl-0 mt-[16px] lg:mt-0 tracking-tighter text-[24px] md:text-[36px] text-left ml-[-11px]'>{data.heading}</p>
             <p className='text-black font-[Helvetica-Light] font-light opacity-55 text-left text-[16px] md:text-[24px]'>{data.description}</p>
           </div>
+          </Link>
+        
         ))}
       </div>
       <Link

@@ -210,7 +210,7 @@ function useWorks() {
       ],
     },
     {
-      link: "social-media",
+      link: "influencer-marketing",
       subHeading: "Get influencer-approved!",
       description:
         "Partner with leading industry influencers to keep up with trends. Connect with new audiences and engage with your existing followers with creative content on the world’s most popular social media platforms.",
@@ -243,6 +243,112 @@ function useWorks() {
         },
       ],
     },
+
+    {
+      link: "social-media",
+      subHeading: "Make your brand go viral!",
+      description:
+        "Take your brand to where more than half the world is! In an increasingly online world, you need newer, more compelling ways to stay on top. Let us help you turn your social media platforms into powerful marketing tools.",
+      statistics: ["X+ Creatives", "X+ Views", "X+ Engagements"],
+      offerings: [
+        {
+          title: "Social Media Strategy Development",
+          description:
+            "Our expert Social Media Marketers develop a customized strategy for content, campaigns, designs, and more for your brand. Make your content memorable and entertaining for your current and potential user base, ultimately driving conversions.",
+        },
+        {
+          title: "Content Creation",
+          description:
+            "Our copywriters and designers come together to create scroll-stopping content that keeps your audience engaged. Every content here at Haris&Co. is designed with care and love, showcasing your brand essence and relating to your audience.",
+        },
+        {
+          title: "Page & Community Management",
+          description:
+            "Just posting content is not enough for your brand. Staying in the loop with your audience is crucial for driving growth. We actively monitor and engage with your followers, providing customer support services, promoting your brand image, and sourcing user-generated content (UGC).",
+        },
+        {
+          title: "Analytics & Reporting",
+          description:
+            "We constantly analyze performance data to ensure that the content we post has made an impact and that the strategies are working. We also provide a detailed performance review report to show the difference our content makes for your brand.",
+        },
+        {
+          title: "AI-Powered Chat Automation",
+          description:
+            "With AI-assisted chats, we provide instant feedback to customers that reach out to you. We set AI-driven responses to deliver personalized messages aligned with your brand to ensure consistency and a human feel to all conversations.",
+        },
+        {
+          title: "Paid Campaigns",
+          description:
+            "Paid Ad Campaigns on social media platforms help you reach newer demographics than your existing audience. Our marketers create and manage data-driven, targeted ad campaigns across social media platforms. Our solutions drove measurable results within a given time frame.",
+        },
+        {
+          title: "Organic Campaigns",
+          description:
+            "Tap into where your user base is the most active with strategic content creation and community engagement. Our skilled marketers help build your brand presence naturally, grow an organic following, and foster authentic connections online.",
+        },
+      ],
+    },
+
+    {
+      link: "production",
+      subHeading: "Get the creative step up to your brand!",
+      description:
+        "Our award-winning team blends creativity with proven strategies to create visual narratives that resonate with your audience and drive conversions. We bring life to your brand with compelling and high-impact video content tailored to you.",
+      statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
+      offerings: [
+        {
+          title: "Video Campaigns",
+          description:
+            "Tell your brand story in every frame with Haris&Co. With tailored video concepts we help your brand get seen and heard.",
+        },
+        {
+          title: "Theatre Ads",
+          description:
+            "Showcase your brand on the big screen with us. We pack a punch in our short yet highly engrossing theatre ads. Let your brand be the talk in packed cinema halls with Haris&Co.!",
+        },
+        {
+          title: "Digital Ads",
+          description:
+            "Most of the world is online and what better place than this to advertise your brand? Our digital ads are customized to display your brand to your target audience and boost conversions.",
+        },
+        {
+          title: "Commercials",
+          description:
+            "Connect with your audience with commercials that captivate and show your unique brand story. Our team brings your brand to your target audience with fun and quirky commercial ads.",
+        },
+        {
+          title: "UGC Content",
+          description:
+            "Promote your brand with visual content from real users online. User-generated content is one of the best ways to promote brand loyalty and image. Our creative team helps you connect with users and craft content that aligns with your industry and audience.",
+        },
+        {
+          title: "Product Photography",
+          description:
+            "Get dedicated product photoshoots to bring your products to the spotlight. Our product photoshoots create a visual narrative for your audience about your brand.",
+        },
+        {
+          title: "Fashion Photos",
+          description:
+            "Build your brand aesthetic with dedicated photoshoots for your fashion products. Our skilled team connects you with models who would bring your clothing line to life with unique photoshoots.",
+        },
+        {
+          title: "Corporate Videos",
+          description:
+            "Advertise and promote your company with cinematic visuals that tell your office story. Our cinematic corporate videography captures your brand identity and work culture.",
+        },
+        {
+          title: "Food Photography",
+          description:
+            "Create mouth-watering visual experiences for your customers with our custom food photography services. We create irresistible photoshoots that make your audience want more.",
+        },
+        {
+          title: "Personal Branding Videos",
+          description:
+            "Introduce your audience to your authentic and driven self with tailored video content. Our personal branding videography helps you promote trust and connect with your audience by showcasing what you bring to the table and your expertise in your field.",
+        },
+      ],
+    },
+
   ];
   const services = [
     {

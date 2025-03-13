@@ -1,9 +1,9 @@
 import Branding1 from "@/assets/images/servicesSection/branding1.svg";
 import Branding2 from "@/assets/images/servicesSection/branding2.svg";
 import Branding3 from "@/assets/images/servicesSection/branding3.svg";
-// import Branding4 from "@/assets/images/servicesSection/branding4.svg";
+import Branding4 from "@/assets/images/servicesSection/branding4.svg";
 import Branding5 from "@/assets/images/servicesSection/branding5.svg";
-// import Branding6 from "@/assets/images/servicesSection/branding6.svg";
+import Branding6 from "@/assets/images/servicesSection/branding6.svg";
 import Branding7 from "@/assets/images/servicesSection/branding7.svg";
 import Branding8 from "@/assets/images/servicesSection/branding8.svg";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";
@@ -73,7 +73,7 @@ function useServices() {
     },
     {
       id: "creative",
-      title: "Creative",
+      title: "Creative & Communication",
       description:
         "Looking for a way to increase your CTRs and ROI? Let our experts bring creative finesse to your brand! With captivating visuals and impactful campaigns, expand your brand reach, connect with your audience, and see results unlike before.",
       services: [
@@ -131,26 +131,26 @@ function useServices() {
       },
       image: Branding5,
     },
-    // {
-    //   id: "production",
-    //   title: "Production",
-    //   description:
-    //     "Increase brand awareness and engagement with scroll-stopping ideas and content, created just for your brand! With Haris&Co., captivate your audience with out-of-the-box content that resonates and sets the path for growth.",
-    //   services: [
-    //     "Video Production",
-    //     "Photography",
-    //     "Animation",
-    //     "Post-Production",
-    //     "Scriptwriting",
-    //     "Editing",
-    //   ],
-    //   action: {
-    //     label: "Explore",
-    //     icon: icon,
-    //     link: "production",
-    //   },
-    //   image: Branding6,
-    // },
+    {
+      id: "production",
+      title: "Production",
+      description:
+        "Increase brand awareness and engagement with scroll-stopping ideas and content, created just for your brand! With Haris&Co., captivate your audience with out-of-the-box content that resonates and sets the path for growth.",
+      services: [
+        "Video Production",
+        "Photography",
+        "Animation",
+        "Post-Production",
+        "Scriptwriting",
+        "Editing",
+      ],
+      action: {
+        label: "Explore",
+        icon: icon,
+        link: "production",
+      },
+      image: Branding6,
+    },
     {
       id: "seo",
       title: "SEO",
@@ -188,6 +188,26 @@ function useServices() {
         label: "Explore",
         icon: icon,
         link: "social-media",
+      },
+      image: Branding8,
+    },
+    {
+      id: "influencer-marketing",
+      title: "Influencer Marketing & Creator Solutions",
+      description:
+        "With Haris&Co., turn your social media platforms into a powerful marketing tool that connects you to your audience. With gripping creatives and ads, our award-winning team provides tailored strategies to your brand to propel your growth.",
+      services: [
+        "Social Media Strategy",
+        "Paid Social Ads",
+        "Community Management",
+        "Analytics & Reporting",
+        "Influencer Collaboration",
+        "Platform Optimization",
+      ],
+      action: {
+        label: "Explore",
+        icon: icon,
+        link: "influencer-marketing",
       },
       image: Branding8,
     },
