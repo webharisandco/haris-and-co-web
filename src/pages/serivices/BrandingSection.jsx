@@ -26,16 +26,16 @@ function BrandingSection({ BrandingContents }) {
                   </p>
                 </div>
                 <div>
-                  <p className="text-[21px] 3xl:text-[24px] leading-[26px] text-black mb-4 lg:w-3/4">
+                  <p className="text-[21px] 3xl:text-[24px] leading-[26px] text-black mb-4 lg:w-full">
                     {brandingContent.description}
                   </p>
                 </div>
                 <div>
-                  <ul className="grid list-disc grid-cols-3 gap-[10px] 3xl:gap-7 text-[18px] 3xl:text-[24px]">
+                  <ul className="grid list-disc grid-cols-3 gap-[10px]  3xl:gap-7 text-[15px] 3xl:text-[24px]">
                     {brandingContent.services.map((service, serviceIndex) => (
                       <li
                         key={serviceIndex}
-                        className=" text-black/70 font-[thin] list-inside text-nowrap"
+                        className=" text-black/70  font-[thin] list-inside text-wrap"
                       >
                         {service}
                       </li>
@@ -79,7 +79,7 @@ function BrandingSection({ BrandingContents }) {
                   </p>
                 </div>
                 <div className="mt-[30px]">
-                  <ul className="grid list-disc grid-cols-1 gap-[20px] px-[20px] text-[20px]">
+                  <ul className="grid list-disc grid-cols-1  gap-[20px] px-[20px] text-[20px]">
                     {brandingContent.services
                       .slice(0, 3)
                       .map((service, serviceIndex) => (
