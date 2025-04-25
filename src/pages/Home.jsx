@@ -20,8 +20,8 @@ export default function Home() {
       <BrandPartnerSection />
       <OurWorks />
       <ClientsSection />
-      <AddressSection />
       <BlogSection />
+      <AddressSection />
       <Footer />
     </div>
   );

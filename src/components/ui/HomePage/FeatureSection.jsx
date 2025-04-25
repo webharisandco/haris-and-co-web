@@ -71,74 +71,68 @@ export default function FeatureSection() {
        
       </div>
       <div className="flex items-center h-full">
-        {isHovered === "branding" ? (
-          <div className="featureGradient absolute top-0 left-0 -z-10 w-full h-full ">
-            <img
-              src={BrandImg}
-              alt="Branding"
-              className="w-full h-full featureGradient object-cover"
-            />
-          </div>
-        ) : isHovered === "web" ? (
-          <div className="featureGradient absolute top-0 left-0 -z-10 w-full h-full ">
-            <img
-              src={WebImg}
-              alt="Branding"
-              className="w-full h-full featureGradient object-cover"
-            />
-          </div>
-        ) : isHovered === "creative" ? (
-          <div className="featureGradient absolute top-0 left-0 -z-10 w-full h-full ">
-            <img
-              src={CreativeImg}
-              alt="Branding"
-              className="w-full h-full featureGradient object-cover"
-            />
-          </div>
-        ) : isHovered === "digital" ? (
-          <div className="featureGradient absolute top-0 left-0 -z-10 w-full h-full ">
-            <img
-              src={DigitalImg}
-              alt="Branding"
-              className="w-full h-full featureGradient object-cover"
-            />
-          </div>
-        ) : isHovered === "performance" ? (
-          <div className="featureGradient absolute top-0 left-0 -z-10 w-full h-full ">
-            <img
-              src={PerformanceImg}
-              alt="Branding"
-              className="w-full h-full featureGradient object-cover"
-            />
-          </div>
-        ) : isHovered === "production" ? (
-          <div className="featureGradient absolute top-0 left-0 -z-10 w-full h-full ">
-            <img
-              src={ProductionImg}
-              alt="Branding"
-              className="w-full h-full featureGradient object-cover"
-            />
-          </div>
-        ) : isHovered === "seo" ? (
-          <div className="featureGradient absolute top-0 left-0 -z-10 w-full h-full ">
-            <img
-              src={SeoImg}
-              alt="Branding"
-              className="w-full h-full featureGradient object-cover"
-            />
-          </div>
-        ) : isHovered === "social" ? (
-          <div className="featureGradient absolute top-0 left-0 -z-10 w-full h-full ">
-            <img
-              src={SocialImg}
-              alt="Branding"
-              className="w-full h-full featureGradient object-cover"
-            />
-          </div>
-        ) : (
-          <TextReveal3D />
-        )}
-      </div>
+  <div className="absolute top-0 left-0 -z-10 w-full h-full transition-all duration-300 ease-in-out">
+    <img
+      src={BrandImg}
+      alt="Branding"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "branding" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={WebImg}
+      alt="Web"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "web" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={CreativeImg}
+      alt="Creative"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "creative" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={DigitalImg}
+      alt="Digital"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "digital" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={PerformanceImg}
+      alt="Performance"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "performance" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={ProductionImg}
+      alt="Production"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "production" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={SeoImg}
+      alt="SEO"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "seo" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={SocialImg}
+      alt="Social"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "social" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+  </div>
+
+  {/* Fallback animation */}
+  {!isHovered && <TextReveal3D />}
+</div>
     </div>
   );
 }

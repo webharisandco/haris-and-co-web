@@ -66,7 +66,7 @@ function AddressSection() {
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4">
               <p className="text-[20px] md:text-2xl text-black text-start font-[thin]">
-                +971 58 852 0424
+                +91 80750 40330
               </p>
             </div>
           </div>

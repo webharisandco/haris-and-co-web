@@ -12,12 +12,12 @@ const BrandPartnerSection = () => {
           <img
             src={BrandPartnerFirst}
             alt="Right arrow"
-            className="w-[832px] md:w-max  font-medium h-full object-cover opacity-[0.5]"
+            className="w-[731px] md:w-max  font-medium h-full object-cover opacity-[0.5]"
           />
           <img
             src={BrandPartnerSecond}
             alt="Right arrow"
-            className="w-[832px] md:w-max  font-medium h-full object-contain opacity-[0.5]"
+            className="w-[731px] md:w-max  font-medium h-full object-contain opacity-[0.5]"
           />
         </div>
         <div className=" flex justify-center">
