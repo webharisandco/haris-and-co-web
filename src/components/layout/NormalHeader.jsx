@@ -24,7 +24,7 @@ export default function NormalHeader() {
     }
   };
   return (
-    <div className="px-[16px] md:px-[80px] py-[35px] w-full bg-[#fff]  flex justify-between items-center">
+    <div className="px-[16px] fixed z-50 md:px-[80px] py-[35px] w-full bg-[#fff]  flex justify-between items-center">
       <div className="max-w-fit">
         <Link to={'/'}>
           <img

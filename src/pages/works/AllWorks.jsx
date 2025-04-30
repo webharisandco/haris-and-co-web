@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function AllWorks({ menuItems, handleClick, selectedId, content }) {
 
   return (
-    <div className="bg-white flex flex-col lg:items-center lg:flex-row pt-[18px] lg:pt-0 justify-between   items-center px-[16px] lg:px-[80px] min-h-[700px]">
+    <div className="bg-white flex flex-col lg:items-center lg:flex-row pt-[18px] lg:pt-0 justify-between   items-center px-[16px] lg:px-[80px] min-h-[632px]">
       <div className="w-full  lg:w-8/12 2xl:w-7/12 3xl:w-3/5">
         <p className="text-black text-48px font-[thin]">{content}</p>
       </div>

@@ -21,10 +21,36 @@ SwiperCore.use([Navigation, Pagination]);
 
 function ClientsSection() {
   const clients = [
-    { img: client1, name: "Emily Wong", role: "Chief Brand Officer" },
-    { img: client2, name: "Emily Wong", role: "Chief Brand Officer" },
-    { img: client3, name: "Emily Wong", role: "Chief Brand Officer" },
-    { img: client4, name: "Emily Wong", role: "Chief Brand Officer" },
+    {
+      img: client1,
+      name: "Emily Wong",
+      role: "Chief Brand Officer",
+      link: "https://www.youtube.com/watch?v=u4hVsNXVoYE"
+    },
+    {
+      img: client2,
+      name: "John Carter",
+      role: "Marketing Director",
+      link: "https://www.youtube.com/watch?v=CXk-xI4Npmc"
+    },
+    {
+      img: client3,
+      name: "Kevin Mohanji Gera",
+      role: "Business Development Manager",
+      link: "https://www.youtube.com/watch?v=LXWGDUwGkEk"
+    },
+    {
+      img: client4,
+      name: "Jasim SM",
+      role: "CEO BOSQ",
+      link: "https://www.youtube.com/watch?v=qhehmRAaO7Y"
+    },
+    {
+      img: client4,
+      name: "Shan A Salam",
+      role: "Founder The One Percentage",
+      link: "https://www.youtube.com/watch?v=PU2ILf3qTt0"
+    }
   ];
 
   return (
@@ -64,8 +90,12 @@ function ClientsSection() {
                       {client.role}
                     </p>
                   </div>
+                  
                   <div>
+                  <a target="_blank" href={client.link}>
+
                     <img src={PlayIcon} alt="Play" />
+                  </a>
                   </div>
                 </div>
               </div>
