@@ -5,10 +5,11 @@ import "swiper/css/pagination"; // Import pagination styles for Swiper
 import "swiper/css/navigation";
 import { Navigation, Pagination, Scrollbar } from "swiper/modules";
 
-import client1 from "@/assets/images/clients/client1.png";
-import client2 from "@/assets/images/clients/client2.png";
-import client3 from "@/assets/images/clients/client3.png";
-import client4 from "@/assets/images/clients/client4.png";
+import arsh from "@/assets/images/clients/Arsh.png";
+import ashik from "@/assets/images/clients/Ashik.png";
+import kevin from "@/assets/images/clients/Kevin.png";
+import Jasim from "@/assets/images/clients/Bosq.png";
+import shan from "@/assets/images/clients/Shan.png";
 import PlayIcon from "@/assets/images/icons/play.svg";
 import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
@@ -22,31 +23,31 @@ SwiperCore.use([Navigation, Pagination]);
 function ClientsSection() {
   const clients = [
     {
-      img: client1,
-      name: "Emily Wong",
+      img: arsh,
+      name: "Arsh Navas",
       role: "Chief Brand Officer",
       link: "https://www.youtube.com/watch?v=u4hVsNXVoYE"
     },
     {
-      img: client2,
-      name: "John Carter",
+      img: ashik,
+      name: "Ashik",
       role: "Marketing Director",
       link: "https://www.youtube.com/watch?v=CXk-xI4Npmc"
     },
     {
-      img: client3,
+      img: kevin,
       name: "Kevin Mohanji Gera",
       role: "Business Development Manager",
       link: "https://www.youtube.com/watch?v=LXWGDUwGkEk"
     },
     {
-      img: client4,
+      img: Jasim,
       name: "Jasim SM",
       role: "CEO BOSQ",
       link: "https://www.youtube.com/watch?v=qhehmRAaO7Y"
     },
     {
-      img: client4,
+      img: shan,
       name: "Shan A Salam",
       role: "Founder The One Percentage",
       link: "https://www.youtube.com/watch?v=PU2ILf3qTt0"
@@ -74,32 +75,36 @@ function ClientsSection() {
           className="swiper-pagination-white"
         >
           {clients.map((client, index) => (
-            <SwiperSlide key={index}>
-              <div className="relative ">
-                <img
-                  className=" object-contain"
-                  src={client.img}
-                  alt={client.name}
-                />
-                <div className="flex items-center justify-between w-full absolute bottom-6 px-6 ">
-                  <div>
-                    <p className="font-medium text-black text-[32px] leading-none">
-                      {client.name}
-                    </p>
-                    <p className="text-[20px] text-black font-[thin]">
-                      {client.role}
-                    </p>
-                  </div>
-                  
-                  <div>
-                  <a target="_blank" href={client.link}>
-
-                    <img src={PlayIcon} alt="Play" />
-                  </a>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+           <SwiperSlide key={index}>
+           <div className="relative">
+             <img
+               className="object-contain"
+               src={client.img}
+               alt={client.name}
+             />
+         
+             {/* Bottom white gradient overlay */}
+             <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-white to-transparent z-10" />
+         
+             {/* Text and Play button */}
+             <div className="flex items-center justify-between w-full absolute bottom-6 px-6 z-20">
+               <div>
+                 <p className="font-medium text-black text-[32px] leading-none">
+                   {client.name}
+                 </p>
+                 <p className="text-[20px] text-black font-[thin]">
+                   {client.role}
+                 </p>
+               </div>
+         
+               <div>
+                 <a target="_blank" href={client.link}>
+                   <img src={PlayIcon} alt="Play" />
+                 </a>
+               </div>
+             </div>
+           </div>
+         </SwiperSlide>
           ))}
         </Swiper>
       </div>
