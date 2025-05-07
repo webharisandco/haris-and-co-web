@@ -34,7 +34,7 @@ function ServiceSection({  currentService }) {
             <p className="text-[16px] font-[Helvetica-Light]">
               {service?.description}
             </p>
-            <div className="flex gap-[10px]">
+            <div className="flex gap-[10px] h-full items-end">
               <p className="text-[20px] text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">
                 Let’s talk
                 <ArrowRight className="" size={25} />

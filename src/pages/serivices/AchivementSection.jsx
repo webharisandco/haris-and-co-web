@@ -5,7 +5,7 @@ function AchivementSection() {
     <div className="bg-[#0E0E0E] py-[30px] lg:py-[100px] px-[16px] lg:px-[100px] min-h-[632px]">
       <div className="flex justify-start text-center lg:text-start items-center ">
         <div className="w-full lg:w-10/12 xl:w-[70%]">
-          <p className="text-white text-[32px] leading-[39px] font-[helvetica-medium] text-64px lg:leading-none">
+          <p className="text-white text-[32px] leading-[39px] font-[helvetica-medium] lg:text-[55px] lg:leading-none">
             At Haris & Co., we value creating experiences{" "}
             <span className="text-white/50 font-[thin]">
               for our clients that transcend their expectations.

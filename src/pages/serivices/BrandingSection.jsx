@@ -1,24 +1,26 @@
-import React, {  } from "react";
-import { ArrowRight } from 'lucide-react'
-import { Link,  } from "react-router-dom";
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function BrandingSection({ BrandingContents }) {
-
   return (
     <div className="bg-white lg:pt-[70px] w-full px-[16px] md:px-[80px] pb-[36px] flex flex-col gap-[70px]">
       {BrandingContents.map((brandingContent, index) => (
-        
         <>
           <div className="w-full hidden lg:block">
             <div
-            id={brandingContent.id}
+              id={brandingContent.id}
               key={index}
-              className={`w-full flex justify-between items-center gap-5 ${index % 2 === 1 ? "flex-row-reverse" : ""
-                } `}
+              className={`w-full flex justify-between items-center gap-5 ${
+                index % 2 === 1 ? "flex-row-reverse" : ""
+              } `}
             >
               <div
-                className={`w-6/12 flex flex-col justify-center my-auto gap-[15px] ${index % 2 === 0 ? "pe-[70px] 3xl:pe-[90px]" : "px-[35px] 3xl:ps-[80px]"
-                  }`}
+                className={`w-6/12 flex flex-col justify-center my-auto gap-[15px] ${
+                  index % 2 === 0
+                    ? "pe-[70px] 3xl:pe-[90px]"
+                    : "px-[35px] 3xl:ps-[80px]"
+                }`}
               >
                 <div>
                   <p className="font-[helvetica-medium] text-48px ">
@@ -31,11 +33,11 @@ function BrandingSection({ BrandingContents }) {
                   </p>
                 </div>
                 <div>
-                  <ul className="grid list-disc grid-cols-3 gap-[10px]  3xl:gap-7 text-[15px] 3xl:text-[24px]">
+                  <ul className="grid list-disc list-outside grid-cols-3 gap-[10px] 3xl:gap-7 text-[15px] 3xl:text-[24px]">
                     {brandingContent.services.map((service, serviceIndex) => (
                       <li
                         key={serviceIndex}
-                        className=" text-black/70  font-[thin] list-inside text-wrap"
+                        className="text-black/70 font-[300] leading-snug"
                       >
                         {service}
                       </li>
@@ -43,9 +45,12 @@ function BrandingSection({ BrandingContents }) {
                   </ul>
                 </div>
                 <div className="mt-[30px]">
-                  <Link to={brandingContent.action.link} className="text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">
+                  <Link
+                    to={brandingContent.action.link}
+                    className="text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]"
+                  >
                     {brandingContent.action.label}
-                    <ArrowRight className='' size={25} />
+                    <ArrowRight className="" size={25} />
                   </Link>
                 </div>
               </div>
@@ -83,18 +88,23 @@ function BrandingSection({ BrandingContents }) {
                     {brandingContent.services
                       .slice(0, 3)
                       .map((service, serviceIndex) => (
-                        <li key={serviceIndex} className=" text-black/70 font-[thin]">
+                        <li
+                          key={serviceIndex}
+                          className=" text-black/70 font-[thin]"
+                        >
                           {service}
                         </li>
                       ))}
                   </ul>
                 </div>
                 <div className="mt-[30px] ">
-                <Link to={brandingContent.action.link} className="text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">
+                  <Link
+                    to={brandingContent.action.link}
+                    className="text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]"
+                  >
                     {brandingContent.action.label}
-                    <ArrowRight className='' size={25} />
+                    <ArrowRight className="" size={25} />
                   </Link>
-                 
                 </div>
               </div>
             </div>
