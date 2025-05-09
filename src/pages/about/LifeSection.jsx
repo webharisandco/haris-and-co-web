@@ -1,10 +1,10 @@
 import React from 'react';
-import img1 from "@/assets/images/aboutPage/life/img1.png";
-import img2 from "@/assets/images/aboutPage/life/img2.png";
-import img3 from "@/assets/images/aboutPage/life/img3.png";
-import img4 from "@/assets/images/aboutPage/life/img4.png";
-import img5 from "@/assets/images/aboutPage/life/img5.png";
-import img6 from "@/assets/images/aboutPage/life/img6.png";
+import img1 from "@/assets/images/aboutPage/life/imgg1.jpg";
+import img2 from "@/assets/images/aboutPage/life/imgg2.jpg";
+import img3 from "@/assets/images/aboutPage/life/imgg3.jpg";
+import img4 from "@/assets/images/aboutPage/life/imgg4.jpg";
+import img5 from "@/assets/images/aboutPage/life/imgg5.jpg";
+import img6 from "@/assets/images/aboutPage/life/imgg6.jpg";
 
 export default function LifeSection() {
     return (
