@@ -101,18 +101,7 @@ const Footer = () => {
         >
           Abu Dhabi
         </a>
-        {/* <Link to="https://harisand.co/digital-marketing-agency-in-kerala">
-          Kerala
-        </Link>
-        <Link to="https://harisand.co/ae/digital-marketing-agency-in-dubai">
-          Dubai
-        </Link>
-        <Link to="https://harisand.co/ae/digital-marketing-agency-in-sharjah">
-          Sharjah
-        </Link>
-        <Link to="https://harisand.co/ae/digital-marketing-agency-in-abudhabi">
-          Abu Dhabi
-        </Link> */}
+      
       </div>
       <div className="mt-[50px] lg:mt-[115px] flex justify-between mb-[40px] text-black/55 text-lg font-medium items-end">
         <div className=" flex gap-4 md:gap-[40px] lg:gap-[60px] flex-col md:flex-row">
@@ -148,18 +137,7 @@ const Footer = () => {
           >
             Abu Dhabi
           </a>
-          {/* <Link to="https://harisand.co/digital-marketing-agency-in-kerala">
-            Kerala
-          </Link>
-          <Link to="https://harisand.co/ae/digital-marketing-agency-in-dubai">
-            Dubai
-          </Link>
-          <Link to="https://harisand.co/ae/digital-marketing-agency-in-sharjah">
-            Sharjah
-          </Link>
-          <Link to="https://harisand.co/ae/digital-marketing-agency-in-abudhabi">
-            Abu Dhabi
-          </Link> */}
+        
         </div>
         <div className="">
           <p>&copy; 2024.Haris&Co</p>
