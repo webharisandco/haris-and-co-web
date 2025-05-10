@@ -170,7 +170,7 @@ function useServices() {
     },
     {
       id: "social-media",
-      title: "Social Media",
+      title: "Social Media Marketing",
       description:
         "With Haris&Co., turn your social media platforms into a powerful marketing tool that connects you to your audience. With gripping creatives and ads, our award-winning team provides tailored strategies to your brand to propel your growth.",
       services: [
