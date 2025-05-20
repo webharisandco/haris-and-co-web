@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "@/assets/images/Haris&Co.svg";
 import LandingMobileMenu from "./LandingMobileMenu";
 
-const LandingHeader = () => {
+const LandingHeader = ({btnTxt}) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -18,7 +18,7 @@ const LandingHeader = () => {
     }
   };
   return (
-    <header className="flex justify-between bg-black px-[18px] py-[40px] md:px-[80px] lg:px-[95px] md:py-[40px] items-center border-b border-b-white/50 ">
+<header className="fixed top-0 left-0 w-full z-50 flex justify-between  bg-black px-[18px] py-[40px] md:px-[80px] lg:px-[95px] md:py-[40px] items-center border-b border-b-white/50">
       <img
         src={Logo}
         className="h-[30px] md:h-[35px] lg:h-[40px] "
@@ -49,8 +49,9 @@ const LandingHeader = () => {
         </Link>
       </div>
       <LandingButton
+      className='hidden md:flex'
         href={"https://harisandco.pipedrive.com/scheduler/Z6GZG1sd/meeting"}
-        text={"Let’s Connect"}
+        text={btnTxt?btnTxt :"Let’s Connect"}
       />
       <div className="lg:hidden flex ms-auto max-w-fit">
         <button onClick={toggleMenu}>

@@ -33,7 +33,7 @@ function ContactSection({ kerala }) {
     return <div className="text-center text-lg">Loading Map...</div>;
 
   return (
-    <div className="pt-[68px] md:pt-[160px] -mt-[90px] bg-white relative">
+    <div className="pt-[68px] md:pt-[160px] -mt-[90px] bg-white relative ">
       <div className="px-[16px] md:px-[80px] lg:px-[100px] flex flex-col justify-between md:relative z-10 static  bg-[#151515]">
 
         <div className="lg:w-[50%] flex flex-col gap-[30px] py-[53px] md:py-[147px] poppins-light">

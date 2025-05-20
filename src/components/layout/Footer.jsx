@@ -109,13 +109,10 @@ const Footer = () => {
           <p>Terms & Conditions</p>
         </div>
         <div className=" text-black w-1/3 justify-between hidden lg:flex">
-          <a
-            href="https://harisand.co/digital-marketing-agency-in-kerala"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Kerala
-          </a>
+        <Link to='digital-marketing-agency-in-kerala'>
+        Kerala
+        </Link>
+         
           <a
             href="https://harisand.co/ae/digital-marketing-agency-in-dubai"
             target="_blank"

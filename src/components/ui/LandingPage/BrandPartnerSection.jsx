@@ -10,9 +10,9 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
     setShowAll(!showAll);
   };
 
-  const half = Math.ceil(brandLogosSmall.length / 2);
-  const firstHalf = brandLogosSmall.slice(0, half);
-  const secondHalf = brandLogosSmall.slice(half);
+  const half = Math.ceil(brandLogosSmall?.length / 2);
+  const firstHalf = brandLogosSmall?.slice(0, half);
+  const secondHalf = brandLogosSmall?.slice(half);
 
   // Split logos into initial visible rows and expandable content
   const initialVisibleLogos = barandLogos.slice(0, 2);
@@ -31,7 +31,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
               loop={true}
               className="swiper-pagination-white max-h-[200px]"
             >
-              {firstHalf.map((logoSmall, index) => (
+              {firstHalf?.map((logoSmall, index) => (
                 <SwiperSlide className="h-fit" key={index}>
                   <div className="w-fit">
                     <img
@@ -58,7 +58,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
           <div className="hidden lg:flex lg:flex-col md:items-center">
             {/* Always visible first two rows */}
             <div className="grid gap-4">
-              {initialVisibleLogos.map((logos, index) => (
+              {initialVisibleLogos?.map((logos, index) => (
                 <div key={index} className="transform transition-transform duration-500 ease-in-out">
                   <img 
                     src={logos.image} 
