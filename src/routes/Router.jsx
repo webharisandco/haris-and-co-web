@@ -9,6 +9,9 @@ import UIPerformanceSharjah from '@/pages/landing-pages/sharjah/UIPerformance';
 import UIPerformanceAbudhabi from '@/pages/landing-pages/abudhabi/UIPerformance';
 import UIPerformanceKerala from '@/pages/landing-pages/kerala/UIPerformance';
 import MarketingKerala from '../pages/landing-pages/marketing/kerala'
+import MarketingDubai from '../pages/landing-pages/marketing/dubai'
+import MarketingSharjah from '../pages/landing-pages/marketing/sharjah'
+import MarketingAbudabi from '../pages/landing-pages/marketing/abudhabi'
 import Services from '@/pages/serivices';
 import ServiceMarketing from '@/pages/serivices/types/creative';
 import Works from '@/pages/works';
@@ -38,6 +41,9 @@ const AppRouter = () => {
         </Route>
         <Route path='services/performance-marketing-agency-in-kerala' element={<UIPerformanceKerala />} />
         <Route path='digital-marketing-agency-in-kerala' element={<MarketingKerala />} />
+        <Route path='ae/digital-marketing-agency-in-dubai' element={<MarketingDubai />} />
+        <Route path='ae/digital-marketing-agency-in-sharjah' element={<MarketingSharjah />} />
+        <Route path='ae/digital-marketing-agency-in-abudhabi' element={<MarketingAbudabi />} />
 
         <Route element={<Layout />}>
           <Route path='about' element={<About />} />

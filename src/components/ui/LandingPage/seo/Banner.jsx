@@ -40,7 +40,7 @@ function Banner({
             )}
             {performance && <span className="hidden lg:block">{heading}</span>}
           </h2>
-          <p className="text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] 3xl:text-[20px] text-white/70 font-light w-full lg:w-5/6 ">
+          <p className="text-[16px] md:text-[15px] lg:text-[17px]  2xl:text-[17px] 3xl:text-[20px] text-white/70 font-light w-full lg:w-5/6 ">
             {" "}
             {description}
           </p>

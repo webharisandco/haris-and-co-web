@@ -15,9 +15,7 @@ const containerStyle = {
   height: "500px", // Adjust height based on your requirements
 };
 
-
-
-function ContactSection({ kerala }) {
+function ContactSection({ kerala, address }) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -35,7 +33,6 @@ function ContactSection({ kerala }) {
   return (
     <div className="pt-[68px] md:pt-[160px] -mt-[90px] bg-white relative ">
       <div className="px-[16px] md:px-[80px] lg:px-[100px] flex flex-col justify-between md:relative z-10 static  bg-[#151515]">
-
         <div className="lg:w-[50%] flex flex-col gap-[30px] py-[53px] md:py-[147px] poppins-light">
           <div>
             <h5 className="text-white text-[30px] md:text-[48px] font-[AbroBold]">
@@ -52,8 +49,7 @@ function ContactSection({ kerala }) {
             <div className="flex items-center pr-[15px]">
               <div>
                 {/* <img src={PhoneIcon} alt="Phone Icon" /> */}
-                <Phone size={40} color='#151515' fill='#fff' />
-
+                <Phone size={40} color="#151515" fill="#fff" />
               </div>
               <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
               <div className="flex flex-col gap-[12px]">
@@ -68,8 +64,7 @@ function ContactSection({ kerala }) {
             <div className="flex items-center pr-[15px]">
               <div>
                 {/* <img src={PhoneIcon} alt="Phone Icon" /> */}
-                <Mail fill='#fff' size={40} color='#151515' />
-
+                <Mail fill="#fff" size={40} color="#151515" />
               </div>
               <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
               <div className="flex flex-col gap-[12px]">
@@ -85,13 +80,19 @@ function ContactSection({ kerala }) {
               <div className="flex md:hidden items-center ">
                 {/* <div className="min-w-[35px]" > */}
                 {/* <img src={LocationIcon} alt="Location Icon" /> */}
-                <MapPin fill='#fff' color='#151515' size={45} className='min-w-10 h-fit' />
+                <MapPin
+                  fill="#fff"
+                  color="#151515"
+                  size={45}
+                  className="min-w-10 h-fit"
+                />
                 {/* </div> */}
                 <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
                 <div className="flex flex-col gap-[12px]">
                   <p className="text-white text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
-                    Abdulla Kamber Business Center, Room No 103, First Floor,
-                    Abu Baker Al Siddique St, Deira - Dubai
+                    {address
+                      ? address
+                      : "Abdulla Kamber Business Center, Room No 103, First Floor,Abu Baker Al Siddique St, Deira - Dubai"}
                   </p>
                 </div>
               </div>
@@ -100,14 +101,19 @@ function ContactSection({ kerala }) {
           <div className=" hidden md:flex items-center pr-[15px] mt-[40px]">
             <div className="">
               {/* <img className="" src={LocationIcon} alt="Location Icon" /> */}
-              <MapPin fill='#fff' color='#333' size={40} className='w-fit h-fit' />
-
+              <MapPin
+                fill="#fff"
+                color="#333"
+                size={40}
+                className="w-fit h-fit"
+              />
             </div>
             <div className="self-stretch w-[1px] bg-white mx-[20px]"></div>
             <div className="flex flex-col gap-[12px] ">
               <p className="text-white text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px]">
-                Abdulla Kamber Business Center, Room No 103, First Floor, Abu
-                Baker Al Siddique St, Deira - Dubai
+                {address
+                  ? address
+                  : "Abdulla Kamber Business Center, Room No 103, First Floor,Abu Baker Al Siddique St, Deira - Dubai"}
               </p>
             </div>
           </div>
@@ -115,14 +121,19 @@ function ContactSection({ kerala }) {
 
         <div className="w-auto block lg:hidden poppins-medium">
           <div className="bg-[#7744D5] relative  z-30 py-[40px] px-[23px] rounded-3xl text-white max-w-auto  mx-auto">
-            <p className="text-[16px] font-medium mb-[10px] font-[AbroRegular] ">Get a Callback</p>
+            <p className="text-[16px] font-medium mb-[10px] font-[AbroRegular] ">
+              Get a Callback
+            </p>
 
             <hr className="border-t border-white/50 " />
 
             <form className="space-y-4">
               <div className="grid grid-cols-1 gap-[13px] mt-[40px]">
                 <div>
-                  <label for="fullName" className="block text-[13px] font-medium">
+                  <label
+                    for="fullName"
+                    className="block text-[13px] font-medium"
+                  >
                     Full Name*
                   </label>
                   <input
@@ -134,7 +145,10 @@ function ContactSection({ kerala }) {
                   />
                 </div>
                 <div>
-                  <label for="company" className="block text-[13px] font-medium">
+                  <label
+                    for="company"
+                    className="block text-[13px] font-medium"
+                  >
                     Company/Organization*
                   </label>
                   <input
@@ -222,11 +236,12 @@ function ContactSection({ kerala }) {
             </form>
           </div>
         </div>
-
       </div>
       <div className="w-[40%] hidden lg:block md:absolute top-[6%] right-[6%] poppins-medium">
         <div className="bg-[#7744D5] relative  z-30 p-6 md:px-[54px] py-[66px] rounded-3xl text-white max-w-auto  mx-auto">
-          <p className="text-[30px] font-medium mb-6 font-[AbroRegular] ">Get a Callback</p>
+          <p className="text-[30px] font-medium mb-6 font-[AbroRegular] ">
+            Get a Callback
+          </p>
 
           <hr className="border-t border-white/50 mb-6" />
 
@@ -345,8 +360,23 @@ function ContactSection({ kerala }) {
             <Marker position={location} />
           </GoogleMap>
         </LoadScript> */}
-        {kerala ? <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.484367376539!2d75.79183259999999!3d11.225735499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6592e5bc6ffbb%3A0xbd15f0508abb882b!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1737460912360!5m2!1sen!2sin" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          : <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7255.40579733096!2d55.3302700976488!3d25.269908202358746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d09f059a6cb%3A0xbad92d37b5e68a90!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1737539353095!5m2!1sen!2sin"  height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>}
+        {kerala ? (
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.484367376539!2d75.79183259999999!3d11.225735499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6592e5bc6ffbb%3A0xbd15f0508abb882b!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1737460912360!5m2!1sen!2sin"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        ) : (
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7255.40579733096!2d55.3302700976488!3d25.269908202358746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d09f059a6cb%3A0xbad92d37b5e68a90!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1737539353095!5m2!1sen!2sin"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        )}
       </div>
     </div>
   );

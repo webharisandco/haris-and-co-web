@@ -12,7 +12,7 @@ export default function FearlessSection({heading, description}) {
               <h3 className="text-white text-[33px] sm:text-[41px] leading-snug font-bold pb-6">
                 {heading}
               </h3>
-              <p className="text-[#C0C0C0] text-[16px]  font-normal">
+              <p className="text-[#C0C0C0] text-[16px]  font-[Abroregular]">
                {description}
               </p>
 

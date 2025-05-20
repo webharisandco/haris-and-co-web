@@ -129,7 +129,7 @@ const faqList = [
       <CaseStudy />
       <ClientReviews />
       <div className="mt-[120px]">
-        <ContactSection location={location} />
+        <ContactSection address={"2nd floor, 4 WING Avenue, Panniyankara, 673003 Kozhikode, Kerala"} kerala={true} location={location} />
       </div>
       <div className="bg-white">
         <Faq faqList={faqList} />
