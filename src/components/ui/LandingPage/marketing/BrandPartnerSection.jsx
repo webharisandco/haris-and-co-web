@@ -17,7 +17,7 @@ function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {
   const extraLogos = barandLogos.filter((logo) => logo.id !== 1);
 
   return (
-    <div className="mt-[57px] bg-black md:mt-[90px] flex flex-col-reverse lg:flex-col px-[18px] md:px-[80px] ">
+    <div className="mt-[57px] bg-black md:mt-[120px] flex flex-col-reverse lg:flex-col px-[18px] md:px-[100px] poppins-regular">
       {/* Main logo section */}
       <div className="flex flex-col lg:border-t md:rounded-l-[24px] lg:rounded-r-[24px] rounded-b-none border-b-0 lg:border-l lg:border-r md:border-white border-opacity-50 md:pt-[10px] md:pb-[50px] md:mb-0">
         

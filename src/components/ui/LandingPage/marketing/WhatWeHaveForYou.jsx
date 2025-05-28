@@ -1,59 +1,53 @@
-import  { useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import "swiper/css";
-import logos from "@/assets/images/DigitalMarketing/SeoPage/seo1 1.png";
-import logo2 from "@/assets/images/DigitalMarketing/SeoPage/technical-support1 1.png";
-import logo3 from "@/assets/images/DigitalMarketing/SeoPage/uiux-icon.png";
-import logo4 from "@/assets/images/DigitalMarketing/SeoPage/off-page.png";
-import logo5 from "@/assets/images/DigitalMarketing/SeoPage/cro-icon.png";
-import logo55 from "@/assets/images/DigitalMarketing/SeoPage/content-icon.png";
-import o1 from "@/assets/images/DigitalMarketing/SeoPage/on page.png";
-import team2 from "@/assets/images/DigitalMarketing/SeoPage/off page.png";
-import team3 from "@/assets/images/DigitalMarketing/SeoPage/technical seo.png";
-import team4 from "@/assets/images/DigitalMarketing/SeoPage/ui-ux-illu.png";
-import team5 from "@/assets/images/DigitalMarketing/SeoPage/c.png";
-import team6 from "@/assets/images/DigitalMarketing/SeoPage/content.png";
+import arroww from "@/assets/images/DigitalMarketing/arroww.svg";
+import logos from "@/assets/images/DigitalMarketing/logo1.png";
+import logo2 from "@/assets/images/DigitalMarketing/logo2.png";
+import logo3 from "@/assets/images/DigitalMarketing/logo3.png";
+import logo4 from "@/assets/images/DigitalMarketing/logo4.png";
+import logo5 from "@/assets/images/DigitalMarketing/logo5.png";
+import o1 from "@/assets/images/DigitalMarketing/1.webp";
+import team2 from "@/assets/images/DigitalMarketing/pt.webp";
+import team3 from "@/assets/images/DigitalMarketing/socialt.webp";
+import team4 from "@/assets/images/DigitalMarketing/webt.webp";
+import team5 from "@/assets/images/DigitalMarketing/bt.webp";
 import grid from "@/assets/images/DigitalMarketing/grid.png";
+import award3 from "@/assets/images/DigitalMarketing/brand storyz.png";
 
 // Example service data (replace with your actual data)
 const services = [
   {
-    name: "On-Page SEO",
+    name: "SEO",
     logo: logos,
     description:
-      "Our team expertly shortlists the right keywords, optimises the URLs, corrects the title tags, and optimises other elements on the website to tidy up in total.",
+      "To appear on top of Google search results and get more website visitors, leads and revenue.",
   },
   {
-    name: "Off-Page SEO",
+    name: "Performance Marketing",
     logo: logo4,
     description:
-      "We post blogs on PR sites, list on directories, list on business listing sites and more to build your website reputation online.",
+      "To gain measurable results that drive conversions and maximise your ROI with Digital Ads.",
   },
   {
-    name: "Technical SEO",
+    name: "Social Media",
     logo: logo2,
     description:
-      "Our specialists audit & sort technical aspects of your website such as the load speed, security, server performance, website architecture and more to ensure optimal performance. ",
+      "To build brand awareness, retain customers, and generate more leads on Social Media.",
   },
   {
-    name: "UI/UX Design",
+    name: "Web Development",
     logo: logo3,
     description:
-      "Following a detailed analysis, our design team develops fonts, colours and layouts to make your website attractive and easy to navigate.",
+      "For a website that combines engaging UI, scroll-stopping content and user-friendliness. .",
   },
   {
-    name: "Conversion Rate Optimisation",
+    name: "Branding",
     logo: logo5,
     description:
-      "Our CRO experts examine the UI/UX, identifying the gaps and optimising the elements to increase the chance of converting visitors to customers. ",
-  },
-  {
-    name: "Content Development",
-    logo: logo55,
-    description:
-      "Our content team creates awesome content that informs, entertains, engages and ultimately converts your visitors to customers., set a new standard and stand out from the crowd. ",
+      "To help you change the face of your brand, set a new standard and stand out from the crowd. ",
   },
 ];
 
@@ -71,20 +65,18 @@ const WhatWeHaveForYou = () => {
 
   const getTeamImage = (serviceName) => {
     switch (serviceName) {
-      case "On-Page SEO":
+      case "SEO":
         return o1;
-      case "Off-Page SEO":
+      case "Performance Marketing":
         return team2;
-      case "Technical SEO":
+      case "Social Media":
         return team3;
-      case "UI/UX Design":
+      case "Web Development":
         return team4;
-      case "Conversion Rate Optimisation":
+      case "Branding":
         return team5;
-      case "Content Development":
-        return team6;
       default:
-        return o1;
+        return award3;
     }
   };
 
@@ -100,10 +92,9 @@ const WhatWeHaveForYou = () => {
               style={{ backgroundImage: `url(${grid})` }}
             >
               <h3 className="text-white text-[40px] font-bold mb-6">
-                Our SEO Toolkit
+                What We Have for You
               </h3>
               <div className="flex cursor-pointer">
-                {/* Left: Services List */}
                 <div className="w-1/2 pt-8">
                   {services.map((service) => (
                     <div
@@ -117,35 +108,39 @@ const WhatWeHaveForYou = () => {
                         className="w-[25px] h-[25px]"
                       />
                       <div className="pl-7">
-                        <h4 className="text-white text-[24px] font-medium">
+                        <h4 className="text-white text-[27px] font-medium">
                           {service.name}
                         </h4>
+                        {selectedService === service.name && (
+                          <p className="text-gray-400 text-[16px] w-[75%] font-normal">
+                            {service.description}
+                          </p>
+                        )}
                       </div>
                     </div>
                   ))}
                 </div>
-
-                {/* Right: Image + Description */}
                 <div className="w-1/2">
                   <img
                     src={getTeamImage(selectedService)}
                     alt={`${selectedService} Team`}
                     className="w-full"
                   />
-
-                  {/* Description rendered using selectedService */}
-                  <div className="w-full flex justify-center">
-
-                  <p className="text-white text-[16px]  font-normal mt-4">
-                    {
-                      services.find((s) => s.name === selectedService)
-                        ?.description
-                    }
-                  </p>
-                  </div>
                 </div>
               </div>
-            
+              <div className="inline-flex items-center mt-6  transition-all duration-300 group">
+                <Link
+                  to="/services"
+                  className="bg-[#7744D5] text-white px-5 py-3 rounded-md font-medium flex items-center"
+                >
+                  View More
+                  <img
+                    src={arroww}
+                    alt="Icon"
+                    className="w-[13px] ml-2 transition-transform duration-300 group-hover:rotate-[30deg]"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -183,7 +178,19 @@ const WhatWeHaveForYou = () => {
                     <p className="text-[#bbbbbb] text-[18px] mt-5 mb-10 font-light leading-snug px-2">
                       {service.description}
                     </p>
-                  
+                    <div className="flex justify-center transition-all duration-300 group">
+                      <Link
+                        to="/services"
+                        className="bg-[#7744D5] text-white px-5 py-3 rounded-md font-medium flex items-center"
+                      >
+                        View More
+                        <img
+                          src={arroww}
+                          alt="Icon"
+                          className="w-[13px] ml-2 transition-transform duration-300 group-hover:rotate-[30deg]"
+                        />
+                      </Link>
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}

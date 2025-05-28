@@ -9,9 +9,36 @@ import InstagramLogo from "@/assets/images/landing/InstagramLogo.svg";
 import XLogo from "@/assets/images/landing/XLogo.svg";
 import Logo from "@/assets/images/Haris&Co.svg";
 import SmallLogo from "@/assets/images/footerSmall.svg";
-import VirifiedAgency from "@/assets/images/verifiedAgency.png";
+// import VirifiedAgency from "@/assets/images/verifiedAgency.png";
 
-const LandingFooter = ({ performance = false }) => {
+const LandingFooter = ({ serviceType = "web", address })  => {
+
+  const serviceLinks = {
+  performance: [
+    { name: "Performance Marketing Agency in Dubai", path: "/ae/services/performance-marketing-agency-in-dubai" },
+    { name: "Performance Marketing Agency in Sharjah", path: "/ae/services/performance-marketing-agency-in-sharjah" },
+    { name: "Performance Marketing Agency in Abu Dhabi", path: "/ae/services/performance-marketing-agency-in-abudhabi" },
+    { name: "Performance Marketing Agency in Kerala", path: "/services/performance-marketing-agency-in-kerala" },
+  ],
+  web: [
+    { name: "Web Development Company in Dubai", path: "/web-development-company-in-dubai" },
+    { name: "Web Development Company in Sharjah", path: "/web-development-company-in-sharjah" },
+    { name: "Web Development Company in Abu Dhabi", path: "/web-development-company-in-abudhabi" },
+  ],
+  digital: [
+    { name: "Digital Marketing Agency in Dubai", path: "/ae/digital-marketing-agency-in-dubai" },
+    { name: "Digital Marketing Agency in Sharjah", path: "/ae/digital-marketing-agency-in-sharjah" },
+    { name: "Digital Marketing Agency in Abu Dhabi", path: "/ae/digital-marketing-agency-in-abudhabi" },
+    { name: "Digital Marketing Agency in Kerala", path: "/digital-marketing-agency-in-kerala" },
+  ],
+  seo: [
+    { name: "SEO Company in Dubai", path: "/ae/services/seo-company-in-dubai" },
+    { name: "SEO Company in Sharjah", path: "/ae/services/seo-company-in-sharjah" },
+    { name: "SEO Company in Abu Dhabi", path: "/ae/services/seo-company-in-abudhabi" },
+    { name: "SEO Company in Kerala", path: "/services/seo-company-in-kerala" },
+  ],
+};
+
   return (
     <div>
       <div className="hidden md:block bg-black px-[18px] md:px-[50px] lg:px-[100px] py-[50px] text-white space-y-5 poppins-medium">
@@ -48,46 +75,23 @@ const LandingFooter = ({ performance = false }) => {
           <div className="space-y-10">
             <h6 className="poppins-bold text-xl">Important Links</h6>
             <div className="flex flex-col gap-5 text-nowrap poppins-light">
-              <Link to="/">Digital Marketing</Link>
-              <Link to="/">SEO</Link>
-              <Link to="/">Lead Generation</Link>
-              <Link to="/">Social Media Marketing</Link>
-              <Link to="/">Web Development</Link>
+              <Link to="/digital-marketing-agency-in-kerala">Digital Marketing</Link>
+              <Link to="/services/seo-company-in-kerala">SEO</Link>
+              <Link to="/services/performance-marketing-agency-in-kerala">Lead Generation</Link>
+              <Link to="/services/social-media">Social Media Marketing</Link>
+              <Link to="/ae/services/web-development-company-in-dubai">Web Development</Link>
             </div>
           </div>
-          <div className="space-y-10">
-            <h6 className="poppins-bold text-xl text-nowrap">
-              Locations We Serve
-            </h6>
-            {performance ? (
-              <div className="flex flex-col gap-5 text-wrap poppins-light">
-                <Link to="/ae/services/performance-marketing-agency-in-dubai">
-                  Performance Marketing Agency in Dubai
-                </Link>
-                <Link to="/ae/services/performance-marketing-agency-in-sharjah">
-                  Performance Marketing Agency in Sharjah
-                </Link>
-                <Link to="/ae/services/performance-marketing-agency-in-abudhabi">
-                  Performance Marketing Agency in Abu Dhabi
-                </Link>
-                <Link to="/services/performance-marketing-agency-in-kerala">
-                  Performance Marketing Agency in Kerala
-                </Link>
-              </div>
-            ) : (
-              <div className="flex flex-col gap-5 text-nowrap poppins-light">
-                <Link to="/ae/services/web-development-company-in-dubai">
-                  Web Development Company in Dubai
-                </Link>
-                <Link to="/ae/services/web-development-company-in-sharjah">
-                  Web Development Company in Sharjah
-                </Link>
-                <Link to="/ae/services/web-development-company-in-abudhabi">
-                  Web Development Company in Abu Dhabi
-                </Link>
-              </div>
-            )}
-          </div>
+         <div className="space-y-10">
+      <h6 className="poppins-bold text-xl text-nowrap">Locations We Serve</h6>
+      <div className="flex flex-col gap-5 text-wrap poppins-light">
+        {serviceLinks[serviceType]?.map((link, index) => (
+          <Link key={index} to={link.path}>
+            {link.name}
+          </Link>
+        ))}
+      </div>
+    </div>
           <div className="space-y-10">
             <h6 className="poppins-bold text-xl">Get In Touch</h6>
             <div className=" flex flex-col poppins-light gap-5 ">
@@ -106,8 +110,8 @@ const LandingFooter = ({ performance = false }) => {
                   className="w-fit h-fit min-h-[50px]"
                 />
                 <span className="">
-                  Abdulla Kamber Business Center, Room No 103, First Floor, Abu
-                  Baker Al Siddique St, Deira - Dubai
+                  {address ? address : "Abdulla Kamber Business Center, Room No 103, First Floor, Abu Baker Al Siddique St, Deira - Dubai"}
+                  
                 </span>
               </div>
             </div>

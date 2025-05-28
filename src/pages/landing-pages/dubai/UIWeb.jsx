@@ -287,7 +287,7 @@ export default function UIWeb() {
           webDevelopmentServices={webDevelopmentServices}
         />
       </div>
-      <LandingFooter />
+      <LandingFooter serviceType='web' />
     </>
   );
 }

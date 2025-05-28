@@ -387,7 +387,7 @@ export default function UIPerformance() {
           )}
         </div>
       </div>
-      <LandingFooter performance />
+      <LandingFooter address="2nd floor, 4 WING Avenue, Panniyankara, 673003 Kozhikode, Kerala" serviceType='performance' />
     </div>
   );
 }

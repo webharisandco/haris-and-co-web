@@ -408,7 +408,7 @@ export default function UIPerformance() {
           )}
         </div>
       </div>
-      <LandingFooter performance />
+      <LandingFooter serviceType='performance'  />
     </div>
   );
 }
