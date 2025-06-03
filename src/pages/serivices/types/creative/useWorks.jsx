@@ -28,26 +28,31 @@ function useWorks() {
           title: "Brand Identity Design",
           description:
             "If you’re a brand starting from scratch or a brand looking to refresh, our Brand Identity solutions help you stand out. We help weave a cohesive brand story across all your touchpoints.",
+          link: "/contact",
         },
         {
           title: "Basic Collaterals",
           description:
             "Make an impactful impression with basic brand collaterals embodying your brand essence. From physical collaterals like business cards and letterheads to packaging and signage, we provide custom solutions.",
+          link: "/contact",
         },
         {
           title: "Marketing Collaterals",
           description:
             "For your potential audience, leave an impactful impression with marketing collaterals designed just for your brand. From promotional souvenirs to tailored video content and ads, bring your brand to life.",
+          link: "/contact",
         },
         {
           title: "Logo Design",
           description:
             "Though branding extends beyond a logo, your unique logo is the instantaneous first impression you leave on your audience. Let us engineer a logo encapsulating every facet of your brand, laying the foundation for an impactful and lasting narrative.",
+          link: "/contact",
         },
         {
           title: "Product Design",
           description:
             "Just like your brand has a unique image, every one of your products needs a design that speaks for itself. We craft memorable product designs, handling everything from naming to package design.",
+          link: "/contact",
         },
       ],
     },
@@ -66,21 +71,25 @@ function useWorks() {
           title: "Web Development",
           description:
             "One of your brand’s crucial touchpoints is a website. With a custom design aligned with your industry, audience, goals, and objectives, we set the stage for growth. Our designs are based on strategies that optimize user interactions & SERPs, increase traffic, and more.",
+          link: "/ae/services/web-development-company-in-dubai",
         },
         {
           title: "eCommerce Solutions",
           description:
             "Set up stunning digital storefronts for your business with Haris&Co. From eCommerce migration to tailored websites, scale your online presence with strategies designed to scale. Our solutions create dynamic, secure, reliable platforms with seamless user experience.",
+          link: "/ae/services/web-development-company-in-dubai",
         },
         {
           title: "App Development",
           description:
             "Increase user engagement and conversions with mobile applications modeled for your brand. We provide result-oriented solutions with enhanced user experience and suitable features aligned with your industry.",
+          link: "/ae/services/web-development-company-in-dubai",
         },
         {
           title: "UI/UX Designing",
           description:
             "The experience you provide your users matters. Bespoke user-centered UI/UX can help you reverse low conversion rates, high drop-offs, and design-related confusion. Give a butter-smooth user experience that drives conversions.",
+          link: "/ae/services/web-development-company-in-dubai",
         },
       ],
     },
@@ -105,26 +114,31 @@ function useWorks() {
           title: "Strategization",
           description:
             "Customized marketing strategies that align with industry trends.",
+          link: "/contact",
         },
         {
           title: "Creatives Development",
           description:
             "Engaging content to drive conversions and audience interaction.",
+          link: "/contact",
         },
         {
           title: "Campaign Initiation",
           description:
             "Unique campaigns based on brand goals, audience, and platforms.",
+          link: "/contact",
         },
         {
           title: "Conversion Rate Optimization",
           description:
             "Turn traffic into revenue with targeted CRO strategies.",
+          link: "/contact",
         },
         {
           title: "WhatsApp Marketing",
           description:
             "Leverage WhatsApp for direct and efficient marketing engagement.",
+          link: "/contact",
         },
       ],
     },
@@ -143,26 +157,31 @@ function useWorks() {
           title: "Strategization",
           description:
             "While other agencies give you strategies that work, we give you customized strategies that are in trend with your industry.  We don’t just bring in potential audiences but focus on strategies that retain your existing user base.",
+          link: "/services/performance-marketing-agency-in-kerala",
         },
         {
           title: "Creatives Development",
           description:
             "Keep your audience engaged with authentic and captivating content that drives conversions and sales. We constantly adjust our strategies based on evolving trends among your audience.",
+          link: "/services/performance-marketing-agency-in-kerala",
         },
         {
           title: "Campaign Initiation",
           description:
             "We craft campaigns unique to your brand based on your goals, target audience, and platforms. Our creative campaigns bring out your brand message that resonates with your audience.",
+          link: "/services/performance-marketing-agency-in-kerala",
         },
         {
           title: "Conversion Rate Optimization",
           description:
             "Turn your traffic into revenue with strategies that drive conversions. CRO strategies look different for each brand and we craft strategies tailored to your goals.",
+          link: "/services/performance-marketing-agency-in-kerala",
         },
         {
           title: "WhatsApp Marketing",
           description:
             "Make the world’s top messaging app your best ally in marketing. With our personalized strategies, you can forge better and more efficient ties with your audience.",
+          link: "/services/performance-marketing-agency-in-kerala",
         },
       ],
     },
@@ -181,31 +200,37 @@ function useWorks() {
           title: "On-Page SEO",
           description:
             "Our SEO team makes sure that you are visible online to your users. With extensive keyword research, we help you integrate keywords into your title tags, meta tags, and more that help your users find you easily.",
+          link: "/services/seo-company-in-kerala",
         },
         {
           title: "Off-Page SEO",
           description:
             "Increase your site reputation, ranking, and credibility with our Off-Page SEO efforts. We post blogs on PR sites, list on directories, stay active on social media, and more to boost visibility.",
+          link: "/services/seo-company-in-kerala",
         },
         {
           title: "Technical SEO",
           description:
             "The infrastructure of your website impacts ranking and that’s why you’ve got us. Our technical SEO solutions help you attract organic traffic and convert it via auditing and adjusting the technical aspects for enhanced performance.",
+          link: "/services/seo-company-in-kerala",
         },
         {
           title: "UI/UX Design",
           description:
             "A smooth and easy user experience makes or breaks your website. We craft a web design tailored to your brand to make it immersive and easy to navigate for your potential audience.",
+          link: "/services/seo-company-in-kerala",
         },
         {
           title: "Conversion Rate Optimization",
           description:
             "Our seasoned team constantly reviews the UI/UX for improvements and adjusts the elements that help convert your potential audience. All our CRO strategies are crafted according to your industry, goals, and audience.",
+          link: "/services/seo-company-in-kerala",
         },
         {
           title: "Content Development",
           description:
             "Keep your audience entertained with creative and relatable content that engages and ultimately converts. We help you stay in trend and scale revenue.",
+          link: "/services/seo-company-in-kerala",
         },
       ],
     },
@@ -220,26 +245,31 @@ function useWorks() {
           title: "Influencer Marketing",
           description:
             "Thousands of influencers are on the scene but which one is right for you? We at Haris&Co., help you collaborate with personalities that are the best fit for your brand. After a detailed analysis of your brand, goals, and target audience we reach out to influencers best suited for you.",
+          link: "/contact",
         },
         {
           title: "Offline Influencer Activation Campaigns",
           description:
             "Our marketing efforts are not just on your screens. With the help of well-known influencers we build hype and increase attendance for events, launches and more.",
+          link: "/contact",
         },
         {
           title: "Campaign Planning",
           description:
             "Launch ad campaigns on your platforms with internet personalities. Every campaign that we conduct for your brand is an effort made after detailed research on audience, industry, and current trends.",
+          link: "/contact",
         },
         {
           title: "Podcast",
           description:
             "One of the most viral modes of entertainment is podcasts. We help your brand get heard and seen on the most listened to podcasts in your industry.",
+          link: "/contact",
         },
         {
           title: "Casting",
           description:
             "Want a familiar face in your ads? We’ve got you covered. We help you connect with the top internet celebrities in your video content.",
+          link: "/contact",
         },
       ],
     },
@@ -255,36 +285,43 @@ function useWorks() {
           title: "Social Media Strategy Development",
           description:
             "Our expert Social Media Marketers develop a customized strategy for content, campaigns, designs, and more for your brand. Make your content memorable and entertaining for your current and potential user base, ultimately driving conversions.",
+          link: "/contact",
         },
         {
           title: "Content Creation",
           description:
             "Our copywriters and designers come together to create scroll-stopping content that keeps your audience engaged. Every content here at Haris&Co. is designed with care and love, showcasing your brand essence and relating to your audience.",
+          link: "/contact",
         },
         {
           title: "Page & Community Management",
           description:
             "Just posting content is not enough for your brand. Staying in the loop with your audience is crucial for driving growth. We actively monitor and engage with your followers, providing customer support services, promoting your brand image, and sourcing user-generated content (UGC).",
+          link: "/contact",
         },
         {
           title: "Analytics & Reporting",
           description:
             "We constantly analyze performance data to ensure that the content we post has made an impact and that the strategies are working. We also provide a detailed performance review report to show the difference our content makes for your brand.",
+          link: "/contact",
         },
         {
           title: "AI-Powered Chat Automation",
           description:
             "With AI-assisted chats, we provide instant feedback to customers that reach out to you. We set AI-driven responses to deliver personalized messages aligned with your brand to ensure consistency and a human feel to all conversations.",
+          link: "/contact",
         },
         {
           title: "Paid Campaigns",
           description:
             "Paid Ad Campaigns on social media platforms help you reach newer demographics than your existing audience. Our marketers create and manage data-driven, targeted ad campaigns across social media platforms. Our solutions drove measurable results within a given time frame.",
+          link: "/contact",
         },
         {
           title: "Organic Campaigns",
           description:
             "Tap into where your user base is the most active with strategic content creation and community engagement. Our skilled marketers help build your brand presence naturally, grow an organic following, and foster authentic connections online.",
+          link: "/contact",
         },
       ],
     },
@@ -300,51 +337,61 @@ function useWorks() {
           title: "Video Campaigns",
           description:
             "Tell your brand story in every frame with Haris&Co. With tailored video concepts we help your brand get seen and heard.",
+          link: "/contact",
         },
         {
           title: "Theatre Ads",
           description:
             "Showcase your brand on the big screen with us. We pack a punch in our short yet highly engrossing theatre ads. Let your brand be the talk in packed cinema halls with Haris&Co.!",
+          link: "/contact",
         },
         {
           title: "Digital Ads",
           description:
             "Most of the world is online and what better place than this to advertise your brand? Our digital ads are customized to display your brand to your target audience and boost conversions.",
+          link: "/contact",
         },
         {
           title: "Commercials",
           description:
             "Connect with your audience with commercials that captivate and show your unique brand story. Our team brings your brand to your target audience with fun and quirky commercial ads.",
+          link: "/contact",
         },
         {
           title: "UGC Content",
           description:
             "Promote your brand with visual content from real users online. User-generated content is one of the best ways to promote brand loyalty and image. Our creative team helps you connect with users and craft content that aligns with your industry and audience.",
+          link: "/contact",
         },
         {
           title: "Product Photography",
           description:
             "Get dedicated product photoshoots to bring your products to the spotlight. Our product photoshoots create a visual narrative for your audience about your brand.",
+          link: "/contact",
         },
         {
           title: "Fashion Photos",
           description:
             "Build your brand aesthetic with dedicated photoshoots for your fashion products. Our skilled team connects you with models who would bring your clothing line to life with unique photoshoots.",
+          link: "/contact",
         },
         {
           title: "Corporate Videos",
           description:
             "Advertise and promote your company with cinematic visuals that tell your office story. Our cinematic corporate videography captures your brand identity and work culture.",
+          link: "/contact",
         },
         {
           title: "Food Photography",
           description:
             "Create mouth-watering visual experiences for your customers with our custom food photography services. We create irresistible photoshoots that make your audience want more.",
+          link: "/contact",
         },
         {
           title: "Personal Branding Videos",
           description:
             "Introduce your audience to your authentic and driven self with tailored video content. Our personal branding videography helps you promote trust and connect with your audience by showcasing what you bring to the table and your expertise in your field.",
+          link: "/contact",
         },
       ],
     },

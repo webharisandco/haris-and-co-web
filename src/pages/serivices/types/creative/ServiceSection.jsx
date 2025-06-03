@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
-function ServiceSection({  currentService }) {
-  const [visibleServices, setVisibleServices] = useState( currentService?.offerings);
+function ServiceSection({ currentService }) {
+  const [visibleServices, setVisibleServices] = useState(
+    currentService?.offerings
+  );
 
   useEffect(() => {
     const handleResize = () => {
@@ -35,10 +38,12 @@ function ServiceSection({  currentService }) {
               {service?.description}
             </p>
             <div className="flex gap-[10px] h-full items-end">
-              <p className="text-[20px] text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">
-                Let’s talk
-                <ArrowRight className="" size={25} />
-              </p>
+              <Link to={service.link}>
+                <p className="text-[20px] text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]">
+                  Let’s talk
+                  <ArrowRight className="" size={25} />
+                </p>
+              </Link>
             </div>
           </div>
         ))}
