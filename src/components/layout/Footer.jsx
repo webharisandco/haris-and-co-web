@@ -20,24 +20,45 @@ const Footer = () => {
           </div>
           <div className="flex justify-between gap-4 sm:gap-5 md:gap-6">
             <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
-              <img
-                src={facebookIcon}
-                alt="facebook Icon"
-                className="max-w-max"
-              />
+              <a
+                href="https://www.facebook.com/harisandconsulting"
+                target="_blank"
+              >
+                <img
+                  src={facebookIcon}
+                  alt="facebook Icon"
+                  className="max-w-max"
+                />
+              </a>
             </div>
             <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
-              <img
-                src={linkedInIcon}
-                alt="linked in Icon"
-                className="max-w-max"
-              />
+              <a
+                href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fharisand-co%2Fmycompany%2Fverification%2F"
+                target="_blank"
+              >
+                <img
+                  src={linkedInIcon}
+                  alt="linked in Icon"
+                  className="max-w-max"
+                />
+              </a>
             </div>
             <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
-              <img src={xIcon} alt="x icon" className="max-w-max" />
+              <a
+                href="https://x.com/i/flow/login?redirect_after_login=%2Fharisand_co"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={xIcon} alt="x icon" className="max-w-max" />
+              </a>
             </div>
             <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
-              <img src={instaIcon} alt="insta icon" className="max-w-max" />
+              <a
+                href="https://www.instagram.com/harisand.co/?hl=en"
+                target="_blank"
+              >
+                <img src={instaIcon} alt="insta icon" className="max-w-max" />
+              </a>
             </div>
           </div>
         </div>

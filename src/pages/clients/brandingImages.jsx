@@ -1,5 +1,5 @@
 import React from "react";
-import img5 from "../../assets/images/marketing/img5.png";
+import img5 from "../../assets/images/marketing/new.svg";
 import Br1 from "../../assets/images/marketing/br1.svg";
 import Br2 from "../../assets/images/marketing/br2.svg";
 import Br3 from "../../assets/images/marketing/br3.svg";

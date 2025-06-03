@@ -9,11 +9,11 @@ export default function Careers() {
             <Banner />
             <WhyWork />
             <div className="bg-black  px-[16px] n md:px-[80px] py-[55px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 xl:gap-6">
-                <JobCard />
-                <JobCard />
-                <JobCard className="hidden lg:flex"/>
-                <JobCard className="hidden lg:flex"/>
-                <JobCard className="hidden lg:flex"/>
+                <JobCard jobName={"Graphic Designer"} />
+                <JobCard jobName={"Graphic Designer"} />
+                <JobCard jobName={"Graphic Designer"} className="hidden lg:flex"/>
+                <JobCard jobName={"Graphic Designer"} className="hidden lg:flex"/>
+                <JobCard jobName={"Graphic Designer"}  className="hidden lg:flex"/>
             </div>
         </div>
     )
