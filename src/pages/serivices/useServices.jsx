@@ -1,11 +1,12 @@
-import Branding1 from "@/assets/images/servicesSection/branding1.svg";
-import Branding2 from "@/assets/images/servicesSection/branding2.svg";
-import Branding3 from "@/assets/images/servicesSection/branding3.svg";
+import Branding from "@/assets/images/servicesSection/branding.png";
+import Web from "@/assets/images/servicesSection/web.png";
+import Crtv from "@/assets/images/servicesSection/crtv.png";
 // import Branding4 from "@/assets/images/servicesSection/branding4.svg";
-import Branding5 from "@/assets/images/servicesSection/branding5.svg";
-import Branding6 from "@/assets/images/servicesSection/branding6.svg";
-import Branding7 from "@/assets/images/servicesSection/branding7.svg";
-import Branding8 from "@/assets/images/servicesSection/branding8.svg";
+import Perfomance from "@/assets/images/servicesSection/perf.png";
+import Production from "@/assets/images/servicesSection/prdtn.png";
+import Seo from "@/assets/images/servicesSection/seo.png";
+import SocialMedia from "@/assets/images/servicesSection/smm.png";
+import Influencers from "@/assets/images/servicesSection/influencer.png";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -46,7 +47,7 @@ function useServices() {
         icon: icon,
         link: "branding",
       },
-      image: Branding1,
+      image: Branding,
     },
     {
       id: "web-development",
@@ -64,7 +65,7 @@ function useServices() {
         icon: icon,
         link: "web-development",
       },
-      image: Branding2,
+      image: Web,
     },
     {
       id: "creative",
@@ -83,7 +84,7 @@ function useServices() {
         icon: icon,
         link: "creative",
       },
-      image: Branding3,
+      image: Crtv,
     },
     // {
     //   id: "digital",
@@ -122,7 +123,7 @@ function useServices() {
         icon: icon,
         link: "performance",
       },
-      image: Branding5,
+      image: Perfomance,
     },
     {
       id: "production",
@@ -146,7 +147,7 @@ function useServices() {
         icon: icon,
         link: "production",
       },
-      image: Branding6,
+      image: Production,
     },
     {
       id: "seo",
@@ -166,7 +167,7 @@ function useServices() {
         icon: icon,
         link: "seo",
       },
-      image: Branding7,
+      image: Seo,
     },
     {
       id: "social-media",
@@ -187,7 +188,7 @@ function useServices() {
         icon: icon,
         link: "social-media",
       },
-      image: Branding8,
+      image: SocialMedia,
     },
     {
       id: "influencer-marketing",
@@ -206,7 +207,7 @@ function useServices() {
         icon: icon,
         link: "influencer-marketing",
       },
-      image: Branding8,
+      image: Influencers,
     },
   ];
 
