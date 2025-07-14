@@ -3,8 +3,9 @@ import image1 from "@/assets/images/awards/image1.png";
 import image2 from "@/assets/images/awards/image2.png";
 import image3 from "@/assets/images/awards/image3.png";
 import image4 from "@/assets/images/awards/image4.png";
-import image5 from "@/assets/images/awards/image5.png";
+import image5 from "@/assets/images/awards/pepper-award.JPG";
 import brand from "@/assets/images/awards/brand.png";
+import peperLogo from '@/assets/images/awards/peperLogo.jpg'
 
 export default function useAwards() {
   const awardContent = [
@@ -41,7 +42,7 @@ export default function useAwards() {
       title: "Pepper Awards",
       date: "2023",
       desc: "Our Women’s Day campaign for Femisafe was a milestone moment as it received the Silver at the Pepper Awards, one of South India’s prestigious awards.",
-      brandImg: brand,
+      brandImg: peperLogo,
     },
     {
       image: image1,
