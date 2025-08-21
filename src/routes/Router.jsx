@@ -31,6 +31,22 @@ import BlogDetails from "@/pages/blog/blogDetails";
 import Clients from "@/pages/clients";
 
 const AppRouter = () => {
+  const routes = [
+    "branding",
+    "web-development",
+    "creative",
+    "digital",
+    "performance",
+    "shama-perfumes",
+    "med7online",
+    "algate",
+    "amend-dental",
+    "riso-detergents",
+    "mall-of-mukkam",
+    "organic-netra",
+    "production",
+    "social-media",
+  ];
   return (
     <Routes>
       <Route path="/">
@@ -120,15 +136,9 @@ const AppRouter = () => {
           {/* <Route path='marketing' element={<Marketing />} /> */}
           <Route path="works" element={<Works />} />
           <Route path="works">
-            <Route path="all" element={<WorkBranding />} />
-            <Route path="branding" element={<WorkBranding />} />
-            <Route path="web-development" element={<WorkBranding />} />
-            <Route path="creative" element={<WorkBranding />} />
-            <Route path="digital" element={<WorkBranding />} />
-            <Route path="performance" element={<WorkBranding />} />
-            <Route path="production" element={<WorkBranding />} />
-            <Route path="seo" element={<WorkBranding />} />
-            <Route path="social-media" element={<WorkBranding />} />
+            {routes.map((path) => (
+              <Route key={path} path={path} element={<WorkBranding />} />
+            ))}
           </Route>
           {/* <Route path='branding' element={<Branding />} /> */}
           <Route path="clients" element={<Clients />} />

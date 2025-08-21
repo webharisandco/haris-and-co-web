@@ -6,12 +6,12 @@ import BlogDiv from "./BlogDiv";
 
 function BlogDetails() {
 
-  const { blogs } = useBlogDetails()
+  const { blogs,blogContent } = useBlogDetails()
 
   return (
     <div className="bg-black">
       <Banner />
-      <BlogDiv />
+      <BlogDiv blogContent={blogContent}/>
       <RelatedBlogs blogs={blogs} />
     </div>
   );
