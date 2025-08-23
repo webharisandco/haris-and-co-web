@@ -11,14 +11,14 @@ function Banner() {
         <p className="text-[32px] lg:text-[55px] 2xl:text-[64px] text-white font-[helvetica-medium]">
           Clients
         </p>
-        <p className="text-white text-[24px] lg:text-[38px] font-[thin] ">
+        <p className="text-white text-[24px] lg:text-[38px] font-[HelveticaNeue] ">
           Meet the names that trusted us to deliver creativity, <br />{" "}
           innovation, and diligence to their success stories.
         </p>
       </div>
-      <div className="w-full mt-[20px] flex flex-col lg:flex-row justify-between  items-end gap-[20px] md:gap-[52px] mb-[74px] lg:mb-[114px]">
+      <div className="w-full mt-[20px] flex flex-col lg:flex-row justify-between  items-end gap-[20px] md:gap-[px] mb-[74px] lg:mb-[114px]">
         <img
-          className=" w-full lg:w-[300px] h-fit object-cover lg:object-contain"
+          className=" w-full lg:w-[280px] h-fit object-cover lg:object-contain"
           src={img1}
           alt=""
         />
