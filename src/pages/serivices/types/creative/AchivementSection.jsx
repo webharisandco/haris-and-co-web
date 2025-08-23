@@ -16,7 +16,7 @@ function AchivementSection({ currentService }) {
   return (
     <div className=" mt-[30px] lg:mt-[85px] mb-[30px] lg:mb-[53px] w-full px-[16px]">
       <div className="flex justify-center text-center">
-        <p className="text-black text-[32px] lg:text-[40px] xl:text-[45px] 3xl:text-[48px] leading-none ">
+        <p className="text-black text-[32px] xl:leading-[59px] lg:text-[40px] xl:text-[45px] 3xl:text-[48px] leading-none ">
           {formatDescription(currentService?.description)}
         </p>
       </div>

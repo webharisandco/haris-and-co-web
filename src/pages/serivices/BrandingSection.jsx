@@ -32,19 +32,19 @@ function BrandingSection({ BrandingContents }) {
                     {brandingContent.description}
                   </p>
                 </div>
-                <div>
+                <div className="xl:ml-[15px]">
                   <ul className="grid list-disc list-outside grid-cols-3 gap-[10px] 3xl:gap-7 text-[15px] 3xl:text-[24px]">
                     {brandingContent.services.map((service, serviceIndex) => (
                       <li
                         key={serviceIndex}
-                        className="text-black/70 font-[300] leading-snug"
+                        className="text-black/70 font-light leading-snug"
                       >
                         {service}
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="mt-[30px]">
+                <div className="mt-[30px] xl:ml-[-5px]">
                   <Link
                     to={brandingContent.action.link}
                     className="text-black/55 font-[helvetica-medium] hover:text-black transition-all duration-300  flex items-center gap-2 3xl:text-[24px]"

@@ -34,7 +34,7 @@ function ServiceSection({ currentService }) {
             <p className="text-[26px] font-[helvetica-medium]">
               {service?.title}
             </p>
-            <p className="text-[16px] font-[Helvetica-Light]">
+            <p className="text-[16px] xl:leading-[29px] font-[Helvetica-Light]">
               {service?.description}
             </p>
             <div className="flex gap-[10px] h-full items-end">
@@ -48,7 +48,7 @@ function ServiceSection({ currentService }) {
           </div>
         ))}
       </div>
-      <div className="flex justify-center gap-[10px] items-center my-[50px]">
+      {/* <div className="flex justify-center gap-[10px] items-center my-[50px]">
         <p className="text-[18px]  text-black/55 hover:text-black font-[thin]">
           Explore All Services
         </p>
@@ -56,7 +56,7 @@ function ServiceSection({ currentService }) {
           className="text-black/55 hover:black transition-all duration-300"
           size={23}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

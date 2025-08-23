@@ -30,7 +30,7 @@ export default function NormalHeader() {
           <img
             src={Logo}
             alt="Haris & Co."
-            className="max-w-fit h-[30px] xl:h-[50px] 2xl:h-[66px]"
+            className="max-w-fit h-[30px] xl:h-[45px] xl:w-[275px] 2xl:h-[45px]"
           />
         </Link>
       </div>
