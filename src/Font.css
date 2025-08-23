@@ -6,6 +6,12 @@
     font-display: swap;
 }
 @font-face {
+    font-family: HelveticaNeue;
+    src: local('HelveticaNeueThin'),
+        url(./Font/HelveticaNeueThin.otf) format('opentype');
+    font-display: swap;
+}
+@font-face {
     font-family: thinItalic;
     src: local('HelveticaNeueLightItalic'),
         url(./Font/HelveticaNeueLightItalic.otf) format('opentype');

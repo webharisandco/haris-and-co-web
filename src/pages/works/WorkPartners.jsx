@@ -24,7 +24,7 @@ function WorkPartners({ourWorksData,filteredElement}) {
               <p className="font-medium text-white tracking-tighter text-[24px] my-[15px] md:my-0 md:text-[36px] text-left ml-[-11px]">
                 {data.heading}
               </p>
-              <p className="text-white ml-[-5px] lg:ml-0 font-[thin] opacity-55 text-left text-[16px] md:text-[24px]">
+              <p className="text-white ml-[-5px] lg:ml-0 font-[Helvetica-Light] opacity-55 text-left text-[16px] md:text-[24px]">
                 {data.description}
               </p>
             </div>
