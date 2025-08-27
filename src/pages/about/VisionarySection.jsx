@@ -7,7 +7,7 @@ export default function VisionarySection() {
         <div className='bg-[#0E0E0E] text-white flex flex-col items-center py-[50px] lg:py-[80px] px-[16px] md:px-[80px] gap-[220px]  lg:gap-[80px] xl:gap-[100px] '>
             <h4 className='text-[30px] text-40px mb-8 md:mb-0' >Meet the Visionary Behind the Brand</h4>
             <div className="flex flex-col lg:flex-row gap-20">
-                <div className="lg:w-1/2 bg-[#212121] flex flex-col md:flex-row h-[550px] md:h-[500px] lg:h-[320px] 3xl:h-[450px] relative">
+                <div className="lg:w-1/2 bg-[#212121] flex flex-col md:flex-row h-[550px] md:h-[500px] lg:h-[350px] 3xl:h-[450px] relative">
                     <div className="md:w-7/12  h-1/2 md:h-full relative">
                         <img src={humanprenuerImg} alt="" className='absolute w-full lg:w-auto bottom-0  md:bottom-[0]  lg:h-[500px]  xl:h-[550px] 3xl:h-[650px]  3xl:w-full object-cover  md:-left-2 ' />
                     </div>
@@ -15,13 +15,13 @@ export default function VisionarySection() {
                         <div className="flex  flex-col-reverse md:flex-col justify-end md:justify-between h-full ">
                             <div className="z-10 px-3 my-auto lg:my-0">
                                 <p className='text-[20px] 3xl:text-[24px] text-white/45 font-[thin] leading-none mb-2 '>Author of</p>
-                                <h6 className='text-[48px] lg:text-48px leading-none'>Humanprenuer</h6>
+                                <h6 className='text-[40px] xl:text-48px leading-none'>Humanprenuer</h6>
                             </div>
                             <img src={tedImg} alt="" className='z-10 w-full md:w-3/4 lg:w-[200px] xl:w-full' />
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-1/2 flex flex-col justify-between">
+                <div className="lg:w-1/2 flex flex-col gap-[30px] justify-between">
                     <p className='text-[20px] md:text-[21px] 3xl:text-[24px] font-[thinItalic] tracking-tight leading-snug' >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                     <div cslassName="">
                         <p className='text-[28px]' >Haris Aboobacker</p>
