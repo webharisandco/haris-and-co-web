@@ -24,7 +24,7 @@ export default function MobileMenu({ isOpen,toggleMenu }) {
                 <Link to="/blogs" className="text-[18px] font-[thin]" onClick={toggleMenu}>Blogs</Link>
                 <Link to="/career" className="text-[18px] font-[thin]" onClick={toggleMenu}>Careers</Link>
             </div>
-            <ContactButton text='Contact Us' href='/contact' />
+            <ContactButton toggleMenu={toggleMenu} text='Contact Us' href='/contact' />
 
         </div>
     )

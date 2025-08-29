@@ -1,54 +1,47 @@
 import React from "react";
-import image1 from "@/assets/images/awards/image1.png";
-import image2 from "@/assets/images/awards/image2.png";
-import image3 from "@/assets/images/awards/image3.png";
-import image4 from "@/assets/images/awards/image4.png";
+import image1 from "@/assets/images/awards/awards1.jpeg";
+import image2 from "@/assets/images/awards/awards2.jpeg";
+import image3 from "@/assets/images/awards/awards3.jpeg";
+import image4 from "@/assets/images/awards/awards4.jpeg";
+import image6 from "@/assets/images/awards/awards6.jpg";
 import image5 from "@/assets/images/awards/pepper-award.JPG";
 import brand from "@/assets/images/awards/brand.png";
-import peperLogo from '@/assets/images/awards/peperLogo.jpg'
+import peperLogo from "@/assets/images/awards/peperLogo.jpg";
 
 export default function useAwards() {
   const awardContent = [
     {
       image: image1,
-      title: "Afaqs! startup brands ",
+      title: "Afaqs! startup brands Silver ",
       date: " 2023",
-      desc: "Our Valentine’s Day Campaign bagged the afaqs! Silver award under the category, ‘Best Use of Video on Social Media’.",
+      desc: "Love was in the air, and so was our Valentine’s Day Campaign for Haris&Co! The content struck a chord with audiences, making hearts smile and feeds light up with joy. All that love earned us the silver award from Afaqs! for ‘Best Use of Video on Social Media’, a recognition that celebrated the playful spirit and emotional connect of the campaign.",
       brandImg: brand,
+    },
+    {
+      image: image6,
+      title: "Afaqs! startup brands Silver",
+      date: "2023",
+      desc: "Mother’s Day felt extra special with our campaign for Craftise, a crafting materials supplier. It celebrated the little handmade moments and the joy of gifting that make mothers feel truly appreciated. All that love was recognized with a silver award for ‘Best Branded Content’.",
+      brandImg: peperLogo,
     },
     {
       image: image2,
-      title: "Afaqs! startup brands ",
+      title: "Afaqs! startup brands Silver ",
       date: "2023",
-      desc: "The Mother’s Day campaign we crafted for Craftise, a crafting materials supplier, was loved by the audience and received the afaqs! Silver award for ‘Best Branded Content’.",
-      brandImg: brand,
+      desc: "Every woman runs her own race, and our Women’s Day campaign for Femisafe honored that journey with honesty and emotion. The campaign sparked conversations, built connection, and was awarded the silver for ‘Best Moment Marketing’.",
     },
     {
       image: image3,
-      title: "Afaqs! startup brands ",
+      title: "Pepper Awards - Silver ",
       date: "2023",
-      desc: "Our impactful Women’s Day campaign for Femisafe, a women’s hygiene products company, went on to bag the afaqs! Silver award for ‘Best Moment Marketing’.",
+      desc: "A touch of Pepper only made us stronger. Our campaign for Femisafe won over the jury at the prestigious Pepper Awards, bringing home a Silver that celebrated creativity, precision, and the impact of meaningful storytelling.",
       brandImg: brand,
     },
     {
       image: image4,
-      title: "Afaqs! startup brands ",
+      title: "Brand Storyz - Bronze ",
       date: "2023",
-      desc: "The Women’s Day campaign for Femisafe was so beloved that we also bagged the afaqs! Bronze award for ‘Best Social Media Campaign’.",
-      brandImg: brand,
-    },
-    {
-      image: image5,
-      title: "Pepper Awards",
-      date: "2023",
-      desc: "Our Women’s Day campaign for Femisafe was a milestone moment as it received the Silver at the Pepper Awards, one of South India’s prestigious awards.",
-      brandImg: peperLogo,
-    },
-    {
-      image: image1,
-      title: "Brand Storyz",
-      date: "2023",
-      desc: "Our campaign for Kiddiebus, a kid's English learning platform that generated 7k+ leads, was celebrated with a Bronze afaqs! award for ‘Best Lead Generation Campaign’.",
+      desc: "Our campaign for Kiddiebus, an English learning platform for kids, transformed learning into an adventure. With playful, engaging content, we generated over 7,000 leads—earning a bronze award for ‘Best Lead Generation Campaign’ from Afaqs!.",
       brandImg: brand,
     },
   ];

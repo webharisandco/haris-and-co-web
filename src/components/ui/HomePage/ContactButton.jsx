@@ -4,14 +4,15 @@ import { RightArrow } from "@/assets/images/icons/RightArrow";
 import RightSmallArrow from '@/assets/images/icons/rightArrow.png'
 
 
-export default function ContactButton({ text, href }) {
+export default function ContactButton({ text, href, toggleMenu }) {
     return (
         <div className="flex items-center ">
             <Link
+           
                 to={href}
                 className="group relative overflow-hidden text-[18px] text-white transition-colors duration-300 ease-in-out "
             >
-                <div className="px-[22px] py-[12px] flex items-center gap-[10px] border border-solid border-white  group-hover:bg-white group-hover:ps-[20px] group-hover:pr-[20px] group-hover:text-black w-[175px]">
+                <div  onClick={toggleMenu} className="px-[22px] py-[12px] flex items-center gap-[10px] border border-solid border-white  group-hover:bg-white group-hover:ps-[20px] group-hover:pr-[20px] group-hover:text-black w-[175px]">
                     <span className="transition-all duration-500 ease-in-out  group-hover:-translate-x-2 text-nowrap">
                         {text}
                     </span>
