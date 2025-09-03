@@ -5,10 +5,10 @@ import BannerImg3 from "@/assets/images/career/bnr3.jpg";
 
 function Banner() {
   return (
-    <div className="px-[16px] md:px-[80px] min-h-[632px] py-[50px] lg:min-h-[823px] flex gap-10 3xl:gap-20 flex-col lg:flex-row justify-center items-center bg-[#0E0E0E]">
+    <div className="px-[16px] pt-[150px] md:pt-0 md:px-[80px] min-h-[632px] py-[50px] lg:min-h-[823px] flex gap-10 3xl:gap-20 flex-col lg:flex-row justify-center items-center bg-[#0E0E0E]">
       <div className=" flex flex-col gap-[20px]  lg:w-1/2 justify-center">
         <p className="text-white text-[32px] text-64px">Careers</p>
-        <p className="text-[24px] text-48px text-white  font-[thin] leading-none">
+        <p className="text-[24px] leading-[40px] xl:text-[48px] text-white  font-[thin] md:leading-none">
           Are you passionate about helping brands grow with creative strategies?{" "}
           <br className="hidden md:block" /> Join us in becoming a changemaker
           for brands.
