@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import useBlogs from './useBlogs';
 import BlogDiv from './BlogDiv';
 
-export default function BlogSection() {
-    const { blogContent } = useBlogs()
+export default function BlogSection({blogContent}) {
 
     const [selectedBlog, setSelectedBlog] = useState(0);
     const blogTypes = ['All Works', 'Branding', 'Web Development & UI/UX', 'Creative', "Digital PR & Communication", "Performance Marketing", "Production", "SEO", "Social Media"];
@@ -24,6 +23,7 @@ export default function BlogSection() {
                 <div className="grid grid-rows-2 grid-cols-6 gap-8 gap-y-16">
                     {blogContent.map((blog, idx) => (
                         <BlogDiv
+                        link={blog?.link}
                             img={blog.img}
                             title={blog.title}
                             type={blog.type}

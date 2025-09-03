@@ -1,0 +1,248 @@
+import React, { useState } from "react";
+import img2 from "@/assets/images/blogDetails/health2.jpg";
+import img3 from "@/assets/images/blogDetails/health3.1.png";
+
+export default function BlogDiv() {
+  const [show, setShow] = useState(false);
+
+  return (
+    <div className="flex gap-5 md:gap-[30px] h-fit px-[16px] md:px-[80px] py-[50px] bg-white">
+      <div className="lg:w-2/3 flex flex-col gap-5">
+        {/* Intro Paragraph */}
+        <p className="font-[thin]">
+          Now, let’s explore how digital marketing empowers healthcare
+          providers.
+        </p>
+
+        {/* Expandable Content */}
+        <div
+          className={`flex flex-col gap-5 overflow-hidden transition-all duration-500 ease-in-out ${
+            show ? "max-h-[6000px] opacity-100" : "max-h-0 opacity-0"
+          } lg:max-h-none lg:opacity-100`}
+        >
+          <h6 className="text-[22px] mt-5">
+            Building Trust Through Digital Channels
+          </h6>
+          <p className="font-[thin]">
+            Healthcare decisions are inherently personal and trust-based.
+            Digital marketing gives healthcare organisations powerful tools to
+            build and maintain this trust. Through carefully crafted content
+            marketing strategies, healthcare providers can:
+            <br />• Engage Patients with Educational Content: Share reliable,
+            scientifically supported health content that educates patients and
+            helps them make informed decisions.
+            <br />• Highlight Medical Expertise and Patient Success Stories:
+            Showcase the skills and qualifications of healthcare professionals,
+            as well as real-world examples of positive patient outcomes.
+            <br />• Provide Transparent Information About Treatments and
+            Procedures: Offer clear, accessible details about medical
+            treatments, procedures, and potential risks, fostering trust through
+            transparency.
+            <br />• Address Common Health Questions and Concerns: Answer
+            frequently asked questions to provide clarity and reduce patient
+            anxiety around specific health issues.
+            <br />• Offer Virtual Tours of Facilities: Provide virtual tours of
+            healthcare facilities, allowing patients to get a sense of the
+            environment and services before visiting in person.
+            <br />• Enable Online Appointment Scheduling and Telemedicine: Offer
+            the convenience of booking appointments online and accessing
+            healthcare services through telemedicine, improving patient
+            accessibility and convenience.
+          </p>
+
+          <h6 className="text-[22px] mt-5">
+            Strategic Digital Marketing Tools in Healthcare
+          </h6>
+          <p className="font-[thin]">
+            You can leverage various digital marketing tools to reach and engage
+            your target audience effectively. Here are they:
+          </p>
+
+          <h6 className="text-[20px] mt-3">Search Engine Optimization (SEO)</h6>
+          <p className="font-[thin]">
+            SEO is crucial for connecting patients with trusted healthcare
+            providers, especially as more individuals turn to online searches
+            for health information and services. Effective SEO boosts healthcare
+            providers’ visibility, builds trust, and ensures patients find the
+            care they need when they need it.
+          </p>
+
+          <h6 className="text-[18px] mt-3">Why SEO Matters in Healthcare</h6>
+          <p className="font-[thin]">
+            • Increased Visibility: Patients often start their healthcare
+            journey online. A strong SEO strategy ensures that your healthcare
+            services appear in their search results.
+            <br />• Targeted Traffic: By optimising for specific keywords like
+            "best paediatrician near me" or "emergency dental services,"
+            healthcare providers can attract the right audience.
+            <br />• Authority Building: High-quality, optimised content
+            establishes trust. Blogs, FAQs, and informative videos help position
+            healthcare providers as thought leaders.
+          </p>
+
+          <p className="italic text-gray-500">
+            “Good SEO in healthcare ensures that the right patients connect with
+            the right providers. It’s the key to staying visible, building
+            trust, and making a real impact.” — Our Lead SEO Analyst, Arunima
+          </p>
+
+          <p className="font-[thin]">
+            SEO has been transformative for one of our clients - a leading home
+            care provider in Abu Dhabi. With Haris&Co’s targeted strategy, our
+            client not only ranks higher in relevant search results, but also
+            has a steady stream of qualified leads from patients searching for
+            nursing, babysitting, and home care services.
+          </p>
+
+          <p className="font-[thin]">
+            <strong>Results:</strong>
+            <br />• babysitter in Abu Dhabi - 1st Position
+            <br />• home nursing services Abu Dhabi - 2nd Position
+            <br />• home care services in Abu Dhabi - 3rd Position
+          </p>
+
+          <p className="font-[thin]">
+            The results showcase how targeted SEO strategies can help healthcare
+            providers connect with their audience, improve engagement, and
+            become a reliable resource in their community.
+          </p>
+
+          <h6 className="text-[20px] mt-3">Social Media Marketing (SMM)</h6>
+          <p className="font-[thin]">
+            Social media has become an essential platform for healthcare brands
+            to connect meaningfully with their audiences, building trust and
+            fostering community engagement. According to ReferralMD, 41% of
+            people said social media would affect their choice of a specific
+            doctor, hospital, or medical facility.
+          </p>
+
+          <h6 className="text-[18px] mt-3">
+            The Role of Social Media in Healthcare
+          </h6>
+          <p className="font-[thin]">
+            • Patient Engagement: Platforms like Instagram, Facebook, and
+            LinkedIn help foster direct communication with patients.
+            <br />• Educational Content: Sharing tips on health management,
+            awareness campaigns, and updates on services boosts credibility.
+            <br />• Community Building: Social media allows organisations to
+            create supportive communities, especially for chronic disease
+            management or mental health awareness.
+          </p>
+
+          <h6 className="text-[18px] mt-3">
+            Best Practices for Healthcare Social Media
+          </h6>
+          <p className="font-[thin]">
+            • Platform-Specific Strategies: Use Instagram for visual
+            storytelling, LinkedIn for professional outreach, and Twitter for
+            real-time updates.
+            <br />• Compliance Awareness: Adhere to patient confidentiality and
+            data privacy laws like HIPAA or GDPR while engaging online.
+            <br />• Interactive Content: Host live Q&A sessions with doctors,
+            post engaging reels, or share patient success stories to increase
+            interaction.
+          </p>
+
+          <p className="font-[thin]">
+            Our approach to social media marketing demonstrates how a
+            well-thought-out strategy can transform a healthcare brand’s
+            presence and impact. Example: A pharmacy chain in Qatar increased
+            followers from 3,000 to 12,500 and boosted engagement from 10% to
+            85% in just 18 months through reels, contests, influencers, and
+            health awareness campaigns.
+          </p>
+
+          <h6 className="text-[20px] mt-3">Performance Marketing</h6>
+          <p className="font-[thin]">
+            Performance marketing, through paid campaigns, ensures that
+            healthcare organisations reach their audience with precision.
+          </p>
+
+          <h6 className="text-[18px] mt-3">Why Performance Marketing Works</h6>
+          <p className="font-[thin]">
+            • Targeted Campaigns: Tools like Google Ads and social media ad
+            platforms allow you to target demographics, behaviours, and
+            geolocations effectively.
+            <br />• Cost Efficiency: Performance marketing operates on a
+            pay-per-click (PPC) or pay-per-acquisition (PPA) basis, ensuring you
+            pay only for measurable results.
+            <br />• Real-Time Analytics: Detailed insights into ad performance
+            enable quick optimisation for better outcomes.
+          </p>
+
+          <p className="font-[thin]">
+            <strong>Results:</strong>
+            <br />
+            Ad Spend: 16.7k AED
+            <br />
+            Sales: 236k AED
+            <br />
+            ROAS: 14x
+          </p>
+
+          <p className="font-[thin]">
+            This demonstrates how performance marketing, when done right, can
+            drive substantial revenue and provide an excellent return on ad
+            spend.
+          </p>
+
+          <h6 className="text-[22px] mt-5">
+            Measuring Success in Healthcare Digital Marketing
+          </h6>
+          <p className="font-[thin]">
+            We help healthcare providers track and measure their digital
+            marketing success through:
+            <br />• Patient engagement metrics
+            <br />• Website traffic and conversion rates
+            <br />• Appointment scheduling analytics
+            <br />• Patient feedback and reviews
+            <br />• Social media engagement rates
+            <br />• Return on marketing investment
+          </p>
+
+          <h6 className="text-[22px] mt-5">
+            The Future of Healthcare Digital Marketing
+          </h6>
+          <p className="font-[thin]">
+            The healthcare digital marketing landscape continues to evolve with
+            emerging technologies and changing patient expectations. Key trends
+            include AI-powered patient communication tools, virtual reality
+            facility tours, mobile-first healthcare platforms, personalised
+            patient content, and telemedicine integration.
+          </p>
+
+          <p className="font-[thin] mt-3">
+            <strong>Final Words:</strong> Digital marketing has become a
+            cornerstone of modern healthcare delivery. The intersection of SEO,
+            social media marketing, and performance marketing creates a robust
+            framework for healthcare providers to thrive in the digital age. By
+            investing in these strategies, healthcare providers can not only
+            enhance their reach but also foster trust, educate patients, and
+            ensure measurable growth.
+          </p>
+
+          <p className="font-[thin]">
+            Do you want to take your healthcare marketing to the next level?
+            Let’s embrace the digital revolution together with Haris&Co. - your
+            partner in healthcare marketing success. Contact us to learn more
+            about our services.
+          </p>
+        </div>
+
+        {/* Read More / Read Less Button */}
+        <p
+          className="flex lg:hidden z-20 cursor-pointer text-blue-600 font-semibold"
+          onClick={() => setShow(!show)}
+        >
+          {show ? "Read Less" : "Read More"}
+        </p>
+      </div>
+
+      {/* Images Section */}
+      <div className="w-1/3 lg:flex flex-col gap-5 hidden">
+        <img src={img2} alt="Healthcare Digital Marketing" />
+        <img src={img3} alt="Healthcare Strategy" />
+      </div>
+    </div>
+  );
+}

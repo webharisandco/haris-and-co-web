@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function BlogDiv({ img, title, type, date, className }) {
+export default function BlogDiv({ img, title, type, date, className,link }) {
   return (
     // <Link to={'/blog/1'}>
-    <Link to={'/blogs/1'} className={`flex flex-col gap-5 md:gap-[30px] h-fit ${className} cursor-pointer`}>
+    <Link to={`/blogs/${link}`} className={`flex flex-col gap-5 md:gap-[30px] h-fit ${className} cursor-pointer`}>
       <img className="w-fit h-fit" src={img} alt="" />
       {/* <h6 className="text-[20px] hidden lg:block text-white/50">{type}</h6> */}
       <p className="text-[32px] lg:text-[40px] text-white lg:leading-[36px] tracking-tighter">{title}</p>
