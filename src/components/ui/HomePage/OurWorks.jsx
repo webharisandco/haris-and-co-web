@@ -36,7 +36,7 @@ function OurWorks() {
         ))}
       </div>
       <Link
-        href="/services"
+        to="/works"
         className="group text-[18px] text-black/55 border-b border-b-black/55 flex w-fit mx-auto gap-[11px] my-[56px] md:my-[150px] justify-center items-center hover:text-black hover:border-b-black transition-all duration-300"
       >
         <span className="">See Our Works</span>

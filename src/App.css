@@ -73,11 +73,13 @@ a {
 	background-color: white;
 	opacity: 1;
 }
-.swiper-pagination-black .swiper-pagination-bullet{
-	background-color: black!important;
+
+.swiper-pagination-black .swiper-pagination-bullet {
+	background-color: black !important;
 }
-.swiper-pagination-black .swiper-pagination-bullet-active{
-	background-color: black!important;
+
+.swiper-pagination-black .swiper-pagination-bullet-active {
+	background-color: black !important;
 }
 
 video::-webkit-media-controls-panel {
@@ -112,24 +114,24 @@ header {
 	}
 }
 
-.text-96px{
+.text-96px {
 	@apply lg:text-[70px] xl:text-[85px] 3xl:text-[96px];
 }
 
-.text-80px{
+.text-80px {
 	@apply lg:text-[60px] xl:text-[70px] 3xl:text-[80px];
 }
 
-.text-64px{
+.text-64px {
 	@apply lg:text-[48px] xl:text-[56px] 2xl:text-[59px] 3xl:text-[64px];
 }
 
-.text-48px{
+.text-48px {
 	@apply leading-[85px] text-[24px] lg:text-[40px] xl:text-[48px] 3xl:text-[48px];
 }
 
-.text-40px{
-	@apply  lg:text-[33px] xl:text-[36px] 3xl:text-[40px];
+.text-40px {
+	@apply lg:text-[33px] xl:text-[36px] 3xl:text-[40px];
 }
 
 
@@ -171,9 +173,19 @@ header {
 }
 
 .grid-bg {
-	background: 
-	  linear-gradient(to right, #ffffff0d 2px, transparent 2px),
-	  linear-gradient(to bottom, #ffffff0d 2px, transparent 2px);
+	background:
+		linear-gradient(to right, #ffffff0d 2px, transparent 2px),
+		linear-gradient(to bottom, #ffffff0d 2px, transparent 2px);
 	background-size: 180px 180px;
-  }
-  
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	/* Firefox */
+}

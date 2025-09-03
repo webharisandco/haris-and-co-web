@@ -76,7 +76,7 @@ export const BlogSection = () => {
               
               className="text-[18px]  text-opacity-[55%] "
             >
-              View All Testimonials
+              View All Blogs
             </span>
             <MoveRight size={30}  className='text-white/55 transition-all duration-300 group-hover:text-white'strokeWidth={1.8}/>
 {/* 
