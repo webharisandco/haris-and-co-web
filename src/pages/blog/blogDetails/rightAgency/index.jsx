@@ -1,17 +1,16 @@
 import React from "react";
 import Banner from "./Banner";
-import RelatedBlogs from "./RelatedBlogs";
-import useBlogDetails from "./useBlogDetails";
+import RelatedBlogs from "@/components/ui/blog/RelatedBlogs";
+import blogs from "@/utils/data/blogData";
 import BlogDiv from "./BlogDiv";
 
 function BlogDetails() {
 
-  const { blogs,blogContent } = useBlogDetails()
 
   return (
     <div className="bg-black">
       <Banner />
-      <BlogDiv blogContent={blogContent}/>
+      <BlogDiv />
       <RelatedBlogs blogs={blogs} />
     </div>
   );

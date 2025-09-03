@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./Banner";
-import RelatedBlogs from "./RelatedBlogs";
+import RelatedBlogs from "@/components/ui/blog/RelatedBlogs";
 import useBlogDetails from "./useBlogDetails";
 import BlogDiv from "./BlogDiv";
 

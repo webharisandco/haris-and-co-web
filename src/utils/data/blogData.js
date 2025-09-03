@@ -8,7 +8,7 @@ import blogImg7 from "../../assets/images/blogDetails/guide1.jpg";
 import blogImg8 from "../../assets/images/blogDetails/awardwinning1.jpg";
 import blogImg9 from "../../assets/images/blogDetails/dig-m1.jpg";
 
-export default function useBlogs() {
+
 const blogContent = [
   {
     img: blogImg1,
@@ -74,5 +74,5 @@ const blogContent = [
     link: "digital-marketing-difference",
   },
 ];
-  return { blogContent };
-}
+
+export default blogContent

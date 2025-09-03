@@ -28,6 +28,7 @@ import About from "@/pages/about";
 import Blog from "@/pages/blog";
 import Awards from "@/pages/awards";
 import BlogDetails from "@/pages/blog/blogDetails";
+
 import DigitalMarketing from "../pages/blog/blogDetails/digitamMarketingHealth";
 import AiRole from "../pages/blog/blogDetails/aiRole";
 import The7cs from "../pages/blog/blogDetails/the7cs";
@@ -36,6 +37,8 @@ import SmallBusiness from "../pages/blog/blogDetails/smallBusiness";
 import RightAgency from "../pages/blog/blogDetails/rightAgency";
 import UltimateGuide from "../pages/blog/blogDetails/ultimateGuide";
 import AwardWinning from "../pages/blog/blogDetails/awardWinning";
+import DifferenceFromTraditional from "../pages/blog/blogDetails/difference";
+
 import Clients from "@/pages/clients";
 
 const AppRouter = () => {
@@ -127,7 +130,10 @@ const AppRouter = () => {
           <Route path="awards" element={<Awards />} />
           <Route path="blogs" element={<Blog />} />
           {/* <Route path="blogs/:id" element={<BlogDetails />} /> */}
-          <Route path="blogs/digital-marketing-health" element={<DigitalMarketing />} />
+          <Route
+            path="blogs/digital-marketing-health"
+            element={<DigitalMarketing />}
+          />
           <Route path="blogs/ai-role" element={<AiRole />} />
           <Route path="blogs/the7cs" element={<The7cs />} />
           <Route path="blogs/roi" element={<Roi />} />
@@ -135,6 +141,10 @@ const AppRouter = () => {
           <Route path="blogs/right-agency" element={<RightAgency />} />
           <Route path="blogs/ultimate-guide" element={<UltimateGuide />} />
           <Route path="blogs/award-winning" element={<AwardWinning />} />
+          <Route
+            path="blogs/digital-marketing-difference"
+            element={<DifferenceFromTraditional />}
+          />
           <Route path="contact" element={<Contact />} />
           <Route path="career" element={<Careers />} />
           <Route path="services" element={<Services />} />

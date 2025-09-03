@@ -8,7 +8,7 @@ export default function RelatedBlogs({blogs}) {
                 {blogs.map((blog) => (
                     <div className="flex flex-col gap-[30px]">
                         <img className="w-fit h-fit" src={blog.img} alt="" />
-                        <p className="text-[20px] hidden lg:block text-white/50">{blog.titile}</p>
+                        <p className="text-[20px] hidden lg:block text-white/50">{blog.title}</p>
                         <p className="text-[24px] lg:text-[28px] text-white lg:leading-[36px]">{blog.heading}</p>
                         <p className="text-[20px] lg:text-[22px] block lg:hidden text-white/50">{blog.titile}</p>
                         <p className="text-[20px] hidden lg:block text-white/50">{blog.date}</p>
