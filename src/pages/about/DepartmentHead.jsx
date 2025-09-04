@@ -26,6 +26,11 @@ export default function DepartmentHead() {
       role: "Chief of Performance Marketing",
       img: AdarshImg,
     },
+    {
+      name: "Muhammed Shabeer",
+      role: "UAE Region",
+      img: AdarshImg,
+    },
   ];
      const businessHeads = [
         { name: "Ragin Raj", role: "SEO", img: NabhanImg },
