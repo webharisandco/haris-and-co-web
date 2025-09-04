@@ -101,6 +101,11 @@ header {
 	display: -webkit-flex;
 	-webkit-box-flex: wrap;
 }
+@media (min-width: 768px) {
+.swiper-wrapper{
+	justify-content: space-around;
+}
+}
 
 @keyframes reveal {
 	0% {

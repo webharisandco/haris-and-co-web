@@ -17,11 +17,18 @@ SwiperCore.use([Navigation, Pagination]);
 export default function OurTeam() {
   const teamMembers = [
     { name: "Haris Aboobacker", role: "Founder, CEO", img: AdarshImg },
-    { name: "Haris Aboobacker", role: "Founder, CEO", img: RaginImg },
-    { name: "Haris Aboobacker", role: "Founder, CEO", img: HarisImg },
-    { name: "Haris Aboobacker", role: "Founder, CEO", img: SaheelImg },
-    { name: "Haris Aboobacker", role: "Founder, CEO", img: AmnaImg },
-    { name: "Haris Aboobacker", role: "Founder, CEO", img: AmnaImg },
+    {
+      name: "Haris Aboobacker ",
+      role: "Chief Executive Officer",
+      img: RaginImg,
+    },
+    {
+      name: "Mohamed Azaruddin",
+      role: "Chief Operating Officer",
+      img: HarisImg,
+    },
+    { name: "Ragin Raj", role: "Chief People Officer", img: SaheelImg },
+    { name: "Nizwa Iqbal", role: "Chief Financial Office", img: AmnaImg },
   ];
   return (
     <div className="bg-white py-[50px] px-[16px] lg:px-0 flex flex-col gap-[50px] lg:items-center lg:text-center">
@@ -40,7 +47,6 @@ export default function OurTeam() {
           slidesPerView={1}
           navigation={false}
           pagination={true}
-          // autoplay={{ delay: 2500 }}
           loop={true}
           breakpoints={{
             640: { slidesPerView: 2 },
@@ -48,13 +54,13 @@ export default function OurTeam() {
             1024: { slidesPerView: 4 },
             1240: { slidesPerView: 6 },
           }}
-          className="swiper-pagination-black"
+          className="swiper-pagination-black "
         >
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center w-full">
                 <img
-                  className="h-[300px] object-cover w-[300px] 3xl:h-[400px]"
+                  className="w-full max-w-[228px] md:max-w-[300px] h-[300px] object-cover 3xl:h-[400px]"
                   src={member.img}
                   alt={member.name}
                 />
