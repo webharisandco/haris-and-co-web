@@ -15,8 +15,7 @@ export default function TextReveal3D() {
     return () => clearInterval(timer)
   }, [currentWord])
 
-  console.log(currentWord)
-  console.log(prevword)
+
   return (
     <div className="relative h-[600px] xl:h-[800px] w-full  items-center justify-end bg-white perspective hidden xl:flex">
       {words.map((word, index) => (
@@ -27,7 +26,7 @@ export default function TextReveal3D() {
           }`}
           style={{ transformOrigin: 'center center -100px' }}
         >
-          <p className="text-[150px] xl:text-[200px] text-black font-[boldtext] tracking-[-3mm]  text-center">
+          <p className="text-[150px] 2xl:text-[200px] text-black font-[boldtext] tracking-[-3mm]  text-center">
             {word}
           </p>
         </div>

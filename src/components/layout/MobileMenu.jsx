@@ -4,7 +4,7 @@ import ContactButton from '../ui/HomePage/ContactButton'
 import Logo from '@/assets/images/Haris&Co-logo.svg';
 
 
-export default function MobileMenu({ isOpen }) {
+export default function MobileMenu({ isOpen,toggleMenu }) {
     return (
         <div className={`bg-[#141414] fixed top-0 left-0 z-40 w-full h-screen text-white transform transition-transform duration-300 overflow-hidden p-11 space-y-10  ${isOpen ? "translate-x-0" : "-translate-x-full"
             }`}>
@@ -16,15 +16,15 @@ export default function MobileMenu({ isOpen }) {
                 />
             </div>
             <div className="flex flex-col justify-between gap-[20px] text-white *:font-light *:md:text-[24px]">
-                <Link to="/services" className="text-[18px] font-[thin]">Services</Link>
-                <Link to="/works" className="text-[18px] font-[thin]">Works</Link>
-                <Link to="/clients" className="text-[18px] font-[thin]">Clients</Link>
-                <Link to="/awards" className="text-[18px] font-[thin]">Awards</Link>
-                <Link to="/about" className="text-[18px] font-[thin]">About us</Link>
-                <Link to="/blogs" className="text-[18px] font-[thin]">Blogs</Link>
-                <Link to="/careers" className="text-[18px] font-[thin]">Careers</Link>
+                <Link to="/services" className="text-[18px] font-[thin]" onClick={toggleMenu}>Services</Link>
+                <Link to="/works" className="text-[18px] font-[thin]" onClick={toggleMenu}>Works</Link>
+                <Link to="/clients" className="text-[18px] font-[thin]" onClick={toggleMenu}>Clients</Link>
+                <Link to="/awards" className="text-[18px] font-[thin]" onClick={toggleMenu}>Awards</Link>
+                <Link to="/about" className="text-[18px] font-[thin]" onClick={toggleMenu}>About us</Link>
+                <Link to="/blogs" className="text-[18px] font-[thin]" onClick={toggleMenu}>Blogs</Link>
+                <Link to="/career" className="text-[18px] font-[thin]" onClick={toggleMenu}>Careers</Link>
             </div>
-            <ContactButton text='Contact Us' href='/contact' />
+            <ContactButton toggleMenu={toggleMenu} text='Contact Us' href='/contact' />
 
         </div>
     )

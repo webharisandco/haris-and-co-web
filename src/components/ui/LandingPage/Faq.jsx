@@ -5,7 +5,7 @@ export const Faq = ({ faqList }) => {
 
     return (
         <div className="flex flex-col gap-[80px] py-[50px] px-[16px] md:px-[60px] lg:px-[100px]">
-            <h3 className="poppins-bold mx-auto text-[36px] md:text-[40px] lg:text-[48px]">FAQs</h3>
+            <h3 className="poppins-bold mx-auto text-[30px] md:text-[40px] lg:text-[36px]">FAQs</h3>
             <div className="space-y-2 ">
                 {faqList.map((faq, index) => {
                     const isActive = isCollapsed === index;
@@ -22,15 +22,15 @@ export const Faq = ({ faqList }) => {
                                             }`}
                                     ></div>
                                 </div>
-                                <p className="poppins-semibold text-[14px] md:text-[16px] lg:text-[20px] font-bold">{faq.question}</p>
+                                <p className="poppins-semibold text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] font-bold">{faq.question}</p>
                             </div>
                             <div
                                 className={`overflow-hidden transition-[max-height] duration-500 ease-in-out `}
                                 style={{
-                                    maxHeight: isActive ? '200px' : '0',
+                                    maxHeight: isActive ? '250px' : '0',
                                 }}
                             >
-                                <p className="text-[14px] md:text-[16px] lg:text-[18px] poppins-regular px-4 mb-4">{faq.answer}</p>
+                                <p className="text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] poppins-regular px-4 mb-4">{faq.answer}</p>
                             </div>
                         </div>
                     );

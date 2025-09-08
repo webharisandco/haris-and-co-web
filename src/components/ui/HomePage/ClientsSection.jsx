@@ -2,13 +2,14 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination"; // Import pagination styles for Swiper
-import 'swiper/css/navigation';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import "swiper/css/navigation";
+import { Navigation, Pagination, Scrollbar } from "swiper/modules";
 
-import client1 from "@/assets/images/clients/client1.png";
-import client2 from "@/assets/images/clients/client2.png";
-import client3 from "@/assets/images/clients/client3.png";
-import client4 from "@/assets/images/clients/client4.png";
+import arsh from "@/assets/images/clients/Arsh.png";
+import ashik from "@/assets/images/clients/Ashik.png";
+import kevin from "@/assets/images/clients/Kevin.png";
+import Jasim from "@/assets/images/clients/Bosq.png";
+import shan from "@/assets/images/clients/Shan.png";
 import PlayIcon from "@/assets/images/icons/play.svg";
 import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
@@ -21,10 +22,36 @@ SwiperCore.use([Navigation, Pagination]);
 
 function ClientsSection() {
   const clients = [
-    { img: client1, name: "Emily Wong", role: "Chief Brand Officer" },
-    { img: client2, name: "Emily Wong", role: "Chief Brand Officer" },
-    { img: client3, name: "Emily Wong", role: "Chief Brand Officer" },
-    { img: client4, name: "Emily Wong", role: "Chief Brand Officer" },
+    {
+      img: arsh,
+      name: "Arsh Navas",
+      role: "Chief Brand Officer",
+      link: "https://www.instagram.com/reel/DB367jVBT2u/?igsh=MWd5cGluMGxkdjV3cg=="
+    },
+    {
+      img: ashik,
+      name: "Ashik",
+      role: "Marketing Director",
+      link: "https://www.instagram.com/reel/DB3yj-xhe2_/?igsh=MWdrZmV2dHJpZWR4aQ=="
+    },
+    {
+      img: kevin,
+      name: "Kevin Mohanji Gera",
+      role: "Business Development Manager",
+      link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs"
+    },
+    {
+      img: Jasim,
+      name: "Jasim SM",
+      role: "CEO BOSQ",
+      link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs"
+    },
+    {
+      img: shan,
+      name: "Shan A Salam",
+      role: "Founder The One Percentage",
+      link: "https://www.instagram.com/reel/C3r7E01Pn9_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    }
   ];
 
   return (
@@ -36,27 +63,36 @@ function ClientsSection() {
       </div>
       <div className="w-full">
         <Swiper
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination]} // Ensure modules are passed here
           spaceBetween={20}
           slidesPerView={1}
-          navigation={false}
-          pagination={true}
+          navigation={true} // Enable navigation (set to false if not needed)
+          pagination={{ clickable: true }} // Ensure pagination works
           breakpoints={{
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 4 },
           }}
-          className="swiper-pagination-white" // Add custom class
+          className="swiper-pagination-white"
         >
           {clients.map((client, index) => (
-
             <SwiperSlide key={index}>
-              <div className="relative">
+              <a
+                href={client.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block relative"
+              >
                 <img
-                  className="w-[400px] object-contain"
+                  className="object-contain w-full"
                   src={client.img}
                   alt={client.name}
                 />
-                <div className="flex items-center justify-between w-full absolute bottom-6 px-6">
+
+                {/* Bottom white gradient overlay */}
+                <div className="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-white to-transparent z-10" />
+
+                {/* Text and Play button */}
+                <div className="flex items-center justify-between w-full absolute bottom-6 px-6 z-20">
                   <div>
                     <p className="font-medium text-black text-[32px] leading-none">
                       {client.name}
@@ -65,21 +101,19 @@ function ClientsSection() {
                       {client.role}
                     </p>
                   </div>
+
                   <div>
                     <img src={PlayIcon} alt="Play" />
                   </div>
                 </div>
-              </div>
+              </a>
             </SwiperSlide>
-
-
 
           ))}
         </Swiper>
-
       </div>
       <div className="w-full hidden justify-center mt-[80px] pb-[80px] h-full md:flex">
-        <Link
+        {/* <Link
           to="/clients"
           className="group flex gap-[11px] text-white/55 border-b border-white/55 pb-0.5 hover:text-white hover:border-b-white transition-all duration-300"
         >
@@ -91,7 +125,7 @@ function ClientsSection() {
             className="text-white/55 transition-all duration-300 group-hover:text-white"
             strokeWidth={1.8}
           />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

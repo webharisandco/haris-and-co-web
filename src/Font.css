@@ -2,14 +2,33 @@
 @font-face {
     font-family: thin;
     src: local('HelveticaNeueLight'),
-         url(./Font/HelveticaNeueLight.otf) format('opentype');
+        url(./Font/HelveticaNeueLight.otf) format('opentype');
+    font-display: swap;
+}
+@font-face {
+    font-family: HelveticaNeue;
+    src: local('HelveticaNeueThin'),
+        url(./Font/HelveticaNeueThin.otf) format('opentype');
+    font-display: swap;
+}
+@font-face {
+    font-family: thinItalic;
+    src: local('HelveticaNeueLightItalic'),
+        url(./Font/HelveticaNeueLightItalic.otf) format('opentype');
     font-display: swap;
 }
 
 @font-face {
     font-family: boldtext;
     src: local('HelveticaNeueBold'),
-         url(./Font/HelveticaNeueBold.otf) format('opentype');
+        url(./Font/HelveticaNeueBold.otf) format('opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Helvetica-Medium;
+    src: local('HelveticaNeueMedium'),
+        url(./Font/HelveticaNeueMedium.otf) format('opentype');
     font-display: swap;
 }
 
@@ -84,20 +103,20 @@
 @font-face {
     font-family: Abroregular;
     src: local('AbroSans-Regular'),
-         url(./Font/Abro/AbroSans-Regular.ttf) format('truetype');
+        url(./Font/Abro/AbroSans-Regular.ttf) format('truetype');
     font-display: swap;
 }
 
 @font-face {
     font-family: Abrobold;
     src: local('AbroSans-Bold'),
-         url(./Font/Abro/AbroSans-Bold.ttf) format('truetype');
+        url(./Font/Abro/AbroSans-Bold.ttf) format('truetype');
     font-display: swap;
 }
 
 @font-face {
     font-family: Abrothin;
     src: local('AbroSans-Thin'),
-         url(./Font/Abro/AbroSans-Thin.ttf) format('truetype');
+        url(./Font/Abro/AbroSans-Thin.ttf) format('truetype');
     font-display: swap;
 }

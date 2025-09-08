@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "@/components/ui/LandingPage/Banner";
-import BannerImages from "@/assets/images/web/images/banner-Image.png";
+import BannerImages from "@/assets/images/landing/webHero.webp";
 import Banner2 from "@/assets/images/web/images/banner2.png";
 import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
 import AboutSection from "@/components/ui/LandingPage/AboutSection";
@@ -12,6 +12,7 @@ import LandingFooter from "@/components/layout/landing/LandingFooter";
 import CaseStudy from "@/components/ui/LandingPage/CaseStudy";
 import ConsultBanner from "@/components/ui/LandingPage/ConsultBanner";
 import Testimonial from "@/components/ui/LandingPage/Testimonial";
+import AwardSection from "@/components/ui/LandingPage/AwardSection";
 import { Faq } from "@/components/ui/LandingPage/Faq";
 import AboutCompany from "@/components/ui/web/AboutCompany";
 import webBrand1 from "@/assets/images/brandLogos/web/webBrands1.png";
@@ -20,20 +21,66 @@ import webBrand3 from "@/assets/images/brandLogos/web/webBrands3.png";
 import webBrand4 from "@/assets/images/brandLogos/web/webBrands4.png";
 import webBrand5 from "@/assets/images/brandLogos/web/webBrands5.png";
 import webBrand6 from "@/assets/images/brandLogos/web/webBrands6.png";
-import webBrandSmall1 from "../../../assets/images/brandLogos/web/small/webBrandsSmall1.png";
-import webBrandSmall2 from "../../../assets/images/brandLogos/web/small/webBrandsSmall2.png";
-import webBrandSmall3 from "../../../assets/images/brandLogos/web/small/webBrandsSmall3.png";
-import webBrandSmall4 from "../../../assets/images/brandLogos/web/small/webBrandsSmall4.png";
-import webBrandSmall5 from "../../../assets/images/brandLogos/web/small/webBrandsSmall5.png";
-import webBrandSmall6 from "../../../assets/images/brandLogos/web/small/webBrandsSmall6.png";
-import webBrandSmall7 from "../../../assets/images/brandLogos/web/small/webBrandsSmall7.png";
-import webBrandSmall8 from "../../../assets/images/brandLogos/web/small/webBrandsSmall8.png";
-import webBrandSmall9 from "../../../assets/images/brandLogos/web/small/webBrandsSmall9.png";
-import webBrandSmall10 from "../../../assets/images/brandLogos/web/small/webBrandsSmall10.png";
-import webBrandSmall11 from "../../../assets/images/brandLogos/web/small/webBrandsSmall11.png";
+import webBrandSmall1 from "@/assets/images/brandLogos/web/small/webBrandsSmall1.png";
+import webBrandSmall2 from "@/assets/images/brandLogos/web/small/webBrandsSmall2.png";
+import webBrandSmall3 from "@/assets/images/brandLogos/web/small/webBrandsSmall3.png";
+import webBrandSmall4 from "@/assets/images/brandLogos/web/small/webBrandsSmall4.png";
+import webBrandSmall5 from "@/assets/images/brandLogos/web/small/webBrandsSmall5.png";
+import webBrandSmall6 from "@/assets/images/brandLogos/web/small/webBrandsSmall6.png";
+import webBrandSmall7 from "@/assets/images/brandLogos/web/small/webBrandsSmall7.png";
+import webBrandSmall8 from "@/assets/images/brandLogos/web/small/webBrandsSmall8.png";
+import webBrandSmall9 from "@/assets/images/brandLogos/web/small/webBrandsSmall9.png";
+import webBrandSmall10 from "@/assets/images/brandLogos/web/small/webBrandsSmall10.png";
+import webBrandSmall11 from "@/assets/images/brandLogos/web/small/webBrandsSmall11.png";
 import { Helmet } from "react-helmet";
 
 export default function UIWeb() {
+  const location = {
+    lat: 25.270889,
+    lng: 55.3314523,
+  };
+  const webDevelopmentServices = [
+    {
+      title: "Dedicated Project Manager",
+      description:
+        "We have an in-house brand solutions team for our web development in Abu Dhabi. This means your project gets personal attention from our dedicated project manager who ensures clear communication and timely delivery.",
+    },
+    {
+      title: "Specialists at Every Step",
+      description:
+        "From UI/UX designers to developers, content writers to conversion rate optimizers – we have specialists who take care of each aspect of your website project. Their collaboration helps us to ensure maximum quality.",
+    },
+    {
+      title: "End-to-End Digital Excellence",
+      description:
+        "We handle everything from strategy to launch, including design, development, content, and optimization – no need to coordinate with multiple agencies.",
+    },
+    {
+      title: "Data-Driven Decision Making",
+      description:
+        "Our solutions are backed by research, user behaviour analysis, and industry best practices to ensure maximum impact.",
+    },
+    {
+      title: "Results-Focused Approach",
+      description:
+        "We don't just build websites. We are a web development company in Abu Dhabi that creates digital assets that drive business growth through strategic design and conversion optimization.",
+    },
+    {
+      title: "Proven Development Process",
+      description:
+        "Our structured web development methodology ensures transparency, timely delivery, and consistent quality across all projects.",
+    },
+    {
+      title: "Post-Launch Support",
+      description:
+        "Just because we are a web development company in Abu Dhabi, our relationship doesn't end after developing and launching the website. We provide ongoing support to ensure your website continues to perform and evolve with your business.",
+    },
+    {
+      title: "Technical Excellence",
+      description:
+        "We use cutting-edge technologies and follow best practices in security, performance, and SEO to future-proof your digital presence.",
+    },
+  ];
   const webBrandSmalls = [
     { id: 1, image: webBrandSmall1 },
     { id: 2, image: webBrandSmall2 },
@@ -73,7 +120,7 @@ export default function UIWeb() {
       image: webBrand6,
     },
   ];
-  const tagline = "Conversion-focused Website Development Company in Abu Dhabi";
+  const tagline = "Conversion-focused Web Development Company in Abu Dhabi";
   const heading = "Get a Website That Gets You More Leads & Sales";
   const description =
     "Delivering websites that are fast, secure, engaging and user-friendly. Wanna know the best part? Our conversion optimization makes navigation easier for your visitors from the 1st click to the final conversion.";
@@ -97,72 +144,93 @@ export default function UIWeb() {
   ];
   const faqList = [
     {
-      question: "Within how many days you can deliver the project?",
+      question: "Do you provide website maintenance?",
       answer:
-        "The project delivery time depends on its complexity and requirements. As a web development agency, we aim to deliver projects efficiently while maintaining quality. We'll provide an estimated timeline after understanding your needs.",
+        "Yes, we provide ongoing support to keep your website high-performing and secure. We are always just a call away.",
+    },
+    {
+      question: "Within how many days can you deliver the project?",
+      answer:
+        "Usually, we deliver the project within 45 days if approvals are given on time. However, this may vary depending on the size and complexity of your website. We could give an estimated timeline after the brand understanding meeting and input collection.",
     },
     {
       question:
         "As a web design & development agency in Abu Dhabi, do you help with revamping a website?",
       answer:
-        "Yes, we specialize in revamping websites to align with modern design trends, improve user experience, and ensure better functionality tailored to your business needs.",
+        "Yes sure. In fact, we have helped various top brands such as Walkaroo, Katara Limousine, Teens, and more to revamp their existing website. So, if you want a new look for your current website, feel free to contact us.",
     },
     {
       question: "Can I update the website myself once it’s built?",
       answer:
-        "Absolutely! We build user-friendly websites with content management systems like WordPress or custom solutions that allow you to update content easily without needing technical expertise.",
+        "Sure. If you want to make any edits or updates, feel free to reach out to us. We will help you.",
     },
     {
       question: "Will my website be SEO-friendly?",
       answer:
-        "Yes, we ensure all websites we build follow SEO best practices, including fast loading times, mobile responsiveness, and proper structuring, to enhance search engine visibility.",
+        "Yes. We carry out practices such as mobile optimization, internal linking, image optimization, and more to ensure mobile-friendliness.",
     },
     {
       question: "What platforms do you use for web development?",
       answer:
-        "We use a variety of platforms such as WordPress, Shopify, and custom frameworks like React and Node.js, depending on your project requirements and goals.",
+        "We use WordPress or custom development (React JS or HTML) for developing normal websites. For eCommerce businesses, we opt for Shopify.",
     },
     {
       question: "How do you ensure website security?",
       answer:
-        "We prioritize security by implementing SSL certificates, firewalls, regular updates, and secure coding practices to protect your website from potential vulnerabilities.",
+        "One way we do this is by securing an SSL certificate for our website. Secondly, we use some tools like Wordfence to enhance the security.",
     },
     {
       question: "Can you integrate third-party tools into my website?",
       answer:
-        "Yes, we can integrate third-party tools such as payment gateways, CRMs, analytics platforms, and more to enhance your website's functionality and performance.",
+        "Yes. If you want any tools to be integrated, please let us know. We will get it done.",
     },
     {
       question: "Do you provide content for my website?",
       answer:
-        "Yes, we offer content creation services, including copywriting and graphic design, to ensure your website communicates effectively with your audience.",
+        "Of course. We have Content Writers who specifically work in the Web development team. All you have to do is provide the input and we’ll prepare the content.",
     },
     {
       question:
         "Is it necessary to have a face-to-face discussion before the start of the project?",
       answer:
-        "While face-to-face discussions are not mandatory, we are open to virtual meetings or calls to discuss project requirements and ensure clear communication.",
+        "No need for that. We usually connect with our clients via Google Meet. If you prefer a face-to-face interview, we could do that as well.",
     },
     {
       question: "What platform do you suggest for Ecommerce?",
       answer:
-        "We recommend platforms like Shopify or WooCommerce for small to medium businesses and custom solutions for larger enterprises, depending on your specific needs and scalability requirements.",
+        "We recommend Shopify as the ideal eCommerce platform due to its user-friendly interface that allows for quick setup without technical expertise, robust features including inventory management and payment processing, and excellent mobile responsiveness. It’s also scalable and offers an extensive app ecosystem for added functionality. Furthermore, it also has strong security measures and 24/7 customer support.",
     },
   ];
 
-  const seoHeading = "Web Development Company in Abu Dhabi Focused on Conversion"
-  const seoDescription = "Haris&Co. has been serving web development services in Abu Dhabi for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content and technicalities."
+  const seoHeading =
+    "Web Development Company in Abu Dhabi Focused on Conversion";
+  const seoDescription =
+    "Haris&Co. has been serving web development services in Abu Dhabi for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content and technicalities.";
+  const seoHeading2 =
+    "Why You Should Choose Us As Your Web Development Company in Abu Dhabi";
+  const seoHeading3 = "How Our Web Development In Abu Dhabi Works";
   return (
     <>
       <div className="bg-black">
         <Helmet>
-          
           <title>Trusted Web Development Company in Abu Dhabi</title>
         </Helmet>
-          <meta name="description" content="We're a web development company in Abu Dhabi that delivers fast, secure, engaging, user-friendly and conversion-optimized websites." />
-          <link rel="canonical" href="https://harisand.co/ae/services/web-development-company-in-abudhabi" />
-                    <meta property="og:title" content="Trusted Web Development Company in Abu Dhabi" />
-          <meta property="og:description" content="We're a web development company in Abu Dhabi that delivers fast, secure, engaging, user-friendly and conversion-optimized websites." />
+        <meta
+          name="description"
+          content="We're a web development company in Abu Dhabi that delivers fast, secure, engaging, user-friendly and conversion-optimized websites."
+        />
+        <link
+          rel="canonical"
+          href="https://harisand.co/ae/services/web-development-company-in-abudhabi"
+        />
+        <meta
+          property="og:title"
+          content="Trusted Web Development Company in Abu Dhabi"
+        />
+        <meta
+          property="og:description"
+          content="We're a web development company in Abu Dhabi that delivers fast, secure, engaging, user-friendly and conversion-optimized websites."
+        />
         <LandingHeader />
         <Banner
           bannerImage={BannerImages}
@@ -175,7 +243,7 @@ export default function UIWeb() {
           barandLogos={webBrands}
           brandLogosSmall={webBrandSmalls}
         />
-
+        <AwardSection />
         <div className="px-[18px] md:px-0 md:pr-[100px]">
           <AboutSection
             bannerImage={Banner2}
@@ -184,26 +252,36 @@ export default function UIWeb() {
             datas={clientsMetrix}
           />
         </div>
-        <OurLatestWorks />
+        <OurLatestWorks
+          text={
+            "These are a few of the many websites we have developed thus far. This portfolio includes projects ranging from dynamic e-commerce platforms to engaging corporate websites that adhere to the respective brand guidelines and drive results in various industries."
+          }
+        />
 
         <WhatWeProvide />
 
         <div className="bg-white">
           <ConsultBanner />
-          <CaseStudy />
+          <CaseStudy web={true} />
           <Testimonial />
         </div>
         <div className="">
-          <ContactSection />
+          <ContactSection location={location} />
         </div>
         <div className="bg-white">
           <Faq faqList={faqList} />
         </div>
       </div>
       <div className="bg-white">
-        <AboutCompany seoHeading={seoHeading} seoDescription={seoDescription} />
+        <AboutCompany
+          seoHeading={seoHeading}
+          seoDescription={seoDescription}
+          seoHeading2={seoHeading2}
+          seoHeading3={seoHeading3}
+          webDevelopmentServices={webDevelopmentServices}
+        />
       </div>
-      <LandingFooter />
+      <LandingFooter serviceType='web'  />
     </>
   );
 }

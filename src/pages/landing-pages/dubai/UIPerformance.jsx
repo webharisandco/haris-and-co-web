@@ -1,40 +1,63 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useState } from "react";
+import { Helmet } from "react-helmet";
 import LandingHeader from "@/components/layout/landing/LandingHeader";
 import LandingFooter from "@/components/layout/landing/LandingFooter";
 import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
 import { Faq } from "@/components/ui/LandingPage/Faq";
 import Banner from "@/components/ui/LandingPage/Banner";
-import BannerImg from "@/assets/images/landing/BannerImg.svg";
+import BannerImg from "@/assets/images/landing/performanceHero.png";
 import AboutImg from "@/assets/images/landing/AboutImg.png";
 import AboutSection from "@/components/ui/LandingPage/AboutSection";
-import perfomanceBrands1 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands1.png";
-import perfomanceBrands2 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands2.png";
-import perfomanceBrands3 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands3.png";
-import perfomanceBrands4 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands4.png";
-import perfomanceBrands5 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands5.png";
-import perfomanceBrands6 from "../../../assets/images/brandLogos/perfomance/perfomanceBrands6.png";
-import perfomanceBrandsSmall1 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall1.png";
-import perfomanceBrandsSmall2 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall2.png";
-import perfomanceBrandsSmall3 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall3.png";
-import perfomanceBrandsSmall4 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall4.png";
-import perfomanceBrandsSmall5 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall5.png";
-import perfomanceBrandsSmall6 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall6.png";
-import perfomanceBrandsSmall7 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall7.png";
-import perfomanceBrandsSmall8 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall8.png";
-import perfomanceBrandsSmall9 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall9.png";
-import perfomanceBrandsSmall10 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall10.png";
-import perfomanceBrandsSmall11 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall11.png";
-import perfomanceBrandsSmall12 from "../../../assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall12.png";
-import { Helmet } from "react-helmet";
-const ContactSection = lazy(() => import("@/components/ui/LandingPage/ContactSection"));
-const ConsultBanner = lazy(() => import("@/components/ui/LandingPage/ConsultBanner"));
+import AwardSection from "@/components/ui/LandingPage/AwardSection";
+import perfomanceBrands1 from "@/assets/images/brandLogos/perfomance/perfomanceBrands1.png";
+import perfomanceBrands2 from "@/assets/images/brandLogos/perfomance/perfomanceBrands2.png";
+import perfomanceBrands3 from "@/assets/images/brandLogos/perfomance/perfomanceBrands3.png";
+import perfomanceBrands4 from "@/assets/images/brandLogos/perfomance/perfomanceBrands4.png";
+import perfomanceBrands5 from "@/assets/images/brandLogos/perfomance/perfomanceBrands5.png";
+import perfomanceBrands6 from "@/assets/images/brandLogos/perfomance/perfomanceBrands6.png";
+import perfomanceBrandsSmall1 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall1.png";
+import perfomanceBrandsSmall2 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall2.png";
+import perfomanceBrandsSmall3 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall3.png";
+import perfomanceBrandsSmall4 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall4.png";
+import perfomanceBrandsSmall5 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall5.png";
+import perfomanceBrandsSmall6 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall6.png";
+import perfomanceBrandsSmall7 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall7.png";
+import perfomanceBrandsSmall8 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall8.png";
+import perfomanceBrandsSmall9 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall9.png";
+import perfomanceBrandsSmall10 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall10.png";
+import perfomanceBrandsSmall11 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall11.png";
+import perfomanceBrandsSmall12 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall12.png";
+
+const ContactSection = lazy(() =>
+  import("@/components/ui/LandingPage/ContactSection")
+);
+const ConsultBanner = lazy(() =>
+  import("@/components/ui/LandingPage/ConsultBanner")
+);
 const CaseStudy = lazy(() => import("@/components/ui/LandingPage/CaseStudy"));
-const Testimonial = lazy(() => import("@/components/ui/LandingPage/Testimonial"));
-const WhatWeProvide = lazy(() => import("@/components/ui/LandingPage/WhatWeProvide"));
-const ResultSection = lazy(() => import("@/components/ui/LandingPage/ResultSection"));
-const ToolsAndPlatform = lazy(() => import("@/components/ui/LandingPage/ToolsAndPlatform"));
+const Testimonial = lazy(() =>
+  import("@/components/ui/LandingPage/Testimonial")
+);
+const WhatWeProvide = lazy(() =>
+  import("@/components/ui/LandingPage/WhatWeProvide")
+);
+const ResultSection = lazy(() =>
+  import("@/components/ui/LandingPage/ResultSection")
+);
+const ToolsAndPlatform = lazy(() =>
+  import("@/components/ui/LandingPage/ToolsAndPlatform")
+);
 
 export default function UIPerformance() {
+  const location = {
+    lat: 25.270889,
+    lng: 55.3314523,
+  };
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded((prevState) => !prevState);
+  };
   const perfomanceBrands = [
     {
       id: 1,
@@ -115,7 +138,7 @@ export default function UIPerformance() {
     {
       question: "What kind of businesses benefit from performance marketing?",
       answer:
-        "Performance marketing is ideal for businesses of all sizes and industries looking for measurable, results-driven campaigns. Whether in e-commerce, B2B, services, or tech, performance marketing can help you drive traffic, generate leads, and increase sales.Working with a Performance Marketing Agency in Dubai like Haris&Co. can help tailor campaigns to your specific goals, ensuring maximum ROI and efficiency across all digital channels.",
+        "Performance marketing is ideal for businesses of all sizes and industries looking for measurable, results-driven campaigns. Whether in e-commerce, B2B, services, or tech, performance marketing can help you drive traffic, generate leads, and increase sales. Working with a Performance Marketing Agency in Dubai. can help tailor campaigns to your specific goals, ensuring maximum ROI and efficiency across all digital channels.",
     },
     {
       question:
@@ -132,7 +155,7 @@ export default function UIPerformance() {
       question:
         "What makes Haris&Co’s performance marketing services different from others?",
       answer:
-        "At Haris & Co's performance marketing agency in Dubai like Haris&Co., we focus on data-driven results and continuous optimisation. We don’t just run ads - we strategically manage and fine-tune every aspect of your campaigns to ensure maximum ROI. Our approach is transparent, collaborative, and tailored to your business goals.",
+        "At Haris & Co's performance marketing agency in Dubai, we focus on data-driven results and continuous optimisation. We don’t just run ads - we strategically manage and fine-tune every aspect of your campaigns to ensure maximum ROI. Our approach is transparent, collaborative, and tailored to your business goals.",
     },
     {
       question:
@@ -153,10 +176,23 @@ export default function UIPerformance() {
       <Helmet>
         <title>Expert Performance Marketing Agency in Dubai</title>
       </Helmet>
-      <meta name="description" content="An award-winning performance marketing agency in Dubai that focuses on high-quality lead generation and boosting sales to the next level." data-rh='true' />
-      <link rel="canonical" href="https://harisand.co/ae/services/performance-marketing-agency-in-dubai" />
-      <meta property="og:title" content="Expert Performance Marketing Agency in Dubai" />
-      <meta property="og:description" content="An award-winning performance marketing agency in Dubai that focuses on high-quality lead generation and boosting sales to the next level." />
+      <meta
+        name="description"
+        content="An award-winning performance marketing agency in Dubai that focuses on high-quality lead generation and boosting sales to the next level."
+        data-rh="true"
+      />
+      <link
+        rel="canonical"
+        href="https://harisand.co/ae/services/performance-marketing-agency-in-dubai"
+      />
+      <meta
+        property="og:title"
+        content="Expert Performance Marketing Agency in Dubai"
+      />
+      <meta
+        property="og:description"
+        content="An award-winning performance marketing agency in Dubai that focuses on high-quality lead generation and boosting sales to the next level."
+      />
       <LandingHeader />
       <div className="">
         <Banner
@@ -171,6 +207,7 @@ export default function UIPerformance() {
           barandLogos={perfomanceBrands}
           text={"Brands that have scaled with our Performance Marketing."}
         />
+        <AwardSection/>
       </div>
       <div className="px-[16px] md:px-[60px] lg:px-[100px]">
         <AboutSection
@@ -190,7 +227,7 @@ export default function UIPerformance() {
           <Testimonial />
         </div>
         <div className="">
-          <ContactSection />
+          <ContactSection location={location} />
         </div>
       </Suspense>
       <div className="bg-white">
@@ -200,7 +237,7 @@ export default function UIPerformance() {
             <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
               What is Performance Marketing?
             </h4>
-            <p className="poppins-regular text-[11px] md:text-[15px] lg:text-lg">
+            <p className="poppins-regular text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] ">
               Performance marketing is a digital marketing strategy where you
               pay only for the results you get - whether that’s a click, lead,
               sale, or other desired action. Unlike traditional advertising
@@ -215,131 +252,163 @@ export default function UIPerformance() {
               campaigns to ensure that every penny spent is delivering value.
             </p>
           </div>
-          <div className="flex flex-col gap-6">
-            <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
-              Benefits of Performance Marketing
-            </h4>
-            <div className="poppins-regular text-[11px] md:text-[15px] lg:text-lg">
-              <ul type="dot" className="list-disc ps-5	gap-5 grid">
-                <li>
-                  <span className="poppins-semibold">
-                    Measurable Results :{" "}
-                  </span>
-                  <span className="poppins-regular">
-                    Performance marketing focuses on actions such as clicks,
-                    leads, or sales, making it easy to track and measure
-                    results. With a Performance Marketing Agency in Dubai like
-                    Haris&Co., you can assess campaign performance in real-time,
-                    ensuring your marketing budget is spent effectively and
-                    delivering tangible ROI.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">Cost-Effective : </span>
-                  <span className="poppins-regular">
-                    Performance marketing allows you to pay only for specific
-                    outcomes. This pay-for-performance model ensures you're
-                    investing in results, not just exposure.{" "}
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">Highly Targeted : </span>
-                  <span className="poppins-regular">
-                    Performance marketing campaigns can be finely tuned to
-                    target specific demographics, interests, or behaviours. By
-                    working with a Performance Marketing Agency in Dubai like
-                    Haris&Co., you can ensure that your campaigns reach the
-                    right audience, increasing the likelihood of conversions and
-                    maximising your ad spend.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">
-                    Real-Time Optimization :{" "}
-                  </span>
-                  <span className="poppins-regular">
-                    With performance marketing, campaigns can be adjusted in
-                    real-time based on data insights. A Performance Marketing
-                    Agency in Dubai like Haris&Co. leverages this flexibility to
-                    fine-tune ad creatives, targeting, and budgets, ensuring
-                    optimal performance and faster responses to market changes.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">Scalability : </span>
-                  <span className="poppins-regular">
-                    Performance marketing is easily scalable. As your business
-                    grows, Performance Marketing can help expand your campaigns,
-                    allocating more resources to the best-performing channels,
-                    allowing for controlled and sustained growth.
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="flex flex-col gap-6 mb-5">
-            <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
-              Our Process
-            </h4>
-            <div className="poppins-regular text-[11px] md:text-[15px] lg:text-lg">
-              <ol className="gap-5 grid mb-6">
-                <li>
-                  <span className="poppins-semibold">
-                    1) Campaign Strategy :{" "}
-                  </span>
-                  <span className="poppins-regular">
-                    We begin by developing a tailored, data-driven plan to align
-                    with your business goals and target audience.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">
-                    2) Creative Development :{" "}
-                  </span>
-                  <span className="poppins-regular">
-                    Our team creates compelling ad creatives designed to engage
-                    and convert your ideal customers.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">3) Execution : </span>
-                  <span className="poppins-regular">
-                    We launch the campaign across the right platforms, ensuring
-                    smooth implementation and maximum reach.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">4) Optimisation : </span>
-                  <span className="poppins-regular">
-                    We continually monitor performance and make adjustments to
-                    improve results and maximise ROI.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">5) A/B Testing : </span>
-                  <span className="poppins-regular">
-                    We test different variations to identify the most effective
-                    strategies and enhance campaign performance.
-                  </span>
-                </li>
-                <li>
-                  <span className="poppins-semibold">6) Scaling : </span>
-                  <span className="poppins-regular">
-                    Once we find what works, we scale the campaign to reach a
-                    larger audience and drive sustainable growth.
-                  </span>
-                </li>
-              </ol>
-              <p>
-                This structured approach ensures your campaigns are not only
-                launched effectively but also optimised and scaled for ongoing
-                success.
-              </p>
-            </div>
-          </div>
+
+          {!isExpanded ? (
+            <>
+              <button
+                style={{ fontWeight: "bold" }}
+                onClick={toggleExpand}
+                className="poppins-semibold mt-[20px] text-[13px] lg:text-[20px] text-black flex font-extrabold cursor-pointer"
+              >
+                {"Read More"}
+              </button>
+            </>
+          ) : (
+            ""
+          )}
+          {isExpanded ? (
+            <>
+              <div className="flex flex-col gap-6">
+                <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
+                  Benefits of Performance Marketing
+                </h4>
+                <div className="poppins-regular text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] ">
+                  <ul type="dot" className="list-disc ps-5	gap-5 grid">
+                    <li>
+                      <span className="poppins-semibold">
+                        Measurable Results :{" "}
+                      </span>
+                      <span className="poppins-regular">
+                        Performance marketing focuses on actions such as clicks,
+                        leads, or sales, making it easy to track and measure
+                        results. With a Performance Marketing Agency in Dubai
+                        like Haris&Co., you can assess campaign performance in
+                        real-time, ensuring your marketing budget is spent
+                        effectively and delivering tangible ROI.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="poppins-semibold">
+                        Cost-Effective :{" "}
+                      </span>
+                      <span className="poppins-regular">
+                        Performance marketing allows you to pay only for
+                        specific outcomes. This pay-for-performance model
+                        ensures you're investing in results, not just exposure.{" "}
+                      </span>
+                    </li>
+
+                    <li>
+                      <span className="poppins-semibold">
+                        Highly Targeted :{" "}
+                      </span>
+                      <span className="poppins-regular">
+                        Performance marketing campaigns can be finely tuned to
+                        target specific demographics, interests, or behaviours.
+                        By working with a Performance Marketing Agency in Dubai
+                        like Haris&Co., you can ensure that your campaigns reach
+                        the right audience, increasing the likelihood of
+                        conversions and maximising your ad spend.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="poppins-semibold">
+                        Real-Time Optimization :{" "}
+                      </span>
+                      <span className="poppins-regular">
+                        With performance marketing, campaigns can be adjusted in
+                        real-time based on data insights. A Performance
+                        Marketing Agency in Dubai like Haris&Co. leverages this
+                        flexibility to fine-tune ad creatives, targeting, and
+                        budgets, ensuring optimal performance and faster
+                        responses to market changes.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="poppins-semibold">Scalability : </span>
+                      <span className="poppins-regular">
+                        Performance marketing is easily scalable. As your
+                        business grows, Performance Marketing can help expand
+                        your campaigns, allocating more resources to the
+                        best-performing channels, allowing for controlled and
+                        sustained growth.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-6 mb-5">
+                <h4 className="font-[Abrobold] text-[13px] md:text-[22px] lg:text-[36px]">
+                  Our Process
+                </h4>
+                <div className="poppins-regular text-[11px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] ">
+                  <ol className="gap-5 grid mb-6">
+                    <li>
+                      <span className="poppins-semibold">
+                        1) Campaign Strategy :{" "}
+                      </span>
+                      <span className="poppins-regular">
+                        We begin by developing a tailored, data-driven plan to
+                        align with your business goals and target audience.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="poppins-semibold">
+                        2) Creative Development :{" "}
+                      </span>
+                      <span className="poppins-regular">
+                        Our team creates compelling ad creatives designed to
+                        engage and convert your ideal customers.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="poppins-semibold">3) Execution : </span>
+                      <span className="poppins-regular">
+                        We launch the campaign across the right platforms,
+                        ensuring smooth implementation and maximum reach.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="poppins-semibold">
+                        4) Optimisation :{" "}
+                      </span>
+                      <span className="poppins-regular">
+                        We continually monitor performance and make adjustments
+                        to improve results and maximise ROI.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="poppins-semibold">
+                        5) A/B Testing :{" "}
+                      </span>
+                      <span className="poppins-regular">
+                        We test different variations to identify the most
+                        effective strategies and enhance campaign performance.
+                      </span>
+                    </li>
+                    <li>
+                      <span className="poppins-semibold">6) Scaling : </span>
+                      <span className="poppins-regular">
+                        Once we find what works, we scale the campaign to reach
+                        a larger audience and drive sustainable growth.
+                      </span>
+                    </li>
+                  </ol>
+                  <p>
+                    This structured approach ensures your campaigns are not only
+                    launched effectively but also optimised and scaled for
+                    ongoing success.
+                  </p>
+                </div>
+              </div>
+            </>
+          ) : (
+            ""
+          )}
         </div>
       </div>
-      <LandingFooter />
+      <LandingFooter serviceType='performance'  />
     </div>
   );
 }

@@ -41,7 +41,7 @@ export default function Header() {
         window.requestAnimationFrame(() => {
           const currentScrollY = window.scrollY;
           setScrollY(currentScrollY);
-          
+
           const scrollRange = 200;
           const newProgress = Math.max(0.175, Math.min(window.scrollY / scrollRange, 1));
           setScrollProgress(newProgress);
@@ -76,7 +76,7 @@ export default function Header() {
   // Calculate header height to prevent layout shifts
   const headerHeight = getScaledLogoSize() + 70;
 
-  console.log(window.scrollY)
+
 
   const containerRef = React.useRef(null);
   const isCompactHeader = scrollY < (logoSize === 30 ? 20 : 35);
@@ -86,7 +86,7 @@ export default function Header() {
   return (
     <div style={{ height: `${headerHeight}px` }}>
       <header className="fixed z-10 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap" style={{ translateY: '-1000px', }}>
-        <div ref={containerRef} className={`max-w-fit ${window.scrollY < (logoSize == 30 ? 20 : 35) && 'w-full'}`}>
+        <div ref={containerRef} className={`max-w-fit ${window.scrollY < (logoSize === 30 ? 20 : 35) && 'w-full'}`}>
           <img
             src={Logo}
             alt="Haris & Co."
@@ -98,17 +98,17 @@ export default function Header() {
             }}
           />
         </div>
-        <div className={` items-center gap-[49px] hidden lg:flex ms-auto flex-nowrap justify-between  ${window.scrollY < (logoSize == 30 ? 20 : 35) && 'w-full'}  `} style={{ gap: 49 + (window.innerWidth / ((window.innerWidth > 1280 ? 200 - (20 - ((1300 - window.innerWidth) / 5)) : 100) * scrollProgress)) }}>
-          <div className={"flex justify-between gap-[30px] xl:gap-[40px] text-white *:font-light  "} style={{ gap: 20 + (window.innerWidth / ((window.innerWidth > 1280 ? 200 - (20 - ((1300 - window.innerWidth) / 5)) : 90) * scrollProgress)) }}>
+        <div className={` items-center gap-[49px] hidden lg:flex ms-auto flex-nowrap justify-between  ${window.scrollY < (logoSize === 30 ? 20 : 35) && 'w-full'}  `} style={{ gap: 49 + (window.innerWidth / ((window.innerWidth > 1800 ? 100 : window.innerWidth > 1280 ? 200 - (20 - ((1300 - window.innerWidth) / 5)) : 100) * scrollProgress)) }}>
+          <div className={"flex justify-between gap-[30px] xl:gap-[40px] text-white *:font-light  "} style={{ gap: 20 + (window.innerWidth / ((window.innerWidth > 2200 ? 60 : window.innerWidth > 1800 ? 80 : window.innerWidth > 1500 ? 120 : window.innerWidth > 1300 ? 150 : window.innerWidth > 1280 ? 200 - (20 - ((1300 - window.innerWidth) / 5)) : window.innerWidth > 1000 ? 180 : 90) * scrollProgress)) }}>
             <Link to="/services" className="text-[18px] font-[thin]">Services</Link>
-            <Link to="/ae/services/web-development-company-in-dubai" className="text-[18px] font-[thin]">Works</Link>
+            <Link to="/works" className="text-[18px] font-[thin]">Works</Link>
             <Link to="/clients" className="text-[18px] font-[thin]">Clients</Link>
             <Link to="/awards" className="text-[18px] font-[thin]">Awards</Link>
             <Link to="/about" className="text-[18px] font-[thin] text-nowrap">About us</Link>
-            <Link to="/blogs" className="text-[18px] font-[thin]">Blogs</Link>
-            <Link to="/careers" className="text-[18px] font-[thin]">Careers</Link> 
+            <Link to="/blogs" className="hidden xl:flex text-[18px] font-[thin]">Blogs</Link>
+            <Link to="/career" className="text-[18px] font-[thin]">Careers</Link>
           </div>
-          <div className="hidden xl:flex">
+          <div className="flex">
             <ContactButton text='Contact Us' href='/contact' />
           </div>
         </div>
@@ -139,7 +139,7 @@ export default function Header() {
           <img src={menuIcon} alt="Menu Icon" className="" /> */}
             {/* } */}
           </button>
-          <MobileMenu isOpen={menuOpen} />
+          <MobileMenu isOpen={menuOpen} toggleMenu={toggleMenu} />
         </div>
 
 

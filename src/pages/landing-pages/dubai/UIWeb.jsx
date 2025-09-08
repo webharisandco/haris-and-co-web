@@ -1,6 +1,7 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Banner from "@/components/ui/LandingPage/Banner";
-import BannerImages from "@/assets/images/web/images/banner-Image.png";
+import BannerImages from "@/assets/images/landing/webHero.webp";
 import Banner2 from "@/assets/images/web/images/banner2.png";
 import BrandPartnerSection from "@/components/ui/LandingPage/BrandPartnerSection";
 import AboutSection from "@/components/ui/LandingPage/AboutSection";
@@ -14,26 +15,73 @@ import ConsultBanner from "@/components/ui/LandingPage/ConsultBanner";
 import Testimonial from "@/components/ui/LandingPage/Testimonial";
 import { Faq } from "@/components/ui/LandingPage/Faq";
 import AboutCompany from "@/components/ui/web/AboutCompany";
+import AwardSection from "@/components/ui/LandingPage/AwardSection";
 import webBrand1 from "@/assets/images/brandLogos/web/webBrands1.png";
 import webBrand2 from "@/assets/images/brandLogos/web/webBrands2.png";
 import webBrand3 from "@/assets/images/brandLogos/web/webBrands3.png";
 import webBrand4 from "@/assets/images/brandLogos/web/webBrands4.png";
 import webBrand5 from "@/assets/images/brandLogos/web/webBrands5.png";
 import webBrand6 from "@/assets/images/brandLogos/web/webBrands6.png";
-import webBrandSmall1 from "../../../assets/images/brandLogos/web/small/webBrandsSmall1.png";
-import webBrandSmall2 from "../../../assets/images/brandLogos/web/small/webBrandsSmall2.png";
-import webBrandSmall3 from "../../../assets/images/brandLogos/web/small/webBrandsSmall3.png";
-import webBrandSmall4 from "../../../assets/images/brandLogos/web/small/webBrandsSmall4.png";
-import webBrandSmall5 from "../../../assets/images/brandLogos/web/small/webBrandsSmall5.png";
-import webBrandSmall6 from "../../../assets/images/brandLogos/web/small/webBrandsSmall6.png";
-import webBrandSmall7 from "../../../assets/images/brandLogos/web/small/webBrandsSmall7.png";
-import webBrandSmall8 from "../../../assets/images/brandLogos/web/small/webBrandsSmall8.png";
-import webBrandSmall9 from "../../../assets/images/brandLogos/web/small/webBrandsSmall9.png";
-import webBrandSmall10 from "../../../assets/images/brandLogos/web/small/webBrandsSmall10.png";
-import webBrandSmall11 from "../../../assets/images/brandLogos/web/small/webBrandsSmall11.png";
-import { Helmet } from "react-helmet";
+import webBrandSmall1 from "@/assets/images/brandLogos/web/small/webBrandsSmall1.png";
+import webBrandSmall2 from "@/assets/images/brandLogos/web/small/webBrandsSmall2.png";
+import webBrandSmall3 from "@/assets/images/brandLogos/web/small/webBrandsSmall3.png";
+import webBrandSmall4 from "@/assets/images/brandLogos/web/small/webBrandsSmall4.png";
+import webBrandSmall5 from "@/assets/images/brandLogos/web/small/webBrandsSmall5.png";
+import webBrandSmall6 from "@/assets/images/brandLogos/web/small/webBrandsSmall6.png";
+import webBrandSmall7 from "@/assets/images/brandLogos/web/small/webBrandsSmall7.png";
+import webBrandSmall8 from "@/assets/images/brandLogos/web/small/webBrandsSmall8.png";
+import webBrandSmall9 from "@/assets/images/brandLogos/web/small/webBrandsSmall9.png";
+import webBrandSmall10 from "@/assets/images/brandLogos/web/small/webBrandsSmall10.png";
+import webBrandSmall11 from "@/assets/images/brandLogos/web/small/webBrandsSmall11.png";
+
 
 export default function UIWeb() {
+  const location = {
+    lat: 25.270889,
+    lng: 55.3314523,
+  };
+  const webDevelopmentServices = [
+    {
+      title: "Dedicated Project Manager",
+      description:
+        "We have an in-house brand solutions team for our web development in Dubai. This means your project gets personal attention from our dedicated project manager who ensures clear communication, and timely delivery.",
+    },
+    {
+      title: "Specialists at Every Step",
+      description:
+        "From UI/UX designers to developers, content writers to conversion rate optimizers – we have specialists who take care of each aspect of your website project. Their collaboration helps us to ensure maximum quality.",
+    },
+    {
+      title: "End-to-End Digital Excellence",
+      description:
+        "We handle everything from strategy to launch, including design, development, content, and optimization – no need to coordinate with multiple agencies.",
+    },
+    {
+      title: "Data-Driven Decision Making",
+      description:
+        "Our solutions are backed by research, user behaviour analysis, and industry best practices to ensure maximum impact.",
+    },
+    {
+      title: "Results-Focused Approach",
+      description:
+        "We don't just build websites. We are a web development company in Dubai that creates digital assets that drive business growth through strategic design and conversion optimization.",
+    },
+    {
+      title: "Proven Development Process",
+      description:
+        "Our structured web development methodology ensures transparency, timely delivery, and consistent quality across all projects.",
+    },
+    {
+      title: "Post-Launch Support",
+      description:
+        "Just because we are a web development company in Dubai, our relationship doesn't end after developing and launching the website. We provide ongoing support to ensure your website continues to perform and evolve with your business.",
+    },
+    {
+      title: "Technical Excellence",
+      description:
+        "We use cutting-edge technologies and follow best practices in security, performance, and SEO to future-proof your digital presence.",
+    },
+  ];
   const webBrandSmalls = [
     { id: 1, image: webBrandSmall1 },
     { id: 2, image: webBrandSmall2 },
@@ -80,7 +128,7 @@ export default function UIWeb() {
     "A Web Development Company in Dubai Trusted by 80+ Brands";
   const aboutDescription =
     "As a web design and development company in Dubai, we believe your website must be an all-rounder – one that’s fast, user-friendly, secure, engaging and optimised to turn visitors into customers. That’s what you can expect when you partner with us for website development. Whether you are a startup, a large business or an ecommerce brand, we can deliver a website that meets your expectations. To ensure maximum quality, we have experts in each department be it UI/UX design, development, content or conversion optimization. Also, you’ll have a dedicated project manager to keep you updated on the project.";
-  const tagline = "Conversion-focused Website Development Company in Dubai";
+  const tagline = "Conversion-focused Web Development Company in UAE";
 
   const faqList = [
     {
@@ -142,7 +190,6 @@ export default function UIWeb() {
     },
   ];
 
-
   const clientsMetrix = [
     {
       number: "80+",
@@ -154,11 +201,17 @@ export default function UIWeb() {
     },
     {
       number: "15+",
-      heading: "Industries Served",
+      heading: "Industries Expertise",
     },
   ];
-  const seoHeading = 'Web Design and Development Services in Dubai Focused on Conversion'
-  const seoDescription = 'Haris&Co. has been serving web development services in Dubai for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content, and technicalities.'
+  const seoHeading =
+    "Web Design and Development Services in Dubai Focused on Conversion";
+  const seoDescription =
+    "Haris&Co. has been serving web development services in Dubai for the last 5 years, empowering 80+ brands. Whenever a client approaches, we keep the conversion aspect of a website on top of our mind because we believe that a website isn’t just a showcase, it should act as a shop for a business. This is why we have conversion rate optimisers on the team to ensure that website visitors turn into customers. This doesn’t mean we disregard other aspects such as aesthetics, content, and technicalities.";
+
+  const seoHeading2 =
+    "Why You Should Choose Us As Your Web Development Company in Dubai";
+  const seoHeading3 = "How Our Web Development In Dubai Works";
 
   return (
     <>
@@ -166,10 +219,22 @@ export default function UIWeb() {
         <Helmet>
           <title>Trusted Web Development Company in Dubai</title>
         </Helmet>
-          <meta name="description" content="We're a web development company in Dubai that delivers fast, secure, engaging, user-friendly and conversion-optimized websites" />
-          <link rel="canonical" href="https://harisand.co/ae/services/web-development-company-in-dubai" />
-                    <meta property="og:title" content="Trusted Web Development Company in Dubai" />
-          <meta property="og:description" content="We're a web development company in Dubai that delivers fast, secure, engaging, user-friendly and conversion-optimized websites" />
+        <meta
+          name="description"
+          content="We're a web development company in Dubai that delivers fast, secure, engaging, user-friendly and conversion-optimized websites"
+        />
+        <link
+          rel="canonical"
+          href="https://harisand.co/ae/services/web-development-company-in-dubai"
+        />
+        <meta
+          property="og:title"
+          content="Trusted Web Development Company in Dubai"
+        />
+        <meta
+          property="og:description"
+          content="We're a web development company in Dubai that delivers fast, secure, engaging, user-friendly and conversion-optimized websites"
+        />
         <LandingHeader />
         <Banner
           bannerImage={BannerImages}
@@ -182,6 +247,8 @@ export default function UIWeb() {
           barandLogos={webBrands}
           brandLogosSmall={webBrandSmalls}
         />
+
+        <AwardSection />
 
         <div className="px-[18px] md:px-0 lg:pr-[100px]">
           <AboutSection
@@ -201,20 +268,26 @@ export default function UIWeb() {
 
         <div className="bg-white">
           <ConsultBanner />
-          <CaseStudy />
+          <CaseStudy web={true} />
           <Testimonial />
         </div>
         <div className="">
-          <ContactSection />
+          <ContactSection location={location} />
         </div>
         <div className="bg-white">
           <Faq faqList={faqList} />
         </div>
       </div>
       <div className="bg-white">
-        <AboutCompany seoHeading={seoHeading} seoDescription={seoDescription} />
+        <AboutCompany
+          seoHeading={seoHeading}
+          seoDescription={seoDescription}
+          seoHeading2={seoHeading2}
+          seoHeading3={seoHeading3}
+          webDevelopmentServices={webDevelopmentServices}
+        />
       </div>
-      <LandingFooter />
+      <LandingFooter serviceType='web' />
     </>
   );
 }

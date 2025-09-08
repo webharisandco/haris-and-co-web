@@ -19,9 +19,9 @@ SwiperCore.use([Navigation, Pagination]);
 
 function OurLatestWorks({ text }) {
   return (
-    <div className="mt-[75px] md:mt-[130px] px-[18px] md:px-[100px]">
+    <div className="mt-[75px] md:mt-[130px] px-[18px] md:px-[100px] font-[AbroBold]">
       <div className="flex justify-center md:justify-start  md:items-start">
-        <p className="text-white text-[30px] md:text-[48px]">
+        <p className="text-white text-[30px] md:text-[36px]">
           Our <br className="hidden md:block" />
           Latest Work
         </p>
@@ -99,8 +99,8 @@ function OurLatestWorks({ text }) {
       </div>
 
       <div className="mt-[25px] md:mt-[111px] flex flex-col md:flex-row gap-[30px] justify-between w-full">
-        <div className="md:w-9/12">
-          <p className="text-[16px] md:text-[20px] text-white poppins-thin">
+        <div className="w-full">
+          <p className="text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-white poppins-light">
             {text}
           </p>
         </div>
