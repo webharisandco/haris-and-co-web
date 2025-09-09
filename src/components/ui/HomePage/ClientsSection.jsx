@@ -50,21 +50,21 @@ function ClientsSection() {
       name: "Jasim SM",
       role: "CEO BOSQ",
       link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs",
-      company: "Bosq economic living"
+      company: "Bosq Ergonomic Living"
     },
     {
       img: shan,
       name: "Shan A Salam",
-      role: "Founder ",
+      role: "Founder of one percentages ",
       link: "https://www.instagram.com/reel/C3r7E01Pn9_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      company:"one percentages And E-COMMERCE consultant"
+      company:" E-commerce consultant"
     },
     {
       img: arabi,
       name: "Abbas",
-      
+      role: "Founder of First driving center ",
       link: "https://www.instagram.com/reel/DNPxOc-xxs1/?igsh=MWpqNm1oYm9sMGh5dw==",
-      company:"FDC"
+     
     }
   ];
 

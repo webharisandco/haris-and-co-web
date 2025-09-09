@@ -7,6 +7,7 @@ import image4 from "@/assets/images/awards/award4.jpg";
 // import image5 from "@/assets/images/awards/pepper-award.JPG";
 import brand from "@/assets/images/awards/brand.png";
 import peperLogo from "@/assets/images/awards/peperLogo.jpg";
+import afaqsLogo2 from "@/assets/images/awards/afaqsLogo2.png";
 
 export default function useAwards() {
   const awardContent = [
@@ -36,14 +37,14 @@ export default function useAwards() {
       title: "Pepper Awards - Silver ",
       date: "2023",
       desc: "A touch of Pepper only made us stronger. Our campaign for Femisafe won over the jury at the prestigious Pepper Awards, bringing home a Silver that celebrated creativity, precision, and the impact of meaningful storytelling.",
-      brandImg: brand,
+      brandImg: peperLogo,
     },
     {
       image: image4,
       title: "Brand Storyz - Bronze ",
       date: "2023",
       desc: "Our campaign for Kiddiebus, an English learning platform for kids, transformed learning into an adventure. With playful, engaging content, we generated over 7,000 leads—earning a bronze award for ‘Best Lead Generation Campaign’ from Afaqs!.",
-      brandImg: brand,
+      brandImg: afaqsLogo2,
     },
   ];
   return { awardContent };

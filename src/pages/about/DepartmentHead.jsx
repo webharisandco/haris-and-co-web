@@ -51,7 +51,7 @@ export default function DepartmentHead() {
   ];
 
     const RegionalHead = [
-    { name: "Muhammed Shabeer", role: "Regional Head", img: NabhanImg },
+    { name: "Muhammed Shabeer", role: "Regional Head - UAE", img: NabhanImg },
     
   ];
 
@@ -121,64 +121,7 @@ export default function DepartmentHead() {
       
 
 
-      <div className="">
-        <h4 className="text-[20px] md:text-[18px] 3xl:text-[24px] font-[Helvetica-Light] mb-3">
-         Our Regional Head
-        </h4>
 
-      </div>
-
-
-      <div className="w-full">
-        <div
-          // modules={[Navigation, Pagination, Autoplay]}
-          // spaceBetween={30}
-          // slidesPerView={1}
-          // navigation={false}
-          // draggable
-          // pagination={{ clickable: true }}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
-          // loop={false} // 🚫 no infinite loop
-          // watchOverflow={true} // ✅ hide arrows/pagination if not enough slides
-          // centerInsufficientSlides={true} // ✅ center slides if fewer than perView
-          // breakpoints={{
-          //   640: { slidesPerView: Math.min(2, businessHeads.length) },
-          //   768: { slidesPerView: Math.min(3, businessHeads.length) },
-          //   1024: {
-          //     slidesPerView: Math.min(4, businessHeads.length),
-          //     autoplay: false, // 🚫 disable autoplay on laptop+
-          //   },
-          //   1240: {
-          //     slidesPerView: Math.min(1, businessHeads.length),
-          //     autoplay: false, // 🚫 disable autoplay on larger screens
-          //   },
-          // }}
-          className="flex items-center justify-center"
-        >
-          {RegionalHead.map((member, index) => (
-            <div key={index}>
-              <div className="flex flex-col items-start w-fit">
-                {/* <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[200px]">
-                  <img
-                    className="pt-8 w-full h-full object-cover"
-                    src={member.img}
-                    alt={member.name}
-                  />
-                </div> */}
-                <p className="text-[18px] 3xl:text-[24px] mt-1">
-                  {member.name}
-                </p>
-                <p className="text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]">
-                  {member.role}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
 
 
@@ -234,6 +177,65 @@ export default function DepartmentHead() {
         </Swiper>
       </div>
 
+
+      <div className="">
+        <h4 className="text-[20px] md:text-[18px] 3xl:text-[24px] font-[Helvetica-Light] mb-3">
+         Our Regional Heads
+        </h4>
+
+      </div>
+
+
+      <div className="w-full">
+        <div
+          // modules={[Navigation, Pagination, Autoplay]}
+          // spaceBetween={30}
+          // slidesPerView={1}
+          // navigation={false}
+          // draggable
+          // pagination={{ clickable: true }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
+          // loop={false} // 🚫 no infinite loop
+          // watchOverflow={true} // ✅ hide arrows/pagination if not enough slides
+          // centerInsufficientSlides={true} // ✅ center slides if fewer than perView
+          // breakpoints={{
+          //   640: { slidesPerView: Math.min(2, businessHeads.length) },
+          //   768: { slidesPerView: Math.min(3, businessHeads.length) },
+          //   1024: {
+          //     slidesPerView: Math.min(4, businessHeads.length),
+          //     autoplay: false, // 🚫 disable autoplay on laptop+
+          //   },
+          //   1240: {
+          //     slidesPerView: Math.min(1, businessHeads.length),
+          //     autoplay: false, // 🚫 disable autoplay on larger screens
+          //   },
+          // }}
+          className="flex items-center justify-center"
+        >
+          {RegionalHead.map((member, index) => (
+            <div key={index}>
+              <div className="flex flex-col items-start w-fit">
+                {/* <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[200px]">
+                  <img
+                    className="pt-8 w-full h-full object-cover"
+                    src={member.img}
+                    alt={member.name}
+                  />
+                </div> */}
+                <p className="text-[18px] 3xl:text-[24px] mt-1">
+                  {member.name}
+                </p>
+                <p className="text-[16px] 3xl:text-[20px] text-[#040404BA] font-[thin]">
+                  {member.role}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
 
     </div>

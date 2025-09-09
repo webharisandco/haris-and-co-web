@@ -6,7 +6,7 @@ export default function JobCard({ className, jobName }) {
   return (
     <div
       className={
-        "bg-white shadow-md p-6  flex flex-col justify-between gap-10 3xl:gap-24 " +
+        "bg-white shadow-md p-6  flex flex-col justify-between gap-0 md:gap-10 3xl:gap-24 " +
         className
       }
     >

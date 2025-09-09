@@ -29,7 +29,7 @@ export default function OurTeam() {
       img: HarisImg,
     },
     { name: "Ragin Raj", role: "Chief People Officer", img: SaheelImg },
-    { name: "Nizwa Iqbal", role: "Chief Financial Office", img: AmnaImg },
+    { name: "Nizwa Iqbal", role: "Chief Financial Officer", img: AmnaImg },
   ];
 
   const slideCount = teamMembers.length;

@@ -8,7 +8,8 @@ function WorkPartners({ourWorksData,filteredElement}) {
       <div className="px-[17px] md:px-[40px] lg:px-[80px] mt-[40px] pb-[20px] lg:pb-[180px]">
         <div className=" grid grid-cols-1 lg:grid-cols-2 gap-y-[49px] md:gap-y-[100px] lg:gap-y-[150px] gap-x-[120px] mt-[40px] md:mt-[60px] lg:mt-[80px]">
           {ourWorksData.map((data) => (
-            <Link to={`/works/${data.linkIds}`} key={data.id}>
+            // <Link to={`/works/${data.linkIds}`} key={data.id}>
+            <Link to="#" key={data.id}>
              <div
               key={data.id}
               className={`h-full flex flex-col ${data.id % 2 === 0 ? "mt-0 lg:mt-[78px]" : ""
