@@ -32,13 +32,7 @@ export default function useAwards() {
       desc: "Love was in the air, and so was our Valentine’s Day Campaign for Haris&Co! The content struck a chord with audiences, making hearts smile and feeds light up with joy. All that love earned us the silver award from Afaqs! for ‘Best Use of Video on Social Media’, a recognition that celebrated the playful spirit and emotional connect of the campaign.",
       brandImg: brand,
     },
-    // {
-    //   image: image6,
-    //   title: "Afaqs! startup brands Silver",
-    //   date: "2023",
-    //   desc: "Mother’s Day felt extra special with our campaign for Craftise, a crafting materials supplier. It celebrated the little handmade moments and the joy of gifting that make mothers feel truly appreciated. All that love was recognized with a silver award for ‘Best Branded Content’.",
-    //   brandImg: peperLogo,
-    // },
+
     
     {
       image: image3,
