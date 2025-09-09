@@ -32,7 +32,7 @@ function useServices() {
   const brandingContents = [
     {
       id: "branding",
-      title: "Branding",
+      title: "Branding & Creative",
       description:
         "Beyond a logo, within a story. Your branding journey with us is an ongoing partnership helping you tell a story that resonates and drives conversions. From logo design to constant brand revisions, our branding team makes your brand stand out.",
       services: [

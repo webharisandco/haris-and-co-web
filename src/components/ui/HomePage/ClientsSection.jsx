@@ -48,7 +48,7 @@ function ClientsSection() {
     {
       img: Jasim,
       name: "Jasim SM",
-      role: "CEO BOSQ",
+      role: "CEO ",
       link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs",
       company: "Bosq Ergonomic Living"
     },
