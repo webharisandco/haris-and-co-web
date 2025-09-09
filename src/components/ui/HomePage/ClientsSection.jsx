@@ -7,10 +7,11 @@ import { Navigation, Pagination, Scrollbar } from "swiper/modules";
 
 import arsh from "@/assets/images/clients/Arsh.png";
 import ashik from "@/assets/images/clients/Ashik.png";
-import kevin from "@/assets/images/clients/Kevin.png";
+import salman_thorop from "@/assets/images/clients/salman_thorop.jpg";
 import Jasim from "@/assets/images/clients/Bosq.png";
 import shan from "@/assets/images/clients/Shan.png";
 import PlayIcon from "@/assets/images/icons/play.svg";
+import arabi from "@/assets/images/clients/arabi.jpg"
 import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
 // styled-component wrap
@@ -26,31 +27,44 @@ function ClientsSection() {
       img: arsh,
       name: "Arsh Navas",
       role: "Chief Brand Officer",
-      link: "https://www.instagram.com/reel/DB367jVBT2u/?igsh=MWd5cGluMGxkdjV3cg=="
+      link: "https://www.instagram.com/reel/DB367jVBT2u/?igsh=MWd5cGluMGxkdjV3cg==",
+      company: "Gatezone transport"
+      
     },
     {
       img: ashik,
       name: "Ashik",
       role: "Marketing Director",
-      link: "https://www.instagram.com/reel/DB3yj-xhe2_/?igsh=MWdrZmV2dHJpZWR4aQ=="
+      link: "https://www.instagram.com/reel/DB3yj-xhe2_/?igsh=MWdrZmV2dHJpZWR4aQ==",
+      company: "Mr Alfred united arab emirates"
     },
     {
-      img: kevin,
-      name: "Kevin Mohanji Gera",
-      role: "Business Development Manager",
-      link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs"
+      img: salman_thorop,
+      name: "Salman Thorop",
+      role: "Founder and CEO ",
+      link: "https://www.instagram.com/reel/DK9ruMOTRFM/?igsh=aXFsbm40MjJnanBm",
+      company:"Duvolks"
     },
     {
       img: Jasim,
       name: "Jasim SM",
       role: "CEO BOSQ",
-      link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs"
+      link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs",
+      company: "Bosq economic living"
     },
     {
       img: shan,
       name: "Shan A Salam",
       role: "Founder The One Percentage",
-      link: "https://www.instagram.com/reel/C3r7E01Pn9_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      link: "https://www.instagram.com/reel/C3r7E01Pn9_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      company:"one percentages And E-COMMERCE consultant"
+    },
+    {
+      img: arabi,
+      name: "Shan A Salam",
+      role: "Founder The One Percentage",
+      link: "https://www.instagram.com/reel/DNPxOc-xxs1/?igsh=MWpqNm1oYm9sMGh5dw==",
+      company:"one percentages And E-COMMERCE consultant"
     }
   ];
 
@@ -66,7 +80,7 @@ function ClientsSection() {
           modules={[Navigation, Pagination]} // Ensure modules are passed here
           spaceBetween={20}
           slidesPerView={1}
-          navigation={true} // Enable navigation (set to false if not needed)
+          navigation={false} 
           pagination={{ clickable: true }} // Ensure pagination works
           breakpoints={{
             768: { slidesPerView: 2 },
@@ -94,11 +108,14 @@ function ClientsSection() {
                 {/* Text and Play button */}
                 <div className="flex items-center justify-between w-full absolute bottom-6 px-6 z-20">
                   <div>
-                    <p className="font-medium text-black text-[32px] leading-none">
+                    <p className="font-medium text-black text-[28px] leading-none whitespace-nowrap">
                       {client.name}
                     </p>
                     <p className="text-[20px] text-black font-[thin]">
                       {client.role}
+                    </p>
+                    <p className="text-[15px] text-gray-800 capitalize font-[thin]">
+                      {client.company}
                     </p>
                   </div>
 

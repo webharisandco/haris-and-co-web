@@ -18,49 +18,63 @@ const Footer = () => {
               bd@harisand.co
             </p>
           </div>
-          <div className="flex justify-between gap-4 sm:gap-5 md:gap-6">
-            <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
+
+
+          <div className="flex flex-wrap justify-center sm:justify-between gap-4 ">
+            {/* Facebook */}
+            <div className="border-[1.5px] border-black rounded-full 
+                            w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
+                            flex items-center justify-center">
               <a
                 href="https://www.facebook.com/harisandconsulting"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <img
-                  src={facebookIcon}
-                  alt="facebook Icon"
-                  className="max-w-max"
-                />
+                <img src={facebookIcon} alt="facebook Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
               </a>
             </div>
-            <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
+
+            {/* LinkedIn */}
+            <div className="border-[1.5px] border-black rounded-full 
+                            w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
+                            flex items-center justify-center">
               <a
-                href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fharisand-co%2Fmycompany%2Fverification%2F"
-                target="_blank"
-              >
-                <img
-                  src={linkedInIcon}
-                  alt="linked in Icon"
-                  className="max-w-max"
-                />
-              </a>
-            </div>
-            <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
-              <a
-                href="https://x.com/i/flow/login?redirect_after_login=%2Fharisand_co"
+                href="https://www.linkedin.com/company/harisand-co"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={xIcon} alt="x icon" className="max-w-max" />
+                <img src={linkedInIcon} alt="LinkedIn Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
               </a>
             </div>
-            <div className="border-[1.5px] border-black rounded-full p-[18.5px] sm:p-[21px] w-[65px] sm:w-[70px] h-[65px] sm:h-[70px]">
+
+            {/* X (Twitter) */}
+            <div className="border-[1.5px] border-black rounded-full 
+                            w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
+                            flex items-center justify-center">
+              <a
+                href="https://x.com/harisand_co"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={xIcon} alt="X Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
+              </a>
+            </div>
+
+            {/* Instagram */}
+            <div className="border-[1.5px] border-black rounded-full 
+                            w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
+                            flex items-center justify-center">
               <a
                 href="https://www.instagram.com/harisand.co/?hl=en"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <img src={instaIcon} alt="insta icon" className="max-w-max" />
+                <img src={instaIcon} alt="Instagram Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
               </a>
             </div>
           </div>
+
+
         </div>
         <div className=" items-start w-full">
           <div className="flex w-full flex-col items-start lg:items-end">
@@ -93,13 +107,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" mt-[50px] gap-10 text-black  justify-between lg:hidden flex">
+      <div className="mt-[50px] text-black grid grid-cols-2 sm:grid-cols-4 gap-6 lg:hidden">
         <Link to="digital-marketing-agency-in-kerala">Kerala</Link>
         <Link to="ae/digital-marketing-agency-in-dubai">Dubai</Link>
         <Link to="ae/digital-marketing-agency-in-sharjah">Sharjah</Link>
-        <Link to="ae/digital-marketing-agency-in-abudhabi"> Abu Dhabi</Link>
+        <Link to="ae/digital-marketing-agency-in-abudhabi">Abu Dhabi</Link>
       </div>
-      <div className="mt-[50px] lg:mt-[115px] flex justify-between mb-[40px] text-black/55 text-lg font-medium items-end">
+
+      <div className="mt-[50px] lg:mt-[115px] flex justify-between mb-[40px] text-black/55 text-base md:text-lg font-medium items-end ">
         <div className=" flex gap-4 md:gap-[40px] lg:gap-[60px] flex-col md:flex-row">
           <p>Privacy</p>
           <p>Terms & Conditions</p>

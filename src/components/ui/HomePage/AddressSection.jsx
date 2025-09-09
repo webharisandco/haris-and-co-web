@@ -14,10 +14,10 @@ function AddressSection() {
           </div>
           <div className="flex  w-full  gap-4 items-start">
             <div className="w-1/5 lg:w-2/5 xl:w-1/4 3xl:w-[100px] ">
-              <p className="text-[20px] md:text-2xl font-medium text-black text-nowrap">Address :</p>
+              <p className="text-base md:text-2xl font-medium text-black text-nowrap">Address :</p>
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4 ">
-              <p className=" text-[20px] md:text-2xl text-black text-start font-[thin]">
+              <p className=" text-base md:text-2xl text-black text-start font-[thin]">
                 4, 6QGR+7PW WING Avenue, Panniyankara, Kozhikode, Kerala 673003
               </p>
             </div>
@@ -25,20 +25,20 @@ function AddressSection() {
 
           <div className="flex w-full  gap-4 items-start">
             <div className="w-1/5 lg:w-2/5 xl:w-1/4 3xl:w-[100px]">
-              <p className="text-[20px] md:text-2xl font-medium text-black text-nowrap">Phone :</p>
+              <p className="text-base md:text-2xl font-medium text-black text-nowrap">Phone :</p>
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4">
-              <p className="text-[20px] md:text-2xl text-black text-start font-[thin]">
+              <p className="text-base md:text-2xl text-black text-start font-[thin]">
                 +91 80750 40330
               </p>
             </div>
           </div>
           <div className="flex w-full  gap-4">
             <div className="w-1/5 lg:w-2/5 xl:w-1/4 3xl:w-[100px]">
-              <p className="text-[20px] md:text-2xl font-medium text-black text-nowrap">Hours :</p>
+              <p className="text-base md:text-2xl font-medium text-black text-nowrap">Hours :</p>
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4">
-              <p className="text-[20px] md:text-2xl text-black text-start font-[thin]">
+              <p className="text-base md:text-2xl text-black text-start font-[thin]">
                 09:30 AM - 06:30 PM
               </p>
             </div>
@@ -51,10 +51,10 @@ function AddressSection() {
           </div>
           <div className="flex  w-full  gap-4 items-start">
             <div className="w-1/5 lg:w-2/5 xl:w-1/4 3xl:w-[100px]">
-              <p className="text-[20px] md:text-2xl font-medium text-black text-nowrap">Address :</p>
+              <p className="text-base md:text-2xl font-medium text-black text-nowrap">Address :</p>
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4">
-              <p className=" text-[20px] md:text-2xl text-black text-start font-[thin]">
+              <p className=" text-base md:text-2xl text-black text-start font-[thin]">
                 Abdulla Kamber Business Center - Room No 103, First Floor - Abu Baker Al Siddique St - Deira - Dubai - United Arab Emirates
               </p>
             </div>
@@ -62,20 +62,20 @@ function AddressSection() {
 
           <div className="flex w-full  gap-4 items-start">
             <div className="w-1/5 lg:w-2/5 xl:w-1/4 3xl:w-[100px]">
-              <p className="text-[20px] md:text-2xl font-medium text-black text-nowrap">Phone :</p>
+              <p className="text-base md:text-2xl font-medium text-black text-nowrap">Phone :</p>
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4">
-              <p className="text-[20px] md:text-2xl text-black text-start font-[thin]">
+              <p className="text-base md:text-2xl text-black text-start font-[thin]">
                 +971 58 848 6733
               </p>
             </div>
           </div>
           <div className="flex w-full  gap-4">
             <div className="w-1/5 lg:w-2/5 xl:w-1/4 3xl:w-[100px]">
-              <p className="text-[20px] md:text-2xl font-medium text-black text-nowrap">Hours :</p>
+              <p className="text-base md:text-2xl font-medium text-black text-nowrap">Hours :</p>
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4">
-              <p className="text-[20px] md:text-2xl text-black text-start font-[thin]">
+              <p className="text-base md:text-2xl text-black text-start font-[thin]">
                 09:30 AM - 06:30 PM
               </p>
             </div>

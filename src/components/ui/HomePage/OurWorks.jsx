@@ -20,7 +20,7 @@ function OurWorks() {
               }`}
             >
               <img
-                className="w-full h-[369px] object-cover lg:object-contain lg:h-full"
+                className="w-full md:h-[369px] object-contain lg:h-full"
                 src={data.image}
                 alt={data.heading}
               />

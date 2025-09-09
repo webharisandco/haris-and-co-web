@@ -1,8 +1,8 @@
 import React from "react";
-import image1 from "@/assets/images/awards/award1.jpeg";
-import image2 from "@/assets/images/awards/award2.jpeg";
-import image3 from "@/assets/images/awards/award3.jpeg";
-import image4 from "@/assets/images/awards/award4.jpeg";
+import image1 from "@/assets/images/awards/award2.jpeg";
+import image2 from "@/assets/images/awards/award1.jpg";
+import image3 from "@/assets/images/awards/award3.jpg";
+import image4 from "@/assets/images/awards/award4.jpg";
 // import image6 from "@/assets/images/awards/award6.jpg";
 // import image5 from "@/assets/images/awards/pepper-award.JPG";
 import brand from "@/assets/images/awards/brand.png";
@@ -29,6 +29,7 @@ export default function useAwards() {
       title: "Afaqs! startup brands Silver ",
       date: "2023",
       desc: "Every woman runs her own race, and our Women’s Day campaign for Femisafe honored that journey with honesty and emotion. The campaign sparked conversations, built connection, and was awarded the silver for ‘Best Moment Marketing’.",
+      brandImg: brand,
     },
     {
       image: image3,

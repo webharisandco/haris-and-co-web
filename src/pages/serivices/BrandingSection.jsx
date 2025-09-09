@@ -23,7 +23,7 @@ function BrandingSection({ BrandingContents }) {
                 }`}
               >
                 <div>
-                  <p className="font-[helvetica-medium] text-48px ">
+                  <p className="font-[helvetica-medium] text-[48px] ">
                     {brandingContent.title}
                   </p>
                 </div>
