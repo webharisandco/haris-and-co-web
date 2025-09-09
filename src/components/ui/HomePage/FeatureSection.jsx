@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import BrandImg from "@/assets/images/features/branding.png";
 import CreativeImg from "@/assets/images/features/creative.png";
 import DigitalImg from "@/assets/images/features/digital.jpeg";
@@ -25,79 +25,116 @@ export default function FeatureSection() {
     { name: "Social Media", howerPathName: "social", path: "/services/social-media" },
   ];
 
-  const images = [
-    { src: BrandImg, key: "branding" },
-    { src: WebImg, key: "web" },
-    { src: CreativeImg, key: "creative" },
-    { src: DigitalImg, key: "digital" },
-    { src: PerformanceImg, key: "performance" },
-    { src: ProductionImg, key: "production" },
-    { src: SeoImg, key: "seo" },
-    { src: SocialImg, key: "social" },
-  ];
+
 
   return (
     <div
-      className={`w-full py-10 lg:py-20 px-4 sm:px-10 lg:px-20 flex flex-col lg:flex-row justify-between items-start lg:items-center relative overflow-hidden ${
+      className={` h-full w-full py-[40px] lg:py-[80px] px-[16px] md:px-[40px] lg:p-[80px]  flex justify-between items-center relative overflow-hidden ${
         isHovered ? "featureGradient" : ""
       }`}
     >
-      {/* Left: Services */}
-      <div className="flex flex-col gap-6 sm:gap-8 lg:gap-12 w-full lg:w-1/3 select-none">
-        {services.map((service) => (
+      <div className="flex flex-col gap-[25px]  md:gap-[50px] h-full select-none">
+        {services.map((service, index) => (  
           <div
-            key={service.howerPathName}
-            className={`flex gap-4 cursor-pointer items-center transition-transform duration-300 ease-in-out ${
-              isHovered === service.howerPathName ? "translate-x-4 lg:translate-x-10" : ""
+          className={`flex gap-[20px] cursor-pointer items-center ${
+          
+            isHovered === "branding" && "translate-x-10"
+          }`}
+          onMouseEnter={() => setIsHovered(service.howerPathName)}
+          onMouseLeave={() => setIsHovered("")}
+        >
+          <Link to={service.path}>
+          <p
+            className={`text-nowrap text-[22px] md:text-[30px] lg:text-[40px] text-black font-[helvetica-medium] ${
+            
+              isHovered === service.howerPathName
+                ? "text-white"
+                : isHovered && " text-white/55"
             }`}
-            onMouseEnter={() => setIsHovered(service.howerPathName)}
-            onMouseLeave={() => setIsHovered("")}
           >
-            <Link to={service.path}>
-              <p
-                className={`whitespace-nowrap text-[17px]  lg:text-[30px] font-[helvetica-medium] text-black transition-colors duration-300 ${
-                  isHovered === service.howerPathName
-                    ? "text-white"
-                    : isHovered
-                    ? "text-white/55"
-                    : ""
-                }`}
-              >
-                {service.name}
-              </p>
-            </Link>
-            <RightArrow
-              className="mt-0"
-              color={
-                isHovered === service.howerPathName
-                  ? "white"
-                  : isHovered
-                  ? "#ffffff55"
-                  : "black"
-              }
-            />
-          </div>
-        ))}
-      </div>
+         {service.name}
+          </p>
+          </Link>
 
-      {/* Right: Images */}
-      <div className="w-full lg:w-2/3 mt-6 lg:mt-0 relative flex items-center justify-center">
-        <div className="absolute top-0 left-0 -z-10 w-full h-[250px] sm:h-[400px] lg:h-[600px] transition-all duration-300 ease-in-out">
-          {images.map((imgObj) => (
-            <img
-              key={imgObj.key}
-              src={imgObj.src}
-              alt={imgObj.key}
-              className={`w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-500 ease-in-out ${
-                isHovered === imgObj.key ? "opacity-100" : "opacity-0"
-              }`}
-            />
-          ))}
+          <RightArrow
+            className="mt-0 hidden md:flex"
+            color={
+              isHovered === service.howerPathName
+                ? "white"
+                : isHovered
+                ? "#ffffff55"
+                : "black"
+            }
+          />
         </div>
+         ))}
 
-        {/* 3D Text Reveal */}
-        {!isHovered && <TextReveal3D />}
+
+
       </div>
+      <div className="flex items-center h-full">
+  <div className="absolute top-0 left-0 -z-10 w-full h-full transition-all duration-300 ease-in-out">
+    <img
+      src={BrandImg}
+      alt="Branding"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "branding" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={WebImg}
+      alt="Web"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "web" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={CreativeImg}
+      alt="Creative"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "creative" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={DigitalImg}
+      alt="Digital"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "digital" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={PerformanceImg}
+      alt="Performance"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "performance" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={ProductionImg}
+      alt="Production"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "production" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={SeoImg}
+      alt="SEO"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "seo" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+    <img
+      src={SocialImg}
+      alt="Social"
+      className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${
+        isHovered === "social" ? "opacity-100" : "opacity-0"
+      }`}
+    />
+  </div>
+
+  {/* Fallback animation */}
+  {!isHovered && <TextReveal3D />}
+</div>
     </div>
   );
 }

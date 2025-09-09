@@ -55,16 +55,16 @@ function ClientsSection() {
     {
       img: shan,
       name: "Shan A Salam",
-      role: "Founder The One Percentage",
+      role: "Founder ",
       link: "https://www.instagram.com/reel/C3r7E01Pn9_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       company:"one percentages And E-COMMERCE consultant"
     },
     {
       img: arabi,
-      name: "Shan A Salam",
-      role: "Founder The One Percentage",
+      name: "Abbas",
+      
       link: "https://www.instagram.com/reel/DNPxOc-xxs1/?igsh=MWpqNm1oYm9sMGh5dw==",
-      company:"one percentages And E-COMMERCE consultant"
+      company:"FDC"
     }
   ];
 

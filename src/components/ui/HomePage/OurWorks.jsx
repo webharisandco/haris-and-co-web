@@ -25,7 +25,7 @@ function OurWorks() {
                 alt={data.heading}
               />
 
-              <p className="font-[helvetica-medium] pl-[5px] lg:pl-0 mt-[16px] lg:mt-0 tracking-tighter text-[24px] md:text-[36px] text-left ml-[-11px]">
+              <p className="font-[helvetica-medium]   mt-[16px] lg:mt-0 tracking-tighter text-[24px] md:text-[36px] text-left ml-[-6px]">
                 {data.heading}
               </p>
               <p className="text-black font-[Helvetica-Light] font-light opacity-55 text-left text-[16px] md:text-[24px]">

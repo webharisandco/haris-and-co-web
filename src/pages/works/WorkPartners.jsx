@@ -21,7 +21,7 @@ function WorkPartners({ourWorksData,filteredElement}) {
                 alt={data.heading}
               />
 
-              <p className="font-medium text-white tracking-tighter text-[24px] my-[15px] md:my-0 md:text-[36px] text-left ml-[-11px]">
+              <p className="font-medium text-white tracking-tighter text-[24px] my-[15px] md:my-0 md:text-[36px] text-left ">
                 {data.heading}
               </p>
               <p className="text-white ml-[-5px] lg:ml-0 font-[Helvetica-Light] opacity-55 text-left text-[16px] md:text-[24px]">
