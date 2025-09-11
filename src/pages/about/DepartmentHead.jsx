@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import SwiperCore from "swiper";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 
-// install Swiper modules
+
 SwiperCore.use([Navigation, Pagination]);
 
 export default function DepartmentHead() {
