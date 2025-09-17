@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '@/assets/images/Haris&Co.svg';
+import Logo from '@/assets/images/NewLogo.png';
 import menuIcon from '@/assets/images/icons/menu.svg';
 import ContactButton from '../ui/HomePage/ContactButton';
 import { useState, useEffect } from 'react';
@@ -104,7 +104,8 @@ export default function Header() {
             <Link to="/works" className="text-[18px] font-[thin]">Works</Link>
             <Link to="/clients" className="text-[18px] font-[thin]">Clients</Link>
             <Link to="/awards" className="text-[18px] font-[thin]">Awards</Link>
-            <Link to="/about" className="text-[18px] font-[thin] text-nowrap">About us</Link>
+            <Link to="/about" className="text-[18px] font-[thin] text-nowrap">Ourstory 
+</Link>
             <Link to="/blogs" className="hidden xl:flex text-[18px] font-[thin]">Blogs</Link>
             <Link to="/career" className="text-[18px] font-[thin]">Careers</Link>
           </div>

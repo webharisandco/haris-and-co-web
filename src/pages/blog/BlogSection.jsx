@@ -5,15 +5,15 @@ import BlogDiv from "./BlogDiv";
 export default function BlogSection({ blogContent }) {
   const [selectedBlog, setSelectedBlog] = useState(0);
   const blogTypes = [
-    "All Works",
-    "Branding",
-    "Web Development & UI/UX",
-    "Creative",
-    "Digital PR & Communication",
-    "Performance Marketing",
-    "Production",
-    "SEO",
-    "Social Media",
+    // "All Works",
+    // "Branding",
+    // "Web Development & UI/UX",
+    // "Creative",
+    // "Digital PR & Communication",
+    // "Performance Marketing",
+    // "Production",
+    // "SEO",
+    // "Social Media",
   ];
   return (
     <div>

@@ -41,7 +41,8 @@ export default function NormalHeader() {
           <Link to="/works" className={`${location.pathname === "/works" ? "font-medium" : "font-[Helvetica-Light]"} `}>Works</Link>
           <Link to="/clients" className={`${location.pathname === "/clients" ? "font-medium" : "font-[Helvetica-Light]"} `}>Clients</Link>
           <Link to="/awards" className={`${location.pathname === "/awards" ? "font-medium" : "font-[Helvetica-Light]"} `}>Awards</Link>
-          <Link to="/about" className={`${location.pathname === "/about" ? "font-medium" : "font-[Helvetica-Light]"} `}>About us</Link>
+          <Link to="/about" className={`${location.pathname === "/about" ? "font-medium" : "font-[Helvetica-Light]"} `}>Ourstory 
+</Link>
           <Link to="/blogs" className={`${location.pathname === "/blogs" ? "font-medium" : "font-[Helvetica-Light]"} `}>Blogs</Link>
           <Link to="/career" className={`${location.pathname === "/career" ? "font-medium" : "font-[Helvetica-Light]"} `}>Careers</Link>
         </div>

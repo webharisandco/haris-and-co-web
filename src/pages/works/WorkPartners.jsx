@@ -1,36 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function WorkPartners({ourWorksData,filteredElement}) {
-
+function WorkPartners({ ourWorksData, filteredElement }) {
   return (
     <div className="bg-[#0E0E0E]">
       <div className="px-[17px] md:px-[40px] lg:px-[80px] mt-[40px] pb-[20px] lg:pb-[180px]">
-        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-y-[49px] md:gap-y-[100px] lg:gap-y-[150px] gap-x-[120px] mt-[40px] md:mt-[60px] lg:mt-[80px]">
+        
+        {/* 1 → 2 → 3 grid responsive */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[40px] gap-y-[60px] md:gap-x-[60px] md:gap-y-[80px] lg:gap-x-[80px] lg:gap-y-[100px] mt-[40px] md:mt-[60px] lg:mt-[80px]">
           {ourWorksData.map((data) => (
-            // <Link to={`/works/${data.linkIds}`} key={data.id}>
             <Link to="#" key={data.id}>
-             <div
-              key={data.id}
-              className={`h-full flex flex-col ${data.id % 2 === 0 ? "mt-0 lg:mt-[78px]" : ""
-                }`}
-            >
-                 
-              <img
-                className="w-full h-full"
-                src={data.image}
-                alt={data.heading}
-              />
-
-              <p className="font-medium text-white tracking-tighter text-[24px] my-[15px] md:my-0 md:text-[36px] text-left ">
-                {data.heading}
-              </p>
-              <p className="text-white ml-[-5px] lg:ml-0 font-[Helvetica-Light] opacity-55 text-left text-[16px] md:text-[24px]">
-                {data.description}
-              </p>
-            </div>
+              <div className="h-full flex flex-col">
+                <img
+                  className="w-full h-full object-cover"
+                  src={data.image}
+                  alt={data.heading}
+                />
+                <p className="font-medium text-white tracking-tighter text-[20px] md:text-[28px] lg:text-[32px] my-[10px] text-left">
+                  {data.heading}
+                </p>
+                <p className="text-white opacity-55 font-[Helvetica-Light] text-left text-[14px] md:text-[18px] lg:text-[20px]">
+                  {data.description}
+                </p>
+              </div>
             </Link>
-           
           ))}
         </div>
       </div>
