@@ -28,13 +28,13 @@ const Chatbot = () => {
 
   return (
     <>
-      {/* Avatar button on right center */}
+      
       <button
         onClick={() => setChatOpen(!chatOpen)}
         className="fixed right-4 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-50"
         aria-label="Open chat"
       >
-        {/* You can replace this with an actual avatar image */}
+        
         <span className="text-xl font-bold">💬</span>
       </button>
 
