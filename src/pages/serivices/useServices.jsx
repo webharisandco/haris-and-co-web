@@ -1,12 +1,12 @@
-import Branding from "@/assets/images/servicesSection/branding.png";
-import Web from "@/assets/images/servicesSection/web.png";
-import Crtv from "@/assets/images/servicesSection/crtv.png";
+import Branding from "@/assets/images/servicesSection/branding5.svg";
+import SEO from "@/assets/images/servicesSection/branding3.svg";
+import Crtv from "@/assets/images/servicesSection/branding6.svg";
 // import Branding4 from "@/assets/images/servicesSection/branding4.svg";
-import Perfomance from "@/assets/images/servicesSection/perf.png";
-import Production from "@/assets/images/servicesSection/prdtn.png";
+import Perfomance from "@/assets/images/servicesSection/branding2.svg";
+import Production from "@/assets/images/servicesSection/branding4.svg";
 import Seo from "@/assets/images/servicesSection/seo.png";
 import SocialMedia from "@/assets/images/servicesSection/branding1.svg";
-import Influencers from "@/assets/images/servicesSection/influencer.png";
+import Influencers from "@/assets/images/servicesSection/branding7.svg";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -87,7 +87,7 @@ function useServices() {
         icon: icon,
         link: "web-development",
       },
-      image: Web,
+      image: SEO,
     },
     // {
     //   id: "web-development",

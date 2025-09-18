@@ -28,67 +28,84 @@ const PrivacyPolicy = () => (
     </aside>
     {/* Main Content */}
     <main className="flex-1 pt-36 pl-8 pr-8 bg-white max-w-4xl mx-auto">
-      <h1 className="text-left text-6xl font-bold mb-14">Privacy & Cookie Policy</h1>
+      <h1 className="text-left text-6xl font-bold mb-14">Haris&Co Privacy Policy</h1>
       <p className="text-left text-sm text-gray-500 mb-12">
         Last updated: 18 Sept 2025
       </p>
 
       <section id="Introduction" className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">Introduction</h2>
+        <h2 className="text-xl font-semibold mb-4"></h2>
         <p>
-Welcome to Webandcrafts. We are committed to protecting your privacy and safeguarding your personal
-information. This Privacy Policy explains how we collect, use, disclose, and protect your personal information
-when you interact with our website, products, and services. By using our website and services, you consent
-to the practices described in this Privacy Policy.</p>
+At Haris&Co, your privacy matters. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website (website link), use our services, or communicate with us. By accessing our website or services, you agree to the practices described here.</p>
+<br />
+<p>
+  We do not sell or rent your personal information to third parties for marketing purposes without your explicit consent.
+</p>
       </section>
-      <section id="Information-We-Collect" className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">Information We Collect</h2>
-        <p>We may collect and process the following types of personal information:</p>
-        <p>Contact Information: This includes your name, email address, phone number, and postal address, which wecollect when you communicate with us or use our services.</p>
-        <p>Usage Information: We may collect information about how you interact with our website and services, suchas IP addresses, device information, browser type, and pages visited. This data helps us improve our servicesand customise your user experience.</p>
-        <p>Account Information: If you create an account with us, we collect and store information such as yourusername, password, and preferences.</p>
-        
-      </section>
+      <div>
+  <h2 className="text-xl font-bold mb-4">Information We Collect</h2>
+  <p>
+    We collect information to provide you with a better experience and to ensure
+    our services run smoothly. This includes:
+  </p>
+  <ul className="list-disc ml-6 mt-3 space-y-2">
+    <li>
+      <strong>Contact information:</strong> Details such as your name, email
+      address, phone number, company name, job title, and any other information
+      you provide when filling out forms, requesting services, or contacting us
+      directly.
+    </li>
+    <li>
+      <strong>Account information:</strong> If you create an account, we may
+      collect your login credentials, saved preferences, subscription settings,
+      and records of your interactions with our services.
+    </li>
+    <li>
+      <strong>Usage information:</strong> Data about how you use our website,
+      including the pages you visit, links you click, time spent on the site,
+      and the forms or content you interact with. This helps us understand user
+      behavior and improve the overall experience.
+    </li>
+  </ul>
+  <p className="mt-3">
+    This information may be collected directly from you or automatically through
+    your use of our website and services.
+  </p>
+</div>
+<br />
+
+
       <section id="How-We-Use-Your-Information" className="mb-12">
         <h2 className="text-xl font-bold mb-4">How We Use Your Information</h2>
         <div className="space-y-5" >
           <p>We use your personal information for the following purposes:</p>
-          <p>Providing Services:We use your information to deliver the products and services you request, including processing orders and providing customer support.</p>
-          <p>Improving Services: We may analyse usage data to enhance our website and services, tailor content to your preferences, and develop new features.</p>
-          <p>Communication: We may use your contact information to send you updates, promotional offers, newsletters, and important announcements. You can opt-out of these communications at any time.</p> 
-          <p>Legal Compliance: We may process your data to comply with legal obligations and respond to lawfulrequests from government authorities.</p>
+          
          </div>
          </section>
 
       <section id="Data-Security" className="mb-12">
         <h2 className="text-xl font-semibold mb-4">Data Security</h2>
-        <p>We are committed to protecting your personal information. We employ industry-standard security measures to safeguard your data against unauthorised access, disclosure, alteration, and destruction. However, please be aware that no method of data transmission over the internet is entirely secure, and we cannot guarantee the absolute security of your information.</p>
+        <p>We use reasonable physical, electronic, and managerial safeguards to protect your information. These measures are designed to prevent unauthorized access, maintain data accuracy, and ensure the appropriate use of information.
+That said, no method of transmission over the internet or method of electronic storage is completely secure. While we make every effort to protect your information, we cannot guarantee absolute security.
+Unauthorized attempts to breach our site, misuse our services, introduce malware or viruses, or interfere with operations are strictly prohibited and may result in civil or criminal liability.</p>
       </section>
             {/* dout not clear */}
       <section id="Use-of-Google-reCAPTCHA" className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">Use of Google reCAPTCHA</h2>
+        <h2 className="text-xl font-semibold mb-4">Google reCAPTCHA</h2>
         <p>
-         Our website uses Google reCAPTCHA to protect against automated spam and abuse. This service is provided
-         by Google LLC and helps us ensure that interactions on our website are genuine and secure. Google
-         reCAPTCHA may collect certain information from you, such as your IP address, user agent, and browsing
-         behaviour, to determine whether you are a human user or a bot.By using our website, you acknowledge and
-         consent to the processing of this information by Google in accordance with their privacy policy and terms of
-         service. For more information on Google's privacy practices, please visit   <a href="#" className="text-blue-800"> Google's Privacy Policy </a>and Terms of</p>
-         <p>Service.. Please note that the use of Google reCAPTCHA is subject to Google's terms and policies, and we</p>
-         <p>have no control over the data collected by Google through this service. If you have any concerns about the
-         data collected by Google reCAPTCHA, we recommend reviewing Google's privacy policies or using
-         alternative methods to contact us.If you do not agree to the collection and processing of your information by
-         Google reCAPTCHA, please refrain from using our website or contact us directly for assistance.</p>
-      </section>
+          Our website uses Google reCAPTCHA to prevent automated spam and protect against malicious activity. In doing so, Google may collect certain information such as your IP address, browser type and version, operating system, and behavioral data (like mouse movements and clicks).
+This information is processed by Google in accordance with their Privacy Policy and Terms of Service. Haris&Co does not control the data collected by Google through this service.
+If you do not consent to this processing, we recommend contacting us directly instead of using the forms on our website.
+        </p>
+           </section>
 
       <section id="Sharing-Your-Information" className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">Sharing Your Information</h2>
-        <p>We do not sell your personal information to third parties. However, we may share your data with trusted third parties for the following purposes:</p>
-        <p>Service providers: We may share information with trusted third-party service providers who assist us in operating our website and providing our services.</p>
-        <p>Legal requirements: We may disclose your information to comply with legal obligations or to protect our rights, privacy, safety, or property, and those of our customers and the public.</p>
+        <p>
+
+        </p>
       </section>
       <section id="Changes-to-This-Privacy-Policy" className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">Changes to This Privacy Policy</h2>
+        <h2 className="text-xl font-semibold mb-4">Sharing & Disclosure of Information</h2>
         <p>
          We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. We recommend that you review this policy periodically.        </p>
       </section>
