@@ -28,20 +28,21 @@ const Chatbot = () => {
 
   return (
     <>
-      
+      {/* Avatar button */}
       <button
         onClick={() => setChatOpen(!chatOpen)}
-        className="fixed right-4 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-50"
+        className="fixed right-4 bottom-8 bg-black text-white rounded-full w-14 h-14 flex items-center justify-center shadow-md z-50"
         aria-label="Open chat"
       >
-        
         <span className="text-xl font-bold">💬</span>
       </button>
 
-      {/* Chat window slides from right */}
+      {/* Chatbox with animation */}
       <div
-        className={`fixed top-20 right-4 bg-white border border-gray-300 rounded-lg shadow-lg flex flex-col w-80 h-96 z-40 transition-transform duration-300 ${
-          chatOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed bottom-28 right-4 bg-white border border-gray-300 rounded-lg shadow-lg flex flex-col w-80 h-96 z-40 transition-transform transition-opacity duration-300 ${
+          chatOpen
+            ? 'translate-x-0 opacity-100'
+            : 'translate-x-full opacity-0 pointer-events-none'
         }`}
       >
         <div className="flex-grow p-4 overflow-y-auto">
@@ -51,7 +52,7 @@ const Chatbot = () => {
               className={`mb-3 p-2 rounded ${
                 msg.from === 'bot'
                   ? 'bg-gray-200 text-black text-left'
-                  : 'bg-blue-600 text-white text-right'
+                  : 'bg-black text-white text-right'
               }`}
             >
               {msg.text}
@@ -70,7 +71,7 @@ const Chatbot = () => {
           />
           <button
             onClick={handleSend}
-            className="bg-blue-600 text-white rounded-r px-4 py-2"
+            className="bg-black text-white rounded-r px-4 py-2"
           >
             Send
           </button>

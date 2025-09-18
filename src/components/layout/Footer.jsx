@@ -112,7 +112,9 @@ const Footer = () => {
 
       <div className="mt-[50px] lg:mt-[115px] flex justify-between mb-[40px] text-black/55 text-base md:text-lg font-medium items-end ">
         <div className=" flex gap-4 md:gap-[40px] lg:gap-[60px] flex-col md:flex-row">
-          <p>Privacy</p>
+         <Link to="/Privacy" className="text-[18px] ">
+                Privacy
+              </Link> 
           <p>Terms & Conditions</p>
         </div>
         <div className=" text-black w-1/3 justify-between hidden lg:flex">

@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 const cities = [
   { name: "India", zone: "Asia/Kolkata" },
   { name: "Dubai", zone: "Asia/Dubai" },
-  { name: "London", zone: "Europe/London" },
 ];
 
 const WorldClock = () => {
@@ -16,9 +15,9 @@ const WorldClock = () => {
         const now = new Date();
         newTimes[city.name] = now.toLocaleTimeString("en-US", {
           timeZone: city.zone,
-          hour: '2-digit',
-          minute: '2-digit',
-          hour12: true, // <-- This shows AM/PM!
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: true,
         });
       });
       setTimes(newTimes);
@@ -30,13 +29,27 @@ const WorldClock = () => {
   }, []);
 
   return (
-    <div className="flex justify-center gap-6 py-8 bg-black text-white">
+    <div className="flex justify-center items-center py-8 bg-black">
       {cities.map(city => (
         <div
           key={city.name}
-          className="px-6 py-3 rounded-full border border-white text-xl"
+          className="px-10 py-4 mx-4 rounded-full border-2 border-white text-white text-2xl flex items-center justify-center"
+          style={{
+            minWidth: "230px",
+            textAlign: "center",
+          }}
         >
-          <span className="font-medium">{city.name}:</span> {times[city.name]}
+          <span
+            className="mr-2"
+            style={{ fontFamily: "HelveticaNeueBold, sans-serif" }}
+          >
+            {city.name}:
+          </span>
+          <span
+            style={{ fontFamily: "HelveticaNeueMedium, sans-serif" }}
+          >
+            {times[city.name]}
+          </span>
         </div>
       ))}
     </div>

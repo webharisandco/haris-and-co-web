@@ -5,7 +5,7 @@ import Crtv from "@/assets/images/servicesSection/crtv.png";
 import Perfomance from "@/assets/images/servicesSection/perf.png";
 import Production from "@/assets/images/servicesSection/prdtn.png";
 import Seo from "@/assets/images/servicesSection/seo.png";
-import SocialMedia from "@/assets/images/servicesSection/smm.png";
+import SocialMedia from "@/assets/images/servicesSection/branding1.svg";
 import Influencers from "@/assets/images/servicesSection/influencer.png";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";
 import { useEffect } from "react";
@@ -32,17 +32,17 @@ function useServices() {
   const brandingContents = [
      {
       id: "social-media",
-      title: "Social Media Marketing",
+      title: "Social Media ",
       description:
-        "With Haris&Co., turn your social media platforms into a powerful marketing tool that connects you to your audience. With gripping creatives and ads, our award-winning team provides tailored strategies to your brand to propel your growth.",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
       services: [
-        "Social Media Strategy Development",
-        "Content Creation",
-        "Page & Community Management",
-        "Analytics & Reporting",
-        "AI-Powered Chat Automation",
-        "Paid Campaigns",
-        "Organic Campaigns",
+        "Brand Consulting",
+        "Logo Design",
+        "Graphic Design",
+        "Brand Identity",
+        "Brand Collateral",
+        "Product Design",
+        
       ],
       action: {
         label: "Explore",
@@ -55,13 +55,11 @@ function useServices() {
       id: "performance",
       title: "Performance Marketing",
       description:
-        "Get personalized content and strategies for your target audience and ramp up conversions. Maximize ROI with our proven strategies, impactful ads, and campaigns, while fostering lasting customer relationships.",
-      services: [
-        "Strategization",
-        "Creatives Development",
-        "Campaign Initiation",
-        "Conversion Rate Optimization",
-        "WhatsApp Marketing",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",      services: [
+        "Brand Consulting",
+        "Logo Design",
+        "Brand Identity",
+        "Brand Collateral",
       ],
       action: {
         label: "Explore",
@@ -71,15 +69,18 @@ function useServices() {
       image: Perfomance,
     },
     {
-      id: "web-development",
-      title: "Web Development & UI/UX",
+      id: "SEO",
+      title: "SEO",
       description:
-        "Craft a web experience for your users that is as unique as you. Our seasoned team helps you make a lasting impression with bespoke, engaging layouts and immersive interfaces. From concept creation to deployment, we’ve got your back.",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
       services: [
-        "Web Development",
-        "eCommerce Solutions",
-        "App Development",
-        "UI/UX Designing",
+        "Brand Consulting",
+        "Logo Design",
+        "Graphic Design",
+        "Brand Identity",
+        "Brand Collateral",
+        "Product Design",
+
       ],
       action: {
         label: "Explore",
@@ -88,22 +89,39 @@ function useServices() {
       },
       image: Web,
     },
+    // {
+    //   id: "web-development",
+    //   title: "Web Development & UI/UX",
+    //   description:
+    //     "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
+    //   services: [
+    //     "Brand Consulting",
+    //     "Logo Design",
+    //     "Graphic Design",
+    //     "Brand Identity",
+    //     "Brand Collateral",
+    //     "Product Design",
+
+    //   ],
+    //   action: {
+    //     label: "Explore",
+    //     icon: icon,
+    //     link: "web-development",
+    //   },
+    //   image: Web,
+    // },
      {
-      id: "production",
-      title: "Production",
+      id: "Digital PR & Communication",
+      title: "Digital PR & Communication",
       description:
-        "Increase brand awareness and engagement with scroll-stopping ideas and content, created just for your brand! With Haris&Co., captivate your audience with out-of-the-box content that resonates and sets the path for growth.",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
       services: [
-        "Video Campaigns",
-        "Theatre Ads",
-        "Digital Ads",
-        "Commercials",
-        "UGC Content",
-        "Product Photography",
-        "Fashion Photos",
-        "Corporate Videos",
-        "Food Photography",
-        "Personal Branding Videos",
+        "Brand Consulting",
+        "Logo Design",
+        "Graphic Design",
+        "Brand Identity",
+        "Brand Collateral",
+        "Product Design",
       ],
       action: {
         label: "Explore",
@@ -113,15 +131,16 @@ function useServices() {
       image: Production,
     },
     {
-      id: "branding",
-      title: "Branding & Creative",
+      id: "Web Development & UI/UX",
+      title: "Web Development & UI/UX",
       description:
-        "Beyond a logo, within a story. Your branding journey with us is an ongoing partnership helping you tell a story that resonates and drives conversions. From logo design to constant brand revisions, our branding team makes your brand stand out.",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
       services: [
-        "Brand Identity Design",
-        "Basic Collaterals",
-        "Marketing Collaterals",
+        "Brand Consulting",
         "Logo Design",
+        "Graphic Design",
+        "Brand Identity",
+        "Brand Collateral",
         "Product Design",
       ],
       action: {
@@ -133,16 +152,17 @@ function useServices() {
     },
     
     {
-      id: "creative",
-      title: "Creative & Communication",
+      id: "Production",
+      title: "Production",
       description:
-        "Looking for a way to increase your CTRs and ROI? Let our experts bring creative finesse to your brand! With captivating visuals and impactful campaigns, expand your brand reach, connect with your audience, and see results unlike before.",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
       services: [
-        "Strategization",
-        "Creatives Development",
-        "Campaign Initiation",
-        "Conversion Rate Optimization",
-        "WhatsApp Marketing",
+        "Brand Consulting",
+        "Logo Design",
+        "Graphic Design",
+        "Brand Identity",
+        "Brand Collateral",
+        "Product Design",
       ],
       action: {
         label: "Explore",
@@ -176,16 +196,17 @@ function useServices() {
     
    
     {
-      id: "influencer-marketing",
-      title: "Influencer Marketing & Creator Solutions",
+      id: "Branding & Creative",
+      title: "Branding & Creative",
       description:
-        "With Haris&Co., turn your social media platforms into a powerful marketing tool that connects you to your audience. With gripping creatives and ads, our award-winning team provides tailored strategies to your brand to propel your growth.",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
       services: [
-        "Influencer Marketing",
-        "Offline Influencer Activation Campaigns",
-        "Campaign Planning",
-        "Podcast",
-        "Casting",
+        "Brand Consulting",
+        "Logo Design",
+        "Graphic Design",
+        "Brand Identity",
+        "Brand Collateral",
+        "Product Design",
       ],
       action: {
         label: "Explore",
