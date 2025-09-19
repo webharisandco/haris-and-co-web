@@ -85,7 +85,7 @@ export default function Header() {
   // In your render logic:
   return (
     <div style={{ height: `${headerHeight}px` }}>
-      <header className="fixed z-10 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap" style={{ translateY: '-1000px', }}>
+      <header className="fixed z-50 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap" style={{ translateY: '-1000px', }}>
         <div ref={containerRef} className={`max-w-fit ${window.scrollY < (logoSize === 30 ? 20 : 35) && 'w-full'}`}>
           <img
             src={Logo}

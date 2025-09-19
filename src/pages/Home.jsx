@@ -13,6 +13,7 @@ import Footer from '../components/layout/Footer';
 import GenAiSection from '../components/ui/HomePage/GenAiSection';
 import TimeSection from '../components/ui/HomePage/TimeSection'
 import ChatbotAi from'../components/ui/HomePage/ChatbotAi'
+import AwardsBanner from '../components/ui/HomePage/AwardPage';
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <FeatureSection />
       <BrandPartnerSection />
       <OurWorks />
+      <AwardsBanner/>
       <GenAiSection />
       <ClientsSection />
       <AddressSection />
