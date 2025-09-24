@@ -16,7 +16,7 @@ const PrivacyPolicy = () => (
     style={{ scrollBehavior: "smooth" }}
   >
     {/* Sidebar */}
-    <aside className="hidden md:block w-64 pt-24 px-10 bg-white sticky top-0 h-screen overflow-y-auto mt-12">
+    <aside className="hidden md:block fixed top-24 left-0 w-64 h-[calc(100vh-6rem)] px-10 overflow-y-auto">
       {sidebarItems.map((item) => (
         <a
           href={`#${item.replace(/\s+/g, "-")}`}
@@ -30,7 +30,7 @@ const PrivacyPolicy = () => (
     </aside>
 
     {/* Main Content */}
-    <main className="flex-1 pt-32 pl-8 pr-8 ml-8 bg-white max-w-4xl">
+    <main className="flex-1 pt-32 pl-8 pr-8 ml-72 bg-white max-w-4xl">
       <h1 className="text-5xl font-bold mb-14 text-left">
         Haris&Co Privacy Policy
       </h1>
@@ -38,6 +38,7 @@ const PrivacyPolicy = () => (
         Last updated: 18 Sept 2025
       </p>
 
+      {/* Sections */}
       <section id="Information-We-Collect" className="mb-12 scroll-mt-32">
         <h2 className="text-xl font-bold mb-4">Information We Collect</h2>
         <p>

@@ -199,37 +199,37 @@ function useWorks() {
         {
           title: "On-Page SEO",
           description:
-            "Our SEO team makes sure that you are visible online to your users. With extensive keyword research, we help you integrate keywords into your title tags, meta tags, and more that help your users find you easily.",
+            "OWe fine-tune the essentials within your website, such as titles, tags, URLs, and keyword placement, to improve clarity and visibility in search results. This ensures your content is easily discovered and relevant to the right audience.",
           link: "/services/seo-company-in-kerala",
         },
         {
           title: "Off-Page SEO",
           description:
-            "Increase your site reputation, ranking, and credibility with our Off-Page SEO efforts. We post blogs on PR sites, list on directories, stay active on social media, and more to boost visibility.",
+            "We strengthen your online presence beyond your website by building links, publishing on PR platforms, and creating directory listings that enhance credibility and authority.",
           link: "/services/seo-company-in-kerala",
         },
         {
           title: "Technical SEO",
           description:
-            "The infrastructure of your website impacts ranking and that’s why you’ve got us. Our technical SEO solutions help you attract organic traffic and convert it via auditing and adjusting the technical aspects for enhanced performance.",
+            "Our team handles behind-the-scenes improvements like site speed, security, and architecture. A technically sound site performs better, loads faster, and provides a smoother experience for visitors.",
           link: "/services/seo-company-in-kerala",
         },
         {
           title: "UI/UX Design",
           description:
-            "A smooth and easy user experience makes or breaks your website. We craft a web design tailored to your brand to make it immersive and easy to navigate for your potential audience.",
+            "A well-designed site keeps visitors engaged. Through thoughtful use of layouts, typography, and colours, we create a digital space that feels attractive and easy to navigate.",
           link: "/services/seo-company-in-kerala",
         },
         {
-          title: "Conversion Rate Optimization",
+          title: "Conversion Rate Optimisation",
           description:
-            "Our seasoned team constantly reviews the UI/UX for improvements and adjusts the elements that help convert your potential audience. All our CRO strategies are crafted according to your industry, goals, and audience.",
+            "We review the customer journey, identify barriers, and adjust key elements to increase the likelihood that visitors take action, whether it is making a purchase, signing up, or getting in touch.",
           link: "/services/seo-company-in-kerala",
         },
         {
           title: "Content Development",
           description:
-            "Keep your audience entertained with creative and relatable content that engages and ultimately converts. We help you stay in trend and scale revenue.",
+            "We produce content that informs and engages while guiding readers toward becoming customers. Each piece is shaped to reflect your brand’s voice and connect with your audience in a meaningful way.",
           link: "/services/seo-company-in-kerala",
         },
       ],
