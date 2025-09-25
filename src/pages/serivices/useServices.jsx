@@ -52,8 +52,8 @@ function useServices() {
       image: SocialMedia,
     },
     {
-      id: "performance",
-      title: "Performance Marketing",
+      id: "PERFORMANCE MARKETING",
+      title: "PERFORMANCE MARKETING",
       description:
         "Our performance marketing team focuses on measurable growth. Every campaign is built with clear goals, whether it is boosting sales, generating leads, or nurturing stronger customer relationships. By combining insights with creative execution, we ensure your marketing budget delivers tangible outcomes.",      services: [
         "Ecommerce",
@@ -61,6 +61,8 @@ function useServices() {
         "Creative Strategy",
         "CRM Setup",
         "Automation",
+        "WhatsApp Marketing",
+        "Email Marketing",
       ],
       action: {
         label: "Explore",
@@ -112,17 +114,16 @@ function useServices() {
     //   image: Web,
     // },
      {
-      id: "Digital PR & Communication",
-      title: "Digital PR & Communication",
+      id: "DIGITAL PR AND COMMUNICATION",
+      title: "DIGITAL PR AND COMMUNICATION",
       description:
-        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.Our digital PR and communication team helps brands grow their presence through strong storytelling and influencer-driven strategies. We focus on building awareness, creating conversations, and ensuring your brand is seen by the right people in the right spaces. From launches to long-term partnerships, we manage every detail so campaigns run smoothly and deliver results.",
       services: [
-        "Brand Consulting",
-        "Logo Design",
-        "Graphic Design",
-        "Brand Identity",
-        "Brand Collateral",
-        "Product Design",
+        "Influencer Marketing",
+        "Brand Launch",
+        "Event Marketing",
+        "Product Launch",
+        "Creators Management",
       ],
       action: {
         label: "Explore",
@@ -135,14 +136,14 @@ function useServices() {
       id: "Web Development & UI/UX",
       title: "Web Development & UI/UX",
       description:
-        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.Our web team turns ideas into functional, user-focused digital experiences. From websites to apps, we build platforms that perform smoothly, look professional, and guide visitors toward meaningful actions. Each project is approached with care so your online presence reflects your brand and meets your goals.",
       services: [
-        "Brand Consulting",
-        "Logo Design",
-        "Graphic Design",
-        "Brand Identity",
-        "Brand Collateral",
-        "Product Design",
+        "Website Development",
+        "Ecommerce Development",
+        "Website Auditing",
+        "Website Optimization",
+        "UI/UX Design",
+        "App Development",
       ],
       action: {
         label: "Explore",
@@ -153,17 +154,18 @@ function useServices() {
     },
     
     {
-      id: "Production",
-      title: "Production",
+      id: "PRODUCTION",
+      title: "PRODUCTION",
       description:
-        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
+        "Our production house manages a wide range of creative projects, from large-scale advertising campaigns to specialised content for brands and businesses. With expertise across film, digital, broadcast, and live events, we provide end-to-end solutions that help brands tell their stories in ways that resonate.",
       services: [
-        "Brand Consulting",
-        "Logo Design",
-        "Graphic Design",
-        "Brand Identity",
-        "Brand Collateral",
-        "Product Design",
+        "Advertising & Marketing Projects",
+        "Entertainment & Broadcast Projects",
+        "Corporate & Industrial Projects",
+        "Event & Experiential Projects",
+        "Specialized Creative Projects",
+        "Line Production Services",
+        "Retainer & Long-Term Partnerships",
       ],
       action: {
         label: "Explore",
@@ -200,14 +202,17 @@ function useServices() {
       id: "Branding & Creative",
       title: "Branding & Creative",
       description:
-        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
+        "Our branding team helps businesses shape how they are seen and remembered. From identity design to large-scale campaigns, we create experiences that connect with people while staying true to the brand’s values. Each project is built to strengthen recognition, drive engagement, and leave a lasting impression.",
       services: [
-        "Brand Consulting",
-        "Logo Design",
-        "Graphic Design",
         "Brand Identity",
-        "Brand Collateral",
-        "Product Design",
+        "Campaigns",
+        "OOH",
+        "Brand Activations",
+        "Brand Strategy",
+        "Digital Experiences",
+        "Event Branding",
+        "Package Design",
+        "Ad Films",
       ],
       action: {
         label: "Explore",

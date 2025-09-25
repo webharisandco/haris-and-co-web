@@ -9,10 +9,10 @@ export default function BlogDiv() {
     <div className="flex gap-5 md:gap-[30px] h-fit px-[16px] md:px-[80px] py-[50px] bg-white">
       <div className="lg:w-2/3 flex flex-col gap-5">
         {/* Intro Paragraph */}
-        <p className="font-[thin]">
+        {/* <p className="font-[thin]">
           Now, let’s explore how digital marketing empowers healthcare
           providers.
-        </p>
+        </p> */}
 
         {/* Expandable Content */}
         <div
@@ -21,53 +21,70 @@ export default function BlogDiv() {
           } lg:max-h-none lg:opacity-100`}
         >
           <h6 className="text-[22px] mt-5">
-            Building Trust Through Digital Channels
+           What’s the Difference?
           </h6>
           <p className="font-[thin]">
-            Healthcare decisions are inherently personal and trust-based.
-            Digital marketing gives healthcare organisations powerful tools to
-            build and maintain this trust. Through carefully crafted content
-            marketing strategies, healthcare providers can:
-            <br />• Engage Patients with Educational Content: Share reliable,
-            scientifically supported health content that educates patients and
-            helps them make informed decisions.
-            <br />• Highlight Medical Expertise and Patient Success Stories:
-            Showcase the skills and qualifications of healthcare professionals,
-            as well as real-world examples of positive patient outcomes.
-            <br />• Provide Transparent Information About Treatments and
-            Procedures: Offer clear, accessible details about medical
-            treatments, procedures, and potential risks, fostering trust through
-            transparency.
-            <br />• Address Common Health Questions and Concerns: Answer
-            frequently asked questions to provide clarity and reduce patient
-            anxiety around specific health issues.
-            <br />• Offer Virtual Tours of Facilities: Provide virtual tours of
-            healthcare facilities, allowing patients to get a sense of the
-            environment and services before visiting in person.
-            <br />• Enable Online Appointment Scheduling and Telemedicine: Offer
-            the convenience of booking appointments online and accessing
-            healthcare services through telemedicine, improving patient
-            accessibility and convenience.
-          </p>
+            <br />• <strong>Sustainable Marketing:</strong> Minimizing harm, reducing waste, meeting baseline expectations.
+            <br />
+            <br />• <strong>Regenerative Marketing:</strong> Actively making things better, enriching communities, supporting cultural growth. It’s not just avoiding harm, it’s creating value.
+            <br />
+            <br />
+            <p>
+              This shift is what resonates with today’s audiences.
+            </p>
+          <h6 className="text-[22px] mt-5">
+           Why Brands Need the Glow-Up Now
+          </h6>
+            <br />• <strong>Consumer Expectations Are Higher:</strong> Today’s audiences, employees, and investors expect more than marketing fluff. They want brands that stand for something real and demonstrate tangible impact. Simply claiming sustainability isn’t enough; proof of meaningful action is what earns trust and loyalty.
+            <br />
+            <br />• <strong>Competitive Edge:</strong> Brands that actively regenerate communities, ecosystems, or culture naturally differentiate themselves from competitors who only meet the basics. Taking concrete action creates a stronger identity, making the brand memorable and respected in crowded markets.
+            <br />
+            <br />• <strong>Stronger Stories:</strong> Regenerative initiatives provide rich storytelling opportunities. Campaigns that highlight genuine impact are more likely to engage audiences, spark conversation, and be shared widely thus creating organic amplification that goes beyond traditional advertising.
+             <br />
+
+
 
           <h6 className="text-[22px] mt-5">
-            Strategic Digital Marketing Tools in Healthcare
+          How Brands Can Go Regenerative in Marketing
           </h6>
-          <p className="font-[thin]">
-            You can leverage various digital marketing tools to reach and engage
-            your target audience effectively. Here are they:
-          </p>
 
-          <h6 className="text-[20px] mt-3">Search Engine Optimization (SEO)</h6>
-          <p className="font-[thin]">
-            SEO is crucial for connecting patients with trusted healthcare
-            providers, especially as more individuals turn to online searches
-            for health information and services. Effective SEO boosts healthcare
-            providers’ visibility, builds trust, and ensures patients find the
-            care they need when they need it.
+            <br />• <strong>Align Actions With Messaging:</strong> Ensure every campaign reflects actual initiatives and impact. Authenticity comes from consistency between what a brand says and what it does.
+            <br />
+            <br />• <strong>Integrate Social and Community Initiatives:</strong> Partnerships, volunteer programs, or community support can become integral parts of campaigns, making marketing meaningful and grounded in real-world change.
+            <br />
+            <br />• <strong>Share Data and Proof:</strong> Transparent reporting, metrics, and milestones give credibility. Showing measurable outcomes strengthens audience trust and demonstrates accountability.
+            <br />
+           
+            <br />• <strong>Tell the Journey, Not Just the Result:</strong> Highlight the process, challenges, and stories behind the impact. Audiences connect with the human side of campaigns, making regenerative marketing more tangible and memorable.
+            <br />
+            
           </p>
+          <h6 className="text-[20px] mt-3">Case Example</h6>
+          <p className="font-[thin]">
+            Haris & Co’s Women’s Day campaign for Femisafe spotlighted the resilience of women. The creative showed a woman running her race while carrying her entire world: her wedding band, her parents’ expectations, and her child.
+          </p>
+          <p className="font-[thin]">
+              The campaign avoided clichés and gave space to a conversation that felt genuine. Audiences connected with it because it reflected real challenges alongside strength. The result was stronger emotional ties with the brand, dialogue across social channels, and a Silver for Best Moment Marketing.
+          </p>
+          <p className="font-[thin]">
+           Sustainable marketing is no longer enough. 2025 is about regeneration, proof, and impact. 
+          </p>
+         
+          <p className="font-[thin]">
+           Brands that evolve now will be the ones that earn trust, loyalty, and attention.
+         </p>
 
-          <h6 className="text-[18px] mt-3">Why SEO Matters in Healthcare</h6>
+          <p className="font-[thin]">
+          Want to take your marketing from sustainable to truly regenerative? At Haris & Co, we create campaigns that do more than make claims. We build stories, actions, and connections that audiences trust. Let’s take your brand to the next level.
+         </p>
+         <br />
+         
+          
+    
+      
+          
+
+          {/* <h6 className="text-[18px] mt-3">Why SEO Matters in Healthcare</h6>
           <p className="font-[thin]">
             • Increased Visibility: Patients often start their healthcare
             journey online. A strong SEO strategy ensures that your healthcare
@@ -92,9 +109,9 @@ export default function BlogDiv() {
             client not only ranks higher in relevant search results, but also
             has a steady stream of qualified leads from patients searching for
             nursing, babysitting, and home care services.
-          </p>
+          </p> */}
 
-          <p className="font-[thin]">
+          {/* <p className="font-[thin]">
             <strong>Results:</strong>
             <br />• babysitter in Abu Dhabi - 1st Position
             <br />• home nursing services Abu Dhabi - 2nd Position
@@ -127,9 +144,9 @@ export default function BlogDiv() {
             <br />• Community Building: Social media allows organisations to
             create supportive communities, especially for chronic disease
             management or mental health awareness.
-          </p>
+          </p> */}
 
-          <h6 className="text-[18px] mt-3">
+          {/* <h6 className="text-[18px] mt-3">
             Best Practices for Healthcare Social Media
           </h6>
           <p className="font-[thin]">
@@ -162,15 +179,15 @@ export default function BlogDiv() {
           <p className="font-[thin]">
             • Targeted Campaigns: Tools like Google Ads and social media ad
             platforms allow you to target demographics, behaviours, and
-            geolocations effectively.
-            <br />• Cost Efficiency: Performance marketing operates on a
+            geolocations effectively. */}
+            {/* <br />• Cost Efficiency: Performance marketing operates on a
             pay-per-click (PPC) or pay-per-acquisition (PPA) basis, ensuring you
             pay only for measurable results.
             <br />• Real-Time Analytics: Detailed insights into ad performance
             enable quick optimisation for better outcomes.
-          </p>
+          </p> */}
 
-          <p className="font-[thin]">
+          {/* <p className="font-[thin]">
             <strong>Results:</strong>
             <br />
             Ad Spend: 16.7k AED
@@ -187,8 +204,8 @@ export default function BlogDiv() {
           </p>
 
           <h6 className="text-[22px] mt-5">
-            Measuring Success in Healthcare Digital Marketing
-          </h6>
+            Measuring Success in Healthcare Digital Marketing */}
+          {/* </h6>
           <p className="font-[thin]">
             We help healthcare providers track and measure their digital
             marketing success through:
@@ -226,23 +243,24 @@ export default function BlogDiv() {
             Let’s embrace the digital revolution together with Haris&Co. - your
             partner in healthcare marketing success. Contact us to learn more
             about our services.
-          </p>
-        </div>
+          </p> */}
+        {/* </div> */}
 
         {/* Read More / Read Less Button */}
-        <p
+        {/* <p
           className="flex lg:hidden z-20 cursor-pointer text-blue-600 font-semibold"
           onClick={() => setShow(!show)}
         >
           {show ? "Read Less" : "Read More"}
         </p>
-      </div>
+      </div> */}
 
       {/* Images Section */}
-      <div className="w-1/3 lg:flex flex-col gap-5 hidden">
+      {/* <div className="w-1/3 lg:flex flex-col gap-5 hidden">
         <img src={img2} alt="Healthcare Digital Marketing" />
-        <img src={img3} alt="Healthcare Strategy" />
+        <img src={img3} alt="Healthcare Strategy" /> */}
       </div>
+    </div>
     </div>
   );
 }

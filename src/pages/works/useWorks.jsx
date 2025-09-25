@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import tcs from '../../assets/images/ourWorks/tcs.jpeg'
+// import tcs from '../../assets/images/ourWorks/tcs.jpeg'
+import artboard from '/Users/abdulshammas/Desktop/HACA_WEB/haris-and-co-web/src/assets/images/workSection/Artboard 1.jpg'
 import antiUVA from '../../assets/images/ourWorks/antiUVA.png'
 import landMark from '../../assets/images/ourWorks/landMark.png'
 import KairaliTMT from '../../assets/images/ourWorks/KairaliTMT.jpeg'
@@ -33,14 +34,13 @@ function useWorks() {
 
 
 const OurWorksData = [
-    {
-
-      linkIds:"branding",
-      id: 1,
-      image: tcs, // Replace with actual image URL
-      heading: "Collaborating with TCS",
-      description: "We partnered up with Tata Consultancy Services (TCS) for the design and copy for their TCS Sustainathon 2024.",
-    },
+   {
+    linkIds: "branding",
+    id: 1,
+    image: artboard,
+    heading: "Partnering with Bluetyga",
+    description: "From zero to ₹6 million a month in record time",
+  },
     {
       linkIds:"branding",
       id: 2,

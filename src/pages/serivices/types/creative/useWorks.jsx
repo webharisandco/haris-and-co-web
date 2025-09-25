@@ -25,9 +25,9 @@ function useWorks() {
       ],
       offerings: [
         {
-          title: "Brand Identity Design",
+          title: "Brand Identity",
           description:
-            "If you’re a brand starting from scratch or a brand looking to refresh, our Brand Identity solutions help you stand out. We help weave a cohesive brand story across all your touchpoints.",
+            "We design the visual and verbal elements that define a brand, including logos, colours, typography, and tone of voice, ensuring consistency across every platform.",
           link: "/contact",
         },
         {
@@ -56,6 +56,9 @@ function useWorks() {
         },
       ],
     },
+
+
+
     {
       link: "web-development",
       subHeading: "Welcome your users to the digital home of your brand.",
@@ -93,6 +96,10 @@ function useWorks() {
         },
       ],
     },
+
+
+
+
     {
       link: "creative",
       subHeading: "You know a lot about your brand. But your customers don’t.",
@@ -142,6 +149,9 @@ function useWorks() {
         },
       ],
     },
+
+
+
     {
       link: "performance",
       subHeading: "Drive engagement & results with us.",
@@ -154,37 +164,52 @@ function useWorks() {
       ],
       offerings: [
         {
-          title: "Strategization",
+          title: "Ecommerce",
           description:
-            "While other agencies give you strategies that work, we give you customized strategies that are in trend with your industry.  We don’t just bring in potential audiences but focus on strategies that retain your existing user base.",
+            "We design marketing strategies that help online stores attract new shoppers, retain existing ones, and increase sales through targeted campaigns and customer-focused experiences.",
           link: "/services/performance-marketing-agency-in-kerala",
         },
         {
-          title: "Creatives Development",
+          title: "Lead Generation",
           description:
-            "Keep your audience engaged with authentic and captivating content that drives conversions and sales. We constantly adjust our strategies based on evolving trends among your audience.",
+            "Our team builds campaigns that bring in prospects who are genuinely interested in your business. By reaching the right audience with the right message, we increase the chances of turning interest into action.",
           link: "/services/performance-marketing-agency-in-kerala",
         },
         {
-          title: "Campaign Initiation",
+          title: "Creative Strategy",
           description:
-            "We craft campaigns unique to your brand based on your goals, target audience, and platforms. Our creative campaigns bring out your brand message that resonates with your audience.",
+            "Behind every strong campaign is a clear creative direction. We develop ideas, visuals, and messaging that capture attention and connect with your audience in a lasting way.",
           link: "/services/performance-marketing-agency-in-kerala",
         },
         {
-          title: "Conversion Rate Optimization",
+          title: "CRM Setup",
           description:
-            "Turn your traffic into revenue with strategies that drive conversions. CRO strategies look different for each brand and we craft strategies tailored to your goals.",
+            "We implement customer relationship management systems that keep your business organised, making it easier to track interactions, manage data, and build stronger connections.",
           link: "/services/performance-marketing-agency-in-kerala",
         },
         {
+          title: "Automation",
+          description:
+            "From follow-up emails to customer reminders, we set up systems that save time and ensure no opportunity is missed. Automation streamlines processes and keeps engagement consistent.",
+          link: "/services/performance-marketing-agency-in-kerala",
+        },
+         {
           title: "WhatsApp Marketing",
           description:
-            "Make the world’s top messaging app your best ally in marketing. With our personalized strategies, you can forge better and more efficient ties with your audience.",
+            "We use WhatsApp as a direct, conversational channel to engage with customers, share updates, and build stronger relationships through personalised communication.",
+          link: "/services/performance-marketing-agency-in-kerala",
+        },
+         {
+          title: "Email Marketing",
+          description:
+            "Our email strategies go beyond promotions. They deliver useful, engaging content that keeps your audience informed and connected while driving measurable results.",
           link: "/services/performance-marketing-agency-in-kerala",
         },
       ],
     },
+
+
+
     {
       link: "seo",
       subHeading: "Don’t just rank higher. Drive growth!",
@@ -199,41 +224,43 @@ function useWorks() {
         {
           title: "On-Page SEO",
           description:
-            "OWe fine-tune the essentials within your website, such as titles, tags, URLs, and keyword placement, to improve clarity and visibility in search results. This ensures your content is easily discovered and relevant to the right audience.",
+            "Our SEO team makes sure that you are visible online to your users. With extensive keyword research, we help you integrate keywords into your title tags, meta tags, and more that help your users find you easily.",
           link: "/services/seo-company-in-kerala",
         },
         {
           title: "Off-Page SEO",
           description:
-            "We strengthen your online presence beyond your website by building links, publishing on PR platforms, and creating directory listings that enhance credibility and authority.",
+            "Increase your site reputation, ranking, and credibility with our Off-Page SEO efforts. We post blogs on PR sites, list on directories, stay active on social media, and more to boost visibility.",
           link: "/services/seo-company-in-kerala",
         },
         {
           title: "Technical SEO",
           description:
-            "Our team handles behind-the-scenes improvements like site speed, security, and architecture. A technically sound site performs better, loads faster, and provides a smoother experience for visitors.",
+            "The infrastructure of your website impacts ranking and that’s why you’ve got us. Our technical SEO solutions help you attract organic traffic and convert it via auditing and adjusting the technical aspects for enhanced performance.",
           link: "/services/seo-company-in-kerala",
         },
         {
           title: "UI/UX Design",
           description:
-            "A well-designed site keeps visitors engaged. Through thoughtful use of layouts, typography, and colours, we create a digital space that feels attractive and easy to navigate.",
+            "A smooth and easy user experience makes or breaks your website. We craft a web design tailored to your brand to make it immersive and easy to navigate for your potential audience.",
           link: "/services/seo-company-in-kerala",
         },
         {
-          title: "Conversion Rate Optimisation",
+          title: "Conversion Rate Optimization",
           description:
-            "We review the customer journey, identify barriers, and adjust key elements to increase the likelihood that visitors take action, whether it is making a purchase, signing up, or getting in touch.",
+            "Our seasoned team constantly reviews the UI/UX for improvements and adjusts the elements that help convert your potential audience. All our CRO strategies are crafted according to your industry, goals, and audience.",
           link: "/services/seo-company-in-kerala",
         },
         {
           title: "Content Development",
           description:
-            "We produce content that informs and engages while guiding readers toward becoming customers. Each piece is shaped to reflect your brand’s voice and connect with your audience in a meaningful way.",
+            "Keep your audience entertained with creative and relatable content that engages and ultimately converts. We help you stay in trend and scale revenue.",
           link: "/services/seo-company-in-kerala",
         },
       ],
     },
+
+
     {
       link: "influencer-marketing",
       subHeading: "Get influencer-approved!",

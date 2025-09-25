@@ -9,7 +9,7 @@ export default function BlogDiv() {
     <div className="flex gap-5 md:gap-[30px] h-fit px-[16px] md:px-[80px] py-[50px] bg-white">
       <div className="lg:w-2/3 flex flex-col gap-5">
         {/* Intro Paragraph */}
-        <p className="font-[thin]">
+        {/* <p className="font-[thin]">
           Artificial Intelligence (AI) is revolutionising industries worldwide,
           with digital marketing being no exception. A report by the National
           University reveals that 63% of organisations plan to adopt AI globally
@@ -17,7 +17,7 @@ export default function BlogDiv() {
           demand for personalised experiences grows, AI has emerged as a
           powerful tool, enabling marketers to make data-driven decisions,
           optimise campaigns, and enhance customer engagement.
-        </p>
+        </p> */}
 
         {/* Expandable Content */}
         <div
@@ -26,17 +26,19 @@ export default function BlogDiv() {
           } lg:max-h-none lg:opacity-100`}
         >
           <h6 className="text-[22px] mt-5">
-            Understanding AI in Digital Marketing
+            Unless, of course, you actually want marketing that works. 
           </h6>
           <p className="font-[thin]">
-            AI in digital marketing refers to using machine learning algorithms
-            and data analytics to automate processes, predict consumer
-            behaviour, and provide personalised interactions. From chatbots to
-            programmatic advertising, AI tools streamline complex tasks and
-            enhance efficiency.
+            Campaigns that connect with audiences, tell a story, and deliver measurable results. Work that frees you to focus on your business while experts handle the complexity behind the scenes.
+          </p>
+          <p className="font-[thin]">
+            That is where <strong>Haris & Co.</strong> comes in. What began in 2020 as a six-person initiative has grown into a team of 100+ professionals delivering 8 integrated marketing solutions. From startups to established brands, we combine creativity, strategy, and execution to help clients scale, engage, and leave an impact. We take the pieces you do not have time for, like planning, creative direction, campaign management, and performance tracking, and bring them together into a seamless whole.
+          </p>
+          <p className="font-[thin]">
+            So yes, feel free to manage everything yourself if sleepless nights, hunches, and scattered campaigns are your idea of fun. Or let <strong>Haris & Co.</strong> take the reins and turn marketing into a process that actually delivers results. Smart strategy, compelling storytelling, and real business results. That is what we do. Book a consultation today and see how your brand can thrive without the chaos.
           </p>
 
-          <h6 className="text-[22px] mt-5">
+          {/* <h6 className="text-[22px] mt-5">
             Key Applications of AI in Digital Marketing
           </h6>
           <p className="font-[thin]">
@@ -58,9 +60,9 @@ export default function BlogDiv() {
             <br />• <strong>Content Creation & Optimisation:</strong> Tools like
             ChatGPT and Claude generate and optimise content. <br />
             Example: BuzzFeed uses AI for personalised content.
-          </p>
+          </p> */}
 
-          <h6 className="text-[22px] mt-5">
+          {/* <h6 className="text-[22px] mt-5">
             Key Domains of Digital Marketing and How AI is Shaping Them
           </h6>
 
@@ -71,9 +73,9 @@ export default function BlogDiv() {
             AI enhances SEO by analysing large datasets, predicting search
             intent, and optimising websites. <br />
             Tools: Surfer SEO, SEMRush, MarketMuse, ChatGPT, Claude, Perplexity.
-          </p>
+          </p> */}
 
-          <h6 className="text-[20px] mt-3">2. Social Media Marketing (SMM)</h6>
+          {/* <h6 className="text-[20px] mt-3">2. Social Media Marketing (SMM)</h6>
           <p className="font-[thin]">
             AI transforms social media with engagement analysis, automated
             scheduling, and chatbots. <br />
@@ -139,9 +141,9 @@ export default function BlogDiv() {
             <br />• <strong>Predictive Personalisation for proactive solutions.</strong>  AI will
             predict customer needs with greater accuracy, enabling brands to
             offer proactive solutions.
-          </p>
+          </p> */}
 
-          <p className="font-[thin] mt-3">
+          {/* <p className="font-[thin] mt-3">
             <strong>Wrapping Up:</strong> AI has become a cornerstone of modern
             digital marketing, bridging the gap between data and meaningful
             customer interactions. As technology evolves, embracing AI-driven
@@ -155,16 +157,16 @@ export default function BlogDiv() {
             to create more effective campaigns. Here's how AI plays a role in
             key aspects of digital marketing, along with tools used in each
             area:
-          </p>
+          </p> */}
         </div>
 
         {/* Read More / Read Less Button */}
-        <p
+        {/* <p
           className="flex lg:hidden z-20 cursor-pointer text-blue-600 font-semibold"
           onClick={() => setShow(!show)}
         >
           {show ? "Read Less" : "Read More"}
-        </p>
+        </p> */}
       </div>
 
       {/* Images Section */}

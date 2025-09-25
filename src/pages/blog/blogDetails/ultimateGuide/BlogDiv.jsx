@@ -10,8 +10,19 @@ export default function BlogDiv() {
       <div className="lg:w-2/3 flex flex-col gap-5">
         {/* Intro Paragraph */}
         <p className="font-[thin]">
-          Digital marketing encompasses all marketing efforts that utilise electronic devices or the internet. Businesses leverage digital channels such as search engines, social media, email, and websites to connect with current and prospective customers. Unlike traditional marketing, digital marketing offers real-time data, personalised content, and interactive platforms, enabling businesses to engage with their audience more effectively.
+          Walkaroo is one of India’s leading footwear brands, known for offering affordable, durable, and trendy options for every kind of customer. While the brand had built a strong online presence, its e-commerce platform was not converting visitors into buyers effectively. The website’s interface and experience were average, making browsing and purchasing cumbersome.
         </p>
+        <p className="font-[thin]">
+          This is where Haris & Co worked alongside the team with a clear goal: turn Walkaroo’s digital store into a high-performing sales machine.
+        </p>
+        <p className="font-[thin]">
+          The brand’s existing platform, Magenta, had limitations that prevented optimization of the customer journey. Product pages, navigation, and calls-to-action were underperforming, and the overall design did not inspire confidence. Traffic existed, but conversions were low. Based on these shortcomings, the first task was to switch to Shopify, unlocking better flexibility and growth opportunities for the website.
+        </p>
+        <p className="font-[thin]">
+          Once the platform was in place, we redesigned the website with the user at the center. The new design featured:
+        </p>
+        
+
 
         {/* Expandable Content */}
         <div

@@ -10,16 +10,33 @@ export default function BlogDiv() {
       <div className="lg:w-2/3 flex flex-col gap-5">
         {/* Intro Paragraph */}
         <p className="font-[thin]">
-          Choosing the right digital marketing agency in India can make or break your business growth. Here’s what to look for before making a decision.
+         Misty Mountain Plantation Resort, nestled in the tea and cardamom hills of Kuttikkanam, Kerala, is known for offering guests serene escapes and breathtaking views of the Western Ghats. While the resort had a loyal offline presence, its online visibility told a different story. Competing with aggregator giants like MakeMyTrip, TripAdvisor, and Agoda made it nearly invisible on search, and the existing website struggled to generate quality leads.
         </p>
-
+         <p className="font-[thin]">
+         The challenges, however, didn’t end there. The site was built on Framer, a design-first platform with limited SEO support. Unlike WordPress or other CMS platforms, Framer required extensive customization to ensure crawlability, indexing, and structured data integration. For Misty Mountain, standing out online meant overcoming both technical and competitive hurdles.
+        </p>
+         <p className="font-[thin]">
+         <strong>That’s where Haris & Co stepped in, bringing clarity and structure to help the brand climb search rankings and unlock stronger visibility.</strong>
+        </p>
+        <p className="font-[thin]">
+         We began by laying a strong technical foundation. Custom meta tags, XML sitemaps, and schema markups were set up to improve search performance. The homepage was restructured with keyword-focused content and better navigation, while site speed and mobile responsiveness were optimized to meet modern search standards.
+        </p>
+        <p className="font-[thin]">
+          Content became the second pillar of strategy. Instead of generic copy, we created experience-led blogs and landing pages that captured what aggregators couldn’t: plantation walks, campfires, eco-stays, and the immersive charm of Kuttikkanam. These pages were internally linked to strengthen authority, while backlinks, an optimized Google Business Profile, and updated listings further boosted visibility.
+        </p>
+        <p className="font-[thin]">
+          The results spoke for themselves. Within four months, organic traffic grew from 390 to over 2,700, clicks rose from 210 to 1,570, and impressions soared from 6,400 to 65,000. The resort broke into Google’s top three for high-intent keywords such as Best Resort in Kuttikkanam and Luxury Resorts in Kuttikkanam.
+        </p>
+        <p className="font-[thin]">
+         From near invisibility to top search rankings, Misty Mountain’s website now mirrors the premium experience it offers in person. Haris & Co’s blend of technical SEO, content strategy, and authority-building turned challenges into measurable growth. The resort’s journey proves that even independent hospitality brands can stand out in competitive digital landscapes with the right strategy.
+        </p>
         {/* Expandable Content */}
-        <div
+        {/* <div
           className={`flex flex-col gap-5 overflow-hidden transition-all duration-500 ease-in-out ${
             show ? "max-h-[6000px] opacity-100" : "max-h-0 opacity-0"
           } lg:max-h-none lg:opacity-100`}
-        >
-          <h6 className="text-[22px] mt-5">Start With Your Goals</h6>
+        > */}
+          {/* <h6 className="text-[22px] mt-5">Start With Your Goals</h6>
           <p className="font-[thin]">
             Before you even Google "top digital marketing agencies in India," get clear on what you're hoping to achieve. 
             Are you launching a new product and need buzz on social media? Is your website not showing up on Google? 
@@ -120,16 +137,16 @@ export default function BlogDiv() {
             a sharp understanding of diverse markets, and a team that actually listens, Haris&Co. is built for brands that are ready to scale smartly.
             <br /><br />
             Want to chat about your goals and see how we can help? Get in touch. Let’s build something great together.
-          </p>
-        </div>
+          </p> */}
+        {/* </div> */}
 
         {/* Read More / Read Less Button */}
-        <p
+        {/* <p
           className="flex lg:hidden z-20 cursor-pointer text-blue-600 font-semibold"
           onClick={() => setShow(!show)}
         >
           {show ? "Read Less" : "Read More"}
-        </p>
+        </p> */}
       </div>
 
       {/* Images Section */}
