@@ -130,37 +130,37 @@
   {
     "id": 19,
     "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
+    "heading":"Partnering with Bluetyga",
+    "description":"From zero to ₹6 million a month in record time.",
     "image": "/images/works/Artboard_1_PM.jpg"
   },
   {
     "id": 20,
     "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Bluetyga",
+    "description": "From zero to ₹6 million a month in record time.",
+    "image": "/images/works/Artboard_2_PM.jpg"
   },
   {
     "id": 21,
     "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Bluetyga",
+    "description": "From zero to ₹6 million a month in record time.",
+    "image": "/images/works/Artboard_3_PM.jpg"
   },
   {
     "id": 22,
     "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Bluetyga",
+    "description": "From zero to ₹6 million a month in record time.",
+    "image": "/images/works/Artboard_4_PM.jpg"
   },
   {
     "id": 23,
     "categoryId": 3,
-    "heading": "performance marketingeo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Watiaa",
+    "description": "Qatar-based store grew from QAR 3,700 to QAR 60,000.",
+    "image": "/images/works/Artboard_5_PM.jpg"
   },
   {
     "id": 24,
@@ -174,83 +174,83 @@
     "categoryId": 3,
     "heading": "performance marketing",
     "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "image": "/images/works/Artboard_2_PM.jpg"
   },
   {
     "id": 26,
     "categoryId": 3,
     "heading": "performance marketing",
     "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "image": "/images/works/Artboard_3_PM.jpg"
   },
   {
     "id": 27,
     "categoryId": 3,
     "heading": "performance marketing",
     "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "image": "/images/works/Artboard_4_PM.jpg"
   },{
     "id": 28,
     "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Launching Kairali TMT Online",
+    "description": "We partnered with one of South India’s biggest steel brands to increase their online presence. Explore how we helped drive organic traffic from 1k to 2 lakh+!.",
+    "image": "/images/works/Artboard_6_SEO.jpg"
   },
   {
     "id": 29,
     "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Strategies that put you on top.",
+    "description": "We helped Skin Bae, a brand that sells premium and authentic Korean skincare products, rank higher than industry leaders like Amazon, Nykaa, and more.",
+    "image": "/images/works/Artboard_7_SEO.jpg"
   },
   {
     "id": 30,
     "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "SEO expertise that drives results!",
+    "description": "Discover how our SEO experts generated 1M+ revenue within 10 months for BOSQ, a premium workspace solutions brand! Our strategies delivered organic 500+ sales-quality leads.",
+    "image": "/images/works/Artboard_8_SEO.jpg"
   },
   {
     "id": 31,
     "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "SEO strategies that rank you on the first page!",
+    "description": "Our SEO strategies made a difference for Abu Dhabi-based home care provider Infinity Care. Our strategies reduced bounce rates and generated 200+ leads in just 2 months!.",
+    "image": "/images/works/Artboard_9_SEO.jpg"
   },
   {
     "id": 32,
     "categoryId": 4,
     "heading": "seo",
     "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "image": "/images/works/Artboard_6_SEO.jpg"
   },
   {
     "id": 33,
     "categoryId": 4,
     "heading": "seo",
     "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "image": "/images/works/Artboard_7_SEO.jpg"
   },
   {
     "id": 34,
     "categoryId": 4,
     "heading": "seo",
     "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "image": "/images/works/Artboard_8_SEO.jpg"
   },
   {
     "id": 35,
     "categoryId": 4,
     "heading": "seo",
     "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "image": "/images/works/Artboard_9_SEO.jpg"
   },
   {
     "id": 36,
     "categoryId": 4,
     "heading": "seo",
     "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "image": "/images/works/Artboard_6_SEO.jpg"
   },
   {
     "id": 37,
@@ -511,3 +511,4 @@
   
   
 ]
+

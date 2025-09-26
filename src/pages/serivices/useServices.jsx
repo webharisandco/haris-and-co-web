@@ -114,10 +114,10 @@ function useServices() {
     //   image: Web,
     // },
      {
-      id: "DIGITAL PR AND COMMUNICATION",
-      title: "DIGITAL PR AND COMMUNICATION",
+      id: "INFLUENCER MARKETING",
+      title: "INFLUENCER MARKETING",
       description:
-        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.Our digital PR and communication team helps brands grow their presence through strong storytelling and influencer-driven strategies. We focus on building awareness, creating conversations, and ensuring your brand is seen by the right people in the right spaces. From launches to long-term partnerships, we manage every detail so campaigns run smoothly and deliver results.",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.Our INFLUENCER MARKETING team helps brands grow their presence through strong storytelling and influencer-driven strategies. We focus on building awareness, creating conversations, and ensuring your brand is seen by the right people in the right spaces. From launches to long-term partnerships, we manage every detail so campaigns run smoothly and deliver results.",
       services: [
         "Influencer Marketing",
         "Brand Launch",

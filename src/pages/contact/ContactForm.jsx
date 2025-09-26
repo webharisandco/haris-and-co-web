@@ -26,12 +26,6 @@ export default function ContactForm() {
           hour12: true,
           timeZone: "Asia/Dubai",
         }),
-        London: new Date().toLocaleTimeString("en-US", {
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: true,
-          timeZone: "Europe/London",
-        }),
       });
     };
     updateTimes();

@@ -62,7 +62,7 @@ export default function BlogDiv() {
             Also known as PPC, performance marketing focuses on paying only for specific actions like clicks, leads, or sales. It involves keyword research, creative ad development, budget optimisation, and ROI tracking. Platforms like Google Ads and Meta Ads enable targeted, measurable campaigns.
           </p>
 
-          <h6 className="text-[20px] mt-5">7. Digital PR and Communication</h6>
+          <h6 className="text-[20px] mt-5">7. INFLUENCER MARKETING</h6>
           <p className="font-[thin]">
             Digital PR manages how a brand is perceived online. It includes building media relationships, thought leadership, online reputation management, and coordinated storytelling. Digital PR strengthens reputation, boosts SEO, and builds long-term trust.
           </p>

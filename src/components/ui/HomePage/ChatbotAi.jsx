@@ -1,82 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Chatbot = () => {
-  const [messages, setMessages] = useState([
-    { from: 'bot', text: 'Hello! How can I help you today?' }
-  ]);
-  const [userInput, setUserInput] = useState('');
-  const [chatOpen, setChatOpen] = useState(false);
-
-  const getBotResponse = (input) => {
-    const text = input.toLowerCase();
-    if (text.includes('hello')) return 'Hi there!';
-    if (text.includes('time')) return 'Sorry, I cannot tell time yet.';
-    if (text.includes('help')) return 'Sure! What do you need help with?';
-    return "I'm not sure how to help with that.";
-  };
-
-  const handleSend = () => {
-    if (!userInput.trim()) return;
-    const newMessages = [...messages, { from: 'user', text: userInput }];
-    setMessages(newMessages);
-    setUserInput('');
-    setTimeout(() => {
-      const botReply = getBotResponse(userInput);
-      setMessages(prev => [...prev, { from: 'bot', text: botReply }]);
-    }, 1000);
-  };
+  // WhatsApp link - Use the full international number (e.g., for India: 91 as country code)
+  // Also encode spaces as %20 and newlines as %0A
+  const whatsappNumber = '917356557630'; // 91 is the country code for India
+  const preFilledMessage = 'How can you help you';
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(preFilledMessage)}`;
 
   return (
     <>
-      {/* Avatar button */}
-      <button
-        onClick={() => setChatOpen(!chatOpen)}
-        className="fixed right-4 bottom-8 bg-black text-white rounded-full w-14 h-14 flex items-center justify-center shadow-md z-50"
-        aria-label="Open chat"
+      {/* WhatsApp Floating Button */}
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed right-4 bottom-8 bg-green-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-md z-50"
+        aria-label="Chat on WhatsApp"
       >
-        <span className="text-xl font-bold">💬</span>
-      </button>
-
-      {/* Chatbox with animation */}
-      <div
-        className={`fixed bottom-28 right-4 bg-white border border-gray-300 rounded-lg shadow-lg flex flex-col w-80 h-96 z-40 transition-transform transition-opacity duration-300 ${
-          chatOpen
-            ? 'translate-x-0 opacity-100'
-            : 'translate-x-full opacity-0 pointer-events-none'
-        }`}
-      >
-        <div className="flex-grow p-4 overflow-y-auto">
-          {messages.map((msg, idx) => (
-            <div
-              key={idx}
-              className={`mb-3 p-2 rounded ${
-                msg.from === 'bot'
-                  ? 'bg-gray-200 text-black text-left'
-                  : 'bg-black text-white text-right'
-              }`}
-            >
-              {msg.text}
-            </div>
-          ))}
-        </div>
-
-        <div className="flex p-4 border-t border-gray-300">
-          <input
-            type="text"
-            className="flex-grow border rounded-l px-3 py-2 focus:outline-none"
-            placeholder="Type your message..."
-            value={userInput}
-            onChange={e => setUserInput(e.target.value)}
-            onKeyDown={e => e.key === 'Enter' && handleSend()}
-          />
-          <button
-            onClick={handleSend}
-            className="bg-black text-white rounded-r px-4 py-2"
-          >
-            Send
-          </button>
-        </div>
-      </div>
+        {/* WhatsApp SVG Icon for best clarity/visibility */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={30}
+          height={30}
+          viewBox="0 0 32 32"
+          fill="currentColor"
+        >
+          <path d="M16 3C9.373 3 4 8.373 4 15c0 2.673.969 5.134 2.584 7.1L4 29l7.165-2.54A12.947 12.947 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-2.047 0-3.975-.617-5.585-1.677l-.397-.264-4.266 1.509 1.421-4.166-.29-.416A9.968 9.968 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.586-7.542c-.303-.151-1.793-.885-2.071-.985-.278-.101-.481-.151-.684.152-.202.303-.784.984-.961 1.187-.177.202-.354.227-.656.076-.303-.151-1.277-.47-2.435-1.499-.901-.802-1.51-1.791-1.688-2.094-.177-.303-.018-.466.133-.617.136-.135.303-.354.455-.531.151-.177.202-.303.303-.505.101-.202.051-.379-.025-.53-.076-.152-.684-1.65-.937-2.264-.246-.591-.497-.509-.684-.518a.941.941 0 0 0-.646.026c-.202.079-.53.203-.808.506-.277.303-1.055 1.031-1.055 2.502 0 1.472 1.08 2.899 1.23 3.099.151.202 2.129 3.25 5.166 4.426.723.248 1.287.396 1.729.506.726.183 1.388.157 1.909.095.582-.07 1.793-.731 2.047-1.438.253-.708.253-1.316.177-1.438-.076-.121-.276-.197-.58-.349z"/>
+        </svg>
+      </a>
     </>
   );
 };
