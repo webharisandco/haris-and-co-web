@@ -25,33 +25,39 @@ function useWorks() {
       ],
       offerings: [
         {
-          title: "Brand Identity",
+          title: "Website Development",
           description:
-            "We design the visual and verbal elements that define a brand, including logos, colours, typography, and tone of voice, ensuring consistency across every platform.",
+            "We build websites that are fast, reliable, and easy to navigate. Each site is structured to deliver information clearly while supporting your business objectives and keeping visitors engaged.",
           link: "/contact",
         },
         {
-          title: "Basic Collaterals",
+          title: "Ecommerce Development",
           description:
-            "Make an impactful impression with basic brand collaterals embodying your brand essence. From physical collaterals like business cards and letterheads to packaging and signage, we provide custom solutions.",
+            "Our team creates online stores that simplify shopping and boost sales. From product listings to secure checkout processes, every element is designed to enhance the customer experience.",
           link: "/contact",
         },
         {
-          title: "Marketing Collaterals",
+          title: "Website Auditing",
           description:
-            "For your potential audience, leave an impactful impression with marketing collaterals designed just for your brand. From promotional souvenirs to tailored video content and ads, bring your brand to life.",
+            "We evaluate your website’s performance, structure, and user experience to identify areas that need improvement. Audits help ensure your site runs efficiently and meets user expectations.",
           link: "/contact",
         },
         {
-          title: "Logo Design",
+          title: "Website Optimization",
           description:
-            "Though branding extends beyond a logo, your unique logo is the instantaneous first impression you leave on your audience. Let us engineer a logo encapsulating every facet of your brand, laying the foundation for an impactful and lasting narrative.",
+            "Through careful tuning of speed, layout, and content, we enhance how your website performs. Optimized sites load faster, retain visitors longer, and make it easier for people to find what they need.",
           link: "/contact",
         },
         {
-          title: "Product Design",
+          title: "UI/UX Design",
           description:
-            "Just like your brand has a unique image, every one of your products needs a design that speaks for itself. We craft memorable product designs, handling everything from naming to package design.",
+            "We create interfaces that feel intuitive and enjoyable. Clear navigation, thoughtful layouts, and cohesive visuals make your website or app a place users want to explore.",
+          link: "/contact",
+        },
+        {
+          title: "App Development",
+          description:
+            "From concept to launch, we develop mobile and web applications that solve real problems. Apps are designed to be smooth, responsive, and aligned with your business goals.",
           link: "/contact",
         },
       ],
@@ -71,27 +77,39 @@ function useWorks() {
       ],
       offerings: [
         {
-          title: "Web Development",
+          title: "On-Page SEO",
           description:
-            "One of your brand’s crucial touchpoints is a website. With a custom design aligned with your industry, audience, goals, and objectives, we set the stage for growth. Our designs are based on strategies that optimize user interactions & SERPs, increase traffic, and more.",
+            "We fine-tune the essentials within your website, such as titles, tags, URLs, and keyword placement, to improve clarity and visibility in search results. This ensures your content is easily discovered and relevant to the right audience.",
           link: "/ae/services/web-development-company-in-dubai",
         },
         {
-          title: "eCommerce Solutions",
+          title: "Off-Page SEO",
           description:
-            "Set up stunning digital storefronts for your business with Haris&Co. From eCommerce migration to tailored websites, scale your online presence with strategies designed to scale. Our solutions create dynamic, secure, reliable platforms with seamless user experience.",
+            "We strengthen your online presence beyond your website by building links, publishing on PR platforms, and creating directory listings that enhance credibility and authority.",
           link: "/ae/services/web-development-company-in-dubai",
         },
         {
-          title: "App Development",
+          title: "Technical SEO",
           description:
-            "Increase user engagement and conversions with mobile applications modeled for your brand. We provide result-oriented solutions with enhanced user experience and suitable features aligned with your industry.",
+            "Our team handles behind-the-scenes improvements like site speed, security, and architecture. A technically sound site performs better, loads faster, and provides a smoother experience for visitors.",
           link: "/ae/services/web-development-company-in-dubai",
         },
         {
-          title: "UI/UX Designing",
+          title: "UI/UX Design",
           description:
-            "The experience you provide your users matters. Bespoke user-centered UI/UX can help you reverse low conversion rates, high drop-offs, and design-related confusion. Give a butter-smooth user experience that drives conversions.",
+            "A well-designed site keeps visitors engaged. Through thoughtful use of layouts, typography, and colours, we create a digital space that feels attractive and easy to navigate.",
+          link: "/ae/services/web-development-company-in-dubai",
+        },
+        {
+          title: "Conversion Rate Optimisation",
+          description:
+            "We review the customer journey, identify barriers, and adjust key elements to increase the likelihood that visitors take action, whether it is making a purchase, signing up, or getting in touch.",
+          link: "/ae/services/web-development-company-in-dubai",
+        },
+        {
+          title: "Content Development",
+          description:
+            "We produce content that informs and engages while guiding readers toward becoming customers. Each piece is shaped to reflect your brand’s voice and connect with your audience in a meaningful way.",
           link: "/ae/services/web-development-company-in-dubai",
         },
       ],
@@ -118,33 +136,45 @@ function useWorks() {
       ],
       offerings: [
         {
-          title: "Strategization",
+          title: "Advertising & Marketing Projects",
           description:
-            "Customized marketing strategies that align with industry trends.",
+            "We create commercials, digital ads, branded content, and product launch films that capture attention and communicate messages effectively. From television to social platforms, our campaigns are built to connect with audiences where they are most active.",
           link: "/contact",
         },
         {
-          title: "Creatives Development",
+          title: "Entertainment & Broadcast Projects",
           description:
-            "Engaging content to drive conversions and audience interaction.",
+            "Our team produces music videos, show promos, and OTT content support. We also work on documentaries, providing both creative direction and technical execution for broadcast storytelling.",
           link: "/contact",
         },
         {
-          title: "Campaign Initiation",
+          title: "Corporate & Industrial Projects",
           description:
-            "Unique campaigns based on brand goals, audience, and platforms.",
+            "We produce training videos, investor films, industrial showcases, and event coverage. These projects are designed to educate, inform, and strengthen communication with employees, stakeholders, and customers.",
           link: "/contact",
         },
         {
-          title: "Conversion Rate Optimization",
+          title: "Event & Experiential Projects",
           description:
-            "Turn traffic into revenue with targeted CRO strategies.",
+            "From concerts to corporate summits, we cover live events and brand activations with dynamic visuals. We also create experiential marketing videos that document campaigns and bring case studies to life.",
           link: "/contact",
         },
         {
-          title: "WhatsApp Marketing",
+          title: "Specialized Creative Projects",
           description:
-            "Leverage WhatsApp for direct and efficient marketing engagement.",
+            "Our creative team develops photography campaigns, animation, VFX, and immersive AR and VR experiences. We also manage shoots with celebrities and brand ambassadors, ensuring standout content for every medium.",
+          link: "/contact",
+        },
+         {
+          title: "Line Production Services",
+          description:
+            "We provide on-ground support for agencies, production houses, and brands, covering everything from local crew and vendors to logistics, permissions, and location management.",
+          link: "/contact",
+        },
+         {
+          title: "Retainer & Long-Term Partnerships",
+          description:
+            "For brands looking for ongoing content support, we offer retainer models and exclusive tie-ups. This ensures consistency in brand storytelling and a dedicated team to manage creative needs over time.",
           link: "/contact",
         },
       ],
@@ -269,33 +299,57 @@ function useWorks() {
       statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
       offerings: [
         {
-          title: "Influencer Marketing",
+          title: "Brand Identity",
           description:
-            "Thousands of influencers are on the scene but which one is right for you? We at Haris&Co., help you collaborate with personalities that are the best fit for your brand. After a detailed analysis of your brand, goals, and target audience we reach out to influencers best suited for you.",
+            "We design the visual and verbal elements that define a brand, including logos, colours, typography, and tone of voice, ensuring consistency across every platform.",
           link: "/contact",
         },
         {
-          title: "Offline Influencer Activation Campaigns",
+          title: "Campaigns",
           description:
-            "Our marketing efforts are not just on your screens. With the help of well-known influencers we build hype and increase attendance for events, launches and more.",
+            "From concept to execution, we create integrated campaigns that carry a brand’s message across multiple channels, building visibility and recognition.",
           link: "/contact",
         },
         {
-          title: "Campaign Planning",
+          title: "OOH",
           description:
-            "Launch ad campaigns on your platforms with internet personalities. Every campaign that we conduct for your brand is an effort made after detailed research on audience, industry, and current trends.",
+            "Our team develops out-of-home advertising such as billboards, transit ads, and outdoor displays that reach audiences in public spaces with strong, memorable visuals.",
           link: "/contact",
         },
         {
-          title: "Podcast",
+          title: "Brand Activations",
           description:
-            "One of the most viral modes of entertainment is podcasts. We help your brand get heard and seen on the most listened to podcasts in your industry.",
+            "We design interactive experiences that bring a brand to life, encouraging direct engagement and creating lasting connections with customers.",
           link: "/contact",
         },
         {
-          title: "Casting",
+          title: "Brand Strategy",
           description:
-            "Want a familiar face in your ads? We’ve got you covered. We help you connect with the top internet celebrities in your video content.",
+            "Through research and planning, we define positioning, messaging, and long-term direction, giving brands a clear path to grow and remain relevant.",
+          link: "/contact",
+        },
+        {
+          title: "Digital Experiences",
+          description:
+            "We craft online experiences, from interactive content to web campaigns, that merge creativity with technology to keep audiences engaged.",
+          link: "/contact",
+        },
+        {
+          title: "Event Branding",
+          description:
+            "Our event branding work ensures that conferences, launches, and live experiences reflect the identity of the brand at every touchpoint.",
+          link: "/contact",
+        },
+        {
+          title: "Package Design",
+          description:
+            "We create packaging that not only protects and presents the product but also communicates the brand’s personality and attracts attention on the shelf.",
+          link: "/contact",
+        },
+        {
+          title: "Ad Films",
+          description:
+            "We produce ad films that tell a brand’s story with impact, whether for television, digital platforms, or internal use.m ",
           link: "/contact",
         },
       ],
@@ -361,65 +415,36 @@ function useWorks() {
       statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
       offerings: [
         {
-          title: "Video Campaigns",
+          title: "Influencer Marketing",
           description:
-            "Tell your brand story in every frame with Haris&Co. With tailored video concepts we help your brand get seen and heard.",
+            "We connect brands with influencers who align with their values and audience. By leveraging trusted voices on social platforms, we create authentic visibility and engagement.",
           link: "/contact",
         },
         {
-          title: "Theatre Ads",
+          title: "Brand Launch",
           description:
-            "Showcase your brand on the big screen with us. We pack a punch in our short yet highly engrossing theatre ads. Let your brand be the talk in packed cinema halls with Haris&Co.!",
+            "We design launch strategies that introduce new brands with impact. Through targeted campaigns, we build awareness, define identity, and establish a strong market presence.",
           link: "/contact",
         },
         {
-          title: "Digital Ads",
+          title: "Event Marketing",
           description:
-            "Most of the world is online and what better place than this to advertise your brand? Our digital ads are customized to display your brand to your target audience and boost conversions.",
+            "We use influencer partnerships and digital channels to generate interest in events. Whether it is a conference, launch, or festival, our campaigns drive attendance and participation.",
           link: "/contact",
         },
         {
-          title: "Commercials",
+          title: "Product Launch",
           description:
-            "Connect with your audience with commercials that captivate and show your unique brand story. Our team brings your brand to your target audience with fun and quirky commercial ads.",
+            "Our campaigns build anticipation around new products and services. By combining influencer reach with creative communication, we encourage engagement and early adoption.",
           link: "/contact",
         },
         {
-          title: "UGC Content",
+          title: "Creators Management",
           description:
-            "Promote your brand with visual content from real users online. User-generated content is one of the best ways to promote brand loyalty and image. Our creative team helps you connect with users and craft content that aligns with your industry and audience.",
+            "We handle the relationships with creators, from selection to campaign delivery. This includes evaluating demographics and portfolios, vetting credibility, coordinating production, and ensuring content is delivered on time.",
           link: "/contact",
         },
-        {
-          title: "Product Photography",
-          description:
-            "Get dedicated product photoshoots to bring your products to the spotlight. Our product photoshoots create a visual narrative for your audience about your brand.",
-          link: "/contact",
-        },
-        {
-          title: "Fashion Photos",
-          description:
-            "Build your brand aesthetic with dedicated photoshoots for your fashion products. Our skilled team connects you with models who would bring your clothing line to life with unique photoshoots.",
-          link: "/contact",
-        },
-        {
-          title: "Corporate Videos",
-          description:
-            "Advertise and promote your company with cinematic visuals that tell your office story. Our cinematic corporate videography captures your brand identity and work culture.",
-          link: "/contact",
-        },
-        {
-          title: "Food Photography",
-          description:
-            "Create mouth-watering visual experiences for your customers with our custom food photography services. We create irresistible photoshoots that make your audience want more.",
-          link: "/contact",
-        },
-        {
-          title: "Personal Branding Videos",
-          description:
-            "Introduce your audience to your authentic and driven self with tailored video content. Our personal branding videography helps you promote trust and connect with your audience by showcasing what you bring to the table and your expertise in your field.",
-          link: "/contact",
-        },
+        
       ],
     },
   ];
