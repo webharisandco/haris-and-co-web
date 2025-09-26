@@ -33,15 +33,12 @@ export default function GenAIHero() {
       {/* Left content */}
       <div className="relative z-10 max-w-2xl pl-16 pb-16">
         {/* Title */}
-        <h1 className="text-white text-4xl leading-[61px] font-medium font-['Helvetica_Neue'] mb-6">
+        <h1 className="text-white text-6xl leading-[61px] font-medium font-['Helvetica_Neue'] mb-6">
           Our Story
         </h1>
         {/* Subtitle / Paragraph */}
-        <p className="text-white/95 text-2xl font-normal font-['Helvetica_Neue'] leading-7 mb-10 mt-2">
-          We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption.
-          From cultivating new ideas to connecting the dots for customers or users, these are our core principles.
-          We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption.
-          From cultivating new ideas to connecting the dots for customers or users, these are our core principles.
+        <p className="text-white/95 text-xl font-normal font-['Helvetica_Neue'] leading-7 mb-10 mt-2">
+         Every big journey begins with a small step, and ours began five years ago with just an idea and a handful of dreamers. From those early days of brainstorming and bold thinking, we’ve grown into a venture that’s crossing borders and breaking barriers. Today, we work with some of the most exciting brands and loyal clients. We have come a long way, but what remains constant is our urge to learn more and get better every single day. The spirit we started with, rooted in creativity, passion, and the drive to keep pushing boundaries, is still at the heart of everything we do. And with every step forward, our story is still being written.
         </p>
         <button
           onClick={handleCta}
