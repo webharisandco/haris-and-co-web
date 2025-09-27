@@ -88,7 +88,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "web-development",
+        link: "seo",
       },
       image: SEO,
     },
@@ -129,7 +129,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "production",
+        link: "influencer",
       },
       image: Production,
     },
@@ -149,7 +149,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "branding",
+        link: "web develpment",
       },
       image: Branding,
     },
@@ -171,7 +171,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "creative",
+        link: "production",
       },
       image: Crtv,
     },
@@ -218,7 +218,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "influencer-marketing",
+        link: "branding",
       },
       image: Influencers,
     },
