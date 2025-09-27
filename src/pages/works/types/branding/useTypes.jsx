@@ -62,7 +62,7 @@ export default function useTypes() {
     },
     {
       url: "digital",
-      title: "Digital PR & Communication",
+      title: "Influencer Marketing ",
       heading: "Get influencer-approved!",
       subHeading:
         "Let your brand be in trend in collaboration with the best-known faces in the industry.",

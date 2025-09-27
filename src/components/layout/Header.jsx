@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '@/assets/images/Haris&Co.svg';
+import Logo from '@/assets/images/NewLogo.png';
 import menuIcon from '@/assets/images/icons/menu.svg';
 import ContactButton from '../ui/HomePage/ContactButton';
 import { useState, useEffect } from 'react';
@@ -85,7 +85,7 @@ export default function Header() {
   // In your render logic:
   return (
     <div style={{ height: `${headerHeight}px` }}>
-      <header className="fixed z-10 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap" style={{ translateY: '-1000px', }}>
+      <header className="fixed z-50 px-[16px] md:px-[40px] lg:px-[80px] py-[35px] w-full bg-[#141414]  flex justify-between items-center flex-wrap" style={{ translateY: '-1000px', }}>
         <div ref={containerRef} className={`max-w-fit ${window.scrollY < (logoSize === 30 ? 20 : 35) && 'w-full'}`}>
           <img
             src={Logo}
@@ -104,7 +104,8 @@ export default function Header() {
             <Link to="/works" className="text-[18px] font-[thin]">Works</Link>
             <Link to="/clients" className="text-[18px] font-[thin]">Clients</Link>
             <Link to="/awards" className="text-[18px] font-[thin]">Awards</Link>
-            <Link to="/about" className="text-[18px] font-[thin] text-nowrap">About us</Link>
+            <Link to="/about" className="text-[18px] font-[thin] text-nowrap">Ourstory 
+</Link>
             <Link to="/blogs" className="hidden xl:flex text-[18px] font-[thin]">Blogs</Link>
             <Link to="/career" className="text-[18px] font-[thin]">Careers</Link>
           </div>

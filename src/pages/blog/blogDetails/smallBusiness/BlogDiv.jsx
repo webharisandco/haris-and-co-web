@@ -10,16 +10,40 @@ export default function BlogDiv() {
       <div className="lg:w-2/3 flex flex-col gap-5">
         {/* Intro Paragraph */}
         <p className="font-[thin]">
-          Let’s explore some powerful digital marketing strategies that small businesses can use to grow and thrive.
+         We are thrilled to welcome Srishty Bhasin as the new Performance Marketing Team Lead at Haris&Co. Srishty brings a wealth of experience in building and scaling performance-driven campaigns, developing full-funnel marketing strategies, and delivering measurable results for high-growth brands.
+        </p>
+         <p className="font-[thin]">
+         Previously, she founded and scaled her own full-service digital marketing agency, where she led Meta Ads campaigns, Shopify store launches, and 360° marketing strategies for brands including Hazel Thread and Tweeny Mini. Over her career, she has managed multi-million rupee ad spends, consistently delivered high ROAS, and orchestrated campaigns that drove substantial revenue growth for clients.
+        </p>
+         <p className="font-[thin]">
+         At Haris&Co, Srishty will be building systems, structuring the team, and ensuring the health of both our people and processes. Her focus will be on delivering exceptional client experiences, maintaining performance standards, and minimizing client churn—ensuring every campaign not only performs but also strengthens lasting partnerships.
         </p>
 
+         <p className="font-[thin]">
+         <strong>Haris Aboobacker, Founder of Haris&Co,</strong> says:
+        </p>
+        <p className="font-[thin]">
+         "We are excited to welcome Srishty Bhasin to our performance marketing team at Haris&Co.With her previous experience in running campaigns, optimizing performance, and building marketing systems, she brings expertise that will directly benefit both our clients and our team. Srishty’s focus on operational excellence and client success will strengthen our workflows, enhance team collaboration, and ensure every campaign delivers real outcomes."
+        </p>
+
+        <p className="font-[thin]">
+          About <strong>Haris&Co</strong> 
+        </p>
+        <p className="font-[thin]">
+         Founded in 2020, Haris&Co is a creative digital marketing agency headquartered in Calicut, Kerala, serving clients across India, GCC, the United Kingdom, and beyond. Trusted by a growing roster of well-recognized brands, we deliver end-to-end digital marketing solutions that empower clients’ presence across digital spaces holistically. With Haris&Co + now operational in both India and the UAE, we uphold Client win, Customer relationship, and Culture as the pillars guiding our journey toward greater heights. Committed to evolving from ongoing services to a full 360-degree approach, we strive to go the extra mile, expanding our team and delivering masterful, results-driven services that set industry benchmarks.
+        </p>
+        <p className="font-[thin]">
+          <strong>For more information, follow the agency on LinkedIn, Instagram, and X.</strong>
+        </p>
+       
+
         {/* Expandable Content */}
-        <div
+        {/* <div
           className={`flex flex-col gap-5 overflow-hidden transition-all duration-500 ease-in-out ${
             show ? "max-h-[6000px] opacity-100" : "max-h-0 opacity-0"
           } lg:max-h-none lg:opacity-100`}
-        >
-          <h6 className="text-[22px] mt-5">1. Build a Strong Online Presence with a Professional Website</h6>
+        > */}
+          {/* <h6 className="text-[22px] mt-5">1. Build a Strong Online Presence with a Professional Website</h6>
           <p className="font-[thin]">
             Your website is the foundation of your digital marketing efforts. 75% of users judge a company’s credibility based on its website design.
             It’s often the first point of contact between your business and potential customers, so it needs to make a great impression.
@@ -28,9 +52,9 @@ export default function BlogDiv() {
             <br />• Ensure your website is mobile-friendly, as 62.54% of all website traffic comes from mobile devices (Statista).
             <br />• Use clear calls-to-action (CTAs) to guide visitors toward desired actions.
             <br />• Optimize your website for speed; 53% of mobile users abandon sites that take longer than 3 seconds to load.
-          </p>
+          </p> */}
 
-          <h6 className="text-[22px] mt-5">2. Leverage Social Media Marketing</h6>
+          {/* <h6 className="text-[22px] mt-5">2. Leverage Social Media Marketing</h6>
           <p className="font-[thin]">
             Social media platforms are powerful tools for small businesses to connect with their audience, build brand awareness, and drive engagement.
             54% of social media users research products on social platforms.
@@ -39,9 +63,9 @@ export default function BlogDiv() {
             <br />• Focus on platforms where your target audience is most active.
             <br />• Post consistently and use a mix of videos, images, and infographics.
             <br />• Engage with your audience by responding to comments and messages promptly.
-          </p>
+          </p> */}
 
-          <h6 className="text-[22px] mt-5">3. Invest in Search Engine Optimization (SEO)</h6>
+          {/* <h6 className="text-[22px] mt-5">3. Invest in Search Engine Optimization (SEO)</h6>
           <p className="font-[thin]">
             SEO is essential for improving your website’s visibility on search engines like Google, helping you attract organic traffic without paying for ads.
             68% of online experiences begin with a search engine.
@@ -72,9 +96,9 @@ export default function BlogDiv() {
             <br />• Start with Google Ads or Facebook Ads with flexible budgets.
             <br />• Use precise targeting to reach your ideal audience.
             <br />• Monitor and optimize campaigns regularly for best results.
-          </p>
+          </p> */}
 
-          <h6 className="text-[22px] mt-5">6. Create Valuable Content</h6>
+          {/* <h6 className="text-[22px] mt-5">6. Create Valuable Content</h6>
           <p className="font-[thin]">
             Content marketing is a powerful way to establish authority in your industry and build trust.
             <br /><br />
@@ -107,16 +131,16 @@ export default function BlogDiv() {
             <strong>Ready to grow your small business?</strong>
             <br />
             Partner with Haris&Co. and unlock the full potential of digital marketing!
-          </p>
-        </div>
+          </p> */}
+        {/* </div> */}
 
         {/* Read More / Read Less Button */}
-        <p
+        {/* <p
           className="flex lg:hidden z-20 cursor-pointer text-blue-600 font-semibold"
           onClick={() => setShow(!show)}
         >
           {show ? "Read Less" : "Read More"}
-        </p>
+        </p> */}
       </div>
 
       {/* Images Section */}

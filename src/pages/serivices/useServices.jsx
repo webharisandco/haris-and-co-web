@@ -1,12 +1,12 @@
-import Branding from "@/assets/images/servicesSection/branding.png";
-import Web from "@/assets/images/servicesSection/web.png";
-import Crtv from "@/assets/images/servicesSection/crtv.png";
+import Branding from "@/assets/images/servicesSection/branding5.svg";
+import SEO from "@/assets/images/servicesSection/branding3.svg";
+import Crtv from "@/assets/images/servicesSection/branding6.svg";
 // import Branding4 from "@/assets/images/servicesSection/branding4.svg";
-import Perfomance from "@/assets/images/servicesSection/perf.png";
-import Production from "@/assets/images/servicesSection/prdtn.png";
+import Perfomance from "@/assets/images/servicesSection/branding2.svg";
+import Production from "@/assets/images/servicesSection/branding4.svg";
 import Seo from "@/assets/images/servicesSection/seo.png";
-import SocialMedia from "@/assets/images/servicesSection/smm.png";
-import Influencers from "@/assets/images/servicesSection/influencer.png";
+import SocialMedia from "@/assets/images/servicesSection/branding1.svg";
+import Influencers from "@/assets/images/servicesSection/branding7.svg";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -30,17 +30,121 @@ function useServices() {
   }, [hash]);
 
   const brandingContents = [
-    {
-      id: "branding",
-      title: "Branding & Creative",
+     {
+      id: "social-media",
+      title: "Social Media ",
       description:
-        "Beyond a logo, within a story. Your branding journey with us is an ongoing partnership helping you tell a story that resonates and drives conversions. From logo design to constant brand revisions, our branding team makes your brand stand out.",
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
       services: [
-        "Brand Identity Design",
-        "Basic Collaterals",
-        "Marketing Collaterals",
+        "Brand Consulting",
         "Logo Design",
+        "Graphic Design",
+        "Brand Identity",
+        "Brand Collateral",
         "Product Design",
+        
+      ],
+      action: {
+        label: "Explore",
+        icon: icon,
+        link: "social-media",
+      },
+      image: SocialMedia,
+    },
+    {
+      id: "PERFORMANCE MARKETING",
+      title: "PERFORMANCE MARKETING",
+      description:
+        "Our performance marketing team focuses on measurable growth. Every campaign is built with clear goals, whether it is boosting sales, generating leads, or nurturing stronger customer relationships. By combining insights with creative execution, we ensure your marketing budget delivers tangible outcomes.",      services: [
+        "Ecommerce",
+        "Lead Generation",
+        "Creative Strategy",
+        "CRM Setup",
+        "Automation",
+        "WhatsApp Marketing",
+        "Email Marketing",
+      ],
+      action: {
+        label: "Explore",
+        icon: icon,
+        link: "performance",
+      },
+      image: Perfomance,
+    },
+    {
+      id: "SEO",
+      title: "SEO",
+      description:
+        "Our SEO team helps businesses stand out in search results and attract people who are already looking for what they offer. Instead of chasing empty traffic, we focus on connecting your brand with qualified visitors who are ready to engage. With specialists in every area of SEO, we develop strategies shaped around your industry and audience so your website doesn’t just rank higher but also delivers meaningful results.",
+      services: [
+        "On-Page SEO",
+        "Off-Page SEO",
+        "Technical SEO",
+        "UI/UX Design",
+        "Conversion Rate Optimisation",
+        "Content Development",
+
+      ],
+      action: {
+        label: "Explore",
+        icon: icon,
+        link: "web-development",
+      },
+      image: SEO,
+    },
+    // {
+    //   id: "web-development",
+    //   title: "Web Development & UI/UX",
+    //   description:
+    //     "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
+    //   services: [
+    //     "Brand Consulting",
+    //     "Logo Design",
+    //     "Graphic Design",
+    //     "Brand Identity",
+    //     "Brand Collateral",
+    //     "Product Design",
+
+    //   ],
+    //   action: {
+    //     label: "Explore",
+    //     icon: icon,
+    //     link: "web-development",
+    //   },
+    //   image: Web,
+    // },
+     {
+      id: "INFLUENCER MARKETING",
+      title: "INFLUENCER MARKETING",
+      description:
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.Our INFLUENCER MARKETING team helps brands grow their presence through strong storytelling and influencer-driven strategies. We focus on building awareness, creating conversations, and ensuring your brand is seen by the right people in the right spaces. From launches to long-term partnerships, we manage every detail so campaigns run smoothly and deliver results.",
+      services: [
+        "Influencer Marketing",
+        "Brand Launch",
+        "Event Marketing",
+        "Product Launch",
+        "Creators Management",
+      
+      ],
+      action: {
+        label: "Explore",
+        icon: icon,
+        link: "production",
+      },
+      image: Production,
+    },
+    {
+      id: "Web Development & UI/UX",
+      title: "Web Development & UI/UX",
+      description:
+        "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.Our web team turns ideas into functional, user-focused digital experiences. From websites to apps, we build platforms that perform smoothly, look professional, and guide visitors toward meaningful actions. Each project is approached with care so your online presence reflects your brand and meets your goals.",
+      services: [
+        "Website Development",
+        "Ecommerce Development",
+        "Website Auditing",
+        "Website Optimization",
+        "UI/UX Design",
+        "App Development",
       ],
       action: {
         label: "Explore",
@@ -49,35 +153,20 @@ function useServices() {
       },
       image: Branding,
     },
+    
     {
-      id: "web-development",
-      title: "Web Development & UI/UX",
+      id: "PRODUCTION",
+      title: "PRODUCTION",
       description:
-        "Craft a web experience for your users that is as unique as you. Our seasoned team helps you make a lasting impression with bespoke, engaging layouts and immersive interfaces. From concept creation to deployment, we’ve got your back.",
+        "Our production house manages a wide range of creative projects, from large-scale advertising campaigns to specialised content for brands and businesses. With expertise across film, digital, broadcast, and live events, we provide end-to-end solutions that help brands tell their stories in ways that resonate.",
       services: [
-        "Web Development",
-        "eCommerce Solutions",
-        "App Development",
-        "UI/UX Designing",
-      ],
-      action: {
-        label: "Explore",
-        icon: icon,
-        link: "web-development",
-      },
-      image: Web,
-    },
-    {
-      id: "creative",
-      title: "Creative & Communication",
-      description:
-        "Looking for a way to increase your CTRs and ROI? Let our experts bring creative finesse to your brand! With captivating visuals and impactful campaigns, expand your brand reach, connect with your audience, and see results unlike before.",
-      services: [
-        "Strategization",
-        "Creatives Development",
-        "Campaign Initiation",
-        "Conversion Rate Optimization",
-        "WhatsApp Marketing",
+        "Advertising & Marketing Projects",
+        "Entertainment & Broadcast Projects",
+        "Corporate & Industrial Projects",
+        "Event & Experiential Projects",
+        "Specialized Creative Projects",
+        "Line Production Services",
+        "Retainer & Long-Term Partnerships",
       ],
       action: {
         label: "Explore",
@@ -106,101 +195,25 @@ function useServices() {
     //   },
     //   image: Branding4,
     // },
+    
+   
+    
+   
     {
-      id: "performance",
-      title: "Performance Marketing",
+      id: "Branding & Creative",
+      title: "Branding & Creative",
       description:
-        "Get personalized content and strategies for your target audience and ramp up conversions. Maximize ROI with our proven strategies, impactful ads, and campaigns, while fostering lasting customer relationships.",
+        "Our branding team helps businesses shape how they are seen and remembered. From identity design to large-scale campaigns, we create experiences that connect with people while staying true to the brand’s values. Each project is built to strengthen recognition, drive engagement, and leave a lasting impression.",
       services: [
-        "Strategization",
-        "Creatives Development",
-        "Campaign Initiation",
-        "Conversion Rate Optimization",
-        "WhatsApp Marketing",
-      ],
-      action: {
-        label: "Explore",
-        icon: icon,
-        link: "performance",
-      },
-      image: Perfomance,
-    },
-    {
-      id: "production",
-      title: "Production",
-      description:
-        "Increase brand awareness and engagement with scroll-stopping ideas and content, created just for your brand! With Haris&Co., captivate your audience with out-of-the-box content that resonates and sets the path for growth.",
-      services: [
-        "Video Campaigns",
-        "Theatre Ads",
-        "Digital Ads",
-        "Commercials",
-        "UGC Content",
-        "Product Photography",
-        "Fashion Photos",
-        "Corporate Videos",
-        "Food Photography",
-        "Personal Branding Videos",
-      ],
-      action: {
-        label: "Explore",
-        icon: icon,
-        link: "production",
-      },
-      image: Production,
-    },
-    {
-      id: "seo",
-      title: "SEO",
-      description:
-        "Our SEO solutions don’t just get you the numbers in rankings but in revenue! Our team handles everything from on-page SEO to CRO and content development to offer lasting and measurable results.",
-      services: [
-        "On-Page SEO",
-        "Off-Page SEO",
-        "Technical SEO",
-        "UI/UX Design",
-        "Conversion Rate Optimization",
-        "Content Development",
-      ],
-      action: {
-        label: "Explore",
-        icon: icon,
-        link: "seo",
-      },
-      image: Seo,
-    },
-    {
-      id: "social-media",
-      title: "Social Media Marketing",
-      description:
-        "With Haris&Co., turn your social media platforms into a powerful marketing tool that connects you to your audience. With gripping creatives and ads, our award-winning team provides tailored strategies to your brand to propel your growth.",
-      services: [
-        "Social Media Strategy Development",
-        "Content Creation",
-        "Page & Community Management",
-        "Analytics & Reporting",
-        "AI-Powered Chat Automation",
-        "Paid Campaigns",
-        "Organic Campaigns",
-      ],
-      action: {
-        label: "Explore",
-        icon: icon,
-        link: "social-media",
-      },
-      image: SocialMedia,
-    },
-    {
-      id: "influencer-marketing",
-      title: "Influencer Marketing & Creator Solutions",
-      description:
-        "With Haris&Co., turn your social media platforms into a powerful marketing tool that connects you to your audience. With gripping creatives and ads, our award-winning team provides tailored strategies to your brand to propel your growth.",
-      services: [
-        "Influencer Marketing",
-        "Offline Influencer Activation Campaigns",
-        "Campaign Planning",
-        "Podcast",
-        "Casting",
+        "Brand Identity",
+        "Campaigns",
+        "OOH",
+        "Brand Activations",
+        "Brand Strategy",
+        "Digital Experiences",
+        "Event Branding",
+        "Package Design",
+        "Ad Films",
       ],
       action: {
         label: "Explore",

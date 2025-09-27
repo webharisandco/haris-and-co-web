@@ -1,0 +1,514 @@
+[
+    {
+    "id": 1,
+    "categoryId": 1,
+    "heading": "all works",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+
+  {
+    "id": 2,
+    "categoryId": 1,
+    "heading": "all works",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  
+  {
+    "id": 3,
+    "categoryId": 1,
+    "heading": "all works",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+   {
+    "id": 4,
+    "categoryId": 1,
+    "heading": "all works",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 5,
+    "categoryId": 1,
+    "heading": "all works",
+    "description": "Description for performance_marketing works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 6,
+    "categoryId": 1,
+    "heading": "all works",
+    "description": "Description for performance_marketing works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 7,
+    "categoryId": 1,
+    "heading": "all works",
+    "description": "Description for performance_marketing works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 8,
+    "categoryId": 1,
+    "heading": "all works",
+    "description": "Description for performance_marketing works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 9,
+    "categoryId": 1,
+    "heading": "all works",
+    "description": "Description for performance_marketing works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 10,
+    "categoryId": 2,
+    "heading": "Social Media",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 11,
+    "categoryId": 2,
+    "heading": "Social Media",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 12,
+    "categoryId": 2,
+    "heading": "Social Media",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 13,
+    "categoryId": 2,
+    "heading": "Social Media",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 14,
+    "categoryId": 2,
+    "heading": "Social Media",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 15,
+    "categoryId": 2,
+    "heading": "Social Media",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 16,
+    "categoryId": 2,
+    "heading": "Social Media",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 17,
+    "categoryId": 2,
+    "heading": "Social Media",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 18,
+    "categoryId": 2,
+    "heading": "Social Media",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 19,
+    "categoryId": 3,
+    "heading":"Partnering with Bluetyga",
+    "description":"From zero to ₹6 million a month in record time.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 20,
+    "categoryId": 3,
+    "heading": "Partnering with Bluetyga",
+    "description": "From zero to ₹6 million a month in record time.",
+    "image": "/images/works/Artboard_2_PM.jpg"
+  },
+  {
+    "id": 21,
+    "categoryId": 3,
+    "heading": "Partnering with Bluetyga",
+    "description": "From zero to ₹6 million a month in record time.",
+    "image": "/images/works/Artboard_3_PM.jpg"
+  },
+  {
+    "id": 22,
+    "categoryId": 3,
+    "heading": "Partnering with Bluetyga",
+    "description": "From zero to ₹6 million a month in record time.",
+    "image": "/images/works/Artboard_4_PM.jpg"
+  },
+  {
+    "id": 23,
+    "categoryId": 3,
+    "heading": "Partnering with Watiaa",
+    "description": "Qatar-based store grew from QAR 3,700 to QAR 60,000.",
+    "image": "/images/works/Artboard_5_PM.jpg"
+  },
+  {
+    "id": 24,
+    "categoryId": 3,
+    "heading": "performance marketing",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 25,
+    "categoryId": 3,
+    "heading": "performance marketing",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_2_PM.jpg"
+  },
+  {
+    "id": 26,
+    "categoryId": 3,
+    "heading": "performance marketing",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_3_PM.jpg"
+  },
+  {
+    "id": 27,
+    "categoryId": 3,
+    "heading": "performance marketing",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_4_PM.jpg"
+  },{
+    "id": 28,
+    "categoryId": 4,
+    "heading": "Launching Kairali TMT Online",
+    "description": "We partnered with one of South India’s biggest steel brands to increase their online presence. Explore how we helped drive organic traffic from 1k to 2 lakh+!.",
+    "image": "/images/works/Artboard_6_SEO.jpg"
+  },
+  {
+    "id": 29,
+    "categoryId": 4,
+    "heading": "Strategies that put you on top.",
+    "description": "We helped Skin Bae, a brand that sells premium and authentic Korean skincare products, rank higher than industry leaders like Amazon, Nykaa, and more.",
+    "image": "/images/works/Artboard_7_SEO.jpg"
+  },
+  {
+    "id": 30,
+    "categoryId": 4,
+    "heading": "SEO expertise that drives results!",
+    "description": "Discover how our SEO experts generated 1M+ revenue within 10 months for BOSQ, a premium workspace solutions brand! Our strategies delivered organic 500+ sales-quality leads.",
+    "image": "/images/works/Artboard_8_SEO.jpg"
+  },
+  {
+    "id": 31,
+    "categoryId": 4,
+    "heading": "SEO strategies that rank you on the first page!",
+    "description": "Our SEO strategies made a difference for Abu Dhabi-based home care provider Infinity Care. Our strategies reduced bounce rates and generated 200+ leads in just 2 months!.",
+    "image": "/images/works/Artboard_9_SEO.jpg"
+  },
+  {
+    "id": 32,
+    "categoryId": 4,
+    "heading": "seo",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_6_SEO.jpg"
+  },
+  {
+    "id": 33,
+    "categoryId": 4,
+    "heading": "seo",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_7_SEO.jpg"
+  },
+  {
+    "id": 34,
+    "categoryId": 4,
+    "heading": "seo",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_8_SEO.jpg"
+  },
+  {
+    "id": 35,
+    "categoryId": 4,
+    "heading": "seo",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_9_SEO.jpg"
+  },
+  {
+    "id": 36,
+    "categoryId": 4,
+    "heading": "seo",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_6_SEO.jpg"
+  },
+  {
+    "id": 37,
+    "categoryId": 5,
+    "heading": "digital PR",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 38,
+    "categoryId": 5,
+    "heading": "digital PR",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 39,
+    "categoryId": 5,
+    "heading": "digital PR",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 40,
+    "categoryId": 5,
+    "heading": "digital PR",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 41,
+    "categoryId": 5,
+    "heading": "digital PR",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 42,
+    "categoryId": 5,
+    "heading": "digital PR",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 43,
+    "categoryId": 5,
+    "heading": "digital PR",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 44,
+    "categoryId": 5,
+    "heading": "digital PR",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 45,
+    "categoryId": 5,
+    "heading": "digital PR",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 46,
+    "categoryId": 6,
+    "heading": "web develpment",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 47,
+    "categoryId": 6,
+    "heading": "web develpment",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 48,
+    "categoryId": 6,
+    "heading": "web develpment",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 49,
+    "categoryId": 6,
+    "heading": "web develpment",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+
+  {
+    "id": 50,
+    "categoryId": 6,
+    "heading": "web develpment",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 51,
+    "categoryId": 6,
+    "heading": "web develpment",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 52,
+    "categoryId": 6,
+    "heading": "web develpment",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+
+  {
+    "id": 53,
+    "categoryId": 6,
+    "heading": "web develpment",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },{
+    "id": 54,
+    "categoryId": 6,
+    "heading": "web develpment",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 55,
+    "categoryId": 7,
+    "heading": "prodaction",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 56,
+    "categoryId": 7,
+    "heading": "prodaction",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 57,
+    "categoryId": 7,
+    "heading": "prodaction",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 58,
+    "categoryId": 7,
+    "heading": "prodaction",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+
+{
+    "id": 59,
+    "categoryId": 7,
+    "heading": "prodaction",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 60,
+    "categoryId": 7,
+    "heading": "prodaction",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 61,
+    "categoryId": 7,
+    "heading": "prodaction",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 62,
+    "categoryId": 7,
+    "heading": "prodaction",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 63,
+    "categoryId": 7,
+    "heading": "prodaction",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 64,
+    "categoryId": 8,
+    "heading": "branding",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 65,
+    "categoryId": 8,
+    "heading": "branding",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 66,
+    "categoryId": 8,
+    "heading": "branding",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 67,
+    "categoryId": 8,
+    "heading": "branding",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 68,
+    "categoryId": 8,
+    "heading": "branding",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 69,
+    "categoryId": 8,
+    "heading": "branding",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 70,
+    "categoryId": 8,
+    "heading": "branding",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 71,
+    "categoryId": 8,
+    "heading": "branding",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  },
+  {
+    "id": 72,
+    "categoryId": 8,
+    "heading": "branding",
+    "description": "Description for social media works.",
+    "image": "/images/works/Artboard_1_PM.jpg"
+  }
+
+
+  
+  
+]
+

@@ -14,11 +14,7 @@ export default function AwardSection({ image, title, date, desc, brandImg }) {
                   {/* Content */}
       <div className="font-[thin] flex flex-col gap-6">
         {/* Brand */}
-        <img
-          src={brandImg}
-          alt="brand"
-          className="w-[120px] md:w-[150px] 3xl:w-[200px] object-contain"
-        />
+
 
         {/* Title + Date */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3">
@@ -35,6 +31,12 @@ export default function AwardSection({ image, title, date, desc, brandImg }) {
         <p className="text-base md:text-lg 3xl:text-xl text-black/75 leading-relaxed">
           {desc}
         </p>
+
+        <img
+          src={brandImg}
+          alt="brand"
+          className="w-[120px] md:w-[150px] 3xl:w-[200px] object-contain"
+        />
       </div>
         </div>
     )

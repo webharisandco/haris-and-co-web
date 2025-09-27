@@ -26,43 +26,48 @@ function ClientsSection() {
       img: arsh,
       name: "Arsh Navas",
       role: "Chief Brand Officer",
-      link: "https://www.instagram.com/reel/DB367jVBT2u/?igsh=MWd5cGluMGxkdjV3cg==",
+      link: "https://youtu.be/6JP6r9x2ROc?si=bAiOcGLdZhCF1pE_",
       company: "Gatezone transport"
-      
+      // https://www.instagram.com/reel/DB367jVBT2u/?igsh=MWd5cGluMGxkdjV3cg==
     },
     {
       img: ashik,
       name: "Ashik",
       role: "Marketing Director",
-      link: "https://www.instagram.com/reel/DB3yj-xhe2_/?igsh=MWdrZmV2dHJpZWR4aQ==",
+      link: "https://youtu.be/oW9NIapHaFU?si=-JvkVwyWdn9J3ZIl",
       company: "Mr Alfred united arab emirates"
+      // https://www.instagram.com/reel/DB3yj-xhe2_/?igsh=MWdrZmV2dHJpZWR4aQ==
     },
     {
       img: salman_thorop,
       name: "Salman Thorop",
       role: "Founder and CEO ",
-      link: "https://www.instagram.com/reel/DK9ruMOTRFM/?igsh=aXFsbm40MjJnanBm",
+      link: "https://youtube.com/shorts/yLVQjXDWv34?si=fA1t_j3s8o3x-idf",
       company:"Duvolks"
+      // https://www.instagram.com/reel/DK9ruMOTRFM/?igsh=aXFsbm40MjJnanBm
     },
     {
       img: Jasim,
       name: "Jasim SM",
       role: "CEO ",
-      link: "https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs",
+      link: "https://youtu.be/kCFIlw110_k?si=VsQdEDiPkXntKG-E",
       company: "Bosq Ergonomic Living"
+      // https://www.instagram.com/reel/C3ukEL8P-3L/?igsh=bDZzb2xybXh4aThs
     },
     {
       img: shan,
       name: "Shan A Salam",
       role: "Founder of one percentages ",
-      link: "https://www.instagram.com/reel/C3r7E01Pn9_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      link: "https://youtu.be/u2ORY0ki8Sg?si=YBL1YVNhUNLGKnQY",
       company:" E-commerce consultant"
+      // https://www.instagram.com/reel/C3r7E01Pn9_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
     },
     {
       img: arabi,
       name: "Abbas",
       role: "Founder of First driving center ",
-      link: "https://www.instagram.com/reel/DNPxOc-xxs1/?igsh=MWpqNm1oYm9sMGh5dw==",
+      link: "https://youtube.com/shorts/chYuCsunOtQ?si=78vMvBORwLMgwkaT",
+      // https://www.instagram.com/reel/DNPxOc-xxs1/?igsh=MWpqNm1oYm9sMGh5dw==
      
     }
   ];

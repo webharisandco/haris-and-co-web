@@ -25,7 +25,7 @@ export default function useTypes() {
         },
         {
           url: "digital",
-          title: "Digital PR & Communication",
+          title: "Influencer Marketing ",
           heading: "Get influencer-approved!",
           subHeading: "Let your brand be in trend in collaboration with the best-known faces in the industry.",
           details: "Getting your message across social media platforms may seem daunting. But that is why you’ve got us. We help your brand reach newer audiences and solidify your presence among your existing audience with the world’s favourite social media platforms. Our expert team specializes in high-impact, high-performing content that is perfect for your social media grids and features renowned celebrities and influencers. Showcase your brand with personalized content in collaboration with the most popular names on the platforms promoting loyalty, leads, and sales.",

@@ -19,60 +19,55 @@ const Footer = () => {
             </p>
           </div>
 
+<div className="flex justify-center sm:justify-start gap-6 flex-nowrap">
+  {/* Facebook */}
+  <a
+    href="https://www.facebook.com/harisandconsulting"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border-[1.5px] border-black rounded-full 
+               w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
+               flex items-center justify-center"
+  >
+    <img src={facebookIcon} alt="facebook Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
+  </a>
 
-          <div className="flex flex-wrap justify-center sm:justify-between gap-4 ">
-            {/* Facebook */}
-            <div className="border-[1.5px] border-black rounded-full 
-                            w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
-                            flex items-center justify-center">
-              <a
-                href="https://www.facebook.com/harisandconsulting"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={facebookIcon} alt="facebook Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
-              </a>
-            </div>
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/company/harisand-co"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border-[1.5px] border-black rounded-full 
+               w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
+               flex items-center justify-center"
+  >
+    <img src={linkedInIcon} alt="LinkedIn Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
+  </a>
 
-            {/* LinkedIn */}
-            <div className="border-[1.5px] border-black rounded-full 
-                            w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
-                            flex items-center justify-center">
-              <a
-                href="https://www.linkedin.com/company/harisand-co"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={linkedInIcon} alt="LinkedIn Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
-              </a>
-            </div>
+  {/* X (Twitter) */}
+  <a
+    href="https://x.com/harisand_co"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border-[1.5px] border-black rounded-full 
+               w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
+               flex items-center justify-center"
+  >
+    <img src={xIcon} alt="X Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
+  </a>
 
-            {/* X (Twitter) */}
-            <div className="border-[1.5px] border-black rounded-full 
-                            w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
-                            flex items-center justify-center">
-              <a
-                href="https://x.com/harisand_co"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={xIcon} alt="X Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
-              </a>
-            </div>
-
-            {/* Instagram */}
-            <div className="border-[1.5px] border-black rounded-full 
-                            w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
-                            flex items-center justify-center">
-              <a
-                href="https://www.instagram.com/harisand.co/?hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={instaIcon} alt="Instagram Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
-              </a>
-            </div>
-          </div>
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/harisand.co/?hl=en"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border-[1.5px] border-black rounded-full 
+               w-12 h-12 sm:w-[63px] sm:h-[65px] md:w-[70px] md:h-[70px] 
+               flex items-center justify-center"
+  >
+    <img src={instaIcon} alt="Instagram Icon" className="w-5 sm:w-6 md:w-7 h-auto" />
+  </a>
+</div>
 
 
         </div>
@@ -95,7 +90,8 @@ const Footer = () => {
                 Awards
               </Link>
               <Link to="/about" className="text-[18px]  text-nowrap">
-                About us
+                Ourstory 
+
               </Link>
               <Link to="/blogs" className="text-[18px] ">
                 Blogs
@@ -110,20 +106,22 @@ const Footer = () => {
       <div className="mt-[50px] text-black grid grid-cols-2 sm:grid-cols-4 gap-6 lg:hidden">
         <Link to="digital-marketing-agency-in-kerala">Kerala</Link>
         <Link to="ae/digital-marketing-agency-in-dubai">Dubai</Link>
-        <Link to="ae/digital-marketing-agency-in-sharjah">Sharjah</Link>
-        <Link to="ae/digital-marketing-agency-in-abudhabi">Abu Dhabi</Link>
+        <Link to="ae/digital-marketing-agency-in-sharjah"></Link>
+        <Link to="ae/digital-marketing-agency-in-abudhabi"></Link>
       </div>
 
       <div className="mt-[50px] lg:mt-[115px] flex justify-between mb-[40px] text-black/55 text-base md:text-lg font-medium items-end ">
         <div className=" flex gap-4 md:gap-[40px] lg:gap-[60px] flex-col md:flex-row">
-          <p>Privacy</p>
+         <Link to="/Privacy" className="text-[18px] ">
+                Privacy
+              </Link> 
           <p>Terms & Conditions</p>
         </div>
         <div className=" text-black w-1/3 justify-between hidden lg:flex">
           <Link to="digital-marketing-agency-in-kerala">Kerala</Link>
           <Link to="ae/digital-marketing-agency-in-dubai">Dubai</Link>
-          <Link to="ae/digital-marketing-agency-in-sharjah">Sharjah</Link>
-          <Link to="ae/digital-marketing-agency-in-abudhabi"> Abu Dhabi</Link>
+          <Link to="ae/digital-marketing-agency-in-sharjah"></Link>
+          <Link to="ae/digital-marketing-agency-in-abudhabi"> </Link>
         </div>
         <div className="">
           <p>&copy; 2024.Haris&Co</p>

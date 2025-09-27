@@ -40,6 +40,7 @@ import AwardWinning from "../pages/blog/blogDetails/awardWinning";
 import DifferenceFromTraditional from "../pages/blog/blogDetails/difference";
 
 import Clients from "@/pages/clients";
+import PrivacyPolicy from "../pages/privacyAnd/PrivacyPolicy";
 
 const AppRouter = () => {
   const routes = [
@@ -158,9 +159,11 @@ const AppRouter = () => {
             <Route path="seo" element={<ServiceMarketing />} />
             <Route path="social-media" element={<ServiceMarketing />} />
             <Route path="influencer-marketing" element={<ServiceMarketing />} />
+            
           </Route>
           {/* <Route path='marketing' element={<Marketing />} /> */}
           <Route path="works" element={<Works />} />
+          <Route path="Privacy" element={<PrivacyPolicy />} />
           <Route path="works">
             {routes.map((path) => (
               <Route key={path} path={path} element={<WorkBranding />} />
