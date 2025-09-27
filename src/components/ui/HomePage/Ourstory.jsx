@@ -30,7 +30,7 @@ export default function GenAIHero() {
       />
 
       {/* Left content */}
-      <div className="relative z-10 max-w-2xl px-4 sm:px-8 md:px-12 py-10 lg:pl-16 pb-10 sm:pb-12 md:pb-16">
+      <div className="relative z-10 max-w-4xl px-4 sm:px-8 md:px-12 py-10 lg:pl-16 pb-10 sm:pb-12 md:pb-16">
         <h1 className="text-white text-[32px] sm:text-[44px] md:text-[56px] lg:text-[64px] xl:text-[72px] leading-tight font-medium font-['Helvetica_Neue'] mb-4 sm:mb-6">
           Our Story
         </h1>
