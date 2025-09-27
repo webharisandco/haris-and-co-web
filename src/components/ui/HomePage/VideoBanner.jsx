@@ -14,7 +14,7 @@ export default function VideoBanner() {
         autoPlay
         loop
         muted={isMuted}
-        className="w-full h-[50vh] md:h-[70vh] lg:h-[90vh] object-cover"
+        className="w-full h-[50vh] md:h-[70vh] lg:h-[100vh] object-cover"
       />
       {/* Optional mute/unmute button */}
       {/* <button

@@ -1,6 +1,6 @@
 import React from "react";
 import tedImg from "@/assets/images/aboutPage/ted.png";
-import humanprenuerImg from "@/assets/images/aboutPage/humanprenuer2.png";
+import humanprenuerImg from "@/assets/images/aboutPage/humanprenuer.png";
 
 export default function VisionarySection() {
   return (

@@ -102,9 +102,9 @@ export default function Header() {
           <div className={"flex justify-between gap-[30px] xl:gap-[40px] text-white *:font-light  "} style={{ gap: 20 + (window.innerWidth / ((window.innerWidth > 2200 ? 60 : window.innerWidth > 1800 ? 80 : window.innerWidth > 1500 ? 120 : window.innerWidth > 1300 ? 150 : window.innerWidth > 1280 ? 200 - (20 - ((1300 - window.innerWidth) / 5)) : window.innerWidth > 1000 ? 180 : 90) * scrollProgress)) }}>
             <Link to="/services" className="text-[18px] font-[thin]">Services</Link>
             <Link to="/works" className="text-[18px] font-[thin]">Works</Link>
-            <Link to="/clients" className="text-[18px] font-[thin]">Clients</Link>
+            {/* <Link to="/clients" className="text-[18px] font-[thin]">Clients</Link> */}
             <Link to="/awards" className="text-[18px] font-[thin]">Awards</Link>
-            <Link to="/about" className="text-[18px] font-[thin] text-nowrap">Ourstory 
+            <Link to="/about" className="text-[18px] font-[thin] text-nowrap">Our Story 
 </Link>
             <Link to="/blogs" className="hidden xl:flex text-[18px] font-[thin]">Blogs</Link>
             <Link to="/career" className="text-[18px] font-[thin]">Careers</Link>

@@ -3,7 +3,7 @@ import React from 'react';
 const Chatbot = () => {
   // WhatsApp link - Use the full international number (e.g., for India: 91 as country code)
   // Also encode spaces as %20 and newlines as %0A
-  const whatsappNumber = '917356557630'; // 91 is the country code for India
+  const whatsappNumber = '918590629387'; // 91 is the country code for India
   const preFilledMessage = 'How can you help you';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(preFilledMessage)}`;
 

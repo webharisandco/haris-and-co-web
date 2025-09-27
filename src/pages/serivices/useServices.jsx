@@ -1,10 +1,10 @@
-import Branding from "@/assets/images/servicesSection/branding5.svg";
-import SEO from "@/assets/images/servicesSection/branding3.svg";
+import Branding from "@/assets/images/servicesSection/branding.jpg";
+// import SEO from "@/assets/images/servicesSection/branding3.svg";
 import Crtv from "@/assets/images/servicesSection/branding6.svg";
 // import Branding4 from "@/assets/images/servicesSection/branding4.svg";
-import Perfomance from "@/assets/images/servicesSection/branding2.svg";
-import Production from "@/assets/images/servicesSection/branding4.svg";
-import Seo from "@/assets/images/servicesSection/seo.png";
+import Perfomance from "@/assets/images/servicesSection/pm.jpg";
+import Production from "@/assets/images/servicesSection/production.jpg";
+import Seo from "@/assets/images/servicesSection/seo.jpg";
 import SocialMedia from "@/assets/images/servicesSection/branding1.svg";
 import Influencers from "@/assets/images/servicesSection/branding7.svg";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";
@@ -90,7 +90,7 @@ function useServices() {
         icon: icon,
         link: "seo",
       },
-      image: SEO,
+      image: Seo,
     },
     // {
     //   id: "web-development",
@@ -173,7 +173,7 @@ function useServices() {
         icon: icon,
         link: "production",
       },
-      image: Crtv,
+      image: Production,
     },
     // {
     //   id: "digital",
