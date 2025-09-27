@@ -19,7 +19,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
     <>
       {/* Hero Section */}
       <section
-        className="relative px-0 pb-20 pt-20 text-white min-h-[400px] flex items-center"
+        className="relative px-[16px] md:px-[40px] lg:px-[80px] pb-20 pt-20 text-white min-h-[400px] flex items-center"
         style={{
           backgroundImage: `url(${GenAiImg})`,
           backgroundSize: "cover",
@@ -41,7 +41,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
           </p>
         </div>
         {/* Main titles center left */}
-        <div className="relative z-10 w-full max-w-[1260px] mx-auto flex flex-col items-start px-4 md:px-10">
+        <div className="relative z-10 w-full  mx-auto flex flex-col -mt-20 items-start">
           <h1 className="text-[42px] sm:text-[64px] md:text-[90px] lg:text-[120px] leading-none font-bold mb-0 font-[Helvetica-Light]">
             Agency Across
             <br />
@@ -59,10 +59,10 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
 
       {/* Offices section */}
       <div className="w-full relative z-30 bg-[linear-gradient(to_bottom,black_50%,#0E0E0E_50%)]">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 max-w-[1260px] mx-auto md:-mt-[220px] pb-8 sm:pb-16">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10  mx-auto md:-mt-[220px] pb-8 sm:pb-16">
           {/* India Office */}
           <div
-            className="group w-[95vw] max-w-[420px] sm:max-w-[520px] md:w-[400px] lg:w-[520px] h-[220px] sm:h-[300px] md:h-[400px] lg:h-[450px] relative overflow-hidden shadow-lg cursor-pointer rounded-md"
+            className="group w-[95vw]  sm:max-w-[520px] md:w-[400px] lg:w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-[450px] relative overflow-hidden cursor-pointer"
             style={{
               backgroundImage: `url(${IndiaImg})`,
               backgroundSize: "cover",
@@ -77,7 +77,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
 
           {/* Dubai Office */}
           <div
-            className="group w-[95vw] max-w-[420px] sm:max-w-[520px] md:w-[400px] lg:w-[520px] h-[220px] sm:h-[300px] md:h-[400px] lg:h-[450px] relative overflow-hidden shadow-lg cursor-pointer rounded-md"
+            className="group w-[95vw]  sm:max-w-[520px] md:w-[400px] lg:w-[520px] h-[220px] sm:h-[300px] md:h-[400px] lg:h-[450px] relative overflow-hidden cursor-pointer "
             style={{
               backgroundImage: `url(${UAEImg})`,
               backgroundSize: "cover",

@@ -1,4 +1,3 @@
-import tcs from '../../assets/images/ourWorks/tcs.jpeg'
 import antiUVA from '../../assets/images/ourWorks/antiUVA.png'
 import landMark from '../../assets/images/ourWorks/landMark.png'
 import KairaliTMT from '../../assets/images/ourWorks/KairaliTMT.jpeg'
@@ -10,39 +9,39 @@ import revive from '../../assets/images/ourWorks/revive.jpeg'
 const OurWorksData = [
     {
       id: 1,
-      image: tcs, // Replace with actual image URL
-      heading: "Collaborating with TCS",
-      description: "We partnered up with Tata Consultancy Services (TCS) for the design and copy for their TCS Sustainathon 2024.",
+      image: "/images/works/Artboard_1_PM.jpg", // Replace with actual image URL
+      heading: "Partnering with Bluetyga",
+      description: "From zero to ₹6 million a month in record time",
     },
     {
       id: 2,
-      image: antiUVA,
-      heading: " Collaborating with Med7 Online.",
-      description: "See how our creative team partnered with Med7 Online, an online pharmacy delivery in the UAE, to increase their brand visibility.",
+      image: "/images/works/Artboard_2_PM.jpg",
+      heading: "Walkaroo - A Reputed Indian Footwear Brand.",
+      description: "Generated a massive ₹10 million in 6 months.",
     },
     {
       id: 3,
-      image: landMark,
-      heading: " Collaborating with Care n Cure",
-      description: "We partnered with one of the UAE’s trusted healthcare brands to build a stronger digital presence. We helped boost visibility, engagement, and growth across platforms.",
+      image: "/images/works/Artboard_3_PM.jpg",
+      heading: "Skin Bae - A Reputed Skincare Brand",
+      description: "Scaled from ₹900K to ₹2 million.",
     },
     {
       id: 4,
-      image: KairaliTMT,
-      heading: "Launching Kairali TMT Online",
-      description: "Branding & Identity, Websites & Digital Platforms.",
+      image: "/images/works/Artboard_4_PM.jpg",
+      heading: "Strabo - A D2C Bag Brand",
+      description: "2x sales in just 1 month!.",
     },
     {
       id: 5,
-      image: allde,
-      heading: "Collaborating with Allde",
+      image: "/images/works/Artboard_5_PM.jpg",
+      heading: "Watiaa - A Qatar Based B2C Online Store",
       description: "We partnered with one of the UAE’s growing brands to strengthen their digital presence. We helped drive reach, engagement, and organic growth across platforms.",
     },
     {
       id: 6,
-      image: wonderlla,
-      heading: "Collaborating with Wonderla.",
-      description: "The Wonderla OOH campaign is driving conversations and visibility in four states",
+      image: "images/works/Artboard_9_SEO.jpg",
+      heading: "SEO strategies that rank you on the first page!",
+      description: "Our SEO strategies made a difference for Abu Dhabi-based home care provider Infinity Care. Our strategies reduced bounce rates and generated 200+ leads in just 2 months!",
     }, 
     {
       id: 7,

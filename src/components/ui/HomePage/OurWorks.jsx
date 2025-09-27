@@ -14,11 +14,11 @@ function OurWorks() {
       {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 mt-8 md:mt-14">
         {OurWorksData.slice(0, 6).map((data) => (
-          <Link to={"works/branding"} key={data.id}>
+          // <Link to={"works/branding"} key={data.id}>
             <div className="flex flex-col h-full">
               {/* Image */}
               <img
-                className="w-full h-52 sm:h-fit md:h-fit lg:h-full object-fit"
+                className="w-full h-52  object-cover"
                 src={data.image}
                 alt={data.heading}
               />
@@ -33,7 +33,7 @@ function OurWorks() {
                 {data.description}
               </p>
             </div>
-          </Link>
+          // </Link>
         ))}
       </div>
 

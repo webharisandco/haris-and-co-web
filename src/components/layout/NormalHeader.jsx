@@ -36,15 +36,15 @@ export default function NormalHeader() {
       </div>
       <div className='items-center gap-[25px] xl:gap-[49px] hidden lg:flex'>
         <div className="flex justify-between gap-[25px] xl:gap-[40px] 3xl:gap-[55px]   text-black text-sm 2xl:text-base  *:text-nowrap  ">
-          <Link to="/" className={`${location.pathname === "/" ? "font-medium" : " font-[Helvetica-Light] "}  `}>Home</Link>
-          <Link to="/services" className={` ${location.pathname === "/services" ? "font-medium" : " font-[Helvetica-Light] "} `}>Services</Link>
-          <Link to="/works" className={`${location.pathname === "/works" ? "font-medium" : "font-[Helvetica-Light]"} `}>Works</Link>
-          <Link to="/clients" className={`${location.pathname === "/clients" ? "font-medium" : "font-[Helvetica-Light]"} `}>Clients</Link>
-          <Link to="/awards" className={`${location.pathname === "/awards" ? "font-medium" : "font-[Helvetica-Light]"} `}>Awards</Link>
-          <Link to="/about" className={`${location.pathname === "/about" ? "font-medium" : "font-[Helvetica-Light]"} `}>Ourstory 
+          <Link to="/" className={`${location.pathname === "/" ? "font-medium" : " font-[HelveticaNeue] "}  `}>Home</Link>
+          <Link to="/services" className={` ${location.pathname === "/services" ? "font-medium" : " font-[HelveticaNeue] "} `}>Services</Link>
+          <Link to="/works" className={`${location.pathname === "/works" ? "font-medium" : "font-[HelveticaNeue]"} `}>Works</Link>
+          {/* <Link to="/clients" className={`${location.pathname === "/clients" ? "font-medium" : "font-[HelveticaNeue]"} `}>Clients</Link> */}
+          <Link to="/awards" className={`${location.pathname === "/awards" ? "font-medium" : "font-[HelveticaNeue]"} `}>Awards</Link>
+          <Link to="/about" className={`${location.pathname === "/about" ? "font-medium" : "font-[HelveticaNeue]"} `}>Our Story 
 </Link>
-          <Link to="/blogs" className={`${location.pathname === "/blogs" ? "font-medium" : "font-[Helvetica-Light]"} `}>Blogs</Link>
-          <Link to="/career" className={`${location.pathname === "/career" ? "font-medium" : "font-[Helvetica-Light]"} `}>Careers</Link>
+          <Link to="/blogs" className={`${location.pathname === "/blogs" ? "font-medium" : "font-[HelveticaNeue]"} `}>Blogs</Link>
+          <Link to="/career" className={`${location.pathname === "/career" ? "font-medium" : "font-[HelveticaNeue]"} `}>Careers</Link>
         </div>
         <div className="hidden lg:block">
           <Button text='Contact Us' href='/contact' btnClassName={' 2xl:w-[175px]'} />

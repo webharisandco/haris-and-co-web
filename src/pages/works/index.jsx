@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import AllWorks from "./AllWorks";
 import WorkPartners from "./WorkPartners";
 import useWorks from "./useWorks";
@@ -20,10 +20,22 @@ export default function WorksPage() {
 
   const worksData = useWorks(selectedId);
 
-  const handleClick = (id, content) => {
-    setSelectedId(id);
-    setContent(content);
-  };
+  // ref for WorkPartners section
+  const workPartnersRef = useRef(null);
+
+const handleClick = (id, content) => {
+  setSelectedId(id);
+  setContent(content);
+
+  // scroll with offset (mt-20 ~ 80px)
+  setTimeout(() => {
+    if (workPartnersRef.current) {
+      const topPos = workPartnersRef.current.getBoundingClientRect().top + window.pageYOffset - 150; 
+      window.scrollTo({ top: topPos, behavior: "smooth" });
+    }
+  }, 100);
+};
+
 
   return (
     <div>
@@ -33,7 +45,9 @@ export default function WorksPage() {
         handleClick={handleClick}
         content={content}
       />
-      <WorkPartners ourWorksData={worksData} />
+      <div ref={workPartnersRef}>
+        <WorkPartners ourWorksData={worksData} />
+      </div>
     </div>
   );
 }

@@ -29,27 +29,22 @@ const WorldClock = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center py-8 bg-black">
+    <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 py-6 sm:py-8 bg-black">
       {cities.map(city => (
         <div
           key={city.name}
-          className="px-10 py-4 mx-4 rounded-full border-2 border-white text-white text-2xl flex items-center justify-center"
-          style={{
-            minWidth: "230px",
-            textAlign: "center",
-          }}
+          className="
+            flex items-center justify-center 
+            px-4 sm:px-6 md:px-8 lg:px-10 
+            py-2 sm:py-3 md:py-4 
+            rounded-full border-2 border-white text-white
+            text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl
+            min-w-[150px] sm:min-w-[180px] md:min-w-[200px] lg:min-w-[230px]
+            text-center
+          "
         >
-          <span
-            className="mr-2"
-            style={{ fontFamily: "HelveticaNeueBold, sans-serif" }}
-          >
-            {city.name}:
-          </span>
-          <span
-            style={{ fontFamily: "HelveticaNeueMedium, sans-serif" }}
-          >
-            {times[city.name]}
-          </span>
+          <span className="mr-2 font-bold">{city.name}:</span>
+          <span className="font-medium">{times[city.name]}</span>
         </div>
       ))}
     </div>
