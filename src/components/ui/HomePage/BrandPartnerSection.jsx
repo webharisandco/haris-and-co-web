@@ -38,7 +38,7 @@ const BrandPartnerSection = () => {
     className="group flex items-center gap-[11px] text-white/55 border-b border-white/55 pb-0.5 hover:text-white hover:border-white transition-all duration-300"
   >
     <span className="text-[15px] md:text-[18px]">
-      {clicked ? "View Less Clients" : "View All Clients"}
+      {clicked ? "View Less " : "View More"}
     </span>
     <MoveRight 
       size={30} 

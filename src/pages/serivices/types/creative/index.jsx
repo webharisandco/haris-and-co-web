@@ -4,7 +4,7 @@ import AchivementSection from "./AchivementSection";
 import AdsSection from "./AdsSection";
 import ServiceSection from "./ServiceSection";
 import useWorks from "./useWorks";
-import BlogSection from "./BlogSection"
+// import BlogSection from "./BlogSection"
 
 function Works() {
   const {services,blogs,currentService}= useWorks()
@@ -14,7 +14,7 @@ function Works() {
       <AchivementSection currentService={currentService}/>
       <AdsSection  />
       <ServiceSection currentService={currentService} services={services}/>
-      <BlogSection blogs={blogs}/>
+      {/* <BlogSection blogs={blogs}/> */}
     </div>
   );
 }
