@@ -1,6 +1,6 @@
 import React from "react";
 import GenAiImg from "../../../../src/assets/images/agencyofficeimg/agencyofficebg.jpg";
-import UAEImg from "../../../../src/assets/images/agencyofficeimg/uaeoffice.jpg";
+import UAEImg from "../../../../src/assets/images/agencyofficeimg/dubai.JPG";
 import IndiaImg from "../../../../src/assets/images/agencyofficeimg/officejpg.jpg";
 
 export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
