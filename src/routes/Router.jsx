@@ -41,6 +41,7 @@ import DifferenceFromTraditional from "../pages/blog/blogDetails/difference";
 
 import Clients from "@/pages/clients";
 import PrivacyPolicy from "../pages/privacyAnd/PrivacyPolicy";
+import TermsAndConditions from "../pages/privacyAnd/TermsConditions";
 
 const AppRouter = () => {
   const routes = [
@@ -164,6 +165,8 @@ const AppRouter = () => {
           {/* <Route path='marketing' element={<Marketing />} /> */}
           <Route path="works" element={<Works />} />
           <Route path="Privacy" element={<PrivacyPolicy />} />
+          <Route path="TermsAndConditions" element={<TermsAndConditions />} />
+          
           <Route path="works">
             {routes.map((path) => (
               <Route key={path} path={path} element={<WorkBranding />} />

@@ -12,7 +12,7 @@ function Works() {
     <div className="bg-white">
       <Banner currentService={currentService} />
       <AchivementSection currentService={currentService}/>
-      <AdsSection  />
+      <AdsSection  currentService={currentService} />
       <ServiceSection currentService={currentService} services={services}/>
       {/* <BlogSection blogs={blogs}/> */}
     </div>

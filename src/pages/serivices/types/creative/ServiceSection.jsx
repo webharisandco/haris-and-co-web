@@ -23,6 +23,7 @@ function ServiceSection({ currentService }) {
     return () => window.removeEventListener("resize", handleResize); // Cleanup
   }, [currentService?.offerings]);
   return (
+    
     <div className="px-[16px] lg:px-[80px] my-[30px] lg:my-[79px]">
       <p className="text-[24px] lg:text-[40px] mb-[30px] lg:mb-[54px] font-[boldtext]">
         Services we provide

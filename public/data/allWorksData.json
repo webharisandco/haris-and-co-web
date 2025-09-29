@@ -163,33 +163,6 @@
     "image": "/images/works/Artboard_5_PM.jpg"
   },
   {
-    "id": 24,
-    "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-  {
-    "id": 25,
-    "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_2_PM.jpg"
-  },
-  {
-    "id": 26,
-    "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_3_PM.jpg"
-  },
-  {
-    "id": 27,
-    "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_4_PM.jpg"
-  },{
     "id": 28,
     "categoryId": 4,
     "heading": "Launching Kairali TMT Online",
@@ -216,41 +189,6 @@
     "heading": "SEO strategies that rank you on the first page!",
     "description": "Our SEO strategies made a difference for Abu Dhabi-based home care provider Infinity Care. Our strategies reduced bounce rates and generated 200+ leads in just 2 months!.",
     "image": "/images/works/Artboard_9_SEO.jpg"
-  },
-  {
-    "id": 32,
-    "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_6_SEO.jpg"
-  },
-  {
-    "id": 33,
-    "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_7_SEO.jpg"
-  },
-  {
-    "id": 34,
-    "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_8_SEO.jpg"
-  },
-  {
-    "id": 35,
-    "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_9_SEO.jpg"
-  },
-  {
-    "id": 36,
-    "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_6_SEO.jpg"
   },
   {
     "id": 37,
@@ -318,66 +256,73 @@
   {
     "id": 46,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Danube Sports",
+    "description": "Bringing the Thrill of Every Game to a Digital Playground",
+    "image": "/images/works/Artboard_18_WEB.jpg"
   },
   {
     "id": 47,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Citron Tourism",
+    "description": "Turning Travel Dreams into Journeys Waiting to Be Booked",
+    "image": "/images/works/Artboard_19_WEB.jpg"
   },
   {
     "id": 48,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Replica Gallery",
+    "description": "Giving Timeless Art a Stage as Bold as Its Craft",
+    "image": "/images/works/Artboard_20_WEB.jpg"
   },
   {
     "id": 49,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Renarte",
+    "description": "Redefining Elegance with a Digital Home for Hospitality",
+    "image": "/images/works/Artboard_21_WEB.jpg"
   },
 
   {
     "id": 50,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Popees",
+    "description": "Turning Little Joys and Tricky Tantrums into a Smooth Online Experience",
+    "image": "/images/works/Artboard_22_WEB.jpg"
   },
   {
     "id": 51,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Odyssia",
+    "description": "Putting Everyday Style in the Spotlight It Deserves",
+    "image": "/images/works/Artboard_23_WEB.jpg"
   },
   {
     "id": 52,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Teen Lifestyle",
+    "description": "Capturing the Spirit of Youth in a Brand That Never Sits Still",
+    "image": "/images/works/Artboard_24_WEB.jpg"
   },
 
   {
     "id": 53,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Disha Creationz",
+    "description": "Building a Showcase Where Creativity Meets Celebration",
+    "image": "/images/works/Artboard_25_WEB.jpg"
   },{
     "id": 54,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Silky Calicut",
+    "description": "Blending Tradition and Luxury into a Website That Looks Just as Elegant",
+    "image": "/images/works/Artboard_26_WEB.jpg"
+  },
+  {
+    "id": 72,
+    "categoryId": 6,
+    "heading": "Partnering with Truth Care Pharmacy",
+    "description": "Putting Trust and Care at the Heart of Every Click",
+    "image": "/images/works/Artboard_27_WEB.jpg"
   },
   {
     "id": 55,
@@ -446,65 +391,58 @@
   {
     "id": 64,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Wonderla",
+    "description": "Festive Ideas That Grew into Billboards You Couldn’t Miss",
+    "image": "/images/works/Artboard_10_BR.jpg"
   },
   {
     "id": 65,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Face World Leadership School",
+    "description": "A Rebrand That Opened Doors to the World",
+    "image": "/images/works/Artboard_11_BR.jpg"
   },
   {
     "id": 66,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Wonderla",
+    "description": "25 Years Celebrated on a Train Full of Smiles",
+    "image": "/images/works/Artboard_12_BR.jpg"
   },
   {
     "id": 67,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Wonderla",
+    "description": "Turning the Highway into a Splash of Fun",
+    "image": "/images/works/Artboard_13_BR.jpg"
   },
   {
     "id": 68,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Taara Care",
+    "description": "An Identity as Fresh and Luxurious as the Products",
+    "image": "/images/works/Artboard_14_BR.jpg"
   },
   {
     "id": 69,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with HealBev",
+    "description": "DHealthy Became Cool with Flavoured Drinks",
+    "image": "/images/works/Artboard_15_BR.jpg"
   },
   {
     "id": 70,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Calicut Parivar",
+    "description": "A Brand Crafted with the Same Care as Its Legacy",
+    "image": "/images/works/Artboard_16_BR.jpg"
   },
   {
     "id": 71,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-  {
-    "id": 72,
-    "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Quarter Plate",
+    "description": "A Comeback with a New Logo and Bold Packaging",
+    "image": "/images/works/Artboard_17_br.jpg"
   }
 
 
