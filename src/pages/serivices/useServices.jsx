@@ -129,7 +129,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "influencer",
+        link: "influencer-marketing",
       },
       image: Influencers,
     },
@@ -149,7 +149,7 @@ function useServices() {
       action: {
         label: "Explore",
         icon: icon,
-        link: "web develpment",
+        link: "web-development",
       },
       image: web,
     },

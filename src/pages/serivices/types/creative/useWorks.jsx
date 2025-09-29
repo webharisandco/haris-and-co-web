@@ -20,7 +20,7 @@ function useWorks() {
       description:
         "Our bespoke branding solutions tell a story about your brand, creating a complete brand experience, making it unforgettable, encouraging loyalty, and driving conversions. For companies starting from scratch and brands looking to refresh, we cater to them all.",
       adsImages: {
-        desktop: "/images/services/SM (1).png",
+        desktop: "/images/services/Branding.png",
         // mobile: "/images/services/SM (1).png",
       },
       statistics: [
@@ -76,7 +76,7 @@ function useWorks() {
       description:
         "Give your audience a unique brand experience from the first click with our custom scroll-worthy layouts and smooth user experience. Drive customer retention, loyalty, conversions, and revenue with us.",
             adsImages: {
-        desktop: "/images/services/SM (1).png",
+        desktop: "/images/services/web.png",
         // mobile: "/images/services/SM (1).png",
       },
         statistics: [
@@ -201,7 +201,7 @@ function useWorks() {
       description:
         "We are growth geeks focused on results. We provide customized strategies, ad placements, and audience targeting to help you get the numbers that matter.",
             adsImages: {
-        desktop: "/images/services/SM (1).png",
+        desktop: "/images/services/PM.png",
         // mobile: "/images/services/SM (1).png",
       },
         statistics: [
@@ -263,7 +263,7 @@ function useWorks() {
       description:
         "We are a result-oriented agency, unlike the others. Our SEO solutions are designed to target your prospective audience, increase visibility by ranking you higher, and get you the best results for the money you invest.",
             adsImages: {
-        desktop: "/images/services/SM (1).png",
+        desktop: "/images/services/seo.png",
         // mobile: "/images/services/SM (1).png",
       },
         statistics: [
@@ -318,7 +318,7 @@ function useWorks() {
       description:
         "Partner with leading industry influencers to keep up with trends. Connect with new audiences and engage with your existing followers with creative content on the world’s most popular social media platforms.",
             adsImages: {
-        desktop: "/images/services/SM (1).png",
+        desktop: "/images/services/influencer marketing.png",
         // mobile: "/images/services/SM (1).png",
       },
         statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
@@ -442,7 +442,7 @@ function useWorks() {
       description:
         "Our award-winning team blends creativity with proven strategies to create visual narratives that resonate with your audience and drive conversions. We bring life to your brand with compelling and high-impact video content tailored to you.",
             adsImages: {
-        desktop: "/images/services/SM (1).png",
+        desktop: "/images/services/production.png",
         // mobile: "/images/services/SM (1).png",
       },
         statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
