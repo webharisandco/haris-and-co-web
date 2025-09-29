@@ -1,12 +1,10 @@
-import Branding from "@/assets/images/servicesSection/branding.jpg";
-// import SEO from "@/assets/images/servicesSection/branding3.svg";
-import Crtv from "@/assets/images/servicesSection/branding6.svg";
-// import Branding4 from "@/assets/images/servicesSection/branding4.svg";
+import SocialMedia from "@/assets/images/servicesSection/Artboard 13.jpg";
 import Perfomance from "@/assets/images/servicesSection/pm.jpg";
-import Production from "@/assets/images/servicesSection/production.jpg";
 import Seo from "@/assets/images/servicesSection/seo.jpg";
-import SocialMedia from "@/assets/images/servicesSection/branding1.svg";
-import Influencers from "@/assets/images/servicesSection/branding7.svg";
+import Production from "@/assets/images/servicesSection/production.jpg";
+import web from "@/assets/images/servicesSection/Artboard 11 (1).jpg";
+import Influencers from "@/assets/images/servicesSection/influencer marketing in.png";
+import Branding from "@/assets/images/servicesSection/branding.jpg";
 import icon from "@/assets/images/servicesSection/rightArrow.svg";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -131,7 +129,7 @@ function useServices() {
         icon: icon,
         link: "influencer",
       },
-      image: Production,
+      image: Influencers,
     },
     {
       id: "Web Development & UI/UX",
@@ -151,7 +149,7 @@ function useServices() {
         icon: icon,
         link: "web develpment",
       },
-      image: Branding,
+      image: web,
     },
     
     {
@@ -220,7 +218,7 @@ function useServices() {
         icon: icon,
         link: "branding",
       },
-      image: Influencers,
+      image: Branding,
     },
   ];
 

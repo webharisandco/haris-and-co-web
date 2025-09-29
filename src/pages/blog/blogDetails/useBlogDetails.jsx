@@ -39,7 +39,7 @@ export default function useBlogDetails() {
       ]
     },
     {
-      heading: "",
+      heading: "Building Trust Through Digital Channels",
       content: [
         "Healthcare decisions are personal and trust-based. Digital marketing helps build and maintain trust.",
         "Strategies include:",

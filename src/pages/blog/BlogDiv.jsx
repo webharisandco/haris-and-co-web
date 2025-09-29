@@ -6,7 +6,7 @@ export default function BlogDiv({ img, title, type, date, className, link, index
     // <Link to={'/blog/1'}>
     <Link
       to={`/blogs/${link}`}
-      className={`flex flex-col gap-5 md:gap-[30px] h-fit ${className} cursor-pointer`}
+      className={`flex flex-col  gap-5 md:gap-[30px] h-fit ${className} cursor-pointer`}
     >
      <img
         className={`${index < 2 ? "w-fit h-fit" : "w-[400px] h-[350px] object-cover"}`}
