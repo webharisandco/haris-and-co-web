@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function AwardSection({ image, title, date, desc, brandImg }) {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-10   py-[80px] bg-white'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10  py-10 lg:py-[80px] bg-white'>
             <img className='xl:w-[640px] xl:h-[357px] object-contain ' src={image} alt="" />
             {/* <div className="font-[thin] flex flex-col gap-5 justify-between md:px-10">
                 <img src={brandImg} alt="" className='w-[150px] 3xl:w-[200px] ' /> 

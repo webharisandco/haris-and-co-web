@@ -2,20 +2,21 @@ import React from "react";
 
 export default function GenAIHero({ className = "" }) {
   return (
-    <section className={`relative w-full h-[600px] ${className}`}>
+    <section
+      className={`relative flex justify-center items-center w-full h-[30vh]  md:h-screen overflow-hidden bg-black ${className}`}
+    >
       {/* Background Video from public folder */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/Video/H&C Web.mp4" // Note: path starts from public folder
+        className="absolute top-0 left-0 w-full h-full object-center lg:object-cover"
+        src="/Video/H&C Web.mp4" // Path from public folder
         autoPlay
         muted
         loop
+        playsInline
       />
 
-      {/* Optional Overlay */}
-      <div className="absolute inset-0 bg-black/20"></div>
-
-      {/* Removed all texts and buttons */}
+      {/* Overlay for better contrast */}
+      <div className="absolute inset-0 bg-black/40"></div>
     </section>
   );
 }

@@ -19,40 +19,43 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
     <>
       {/* Hero Section */}
       <section
-        className="relative px-[16px] md:px-[40px] lg:px-[80px] pb-20 pt-20 text-white min-h-[400px] flex items-center"
-        style={{
-          backgroundImage: `url(${GenAiImg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/40"></div>
-        {/* Tagline overlay */}
-        <div className="absolute top-0 right-0 pt-10 pr-5 z-20 max-w-xs w-[90%] md:w-80 text-right text-white">
-          <p className="text-base md:text-xl leading-snug font-normal m-0 p-0">
-            From India’s creative hub to the heart of
-          </p>
-          <p className="text-base md:text-xl leading-snug font-normal m-0 p-0">
-            Dubai’s innovation district, our studios are
-          </p>
-          <p className="text-base md:text-xl leading-snug font-normal m-0 p-0">
-            where ideas turn into impact.
-          </p>
-        </div>
-        {/* Main titles center left */}
-        <div className="relative z-10 w-full  mx-auto flex flex-col -mt-20 items-start">
-          <h1 className="text-[42px] sm:text-[64px] md:text-[90px] lg:text-[120px] leading-none font-bold mb-0 font-[Helvetica-Light]">
-            Agency Across
-            <br />
-            Two Nations
-          </h1>
-        </div>
-        <div
-          id="learn-more"
-          className="absolute left-0 bottom-0 w-full h-1 pointer-events-none"
-        />
-      </section>
+  className="relative px-4 md:px-10 lg:px-20 py-16 md:py-20 text-white min-h-[400px] flex items-center"
+  style={{
+    backgroundImage: `url(${GenAiImg})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/40"></div>
+
+  <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-between gap-6" >
+    {/* Main Title */}
+    <div className="max-w-full">
+      <h1 className="text-[36px] sm:text-[52px] md:text-[72px] lg:text-[96px] leading-tight font-semibold font-[Helvetica-Light]">
+        Agency Across
+        <br />
+        Two Nations
+      </h1>
+    </div>
+
+    {/* Tagline */}
+    <div className="w-full md:w-[40%]">
+      <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-snug font-normal">
+        From India’s creative hub to the heart of Dubai’s innovation district,
+        our studios are where ideas turn into impact.
+      </p>
+    </div>
+  </div>
+
+  {/* Smooth scroll anchor */}
+  <div
+    id="learn-more"
+    className="absolute left-0 bottom-0 w-full h-1 pointer-events-none"
+  />
+</section>
+
 
       {/* Spacer */}
       <div className="bg-black-500 py-8 sm:py-24"></div>

@@ -18,7 +18,7 @@ function OurWorks() {
             <div className="flex flex-col h-full">
               {/* Image */}
               <img
-                className="w-full h-52  object-cover"
+                className="w-full h-52 object-contain md:object-cover"
                 src={data.image}
                 alt={data.heading}
               />

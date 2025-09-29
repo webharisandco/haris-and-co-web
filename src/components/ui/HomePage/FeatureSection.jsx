@@ -7,6 +7,8 @@ import SeoImg from "@/assets/images/features/SEO.jpg";
 import WebImg from "@/assets/images/features/WEB.jpg";
 import { RightArrow } from "@/assets/images/icons/RightArrow";
 import TextReveal3D from "./TextReveal";
+import Social_Media from "@/assets/images/features/SM.jpg"
+import influencer from "@/assets/images/features/influencer marketing hover.png"
 
 export default function FeatureSection() {
   const [isHovered, setIsHovered] = useState("");
@@ -69,11 +71,11 @@ export default function FeatureSection() {
           <img src={BrandImg} alt="Branding" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "branding" ? "opacity-100" : "opacity-0"}`} />
           <img src={WebImg} alt="Web" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "web" ? "opacity-100" : "opacity-0"}`} />
           {/* <img src={CreativeImg} alt="Creative" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "creative" ? "opacity-100" : "opacity-0"}`} /> */}
-          {/* <img src={DigitalImg} alt="Digital" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "digital" ? "opacity-100" : "opacity-0"}`} /> */}
+          <img src={influencer} alt="Digital" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "digital" ? "opacity-100" : "opacity-0"}`} />
           <img src={PerformanceImg} alt="Performance" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "performance" ? "opacity-100" : "opacity-0"}`} />
           <img src={ProductionImg} alt="Production" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "production" ? "opacity-100" : "opacity-0"}`} />
           <img src={SeoImg} alt="SEO" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "seo" ? "opacity-100" : "opacity-0"}`} />
-          {/* <img src={SocialImg} alt="Social" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "social" ? "opacity-100" : "opacity-0"}`} /> */}
+          <img src={Social_Media} alt="Social" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "social" ? "opacity-100" : "opacity-0"}`} />
         </div>
 
         {/* Fallback animation */}
