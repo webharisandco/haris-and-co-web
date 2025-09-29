@@ -33,7 +33,8 @@ function useServices() {
       title: "Social Media ",
       description:
         "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
-      services: [
+      
+        services: [
         "Brand Consulting",
         "Logo Design",
         "Graphic Design",
@@ -116,7 +117,8 @@ function useServices() {
       title: "INFLUENCER MARKETING",
       description:
         "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.Our INFLUENCER MARKETING team helps brands grow their presence through strong storytelling and influencer-driven strategies. We focus on building awareness, creating conversations, and ensuring your brand is seen by the right people in the right spaces. From launches to long-term partnerships, we manage every detail so campaigns run smoothly and deliver results.",
-      services: [
+      
+        services: [
         "Influencer Marketing",
         "Brand Launch",
         "Event Marketing",

@@ -1,6 +1,6 @@
 import React from "react";
-import tedImg from "@/assets/images/aboutPage/ted.png";
-import humanprenuerImg from "@/assets/images/aboutPage/humanprenuer.png";
+import tedImg from "@/assets/images/aboutPage/ted1.png";
+import humanprenuerImg from "@/assets/images/aboutPage/humanprenuer3.png";
 
 export default function VisionarySection() {
   return (

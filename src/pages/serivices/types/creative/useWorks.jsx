@@ -4,13 +4,14 @@ import Image3 from "@/assets/images/workSection/blogs/img3.svg";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 function useWorks() {
-  const [currentService, setCurrentService] = useState([]);
+  const [currentService, setCurrentService] = useState(null);
 
   const location = useLocation();
   const pathSegments = location.pathname?.split("/");
   const service = pathSegments[pathSegments?.length - 1]; // Get last part of URL
 
-  console.log("Current Service:", service);
+  console.log("Current URL Service:", service);
+
 
   const allServices = [
     {
@@ -18,6 +19,10 @@ function useWorks() {
       subHeading: "Branding is not just about a logo.",
       description:
         "Our bespoke branding solutions tell a story about your brand, creating a complete brand experience, making it unforgettable, encouraging loyalty, and driving conversions. For companies starting from scratch and brands looking to refresh, we cater to them all.",
+      adsImages: {
+        desktop: "/images/services/SM (1).png",
+        // mobile: "/images/services/SM (1).png",
+      },
       statistics: [
         "X+ Stories Crafted",
         "X+ Projects launched in India & the GCC",
@@ -70,7 +75,11 @@ function useWorks() {
       subHeading: "Welcome your users to the digital home of your brand.",
       description:
         "Give your audience a unique brand experience from the first click with our custom scroll-worthy layouts and smooth user experience. Drive customer retention, loyalty, conversions, and revenue with us.",
-      statistics: [
+            adsImages: {
+        desktop: "/images/services/SM (1).png",
+        // mobile: "/images/services/SM (1).png",
+      },
+        statistics: [
         "X+ Happy Brands",
         "X+ Websites Built",
         "X+ Generated in Revenue",
@@ -129,6 +138,10 @@ function useWorks() {
       
       Want to see some of those ways? 
       Great. Pay attention. Or don’t. Either way, it will get your attention.`,
+            adsImages: {
+        desktop: "/images/services/SM (1).png",
+        // mobile: "/images/services/SM (1).png",
+      },
       statistics: [
         "X+ Brands Worked With",
         "X+ Revenue Generated",
@@ -187,7 +200,11 @@ function useWorks() {
       subHeading: "Drive engagement & results with us.",
       description:
         "We are growth geeks focused on results. We provide customized strategies, ad placements, and audience targeting to help you get the numbers that matter.",
-      statistics: [
+            adsImages: {
+        desktop: "/images/services/SM (1).png",
+        // mobile: "/images/services/SM (1).png",
+      },
+        statistics: [
         "X+ Brands Worked With",
         "X+ Revenue Generated",
         "X+ Platforms Catered To",
@@ -245,7 +262,11 @@ function useWorks() {
       subHeading: "Don’t just rank higher. Drive growth!",
       description:
         "We are a result-oriented agency, unlike the others. Our SEO solutions are designed to target your prospective audience, increase visibility by ranking you higher, and get you the best results for the money you invest.",
-      statistics: [
+            adsImages: {
+        desktop: "/images/services/SM (1).png",
+        // mobile: "/images/services/SM (1).png",
+      },
+        statistics: [
         "10,000+ Top 10 Keywords on Google",
         "50,000+ Leads Generated",
         "8M+ Total Website Clicks",
@@ -296,7 +317,11 @@ function useWorks() {
       subHeading: "Get influencer-approved!",
       description:
         "Partner with leading industry influencers to keep up with trends. Connect with new audiences and engage with your existing followers with creative content on the world’s most popular social media platforms.",
-      statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
+            adsImages: {
+        desktop: "/images/services/SM (1).png",
+        // mobile: "/images/services/SM (1).png",
+      },
+        statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
       offerings: [
         {
           title: "Brand Identity",
@@ -360,7 +385,11 @@ function useWorks() {
       subHeading: "Make your brand go viral!",
       description:
         "Take your brand to where more than half the world is! In an increasingly online world, you need newer, more compelling ways to stay on top. Let us help you turn your social media platforms into powerful marketing tools.",
-      statistics: ["X+ Creatives", "X+ Views", "X+ Engagements"],
+            adsImages: {
+        desktop: "/images/services/SM (1).png",
+        // mobile: "/images/services/SM (1).png",
+      },
+        statistics: ["X+ Creatives", "X+ Views", "X+ Engagements"],
       offerings: [
         {
           title: "Social Media Strategy Development",
@@ -412,7 +441,11 @@ function useWorks() {
       subHeading: "Get the creative step up to your brand!",
       description:
         "Our award-winning team blends creativity with proven strategies to create visual narratives that resonate with your audience and drive conversions. We bring life to your brand with compelling and high-impact video content tailored to you.",
-      statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
+            adsImages: {
+        desktop: "/images/services/SM (1).png",
+        // mobile: "/images/services/SM (1).png",
+      },
+        statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
       offerings: [
         {
           title: "Influencer Marketing",
