@@ -171,7 +171,7 @@ export default function DepartmentHead() {
 
       {/* Regional Heads */}
       <div className="">
-        <h4 className="text-[20px] md:text-[18px] 3xl:text-[24px] font-[Helvetica-Light] mb-3">
+        <h4 className="text-[20px] md:text-[18px] 3xl:text-[24px] mb-3">
           Our Regional Heads
         </h4>
       </div>
