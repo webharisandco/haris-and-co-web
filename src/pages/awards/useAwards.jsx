@@ -14,23 +14,23 @@ export default function useAwards() {
   const awardContent = [
     {
       image: image1,
-      title: "Afaqs! startup brands - Silver ",
+      title: "Afaqs! startup brands Silver",
       date: "2023",
-      desc: "At Haris&Co., we understand that your brand is more than just a logo or a tagline it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful.",
+      desc: "Love was in the air, and so was our Valentine’s Day Campaign for Haris&Co! The content struck a chord with audiences, making hearts smile and feeds light up with joy. All that love earned us the silver award from Afaqs! for ‘Best Use of Video on Social Media’, a recognition that celebrated the playful spirit and emotional connect of the campaign.",
       brandImg: brand,
     },
     {
       image: image2,
-      title: "Brand Storyz - Bronze ",
+      title: "Afaqs! startup brands Silver",
       date: "2023",
-      desc: "At Haris&Co., we understand that your brand is more than just a logo or a tagline it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful.",
+      desc: "Mother’s Day felt extra special for us thanks to our campaign for Craftise, a crafting materials supplier. It captured the little handmade moments and the joy of gifting that make mothers feel truly appreciated. All that love translated into a silver award for ‘Best Branded Content’.",
       brandImg: brand,
     },
     {
       image: image3,
       title: "Afaqs! startup brands - Silver ",
       date: " 2023",
-      desc: "At Haris&Co., we understand that your brand is more than just a logo or a tagline it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful.",
+      desc: "Every woman runs her own race, and our Women’s Day campaign for Femisafe honored that journey with honesty and emotion. The campaign sparked conversations, built connection, and was awarded the silver for ‘Best Moment Marketing’.",
 
       brandImg: brand,
     },
@@ -38,21 +38,32 @@ export default function useAwards() {
     
     {
       image: image4,
-      title: "Pepper Awards - Silver ",
+      title: "Pepper Awards - Silver",
       date: "2023",
-      desc: "At Haris&Co., we understand that your brand is more than just a logo or a tagline it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful.",
+      desc: "A little Pepper only made us stronger. Our work for Femisafe also impressed the jury at the prestigious Pepper Awards, earning a silver award that celebrated creativity, precision, and the power of meaningful campaigns.",
 
       brandImg: brand,
     },
 
      {
       image: image5,
-      title: "Afaqs! startup brands December 2023 ",
+      title: "Brand Storyz - Bronze",
       date: "2023",
-      desc: "At Haris&Co., we understand that your brand is more than just a logo or a tagline—it's the essence of your business, the story you tell, and the promise you make to your customers. Our branding services are designed to uncover and articulate your unique identity, ensuring that every touchpoint resonates with your target audience. From initial brand strategy and research to crafting a compelling visual identity, we work closely with you to build a brand that is authentic, memorable, and impactful.",
+      desc: "Our campaign for Kiddiebus, an English learning platform for kids, turned learning into an adventure, generating over 7,000 leads with playful, engaging content. The result? It secured the bronze award for ‘Best Lead Generation Campaign’ from Afaqs!.",
       brandImg: brand,
     },
-    
+
+     {
+      image: image5,
+      title: "Afaqs! Startup Brands - Bronze",
+      date: "2023",
+      desc: "And the love kept rolling in for Femisafe- our Women’s Day campaign also earned the bronze award for ‘Best Social Media Campaign’. Strong message, flawless execution, happy audiences- proof that creativity with heart always wins.",
+      brandImg: brand,
+    },
+   
   ];
+
+  <p><strong>Every award is a milestone, a recognition of creativity, strategy, and execution. And this is just the beginning. Our shelf is filling up, our ambition is growing, and the best work is still ahead. Here's to winning more hearts and accolades alike.</strong></p>
+
   return { awardContent };
 }
