@@ -43,7 +43,7 @@ const WorldClock = () => {
             text-center
           "
         >
-          <span className="mr-2 font-bold">{city.name}:</span>
+          <span className="mr-2 font-bold font-[helvetica-medium] tracking-wider">{city.name}:</span>
           <span className="font-medium">{times[city.name]}</span>
         </div>
       ))}

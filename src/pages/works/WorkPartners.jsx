@@ -10,14 +10,14 @@ export default function WorkPartners({ ourWorksData }) {
             <Link to="#" key={data.id}>
               <div className="h-full flex flex-col">
                 <img
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-contain"
                   src={data.image}
                   alt={data.heading}
                 />
-                <p className="font-medium text-white tracking-tighter text-[20px] md:text-[28px] lg:text-[32px] my-[10px] text-left">
+                <p className="font-medium text-white tracking-wide text-[20px] md:text-[28px] lg:text-[32px] my-[10px] text-left">
                   {data.heading}
                 </p>
-                <p className="text-white opacity-55 font-[Helvetica-Light] text-left text-[14px] md:text-[18px] lg:text-[20px]">
+                <p className="text-white opacity-55 ffont-[thin] text-left text-[14px] md:text-[18px] ">
                   {data.description}
                 </p>
               </div>

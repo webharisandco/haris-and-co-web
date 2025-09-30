@@ -59,7 +59,7 @@ export default function DepartmentHead() {
         <p className="text-[24px] text-40px font-[boldtext] mb-3">
           Meet the experts.
         </p>
-        <h4 className="text-[20px] md:text-[18px] 3xl:text-[24px] font-[Helvetica-Light] ">
+        <h4 className="text-[20px] md:text-[18px] 3xl:text-[24px]  ">
           Our Business Heads
         </h4>
       </div>
@@ -120,7 +120,10 @@ export default function DepartmentHead() {
 
       {/* Department Heads */}
       <div className="">
-        <h4 className="text-[20px] md:text-[18px] 3xl:text-[24px] font-[Helvetica-Light] mb-3">
+        {/* <p className="text-[24px] text-40px font-[boldtext] mb-3">
+          Meet the experts.
+        </p> */}
+        <h4 className="text-[20px] md:text-[18px] 3xl:text-[24px]  mb-3">
           Our Department Heads
         </h4>
       </div>
@@ -171,8 +174,10 @@ export default function DepartmentHead() {
 
       {/* Regional Heads */}
       <div className="">
-        <h4 className="text-[20px] md:text-[18px] 3xl:text-[24px] mb-3">
-          Our Regional Heads
+
+        <h4 className="text-[20px] md:text-[18px] 3xl:text-[24px]  mb-3">
+         Our Regional Heads
+
         </h4>
       </div>
 

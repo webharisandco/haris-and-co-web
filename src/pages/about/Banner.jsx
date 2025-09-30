@@ -6,12 +6,12 @@ function Banner() {
       <div className=" flex flex-col gap-[35px]">
         <p className="text-[40px] lg:text-[60px] text-white leading-[1.1]">
           We are dedicated to help brands scale through{" "}
-          <span className="text-white/65 font-[Helvetica-Light]">
+          <span className="text-white/65 ">
             {" "}
             creative and authentic marketing strategies, engaging designs,
           </span>{" "}
           and{" "}
-          <span className="text-white/65 font-[Helvetica-Light]">
+          <span className="text-white/65 ">
             technology
           </span>
           .
