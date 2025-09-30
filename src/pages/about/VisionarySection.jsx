@@ -4,8 +4,8 @@ import humanprenuerImg from "@/assets/images/aboutPage/humanprenuer3.png";
 
 export default function VisionarySection() {
   return (
-    <div className="bg-[#0E0E0E] text-white flex flex-col items-center py-[50px] lg:py-[80px] px-[16px] md:px-[80px] gap-[220px]  lg:gap-[80px] xl:gap-[100px] ">
-      <h4 className="text-[30px] text-40px mb-8 md:mb-0">
+    <div className="bg-[#0E0E0E] text-white flex flex-col items-center py-[50px] lg:py-[80px] px-[16px] md:px-[80px] gap-[20px]  lg:gap-[80px] xl:gap-[100px] ">
+      <h4 className="text-[30px] text-40px  md:mb-0">
         Meet the Visionary Behind the Brand
       </h4>
       <div className="flex flex-col lg:flex-row gap-20">

@@ -9,7 +9,7 @@ export default function AboutSection() {
         <h2 className="font-medium lg:w-1/2 text-[24px]  lg:text-[27px]  xl:text-[29px] 3xl:text-[40px] leading-none pe-4">
           Where Creativity Meets Strategy, Transforming Brands
         </h2>
-        <div className=" lg:w-1/2 space-y-5  text-[20px] lg:text-[16px] 3xl:text-[20px] font-[Helvetica-Light] text-black/80">
+        <div className=" lg:w-1/2 space-y-5  text-[20px] lg:text-[16px] 3xl:text-[20px] text-black/80">
           <p>
             We are an integrated marketing solutions provider that started off
             in 2020 with a tiny team of 6 members. Today we are 150+ members
