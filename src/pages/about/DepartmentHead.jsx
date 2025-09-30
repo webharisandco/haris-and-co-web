@@ -99,13 +99,13 @@ export default function DepartmentHead() {
           {businessHeads.map((member, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-start w-fit">
-                {/* <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[200px]">
+                <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[200px]">
                   <img
                     className="pt-8 w-full h-full object-cover"
                     src={member.img}
                     alt={member.name}
                   />
-                </div> */}
+                </div>
                 <p className="text-[18px] 3xl:text-[24px] mt-1">
                   {member.name}
                 </p>

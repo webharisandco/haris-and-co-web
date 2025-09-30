@@ -37,7 +37,7 @@ export default function BlogSection({ blogContent }) {
 
       {/* Blog images grid */}
       <div className="bg-[#0E0E0E] w-full px-[16px] md:px-[80px] py-[30px] md:py-[80px]">
-        <div className="grid grid-rows-3 grid-cols-3 gap-8 gap-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 gap-y-12">
           {blogContent.map((blog, idx) => (
             <BlogDiv
               key={idx}

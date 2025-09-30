@@ -115,8 +115,13 @@ const Footer = () => {
          <Link to="/Privacy" className="text-[18px] ">
                 Privacy
               </Link> 
-          <p>Terms & Conditions</p>
-        </div>
+              </div>
+              <div>
+               <Link to="/TermsAndConditions" className="text-[18px] ">
+                Terms & Conditions
+              </Link> 
+              </div>
+        
         <div className=" text-black w-1/3 justify-between hidden lg:flex">
           <Link to="digital-marketing-agency-in-kerala">Kerala</Link>
           <Link to="ae/digital-marketing-agency-in-dubai">Dubai</Link>

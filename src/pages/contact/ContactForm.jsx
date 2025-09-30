@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import WorldClock from "../../components/ui/HomePage/TimeSection";
 
 export default function ContactForm() {
   // Form state
@@ -45,8 +46,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen py-12 px-4 flex flex-col items-center">
-      <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-12 justify-center mx-auto">
+    <div className="bg-black text-white min-h-screen py-12 flex flex-col items-center">
+      <div className= " px-[16px]  md:px-[80px]  w-full flex flex-col lg:flex-row gap-12 lg:gap-40 justify-center mx-auto">
         {/* Form */}
         <form
           onSubmit={handleSubmit}
@@ -94,29 +95,18 @@ export default function ContactForm() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full"
+            className="w-full lg:h-3/4"
             title="Company Location"
             style={{ borderRadius: 0 }}
           ></iframe>
         </div>
       </div>
       {/* Centered time container below form & map */}
-      <div className="flex justify-center items-center gap-8 mt-10">
-        {Object.entries(times).map(([city, time]) => (
-          <div
-            key={city}
-            className="border rounded-full py-2 px-8 text-white text-lg flex items-center font-medium"
-            style={{
-              borderColor: "#fff",
-              background: "transparent",
-              minWidth: "170px",
-              justifyContent: "center"
-            }}
-          >
-            <span className="font-bold mr-2">{city}:</span> {time}
-          </div>
-        ))}
+      <div className="flex justify-center items-center mt-10">
+        <WorldClock />
       </div>
+      
+      
     </div>
   );
 }

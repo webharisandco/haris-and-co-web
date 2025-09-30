@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "./Banner";
 import JobCard from "./JobCard";
 import WhyWork from "./WhyWork";
+import WorldClock from "../../components/ui/HomePage/TimeSection";
 
 export default function Careers() {
   return (
@@ -30,6 +31,7 @@ export default function Careers() {
         <JobCard jobName={"Receptionist"} />
         <JobCard jobName={"Creative Director"} />
       </div>
+      <WorldClock />
     </div>
   );
 }

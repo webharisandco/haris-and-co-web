@@ -1,131 +1,81 @@
 [
-    {
-    "id": 1,
-    "categoryId": 1,
-    "heading": "all works",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-
-  {
-    "id": 2,
-    "categoryId": 1,
-    "heading": "all works",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
   
-  {
-    "id": 3,
-    "categoryId": 1,
-    "heading": "all works",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-   {
-    "id": 4,
-    "categoryId": 1,
-    "heading": "all works",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-  {
-    "id": 5,
-    "categoryId": 1,
-    "heading": "all works",
-    "description": "Description for performance_marketing works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-  {
-    "id": 6,
-    "categoryId": 1,
-    "heading": "all works",
-    "description": "Description for performance_marketing works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-  {
-    "id": 7,
-    "categoryId": 1,
-    "heading": "all works",
-    "description": "Description for performance_marketing works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-  {
-    "id": 8,
-    "categoryId": 1,
-    "heading": "all works",
-    "description": "Description for performance_marketing works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-  {
-    "id": 9,
-    "categoryId": 1,
-    "heading": "all works",
-    "description": "Description for performance_marketing works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
   {
     "id": 10,
     "categoryId": 2,
-    "heading": "Social Media",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Amend Dental",
+    "description": "Where modern care meets confident smiles",
+    "image": "/images/works/Artboard_19_SM.png"
   },
   {
     "id": 11,
     "categoryId": 2,
-    "heading": "Social Media",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with First Driving Centre",
+    "description": "Where dreams drive change and inspire generations",
+    "image": "/images/works/Artboard_20_SM.png"
   },
   {
     "id": 12,
     "categoryId": 2,
-    "heading": "Social Media",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Tajriba Foods",
+    "description": "Serving tradition on every plate, with love at its core",
+    "image": "/images/works/Artboard_21_SM.png"
   },
   {
     "id": 13,
     "categoryId": 2,
-    "heading": "Social Media",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Koyikoden Qissa",
+    "description": "A taste of Malabar heritage, told through every dish",
+    "image": "/images/works/Artboard_22_SM.png"
   },
   {
     "id": 14,
     "categoryId": 2,
-    "heading": "Social Media",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with RISO Detergents",
+    "description": "Keeping clothes bright, clean, and full of life",
+    "image": "/images/works/Artboard_23_SM.png"
   },
   {
     "id": 15,
     "categoryId": 2,
-    "heading": "Social Media",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Sanford India",
+    "description": "Redesigning convenience for every kitchen",
+    "image": "/images/works/Artboard_24_SM.png"
   },
   {
     "id": 16,
     "categoryId": 2,
-    "heading": "Social Media",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Dr.Cafe",
+    "description": "Brewing moments that last forever",
+    "image": "/images/works/Artboard_25_SM.png"
   },
   {
     "id": 17,
     "categoryId": 2,
-    "heading": "Social Media",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Allde",
+    "description": "Bringing quality and trust to every kitchen shelf",
+    "image": "/images/works/Artboard_26_SM.png"
   },
   {
     "id": 18,
     "categoryId": 2,
-    "heading": "Social Media",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Kiddie Bus",
+    "description": "Creating a playful and engaging experience for learning and fun",
+    "image": "/images/works/Artboard_27_SM.png"
+  },
+   {
+    "id": 74,
+    "categoryId": 2,
+    "heading": "Partnering with Mother Opticals ",
+    "description": "Bringing the world into focus, one pair at a time",
+    "image": "/images/works/Artboard_28_SM.png"
+  },
+   {
+    "id": 75,
+    "categoryId": 2,
+    "heading": "Partnering with IMAX Gold",
+    "description": "Quality rice that makes every meal feel special",
+    "image": "/images/works/Artboard_29_SM.png"
   },
   {
     "id": 19,
@@ -163,33 +113,6 @@
     "image": "/images/works/Artboard_5_PM.jpg"
   },
   {
-    "id": 24,
-    "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-  {
-    "id": 25,
-    "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_2_PM.jpg"
-  },
-  {
-    "id": 26,
-    "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_3_PM.jpg"
-  },
-  {
-    "id": 27,
-    "categoryId": 3,
-    "heading": "performance marketing",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_4_PM.jpg"
-  },{
     "id": 28,
     "categoryId": 4,
     "heading": "Launching Kairali TMT Online",
@@ -218,293 +141,265 @@
     "image": "/images/works/Artboard_9_SEO.jpg"
   },
   {
-    "id": 32,
-    "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_6_SEO.jpg"
-  },
-  {
-    "id": 33,
-    "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_7_SEO.jpg"
-  },
-  {
-    "id": 34,
-    "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_8_SEO.jpg"
-  },
-  {
-    "id": 35,
-    "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_9_SEO.jpg"
-  },
-  {
-    "id": 36,
-    "categoryId": 4,
-    "heading": "seo",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_6_SEO.jpg"
-  },
-  {
     "id": 37,
     "categoryId": 5,
-    "heading": "digital PR",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Adithya Birla",
+    "description": "We teamed up Adithya Birla and Devika Sanjay on screen",
+    "image": "/images/works/Artboard_1_IFM .png"
   },
   {
     "id": 38,
     "categoryId": 5,
-    "heading": "digital PR",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Amend",
+    "description": "Making every smile camera-ready",
+    "image": "/images/works/Artboard_2_IFM.png"
   },
   {
     "id": 39,
     "categoryId": 5,
-    "heading": "digital PR",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with MyG Kannur",
+    "description": "5 creators created buzz ahead of the store launch",
+    "image": "/images/works/Artboard_12_IFM.png"
   },
   {
     "id": 40,
     "categoryId": 5,
-    "heading": "digital PR",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Francis Alukkas",
+    "description": "23 creators showcased jewellery and sparked community connections",
+    "image": "/images/works/Artboard_13_IFM.png"
   },
   {
     "id": 41,
     "categoryId": 5,
-    "heading": "digital PR",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with swiggy Instamart ",
+    "description": "We teamed up with Swiggy Instamart for high impact, all kerala influencer campaign.",
+    "image": "/images/works/Artboard_14_IFM.png"
   },
   {
     "id": 42,
     "categoryId": 5,
-    "heading": "digital PR",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Reliance Trends & Smart Bazaar",
+    "description": "3 creators brought Vishu and Eid celebrations to life",
+    "image": "/images/works/Artboard_15_IFM.png"
   },
   {
     "id": 43,
     "categoryId": 5,
-    "heading": "digital PR",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Redmi",
+    "description": "We teamed up with Redmi to launch the phone",
+    "image": "/images/works/Artboard_16_IFM.png"
   },
   {
     "id": 44,
     "categoryId": 5,
-    "heading": "digital PR",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with JBL India",
+    "description": "Festive video drew 6 million views and high engagement",
+    "image": "/images/works/Artboard_17_IFM.png"
   },
   {
     "id": 45,
     "categoryId": 5,
-    "heading": "digital PR",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Adithya Birla",
+    "description": "We teamed up Adithya Birla and Devika Sanjay on screen.",
+    "image": "/images/works/Artboard_18_IFM.png"
   },
   {
     "id": 46,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Danube Sports",
+    "description": "Bringing the Thrill of Every Game to a Digital Playground",
+    "image": "/images/works/Artboard_18_WEB.jpg"
   },
   {
     "id": 47,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Citron Tourism",
+    "description": "Turning Travel Dreams into Journeys Waiting to Be Booked",
+    "image": "/images/works/Artboard_19_WEB.jpg"
   },
   {
     "id": 48,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Replica Gallery",
+    "description": "Giving Timeless Art a Stage as Bold as Its Craft",
+    "image": "/images/works/Artboard_20_WEB.jpg"
   },
   {
     "id": 49,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Renarte",
+    "description": "Redefining Elegance with a Digital Home for Hospitality",
+    "image": "/images/works/Artboard_21_WEB.jpg"
   },
 
   {
     "id": 50,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Popees",
+    "description": "Turning Little Joys and Tricky Tantrums into a Smooth Online Experience",
+    "image": "/images/works/Artboard_22_WEB.jpg"
   },
   {
     "id": 51,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Odyssia",
+    "description": "Putting Everyday Style in the Spotlight It Deserves",
+    "image": "/images/works/Artboard_23_WEB.jpg"
   },
   {
     "id": 52,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Teen Lifestyle",
+    "description": "Capturing the Spirit of Youth in a Brand That Never Sits Still",
+    "image": "/images/works/Artboard_24_WEB.jpg"
   },
 
   {
     "id": 53,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Disha Creationz",
+    "description": "Building a Showcase Where Creativity Meets Celebration",
+    "image": "/images/works/Artboard_25_WEB.jpg"
   },{
     "id": 54,
     "categoryId": 6,
-    "heading": "web develpment",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Silky Calicut",
+    "description": "Blending Tradition and Luxury into a Website That Looks Just as Elegant",
+    "image": "/images/works/Artboard_26_WEB.jpg"
+  },
+  {
+    "id": 72,
+    "categoryId": 6,
+    "heading": "Partnering with Truth Care Pharmacy",
+    "description": "Putting Trust and Care at the Heart of Every Click",
+    "image": "/images/works/Artboard_27_WEB.jpg"
   },
   {
     "id": 55,
     "categoryId": 7,
-    "heading": "prodaction",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Amend",
+    "description": "Making every smile camera-ready",
+    "image": "/images/works/Artboard_2_PR.png"
   },
   {
     "id": 56,
     "categoryId": 7,
-    "heading": "prodaction",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Bearhouse",
+    "description": "Where men's fashion meets the perfect frame",
+    "image": "/images/works/Artboard_3_PR.png"
   },
   {
     "id": 57,
     "categoryId": 7,
-    "heading": "prodaction",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Qaadu",
+    "description": "Crafted from nature, Captured on screen",
+    "image": "/images/works/Artboard_4_PR.png"
   },
   {
     "id": 58,
     "categoryId": 7,
-    "heading": "prodaction",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Dr. Different ",
+    "description": "Where beauty comes alive with bold photography",
+    "image": "/images/works/Artboard_5_PR.png"
   },
 
 {
     "id": 59,
     "categoryId": 7,
-    "heading": "prodaction",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Berry & Co ",
+    "description": "Photography that captures every sip and slice with flavour.",
+    "image": "/images/works/Artboard_6_PR.png"
   },
   {
     "id": 60,
     "categoryId": 7,
-    "heading": "prodaction",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Yaslin",
+    "description": "Celebrating style in every stitch through photography",
+    "image": "/images/works/Artboard_7_PR.png"
   },
   {
     "id": 61,
     "categoryId": 7,
-    "heading": "prodaction",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Walkaroo",
+    "description": "Stepping into stories that move with style",
+    "image": "/images/works/Artboard_8_PR.png"
   },
   {
     "id": 62,
     "categoryId": 7,
-    "heading": "prodaction",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Misty Mountains",
+    "description": "Where stunning landscapes meet stunning visuals",
+    "image": "/images/works/Artboard_9_pr.png"
   },
   {
     "id": 63,
     "categoryId": 7,
-    "heading": "prodaction",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Ajfan",
+    "description": "DFrom dates to delights, filmed with flavour",
+    "image": "/images/works/Artboard_10_PR.png"
+  },
+  {
+    "id": 73,
+    "categoryId": 7,
+    "heading": "Partnering with Femisafe",
+    "description": "Breaking taboos and sparking conversations on screen",
+    "image": "/images/works/Artboard_11_PR.png"
   },
   {
     "id": 64,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Wonderla",
+    "description": "Festive Ideas That Grew into Billboards You Couldn’t Miss",
+    "image": "/images/works/Artboard_10_BR.jpg"
   },
   {
     "id": 65,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Face World Leadership School",
+    "description": "A Rebrand That Opened Doors to the World",
+    "image": "/images/works/Artboard_11 _BR.jpg"
   },
   {
     "id": 66,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Wonderla",
+    "description": "25 Years Celebrated on a Train Full of Smiles",
+    "image": "/images/works/Artboard_ 12_BR.jpg"
   },
   {
     "id": 67,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Wonderla",
+    "description": "Turning the Highway into a Splash of Fun",
+    "image": "/images/works/Artboard_13_BR.jpg"
   },
   {
     "id": 68,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Taara Care",
+    "description": "An Identity as Fresh and Luxurious as the Products",
+    "image": "/images/works/Artboard_14_BR.jpg"
   },
   {
     "id": 69,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with HealBev",
+    "description": "DHealthy Became Cool with Flavoured Drinks",
+    "image": "/images/works/Artboard_15_BR.jpg"
   },
   {
     "id": 70,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Calicut Parivar",
+    "description": "A Brand Crafted with the Same Care as Its Legacy",
+    "image": "/images/works/Artboard_16_BR.jpg"
   },
   {
     "id": 71,
     "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
-  },
-  {
-    "id": 72,
-    "categoryId": 8,
-    "heading": "branding",
-    "description": "Description for social media works.",
-    "image": "/images/works/Artboard_1_PM.jpg"
+    "heading": "Partnering with Quarter Plate",
+    "description": "A Comeback with a New Logo and Bold Packaging",
+    "image": "/images/works/Artboard_17_BR.jpg"
   }
 
 

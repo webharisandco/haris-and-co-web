@@ -3,42 +3,13 @@ import awardImage from "../../../../src/assets/images/awards/awardimage1.png";
 
 const AwardsBanner = () => {
   return (
-    <div
-      style={{
-        width: "100vw",
-        height: "100vh",
-        backgroundColor: "#000",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "1rem",
-        boxSizing: "border-box",
-      }}
-    >
+    <div className="w-screen lg:h-screen bg-black flex justify-center items-center p-4 box-border">
       <img
         src={awardImage}
-        alt="awardImage"
-        style={{
-          width: "100%",       // full width of container
-          height: "auto",      // maintain aspect ratio
-          maxHeight: "80vh",   // limit height to 80% viewport height
-          objectFit: "contain",
-        }}
+        alt="Award"
+        className="w-full h-auto max-h-[80vh] object-contain 
+                   md:max-h-[70vh] sm:max-h-[60vh] xs:max-h-[50vh]"
       />
-      <style>
-        {`
-          @media (max-width: 768px) {
-            img {
-              maxHeight: 60vh;
-            }
-          }
-          @media (max-width: 480px) {
-            img {
-              maxHeight: 50vh;
-            }
-          }
-        `}
-      </style>
     </div>
   );
 };
