@@ -110,9 +110,9 @@ const Footer = () => {
         <Link to="ae/digital-marketing-agency-in-abudhabi"></Link>
       </div>
 
-      <div className="mt-[50px] lg:mt-[115px] flex justify-between mb-[40px] text-black/55 text-base md:text-lg font-medium items-end ">
+      <div className="mt-[50px] lg:mt-[115px] flex flex-col md:flex-row justify-between mb-[40px] text-black/55 text-base md:text-lg font-medium items-center md:items-end gap-3 md:gap-0 ">
         <div className=" flex gap-4 md:gap-[40px] lg:gap-[60px] flex-col md:flex-row">
-         <Link to="/Privacy" className="text-[18px] ">
+          <Link to="/Privacy" className="text-[18px] ">
                 Privacy
               </Link> 
               </div>
@@ -120,7 +120,7 @@ const Footer = () => {
                <Link to="/TermsAndConditions" className="text-[18px] ">
                 Terms & Conditions
               </Link> 
-              </div>
+        </div>
         
         <div className=" text-black w-1/3 justify-between hidden lg:flex">
           <Link to="digital-marketing-agency-in-kerala">Kerala</Link>

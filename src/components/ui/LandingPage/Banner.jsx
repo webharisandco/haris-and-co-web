@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonIcon from "@/assets/images/web/icons/buttonRightArrow.svg";
 import LandingButton from "../../ui/common/LandingButton";
 import OptimizedBanner from "../common/OptimizedBanner";
 import BannerImage from "../../../assets/images/landing/performanceHero.png";

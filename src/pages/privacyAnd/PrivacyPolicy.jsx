@@ -34,7 +34,7 @@ const PrivacyPolicy = () => (
     </aside>
 
     {/* Main Content */}
-    <main className="flex-1 pt-32 pl-8 pr-8 ml-72 bg-white max-w-4xl">
+    <main className="flex-1 pt-32 pl-5 lg:pl-8 pr-8 lg:ml-72 bg-white max-w-4xl">
       <h1 className="text-5xl font-bold mb-14 text-left font-[helvetica-medium] tracking-wider">
         Haris&Co Privacy Policy
       </h1>

@@ -1,19 +1,12 @@
 import React, { useEffect, useState } from "react";
-import PhoneIcon from "@/assets/images/icons/phoneIcon.svg";
-import MailIcon from "@/assets/images/icons/mailIconWhite.svg";
-import LocationIcon from "@/assets/images/icons/locationIconWhite.svg";
+
 import LinkedInIcon from "@/assets/images/icons/linkedInWhiteICon.svg";
 import facebookIcon from "@/assets/images/icons/facebookWhiteIcon.svg";
 import instaIcon from "@/assets/images/icons/instaWhiteIcon.svg";
 import XIcon from "@/assets/images/icons/xWhiteIcon.svg";
 import RightArrow from "../../../assets/images/icons/whiteRightArrowIcon.svg";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { Mail, MapPin, Phone } from "lucide-react";
 
-const containerStyle = {
-  width: "100%",
-  height: "500px", // Adjust height based on your requirements
-};
 
 function ContactSection({ kerala, address }) {
   const [isLoaded, setIsLoaded] = useState(false);

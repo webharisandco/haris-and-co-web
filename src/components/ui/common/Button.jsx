@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { RightArrow } from "@/assets/images/icons/RightArrow";
-import { MoveRight } from 'lucide-react';
+// import { RightArrow } from "@/assets/images/icons/RightArrow";
+// import { MoveRight } from 'lucide-react';
 import WhiteArrow from '@/assets/images/icons/whiteArrow.svg'
 import blackRightArrow from '@/assets/images/icons/blackRightArrow.svg'
 
@@ -17,10 +17,12 @@ export default function Button({ text, href, className, btnClassName, color = 'b
                         {text}
                     </span>
                         <img
+                            alt='img'
                             src={blackRightArrow}
                             className="transition-all duration-300 delay-200 ease-in-out relative group-hover:absolute opacity-100 group-hover:opacity-0  group-hover:-right-10"
                         />
                         <img
+                            alt='img'
                             src={WhiteArrow}
                             className="opacity-0 transition-all duration-300  easeout absolute group-hover:opacity-100  group-hover:relative group-hover:translate-x-0 group-hover:right-1 -right-10 "
                         />

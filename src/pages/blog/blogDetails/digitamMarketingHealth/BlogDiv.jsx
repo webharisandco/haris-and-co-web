@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import img2 from "@/assets/images/blogDetails/health2.jpg";
-import img3 from "@/assets/images/blogDetails/health3.1.png";
 
 export default function BlogDiv() {
   const [show, setShow] = useState(false);
-
+console.log(setShow)
   return (
     <div className="flex gap-5 md:gap-[30px] h-fit px-[16px] md:px-[80px] py-[50px] bg-white">
       <div className="lg:w-2/3 flex flex-col gap-5">

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '@/assets/images/NewLogo.png';
-import menuIcon from '@/assets/images/icons/menu.svg';
 import ContactButton from '../ui/HomePage/ContactButton';
 import { useState, useEffect } from 'react';
 import MobileMenu from './MobileMenu';
@@ -79,7 +78,7 @@ export default function Header() {
 
 
   const containerRef = React.useRef(null);
-  const isCompactHeader = scrollY < (logoSize === 30 ? 20 : 35);
+  // const isCompactHeader = scrollY < (logoSize === 30 ? 20 : 35);
 
 
   // In your render logic:
@@ -90,7 +89,7 @@ export default function Header() {
           <img
             src={Logo}
             alt="Haris & Co."
-            className={window.scrollY < (logoSize == 30 ? 20 : 35) && 'w-full h-[100%!important]'}
+            className={window.scrollY < (logoSize === 30 ? 20 : 35) && 'w-full h-[100%!important]'}
             style={{
               height: `${Math.min(getScaledLogoSize(0), containerRef.current?.clientHeight || 100)}px`,
               // maxWidth: '100%',

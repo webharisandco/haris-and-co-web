@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCoverflow } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import f1 from "@/assets/images/DigitalMarketing/f1.png";
 import f2 from "@/assets/images/DigitalMarketing/f2.webp";
 import f3 from "@/assets/images/DigitalMarketing/f3.webp";

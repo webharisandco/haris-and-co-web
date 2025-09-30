@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
-import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 SwiperCore.use([Navigation, Pagination]);
 
 function BrandPartnerSection({ barandLogos, text, brandLogosSmall }) {

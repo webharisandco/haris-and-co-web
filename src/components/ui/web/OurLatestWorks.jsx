@@ -3,14 +3,12 @@ import MomToBe from "@/assets/images/web/images/momToBe.png";
 import Pharmacy from "@/assets/images/web/images/pharmacy.png";
 import SkinCare from "@/assets/images/web/images/skinCare.png";
 import Nuts from "@/assets/images/web/images/nuts.png";
-import ButtonIcon from "@/assets/images/web/icons/buttonRightArrow.svg";
-import LandingButton from "../common/LandingButton";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/pagination"; // Import pagination styles for Swiper
 import 'swiper/css/navigation';
 import SwiperCore from "swiper";
-import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 
 // install Swiper modules

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination"; // Import pagination styles for Swiper
 import "swiper/css/navigation";
-import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import arsh from "@/assets/images/clients/Arsh.png";
 import ashik from "@/assets/images/clients/Ashik.png";
@@ -12,8 +12,7 @@ import Jasim from "@/assets/images/clients/Bosq.png";
 import shan from "@/assets/images/clients/Shan.png";
 import PlayIcon from "@/assets/images/icons/play.svg";
 import arabi from "@/assets/images/clients/arabi.jpg"
-import { Link } from "react-router-dom";
-import { MoveRight } from "lucide-react";
+
 
 import SwiperCore from "swiper";
 

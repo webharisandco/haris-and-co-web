@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import VideoBanner from '../components/ui/HomePage/VideoBanner';
 import { ClientsDataSection } from '../components/ui/HomePage/ClientsDataSection';

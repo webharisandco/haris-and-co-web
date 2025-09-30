@@ -1,5 +1,4 @@
 import React from 'react';
-import ToolsImg from '@/assets/images/landing/ToolsImg.png';
 import image1 from '@/assets/images/landing/toolandplatform/image1.svg';
 import image2 from '@/assets/images/landing/toolandplatform/image2.png';
 import image3 from '@/assets/images/landing/toolandplatform/image3.png';

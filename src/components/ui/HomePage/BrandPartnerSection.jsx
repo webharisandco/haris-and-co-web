@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { MoveRight } from 'lucide-react';
 import BrandPartnerSecond from "../../../assets/images/brandPartnerSecond.png";
 import Br1 from "../../../assets/images/marketing/logo1.jpg";

@@ -7,8 +7,7 @@ import image5 from "@/assets/images/awards/image5.png";
 // import image6 from "@/assets/images/awards/award6.jpg";
 // import image5 from "@/assets/images/awards/pepper-award.JPG";
 import brand from "@/assets/images/awards/brand.png";
-import peperLogo from "@/assets/images/awards/peperLogo.jpg";
-import afaqsLogo2 from "@/assets/images/awards/afaqsLogo2.png";
+
 
 export default function useAwards() {
   const awardContent = [

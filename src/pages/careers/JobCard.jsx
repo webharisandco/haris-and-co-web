@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../../components/ui/common/Button";
-import { Link } from "react-router-dom";
 
 export default function JobCard({ className, jobName }) {
   return (

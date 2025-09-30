@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination"; // Import pagination styles for Swiper
 import "swiper/css/navigation";
 import SwiperCore from "swiper";
-import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination]);

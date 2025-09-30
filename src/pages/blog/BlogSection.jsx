@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BlogDiv from "./BlogDiv";
 
 export default function BlogSection({ blogContent }) {
-  const [selectedBlog, setSelectedBlog] = useState(0);
+  // const [selectedBlog, setSelectedBlog] = useState(0);
 
   // If you want to enable filtering by blog types, uncomment and customize
   // const blogTypes = [
