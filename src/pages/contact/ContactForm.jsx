@@ -12,6 +12,8 @@ export default function ContactForm() {
 
   // Time state
   const [times, setTimes] = useState({ India: "", Dubai: "", London: "" });
+  console.log(times);
+  
   useEffect(() => {
     const updateTimes = () => {
       setTimes({

@@ -1,7 +1,6 @@
 import  { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { Link } from "react-router-dom";
 import "swiper/css";
 import logos from "@/assets/images/DigitalMarketing/SeoPage/seo1 1.png";
 import logo2 from "@/assets/images/DigitalMarketing/SeoPage/technical-support1 1.png";
@@ -60,11 +59,11 @@ const services = [
 // Placeholder function to return image based on selected service
 
 // Swiper settings
-const settingsWhatwedo = {
-  spaceBetween: 20,
-  slidesPerView: 1,
-  loop: true,
-};
+// const settingsWhatwedo = {
+//   spaceBetween: 20,
+//   slidesPerView: 1,
+//   loop: true,
+// };
 
 const WhatWeHaveForYou = () => {
   const [selectedService, setSelectedService] = useState(services[0].name);

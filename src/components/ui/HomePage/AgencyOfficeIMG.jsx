@@ -4,16 +4,16 @@ import UAEImg from "../../../../src/assets/images/agencyofficeimg/dubai.JPG";
 import IndiaImg from "../../../../src/assets/images/agencyofficeimg/officejpg.jpg";
 
 export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
-  const handleCta = () => {
-    if (typeof onCta === "function") {
-      onCta();
-    } else {
-      const el = document.getElementById("learn-more");
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
+  // const handleCta = () => {
+  //   if (typeof onCta === "function") {
+  //     onCta();
+  //   } else {
+  //     const el = document.getElementById("learn-more");
+  //     if (el) {
+  //       el.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   }
+  // };
 
   return (
     <>

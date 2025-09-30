@@ -27,7 +27,6 @@ import Careers from "@/pages/careers";
 import About from "@/pages/about";
 import Blog from "@/pages/blog";
 import Awards from "@/pages/awards";
-import BlogDetails from "@/pages/blog/blogDetails";
 
 import DigitalMarketing from "../pages/blog/blogDetails/digitamMarketingHealth";
 import AiRole from "../pages/blog/blogDetails/aiRole";

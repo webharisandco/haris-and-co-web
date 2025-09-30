@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  Autoplay,
-} from "swiper/modules";
-import PersonIcon from "@/assets/images/landing/PersonIcon.svg";
-import TestimonialIcon from "@/assets/images/landing/TestimonialIcon.svg";
+
 import img1 from "@/assets/images/landing/testimonial/img1.jpg";
 import img2 from "@/assets/images/landing/testimonial/img2.jpg";
 import img3 from "@/assets/images/landing/testimonial/img3.jpg";
@@ -41,7 +34,6 @@ const testimonials = [
 
 const Testimonial = () => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
-  const [fade, setFade] = useState(true);
 
   //   useEffect(() => {
   //     const interval = setInterval(() => {
@@ -57,7 +49,7 @@ const Testimonial = () => {
   //     return () => clearInterval(interval);
   //   }, []);
 
-  const currentTestimonial = testimonials[currentTestimonialIndex];
+  // const currentTestimonial = testimonials[currentTestimonialIndex];
 
   return (
     <div className="pt-[50px] pb-[120px] bg-[#151515]">

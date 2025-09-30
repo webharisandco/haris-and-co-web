@@ -4,6 +4,7 @@ import img3 from "@/assets/images/blogDetails/roi3.jpg";
 
 export default function BlogDiv() {
   const [show, setShow] = useState(false);
+  console.log(setShow)
 
   return (
     <div className="flex gap-5 md:gap-[30px] h-fit px-[16px] md:px-[80px] py-[50px] bg-white">

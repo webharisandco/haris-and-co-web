@@ -1,10 +1,8 @@
 import * as React from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "@/assets/images/Haris&Co-blk.svg";
-import menuIcon from "@/assets/images/icons/menu.svg";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
-import ContactButton from "../ui/HomePage/ContactButton";
 import Button from "../ui/common/Button";
 
 export default function NormalHeader() {

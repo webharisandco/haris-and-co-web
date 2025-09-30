@@ -1,8 +1,4 @@
-import antiUVA from '../../assets/images/ourWorks/antiUVA.png'
-import landMark from '../../assets/images/ourWorks/landMark.png'
-import KairaliTMT from '../../assets/images/ourWorks/KairaliTMT.jpeg'
-import allde from '../../assets/images/ourWorks/allde.jpg'
-import wonderlla from '../../assets/images/ourWorks/wonderlla.png'
+
 import littleHeros from '../../assets/images/ourWorks/littleHeros.jpeg'
 import revive from '../../assets/images/ourWorks/revive.jpeg'
 

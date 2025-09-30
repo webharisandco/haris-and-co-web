@@ -1,5 +1,4 @@
 import React from "react";
-import awardImage from "../../assets/images/awards/awardimage1.png";
 
 
 function Banner() {

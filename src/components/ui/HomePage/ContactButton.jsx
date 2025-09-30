@@ -18,6 +18,7 @@ export default function ContactButton({ text, href, toggleMenu }) {
                     </span>
                     <div className="">
                         <img
+                            alt='img'
                             src={RightSmallArrow}
                             className="transition-all duration-300 delay-200 ease-in-out relative group-hover:absolute opacity-100 group-hover:opacity-0"
                         />

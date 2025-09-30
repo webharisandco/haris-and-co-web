@@ -7,7 +7,7 @@ import useWorks from "./useWorks";
 // import BlogSection from "./BlogSection"
 
 function Works() {
-  const {services,blogs,currentService}= useWorks()
+  const {services,currentService}= useWorks()
   return (
     <div className="bg-white">
       <Banner currentService={currentService} />

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import DownArrow from "@/assets/images/web/icons/downArrowBlue.svg";
 import CodingIcon from "@/assets/images/icons/codingIcon.svg";
 import EcomIcon from "@/assets/images/icons/ecomIcon.svg";
 import DevIcon from "@/assets/images/icons/devIcon.svg";
@@ -110,7 +109,7 @@ function WhatWeProvide({ performance = false }) {
 
   const handleScroll = () => {
     if (containerRef.current) {
-      const { scrollLeft, offsetWidth } = containerRef.current;
+      const { scrollLeft } = containerRef.current;
       const sectionWidth =
         containerRef.current.scrollWidth / servicesArray.length;
       const currentIndex = Math.round(scrollLeft / sectionWidth);
@@ -181,11 +180,11 @@ function WhatWeProvide({ performance = false }) {
                   </div>
 
                   <div
-                    className={`hidden  lg:block w-[44px] transition-all  duration-300 ${currentTitle == index && ""
+                    className={`hidden  lg:block w-[44px] transition-all  duration-300 ${currentTitle === index && ""
                       }`}
                   >
                     <img
-                      className={`w-full h-auto ${currentTitle == index && "scale-120 translate-y-2"
+                      className={`w-full h-auto ${currentTitle === index && "scale-120 translate-y-2"
                         }`}
                       src={service.icon}
                       alt={`${service.title} Icon `}
@@ -194,7 +193,7 @@ function WhatWeProvide({ performance = false }) {
 
                   <div className="w-full flex text-center lg:text-start flex-col justify-center gap-[15px]">
                     <p
-                      className={`text-white text-[25px] lg:text-[28px] transition-all duration-300 cursor-pointer ${currentTitle == index && "lg:text-[32px]"
+                      className={`text-white text-[25px] lg:text-[28px] transition-all duration-300 cursor-pointer ${currentTitle === index && "lg:text-[32px]"
                         } font-[AbroRegular]`}
                     >
                       {service.title}
@@ -202,7 +201,7 @@ function WhatWeProvide({ performance = false }) {
                     <p className="text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] text-white block lg:hidden  lg:transition-all duration-300 poppins-light">
                       {service.description}
                     </p>
-                    {currentTitle == index && (
+                    {currentTitle === index && (
                       <p className="text-[16px] md:text-[15px] lg:text-[14px]  2xl:text-[17px] poppins-light  hidden lg:block text-white  lg:transition-all duration-300">
                         {service.description}
                       </p>

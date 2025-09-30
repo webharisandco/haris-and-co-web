@@ -3,7 +3,7 @@ import img2 from "@/assets/images/blogDetails/ChoosetheRight2.jpg";
 import img3 from "@/assets/images/blogDetails/ChoosetheRight3.jpg";
 
 export default function BlogDiv() {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
   return (
     <div className="flex gap-5 md:gap-[30px] h-fit px-[16px] md:px-[80px] py-[50px] bg-white">

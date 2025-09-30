@@ -54,11 +54,11 @@ const services = [
 // Placeholder function to return image based on selected service
 
 // Swiper settings
-const settingsWhatwedo = {
-  spaceBetween: 20,
-  slidesPerView: 1,
-  loop: true,
-};
+// const settingsWhatwedo = {
+//   spaceBetween: 20,
+//   slidesPerView: 1,
+//   loop: true,
+// };
 
 const WhatWeHaveForYou = () => {
   const [selectedService, setSelectedService] = useState(services[0].name);
