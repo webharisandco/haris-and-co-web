@@ -7,11 +7,11 @@ function Banner() {
     <div className="px-[16px] md:px-[80px] min-h-[300px]  lg:min-h-[700px] flex flex-col items-start justify-center max-w-4xl" >
       <p className="text-xl md:text-3xl lg:text-5xl text-white mt-32 ">
         Transforming
-        <span className="text-white/65 font-[Helvetica-Light]">
+        <span className="text-white/65 ">
           {" "}
           your vision into{" "}
         </span>{" "}
-        <span className="text-white/65 font-[Helvetica-Light]">
+        <span className="text-white/65 ">
           remarkable
         </span>{" "}
         experiences

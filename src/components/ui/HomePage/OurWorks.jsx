@@ -18,7 +18,7 @@ function OurWorks() {
             <div className="flex flex-col h-full">
               {/* Image */}
               <img
-                className="w-full h-52 object-contain md:object-cover"
+                className="w-full  object-contain "
                 src={data.image}
                 alt={data.heading}
               />
@@ -29,7 +29,7 @@ function OurWorks() {
               </p>
 
               {/* Description */}
-              <p className="text-black font-[Helvetica-Light] opacity-70 text-sm sm:text-base lg:text-lg mt-1 leading-relaxed text-left break-words">
+              <p className="text-black font-normal font-['Helvetica_Neue'] leading-relaxed opacity-70 text-sm sm:text-base  mt-1 leading-relaxed text-left break-words">
                 {data.description}
               </p>
             </div>

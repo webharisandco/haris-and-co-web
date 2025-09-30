@@ -126,6 +126,8 @@ const AppRouter = () => {
           path="ae/services/seo-company-in-abudhabi"
           element={<SEOCompanyAbudhabi />}
         />
+        <Route path="Privacy" element={<PrivacyPolicy />} />
+          <Route path="TermsAndConditions" element={<TermsAndConditions />} />
 
         <Route element={<Layout />}>
           <Route path="about" element={<About />} />
@@ -164,8 +166,7 @@ const AppRouter = () => {
           </Route>
           {/* <Route path='marketing' element={<Marketing />} /> */}
           <Route path="works" element={<Works />} />
-          <Route path="Privacy" element={<PrivacyPolicy />} />
-          <Route path="TermsAndConditions" element={<TermsAndConditions />} />
+          
           
           <Route path="works">
             {routes.map((path) => (

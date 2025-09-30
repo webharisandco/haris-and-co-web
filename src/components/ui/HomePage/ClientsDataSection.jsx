@@ -6,7 +6,7 @@ export const ClientsDataSection = () => {
      
      {/* Top text */}
      <div className="text-center px-[16px] md:px-[150px] 2xl:w-5/6 3xl:w-3/5">
-       <p className="text-[22px] md:text-[35px] lg:text-[50px] leading-tight tracking-tighter text-white font-normal">
+       <p className="text-[22px] md:text-[35px] lg:text-[50px] leading-tight tracking-wide text-white font-normal">
          <span className="opacity-50">Crafting transformative </span>
          <span className="opacity-100">digital</span>
          <br />
