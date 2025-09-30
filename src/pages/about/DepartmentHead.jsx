@@ -5,7 +5,9 @@ import MuhammedImg from "@/assets/images/aboutPage/team/Mohammed.png";
 import AzarImg from "@/assets/images/aboutPage/team/Azar.png";
 import vishnuImg from "@/assets/images/aboutPage/team/vishnu_copy.png";
 import UmairImg from "@/assets/images/aboutPage/team/Umair.png";
+import Yogesh from "@/assets/images/aboutPage/team/Yogi.png"
 import { Swiper, SwiperSlide } from "swiper/react";
+import Amna from "@/assets/images/aboutPage/team/Amna.png"
 import "swiper/css";
 import "swiper/css/pagination"; // Import pagination styles for Swiper
 import "swiper/css/navigation";
@@ -17,7 +19,7 @@ SwiperCore.use([Navigation, Pagination]);
 export default function DepartmentHead() {
   const teamMembers = [
     { name: "Aswathi KP", role: "Human Resource" },
-    { name: "Amna Iqbal", role: "Marketing" },
+    { name: "Amna Iqbal", role: "Marketing", img:Amna },
     {
       name: "Mohamed Azaruddin",
       role: "Brand Solutions",
@@ -44,7 +46,7 @@ export default function DepartmentHead() {
       role: "Performance Marketing",
       img: MuhammedImg,
     },
-    { name: "Yogesh", role: "Influencer Marketing" },
+    { name: "Yogesh", role: "Influencer Marketing", img:Yogesh },
     { name: "Vishnu KP", role: "Production", img: vishnuImg },
     { name: "Siba Fazal", role: "Branding & Creative", img: SibaImg },
   ];
