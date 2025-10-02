@@ -76,8 +76,8 @@ export default function GenAIHero() {
       <div className="px-4 sm:px-8 md:px-12 lg:pl-16 py-10 sm:py-12 md:py-16 flex flex-col lg:flex-row items-center lg:justify-between">
 
         <div>
-          <h1 className="text-[28px] sm:text-[38px] md:text-[52px] lg:text-[64px] xl:text-[72px] leading-tight font-medium font-['Helvetica_Neue'] mb-4 sm:mb-6">Our Story</h1>
-          <p className="text-white/95 text-sm sm:text-base md:text-lg lg:text-xl font-normal font-['Helvetica_Neue'] leading-relaxed mb-6 sm:mb-8 max-w-3xl">Every big journey begins with a small step, and ours began five years
+          <h1 className="text-[28px] md:text-[38px]   leading-tight font-medium font-['Helvetica_Neue'] mb-4 tracking-wide sm:mb-6">Our Story</h1>
+          <p className="text-white/95 text-sm md:text-base tracking-wide font-normal font-['Helvetica_Neue'] leading-relaxed mb-6 sm:mb-8 max-w-3xl">Every big journey begins with a small step, and ours began five years
           ago with just an idea and a handful of dreamers. From those early
            days of brainstorming and bold thinking, we’ve grown into a venture
            that’s crossing borders and breaking barriers. Today, we work with
@@ -89,7 +89,7 @@ export default function GenAIHero() {
            our story is still being written.</p>
           <button
             onClick={handleCta}
-            className="flex items-center gap-2 border border-white text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-lg font-medium font-['Helvetica_Neue'] leading-snug bg-transparent hover:bg-white hover:text-black transition rounded-md"
+            className="flex items-center gap-2 border border-white text-white px-4 sm:px-6 py-2 sm:py-3 text-sm tracking-wide font-medium font-['Helvetica_Neue'] leading-snug bg-transparent hover:bg-white hover:text-black transition rounded-md"
           >
             Learn More
             <svg

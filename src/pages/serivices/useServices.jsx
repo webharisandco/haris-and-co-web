@@ -52,7 +52,7 @@ function useServices() {
     },
     {
       id: "PERFORMANCE MARKETING",
-      title: "PERFORMANCE MARKETING",
+      title: "Performance Marketing",
       description:
         "Our performance marketing team focuses on measurable growth. Every campaign is built with clear goals, whether it is boosting sales, generating leads, or nurturing stronger customer relationships. By combining insights with creative execution, we ensure your marketing budget delivers tangible outcomes.",      services: [
         "Ecommerce",
@@ -114,7 +114,7 @@ function useServices() {
     // },
      {
       id: "INFLUENCER MARKETING",
-      title: "INFLUENCER MARKETING",
+      title: "Influencer Marketing",
       description:
         "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.Our INFLUENCER MARKETING team helps brands grow their presence through strong storytelling and influencer-driven strategies. We focus on building awareness, creating conversations, and ensuring your brand is seen by the right people in the right spaces. From launches to long-term partnerships, we manage every detail so campaigns run smoothly and deliver results.",
       
@@ -156,7 +156,7 @@ function useServices() {
     
     {
       id: "PRODUCTION",
-      title: "PRODUCTION",
+      title: "Production",
       description:
         "Our production house manages a wide range of creative projects, from large-scale advertising campaigns to specialised content for brands and businesses. With expertise across film, digital, broadcast, and live events, we provide end-to-end solutions that help brands tell their stories in ways that resonate.",
       services: [

@@ -24,18 +24,18 @@ function ServiceSection({ currentService }) {
   }, [currentService?.offerings]);
   return (
     
-    <div className="px-[16px] lg:px-[80px] my-[30px] lg:my-[79px]">
-      <p className="text-[24px] lg:text-[40px] mb-[30px] lg:mb-[54px] font-[boldtext]">
+    <div className="px-[16px]  lg:px-[80px] my-[30px] lg:my-[79px]">
+      <p className="text-[24px] lg:text-[40px]  font-[boldtext]">
         Services we provide
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-[20px] py-10">
         {visibleServices?.map((service) => (
           <div className="px-[30px] py-[20px] flex flex-col gap-[30px] border border-black/50">
             <p className="text-[26px] font-[helvetica-medium]">
               {service?.title}
             </p>
-            <p className="text-[16px] xl:leading-[29px] font-[Helvetica-Light]">
+            <p className="text-[16px] xl:leading-[29px] text-black font-[thin]">
               {service?.description}
             </p>
             <div className="flex gap-[10px] h-full items-end">

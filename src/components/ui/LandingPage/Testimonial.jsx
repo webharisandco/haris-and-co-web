@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import img1 from "@/assets/images/landing/testimonial/img1.jpg";
@@ -33,7 +33,7 @@ const testimonials = [
 ];
 
 const Testimonial = () => {
-  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+  // const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
   //   useEffect(() => {
   //     const interval = setInterval(() => {

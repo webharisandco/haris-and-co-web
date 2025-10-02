@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import BlogDiv from "./BlogDiv";
 
 export default function BlogSection({ blogContent }) {

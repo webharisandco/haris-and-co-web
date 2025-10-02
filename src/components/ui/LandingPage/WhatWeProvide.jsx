@@ -107,15 +107,15 @@ function WhatWeProvide({ performance = false }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef(null);
 
-  const handleScroll = () => {
-    if (containerRef.current) {
-      const { scrollLeft } = containerRef.current;
-      const sectionWidth =
-        containerRef.current.scrollWidth / servicesArray.length;
-      const currentIndex = Math.round(scrollLeft / sectionWidth);
-      setActiveIndex(currentIndex);
-    }
-  };
+  // const handleScroll = () => {
+  //   if (containerRef.current) {
+  //     const { scrollLeft } = containerRef.current;
+  //     const sectionWidth =
+  //       containerRef.current.scrollWidth / servicesArray.length;
+  //     const currentIndex = Math.round(scrollLeft / sectionWidth);
+  //     setActiveIndex(currentIndex);
+  //   }
+  // };
 
   const scrollToSection = (index) => {
     if (containerRef.current) {
@@ -128,13 +128,21 @@ function WhatWeProvide({ performance = false }) {
     }
   };
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener("scroll", handleScroll);
-      return () => container.removeEventListener("scroll", handleScroll);
-    }
-  }, [servicesArray.length]);
+useEffect(() => {
+  const container = containerRef.current;
+  if (!container) return;
+
+  const handleScroll = () => {
+    const { scrollLeft } = container;
+    const sectionWidth = container.scrollWidth / servicesArray.length;
+    const currentIndex = Math.round(scrollLeft / sectionWidth);
+    setActiveIndex(currentIndex);
+  };
+
+  container.addEventListener("scroll", handleScroll);
+  return () => container.removeEventListener("scroll", handleScroll);
+}, [servicesArray.length]);
+
 
   return (
     <div className="px-[18px] md:px-[100px] ">

@@ -14,7 +14,7 @@ export default function BlogDiv({ img, title, type, date, className, link, index
         alt={title}
       />
       {/* <h6 className="text-[20px] hidden lg:block text-white/50">{type}</h6> */}
-      <p className="text-[32px] lg:text-[40px] text-white lg:leading-[36px] tracking-wide">
+      <p className="text-[32px]  text-white lg:leading-[36px] tracking-wide">
         {title}
       </p>
       <p className="text-[20px] lg:text-[22px] block lg:hidden text-white/50">
