@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 export default function VideoBanner() {
   const [isMuted, setIsMuted] = useState(true);
-
+  console.log(setIsMuted)
   return (
     <div className="bg-white w-full flex justify-center items-center relative overflow-hidden">
       <video

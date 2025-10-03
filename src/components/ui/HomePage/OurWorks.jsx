@@ -24,12 +24,12 @@ function OurWorks() {
               />
 
               {/* Heading */}
-              <p className="font-[helvetica-medium] mt-3 text-lg sm:text-xl lg:text-2xl leading-snug text-left">
+              <p className="font-[helvetica-medium] mt-3 text-lg md:text-xl  leading-snug text-left">
                 {data.heading}
               </p>
 
               {/* Description */}
-              <p className="text-black font-normal font-['Helvetica_Neue'] leading-relaxed opacity-70 text-sm sm:text-base  mt-1 leading-relaxed text-left break-words">
+              <p className="text-black font-normal font-[HelveticaNeue] tracking-wide leading-relaxed opacity-70 text-sm   mt-1 leading-relaxed text-left break-words">
                 {data.description}
               </p>
             </div>

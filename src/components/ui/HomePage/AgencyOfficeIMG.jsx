@@ -39,11 +39,12 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
               Two Nations
             </p>
           </div> */}
-          <h1 className="text-[36px] sm:text-[52px] md:text-[72px] lg:text-[96px] leading-relaxed">Agency Across <br /> Two Nations</h1>
+          <h1 className="text-[36px] sm:text-[52px] md:text-[72px] lg:text-[120px] leading-tight
+           text-center">Agency Across <br /> Two Nations</h1>
 
           {/* Tagline */}
-          <div className="w-full md:w-[25%]">
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-snug font-normal">
+          <div className="w-full md:w-[30%]">
+            <p className=" text-sm sm:text-base md:text-lg lg:text-xl leading-snug font-normal">
               From India’s creative hub to the heart of Dubai’s innovation district,
               our studios are where ideas turn into impact.
             </p>
@@ -58,7 +59,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
       </section>
 
       {/* Spacer */}
-      <div className="bg-black-500 py-8 sm:py-24"></div>
+      <div className="bg-black-500 md:py-24"></div>
 
       {/* Offices section */}
       <div className="w-full relative z-30 "style={{

@@ -20,21 +20,21 @@ export default function FeatureSection() {
     { name: "Web Development & UI/UX", howerPathName: "web", path: "/services/web-development" },
     { name: "Production", howerPathName: "production", path: "/services/production" },
     { name: "Branding", howerPathName: "branding", path: "/services/branding" },
-    { name: "Creative & Communication", howerPathName: "creative", path: "/services/creative" },
+    // { name: "Creative & Communication", howerPathName: "creative", path: "/services/creative" },
     { name: "Influencer Marketing", howerPathName: "digital", path: "/services/digital" },
   ];
 
   return (
     <div
-      className={` h-full w-full py-[40px] lg:py-[80px] px-[16px] md:px-[40px] lg:p-[80px]  flex justify-between items-center relative overflow-hidden ${
+      className={` h-full w-full px-[16px] md:px-[80px]  flex justify-between items-center relative overflow-hidden ${
         isHovered ? "featureGradient" : ""
       }`}
     >
-      <div className="flex flex-col gap-[25px]  md:gap-[50px] h-full select-none">
+      <div className="flex flex-col gap-[25px]   h-full select-none">
         {services.map((service, index) => (  
           <div
             key={index}
-            className={`flex gap-[20px] cursor-pointer items-center ${
+            className={`flex gap-[22px] cursor-pointer items-center ${
               isHovered === "branding" && "translate-x-10"
             }`}
             onMouseEnter={() => setIsHovered(service.howerPathName)}
@@ -42,7 +42,7 @@ export default function FeatureSection() {
           >
             <Link to={service.path}>
               <p
-                className={`text-nowrap text-[22px] md:text-[30px] lg:text-[40px] text-black font-[helvetica-medium] ${
+                className={`text-nowrap text-[22px] md:text-[35px]  text-black font-[helvetica-medium] ${
                   isHovered === service.howerPathName
                     ? "text-white"
                     : isHovered && " text-white/55"
@@ -79,7 +79,7 @@ export default function FeatureSection() {
         </div>
 
         {/* Fallback animation */}
-        {!isHovered && <TextReveal3D />}
+        <TextReveal3D />
       </div>
     </div>
   );

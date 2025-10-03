@@ -55,7 +55,8 @@ useEffect(() => {
   }, 5000);
 
   return () => clearInterval(interval);
-}, []);
+}, [reviews.length]);
+
   return (
    <div className="py-16 my-16 min-h-[419px] font-['Abrobold'] shadow-[rgba(14,30,37,0.12)_0px_2px_4px_0px,_rgba(14,30,37,0.32)_0px_2px_16px_0px]">
   <div className="max-w-7xl mx-auto px-4">

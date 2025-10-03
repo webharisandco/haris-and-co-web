@@ -11,7 +11,8 @@ export default function Header() {
   const [scrollProgress, setScrollProgress] = useState(0.175);
   const [logoSize, setLogoSize] = useState(0);
   const [scrollY, setScrollY] = useState(0);
-
+  console.log(scrollY);
+  
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -32,40 +33,42 @@ export default function Header() {
   }, []);
 
   // Handle scroll events with throttling
-  useEffect(() => {
-    let ticking = false;
+useEffect(() => {
+  let ticking = false;
 
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const currentScrollY = window.scrollY;
-          setScrollY(currentScrollY);
+  const handleScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const currentScrollY = window.scrollY;
+        setScrollY(currentScrollY);
 
-          const scrollRange = 200;
-          const newProgress = Math.max(0.175, Math.min(window.scrollY / scrollRange, 1));
-          setScrollProgress(newProgress);
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
+        const scrollRange = 200;
+        const newProgress = Math.max(0.175, Math.min(currentScrollY / scrollRange, 1));
+        setScrollProgress(newProgress);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  };
 
-    // Initialize logo size
+  // Initialize logo size
+  setLogoSize(calculateLogoSize());
+
+  // Handle resize events
+  const handleResize = () => {
     setLogoSize(calculateLogoSize());
+  };
 
-    // Handle resize events
-    const handleResize = () => {
-      setLogoSize(calculateLogoSize());
-    };
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', handleResize);
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    window.addEventListener('resize', handleResize);
+  // Cleanup
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+    window.removeEventListener('resize', handleResize);
+  };
+}, [calculateLogoSize]);
 
-    // return () => {
-    //   window.removeEventListener('scroll', handleScroll);
-    //   window.removeEventListener('resize', handleResize);
-    // };
-  }, [calculateLogoSize, window, window.scrollY]);
   // Calculate scaled logo size
   const getScaledLogoSize = (mobileSize = 0.15) => {
     const scaleFactor = logoSize === 30 ? mobileSize : logoSize === 50 ? 0.2 : 0;

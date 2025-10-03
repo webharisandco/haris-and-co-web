@@ -1,7 +1,7 @@
 import Image1 from "@/assets/images/workSection/blogs/img1.svg";
 import Image2 from "@/assets/images/workSection/blogs/img2.svg";
 import Image3 from "@/assets/images/workSection/blogs/img3.svg";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLocation } from "react-router-dom";
 function useWorks() {
   const [currentService, setCurrentService] = useState(null);
@@ -13,7 +13,7 @@ function useWorks() {
   console.log("Current URL Service:", service);
 
 
-  const allServices = [
+  const allServices = useMemo(() =>  [
     {
       link: "branding",
       subHeading: "Branding is not just about a logo.",
@@ -480,7 +480,7 @@ function useWorks() {
         
       ],
     },
-  ];
+  ], []);
   const services = [
     {
       titile: "UGC",
@@ -550,13 +550,14 @@ function useWorks() {
     },
   ];
 
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top on page load
-    const selectedService = allServices?.find((s) => s?.link === service);
-    if (selectedService) {
-      setCurrentService(selectedService);
-    }
-  }, [service]);
+useEffect(() => {
+  window.scrollTo(0, 0); // Scroll to top on page load
+  const selectedService = allServices?.find((s) => s?.link === service);
+  if (selectedService) {
+    setCurrentService(selectedService);
+  }
+}, [service, allServices]);
+
 
   if (!currentService) {
     return <p>Service not found!</p>;

@@ -7,15 +7,15 @@ export const ClientsDataSection = () => {
      {/* Top text */}
      <div className="text-center px-[16px] md:px-[150px] 2xl:w-5/6 3xl:w-3/5">
        <p className="text-[22px] md:text-[35px] lg:text-[50px] leading-tight tracking-wide text-white font-normal">
-         <span className="opacity-50">Crafting transformative </span>
+         <span className="opacity-50 font-[HelveticaNeue] ">Crafting transformative </span>
          <span className="opacity-100">digital</span>
          <br />
          <span className="opacity-100">experiences</span> 
-         <span className="opacity-50"> for the world's leading</span>
+         <span className="opacity-50 font-[HelveticaNeue]"> for the world's leading</span>
          <br />
-         <span className="opacity-50">brands by seamlessly blending</span>
+         <span className="opacity-50 font-[HelveticaNeue]">brands by seamlessly blending</span>
          <br />
-         <span className="opacity-50">design, technology, </span>
+         <span className="opacity-50 font-[HelveticaNeue]">design, technology, </span>
          <span className="opacity-100">and marketing.</span>
        </p>
      </div>

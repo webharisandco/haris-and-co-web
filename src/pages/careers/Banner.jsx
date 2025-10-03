@@ -17,20 +17,21 @@ function Banner() {
       <div className="lg:w-1/2 md:grid grid-rows-3 grid-cols-3 flex flex-col gap-4 md:h-[500px]">
         <img
           src={BannerImg1}
-          alt="Career Ban ner Image"
+          alt="Team collaborating on a project"
           className="row-span-3 col-span-1 object-cover h-full w-full"
         />
         <img
           src={BannerImg2}
-          alt="Career Banner Image"
+          alt="Creative workspace with people brainstorming"
           className="row-span-1 col-span-2 object-cover h-[150px] md:h-full w-full"
         />
         <img
           src={BannerImg3}
-          alt="Career Banner Image"
+          alt="Office environment with modern design"
           className="row-span-2 col-span-2 object-cover h-full w-full"
         />
       </div>
+
     </div>
   );
 }
