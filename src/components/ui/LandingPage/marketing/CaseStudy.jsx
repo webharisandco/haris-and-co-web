@@ -240,7 +240,7 @@ const CaseStudy = () => {
           "Performance Marketing",
           "SEO",
           "PR & Communication",
-          "Social Media",
+          "We fuel the growth of purpose driven brands through",
           "Branding",
           "Creative Strategy",
           "Web Development",

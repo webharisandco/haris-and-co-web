@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import BrandImg from "@/assets/images/features/Branding.jpg";
 import PerformanceImg from "@/assets/images/features/PM.jpg";
 import ProductionImg from "@/assets/images/features/Production.jpg";
@@ -7,8 +7,8 @@ import SeoImg from "@/assets/images/features/SEO.jpg";
 import WebImg from "@/assets/images/features/WEB.jpg";
 import { RightArrow } from "@/assets/images/icons/RightArrow";
 import TextReveal3D from "./TextReveal";
-import Social_Media from "@/assets/images/features/SM.jpg"
-import influencer from "@/assets/images/features/influencer marketing hover.png"
+import Social_Media from "@/assets/images/features/SM.jpg";
+import influencer from "@/assets/images/features/influencer marketing hover.png";
 
 export default function FeatureSection() {
   const [isHovered, setIsHovered] = useState("");
@@ -19,19 +19,19 @@ export default function FeatureSection() {
     { name: "Performance Marketing", howerPathName: "performance", path: "/services/performance" },
     { name: "Web Development & UI/UX", howerPathName: "web", path: "/services/web-development" },
     { name: "Production", howerPathName: "production", path: "/services/production" },
-    { name: "Branding", howerPathName: "branding", path: "/services/branding" },
-    // { name: "Creative & Communication", howerPathName: "creative", path: "/services/creative" },
+    { name: "Branding & Creative", howerPathName: "branding", path: "/services/branding" },
     { name: "Influencer Marketing", howerPathName: "digital", path: "/services/digital" },
   ];
 
   return (
     <div
-      className={` h-full w-full px-[16px] md:px-[80px]  flex justify-between items-center relative overflow-hidden ${
+      className={`h-full w-full px-[16px] md:px-[80px] py-14 flex justify-between items-center relative overflow-hidden ${
         isHovered ? "featureGradient" : ""
       }`}
     >
-      <div className="flex flex-col gap-[25px]   h-full select-none">
-        {services.map((service, index) => (  
+      {/* Left side list */}
+      <div className="flex flex-col gap-[25px] h-full select-none ">
+        {services.map((service, index) => (
           <div
             key={index}
             className={`flex gap-[22px] cursor-pointer items-center ${
@@ -42,10 +42,10 @@ export default function FeatureSection() {
           >
             <Link to={service.path}>
               <p
-                className={`text-nowrap text-[22px] md:text-[35px]  text-black font-[helvetica-medium] ${
+                className={`text-nowrap text-[22px] md:text-[35px] text-black font-[helvetica-medium] ${
                   isHovered === service.howerPathName
                     ? "text-white"
-                    : isHovered && " text-white/55"
+                    : isHovered && "text-white/55"
                 }`}
               >
                 {service.name}
@@ -66,11 +66,11 @@ export default function FeatureSection() {
         ))}
       </div>
 
+      {/* Right side images + TextReveal */}
       <div className="flex items-center h-full">
         <div className="absolute top-0 left-0 -z-10 w-full h-full transition-all duration-300 ease-in-out">
           <img src={BrandImg} alt="Branding" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "branding" ? "opacity-100" : "opacity-0"}`} />
           <img src={WebImg} alt="Web" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "web" ? "opacity-100" : "opacity-0"}`} />
-          {/* <img src={CreativeImg} alt="Creative" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "creative" ? "opacity-100" : "opacity-0"}`} /> */}
           <img src={influencer} alt="Digital" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "digital" ? "opacity-100" : "opacity-0"}`} />
           <img src={PerformanceImg} alt="Performance" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "performance" ? "opacity-100" : "opacity-0"}`} />
           <img src={ProductionImg} alt="Production" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "production" ? "opacity-100" : "opacity-0"}`} />
@@ -78,8 +78,14 @@ export default function FeatureSection() {
           <img src={Social_Media} alt="Social" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "social" ? "opacity-100" : "opacity-0"}`} />
         </div>
 
-        {/* Fallback animation */}
-        <TextReveal3D />
+        <div
+          className={`transition-opacity duration-500 ${
+            isHovered ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          <TextReveal3D />
+        </div>
+
       </div>
     </div>
   );
