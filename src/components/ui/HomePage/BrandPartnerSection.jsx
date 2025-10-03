@@ -21,7 +21,8 @@ const BrandPartnerSection = () => {
   const [clicked, setClicked] = useState(false)
 
   return (
-    <div className="bg-black py-[64px] px-[16px] md:px-[40px] flex flex-col gap-[50px] overflow-hidden items-center">
+   <div className="bg-black pt-[20px] pb-[40px] px-[16px] md:px-[40px] flex flex-col gap-[20px] overflow-hidden items-center">
+
 
       {/* Desktop image */}
       <img

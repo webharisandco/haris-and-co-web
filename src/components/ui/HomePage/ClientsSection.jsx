@@ -64,7 +64,7 @@ function ClientsSection() {
     {
       img: arabi,
       name: "Abbas",
-      role: "Founder of First driving center ",
+      role: "",
       link: "https://youtube.com/shorts/chYuCsunOtQ?si=78vMvBORwLMgwkaT",
       // https://www.instagram.com/reel/DNPxOc-xxs1/?igsh=MWpqNm1oYm9sMGh5dw==
      
