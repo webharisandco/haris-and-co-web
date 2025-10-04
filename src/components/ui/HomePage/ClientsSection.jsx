@@ -61,14 +61,7 @@ function ClientsSection() {
       company:" E-commerce consultant"
       // https://www.instagram.com/reel/C3r7E01Pn9_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
     },
-    {
-      img: arabi,
-      name: "Abbas",
-      role: "",
-      link: "https://youtube.com/shorts/chYuCsunOtQ?si=78vMvBORwLMgwkaT",
-      // https://www.instagram.com/reel/DNPxOc-xxs1/?igsh=MWpqNm1oYm9sMGh5dw==
-     
-    }
+   
   ];
 
   return (
