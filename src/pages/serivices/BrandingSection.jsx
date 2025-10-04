@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 
 function BrandingSection({ BrandingContents }) {
   return (
-    <div className="bg-white lg:pt-[70px] w-full px-[16px] md:px-[80px] pb-[36px] flex flex-col gap-[70px]">
+    <div className="bg-white lg:pt-[70px] w-full px-[16px] md:px-[80px] py-20 pb-[36px] flex flex-col  gap-[70px]">
       {BrandingContents.map((brandingContent, index) => (
         <>
-          <div className="w-full hidden lg:block">
+          {/* -------------- web ------------------- */}
+          <div className="w-full hidden lg:block ">
             <div
               id={brandingContent.id}
               key={index}
@@ -63,6 +64,9 @@ function BrandingSection({ BrandingContents }) {
               </div>
             </div>
           </div>
+
+
+          {/* -------------- mobile ------------------- */}
           <div className=" block lg:hidden w-full ">
             <div key={index} className={`w-full flex-col  justify-between  `}>
               <div className="">
