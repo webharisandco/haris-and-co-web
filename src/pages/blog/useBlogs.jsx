@@ -7,6 +7,9 @@ import blogImg6 from "../../assets/images/blogDetails/ChoosetheRight1.jpg";
 import blogImg7 from "../../assets/images/blogDetails/guide1.jpg";
 import blogImg8 from "../../assets/images/blogDetails/awardwinning1.jpg";
 import blogImg9 from "../../assets/images/blogDetails/dig-m1.jpg";
+import blogImg10 from "../../assets/images/blogDetails/aiblog.jpg";
+import blogImg11 from "../../assets/images/blogDetails/movieblog.jpg";
+
 
 export default function useBlogs() {
 const blogContent = [
@@ -72,6 +75,20 @@ const blogContent = [
     title: "How is Digital Marketing Different from Traditional Marketing?",
     date: "May 24, 2025 ",
     link: "digital-marketing-difference",
+  },
+   {
+    img: blogImg10,
+    type: "Web Development & UI/UX",
+    title: "AI + Creativity: Machines Help, Humans Shine",
+    date: "May 24, 2025 ",
+    link: "genAIBlog-BlogDetails",
+  },
+   {
+    img: blogImg11,
+    type: "Web Development & UI/UX",
+    title: "When Movies take over the Feed!",
+    date: "May 24, 2025 ",
+    link: "movie-BlogDetails",
   },
 ];
   return { blogContent };

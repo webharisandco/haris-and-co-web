@@ -37,10 +37,12 @@ import RightAgency from "../pages/blog/blogDetails/rightAgency";
 import UltimateGuide from "../pages/blog/blogDetails/ultimateGuide";
 import AwardWinning from "../pages/blog/blogDetails/awardWinning";
 import DifferenceFromTraditional from "../pages/blog/blogDetails/difference";
+import BlogDetails from "../pages/blog/movie/index";
 
 import Clients from "@/pages/clients";
 import PrivacyPolicy from "../pages/privacyAnd/PrivacyPolicy";
 import TermsAndConditions from "../pages/privacyAnd/TermsConditions";
+import GenAIBlogDetails from "../pages/blog/genai/index";
 
 const AppRouter = () => {
   const routes = [
@@ -144,6 +146,9 @@ const AppRouter = () => {
           <Route path="blogs/right-agency" element={<RightAgency />} />
           <Route path="blogs/ultimate-guide" element={<UltimateGuide />} />
           <Route path="blogs/award-winning" element={<AwardWinning />} />
+          <Route path="blogs/movie-BlogDetails" element={<BlogDetails />} />
+          <Route path="blogs/genAIBlog-BlogDetails" element={<GenAIBlogDetails />} />
+          
           <Route
             path="blogs/digital-marketing-difference"
             element={<DifferenceFromTraditional />}
