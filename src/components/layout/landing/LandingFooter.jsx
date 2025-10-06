@@ -235,7 +235,7 @@ const LandingFooter = ({ serviceType = "web", address }) => {
             <p className="text-[12px]">Services</p>
             <p className="text-[12px]">Works</p>
             <p className="text-[12px]">Clients</p>
-            <p className="text-[12px]">About us</p>
+            <p className="text-[12px]">our Story</p>
             <p className="text-[12px]">Awards</p>
             <p className="text-[12px]">Careers</p>
             <p className="text-[12px]">Digital marketing agency in kerala</p>
