@@ -14,7 +14,7 @@ export default function WorkPartners({ ourWorksData }) {
                   src={data.image}
                   alt={data.heading}
                 />
-                <p className="font-medium text-white tracking-wide text-[20px] md:text-[28px] lg:text-[32px] my-[10px] text-left">
+                <p className="font-medium text-white tracking-wide text-[15px] md:text-[22px] lg:text-[25px] my-[10px] text-left">
                   {data.heading}
                 </p>
                 <p className="text-white opacity-55 tracking-wide font-[thin] text-left text-[14px] md:text-[18px] ">
