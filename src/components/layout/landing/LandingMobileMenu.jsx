@@ -18,9 +18,9 @@ export default function LandingMobileMenu({ isOpen,toggleMenu }) {
             <div className="flex flex-col justify-between gap-[20px] text-white *:font-light *:md:text-[24px]">
                 <Link to="/services" className="text-[18px] font-[thin]" onClick={toggleMenu}>Services</Link>
                 <Link to="/works" className="text-[18px] font-[thin]" onClick={toggleMenu}>Works</Link>
-                <Link to="/clients" className="text-[18px] font-[thin]" onClick={toggleMenu}>Clients</Link>
+                {/* <Link to="/clients" className="text-[18px] font-[thin]" onClick={toggleMenu}>Clients</Link> */}
                 <Link to="/awards" className="text-[18px] font-[thin]" onClick={toggleMenu}>Awards</Link>
-                <Link to="/about" className="text-[18px] font-[thin]" onClick={toggleMenu}>About us</Link>
+                <Link to="/about" className="text-[18px] font-[thin]" onClick={toggleMenu}>Our Story</Link>
                 <Link to="/blogs" className="text-[18px] font-[thin]" onClick={toggleMenu}>Blogs</Link>
                 <Link to="/careers" className="text-[18px] font-[thin]" onClick={toggleMenu}>Careers</Link>
             </div>

@@ -131,7 +131,7 @@ export default function DepartmentHead() {
                 >
                   {member.img ? (
                     <img
-                      className="pt-8 w-full h-full object-cover rounded-lg transition-transform duration-150 hover:scale-105"
+                      className="pt-8 w-full h-full object-contain lg:object-cover rounded-lg transition-transform duration-150 hover:scale-105"
                       src={member.img}
                       alt={member.name}
                     />
