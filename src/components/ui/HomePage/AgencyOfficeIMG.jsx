@@ -39,7 +39,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
               Two Nations
             </p>
           </div> */}
-          <h1 className="text-[36px] sm:text-[52px] md:text-[72px] lg:text-[120px] leading-tight
+          <h1 className="text-[36px] sm:text-[52px] md:text-[72px] lg:text-[100px] leading-tight
            text-center">Agency Across <br /> Two Nations</h1>
 
           {/* Tagline */}

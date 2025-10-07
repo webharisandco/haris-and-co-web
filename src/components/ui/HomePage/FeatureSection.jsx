@@ -20,7 +20,7 @@ export default function FeatureSection() {
     { name: "Web Development & UI/UX", howerPathName: "web", path: "/services/web-development" },
     { name: "Production", howerPathName: "production", path: "/services/production" },
     { name: "Branding & Creative", howerPathName: "branding", path: "/services/branding" },
-    { name: "Influencer Marketing", howerPathName: "digital", path: "/services/digital" },
+    { name: "Influencer Marketing", howerPathName: "digital", path: "/services/influencer-marketing" },
   ];
 
   return (

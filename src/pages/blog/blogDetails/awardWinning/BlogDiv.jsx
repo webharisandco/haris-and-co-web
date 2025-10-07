@@ -9,12 +9,25 @@ export default function BlogDiv() {
     <div className="flex gap-5 md:gap-[30px] h-fit px-[16px] md:px-[80px] py-[50px] bg-white">
       <div className="lg:w-2/3 flex flex-col gap-5">
         {/* Intro Paragraph */}
+        
         <p className="font-[thin]">
-          Let’s explore the top digital marketing agencies in Dubai and what makes them stand out.
+           Danube Sports World needed exactly that. As Dubai’s premier indoor sports destination, it is home to padel, cricket, basketball, football, tennis, badminton, and more. Families, professionals, and visiting athletes walk through its doors every day, making it one of the busiest sporting hubs in the region. Offline, the brand had scale and recognition. Online, it was a different game. The old website lacked structure, visibility, and the power to convert interest into action.
         </p>
+        <p className="font-[thin]">
+           Our web team at Haris & Co moved Danube onto WordPress with a vision to design a site that keeps up with the brand. The transformation included:
+        </p>
+         <p><strong>A redesigned interface with clear navigation and user-first layouts</strong></p>
+         <p><strong>SEO-friendly structures that search engines could read and reward</strong></p>
+         <p><strong>No-code development so the Danube team could manage updates with ease</strong></p>
+         <p><strong>A simplified dashboard that made running the site as effortless as playing on it</strong></p>
+         <br />
 
+         <p>The numbers told the story. In the first month alone, the site generated more than 1,000 qualified leads. And the growth kept climbing.</p>
+         <p>WordPress turned Danube’s website from a sideline player into a lead machine. For a brand built on world-class courts, it finally had a digital presence strong enough to match its game.</p>
+        
+        
         {/* Expandable Content */}
-        <div
+        {/* <div
           className={`flex flex-col gap-5 overflow-hidden transition-all duration-500 ease-in-out ${
             show ? "max-h-[6000px] opacity-100" : "max-h-0 opacity-0"
           } lg:max-h-none lg:opacity-100`}
@@ -89,7 +102,7 @@ export default function BlogDiv() {
             <br /><br />
             Let the numbers speak. Let Haris&amp;Co. lead.
           </p>
-        </div>
+        </div> */}
 
         {/* Read More / Read Less Button */}
         <p
