@@ -13,7 +13,7 @@ const blogContent = [
   {
     img: blogImg1,
     type: "Web Development & UI/UX",
-    title: "The Impact of Digital Marketing in Healthcare",
+    title: "",
     date: "May 24, 2025 ",
     link: "digital-marketing-health",
   },

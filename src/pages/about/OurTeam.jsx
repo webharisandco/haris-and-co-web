@@ -40,7 +40,7 @@ export default function OurTeam() {
           Our Team
         </h4>
         <p className="text-[28px] text-40px font-[boldtext] leading-none">
-          Meet the brains behind our <br /> creativity.
+          Meet the brains behind our creativity
         </p>
       </div>
       <div className="w-full relative">

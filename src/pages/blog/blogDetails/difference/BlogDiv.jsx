@@ -10,11 +10,21 @@ export default function BlogDiv() {
       <div className="lg:w-2/3 flex flex-col gap-5">
         {/* Intro Paragraph */}
         <p className="font-[thin]">
-          Let’s explore the differences between traditional marketing and digital marketing, and understand why digital marketing is dominating today’s landscape.
+          That was the problem Amend Dental faced. The clinic was known for advanced treatments and trusted care in Calicut, but online it was a different story. Their Instagram was active, their posts reached people, yet when enquiries came pouring into the DMs, most of them slipped away unanswered. Patients were left hanging, appointments were missed, and revenue stalled at around ₹3 lakhs a month.
         </p>
-
+        <p className="font-[thin]">
+          At Haris&Co, we knew the solution wasn’t just “more posts” or “better captions.” The real problem was speed. Patients needed answers right away, and the clinic needed a system that could keep up.
+        </p>
+        <p><strong>Step 1: Instant Replies that Book Appointments</strong></p>
+        <p className="font-[thin]">We built a system that never left a DM unread. The moment someone messaged, they got a reply. Details like name, age, and concern were collected automatically, synced straight into the clinic’s CRM, and slots were offered on the spot. Even those quick “price?” comments on posts were redirected into private conversations that ended in bookings.</p>
+         <p className="font-[thin]">Result? Zero missed enquiries and a steady stream of qualified leads.</p>
+          <p><strong>Step 2: A Smarter Way to Check Your Smile</strong></p>
+          <p className="font-[thin]">We then launched a landing page where people could upload three images of their teeth. Within minutes, they received a simple health report. If the scan flagged issues, the report nudged them to book an appointment right away. It was quick, personal, and built instant trust.</p>
+          <p className="font-[thin]">In just three months, Amend’s social presence exploded from 800 followers to over 11,000, while monthly revenue leapt from ₹3 lakhs to ₹55 lakhs. What once took hours in response time was now instant, with every lead arriving fully detailed and ready for follow-up. Appointments could be booked around the clock without delays, and patient satisfaction rose to its highest levels yet.</p>
+          <p className="font-[thin]">Amend went from missing calls in the DMs to becoming Calicut’s most responsive, tech-forward dental clinic. And for their patients, that meant faster replies, easier bookings, and no more waiting with a toothache.</p>
+        
         {/* Expandable Content */}
-        <div
+        {/* <div
           className={`flex flex-col gap-5 overflow-hidden transition-all duration-500 ease-in-out ${
             show ? "max-h-[6000px] opacity-100" : "max-h-0 opacity-0"
           } lg:max-h-none lg:opacity-100`}
@@ -87,7 +97,7 @@ export default function BlogDiv() {
             <br /><br />
             Contact us today and let’s grow your brand together!
           </p>
-        </div>
+        </div> */}
 
         {/* Read More / Read Less Button */}
         <p
