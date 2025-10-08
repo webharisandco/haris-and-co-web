@@ -5,15 +5,24 @@ import BannerImg3 from "@/assets/images/career/bnr3.jpg";
 
 function Banner() {
   return (
-    <div className="px-[16px] pt-[150px] md:pt-0 md:px-[80px] min-h-[632px] py-[50px] lg:min-h-[823px] flex gap-10 3xl:gap-20 flex-col lg:flex-row justify-center items-center bg-[#0E0E0E]">
-      <div className=" flex flex-col gap-[20px]  lg:w-1/2 justify-center">
-        <p className="text-white text-[32px] text-64px">Careers</p>
-        <p className="text-[24px] leading-[40px] xl:text-[48px] text-white  font-[thin] md:leading-none">
-          Are you passionate about helping brands grow with creative strategies?{" "}
-          <br className="hidden md:block" /> Join us in becoming a changemaker
+    // <div className="px-[16px] pt-[150px] md:pt-0 md:px-[80px] min-h-[632px] py-[50px] lg:min-h-[823px] flex gap-10 3xl:gap-20 flex-col lg:flex-row justify-center items-center bg-[#0E0E0E]">
+    //   <div className=" flex flex-col gap-[20px]  lg:w-1/2 justify-center">
+    //     <p className="text-white text-[32px] text-64px">Careers</p>
+    //     <p className="text-[24px] leading-[40px] xl:text-[48px] text-white  font-[thin] md:leading-none">
+    //       Are you passionate about helping brands grow with creative strategies?{" "}
+    //       <br className="hidden md:block" /> Join us in becoming a changemaker
+    //       for brands.
+    //     </p>
+    //   </div>
+     <div className=" px-[16px] md:px-[80px]  bg-[#0E0E0E] min-h-[632px] lg:min-h-[700px] gap-24 items-center flex">
+      <p className="text-[50px] text text-white   leading-none max-w-xl">
+       Are you passionate about helping brands grow with creative strategies?
+        <span className="text-white/65 ">
+          {" "}
+        Join us in becoming a changemaker
           for brands.
-        </p>
-      </div>
+        </span>{" "}
+      </p>
       <div className="lg:w-1/2 md:grid grid-rows-3 grid-cols-3 flex flex-col gap-4 md:h-[500px]">
         <img
           src={BannerImg1}

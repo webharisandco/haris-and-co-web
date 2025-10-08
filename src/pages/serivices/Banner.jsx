@@ -25,7 +25,7 @@ import React from "react";
 function Banner() {
   return (
     <div className="px-4 md:px-8 min-h-[320px] md:min-h-[400px] lg:min-h-[700px] flex flex-col items-start justify-center ">
-      <p className="text-[28px] sm:text-[32px] md:text-4xl lg:text-5xl text-white mt-16 md:mt-32 p-10 leading-tight break-words">
+      <p className="text-[28px] sm:text-[32px] md:text-4xl lg:text-5xl text-white mt-16 md:mt-32 p-10 leading-tight break-words max-w-4xl">
         Tired of all the cookie-cutter strategies?
         <span className="text-white/65">
           {" "}
