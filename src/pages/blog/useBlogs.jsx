@@ -5,10 +5,10 @@ import blogImg4 from "../../assets/images/blogDetails/DanubeWordPress.png";
 import blogImg5 from "../../assets/images/blogDetails/Misty-Mountains.jpg";
 import blogImg6 from "../../assets/images/blogDetails/SEO-strategy.jpg";
 import blogImg7 from "../../assets/images/blogDetails/Srishty.jpg";
-import blogImg8 from "../../assets/images/blogDetails/Srishty.jpg";
-import blogImg9 from "../../assets/images/blogDetails/Srishty.jpg";
-import blogImg10 from "../../assets/images/blogDetails/Srishty.jpg";
-import blogImg11 from "../../assets/images/blogDetails/Srishty.jpg";
+// import blogImg8 from "../../assets/images/blogDetails/Srishty.jpg";
+// import blogImg9 from "../../assets/images/blogDetails/Srishty.jpg";
+// import blogImg10 from "../../assets/images/blogDetails/Srishty.jpg";
+// import blogImg11 from "../../assets/images/blogDetails/Srishty.jpg";
 
 
 

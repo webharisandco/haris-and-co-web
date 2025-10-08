@@ -1,49 +1,36 @@
-import React from 'react'
-
+import React from "react";
 
 export default function AwardSection({ image, title, date, desc, brandImg }) {
-    return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10  py-10 lg:py-[80px] bg-white'>
-            <img className='xl:w-[640px] xl:h-[357px] object-contain ' src={image} alt="" />
-            {/* <div className="font-[thin] flex flex-col gap-5 justify-between md:px-10">
-                <img src={brandImg} alt="" className='w-[150px] 3xl:w-[200px] ' /> 
-                <div className='text-base md:text-[20px] 3xl:text-[28px] text-black/75 flex justify-between lg:justify-start  font-bold gap-1 -mt-32'><span>{title} </span> <span className='hidden md:flex'> </span> </div>
-                <p className='text-[20px] md:text-[18px]  3xl:text-[20px] text-black/75 leading-tight -mt-4 lg:-mt-12'>{desc}</p>
-            </div> */}
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 py-10 lg:py-[80px] bg-white">
+      {/* Image Section */}
+      <div className="flex justify-center lg:justify-start">
+        <img
+          className="w-full max-w-[640px] h-auto object-contain "
+          src={image}
+          alt={title}
+        />
+      </div>
 
-                  {/* Content */}
-      <div className="font-[thin] flex flex-col gap-6">
-        {/* Brand */}
-
-
-        {/* Title + Date */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3">
-          <h2 className="text-lg  md:text-2xl 3xl:text-[28px] text-black font-bold ">
-            <span>{title} </span>
-          </h2>
-          
-        </div>
-
-
-        {/* <div className='text-base md:text-[20px] 3xl:text-[28px] text-black/75 flex justify-between lg:justify-start  font-bold gap-1 -mt-32'><span>{title} </span> <span className='hidden md:flex'> </span> </div> */}
+      {/* Content Section */}
+      <div className="flex flex-col justify-center font-[thin] gap-6 px-4 md:px-0">
+        {/* Title */}
+        <h2 className="text-xl md:text-2xl xl:text-[28px] text-black font-bold leading-tight">
+          {title}
+        </h2>
 
         {/* Description */}
-        <p className="text-base md:text-lg 3xl:text-xl text-black/75 leading-relaxed">
+        <p className="text-base md:text-lg xl:text-xl text-black/75 leading-relaxed">
           {desc}
         </p>
 
+        {/* Brand Image */}
         <img
           src={brandImg}
           alt="brand"
-          className="w-[120px] md:w-[150px] 3xl:w-[200px] object-contain"
+          className="w-[120px] md:w-[150px] xl:w-[200px] object-contain"
         />
       </div>
-        </div>
-    )
+    </div>
+  );
 }
-
-
-
-
-
-

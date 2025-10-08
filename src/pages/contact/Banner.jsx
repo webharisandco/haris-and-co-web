@@ -1,9 +1,9 @@
 import React from "react";
 import img from "../../assets/images/contact/cntct.jpg";
-import facebookIcon from "@/assets/images/contact/FbIcon.svg";
-import instaIcon from "@/assets/images/contact/InstaIcon.svg";
-import linkedInIcon from "@/assets/images/contact/LinkedinIcon.svg";
-import xIcon from "@/assets/images/contact/XIcon.svg";
+// import facebookIcon from "@/assets/images/contact/FbIcon.svg";
+// import instaIcon from "@/assets/images/contact/InstaIcon.svg";
+// import linkedInIcon from "@/assets/images/contact/LinkedinIcon.svg";
+// import xIcon from "@/assets/images/contact/XIcon.svg";
 
 function Banner() {
   return (
