@@ -37,10 +37,10 @@ function AchivementSection() {
         </div>
         <div className="flex flex-col items-center lg:items-start mt-[30px]  lg:text-start w-full ">
           <p className="text-[36px] font-[helvetica-medium] lg:text-[58px] text-white/50 leading-none text-start">
-            {/* 4.9 */}
+            5+
           </p>
           <p className="text-[20px] lg:text-[30px] text-white/50 font-[thin]">
-            {/* Rating on Google */}
+            Countries
           </p>
         </div>
       </div>
