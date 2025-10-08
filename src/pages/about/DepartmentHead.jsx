@@ -6,7 +6,7 @@ import AzarImg from "@/assets/images/aboutPage/team/Azar.png";
 import vishnuImg from "@/assets/images/aboutPage/team/vishnu_copy.png";
 import UmairImg from "@/assets/images/aboutPage/team/Umair.png";
 import Yogesh from "@/assets/images/aboutPage/team/Yogi.png";
-import Amna from "@/assets/images/aboutPage/team/AMNA.jpg";
+import Amna from "@/assets/images/aboutPage/team/AMNAA.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -21,7 +21,7 @@ export default function DepartmentHead() {
 
   const teamMembers = [
     { name: "Aswathi KP", role: "Human Resource" },
-    { name: "Amna Iqbal", role: "Marketing",},
+    { name: "Amna Iqbal", role: "Marketing", img: Amna},
     { name: "Mohamed Azaruddin", role: "Brand Solutions", img: AzarImg },
     { name: "Faheemudheen K", role: "Design" },
     { name: "Navneeth B Chandran", role: "Brand Consultants" },

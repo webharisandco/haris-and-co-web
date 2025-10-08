@@ -129,7 +129,7 @@ const Footer = () => {
           <Link to="ae/digital-marketing-agency-in-abudhabi"> </Link>
         </div>
         <div className="">
-          <p>&copy; 2024.Haris&Co</p>
+          <p>&copy; 2025.Haris&Co</p>
         </div>
       </div>
     </div>

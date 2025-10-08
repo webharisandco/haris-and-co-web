@@ -3,8 +3,8 @@ import React from "react";
 
 function Banner() {
   return (
-    <div className="px-[24px] md:px-[32px] min-h-[400px]  lg:min-h-[700px] flex flex-col items-start justify-center max-w-4xl" >
-      <p className="text-[34px] md:text-4xl lg:text-5xl text-white mt-32 ">
+    <div className="px-[24px] md:px-[32px] min-h-[400px]  lg:min-h-[700px] flex flex-col items-start justify-center max-w-32xl" >
+      <p className="text-[24px] md:text-4xl lg:text-5xl text-white mt-32 ">
         Transforming
         <span className="text-white/65 ">
           {" "}

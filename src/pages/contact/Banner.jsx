@@ -15,7 +15,7 @@ function Banner() {
             <p className="text-[32px] text-64px 3xl:text-[68px] text-white tracking-tight">
               Let’s Connect
             </p>
-            <p className="text-white text-[24px] leading-[40px] md:text-48px 3xl:text-[53px]  md:leading-none tracking-tight">
+            <p className="text-white text-[24px] leading-[40px] md:text-48px 3xl:text-[53px] pr-28 pb-24 md:leading-none tracking-tight">
               Want to learn more about how we can help you? Connect with us &
               let us be your partner in growth.
             </p>
