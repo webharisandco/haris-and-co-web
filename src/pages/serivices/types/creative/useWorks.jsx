@@ -86,39 +86,39 @@ function useWorks() {
       ],
       offerings: [
         {
-          title: "On-Page SEO",
+          title: "Website Development",
           description:
-            "We fine-tune the essentials within your website, such as titles, tags, URLs, and keyword placement, to improve clarity and visibility in search results. This ensures your content is easily discovered and relevant to the right audience.",
+            "We build websites that are fast, reliable, and easy to navigate. Each site is structured to deliver information clearly while supporting your business objectives and keeping visitors engaged.",
           link: "/ae/services/web-development-company-in-dubai",
         },
         {
-          title: "Off-Page SEO",
+          title: "Ecommerce Development",
           description:
-            "We strengthen your online presence beyond your website by building links, publishing on PR platforms, and creating directory listings that enhance credibility and authority.",
+            "Our team creates online stores that simplify shopping and boost sales. From product listings to secure checkout processes, every element is designed to enhance the customer experience.",
           link: "/ae/services/web-development-company-in-dubai",
         },
         {
-          title: "Technical SEO",
+          title: "Website Auditing",
           description:
-            "Our team handles behind-the-scenes improvements like site speed, security, and architecture. A technically sound site performs better, loads faster, and provides a smoother experience for visitors.",
+            "We evaluate your website’s performance, structure, and user experience to identify areas that need improvement. Audits help ensure your site runs efficiently and meets user expectations.",
+          link: "/ae/services/web-development-company-in-dubai",
+        },
+        {
+          title: "Website Optimization",
+          description:
+            "Through careful tuning of speed, layout, and content, we enhance how your website performs. Optimized sites load faster, retain visitors longer, and make it easier for people to find what they need.",
           link: "/ae/services/web-development-company-in-dubai",
         },
         {
           title: "UI/UX Design",
           description:
-            "A well-designed site keeps visitors engaged. Through thoughtful use of layouts, typography, and colours, we create a digital space that feels attractive and easy to navigate.",
+            "We create interfaces that feel intuitive and enjoyable. Clear navigation, thoughtful layouts, and cohesive visuals make your website or app a place users want to explore.",
           link: "/ae/services/web-development-company-in-dubai",
         },
         {
-          title: "Conversion Rate Optimisation",
+          title: "App Development",
           description:
-            "We review the customer journey, identify barriers, and adjust key elements to increase the likelihood that visitors take action, whether it is making a purchase, signing up, or getting in touch.",
-          link: "/ae/services/web-development-company-in-dubai",
-        },
-        {
-          title: "Content Development",
-          description:
-            "We produce content that informs and engages while guiding readers toward becoming customers. Each piece is shaped to reflect your brand’s voice and connect with your audience in a meaningful way.",
+            "From concept to launch, we develop mobile and web applications that solve real problems. Apps are designed to be smooth, responsive, and aligned with your business goals.",
           link: "/ae/services/web-development-company-in-dubai",
         },
       ],

@@ -2,8 +2,14 @@ import React from "react";
 import GenAiImg from "../../../../src/assets/images/agencyofficeimg/agencyofficebg.jpg";
 import UAEImg from "../../../../src/assets/images/agencyofficeimg/dubai.JPG";
 import IndiaImg from "../../../../src/assets/images/agencyofficeimg/officejpg.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
+    const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    navigate("/contact");
+  };
   // const handleCta = () => {
   //   if (typeof onCta === "function") {
   //     onCta();
@@ -69,6 +75,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
 
           {/* India Office */}
           <div
+             onClick={handleRedirect}   
               className="group w-[95vw] sm:max-w-[600px] md:w-[500px] lg:w-[600px] h-[220px] sm:h-[300px] md:h-[400px] lg:h-[450px] relative overflow-hidden cursor-pointer"
               style={{
                 backgroundImage: `url(${IndiaImg})`,
@@ -90,6 +97,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
 
           {/* Dubai Office */}
           <div
+            onClick={handleRedirect}   
             className="group w-[95vw] sm:max-w-[600px] md:w-[500px] lg:w-[600px] h-[220px] sm:h-[300px] md:h-[400px] lg:h-[450px] relative overflow-hidden cursor-pointer"
             style={{
               backgroundImage: `url(${UAEImg})`,

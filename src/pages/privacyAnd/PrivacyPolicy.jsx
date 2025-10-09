@@ -188,32 +188,39 @@ const PrivacyPolicy = () => (
 
       <section id="Contact-Us" className="mb-12 scroll-mt-32">
         <h2 className="text-xl font-semibold mb-4 font-[helvetica-medium] tracking-wider">Contact Us</h2>
-        <p>
-          If you have questions about this Privacy Policy or our data practices,
-          please contact us:
-        </p>
-        <ul className="list-disc ml-6 space-y-1">
-          <li>
-            <strong className="font-[helvetica-medium] tracking-wider">Email:</strong> (Email Address)
-          </li>
-          <li>
-            <strong className="font-[helvetica-medium] tracking-wider">Phone:</strong> (Phone Number)
-          </li>
-          <li>
-            <strong className="font-[helvetica-medium] tracking-wider">Address:</strong> (Business Address)
-          </li>
-        </ul>
+        <section id="Contact-Us" className="mb-12 scroll-mt-32">
+  <p>
+    If you have questions about this Privacy Policy or our data practices,
+    please contact us:
+  </p>
+  <p>
+    <strong>Email:</strong>{" "}
+    <a href="mailto:bd@harisand.co">
+      bd@harisand.co
+    </a>
+  </p>
+  <p>
+    <strong>Phone:</strong>{" "}
+    <a href="tel:+918075040330">
+      +91 80750 40330
+    </a>
+  </p>
+  <p>
+    <strong>Address:</strong> 4, 6QGR+7PW WING Avenue, Panniyankara, Kozhikode, Kerala 673003
+  </p>
+</section>
+
       </section>
 
       {/* India & Dubai Time UI */}
       <div className="flex justify-center gap-8 my-16">
         <div className="border border-white rounded-full px-8 py-4 flex items-center text-black">
-          <span className="font-bold text-xl mr-2 font-[helvetica-medium] tracking-wider">India:</span>
-          <span className="font-normal text-xl font-[helvetica-medium] tracking-wider">12:13 PM</span>
+          <span className="font-bold text-xl mr-2 font-[helvetica-medium] tracking-wider"></span>
+          <span className="font-normal text-xl font-[helvetica-medium] tracking-wider"></span>
         </div>
         <div className="border border-white rounded-full px-8 py-4 flex items-center text-black">
-          <span className="font-bold text-xl mr-2 font-[helvetica-medium] tracking-wider">Dubai:</span>
-          <span className="font-normal text-xl font-[helvetica-medium] tracking-wider">10:43 AM</span>
+          <span className="font-bold text-xl mr-2 font-[helvetica-medium] tracking-wider"></span>
+          <span className="font-normal text-xl font-[helvetica-medium] tracking-wider"></span>
         </div>
       </div>
     </main>

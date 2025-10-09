@@ -34,15 +34,13 @@ export default function FeatureSection() {
         {services.map((service, index) => (
           <div
             key={index}
-            className={`flex gap-[22px] cursor-pointer items-center ${
-              isHovered === "branding" && "translate-x-10"
-            }`}
+            className="flex gap-[22px] cursor-pointer items-center"
             onMouseEnter={() => setIsHovered(service.howerPathName)}
             onMouseLeave={() => setIsHovered("")}
           >
             <Link to={service.path}>
               <p
-                className={`text-nowrap text-[22px] md:text-[35px] text-black font-[helvetica-medium] ${
+                className={`text-nowrap text-[22px] md:text-[30px] text-black font-[helvetica-medium] ${
                   isHovered === service.howerPathName
                     ? "text-white"
                     : isHovered && "text-white/55"
@@ -69,13 +67,19 @@ export default function FeatureSection() {
       {/* Right side images + TextReveal */}
       <div className="flex items-center h-full">
         <div className="absolute top-0 left-0 -z-10 w-full h-full transition-all duration-300 ease-in-out">
-          <img src={BrandImg} alt="Branding" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "branding" ? "opacity-100" : "opacity-0"}`} />
-          <img src={WebImg} alt="Web" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "web" ? "opacity-100" : "opacity-0"}`} />
-          <img src={influencer} alt="Digital" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "digital" ? "opacity-100" : "opacity-0"}`} />
-          <img src={PerformanceImg} alt="Performance" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "performance" ? "opacity-100" : "opacity-0"}`} />
-          <img src={ProductionImg} alt="Production" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "production" ? "opacity-100" : "opacity-0"}`} />
-          <img src={SeoImg} alt="SEO" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "seo" ? "opacity-100" : "opacity-0"}`} />
           <img src={Social_Media} alt="Social" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "social" ? "opacity-100" : "opacity-0"}`} />
+          <img src={SeoImg} alt="SEO" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "seo" ? "opacity-100" : "opacity-0"}`} />
+          <img src={PerformanceImg} alt="Performance" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "performance" ? "opacity-100" : "opacity-0"}`} />
+          <img src={WebImg} alt="Web" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "web" ? "opacity-100" : "opacity-0"}`} />
+           <img src={ProductionImg} alt="Production" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "production" ? "opacity-100" : "opacity-0"}`} />
+          <img src={BrandImg} alt="Branding" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "branding" ? "opacity-100" : "opacity-0"}`} />
+           <img src={influencer} alt="Digital" className={`w-full h-full object-cover absolute top-0 left-0 featureGradient transition-opacity duration-500 ease-in-out ${isHovered === "digital" ? "opacity-100" : "opacity-0"}`} />
+          
+         
+         
+         
+         
+        
         </div>
 
         <div
