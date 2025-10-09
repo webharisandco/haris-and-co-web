@@ -182,20 +182,23 @@ const TermsAndConditions = () => (
 
         <section id="Contact" className="mb-12 scroll-mt-32">
           <h2 className="text-xl font-bold mb-4 font-[helvetica-medium] tracking-wider">Contact</h2>
-          <p>
-            If you have any questions, concerns, or requests regarding these Terms and Conditions, please contact us at:
-          </p>
-          <ul className="list-disc ml-6 space-y-1">
-            <li>
-              <strong className="font-[helvetica-medium] tracking-wider">Email:</strong> (Email Address)
-            </li>
-            <li>
-              <strong className="font-[helvetica-medium] tracking-wider">Phone:</strong> (Phone Number)
-            </li>
-            <li>
-              <strong className="font-[helvetica-medium] tracking-wider">Address:</strong> (Business Address)
-            </li>
-          </ul>
+         <p>
+    If you have questions about this Privacy Policy or our data practices,
+    please contact us:
+  </p>
+  <p>
+    <strong>Email:</strong>{" "}
+    <a href="mailto:bd@harisand.co">
+      bd@harisand.co
+    </a>
+  </p>
+  <p>
+    <strong>Phone:</strong>{" "}
+    <a href="tel:+918075040330">
+      +91 80750 40330
+    </a>
+  </p>
+  <p></p>
         </section>
       </main>
   </div>

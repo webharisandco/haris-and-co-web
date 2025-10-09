@@ -118,7 +118,7 @@ export default function GenAIHero() {
             
           </button>
         </div>
-        <img src={LogoImg} className="z-10 pointer-events-none lg:block max-h-[120px] w-auto" alt="img"/>
+        <img src={LogoImg} className=" z-10 pointer-events-none lg:block max-h-[120px] w-auto" alt="img"/>
       </div>
 
     </section>

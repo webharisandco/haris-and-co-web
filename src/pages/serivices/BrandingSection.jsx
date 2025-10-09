@@ -57,7 +57,7 @@ function BrandingSection({ BrandingContents }) {
               </div>
               <div className="w-6/12 overflow-hidden">
                 <img
-                  className="w-full h-fit lg:h-[500px] 3xl:h-[600px] object-cover transform transition-transform duration-300 hover:scale-110"
+                  className="w-full h-fit lg:h-[500px] 3xl:h-[600px] object-contain transform transition-transform duration-300 hover:scale-110"
                   src={brandingContent.image}
                   alt={brandingContent.title}
                 />
@@ -76,7 +76,7 @@ function BrandingSection({ BrandingContents }) {
               </div>
               <div className=" mt-[30px]">
                 <img
-                  className="w-fit h-[250px] lg:h-[500px]  object-cover"
+                  className="w-fit h-[250px] lg:h-[500px]  object-contain"
                   src={brandingContent.image}
                   alt={brandingContent.title}
                 />

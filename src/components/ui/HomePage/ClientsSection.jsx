@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,47 +12,57 @@ import Jasim from "@/assets/images/clients/Bosq.png";
 import shan from "@/assets/images/clients/Shan.png";
 import PlayIcon from "@/assets/images/icons/play.svg";
 
-import SwiperCore from "swiper";
-SwiperCore.use([Navigation, Pagination]);
-
 function ClientsSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentVideo, setCurrentVideo] = useState("");
+
   const clients = [
     {
       img: arsh,
       name: "Arsh Navas",
       role: "Chief Brand Officer",
-      link: "https://youtu.be/6JP6r9x2ROc?si=bAiOcGLdZhCF1pE_",
+      link: "https://www.youtube.com/embed/6JP6r9x2ROc",
       company: "Gatezone Transport",
     },
     {
       img: ashik,
       name: "Ashik",
       role: "Marketing Director",
-      link: "https://youtu.be/oW9NIapHaFU?si=-JvkVwyWdn9J3ZIl",
+      link: "https://www.youtube.com/embed/oW9NIapHaFU",
       company: "Mr Alfred UAE",
     },
     {
       img: salman_thorop,
       name: "Salman Thorop",
       role: "Founder & CEO",
-      link: "https://youtube.com/shorts/yLVQjXDWv34?si=fA1t_j3s8o3x-idf",
+      link: "https://www.youtube.com/embed/yLVQjXDWv34",
       company: "Duvolks",
     },
     {
       img: Jasim,
       name: "Jasim SM",
       role: "CEO",
-      link: "https://youtu.be/kCFIlw110_k?si=VsQdEDiPkXntKG-E",
+      link: "https://www.youtube.com/embed/kCFIlw110_k",
       company: "Bosq Ergonomic Living",
     },
     {
       img: shan,
       name: "Shan A Salam",
       role: "Founder of One Percentages",
-      link: "https://youtu.be/u2ORY0ki8Sg?si=YBL1YVNhUNLGKnQY",
+      link: "https://www.youtube.com/embed/u2ORY0ki8Sg",
       company: "E-commerce Consultant",
     },
   ];
+
+  const openModal = (videoLink) => {
+    setCurrentVideo(videoLink);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setCurrentVideo("");
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="bg-black px-[17px] md:px-[40px] lg:px-[80px] xl:px-[120px] h-full pb-[36px] md:pb-0">
@@ -79,11 +89,9 @@ function ClientsSection() {
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
-              <a
-                href={client.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block relative group overflow-hidden "
+              <div
+                onClick={() => openModal(client.link)}
+                className="block relative group overflow-hidden cursor-pointer"
               >
                 <img
                   src={client.img}
@@ -97,7 +105,7 @@ function ClientsSection() {
                 {/* Text and Play Button */}
                 <div className="flex items-center justify-between w-full absolute bottom-4 sm:bottom-6 px-3 sm:px-6 z-20">
                   <div className="flex flex-col gap-[2px] sm:gap-[4px]">
-                    <p className="font-medium text-black text-[20px] sm:text-[24px] md:text-[28px] leading-none whitespace-nowrap">
+                    <p className="font-medium text-black sm:text-[24px] md:text-[28px] lg:text-[25px]  leading-none whitespace-nowrap ">
                       {client.name}
                     </p>
                     <p className="text-[14px] sm:text-[18px] text-black font-light">
@@ -113,11 +121,39 @@ function ClientsSection() {
                     className="w-[32px] sm:w-[40px] md:w-[48px]"
                   />
                 </div>
-              </a>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
+          onClick={closeModal}
+        >
+          <div
+            className="w-full max-w-3xl h-[60vh] md:h-[70vh] relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <iframe
+              src={currentVideo}
+              title="Client Video"
+              className="w-full h-full"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <button
+              onClick={closeModal}
+              className="absolute top-2 right-2 text-white text-2xl font-bold"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
