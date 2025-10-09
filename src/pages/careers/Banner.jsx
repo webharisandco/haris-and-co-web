@@ -19,23 +19,29 @@ function Banner() {
       </div>
 
       {/* Image Grid Section */}
-      <div className="lg:w-1/2 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-4 md:gap-6">
-        <img
-          src={BannerImg1}
-          alt="Team collaborating on a project"
-          className="w-full h- sm:h-72 md:h-96 lg:row-span-3 lg:col-span-1 object-cover "
-        />
-        <img
-          src={BannerImg2}
-          alt="Creative workspace with people brainstorming"
-          className="w-full h-40 sm:h-48 md:h-60 lg:row-span-1 lg:col-span-2 object-cover "
-        />
-        <img
-          src={BannerImg3}
-          alt="Office environment with modern design"
-          className="w-full h-48 sm:h-56 md:h-72 lg:row-span-2 lg:col-span-2 object-cover "
-        />
-      </div>
+      <div className="lg:w-1/2 w-full grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+  {/* Left side full height image */}
+  <img
+    src={BannerImg1}
+    alt="Team collaborating on a project"
+    className="w-full h-full object-cover sm:row-span-2"
+  />
+
+  {/* Right side top image */}
+  <img
+    src={BannerImg2}
+    alt="Creative workspace with people brainstorming"
+    className="w-full h-full object-cover"
+  />
+
+  {/* Right side bottom image */}
+  <img
+    src={BannerImg3}
+    alt="Office environment with modern design"
+    className="w-full h-full object-cover"
+  />
+</div>
+
     </div>
   );
 }
