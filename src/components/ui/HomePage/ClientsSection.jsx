@@ -55,7 +55,9 @@ function ClientsSection() {
   ];
 
   const openModal = (videoLink) => {
-    setCurrentVideo(videoLink);
+    // add autoplay and clean UI params to the video link
+    const cleanVideoLink = `${videoLink}?autoplay=1&controls=0&showinfo=0&modestbranding=1&rel=0&iv_load_policy=3`;
+    setCurrentVideo(cleanVideoLink);
     setIsModalOpen(true);
   };
 
@@ -72,6 +74,7 @@ function ClientsSection() {
         </p>
       </div>
 
+      {/* Swiper Carousel */}
       <div className="w-full">
         <Swiper
           modules={[Navigation, Pagination]}
@@ -127,14 +130,14 @@ function ClientsSection() {
         </Swiper>
       </div>
 
-      {/* Modal */}
+      {/* Cinematic Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50 transition-opacity duration-500 ease-in-out"
           onClick={closeModal}
         >
           <div
-            className="w-full max-w-3xl h-[60vh] md:h-[70vh] relative"
+            className="relative w-full max-w-4xl h-[60vh] md:h-[70vh] rounded-xl overflow-hidden shadow-2xl animate-fadeIn"
             onClick={(e) => e.stopPropagation()}
           >
             <iframe
@@ -142,12 +145,17 @@ function ClientsSection() {
               title="Client Video"
               className="w-full h-full"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="autoplay; encrypted-media; picture-in-picture"
               allowFullScreen
+              style={{
+                pointerEvents: "none",
+              }}
             ></iframe>
+
+            {/* Close Button */}
             <button
               onClick={closeModal}
-              className="absolute top-2 right-2 text-white text-2xl font-bold"
+              className="absolute top-3 right-5 text-white text-4xl font-bold hover:scale-110 transition-transform duration-200"
             >
               &times;
             </button>

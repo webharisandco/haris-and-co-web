@@ -17,11 +17,14 @@ function OurWorks() {
           // <Link to={"works/branding"} key={data.id}>
             <div className="flex flex-col h-full">
               {/* Image */}
-              <img
-                className="w-full  object-contain "
-                src={data.image}
-                alt={data.heading}
-              />
+              <Link to="/works">
+                <img
+                  className="w-full  cursor-pointer object-contain "
+                  src={data.image}
+                  alt={data.heading}
+                />
+              </Link>
+              
 
               {/* Heading */}
               <p className="font-[helvetica-medium] mt-3 text-lg md:text-xl  leading-snug text-left">
