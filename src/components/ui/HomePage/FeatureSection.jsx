@@ -15,7 +15,7 @@ export default function FeatureSection() {
 
   const services = [
     { name: "Social Media", howerPathName: "social", path: "/services/social-media" },
-    { name: "SEO", howerPathName: "seo", path: "/services/seo" },
+    { name: "SEOSearch Engine Optimization", howerPathName: "Search Engine Optimization", path: "/services/seo" },
     { name: "Performance Marketing", howerPathName: "performance", path: "/services/performance" },
     { name: "Web Development & UI/UX", howerPathName: "web", path: "/services/web-development" },
     { name: "Production", howerPathName: "production", path: "/services/production" },

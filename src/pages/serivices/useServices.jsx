@@ -29,8 +29,8 @@ function useServices() {
 
   const brandingContents = [
      {
-      id: "social-media",
-      title: "Social Media ",
+      id: "Social Media Marketing",
+      title: "Social Media Marketing",
       description:
         "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
       
@@ -71,8 +71,8 @@ function useServices() {
       image: Perfomance,
     },
     {
-      id: "SEO",
-      title: "SEO",
+      id: "Search Engine Optimisation",
+      title: "Search Engine Optimisation",
       description:
         "Our SEO team helps businesses stand out in search results and attract people who are already looking for what they offer. Instead of chasing empty traffic, we focus on connecting your brand with qualified visitors who are ready to engage. With specialists in every area of SEO, we develop strategies shaped around your industry and audience so your website doesn’t just rank higher but also delivers meaningful results.",
       services: [
