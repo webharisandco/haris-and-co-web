@@ -3,10 +3,11 @@ import blogImg2 from "../../assets/images/blogDetails/AI-role1.jpg";
 import blogImg3 from "../../assets/images/blogDetails/The7cs1.jpg";
 import blogImg4 from "../../assets/images/blogDetails/roi1.jpg";
 import blogImg5 from "../../assets/images/blogDetails/smlbsnss1.jpg";
-import blogImg6 from "../../assets/images/blogDetails/ChoosetheRight1.jpg";
+import blogImg6 from "../../assets/images/blogDetails/DanubeWordPress.png";
 import blogImg7 from "../../assets/images/blogDetails/guide1.jpg";
 import blogImg8 from "../../assets/images/blogDetails/awardwinning1.jpg";
 import blogImg9 from "../../assets/images/blogDetails/dig-m1.jpg";
+
 
 
 const blogContent = [
@@ -46,7 +47,7 @@ const blogContent = [
     link: "small-business",
   },
   {
-    img: blogImg6,
+    img: blogImg8,
     type: "Web Development & UI/UX",
     title: "How to Choose the Right Digital Marketing Agency",
     date: "May 24, 2025 ",
@@ -60,9 +61,10 @@ const blogContent = [
     link: "ultimate-guide",
   },
   {
-    img: blogImg8,
+    img: blogImg6,
     type: "Web Development & UI/UX",
-    title: "10 Award-Winning Digital Marketing Agencies in Dubai",
+    // title: "10 Award-Winning Digital Marketing Agencies in Dubai",
+    title : "How Danube Sports World Found Its Edge with WordPress",
     date: "May 24, 2025 ",
     link: "award-winning",
   },
