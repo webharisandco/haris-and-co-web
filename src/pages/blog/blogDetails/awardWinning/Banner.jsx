@@ -1,5 +1,6 @@
 import React from "react";
-import blogImg from "@/assets/images/blogDetails/awardwinning1.jpg";
+// import blogImg from "@/assets/images/blogDetails/awardwinning1.jpg";
+import blogImg from "@/assets/images/blogDetails/DanubeWordPress.png";
 
 function Banner() {
   return (
