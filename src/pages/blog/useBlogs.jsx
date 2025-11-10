@@ -1,10 +1,10 @@
 import blogImg1 from "../../assets/images/blogDetails/Regenerative.jpg";
 import blogImg2 from "../../assets/images/blogDetails/DIY-chaos.webp";
-import blogImg3 from "../../assets/images/blogDetails/shopsy.png";
-import blogImg4 from "../../assets/images/blogDetails/DanubeWordPress.png";
+// import blogImg3 from "../../assets/images/blogDetails/shopsy.png";
+import blogImg4 from "../../assets/images/blogDetails/shopsy.png";
 import blogImg5 from "../../assets/images/blogDetails/Misty-Mountains.jpg";
-import blogImg6 from "../../assets/images/blogDetails/SEO-strategy.jpg";
-import blogImg7 from "../../assets/images/blogDetails/Srishty.jpg";
+import blogImg6 from "../../assets/images/blogDetails/DanubeWordPress.png";
+import blogImg7 from "../../assets/images/blogDetails/Walkaroo_Stepped_Up.png";
 // import blogImg8 from "../../assets/images/blogDetails/Srishty.jpg";
 // import blogImg9 from "../../assets/images/blogDetails/Srishty.jpg";
 // import blogImg10 from "../../assets/images/blogDetails/Srishty.jpg";
@@ -29,7 +29,7 @@ const blogContent = [
     link: "ai-role",
   },
   {
-    img: blogImg3,
+    img: "/images/works/Artboard_10_BR.jpg",
     type: "Web Development & UI/UX",
     title: "From Sadhya to Slides",
     date: "November 07, 2024 ",
@@ -43,18 +43,18 @@ const blogContent = [
     link: "roi",
   },
   {
-    img: blogImg5,
+    img: blogImg6,
     type: "Web Development & UI/UX",
-    title: "Welcoming Srishty Bhasin to Haris&Co as the new Performance Marketing Team Lead",
+    title: "How Danube Sports World Found Its Edge with WordPress",
     date: "May 24, 2025 ",
     link: "small-business",
   },
   {
-    img: blogImg6,
+    img: blogImg5,
     type: "Web Development & UI/UX",
     title: "Misty Mountain: Winning SEO Battles Against Giants",
     date: "May 24, 2025 ",
-    link: "right-agency",
+    link: "dhanup",
   },
   {
     img: blogImg7,
@@ -63,6 +63,7 @@ const blogContent = [
     date: "May 24, 2025 ",
     link: "ultimate-guide",
   },
+  
   // {
   //   img: blogImg8,
   //   type: "Web Development & UI/UX",

@@ -8,7 +8,7 @@ export default function RelatedBlogs({ blogs }) {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-[35px]">
                 {blogs.map((blog) => (
                     <Link to={'/blogs/' + blog?.link} className="flex flex-col gap-[30px]">
-                        <img className="w-[400px] h-[350px] object-cover" src={blog.img} alt="" />
+                        <img className="w-[400px] h-[350px] object-contain" src={blog.img} alt="" />
                         <p className="text-[20px] hidden lg:block text-white/50">{blog.title}</p>
                         <p className="text-[24px] lg:text-[28px] text-white lg:leading-[36px]">{blog.heading}</p>
                         <p className="text-[20px] lg:text-[22px] block lg:hidden text-white/50">{blog.titile}</p>

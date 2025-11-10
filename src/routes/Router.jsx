@@ -148,6 +148,7 @@ const AppRouter = () => {
           <Route path="blogs/award-winning" element={<AwardWinning />} />
           <Route path="blogs/movie-BlogDetails" element={<BlogDetails />} />
           <Route path="blogs/genAIBlog-BlogDetails" element={<GenAIBlogDetails />} />
+          <Route path="blogs/dhanup" element={<GenAIBlogDetails />} />
           
           <Route
             path="blogs/digital-marketing-difference"
