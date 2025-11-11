@@ -25,7 +25,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
     <>
       {/* Hero Section */}
       <section
-        className="relative px-4 md:px-10 lg:px-20 py-16 md:py-20 text-white min-h-[400px] flex items-center"
+        className="bg-black relative px-4 md:px-10 lg:px-20 py-16 md:py-20 text-white min-h-[400px] flex items-center"
         style={{
           backgroundImage: `url(${GenAiImg})`,
           backgroundSize: "cover",

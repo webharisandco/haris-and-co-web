@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react";
 
 function OurWorks() {
   return (
-    <div className="px-4 sm:px-8 md:px-12 lg:px-20 mt-10 md:mt-20">
+    <div className="bg-white px-4 sm:px-8 md:px-12 lg:px-20 mt-10 md:mt-20">
       {/* Section Title */}
       <p className="text-2xl sm:text-3xl lg:text-4xl font-[helvetica-medium] text-center lg:text-left">
         See Our Works
