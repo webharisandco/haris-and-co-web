@@ -25,54 +25,16 @@ console.log(setShow)
             show ? "max-h-[6000px] opacity-100" : "max-h-0 opacity-0"
           } lg:max-h-none lg:opacity-100`}
         >
-          <h6 className="text-[22px] mt-5">
-          The Limits of Machine-Made Creativity
-          </h6>
-          <p className="font-[thin]">
-            AI can produce at scale, but it cannot create from emotion. It follows data, not instinct. That is why AI-generated work often looks refined but feels empty. It can capture tone and structure, but not intention or depth.
+          
+          <p className="font-[thin]  md:text-[25px]">
+            The results spoke for themselves. Within four months, organic traffic grew from 390 to over 2,700, clicks rose from 210 to 1,570, and impressions soared from 6,400 to 65,000. The resort broke into Google’s top three for high-intent keywords such as Best Resort in Kuttikkanam and Luxury Resorts in Kuttikkanam.
           </p>
-          <p className="font-[thin]">
-          <strong>Think of it this way:</strong> a machine can write a catchy tune, but it cannot move you. It can design a logo, but it does not understand what your brand truly means to the people who see it.
+          <p className="font-[thin]  md:text-[25px]">
+          From near invisibility to top search rankings, Misty Mountain’s website now mirrors the premium experience it offers in person. Haris & Co’s blend of technical SEO, content strategy, and authority-building turned challenges into measurable growth. The resort’s journey proves that even independent hospitality brands can stand out in competitive digital landscapes with the right strategy.
           </p>
-          <br />
-          <h6 className="text-[22px] mt-5">
-           The Temptation of Easy Answers
-          </h6>
-          <p className="font-[thin]">
-            It is easy to turn to tools that promise speed and precision. But the problem is that AI does not actually understand what it is saying. It references patterns, not meaning. It repeats what already exists instead of imagining what could be new.
-            You can see this everywhere, from people asking AI for medical advice to brands using it to write marketing campaigns. The outcome might look convincing, but it often misses the real point. The facts may be correct, but the feeling is not.
-          </p>
-          <br />
-          <h6 className="text-[22px] mt-5">
-         The Role of Humans in the Age of AI
-          </h6>
-          <p className="font-[thin]">
-           So where do people fit in now? Right at the centre of it all. Creativity still begins with curiosity, empathy, and imagination, qualities that belong only to humans
-           </p>
-           <p className="font-[thin]">
-            We bring emotional understanding, cultural awareness, and the ability to challenge what feels too familiar. We know when to break a pattern, when to pause, and when silence can say more than words ever could. Machines do not know that.
-           </p>
-            <br />
-          <h6 className="text-[22px] mt-5">
-         Finding Balance Between the Two
-          </h6>
-          <p className="font-[thin]">
-           When used wisely, AI can strengthen creative work instead of replacing it. It can take care of structure, research, and repetitive tasks, giving people more time to focus on the part that matters most: ideas, storytelling, and human connection.
-           </p>
-           <p className="font-[thin]">
-            The balance lies in collaboration, with humans guiding the process and technology supporting it. That is where innovation feels real and purposeful.
-           </p>
-            <br />
-          <h6 className="text-[22px] mt-5">
-         Creativity Is Not Replaced, It Evolves
-          </h6>
-          <p className="font-[thin]">
-           AI will continue to grow smarter and faster. But the ideas that change how people think or feel will still come from the human imagination.
-           </p>
-           <p className="font-[thin]">
-          The future of marketing is not a contest between humans and machines. It is about what can happen when both work together to build something meaningful, something that feels alive.
-           </p>
-            <br />
+          
+          
+         
           {/* <h6 className="text-[22px] mt-5">
             Key Applications of AI in Digital Marketing
           </h6>
@@ -205,10 +167,10 @@ console.log(setShow)
       </div>
 
       {/* Images Section */}
-      <div className="w-1/3 lg:flex flex-col gap-5 hidden">
+      {/* <div className="w-1/3 lg:flex flex-col gap-5 hidden">
         <img src={img2} alt="AI in Digital Marketing" />
         <img src={img3} alt="AI Strategy" />
-      </div>
+      </div> */}
     </div>
   );
 }

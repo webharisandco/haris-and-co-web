@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ClientsDataSection = () => {
   return (
-   <div className="py-[56px] md:py-[96px] bg-[#0E0E0E] w-full flex flex-col gap-[56px] md:gap-[87px] items-center justify-center">
+   <div className="bg-black py-[56px] md:py-[96px] bg-[#0E0E0E] w-full flex flex-col gap-[56px] md:gap-[87px] items-center justify-center">
      
      {/* Top text */}
      <div className="text-center px-[16px] md:px-[150px] 2xl:w-5/6 3xl:w-3/5">

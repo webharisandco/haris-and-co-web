@@ -107,14 +107,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[50px] text-black grid grid-cols-2 sm:grid-cols-4 gap-6 lg:hidden">
+      <div className="mt-[25px] text-gray-800 flex items-center justify-center gap-6 lg:hidden ml-10">
         <Link to="digital-marketing-agency-in-kerala">Kerala</Link>
         <Link to="ae/digital-marketing-agency-in-dubai">Dubai</Link>
         <Link to="ae/digital-marketing-agency-in-sharjah"></Link>
         <Link to="ae/digital-marketing-agency-in-abudhabi"></Link>
       </div>
 
-      <div className="mt-[50px] lg:mt-[115px] flex flex-col md:flex-row justify-between mb-[40px] text-black/55 text-base md:text-lg font-medium items-center md:items-end gap-3 md:gap-0 ">
+      <div className="mt-[25px] lg:mt-[115px] flex flex-col md:flex-row justify-between mb-[40px] text-black/55 text-base md:text-lg font-medium items-center md:items-end gap-3 md:gap-0 ">
         <div className=" flex gap-4 md:gap-[40px] lg:gap-[60px] flex-col md:flex-row">
           <Link to="/Privacy" className="text-[18px] ">
                 Privacy
@@ -126,7 +126,7 @@ const Footer = () => {
               </Link> 
         </div>
         
-        <div className=" text-black w-1/3 justify-between hidden lg:flex">
+        <div className=" text-gray-800 w-1/3 justify-between hidden lg:flex">
           <Link to="digital-marketing-agency-in-kerala">Kerala</Link>
           <Link to="ae/digital-marketing-agency-in-dubai">Dubai</Link>
           <Link to="ae/digital-marketing-agency-in-sharjah"></Link>

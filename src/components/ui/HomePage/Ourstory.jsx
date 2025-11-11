@@ -72,7 +72,7 @@ export default function GenAIHero() {
 
 
     // </section>
-    <section className="w-full min-h-[60vh] bg-cover bg-center bg-no-repeat text-white" style={{ backgroundImage: `url(${GenAiImg})` }}>
+    <section className="bg-black w-full min-h-[60vh] bg-cover bg-center bg-no-repeat text-white" style={{ backgroundImage: `url(${GenAiImg})` }}>
       <div className="px-4 sm:px-8 md:px-12 lg:pl-16 py-10 sm:py-12 md:py-16 flex flex-col lg:flex-row items-center lg:justify-between">
 
         <div>

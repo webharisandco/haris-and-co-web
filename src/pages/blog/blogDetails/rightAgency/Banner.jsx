@@ -3,7 +3,7 @@ import blogImg from "@/assets/images/blogDetails/ChoosetheRight1.jpg";
 
 function Banner() {
   return (
-    <div className=" px-[16px] md:px-[80px] pt-[180px] pb-[180px] min-h-[700px flex items-center  lg:min-h-[632px] bg-[#0E0E0E]">
+    <div className=" px-[16px] md:px-[80px] pt-[180px] pb-[180px] min-h-[700px flex items-center  lg:min-h-[632px] bg-black">
       <div className=" flex flex-col gap-[35px]">
         <h1 className="text-[40px]  text-white">
         Misty Mountain: Winning SEO Battles Against Giants

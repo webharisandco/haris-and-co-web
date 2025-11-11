@@ -8,7 +8,7 @@ function BrandingSection({ BrandingContents }) {
       {BrandingContents.map((brandingContent, index) => (
         <>
           {/* -------------- web ------------------- */}
-          <div className="w-full hidden lg:block ">
+          <div className="bg-white w-full hidden lg:block ">
             <div
               id={brandingContent.id}
               key={index}
@@ -67,7 +67,7 @@ function BrandingSection({ BrandingContents }) {
 
 
           {/* -------------- mobile ------------------- */}
-          <div className=" block lg:hidden w-full ">
+          <div className="bg-white block lg:hidden w-full ">
             <div key={index} className={`w-full flex-col  justify-between  `}>
               <div className="">
                 <p className=" font-[helvetica-medium] text-[28px] md:text-[32px]">

@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
 import useBlogs from "../../../pages/blog/useBlogs";
 
+
 export const BlogSection = () => {
   const { blogContent } = useBlogs();
 
   return (
-   <div className="px-4 md:px-[40px] lg:px-[80px] bg-[black]">
+   <div className=" px-4 md:px-[40px] lg:px-[80px] bg-black">
   <div className="py-12 lg:py-[57px]">
     <p className="text-[26px] leading-[36px] md:text-[34px] lg:leading-[46px] font-medium text-white">
       Latest News & Blogs

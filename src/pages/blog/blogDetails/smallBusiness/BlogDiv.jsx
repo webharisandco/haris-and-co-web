@@ -10,32 +10,31 @@ export default function BlogDiv() {
       <div className="lg:w-2/3 flex flex-col gap-5">
         {/* Intro Paragraph */}
         <p className="font-[thin]">
-         We are thrilled to welcome Srishty Bhasin as the new Performance Marketing Team Lead at Haris&Co. Srishty brings a wealth of experience in building and scaling performance-driven campaigns, developing full-funnel marketing strategies, and delivering measurable results for high-growth brands.
+        When it comes to building websites that perform, design is only half the story. The real difference lies in how well your site works with search engines, and that is where WordPress proves its weight. With flexible architecture, SEO-ready features, and room to grow, it is the platform built not just for looks but for measurable results.
         </p>
          <p className="font-[thin]">
-         Previously, she founded and scaled her own full-service digital marketing agency, where she led Meta Ads campaigns, Shopify store launches, and 360° marketing strategies for brands including Hazel Thread and Tweeny Mini. Over her career, she has managed multi-million rupee ad spends, consistently delivered high ROAS, and orchestrated campaigns that drove substantial revenue growth for clients.
+        Danube Sports World needed exactly that. As Dubai’s premier indoor sports destination, it is home to padel, cricket, basketball, football, tennis, badminton, and more. Families, professionals, and visiting athletes walk through its doors every day, making it one of the busiest sporting hubs in the region. Offline, the brand had scale and recognition. Online, it was a different game. The old website lacked structure, visibility, and the power to convert interest into action.
         </p>
          <p className="font-[thin]">
-         At Haris&Co, Srishty will be building systems, structuring the team, and ensuring the health of both our people and processes. Her focus will be on delivering exceptional client experiences, maintaining performance standards, and minimizing client churn—ensuring every campaign not only performs but also strengthens lasting partnerships.
+          Our web team at Haris & Co moved Danube onto WordPress with a vision to design a site that keeps up with the brand. The transformation included:
+
         </p>
+        <ul className="list-disc list-inside  font-[thin]">
+          <li>A redesigned interface with clear navigation and user-first layouts.</li>
+          <li>SEO-friendly structures that search engines could read and reward.</li>
+          <li> No-code development so the Danube team could manage updates with ease.</li>
+          <li> A simplified dashboard that made running the site as effortless as playing on it.</li>
+        </ul>
+
 
          <p className="font-[thin]">
-         <strong>Haris Aboobacker, Founder of Haris&Co,</strong> says:
+         The numbers told the story. In the first month alone, the site generated more than 1,000 qualified leads. And the growth
+         kept climbing.
         </p>
         <p className="font-[thin]">
-         "We are excited to welcome Srishty Bhasin to our performance marketing team at Haris&Co.With her previous experience in running campaigns, optimizing performance, and building marketing systems, she brings expertise that will directly benefit both our clients and our team. Srishty’s focus on operational excellence and client success will strengthen our workflows, enhance team collaboration, and ensure every campaign delivers real outcomes."
+        WordPress turned Danube’s website from a sideline player into a lead machine. For a brand built on world-class courts, it finally had a digital presence strong enough to match its game.
         </p>
 
-        <p className="font-[thin]">
-          About <strong>Haris&Co</strong> 
-        </p>
-        <p className="font-[thin]">
-         Founded in 2020, Haris&Co is a creative digital marketing agency headquartered in Calicut, Kerala, serving clients across India, GCC, the United Kingdom, and beyond. Trusted by a growing roster of well-recognized brands, we deliver end-to-end digital marketing solutions that empower clients’ presence across digital spaces holistically. With Haris&Co + now operational in both India and the UAE, we uphold Client win, Customer relationship, and Culture as the pillars guiding our journey toward greater heights. Committed to evolving from ongoing services to a full 360-degree approach, we strive to go the extra mile, expanding our team and delivering masterful, results-driven services that set industry benchmarks.
-        </p>
-        <p className="font-[thin]">
-          <strong>For more information, follow the agency on LinkedIn, Instagram, and X.</strong>
-        </p>
-       
 
         {/* Expandable Content */}
         {/* <div
@@ -144,10 +143,10 @@ export default function BlogDiv() {
       </div>
 
       {/* Images Section */}
-      <div className="w-1/3 lg:flex flex-col gap-5 hidden">
+      {/* <div className="w-1/3 lg:flex flex-col gap-5 hidden">
         <img src={img2} alt="Digital Marketing Tips" />
         <img src={img3} alt="Small Business Growth" />
-      </div>
+      </div> */}
     </div>
   );
 }

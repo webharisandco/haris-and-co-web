@@ -1,11 +1,11 @@
 import React from "react";
-import blogImg from "@/assets/images/blogDetails/AI-role1.jpg";
+// import blogImg from "@/assets/images/blogDetails/AI-role1.jpg";
 
 
 
 function Banner() {
   return (
-    <div className=" px-[16px] md:px-[80px] pt-[180px] pb-[180px] min-h-[700px flex items-center  lg:min-h-[632px] bg-[#0E0E0E]">
+    <div className=" px-[16px] md:px-[80px] pt-[180px] pb-[180px] min-h-[700px flex items-center  lg:min-h-[632px] bg-black">
       <div className=" flex flex-col gap-[35px]">
         <h1 className="text-[40px]  text-white">
          Why You Should Never Hire a Digital Marketing Agency
@@ -30,7 +30,7 @@ function Banner() {
           It is exhausting to think about and maybe that is the point.
         </p>
         
-        <img src={blogImg} alt="" />
+        {/* <img src={blogImg} alt="" /> */}
       </div>
     </div>
   );
