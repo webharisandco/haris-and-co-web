@@ -49,34 +49,36 @@ export default function DepartmentHead() {
       {/* Business Heads */}
       <div className="w-full">
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation={false}
-          draggable
-          pagination={{ clickable: true }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          loop={false}
-          watchOverflow={true}
-          centerInsufficientSlides={true}
-          breakpoints={{
-            640: { slidesPerView: Math.min(2, businessHeads.length), spaceBetween: 20 },
-            768: { slidesPerView: Math.min(2, businessHeads.length), spaceBetween: 30 },
-            1024: { slidesPerView: Math.min(4, businessHeads.length), autoplay: false, spaceBetween: 40 },
-            1240: { slidesPerView: Math.min(5, businessHeads.length), autoplay: false, spaceBetween: 50 },
-          }}
-          className="swiper-pagination-black"
-        >
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation={false}
+            pagination={{ clickable: true }}
+            draggable={true}
+            loop={true}
+            speed={3500} // 💨 Smooth transition speed (1.2s)
+            autoplay={{
+              delay: 0, // ⚡ Continuous scroll (no pause)
+              disableOnInteraction: false,
+            }}
+            freeMode={true}
+            freeModeMomentum={false}
+            allowTouchMove={false}
+            breakpoints={{
+              640: { slidesPerView: 2, spaceBetween: 20 },
+              768: { slidesPerView: 3, spaceBetween: 30 },
+              1024: { slidesPerView: 4, spaceBetween: 40, autoplay: false },
+              1240: { slidesPerView: 5, spaceBetween: 50, autoplay: false },
+            }}
+            className="swiper-pagination-black"
+          >
           {businessHeads.map((member, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-start w-fit">
                 <div className="bg-[#F5F5F5] w-[355px] h-[355px] lg:h-[350px] lg:w-[200px] flex items-center justify-center">
                   {member.img ? (
                     <img
-                      className="pt-8 w-full h-full object-contain lg:object-cover rounded-lg transition-transform duration-150"
+                      className="pt-8 w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105"
                       src={member.img}
                       alt={member.name}
                     />
@@ -90,6 +92,7 @@ export default function DepartmentHead() {
             </SwiperSlide>
           ))}
         </Swiper>
+
       </div>
 
       {/* Department Heads */}
@@ -99,26 +102,28 @@ export default function DepartmentHead() {
       <div className="w-full">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation={false}
-          draggable
-          pagination={{ clickable: true }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          loop={false}
-          watchOverflow={true}
-          centerInsufficientSlides={true}
-          breakpoints={{
-            640: { slidesPerView: Math.min(2, teamMembers.length), spaceBetween: 20 },
-            768: { slidesPerView: Math.min(2, teamMembers.length), spaceBetween: 10 },
-            1024: { slidesPerView: Math.min(4, teamMembers.length), autoplay: false, spaceBetween: 40 },
-            1240: { slidesPerView: Math.min(5, teamMembers.length), autoplay: false, spaceBetween: 50 },
-          }}
-          className="swiper-pagination-black"
-        >
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation={false}
+            pagination={{ clickable: true }}
+            draggable={true}
+            loop={true}
+            speed={3500} // 💨 Smooth transition speed (1.2s)
+            autoplay={{
+              delay: 0, // ⚡ Continuous scroll (no pause)
+              disableOnInteraction: false,
+            }}
+            freeMode={true}
+            freeModeMomentum={false}
+            allowTouchMove={false}
+            breakpoints={{
+              640: { slidesPerView: 2, spaceBetween: 20 },
+              768: { slidesPerView: 3, spaceBetween: 30 },
+              1024: { slidesPerView: 4, spaceBetween: 40, autoplay: false },
+              1240: { slidesPerView: 5, spaceBetween: 50, autoplay: false },
+            }}
+            className="swiper-pagination-black"
+          >
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col items-start w-fit">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import img2 from "@/assets/images/blogDetails/AI-role2.jpg";
-import img3 from "@/assets/images/blogDetails/AI-role3.jpg";
+// import img2 from "@/assets/images/blogDetails/AI-role2.jpg";
+// import img3 from "@/assets/images/blogDetails/AI-role3.jpg";
 
 export default function BlogDiv() {
   const [show, setShow] = useState(false);
