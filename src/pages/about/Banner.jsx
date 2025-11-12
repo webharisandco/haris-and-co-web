@@ -23,7 +23,7 @@ import React from "react";
 
 function Banner() {
   return (
-    <div className="px-[24px] md:px-[32px] min-h-[400px]  lg:min-h-[700px] flex flex-col items-start  justify-center" >
+    <div className="bg-black px-[24px] md:px-[32px] min-h-[400px]  lg:min-h-[700px] flex flex-col items-start  justify-center" >
       <p className="text-[15px] md:text-2xl lg:text-5xl text-white  lg:mt-32 lg:p-10  max-w-5xl">
        We are dedicated to help brands scale through
         <span className="text-white/65 ">

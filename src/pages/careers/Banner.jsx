@@ -5,7 +5,7 @@ import BannerImg3 from "@/assets/images/career/bnr3.jpg";
 
 function Banner() {
   return (
-    <div className="px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 2xl:px-40 py-32 md:py-44 bg-[#0E0E0E] flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+    <div className="px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 2xl:px-40 py-32 md:py-44 bg-black flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
       
       {/* Text Section */}
       <div className="lg:w-1/2 flex flex-col justify-center text-center lg:text-left">

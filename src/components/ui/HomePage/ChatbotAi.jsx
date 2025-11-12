@@ -13,7 +13,7 @@ const Chatbot = () => {
     const sections = document.querySelectorAll(".bg-black, .bg-white");
 
     const handleScroll = () => {
-      const scrollY = window.scrollY + window.innerHeight / 2;
+      const scrollY = window.scrollY + window.innerHeight;
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
         const sectionTop = window.scrollY + rect.top;
