@@ -10,28 +10,53 @@ const Chatbot = () => {
   )}`;
 
   useEffect(() => {
-    // Select only main sections or divs that have bg-black or bg-white
     const sections = document.querySelectorAll(".bg-black, .bg-white");
 
+    const handleScroll = () => {
+      const scrollY = window.scrollY + window.innerHeight / 2;
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        const sectionTop = window.scrollY + rect.top;
+        const sectionBottom = sectionTop + rect.height;
+
+        if (scrollY >= sectionTop && scrollY <= sectionBottom) {
+          if (section.classList.contains("bg-black")) {
+            setIsDarkSection(true);
+          } else {
+            setIsDarkSection(false);
+          }
+        }
+      });
+    };
+
+    // Initial check
+    handleScroll();
+
+    // Fallback scroll listener for mobile
+    window.addEventListener("scroll", handleScroll);
+
+    // Optional: Keep your IntersectionObserver for smoother desktop behavior
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             if (entry.target.classList.contains("bg-black")) {
-              setIsDarkSection(true); // bg-black section
-            } else if (entry.target.classList.contains("bg-white")) {
-              setIsDarkSection(false); // bg-white section
+              setIsDarkSection(true);
+            } else {
+              setIsDarkSection(false);
             }
           }
         });
       },
-      {
-        threshold: 0.4, // when 40% of the section is visible
-      }
+      { threshold: 0.3 }
     );
 
     sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -39,15 +64,11 @@ const Chatbot = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className={`fixed right-4 bottom-8 rounded-full w-14 h-14 flex items-center justify-center shadow-md z-50 transition-all duration-300
-        ${
-          isDarkSection
-            ? "bg-white text-black"
-            : "bg-black text-white"
-        }`}
+      className={`fixed right-4 bottom-8 rounded-full w-14 h-14 flex items-center justify-center shadow-md z-50 transition-all duration-300 ${
+        isDarkSection ? "bg-white text-black" : "bg-black text-white"
+      }`}
       aria-label="Chat on WhatsApp"
     >
-      {/* WhatsApp SVG Icon */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width={30}

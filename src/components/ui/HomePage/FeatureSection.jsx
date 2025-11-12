@@ -25,7 +25,7 @@ export default function FeatureSection() {
 
   return (
     <div
-      className={`h-full w-full px-[16px] md:px-[80px] py-14 flex justify-between items-center relative overflow-hidden ${
+      className={`h-full w-full px-[16px] md:px-[80px] py-14 flex justify-between items-center relative overflow-hidden bg-white ${
         isHovered ? "featureGradient" : ""
       }`}
     >
