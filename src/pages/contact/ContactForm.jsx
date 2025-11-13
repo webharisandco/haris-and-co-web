@@ -3,8 +3,12 @@ import Input from "../../components/ui/common/Input";
 import Textarea from "../../components/ui/common/Textarea";
 import ContactButton from "../../components/ContactButton";
 import SuccessPopup from "./SuccessPopup";
+import { identifyProfile, sendEvent } from "../../utils/data/aixel";
 
 export default function ContactForm() {
+
+
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,6 +23,22 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // <!-- aixel script starts -->
+    identifyProfile(formData.email, {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+    });
+    sendEvent("contact_submitted",{
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+    });
+
+    // <!-- aixel script ends -->
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -67,16 +87,16 @@ export default function ContactForm() {
       </div>
 
       <div className="w-full h-full">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.484367376539!2d75.79183259999999!3d11.225735499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6592e5bc6ffbb%3A0xbd15f0508abb882b!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1737460912360!5m2!1sen!2sin"
-    title="Haris&Co Location Map"
-    height="500"
-    allowFullScreen
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-    className="w-full min-h-[400px]"
-  ></iframe>
-</div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.484367376539!2d75.79183259999999!3d11.225735499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6592e5bc6ffbb%3A0xbd15f0508abb882b!2sHaris%26Co!5e0!3m2!1sen!2sin!4v1737460912360!5m2!1sen!2sin"
+          title="Haris&Co Location Map"
+          height="500"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full min-h-[400px]"
+        ></iframe>
+      </div>
 
 
       {/* Popup Component */}

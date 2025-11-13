@@ -20,7 +20,7 @@ export default function BlogSection({ blogContent }) {
   return (
     <div>
       {/* Filter bar */}
-      <div className="bg-white flex justify-between flex-col lg:flex-row px-[16px] md:px-[50px] py-[40px] font-[Helvetica-Light]">
+      {/* <div className="bg-white flex justify-between flex-col lg:flex-row px-[16px] md:px-[50px] py-[40px] font-[Helvetica-Light]"> */}
         {/* Uncomment below to show blog type filters */}
         {/* {blogTypes.map((blogType, index) => (
           <div
@@ -33,10 +33,10 @@ export default function BlogSection({ blogContent }) {
             {blogType}
           </div>
         ))} */}
-      </div>
+      {/* </div> */}
 
       {/* Blog images grid */}
-      <div className="bg-[#0E0E0E] w-full px-[16px] md:px-[80px] py-[30px] md:py-[80px]">
+      <div className="bg-black w-full px-[16px] md:px-[80px] py-[30px] md:py-[80px]">
         <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 gap-y-12">
           {blogContent.map((blog, idx) => (
             <BlogDiv
