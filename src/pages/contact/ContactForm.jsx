@@ -24,6 +24,7 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // <!-- aixel script starts -->
     identifyProfile(formData.email, {
       name: formData.name,
       email: formData.email,
@@ -36,6 +37,8 @@ export default function ContactForm() {
       phone: formData.phone,
       message: formData.message,
     });
+
+    // <!-- aixel script ends -->
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {

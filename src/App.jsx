@@ -9,13 +9,15 @@ import { sendEvent } from "./utils/data/aixel";
 
 function App() {
 
+// <!-- aixel script starts -->
 
 const location = useLocation();
-
 useEffect(() => {
   sendEvent("page_view",{});
 	// console.log('Location changed', location);
 }, [location]);
+
+// <!-- aixel script End -->
 
   return (
     <div className="App ">
