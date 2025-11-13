@@ -1,7 +1,8 @@
 import React from "react";
 import Banner from "./Banner";
-import ContactForm from "./ContactForm";
+// import ContactForm from "./ContactForm";
 import AddressSection from "../../components/ui/HomePage/AddressSection";
+import ZohoForm from "./ZohoForm";
 
 function Contact() {
   return (
@@ -10,7 +11,8 @@ function Contact() {
       <div className=" py-[10px] bg-white">
         <AddressSection />
       </div>
-      <ContactForm />
+      {/* <ContactForm /> */}
+      <ZohoForm />
     </div>
   );
 }
