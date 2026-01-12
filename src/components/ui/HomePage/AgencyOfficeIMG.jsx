@@ -110,7 +110,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
 
             {/* Text */}
             <div className="absolute left-0 bottom-0 z-20 p-4 sm:p-6 text-white">
-              <h3 className="font-semibold text-base sm:text-lg mb-1 font-[helvetica-medium] tracking-wider">Dubai Office</h3>
+              <h3 className="font-semibold text-base sm:text-lg mb-1 font-[helvetica-medium] tracking-wider">UAE Office</h3>
               <p className="text-xs sm:text-sm">
                 Rooted In Creativity, Serving Clients Across The Nation.
               </p>

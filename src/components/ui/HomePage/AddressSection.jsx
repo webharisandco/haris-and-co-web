@@ -22,7 +22,7 @@ function AddressSection() {
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4">
               <p className="text-sm md:text-lg text-black text-start font-[thin] leading-snug">
-                4, 6QGR+7PW WING Avenue, Panniyankara, Kozhikode, Kerala 673003
+                4, 6QGR+7PW WING Avenue, Panniyankara, Kozhikode, Kerala, India 673003
               </p>
             </div>
           </div>
@@ -61,7 +61,7 @@ function AddressSection() {
             </div>
             <div className="w-4/5 lg:w-3/5 xl:w-3/4">
               <p className="text-sm md:text-lg text-black text-start font-[thin] leading-snug">
-                Abdulla Kamber Business Center - Room No 103, First Floor - Abu Baker Al Siddique St - Deira - Dubai - United Arab Emirates
+                Abdulla Kamber Business Center - Room No 103, First Floor - Abu Baker Al Siddique St - Deira - UAE - United Arab Emirates
               </p>
             </div>
           </div>
