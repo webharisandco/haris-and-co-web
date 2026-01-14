@@ -17,7 +17,7 @@ const Chatbot = () => {
         const rect = section.getBoundingClientRect();
 
         // check if section is in viewport center
-        if (rect.top < window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
+        if (rect.top < window.innerHeight && rect.bottom > window.innerHeight) {
           dark = section.classList.contains("bg-black");
         }
       });
