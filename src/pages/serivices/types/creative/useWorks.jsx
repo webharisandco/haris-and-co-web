@@ -13,6 +13,47 @@ function useWorks() {
   console.log("Current URL Service:", service);
 
 
+  /* -------------------- COUNTERS JSON -------------------- */
+  const countersData = {
+    "production": [
+      { value: "120+", label: "Clients" },
+      { value: "7", label: "Awards" },
+      { value: "5000+", label: "Media Contents" },
+    ],
+    "social-media": [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+    "performance-marketing": [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+    seo: [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+    "influencer-marketing": [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+    "web-development": [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+    branding: [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+  };
+
+
+
   const allServices = useMemo(() =>  [
     {
       link: "branding",
@@ -448,35 +489,29 @@ function useWorks() {
         statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
       offerings: [
         {
-          title: "Influencer Marketing",
+          title: "Television & Digital Commercials",
           description:
-            "We connect brands with influencers who align with their values and audience. By leveraging trusted voices on social platforms, we create authentic visibility and engagement.",
+            "Our television and digital production wing specializes in creating cinematic brand stories that connect across audiences and platforms. From high-energy commercials to emotionally driven digital films, we blend creativity, storytelling, and technical finesse to deliver work that resonates and performs.",
           link: "/contact",
         },
         {
-          title: "Brand Launch",
+          title: "Digital & Social Media Content",
           description:
-            "We design launch strategies that introduce new brands with impact. Through targeted campaigns, we build awareness, define identity, and establish a strong market presence.",
+            "In the fast-paced world of digital, we produce content that stands out and sparks conversations. From short-form reels to branded content and campaign visuals, our team ensures every piece is crafted to engage audiences, reflect brand identity, and drive measurable impact across platforms.",
           link: "/contact",
         },
         {
-          title: "Event Marketing",
+          title: "Photography & Print Production",
           description:
-            "We use influencer partnerships and digital channels to generate interest in events. Whether it is a conference, launch, or festival, our campaigns drive attendance and participation.",
+            "photography and print team blends creativity, detail, and technical mastery to craft visuals that capture true brand excellence. ",
           link: "/contact",
         },
         {
-          title: "Product Launch",
+          title: "Line Production Services",
           description:
-            "Our campaigns build anticipation around new products and services. By combining influencer reach with creative communication, we encourage engagement and early adoption.",
+            "From scouting dream locations to managing logistics, permissions, and crew coordination, our line production services ensure that every project runs seamlessly. Whether it’s a high-scale ad shoot or a digital film, we take care of every on-ground detail so creativity can flow without interruption. ",
           link: "/contact",
-        },
-        {
-          title: "Creators Management",
-          description:
-            "We handle the relationships with creators, from selection to campaign delivery. This includes evaluating demographics and portfolios, vetting credibility, coordinating production, and ensuring content is delivered on time.",
-          link: "/contact",
-        },
+        }
         
       ],
     },
@@ -551,18 +586,28 @@ function useWorks() {
   ];
 
 useEffect(() => {
-  window.scrollTo(0, 0); // Scroll to top on page load
-  const selectedService = allServices?.find((s) => s?.link === service);
-  if (selectedService) {
-    setCurrentService(selectedService);
-  }
-}, [service, allServices]);
+    window.scrollTo(0, 0);
 
+    const selectedService = allServices.find(
+      (s) => s.link === service
+    );
 
-  if (!currentService) {
-    return <p>Service not found!</p>;
-  }
-  return { services, blogs, currentService };
+    if (selectedService) {
+      setCurrentService({
+        ...selectedService,
+        counters: countersData[service] || [],
+      });
+    } else {
+      setCurrentService(null);
+    }
+  }, [service, allServices]);
+
+  return {
+    blogs,
+    currentService,
+  };
 }
+
+
 
 export default useWorks;

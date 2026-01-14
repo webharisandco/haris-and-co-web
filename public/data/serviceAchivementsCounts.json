@@ -1,0 +1,104 @@
+{
+  "brandingContents":[
+    {
+        "production":[
+            {
+            "value": "120+",
+            "label": "CLIENTS"
+          },
+          {
+            "value": "7",
+            "label": "Awards"
+          },
+          {
+            "value": "5000+",
+            "label": "MEDIA CONTENTS"
+          }
+        ],
+        "social-media": [
+          {
+            "value": "50+",
+            "label": "Brands"
+          },
+          {
+            "value": "500+",
+            "label": "Projects Launched across India and GCC"
+          },
+          {
+            "value": "20+",
+            "label": "Ad films"
+          }
+        ],
+        "performance-marketing": [
+          {
+            "value": "50+",
+            "label": "Brands"
+          },
+          {
+            "value": "500+",
+            "label": "Projects Launched across India and GCC"
+          },
+          {
+            "value": "20+",
+            "label": "Ad films"
+          }
+        ],
+        "seo": [
+          {
+            "value": "50+",
+            "label": "Brands"
+          },
+          {
+            "value": "500+",
+            "label": "Projects Launched across India and GCC"
+          },
+          {
+            "value": "20+",
+            "label": "Ad films"
+          }
+        ],
+        "influencer-marketing": [
+          {
+            "value": "50+",
+            "label": "Brands"
+          },
+          {
+            "value": "500+",
+            "label": "Projects Launched across India and GCC"
+          },
+          {
+            "value": "20+",
+            "label": "Ad films"
+          }
+        ],
+        "web-development": [
+          {
+            "value": "50+",
+            "label": "Brands"
+          },
+          {
+            "value": "500+",
+            "label": "Projects Launched across India and GCC"
+          },
+          {
+            "value": "20+",
+            "label": "Ad films"
+          }
+        ],
+        "branding": [
+          {
+            "value": "50+",
+            "label": "Brands"
+          },
+          {
+            "value": "500+",
+            "label": "Projects Launched across India and GCC"
+          },
+          {
+            "value": "20+",
+            "label": "Ad films"
+          }
+        ]
+    }
+  ]  
+}
