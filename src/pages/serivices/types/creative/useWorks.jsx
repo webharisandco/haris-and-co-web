@@ -30,7 +30,7 @@ function useWorks() {
       { value: "500+", label: "Projects Launched across India and GCC" },
       { value: "20+", label: "Ad films" },
     ],
-    seo: [
+    "seo": [
       { value: "50+", label: "Brands" },
       { value: "500+", label: "Projects Launched across India and GCC" },
       { value: "20+", label: "Ad films" },
@@ -45,10 +45,10 @@ function useWorks() {
       { value: "500+", label: "Projects Launched across India and GCC" },
       { value: "20+", label: "Ad films" },
     ],
-    branding: [
-      { value: "50+", label: "Brands" },
-      { value: "500+", label: "Projects Launched across India and GCC" },
-      { value: "20+", label: "Ad films" },
+    "branding": [
+      { value: "15+ ", label: "OOH Ads & Print Ads" },
+      { value: "10+", label: "Ad films" },
+      { value: "100+", label: "Campaigns" },
     ],
   };
 
@@ -71,39 +71,51 @@ function useWorks() {
       ],
       offerings: [
         {
-          title: "Website Development",
+          title: "Brand Strategy",
           description:
-            "We build websites that are fast, reliable, and easy to navigate. Each site is structured to deliver information clearly while supporting your business objectives and keeping visitors engaged.",
+            "We develop clear brand strategies that align with your business goals. From positioning and messaging to tone of voice, we help brands stand out with purpose and direction.",
           link: "/contact",
         },
         {
-          title: "Ecommerce Development",
+          title: "Brand Activations",
           description:
-            "Our team creates online stores that simplify shopping and boost sales. From product listings to secure checkout processes, every element is designed to enhance the customer experience.",
+            "We plan and execute brand activations that create meaningful audience engagement. These experiences are designed to build awareness, interaction, and emotional connection with your brand.",
           link: "/contact",
         },
         {
-          title: "Website Auditing",
+          title: "Campaigns",
           description:
-            "We evaluate your website’s performance, structure, and user experience to identify areas that need improvement. Audits help ensure your site runs efficiently and meets user expectations.",
+            "We conceptualize and deliver creative brand campaigns that communicate your message effectively across channels. Each campaign is built to increase visibility, recall, and impact.",
           link: "/contact",
         },
         {
-          title: "Website Optimization",
+          title: "Event Branding",
           description:
-            "Through careful tuning of speed, layout, and content, we enhance how your website performs. Optimized sites load faster, retain visitors longer, and make it easier for people to find what they need.",
+            "We design cohesive branding for events, ensuring a strong and memorable presence. From visual themes to on-ground branding elements, we align every detail with your brand identity.",
           link: "/contact",
         },
         {
-          title: "UI/UX Design",
+          title: "Package Design",
           description:
-            "We create interfaces that feel intuitive and enjoyable. Clear navigation, thoughtful layouts, and cohesive visuals make your website or app a place users want to explore.",
+            "We create packaging designs that are both visually appealing and functional. Our designs enhance shelf presence, communicate brand value, and influence purchase decisions.",
           link: "/contact",
         },
         {
-          title: "App Development",
+          title: "OOH (Out-of-Home Advertising)",
           description:
-            "From concept to launch, we develop mobile and web applications that solve real problems. Apps are designed to be smooth, responsive, and aligned with your business goals.",
+            "We design impactful OOH creatives that capture attention in public spaces. From billboards to transit media, our designs focus on visibility, clarity, and brand recall.",
+          link: "/contact",
+        },
+        {
+          title: "Digital Experiences",
+          description:
+            "We design engaging digital brand experiences that connect users with your brand online. These experiences are built to be intuitive, immersive, and aligned with brand storytelling.",
+          link: "/contact",
+        },
+        {
+          title: "Ad Films",
+          description:
+            "We produce compelling ad films that communicate your brand story through visuals and emotion. Each film is crafted to resonate with the audience and strengthen brand perception.",
           link: "/contact",
         },
       ],

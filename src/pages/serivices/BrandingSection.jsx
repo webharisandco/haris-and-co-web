@@ -34,11 +34,11 @@ function BrandingSection({ BrandingContents }) {
                   </p>
                 </div>
                 <div className="xl:ml-[15px]">
-                  <ul className="grid list-disc list-outside font-[thin] tracking-wider  grid-cols-3 gap-[10px] 3xl:gap-7 text-[5px] lg:text-[16px] ">
+                  <ul className="grid list-disc list-outside font-[thin] tracking-wider grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7  text-[5px] lg:text-[16px] ">
                     {brandingContent.services.map((service, serviceIndex) => (
                       <li
                         key={serviceIndex}
-                        className="text-black/70 font-light leading-snug"
+                        className="text-black/70 font-light leading-snug "
                       >
                         {service}
                       </li>
@@ -88,7 +88,7 @@ function BrandingSection({ BrandingContents }) {
                   </p>
                 </div>
                 <div className="mt-[30px]">
-                  <ul className="grid list-disc grid-cols-1  gap-[20px] px-[20px] text-[15px]">
+                  {/* <ul className="grid list-disc grid-cols-1  gap-[20px] px-[20px] text-[15px]">
                     {brandingContent.services
                       .slice(0, 3)
                       .map((service, serviceIndex) => (
@@ -99,6 +99,17 @@ function BrandingSection({ BrandingContents }) {
                           {service}
                         </li>
                       ))}
+                  </ul> */}
+
+                  <ul className="grid list-disc list-outside font-[thin] tracking-wider grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 px-[20px] text-[15px] ">
+                    {brandingContent.services.map((service, serviceIndex) => (
+                      <li
+                        key={serviceIndex}
+                        className="text-black/70 font-light leading-snug "
+                      >
+                        {service}
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <div className="mt-[30px] ">
