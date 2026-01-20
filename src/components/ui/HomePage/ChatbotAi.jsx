@@ -33,15 +33,15 @@ const Chatbot = () => {
 
   return (
     <div
-      className="fixed right-4 bottom-8 z-50"
+      className="fixed right-2 bottom-8 z-50"
       onMouseEnter={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
       onTouchStart={() => setShowTooltip(true)}
     >
       {/* Tooltip */}
       <div
-        className={`mb-2 rounded-md px-3 py-1 text-sm  transition-all duration-300 ${
-          showTooltip ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2"
+        className={`mb-2 rounded-md px-3 py-1 text-xs lg:text-sm shadow-lg transition-all duration-300 ${
+          showTooltip ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2 "
         } ${isDarkSection ? "text-white " : "text-black "}`}
       >
         Let’s connect
