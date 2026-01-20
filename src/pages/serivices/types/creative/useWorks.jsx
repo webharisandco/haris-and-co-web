@@ -71,51 +71,45 @@ function useWorks() {
       ],
       offerings: [
         {
-          title: "Brand Strategy",
+          title: "Brand Identity Development",
           description:
-            "We develop clear brand strategies that align with your business goals. From positioning and messaging to tone of voice, we help brands stand out with purpose and direction.",
-          link: "/contact",
-        },
-        {
-          title: "Brand Activations",
-          description:
-            "We plan and execute brand activations that create meaningful audience engagement. These experiences are designed to build awareness, interaction, and emotional connection with your brand.",
+            "Creating the visual and verbal foundation of a brand — including logo, color palette, typography, and design system — that reflects the brand’s personality and makes it instantly recognisable.",
           link: "/contact",
         },
         {
           title: "Campaigns",
           description:
-            "We conceptualize and deliver creative brand campaigns that communicate your message effectively across channels. Each campaign is built to increase visibility, recall, and impact.",
+            "Conceptualising and designing creative campaigns that communicate a brand’s message or product launch through compelling visuals, storytelling, and strategy across multiple platforms.",
           link: "/contact",
         },
         {
-          title: "Event Branding",
+          title: "OOH (Out-of-Home) ",
           description:
-            "We design cohesive branding for events, ensuring a strong and memorable presence. From visual themes to on-ground branding elements, we align every detail with your brand identity.",
+            "Designing impactful outdoor communication — from billboards to transit ads — ensuring the brand stands out in physical spaces with clear messaging and strong visual presence.",
+          link: "/contact",
+        },
+        {
+          title: "Brand Activations ",
+          description:
+            "Building interactive brand experiences that engage audiences directly — such as pop-ups, installations, or on-ground events — to create emotional connections and drive participation. ",
+          link: "/contact",
+        },
+        {
+          title: "Event Branding ",
+          description:
+            "Designing the full visual experience for events — from stage and space design to digital screens, collaterals, and merchandise — ensuring the event communicates the brand consistently.",
           link: "/contact",
         },
         {
           title: "Package Design",
           description:
-            "We create packaging designs that are both visually appealing and functional. Our designs enhance shelf presence, communicate brand value, and influence purchase decisions.",
-          link: "/contact",
-        },
-        {
-          title: "OOH (Out-of-Home Advertising)",
-          description:
-            "We design impactful OOH creatives that capture attention in public spaces. From billboards to transit media, our designs focus on visibility, clarity, and brand recall.",
-          link: "/contact",
-        },
-        {
-          title: "Digital Experiences",
-          description:
-            "We design engaging digital brand experiences that connect users with your brand online. These experiences are built to be intuitive, immersive, and aligned with brand storytelling.",
+            "Creating packaging that not only looks good but also communicates brand identity, product value, and shelf appeal — blending function with storytelling.",
           link: "/contact",
         },
         {
           title: "Ad Films",
           description:
-            "We produce compelling ad films that communicate your brand story through visuals and emotion. Each film is crafted to resonate with the audience and strengthen brand perception.",
+            "Developing creative concepts, art direction, and visual language for brand or product films that emotionally connect with audiences and strengthen brand recall.",
           link: "/contact",
         },
       ],

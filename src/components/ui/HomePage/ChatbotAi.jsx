@@ -40,9 +40,9 @@ const Chatbot = () => {
     >
       {/* Tooltip */}
       <div
-        className={`mb-2 rounded-md px-3 py-1 text-sm shadow-lg transition-all duration-300 ${
+        className={`mb-2 rounded-md px-3 py-1 text-sm  transition-all duration-300 ${
           showTooltip ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2"
-        } ${isDarkSection ? "bg-white text-black" : "bg-black text-white"}`}
+        } ${isDarkSection ? "text-white " : "text-black "}`}
       >
         Let’s connect
       </div>

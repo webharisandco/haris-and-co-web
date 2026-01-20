@@ -68,7 +68,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
       <div className="bg-black-500 md:py-24"></div>
 
       {/* Offices section */}
-      <div className="w-full relative z-30 "style={{
+      <div className="w-full relative z-30 bg-black " style={{
     background: "linear-gradient(to bottom, black 30%, #0e0e0e 30%)",
   }}>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10  md:-mt-[220px] pb-8 sm:pb-16 ">
