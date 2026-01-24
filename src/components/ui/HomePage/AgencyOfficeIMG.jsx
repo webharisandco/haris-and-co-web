@@ -68,7 +68,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
       <div className="bg-black-500 md:py-24"></div>
 
       {/* Offices section */}
-      <div className="w-full relative z-30 "style={{
+      <div className="w-full relative z-30 bg-black " style={{
     background: "linear-gradient(to bottom, black 30%, #0e0e0e 30%)",
   }}>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10  md:-mt-[220px] pb-8 sm:pb-16 ">
@@ -110,7 +110,7 @@ export default function GenAIHero({ title, subtitle, ctaText, onCta }) {
 
             {/* Text */}
             <div className="absolute left-0 bottom-0 z-20 p-4 sm:p-6 text-white">
-              <h3 className="font-semibold text-base sm:text-lg mb-1 font-[helvetica-medium] tracking-wider">Dubai Office</h3>
+              <h3 className="font-semibold text-base sm:text-lg mb-1 font-[helvetica-medium] tracking-wider">UAE Office</h3>
               <p className="text-xs sm:text-sm">
                 Rooted In Creativity, Serving Clients Across The Nation.
               </p>

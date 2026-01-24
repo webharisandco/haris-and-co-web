@@ -35,12 +35,12 @@ function useServices() {
         "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.",
       
         services: [
-        "Brand Consulting",
-        "Logo Design",
-        "Graphic Design",
-        "Brand Identity",
-        "Brand Collateral",
-        "Product Design",
+        "Social Media Strategy & Monthly Plan",
+        "Creative Post & Reel Production",
+        "Content Calendar with Platform-wise Planning",
+        "Audience Engagement & Organic Growth Plan",
+        "Community Interaction Framework (Comments & DMs)",
+        "Performance Insights & Strategy Optimization Repor",
         
       ],
       action: {

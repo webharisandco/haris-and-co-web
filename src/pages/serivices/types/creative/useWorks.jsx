@@ -13,6 +13,47 @@ function useWorks() {
   console.log("Current URL Service:", service);
 
 
+  /* -------------------- COUNTERS JSON -------------------- */
+  const countersData = {
+    "production": [
+      { value: "120+", label: "Clients" },
+      { value: "7", label: "Awards" },
+      { value: "5000+", label: "Media Contents" },
+    ],
+    "social-media": [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+    "performance-marketing": [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+    "seo": [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+    "influencer-marketing": [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+    "web-development": [
+      { value: "50+", label: "Brands" },
+      { value: "500+", label: "Projects Launched across India and GCC" },
+      { value: "20+", label: "Ad films" },
+    ],
+    "branding": [
+      { value: "15+ ", label: "OOH Ads & Print Ads" },
+      { value: "10+", label: "Ad films" },
+      { value: "100+", label: "Campaigns" },
+    ],
+  };
+
+
+
   const allServices = useMemo(() =>  [
     {
       link: "branding",
@@ -30,39 +71,45 @@ function useWorks() {
       ],
       offerings: [
         {
-          title: "Website Development",
+          title: "Brand Identity Development",
           description:
-            "We build websites that are fast, reliable, and easy to navigate. Each site is structured to deliver information clearly while supporting your business objectives and keeping visitors engaged.",
+            "Creating the visual and verbal foundation of a brand — including logo, color palette, typography, and design system — that reflects the brand’s personality and makes it instantly recognisable.",
           link: "/contact",
         },
         {
-          title: "Ecommerce Development",
+          title: "Campaigns",
           description:
-            "Our team creates online stores that simplify shopping and boost sales. From product listings to secure checkout processes, every element is designed to enhance the customer experience.",
+            "Conceptualising and designing creative campaigns that communicate a brand’s message or product launch through compelling visuals, storytelling, and strategy across multiple platforms.",
           link: "/contact",
         },
         {
-          title: "Website Auditing",
+          title: "OOH (Out-of-Home) ",
           description:
-            "We evaluate your website’s performance, structure, and user experience to identify areas that need improvement. Audits help ensure your site runs efficiently and meets user expectations.",
+            "Designing impactful outdoor communication — from billboards to transit ads — ensuring the brand stands out in physical spaces with clear messaging and strong visual presence.",
           link: "/contact",
         },
         {
-          title: "Website Optimization",
+          title: "Brand Activations ",
           description:
-            "Through careful tuning of speed, layout, and content, we enhance how your website performs. Optimized sites load faster, retain visitors longer, and make it easier for people to find what they need.",
+            "Building interactive brand experiences that engage audiences directly — such as pop-ups, installations, or on-ground events — to create emotional connections and drive participation. ",
           link: "/contact",
         },
         {
-          title: "UI/UX Design",
+          title: "Event Branding ",
           description:
-            "We create interfaces that feel intuitive and enjoyable. Clear navigation, thoughtful layouts, and cohesive visuals make your website or app a place users want to explore.",
+            "Designing the full visual experience for events — from stage and space design to digital screens, collaterals, and merchandise — ensuring the event communicates the brand consistently.",
           link: "/contact",
         },
         {
-          title: "App Development",
+          title: "Package Design",
           description:
-            "From concept to launch, we develop mobile and web applications that solve real problems. Apps are designed to be smooth, responsive, and aligned with your business goals.",
+            "Creating packaging that not only looks good but also communicates brand identity, product value, and shelf appeal — blending function with storytelling.",
+          link: "/contact",
+        },
+        {
+          title: "Ad Films",
+          description:
+            "Developing creative concepts, art direction, and visual language for brand or product films that emotionally connect with audiences and strengthen brand recall.",
           link: "/contact",
         },
       ],
@@ -448,35 +495,29 @@ function useWorks() {
         statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
       offerings: [
         {
-          title: "Influencer Marketing",
+          title: "Television & Digital Commercials",
           description:
-            "We connect brands with influencers who align with their values and audience. By leveraging trusted voices on social platforms, we create authentic visibility and engagement.",
+            "Our television and digital production wing specializes in creating cinematic brand stories that connect across audiences and platforms. From high-energy commercials to emotionally driven digital films, we blend creativity, storytelling, and technical finesse to deliver work that resonates and performs.",
           link: "/contact",
         },
         {
-          title: "Brand Launch",
+          title: "Digital & Social Media Content",
           description:
-            "We design launch strategies that introduce new brands with impact. Through targeted campaigns, we build awareness, define identity, and establish a strong market presence.",
+            "In the fast-paced world of digital, we produce content that stands out and sparks conversations. From short-form reels to branded content and campaign visuals, our team ensures every piece is crafted to engage audiences, reflect brand identity, and drive measurable impact across platforms.",
           link: "/contact",
         },
         {
-          title: "Event Marketing",
+          title: "Photography & Print Production",
           description:
-            "We use influencer partnerships and digital channels to generate interest in events. Whether it is a conference, launch, or festival, our campaigns drive attendance and participation.",
+            "photography and print team blends creativity, detail, and technical mastery to craft visuals that capture true brand excellence. ",
           link: "/contact",
         },
         {
-          title: "Product Launch",
+          title: "Line Production Services",
           description:
-            "Our campaigns build anticipation around new products and services. By combining influencer reach with creative communication, we encourage engagement and early adoption.",
+            "From scouting dream locations to managing logistics, permissions, and crew coordination, our line production services ensure that every project runs seamlessly. Whether it’s a high-scale ad shoot or a digital film, we take care of every on-ground detail so creativity can flow without interruption. ",
           link: "/contact",
-        },
-        {
-          title: "Creators Management",
-          description:
-            "We handle the relationships with creators, from selection to campaign delivery. This includes evaluating demographics and portfolios, vetting credibility, coordinating production, and ensuring content is delivered on time.",
-          link: "/contact",
-        },
+        }
         
       ],
     },
@@ -551,18 +592,28 @@ function useWorks() {
   ];
 
 useEffect(() => {
-  window.scrollTo(0, 0); // Scroll to top on page load
-  const selectedService = allServices?.find((s) => s?.link === service);
-  if (selectedService) {
-    setCurrentService(selectedService);
-  }
-}, [service, allServices]);
+    window.scrollTo(0, 0);
 
+    const selectedService = allServices.find(
+      (s) => s.link === service
+    );
 
-  if (!currentService) {
-    return <p>Service not found!</p>;
-  }
-  return { services, blogs, currentService };
+    if (selectedService) {
+      setCurrentService({
+        ...selectedService,
+        counters: countersData[service] || [],
+      });
+    } else {
+      setCurrentService(null);
+    }
+  }, [service, allServices]);
+
+  return {
+    blogs,
+    currentService,
+  };
 }
+
+
 
 export default useWorks;
