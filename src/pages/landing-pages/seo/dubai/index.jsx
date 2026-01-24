@@ -51,11 +51,11 @@ function Dubai() {
       question:
         "Why should I hire an SEO agency in Dubai? Can’t I do it myself?",
       answer:
-        "You can certainly do SEO yourself, but it's like managing your own investments – time-consuming and requiring constant learning. However, when you have an expert Search Engine Optimization company that stays on top of the latest algorithms, you can worry less about the SEO part and concentrate more on your business.",
+        "You can certainly do SEO yourself, but it's like managing your own investments – time-consuming and requiring constant learning. However, when you have an expert Search Engine Optimisation company that stays on top of the latest algorithms, you can worry less about the SEO part and concentrate more on your business.",
     },
     {
       question:
-        "How will you maintain the results of your Search Engine Optimization services in Dubai?",
+        "How will you maintain the results of your Search Engine Optimisation services in Dubai?",
       answer:
         "SEO is an ongoing process. Once you stop it, you can lose your ranks. Hence, in order to maintain the results, we consistently keep our work rolling and tweak the strategies to make good results great over time.",
     },
@@ -100,7 +100,7 @@ function Dubai() {
         {
           type: "text",
           content:
-            "Boost website traffic: As a Search Engine Optimization company in Dubai, we help your website rank higher in search results, meaning more people will find you naturally.",
+            "Boost website traffic: As a Search Engine Optimisation company in Dubai, we help your website rank higher in search results, meaning more people will find you naturally.",
         },
         {
           type: "text",

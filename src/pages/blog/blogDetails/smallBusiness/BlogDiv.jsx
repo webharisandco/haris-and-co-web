@@ -64,7 +64,7 @@ export default function BlogDiv() {
             <br />• Engage with your audience by responding to comments and messages promptly.
           </p> */}
 
-          {/* <h6 className="text-[22px] mt-5">3. Invest in Search Engine Optimization (SEO)</h6>
+          {/* <h6 className="text-[22px] mt-5">3. Invest in Search Engine Optimisation (SEO)</h6>
           <p className="font-[thin]">
             SEO is essential for improving your website’s visibility on search engines like Google, helping you attract organic traffic without paying for ads.
             68% of online experiences begin with a search engine.

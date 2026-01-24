@@ -40,7 +40,7 @@ function useServices() {
         "Content Calendar with Platform-wise Planning",
         "Audience Engagement & Organic Growth Plan",
         "Community Interaction Framework (Comments & DMs)",
-        "Performance Insights & Strategy Optimization Repor",
+        "Performance Insights & Strategy Optimisation Report",
         
       ],
       action: {
@@ -74,7 +74,7 @@ function useServices() {
       id: "SEO",
       title: "SEO",
       description:
-        "Our SEO team helps businesses stand out in search results and attract people who are already looking for what they offer. Instead of chasing empty traffic, we focus on connecting your brand with qualified visitors who are ready to engage. With specialists in every area of SEO, we develop strategies shaped around your industry and audience so your website doesn’t just rank higher but also delivers meaningful results.",
+        "Our SEO team helps businesses stand out in search results and attract people who are already looking for what they offer. Instead of chasing empty traffic, we focus on connecting your brand with qualified visitors who are ready to engage. With specialists in every area of SEO, we develop strategies shaped around your industry and audience, so your website doesn’t just rank higher but also delivers meaningful results.",
       services: [
         "On-Page SEO",
         "Off-Page SEO",
@@ -139,10 +139,11 @@ function useServices() {
       description:
         "We fuel the growth of purpose driven brands through strategy activation, design empowerment, and market adoption. From cultivating new ideas to connecting the dots for customers or users, these are our core principles.Our web team turns ideas into functional, user-focused digital experiences. From websites to apps, we build platforms that perform smoothly, look professional, and guide visitors toward meaningful actions. Each project is approached with care so your online presence reflects your brand and meets your goals.",
       services: [
-        "Website Development",
-        "Ecommerce Development",
+        "WordPress Development",
+        "Ecommerce(shopify) Development",
+        "React.js & Next.js Development",
         "Website Auditing",
-        "Website Optimization",
+        "Website Optimisation",
         "UI/UX Design",
         "App Development",
       ],
@@ -167,6 +168,7 @@ function useServices() {
         "Specialized Creative Projects",
         "Line Production Services",
         "Retainer & Long-Term Partnerships",
+        "Ecommerce product photography"
       ],
       action: {
         label: "Explore",
@@ -214,6 +216,11 @@ function useServices() {
         "Event Branding",
         "Package Design",
         "Ad Films",
+        "Creative Campaigns",
+        "Print Ads",
+        "Performance Marketing",
+        "Whatsapp Marketing",
+        "CRO (Conversion Rate Optimisation)"
       ],
       action: {
         label: "Explore",

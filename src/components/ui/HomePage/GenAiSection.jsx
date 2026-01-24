@@ -8,7 +8,7 @@ export default function GenAIHero({ className = "" }) {
       {/* Background Video from public folder */}
       <video
         className="absolute top-0 left-0 w-full h-full object-center lg:object-cover"
-        src="/Video/H&C Web.mp4" // Path from public folder
+        src="/Video/H&CWeb3.mp4" // Path from public folder
         autoPlay
         muted
         loop

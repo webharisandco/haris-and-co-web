@@ -27,8 +27,8 @@ function Banner() {
     <div className="bg-black px-4 sm:px-6 md:px-8 min-h-[320px] md:min-h-[400px] lg:min-h-[700px] flex flex-col justify-center">
   <p className="text-[22px] sm:text-[26px] md:text-4xl lg:text-5xl text-white mt-12 md:mt-24 lg:mt-32 leading-snug sm:leading-tight break-words max-w-[90%] md:max-w-4xl p-4 sm:p-6 lg:p-10">
     Tired of all the cookie-cutter strategies?
-    <span className="text-white/65"> Discover tailored solutions </span>
-    <span className="text-white/65">remarkable</span> that drive growth
+    <span className="text-white/65">  Discover smart  </span>
+    <span className="text-white/65">solutions</span> that drive growth.
   </p>
       {/* Uncomment and update the below if needed */}
       {/* <div className="w-full flex justify-center">

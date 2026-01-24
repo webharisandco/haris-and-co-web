@@ -61,7 +61,7 @@ function WhatWeProvide({ performance = false }) {
       img: ContentBig,
     },
     {
-      title: "Conversion Rate Optimization",
+      title: "Conversion Rate Optimisation",
       description:
         "We optimize every page element strategically to turn more visitors into customers, using data-driven insights and proven conversion tactics. This is actually included in each service.",
       icon: ConversionIcon,
@@ -243,7 +243,7 @@ useEffect(() => {
               <img src={UiUxBig} alt="" />
             ) : currentTitle == "Content Writing" ? (
               <img src={ContentBig} alt="" />
-            ) : currentTitle == "Conversion Rate Optimization" ? (
+            ) : currentTitle == "Conversion Rate Optimisation" ? (
               <img src={ConversionBig} alt="" />
             ) : (
               <img src={Banner} alt="" />

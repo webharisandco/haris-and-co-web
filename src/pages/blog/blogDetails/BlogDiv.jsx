@@ -43,7 +43,7 @@ export default function BlogDiv() {
             can reach and engage their audience effectively. Let’s break it down:
           </p>
 
-          <h6 className="text-[20px] mt-3">Search Engine Optimization (SEO)</h6>
+          <h6 className="text-[20px] mt-3">Search Engine Optimisation (SEO)</h6>
           <p className="font-[thin]">
             SEO helps patients find the right care at the right time. Optimised blogs,
             FAQs, and video content build authority while improving search rankings.

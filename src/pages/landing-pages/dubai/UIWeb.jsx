@@ -54,7 +54,7 @@ export default function UIWeb() {
     {
       title: "End-to-End Digital Excellence",
       description:
-        "We handle everything from strategy to launch, including design, development, content, and optimization – no need to coordinate with multiple agencies.",
+        "We handle everything from strategy to launch, including design, development, content, and optimisation – no need to coordinate with multiple agencies.",
     },
     {
       title: "Data-Driven Decision Making",
@@ -64,7 +64,7 @@ export default function UIWeb() {
     {
       title: "Results-Focused Approach",
       description:
-        "We don't just build websites. We are a web development company in Dubai that creates digital assets that drive business growth through strategic design and conversion optimization.",
+        "We don't just build websites. We are a web development company in Dubai that creates digital assets that drive business growth through strategic design and conversion optimisation.",
     },
     {
       title: "Proven Development Process",
@@ -123,11 +123,11 @@ export default function UIWeb() {
   ];
   const bannerHeading = "Get a Website That Gets You More Leads & Sales";
   const bannerDescription =
-    "Delivering websites that are fast, secure, engaging and user-friendly. Wanna know the best part? Our conversion optimization makes navigation easier for your visitors from the 1st click to the final conversion.";
+    "Delivering websites that are fast, secure, engaging and user-friendly. Wanna know the best part? Our conversion optimisation makes navigation easier for your visitors from the 1st click to the final conversion.";
   const aboutHeading =
     "A Web Development Company in Dubai Trusted by 80+ Brands";
   const aboutDescription =
-    "As a web design and development company in Dubai, we believe your website must be an all-rounder – one that’s fast, user-friendly, secure, engaging and optimised to turn visitors into customers. That’s what you can expect when you partner with us for website development. Whether you are a startup, a large business or an ecommerce brand, we can deliver a website that meets your expectations. To ensure maximum quality, we have experts in each department be it UI/UX design, development, content or conversion optimization. Also, you’ll have a dedicated project manager to keep you updated on the project.";
+    "As a web design and development company in Dubai, we believe your website must be an all-rounder – one that’s fast, user-friendly, secure, engaging and optimised to turn visitors into customers. That’s what you can expect when you partner with us for website development. Whether you are a startup, a large business or an ecommerce brand, we can deliver a website that meets your expectations. To ensure maximum quality, we have experts in each department be it UI/UX design, development, content or conversion optimisation. Also, you’ll have a dedicated project manager to keep you updated on the project.";
   const tagline = "Conversion-focused Web Development Company in UAE";
 
   const faqList = [
@@ -155,7 +155,7 @@ export default function UIWeb() {
     {
       question: "Will my website be SEO-friendly?",
       answer:
-        "Yes. We carry out practices such as mobile optimization, internal linking, image optimization, and more to ensure mobile-friendliness.",
+        "Yes. We carry out practices such as mobile optimisation, internal linking, image optimisation, and more to ensure mobile-friendliness.",
     },
     {
       question: "What platforms do you use for web development?",

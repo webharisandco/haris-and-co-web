@@ -48,7 +48,7 @@ export default function BlogDiv() {
           <p className="font-[thin]">
             Digital marketing encompasses all marketing efforts that use the internet or electronic devices. It includes:
             <br /><br />
-            <strong>Search Engine Optimization (SEO):</strong> Optimizing websites to rank higher on search engines like Google.
+            <strong>Search Engine Optimisation (SEO):</strong> Optimizing websites to rank higher on search engines like Google.
             <br />
             <strong>Social Media Marketing:</strong> Promoting products on platforms like Facebook, Instagram, and LinkedIn.
             <br />
@@ -86,7 +86,7 @@ export default function BlogDiv() {
             <br /><br />
             <strong>Cost-Effectiveness for Small Businesses:</strong> Digital levels the playing field, allowing small businesses to compete with larger brands affordably.
             <br /><br />
-            <strong>Real-Time Results and Adaptability:</strong> Digital allows immediate measurement and optimization, giving it an edge over traditional methods.
+            <strong>Real-Time Results and Adaptability:</strong> Digital allows immediate measurement and optimisation, giving it an edge over traditional methods.
           </p>
 
           <h6 className="text-[22px] mt-5">Final Thoughts</h6>

@@ -57,7 +57,7 @@ export default function useBlogDetails() {
       heading: "Strategic Digital Marketing Tools in Healthcare",
       subsections: [
         {
-          subtitle: "Search Engine Optimization (SEO)",
+          subtitle: "Search Engine Optimisation (SEO)",
           content: [
             "SEO boosts visibility, builds trust, and connects patients with providers.",
             "Why SEO Matters in Healthcare:",

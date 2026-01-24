@@ -132,7 +132,7 @@ export default function useTypes() {
 
         "Next, we introduced Google Search Ads, using top offline performers as the seed set. With just AED 5K in test spend, the campaign generated AED 60K in revenue and a 20X ROAS - unlocking additional ad budgets for scaling.",
 
-        "An increase in fake high-value orders soon disrupted revenue accuracy. We introduced OTP verification to reduce fraud, but early versions hurt conversion rates. After optimization, a refined OTP flow preserved user experience while restoring data accuracy.",
+        "An increase in fake high-value orders soon disrupted revenue accuracy. We introduced OTP verification to reduce fraud, but early versions hurt conversion rates. After optimisation, a refined OTP flow preserved user experience while restoring data accuracy.",
 
         "As the channel matured, we tested over 30 new brands and 300+ products, identifying 10+ that consistently delivered 10X–15X ROAS. This product-level intelligence helped scale Med7Online to AED 190K in monthly sales and over AED 1.5M in total revenue in just 14 months.",
       ],
@@ -299,7 +299,7 @@ export default function useTypes() {
         "On-Page SEO",
         "Technical SEO",
         "Keyword Strategy",
-        "Content Optimization",
+        "Content Optimisation",
       ],
     },
     {

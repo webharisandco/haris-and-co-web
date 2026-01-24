@@ -16,7 +16,7 @@ export default function BlogDiv() {
           This is where Haris & Co worked alongside the team with a clear goal: turn Walkaroo’s digital store into a high-performing sales machine.
         </p>
         <p className="font-[thin]">
-          The brand’s existing platform, Magenta, had limitations that prevented optimization of the customer journey. Product pages, navigation, and calls-to-action were underperforming, and the overall design did not inspire confidence. Traffic existed, but conversions were low. Based on these shortcomings, the first task was to switch to Shopify, unlocking better flexibility and growth opportunities for the website.
+          The brand’s existing platform, Magenta, had limitations that prevented optimisation of the customer journey. Product pages, navigation, and calls-to-action were underperforming, and the overall design did not inspire confidence. Traffic existed, but conversions were low. Based on these shortcomings, the first task was to switch to Shopify, unlocking better flexibility and growth opportunities for the website.
         </p>
         <p className="font-[thin]">
           Once the platform was in place, we redesigned the website with the user at the center. The new design featured:

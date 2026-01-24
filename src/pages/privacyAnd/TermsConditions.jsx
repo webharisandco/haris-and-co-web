@@ -55,7 +55,7 @@ const TermsAndConditions = () => (
           </p>
           <ul className="list-disc ml-6 mt-3 space-y-2">
             <li>Branding and creative services</li>
-            <li>Search engine optimization (SEO)</li>
+            <li>Search engine optimisation (SEO)</li>
             <li>Social media marketing and management</li>
             <li>Performance marketing</li>
             <li>Influencer marketing</li>

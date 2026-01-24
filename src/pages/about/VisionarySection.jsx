@@ -37,9 +37,7 @@ export default function VisionarySection() {
         </div>
         <div className="lg:w-1/2 flex flex-col gap-[30px] justify-between">
           <p className="text-[20px] md:text-[21px] 3xl:text-[24px] font-[thinItalic] tracking-tight leading-snug">
-            Haris Aboobacker’s journey wasn’t built on shortcuts. Before Haris &
-            Co. became one of Kerala’s fastest-growing digital marketing
-            agencies, he faced a long string of failed startups. Those setbacks
+            Haris Aboobacker’s journey wasn’t built on shortcuts. Before Haris&Co. became one of Kerala’s fastest-growing digital marketing agencies, he faced a long string of failed startups. Those setbacks
             didn’t break him, they shaped him. They taught him what works, what
             doesn’t, and how resilience can be turned into results. Five years
             later, Haris leads a 250+ member team that continues to push the

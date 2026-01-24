@@ -13,7 +13,7 @@ export const ClientsDataSection = () => {
          <span className="opacity-100">experiences</span> 
          <span className="opacity-50 font-[HelveticaNeue]"> for the world's leading</span>
          <br />
-         <span className="opacity-50 font-[HelveticaNeue]">brands by seamlessly blending</span>
+         <span className="opacity-50 font-[HelveticaNeue]">brands by bringing together</span>
          <br />
          <span className="opacity-50 font-[HelveticaNeue]">design, technology, </span>
          <span className="opacity-100">and marketing.</span>

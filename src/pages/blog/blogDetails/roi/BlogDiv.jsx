@@ -79,7 +79,7 @@ export default function BlogDiv() {
           <p className="font-[thin]">
             • <strong>Email Marketing:</strong> According to Shopify, Email marketing campaigns have an average ROI of 36 times.
             <br />• <strong>Social Media:</strong> According to Horizon Grand View Research, the Indian social media analytics market generated approximately ₹3,070 crore in revenue in 2023 and is projected to reach ₹35,650 crore by 2030.
-            <br />• <strong>Search Engine Optimization (SEO):</strong> According to Sagapixel, a well-executed SEO campaign can deliver an impressive average ROI of 748%.
+            <br />• <strong>Search Engine Optimisation (SEO):</strong> According to Sagapixel, a well-executed SEO campaign can deliver an impressive average ROI of 748%.
           </p> */}
 
           {/* <h6 className="text-[22px] mt-5">How to Improve ROI in Digital Marketing</h6>

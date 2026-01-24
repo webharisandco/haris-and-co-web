@@ -313,7 +313,7 @@ export default function UIPerformance() {
                     </li>
                     <li>
                       <span className="poppins-semibold">
-                        Real-Time Optimization :{" "}
+                        Real-Time Optimisation :{" "}
                       </span>
                       <span className="poppins-regular">
                         With performance marketing, campaigns can be adjusted in
