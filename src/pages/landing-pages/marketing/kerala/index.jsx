@@ -215,7 +215,7 @@ function kerala() {
         content="Grow your business with the best digital marketing agency in Kerala. We, at Haris&Co.offer all the essential digital marketing services to boost your business revenue."
       />
 
-      <LandingHeader btnTxt="GET A PROPOSAL" />
+      <LandingHeader  btnTxt="GET A PROPOSAL" />
       <div className=" bg-black">
         <Banner
           bannerImage={images}

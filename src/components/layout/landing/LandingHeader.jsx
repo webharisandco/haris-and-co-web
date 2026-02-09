@@ -50,7 +50,7 @@ const LandingHeader = ({btnTxt}) => {
       </div>
       <LandingButton
       className='hidden md:flex'
-        href={"https://harisandco.pipedrive.com/scheduler/Z6GZG1sd/meeting"}
+        href={"/contact"}
         text={btnTxt?btnTxt :"Let’s Connect"}
       />
       <div className="lg:hidden flex ms-auto max-w-fit">

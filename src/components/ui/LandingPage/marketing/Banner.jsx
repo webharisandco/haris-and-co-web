@@ -47,7 +47,7 @@ function Banner({
           <div className="flex mt-8 justify-center md:justify-start pb-[85px] flex-col md:flex-row gap-[20px]">
             <LandingButton
               href={
-                "https://harisandco.pipedrive.com/scheduler/Z6GZG1sd/meeting"
+                "/contact"
               }
               text={"GET A PROPASAL"}
             />
