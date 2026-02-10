@@ -149,11 +149,11 @@ const LandingFooter = ({ serviceType = "web", address }) => {
             <h6 className="poppins-bold text-xl">Menu</h6>
             <div className="flex flex-col gap-5  poppins-light text-nowrap">
               <Link to="/">Home</Link>
-              <Link to="/">Services</Link>
-              <Link to="/">Career</Link>
-              <Link to="/">Blog</Link>
-              <Link to="/">Case Studies</Link>
-              <Link to="/">Contacts</Link>
+              <Link to="/services">Services</Link>
+              <Link to="/career">Career</Link>
+              <Link to="/blogs">Blog</Link>
+              <Link to="/works">Case Studies</Link>
+              <Link to="/contact">Contacts</Link>
             </div>
           </div>
           <div className="space-y-10">
@@ -255,11 +255,11 @@ const LandingFooter = ({ serviceType = "web", address }) => {
               </p>
               <div className="flex flex-col text-[15px] text-white poppins-light gap-[13px]">
                 <Link to="/">Home</Link>
-                <Link to="/">Services</Link>
-                <Link to="/">Career</Link>
-                <Link to="/">Blog</Link>
-                <Link to="/">Case Studies</Link>
-                <Link to="/">Contacts</Link>
+                <Link to="/services">Services</Link>
+                <Link to="/career">Career</Link>
+                <Link to="/blogs">Blog</Link>
+                <Link to="/works">Case Studies</Link>
+                <Link to="/contact">Contacts</Link>
               </div>
             </div>
           </div>
@@ -269,10 +269,11 @@ const LandingFooter = ({ serviceType = "web", address }) => {
                 Important Links
               </p>
               <div className="flex flex-col text-[15px] text-white poppins-light gap-[13px]">
-                <Link to="/">Digital Marketing</Link>
-                <Link to="/">SEO</Link>
-                <Link to="/">Lead Generation</Link>
-                <Link to="/">Social Media</Link>
+                <Link to="/digital-marketing-agency-in-kerala">Digital Marketing</Link>
+                <Link to="/services/seo-company-in-kerala">SEO</Link>
+                <Link to="/services/performance-marketing-agency-in-kerala">Lead Generation</Link>
+                <Link to="/services/social-media">Social Media Marketing</Link>
+                <Link to="/ae/services/web-development-company-in-dubai">Web Development</Link>
               </div>
             </div>
           </div>
