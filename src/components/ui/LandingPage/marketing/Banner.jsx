@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import LandingButton from "../../common/LandingButton";
 import OptimizedBanner from "../../common/OptimizedBanner";
+import LandingButtonWithPopup from "../../common/LandingButtonWithPopup";
 
 function Banner({
   bannerImage,
@@ -22,7 +22,7 @@ function Banner({
     return () => clearInterval(interval); // cleanup
   }, [bannerImage]);
   return (
-    <div className="px-[16px] md:px-[60px] lg:px-[80px] bg-black md:pt-[150px]">
+    <div className="px-[16px] md:px-[60px] lg:px-[80px] bg-black pt-[100px]">
       <div
         className={` grid grid-cols-1  mt-[50px] md:mt-[75px] lg:mt-[100px] xl:mt-[50px] gap-[73px] md:gap-[100px] justify-between items-center poppins-regular ${
           performance ? "lg:grid-cols-[1.4fr_1fr]" : "lg:grid-cols-[1.6fr_1fr]"
@@ -45,12 +45,7 @@ function Banner({
             {description}
           </p>
           <div className="flex mt-8 justify-center md:justify-start pb-[85px] flex-col md:flex-row gap-[20px]">
-            <LandingButton
-              href={
-                "/contact"
-              }
-              text={"GET A PROPASAL"}
-            />
+            <LandingButtonWithPopup text="GET A PROPASAL" />
             {/* {performance && <LandingButton href={'https://harisandco.pipedrive.com/scheduler/Z6GZG1sd/meeting'} text={'Let’s Connect'} className={'bg-transparent hover:bg-transparent hover:text-white/70 text-white'} />} */}
           </div>
           <div className="w-full grid grid-cols-2 gap-[31px] md:gap-0 md:grid-cols-4 font-[Abrobold]">

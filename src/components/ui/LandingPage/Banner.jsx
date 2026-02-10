@@ -1,7 +1,8 @@
 import React from "react";
-import LandingButton from "../../ui/common/LandingButton";
+// import LandingButton from "../../ui/common/LandingButton";
 import OptimizedBanner from "../common/OptimizedBanner";
 import BannerImage from "../../../assets/images/landing/performanceHero.png";
+import LandingButtonWithPopup from "../common/LandingButtonWithPopup";
 
 function Banner({
   bannerImage,
@@ -12,7 +13,7 @@ function Banner({
   performance = false,
 }) {
   return (
-    <div className="px-[16px] md:px-[60px] lg:px-[100px]">
+    <div className="px-[16px] md:px-[60px] lg:px-[100px] pt-[100px] md:pt-[80px]">
       <div
         className={` grid grid-cols-1  mt-[50px] md:mt-[75px] lg:mt-[100px] xl:mt-[125px] gap-[73px] md:gap-[100px] justify-between items-center poppins-regular ${
           performance ? "lg:grid-cols-[1.4fr_1fr]" : "lg:grid-cols-[1.6fr_1fr]"
@@ -38,12 +39,13 @@ function Banner({
             {description}
           </p>
           <div className="flex mt-8 justify-center md:justify-start flex-col md:flex-row gap-[20px]">
-            <LandingButton
+            {/* <LandingButton
               href={
                 "https://harisandco.pipedrive.com/scheduler/Z6GZG1sd/meeting"
               }
               text={"Let’s Connect"}
-            />
+            /> */}
+            <LandingButtonWithPopup text="GET A PROPASAL" />
             {/* {performance && <LandingButton href={'https://harisandco.pipedrive.com/scheduler/Z6GZG1sd/meeting'} text={'Let’s Connect'} className={'bg-transparent hover:bg-transparent hover:text-white/70 text-white'} />} */}
           </div>
         </div>

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import LandingButton from "../../common/LandingButton";
 import hero from "@/assets/images/DigitalMarketing/visit.webp";
 import thumb from "@/assets/images/DigitalMarketing/vedio-thumb.webp";
 import seoad from "@/assets/images/DigitalMarketing/SEO-AD.mov";
 import { ArrowUpRight } from "lucide-react";
+import LandingButtonWithPopup from "../../common/LandingButtonWithPopup";
 
 function Banner({
   bannerImage,
@@ -17,7 +17,7 @@ function Banner({
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
   return (
-    <div className="px-[16px] md:px-[60px] lg:px-[80px] bg-black md:pt-[150px]">
+    <div className="px-[16px] md:px-[60px] lg:px-[80px] bg-black pt-[100px] md:pt-[150px]">
       <div
         className={` grid lg:grid-cols-[1.4fr_1fr]  mt-[50px] md:mt-[75px] lg:mt-[100px] xl:mt-[50px] gap-[73px] md:gap-[100px] justify-between items-start poppins-regular 
         }`}
@@ -40,12 +40,13 @@ function Banner({
             {description}
           </p>
           <div className="flex mt-8 justify-center items-center md:justify-start pb-[40px] flex-col md:flex-row gap-[40px]">
-            <LandingButton
+            {/* <LandingButton
               href={
                 "https://harisandco.pipedrive.com/scheduler/Z6GZG1sd/meeting"
               }
               text={"GET A PROPASAL"}
-            />
+            /> */}
+            <LandingButtonWithPopup text="GET A PROPASAL" />
             <div className=" flex group gap-[10px]">
               <p className="text-white">View Our Result</p>
               <span>

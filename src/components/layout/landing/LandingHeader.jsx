@@ -49,10 +49,10 @@ const LandingHeader = ({btnTxt}) => {
         </Link>
       </div>
       <LandingButton
-      className='hidden md:flex'
-        href={"/contact"}
-        text={btnTxt?btnTxt :"Let’s Connect"}
+        className="hidden md:flex"
+        text={btnTxt ? btnTxt : "Let’s Connect"}
       />
+
       <div className="lg:hidden flex ms-auto max-w-fit">
         <button onClick={toggleMenu}>
           {/* {menuIcon ? */}
