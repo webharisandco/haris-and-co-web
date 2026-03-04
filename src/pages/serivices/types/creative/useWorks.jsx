@@ -359,73 +359,73 @@ function useWorks() {
     },
 
 
-    // {
-    //   link: "influencer-marketing",
-    //   subHeading: "Get influencer-approved!",
-    //   description:
-    //     "Partner with leading industry influencers to keep up with trends. Connect with new audiences and engage with your existing followers with creative content on the world’s most popular social media platforms.",
-    //         adsImages: {
-    //     desktop: "/images/services/influencer marketing.png",
-    //     // mobile: "/images/services/SM (1).png",
-    //   },
-    //     statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
-    //   offerings: [
-    //     {
-    //       title: "Brand Identity",
-    //       description:
-    //         "We design the visual and verbal elements that define a brand, including logos, colours, typography, and tone of voice, ensuring consistency across every platform.",
-    //       link: "/contact",
-    //     },
-    //     {
-    //       title: "Campaigns",
-    //       description:
-    //         "From concept to execution, we create integrated campaigns that carry a brand’s message across multiple channels, building visibility and recognition.",
-    //       link: "/contact",
-    //     },
-    //     {
-    //       title: "OOH",
-    //       description:
-    //         "Our team develops out-of-home advertising such as billboards, transit ads, and outdoor displays that reach audiences in public spaces with strong, memorable visuals.",
-    //       link: "/contact",
-    //     },
-    //     {
-    //       title: "Brand Activations",
-    //       description:
-    //         "We design interactive experiences that bring a brand to life, encouraging direct engagement and creating lasting connections with customers.",
-    //       link: "/contact",
-    //     },
-    //     {
-    //       title: "Brand Strategy",
-    //       description:
-    //         "Through research and planning, we define positioning, messaging, and long-term direction, giving brands a clear path to grow and remain relevant.",
-    //       link: "/contact",
-    //     },
-    //     {
-    //       title: "Digital Experiences",
-    //       description:
-    //         "We craft online experiences, from interactive content to web campaigns, that merge creativity with technology to keep audiences engaged.",
-    //       link: "/contact",
-    //     },
-    //     {
-    //       title: "Event Branding",
-    //       description:
-    //         "Our event branding work ensures that conferences, launches, and live experiences reflect the identity of the brand at every touchpoint.",
-    //       link: "/contact",
-    //     },
-    //     {
-    //       title: "Package Design",
-    //       description:
-    //         "We create packaging that not only protects and presents the product but also communicates the brand’s personality and attracts attention on the shelf.",
-    //       link: "/contact",
-    //     },
-    //     {
-    //       title: "Ad Films",
-    //       description:
-    //         "We produce ad films that tell a brand’s story with impact, whether for television, digital platforms, or internal use.m ",
-    //       link: "/contact",
-    //     },
-    //   ],
-    // },
+    {
+      link: "influencer-marketing",
+      subHeading: "Get influencer-approved!",
+      description:
+        "Partner with leading industry influencers to keep up with trends. Connect with new audiences and engage with your existing followers with creative content on the world’s most popular social media platforms.",
+            adsImages: {
+        desktop: "/images/services/influencer marketing.png",
+        // mobile: "/images/services/SM (1).png",
+      },
+        statistics: ["X+ Creators", "X+ Total Views", "X+ Engagements"],
+      offerings: [
+        {
+          title: "Brand Identity",
+          description:
+            "We design the visual and verbal elements that define a brand, including logos, colours, typography, and tone of voice, ensuring consistency across every platform.",
+          link: "/contact",
+        },
+        {
+          title: "Campaigns",
+          description:
+            "From concept to execution, we create integrated campaigns that carry a brand’s message across multiple channels, building visibility and recognition.",
+          link: "/contact",
+        },
+        {
+          title: "OOH",
+          description:
+            "Our team develops out-of-home advertising such as billboards, transit ads, and outdoor displays that reach audiences in public spaces with strong, memorable visuals.",
+          link: "/contact",
+        },
+        {
+          title: "Brand Activations",
+          description:
+            "We design interactive experiences that bring a brand to life, encouraging direct engagement and creating lasting connections with customers.",
+          link: "/contact",
+        },
+        {
+          title: "Brand Strategy",
+          description:
+            "Through research and planning, we define positioning, messaging, and long-term direction, giving brands a clear path to grow and remain relevant.",
+          link: "/contact",
+        },
+        {
+          title: "Digital Experiences",
+          description:
+            "We craft online experiences, from interactive content to web campaigns, that merge creativity with technology to keep audiences engaged.",
+          link: "/contact",
+        },
+        {
+          title: "Event Branding",
+          description:
+            "Our event branding work ensures that conferences, launches, and live experiences reflect the identity of the brand at every touchpoint.",
+          link: "/contact",
+        },
+        {
+          title: "Package Design",
+          description:
+            "We create packaging that not only protects and presents the product but also communicates the brand’s personality and attracts attention on the shelf.",
+          link: "/contact",
+        },
+        {
+          title: "Ad Films",
+          description:
+            "We produce ad films that tell a brand’s story with impact, whether for television, digital platforms, or internal use.m ",
+          link: "/contact",
+        },
+      ],
+    },
 
     {
       link: "social-media",

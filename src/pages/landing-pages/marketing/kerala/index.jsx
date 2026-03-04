@@ -21,6 +21,7 @@ import ContactSection from "@/components/ui/LandingPage/ContactSection";
 import { Faq } from "@/components/ui/LandingPage/Faq";
 import LandingFooter from "@/components/layout/landing/LandingFooter";
 import ContentSection from "@/components/ui/LandingPage/marketing/ContentSection";
+import WhatsAppButton from "../../../../components/ui/LandingPage/seo/WhatsAppButton";
 
 function kerala() {
   const location = {
@@ -252,6 +253,7 @@ function kerala() {
         <Faq faqList={faqList} />
     <ContentSection contentData={contentData}/>
       </div>
+      <WhatsAppButton />
       <LandingFooter serviceType='digital' address="2nd floor, 4 WING Avenue, Panniyankara, 673003 Kozhikode, Kerala" />
     </div>
   );

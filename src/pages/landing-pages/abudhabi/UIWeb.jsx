@@ -33,6 +33,7 @@ import webBrandSmall9 from "@/assets/images/brandLogos/web/small/webBrandsSmall9
 import webBrandSmall10 from "@/assets/images/brandLogos/web/small/webBrandsSmall10.png";
 import webBrandSmall11 from "@/assets/images/brandLogos/web/small/webBrandsSmall11.png";
 import { Helmet } from "react-helmet";
+import WhatsAppButton from "../../../components/ui/LandingPage/seo/WhatsAppButton";
 
 export default function UIWeb() {
   const location = {
@@ -281,6 +282,7 @@ export default function UIWeb() {
           webDevelopmentServices={webDevelopmentServices}
         />
       </div>
+      <WhatsAppButton />
       <LandingFooter serviceType='web'  />
     </>
   );

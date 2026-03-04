@@ -33,6 +33,7 @@ import webBrandSmall8 from "@/assets/images/brandLogos/web/small/webBrandsSmall8
 import webBrandSmall9 from "@/assets/images/brandLogos/web/small/webBrandsSmall9.png";
 import webBrandSmall10 from "@/assets/images/brandLogos/web/small/webBrandsSmall10.png";
 import webBrandSmall11 from "@/assets/images/brandLogos/web/small/webBrandsSmall11.png";
+import WhatsAppButton from "../../../components/ui/LandingPage/seo/WhatsAppButton";
 
 export default function UIWeb() {
   const location = {
@@ -280,6 +281,7 @@ export default function UIWeb() {
           webDevelopmentServices={webDevelopmentServices}
         />
       </div>
+      <WhatsAppButton />
       <LandingFooter />
     </>
   );

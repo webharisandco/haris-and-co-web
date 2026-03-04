@@ -22,6 +22,7 @@ import ContactSection from "@/components/ui/LandingPage/ContactSection";
 import { Faq } from "@/components/ui/LandingPage/Faq";
 import LandingFooter from "@/components/layout/landing/LandingFooter";
 import ContentSection from "../../../../components/ui/LandingPage/marketing/ContentSection";
+import WhatsAppButton from "../../../../components/ui/LandingPage/seo/WhatsAppButton";
 
 function Sharjah() {
   const location = {
@@ -265,6 +266,7 @@ function Sharjah() {
         <Faq faqList={faqList} />
         <ContentSection contentData={contentData} />
       </div>
+      <WhatsAppButton />
       <LandingFooter serviceType="digital" />
     </div>
   );

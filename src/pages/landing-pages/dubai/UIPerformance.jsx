@@ -27,6 +27,7 @@ import perfomanceBrandsSmall9 from "@/assets/images/brandLogos/perfomance/small/
 import perfomanceBrandsSmall10 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall10.png";
 import perfomanceBrandsSmall11 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall11.png";
 import perfomanceBrandsSmall12 from "@/assets/images/brandLogos/perfomance/small/perfomanceBrandsSmall12.png";
+import WhatsAppButton from "../../../components/ui/LandingPage/seo/WhatsAppButton";
 
 const ContactSection = lazy(() =>
   import("@/components/ui/LandingPage/ContactSection")
@@ -408,6 +409,7 @@ export default function UIPerformance() {
           )}
         </div>
       </div>
+      <WhatsAppButton />
       <LandingFooter serviceType='performance'  />
     </div>
   );
