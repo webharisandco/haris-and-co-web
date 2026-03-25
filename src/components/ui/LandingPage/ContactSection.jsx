@@ -312,7 +312,7 @@ function ContactSection({ kerala, address }) {
               style={{ marginTop: "43px" }}
               className="flex justify-between h-full items-center gap-[60px] flex-col xl:flex-row"
             >
-              <button
+              <button id="get_proposal_formSumbmitButton"
                 type="submit"
                 className="w-full h-[65px] bg-black text-white rounded-[13px] px-4 py-2 gap-[13px] text-[18px] flex items-center justify-center hover:bg-gray-800"
               >

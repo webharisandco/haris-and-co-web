@@ -76,7 +76,7 @@ const LandingButtonWithPopup = ({ text, icon, className }) => {
   return (
     <>
       {/* BUTTON */}
-      <button
+      <button id="get_proposal_button"
         onClick={() => setOpen(true)}
         className={`group bg-[#7744D5] hover:bg-[#7744D5]/50 text-white py-[15px] px-[20px] rounded-xl flex justify-center gap-[10px] transition-all duration-300 font-[Abroregular] w-full sm:w-auto ${className}`}
       >
@@ -91,7 +91,7 @@ const LandingButtonWithPopup = ({ text, icon, className }) => {
 
       {/* MODAL */}
       {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+        <div id="get_proposal_modal" className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
           <div className="relative bg-white rounded-2xl p-6 w-[90%] max-w-md animate-popup">
             <button
               onClick={() => setOpen(false)}
@@ -115,7 +115,7 @@ const LandingButtonWithPopup = ({ text, icon, className }) => {
               <input type="number" placeholder="Phone" className="border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-[#7744D5]" label="Phone" name="phone" value={formData.phone} onChange={handleChange}/> 
               
               <textarea placeholder="Message" rows="3" className="border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-[#7744D5]" /> 
-              <button className="bg-[#7744D5] text-white py-3 rounded-xl hover:bg-[#7744D5]/80 transition"> Submit </button>
+              <button id="get_proposal_modalFormSubmitButton" className="bg-[#7744D5] text-white py-3 rounded-xl hover:bg-[#7744D5]/80 transition"> Submit </button>
               </div>
             </form>
           </div>
