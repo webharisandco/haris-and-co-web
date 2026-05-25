@@ -4,7 +4,7 @@ const Chatbot = () => {
   const [isDarkSection, setIsDarkSection] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
 
-  const whatsappNumber = "918590629387";
+  const whatsappNumber = "918075040330";
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
   useEffect(() => {
